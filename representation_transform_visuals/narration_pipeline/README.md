@@ -19,11 +19,10 @@ Use an environment variable:
 export GEMINI_API_KEY="..."
 ```
 
-Or create a local uncommitted `.env` file from:
-
-```text
-representation_transform_visuals/.env.example
-```
+Keys normally come from the user credential store at
+`~/.config/video-pipeline/credentials.env` — no per-repo setup needed.
+For a one-off override, export the variable in your shell or create a local
+uncommitted `.env` from `representation_transform_visuals/.env.example`.
 
 The user has approved sending this project's demo narration text and script text to Gemini for scratch TTS and narration workflow experiments.
 

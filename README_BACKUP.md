@@ -36,6 +36,26 @@ That backup is on the same machine, so it does **not** count as off-site.
 Getting the audio somewhere durable is the outstanding follow-up — Git LFS on
 this repo, a separate media repo, or ordinary object storage.
 
+## Credentials
+
+No credential ever lives in this repo. All keys come from a user-profile store:
+
+    ~/.config/video-pipeline/credentials.env     # mode 0600, KEY=value
+    ~/.config/video-pipeline/credentials.sh      # shell loader, sourced from ~/.bashrc
+
+Python code reads them through `workspace_credentials.py` in the repo root:
+
+```python
+from workspace_credentials import require
+key = require("GEMINI_API_KEY")     # exits with a fix-it message if absent
+```
+
+Resolution order is shell environment → repo-local `.env` (optional override) →
+user store, so a one-off `GEMINI_API_KEY=... ./script.py` always wins.
+
+`credentials.env.example` in the repo root is the placeholder template; its
+header has the install steps for a new machine.
+
 ## Restoring a working copy
 
 ```sh
@@ -43,5 +63,12 @@ git clone git@github.com:lpurdy01/video_pipeline_workspace.git
 cd video_pipeline_workspace
 python -m venv .venv && source .venv/bin/activate
 pip install -r representation_transform_visuals/requirements.txt
+
+# credential store (see credentials.env.example header for detail)
+mkdir -p ~/.config/video-pipeline && chmod 700 ~/.config/video-pipeline
+cp credentials.env.example ~/.config/video-pipeline/credentials.env
+chmod 600 ~/.config/video-pipeline/credentials.env
+$EDITOR ~/.config/video-pipeline/credentials.env
+
 # then copy assets/human_audio/ back in from the media backup
 ```

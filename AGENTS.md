@@ -23,7 +23,8 @@ For the representation-transform project:
 - Keep a clear distinction between useful metaphor and exact mathematical claim.
 - Treat LLM-style transformation as powerful, approximate, and lossy; develop language around the specific kind of loss without prematurely claiming a settled technical term.
 - Keep generated media and API outputs under ignored `out/` directories unless the user explicitly asks to preserve a particular artifact.
-- Keep real API keys only in ignored `.env` files or shell environment variables. `.env.example` must remain placeholder-only.
+- Keep real API keys only in the user credential store (`~/.config/video-pipeline/credentials.env`), ignored `.env` files, or shell environment variables. `.env.example` must remain placeholder-only.
+- Read credentials through `workspace_credentials.require("NAME")` rather than parsing env files in each script.
 - Use `narration_pipeline/` for TTS, transcription, word timestamps, and beat maps.
 - Keep the user's real voice recordings local by default. Use local transcription/alignment tools such as `narration_pipeline/transcribe_words.py` and faster-whisper for human recordings. Do not upload raw human audio, derived voiceprints, or timing-rich human narration artifacts to Gemini or other cloud APIs unless the user gives explicit per-request approval.
 - Text-based artifacts derived from the project, including scripts, transcript text, commentary summaries, and rewrite notes, may be sent to approved compute APIs such as Gemini for script refinement, scratch TTS, and analysis. Prefer sending edited text excerpts rather than raw audio.
@@ -84,4 +85,4 @@ Default audio workflow:
 
 Rationale from the user: the finished project is intended for YouTube, a Google platform, and Gemini is considered acceptable for this project's intellectual-property risk profile.
 
-Still do not commit real API keys. Store keys only in ignored `.env` files or shell environment variables.
+Still do not commit real API keys. Store keys in the user credential store (`~/.config/video-pipeline/credentials.env`), ignored `.env` files, or shell environment variables.

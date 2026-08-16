@@ -273,7 +273,7 @@ Built `whitepaper/gemini_tools/` with three scripts:
 - `whitepaper_review.py` — bundles whitepaper + wiki pages and submits to Gemini for structured critique
 - `diagram_render.py` — sends matplotlib wireframe PNG + text spec to Nano Banana Pro image model for polished renders
 
-Available models confirmed live: gemini-2.5-pro, gemini-2.5-flash, nano-banana-pro-preview, gemini-3.1-flash-image-preview, deep-research-max-preview-04-2026, imagen-4.0-generate-001. API key in representation_transform_visuals/.env.
+Available models confirmed live: gemini-2.5-pro, gemini-2.5-flash, nano-banana-pro-preview, gemini-3.1-flash-image-preview, deep-research-max-preview-04-2026, imagen-4.0-generate-001. API key in the user credential store (~/.config/video-pipeline/credentials.env).
 
 Generated first structured Gemini review (gemini_tools/out/review_2026-05-17.md). Top 5 gaps identified and addressed:
 1. Added Introduction section to Introductory_composition.md with thesis roadmap, section map, and upfront LLM-trust acknowledgment

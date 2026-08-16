@@ -12,33 +12,17 @@ import base64
 import json
 import mimetypes
 import os
+import sys
 from pathlib import Path
 
 import requests
 
-ENV_FILE = Path(__file__).resolve().parents[2] / "representation_transform_visuals" / ".env"
-
-
-def load_env_file(path: Path = ENV_FILE) -> None:
-    if not path.exists():
-        return
-    for raw_line in path.read_text(encoding="utf-8").splitlines():
-        line = raw_line.strip()
-        if not line or line.startswith("#") or "=" not in line:
-            continue
-        key, _, value = line.partition("=")
-        key = key.strip()
-        value = value.strip().strip('"').strip("'")
-        if key and value and key not in os.environ:
-            os.environ[key] = value
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from workspace_credentials import require  # noqa: E402
 
 
 def api_key() -> str:
-    load_env_file()
-    key = os.environ.get("GEMINI_API_KEY")
-    if not key:
-        raise SystemExit("Set GEMINI_API_KEY in representation_transform_visuals/.env or your shell.")
-    return key
+    return require("GEMINI_API_KEY")
 
 
 def image_part(path: Path) -> dict:
@@ -92,10 +76,7 @@ def generate_thinking(
     Returns:
         The full text response (thinking tokens are consumed server-side, not returned).
     """
-    load_env_file()
-    key = os.environ.get("GEMINI_API_KEY")
-    if not key:
-        raise SystemExit("Set GEMINI_API_KEY in representation_transform_visuals/.env or your shell.")
+    key = api_key()
 
     from google import genai
     from google.genai import types

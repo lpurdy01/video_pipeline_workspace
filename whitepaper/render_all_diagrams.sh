@@ -11,7 +11,15 @@ SPECS="$REPO/whitepaper/diagram_specs"
 OUT="$REPO/whitepaper"
 MODEL="${MODEL:-models/nano-banana-pro-preview}"
 
-export GEMINI_API_KEY="${GEMINI_API_KEY:-$(grep GEMINI_API_KEY "$REPO/representation_transform_visuals/.env" | cut -d= -f2)}"
+# Credentials come from the user store; an exported GEMINI_API_KEY still wins.
+CRED_SH="${XDG_CONFIG_HOME:-$HOME/.config}/video-pipeline/credentials.sh"
+# shellcheck source=/dev/null
+[ -r "$CRED_SH" ] && . "$CRED_SH"
+
+if [ -z "${GEMINI_API_KEY:-}" ]; then
+  echo "Missing GEMINI_API_KEY — add it to ${XDG_CONFIG_HOME:-$HOME/.config}/video-pipeline/credentials.env" >&2
+  exit 1
+fi
 
 echo "Model: $MODEL"
 echo "Output: $OUT"

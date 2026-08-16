@@ -62,7 +62,8 @@ The verifiability compiler may later reference the representation-transform work
 
 ## Secret Handling
 
-API keys and local credentials belong in ignored `.env` files or shell environment variables only.
+API keys and local credentials belong in the user credential store at `~/.config/video-pipeline/credentials.env`
+(loaded by `workspace_credentials.py`), or in ignored `.env` files / shell environment variables.
 
 Do not commit real keys in `.env.example`, Markdown, scripts, generated reports, or shell snippets.
 

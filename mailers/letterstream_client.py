@@ -7,9 +7,9 @@ Endpoint: https://www.letterstream.com/apis/index.php  POST multipart/form-data
 All submissions use preauth=1 — jobs land in cart/preauth state and will NOT
 be mailed until manually released via the LetterStream dashboard (doauth=authcode).
 
-Credentials: read from .env_temp in repo root (gitignored), in the form
-  Your API_ID : <api_id>
-  Your API_KEY : <api_key>
+Credentials: LETTERSTREAM_API_ID / LETTERSTREAM_API_KEY, read from the user
+credential store at ~/.config/video-pipeline/credentials.env (see
+workspace_credentials.py in the repo root).
 
 Usage:
   python letterstream_client.py --test           # verify auth + account balance
@@ -31,12 +31,14 @@ from pathlib import Path
 import requests
 from pypdf import PdfReader
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from workspace_credentials import require  # noqa: E402
+
 HERE = Path(__file__).parent
 DATA = HERE / "data"
 OUT = HERE / "out"
 
 API_ENDPOINT = "https://www.letterstream.com/apis/index.php"
-ENV_FILE = HERE.parent / ".env_temp"
 
 
 # ---------------------------------------------------------------------------
@@ -44,18 +46,7 @@ ENV_FILE = HERE.parent / ".env_temp"
 # ---------------------------------------------------------------------------
 
 def load_credentials() -> tuple[str, str]:
-    if not ENV_FILE.exists():
-        raise SystemExit(f"Credentials file not found: {ENV_FILE}")
-    api_id = api_key = ""
-    for line in ENV_FILE.read_text().splitlines():
-        line = line.strip()
-        if "API_ID" in line and ":" in line:
-            api_id = line.split(":", 1)[-1].strip()
-        elif "API_KEY" in line and ":" in line:
-            api_key = line.split(":", 1)[-1].strip()
-    if not api_id or not api_key:
-        raise SystemExit(f"Could not parse API_ID / API_KEY from {ENV_FILE}")
-    return api_id, api_key
+    return require("LETTERSTREAM_API_ID"), require("LETTERSTREAM_API_KEY")
 
 
 # ---------------------------------------------------------------------------

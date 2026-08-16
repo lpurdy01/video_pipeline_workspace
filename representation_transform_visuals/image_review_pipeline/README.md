@@ -32,10 +32,12 @@ It uses a Gemini vision-capable model to inspect keyframes or stills and identif
 
 ## Key Handling
 
-The script reads `GEMINI_API_KEY` from:
+The script reads `GEMINI_API_KEY` via `workspace_credentials.require()`, which
+resolves in this order:
 
-1. the shell environment, or
-2. `representation_transform_visuals/.env`
+1. the shell environment (one-off overrides win), then
+2. `representation_transform_visuals/.env` (optional local override), then
+3. the user credential store at `~/.config/video-pipeline/credentials.env`
 
 Do not put keys in committed files. `.env.example` must stay as placeholders only.
 

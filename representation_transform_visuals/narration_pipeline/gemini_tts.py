@@ -2,30 +2,20 @@ from __future__ import annotations
 
 import argparse
 import os
+import sys
 import wave
 from pathlib import Path
 
 from google import genai
 from google.genai import types
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from workspace_credentials import require  # noqa: E402
+
 
 DEFAULT_MODEL = "gemini-3.1-flash-tts-preview"
 DEFAULT_VOICE = "Kore"
 ROOT = Path(__file__).resolve().parents[1]
-
-
-def load_env_file(path: Path) -> None:
-    if not path.exists():
-        return
-    for raw_line in path.read_text(encoding="utf-8").splitlines():
-        line = raw_line.strip()
-        if not line or line.startswith("#") or "=" not in line:
-            continue
-        key, value = line.split("=", 1)
-        key = key.strip()
-        value = value.strip().strip('"').strip("'")
-        if key and value and key not in os.environ:
-            os.environ[key] = value
 
 
 def write_wav(path: Path, pcm: bytes, channels: int = 1, rate: int = 24000, sample_width: int = 2) -> None:
@@ -61,10 +51,7 @@ def main() -> None:
     parser.add_argument("--style", default="Read this clearly and naturally, like a thoughtful technical YouTube narrator.")
     args = parser.parse_args()
 
-    load_env_file(ROOT / ".env")
-    api_key = os.environ.get("GEMINI_API_KEY")
-    if not api_key:
-        raise SystemExit("Set GEMINI_API_KEY in your shell or local .env before running.")
+    api_key = require("GEMINI_API_KEY")
 
     if args.text_file:
         text = args.text_file.read_text(encoding="utf-8")

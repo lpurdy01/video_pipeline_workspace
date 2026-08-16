@@ -274,15 +274,14 @@ def concat_clips(clips: list[Path], out: Path, width: int, height: int, fps: int
 
 def generate_scratch_tts(text_path: Path, out_path: Path, model: str, voice: str, style: str) -> None:
     sys.path.insert(0, (ROOT / "narration_pipeline").as_posix())
-    from gemini_tts import DEFAULT_MODEL, DEFAULT_VOICE, extract_audio_bytes, load_env_file, write_wav
+    from gemini_tts import DEFAULT_MODEL, DEFAULT_VOICE, extract_audio_bytes, write_wav
     from google import genai
     from google.genai import types
-    import os
 
-    load_env_file(ROOT / ".env")
-    api_key = os.environ.get("GEMINI_API_KEY")
-    if not api_key:
-        raise RuntimeError("GEMINI_API_KEY is missing. Add it to representation_transform_visuals/.env or the shell.")
+    sys.path.insert(0, str(REPO_ROOT))
+    from workspace_credentials import require
+
+    api_key = require("GEMINI_API_KEY")
 
     text = text_path.read_text(encoding="utf-8")
     client = genai.Client(api_key=api_key)
