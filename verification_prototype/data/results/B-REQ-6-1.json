@@ -1,0 +1,12 @@
+{
+  "verdict": "covered",
+  "confidence": 1.0,
+  "rationale": "The whitepaper explicitly covers all three required process-level measures to mitigate automation bias: the evidence-first presentation mechanism, the disagreement rate reporting by reviewer, task type, and time period, and the disaggregated presentation of the VRM/confidence score components. The rationale regarding DO-330 TQL-5 and process assurance is also directly stated.",
+  "coverage_gaps": [],
+  "best_matching_section": "Concept: Verification Compiler / Automation Bias Mitigation and Reviewer Independence",
+  "whitepaper_improvement_suggestion": "",
+  "vqp_id": "B-REQ-6-1",
+  "vqp_type": "requirement_coverage",
+  "requirement_id": "REQ-6-1",
+  "requirement_title": "Automation Bias Mitigation"
+}

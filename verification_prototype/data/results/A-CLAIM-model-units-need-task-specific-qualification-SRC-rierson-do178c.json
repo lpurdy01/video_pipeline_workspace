@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source explicitly matches the claim, stating that tools or models used in verification roles require task-specific qualification and usage boundaries. Using the DO-178C and DO-330 software tool qualification frameworks as an analogy for evaluating AI model/agent units perfectly aligns with the declared 'analogy support' type.",
+  "what_source_actually_says": "The source states that under DO-178C and DO-330, tools or model units performing verification activities require rigorous, task-specific qualification, defined usage boundaries, and evidence of their operational role.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "The source specifically grounds this in aviation safety standards (DO-178C/DO-330) for software tools, which the claim applies by analogy to AI 'agent units'.",
+  "vqp_id": "A-CLAIM-model-units-need-task-specific-qualification-SRC-rierson-do178c",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-model-units-need-task-specific-qualification",
+  "source_id": "SRC-rierson-do178c"
+}

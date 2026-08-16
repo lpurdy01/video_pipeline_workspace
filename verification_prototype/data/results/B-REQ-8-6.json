@@ -1,0 +1,12 @@
+{
+  "verdict": "covered",
+  "confidence": 1.0,
+  "rationale": "The whitepaper contains a section dedicated entirely to Data and Control Coupling Coverage (DCCC) that mirrors the requirement text almost exactly. It details the DO-178C constraints, the blindspots of Stage 1 per-leaf-node VQPs, the role of specialized external tools, and the planned Stage 2 integration of these reports into the VC artifact graph.",
+  "coverage_gaps": [],
+  "best_matching_section": "Known Architectural Challenges / Data and Control Coupling Coverage (DCCC)",
+  "whitepaper_improvement_suggestion": "",
+  "vqp_id": "B-REQ-8-6",
+  "vqp_type": "requirement_coverage",
+  "requirement_id": "REQ-8-6",
+  "requirement_title": "Data and Control Coupling Coverage (DCCC)"
+}

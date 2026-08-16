@@ -1,0 +1,28 @@
+Diagram 4: Cross-Standard Evidence Structure
+
+THREE COLUMNS side by side, each with a colored header:
+
+COLUMN 1 — DO-178C (blue header):
+- Domain: Airborne software (FAA)
+- Safety Levels: DAL A (catastrophic) → DAL E (no effect)
+- Evidence Artifacts: Requirements data, Design description, Source code, Test procedures, Test results, Reviews/inspections, Traceability matrix
+- Reviewer: [RED TEXT] NOT SPECIFIED
+
+COLUMN 2 — ISO 26262 (green header):
+- Domain: Automotive functional safety
+- Safety Levels: ASIL A (lowest) → ASIL D (highest)
+- Evidence Artifacts: Safety plan, Hazard analysis, Technical safety concept, Software requirements, Verification reports, Test results, Traceability
+- Reviewer: [RED TEXT] NOT SPECIFIED
+
+COLUMN 3 — IEC 62443 (orange header):
+- Domain: Industrial / OT cybersecurity
+- Safety Levels: SL1 (casual) → SL4 (state-level threat)
+- Evidence Artifacts: Security requirements, Design documentation, Verification results, Test records, Risk assessment, Countermeasure evidence
+- Reviewer: [RED TEXT] NOT SPECIFIED
+
+FOOTER BOX (green background, full width):
+"Common Pattern: All three standards define evidence objectives and tiered rigor levels.
+None specify reviewer identity.
+→ A verification compiler producing conformant evidence satisfies each standard by design."
+
+Style: white background, clean technical table/comparison layout, readable sans-serif labels, colored column headers, red text for "NOT SPECIFIED" rows, minimum 1200×900 px.

@@ -1,0 +1,29 @@
+Diagram 1: The Artifact Graph
+
+Three color-coded zones arranged left-to-right.
+
+ZONE 1 — Requirements (blue background, left third):
+- "System Requirement SR-1" node at top
+- Arrow down to "High-Level Requirement HL-1"
+- Arrow down to "Low-Level Requirement LL-1"
+- Edge label: "traces-to"
+
+ZONE 2 — Code Units (purple background, center):
+- "read_sensor() : src/sensor.c" node
+- Connected from LL-1 via solid "traces-to" arrow from left
+- Dashed "references" arrow pointing right to "ADC Datasheet Rev B" (teal node, sits between zones 2 and 3)
+
+ZONE 3 — Verification Evidence (green background, right third):
+- "Test Case TC-001" (orange node), connected from read_sensor() via "verified-by" solid arrow
+- "Test Result TR-001 ✓" (green node), connected from TC-001 via "has-result" arrow
+- "Static Analysis SA-001" (yellow node), connected from read_sensor() via "analyzed-by" dashed arrow
+- Small note below TR-001: "version-tied: git:a1b2c3"
+
+LEGEND (bottom of diagram):
+- Solid arrow → traces-to / verified-by / has-result
+- Dashed arrow → references / analyzed-by
+
+CAPTION (below diagram):
+"Graph structure proves coverage — orphan code (no requirement link) and orphan requirements (no code link) surface as graph anomalies."
+
+Style: white background, clean technical illustration, readable sans-serif labels, minimum 1200×900 px.

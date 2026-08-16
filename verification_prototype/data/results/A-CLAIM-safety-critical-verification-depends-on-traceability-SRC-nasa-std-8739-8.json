@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The NASA standard explicitly states that hazard-related software assurance depends on linking requirements, implementation, tests, and results. It also confirms that validating relationships between requirements, code, tests, and results is a core function of verification.",
+  "what_source_actually_says": "The source is a public NASA standard that states software assurance for hazards depends on establishing links across requirements, implementation, tests, and verification results.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "",
+  "vqp_id": "A-CLAIM-safety-critical-verification-depends-on-traceability-SRC-nasa-std-8739-8",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-safety-critical-verification-depends-on-traceability",
+  "source_id": "SRC-nasa-std-8739-8b"
+}

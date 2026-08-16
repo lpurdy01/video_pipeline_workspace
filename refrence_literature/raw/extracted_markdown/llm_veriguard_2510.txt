@@ -1,0 +1,49 @@
+SOURCE: arXiv:2510.05156
+TITLE: VeriGuard: Enhancing LLM Agent Safety via Verified Code Generation
+AUTHORS: Lesly Miculicich, Mihir Parmar, Hamid Palangi, Krishnamurthy Dj Dvijotham,
+         Mirko Montanari, Tomas Pfister, Long T. Le
+YEAR: 2025 (submitted October 3, 2025)
+VENUE: arXiv cs.SE, cs.AI, cs.CR
+FETCHED: 2026-05-19 via arxiv.org/abs/2510.05156
+
+== ABSTRACT ==
+
+VeriGuard provides formal safety guarantees for LLM-based agents through a dual-stage
+architecture:
+
+STAGE 1 (Offline):
+  - Clarify user intent
+  - Synthesize behavioral policies
+  - Conduct testing and formal verification
+  - Iteratively refine policies until correctness is established
+
+STAGE 2 (Online/Runtime):
+  - Runtime monitoring: validate each proposed action against pre-verified policies
+  - Reject actions that violate verified policy specifications before execution
+
+Targets autonomous AI agents in sensitive domains (healthcare mentioned in general context).
+
+== WHAT THIS PAPER ACTUALLY SHOWS ==
+
+This is NOT about using LLMs to verify code for safety properties.
+This IS about using formal verification to ensure LLM-generated code/actions comply with
+pre-specified safety policies.
+
+The paper provides a framework for making LLM AGENTS safer — it wraps LLM code generation
+with formal verification infrastructure to catch policy violations.
+
+== CITATION MISMATCH (flagged during provenance review, 2026-05-19) ==
+
+The source_to_claim_matrix cited this paper for:
+"LLM-based verification achieves meaningful accuracy on bounded safety tasks"
+
+This claim is NOT supported by VeriGuard. VeriGuard:
+- Does not demonstrate that LLMs evaluate safety properties accurately
+- Does not measure LLM accuracy on safety verification tasks
+- Shows a DIFFERENT thing: that formal verification can be used to constrain LLM behavior
+
+The correct claim this paper might support:
+"Formal verification can be combined with LLM code generation to provide safety guarantees"
+— which is adjacent to but not the same as the Verification Compiler's claim.
+
+The original matrix citation may have conflated VeriGuard's scope.

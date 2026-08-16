@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source explicitly matches the claim, stating directly that human reviewer qualification is informally assessed via resumes and training history, while DO-330 tool qualification is more formal and rigorous.",
+  "what_source_actually_says": "The source explicitly states: 'Human reviewer \"qualification\" is informally assessed (résumés, training history). DO-330 tool qualification is more formal and rigorous — an interesting asymmetry.'",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "",
+  "vqp_id": "A-CLAIM-human-reviewer-qualification-in-do-178c-is-informa-SRC-rierson-do178c",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-human-reviewer-qualification-in-do-178c-is-informa",
+  "source_id": "SRC-rierson-do178c"
+}

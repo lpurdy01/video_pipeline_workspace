@@ -1,0 +1,45 @@
+DIAGRAM 5 — Units of Intelligence: A New Category and Reviewer Endpoint Replaceability
+
+PURPOSE:
+Explain that LLMs are a new category of unit of intelligence — not DO-330 software tools and not replacements for human engineers. Show how the compound architecture handles this by making reviewer endpoints pluggable, with only TWO reviewer endpoint types: Human Engineer (certification) and LLM Model Unit (developmental/nightly CI).
+
+NOTE: Specialized tools like cppcheck, clang-tidy, and timing analyzers are NOT reviewer endpoints. They feed evidence nodes into the artifact graph DAG, which then appear inside verification query packets. This is shown with a dashed arrow from "Specialized Tools" into the artifact graph node, not as a reviewer endpoint.
+
+TOP SECTION — Property Comparison Table (2 columns only):
+Left column: Human Engineer
+Right column: LLM Model Unit
+
+Property rows:
+- Capacity: Human = working memory, bounded by cognitive load, ~10s of artifacts; LLM = context window, bounded by design (6–128K tokens per query)
+- Accuracy: Human = high, experience-dependent, task-specific, declines with fatigue; LLM = task-specific, measurable, 16–33% variance across domains (MMLU-Pro)
+- Adaptability: Human = cross-session learning, career-long domain expertise; LLM = strong in-context adaptation, no cross-session memory
+- Qualification Pathway: Human = education + certification + project authorization; LLM = task-specific accuracy profiling + usage boundary definition
+- Certification Role: Human = primary — human verdict IS the certification evidence; LLM = developmental only — LLM verdict is engineering feedback, not evidence
+
+WARNING CALLOUT (prominently styled, red/orange):
+"LLMs were not designed to meet DO-330 constraints — they are a new category of unit of intelligence, not deterministic tools with fixed specifications. The compound architecture handles this, not DO-330 qualification of the LLM."
+
+BOTTOM SECTION — Compound Architecture with DAG and Two Endpoints:
+
+Left side: A box for "Specialized Tools (cppcheck, clang-tidy, timing analyzers...)" with a dashed arrow pointing INTO the DAG node labeled "evidence nodes". These are NOT reviewer endpoints.
+
+Center: A "DAG Node (code unit + req chain + evidence)" box with a note "directed acyclic graph — no looping references". Arrow down to "Verification Query Package (deterministic assembly from DAG)".
+
+Query package branches with arrows to TWO endpoints only:
+- Left: Human Engineer (certification pass) — labeled "Independence: human reviewer is independent of developer — satisfies DO-178C"
+- Right: LLM Model Unit (nightly CI) — labeled "Model diversity: rotate vendors so multiple training sets must concur"
+
+KEY MESSAGES:
+1. Only human and LLM are reviewer endpoints — specialized tools feed evidence into queries, not review them
+2. The artifact graph must be a DAG — no cycles, enabling deterministic traversal
+3. Independence is satisfied by the human endpoint, not by rotating models
+4. Rotating models is an engineering quality benefit: multiple vendor training sets concurring before human review time is spent
+
+VISUAL STYLE:
+- Human column/endpoint: blue tones
+- LLM column/endpoint: purple tones
+- Specialized tools: teal/cyan with dashed connection to show "evidence input, not endpoint"
+- Warning callout: red/orange border
+- Query package: amber/yellow
+- DAG node: amber/yellow with DAG note in muted text
+- Clean, engineering-diagram aesthetic for safety-critical software whitepaper audience

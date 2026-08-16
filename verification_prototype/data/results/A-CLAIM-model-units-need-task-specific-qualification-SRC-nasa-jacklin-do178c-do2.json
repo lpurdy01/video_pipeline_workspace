@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 0.95,
+  "rationale": "The source explicitly provides an analogy for model-unit qualification, stating that traditional software tools used for verification must be qualified in a project- and use-context-dependent manner. Since the declared support type is 'analogy support', applying these traditional tool qualification requirements (usage boundaries, context-specific qualification) to AI models perfectly fits the claim.",
+  "what_source_actually_says": "The source explains that under DO-178C and DO-330, tools used to verify software must be qualified based on their specific use context and assurance level, and explicitly notes that this traditional tool qualification can serve as an analogy for model-unit qualification.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "The source explicitly warns that while tool qualification can inspire model-unit qualification, the analogy must remain limited, as traditional tools and AI models operate differently.",
+  "vqp_id": "A-CLAIM-model-units-need-task-specific-qualification-SRC-nasa-jacklin-do178c-do2",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-model-units-need-task-specific-qualification",
+  "source_id": "SRC-nasa-jacklin-do178c-do278a"
+}

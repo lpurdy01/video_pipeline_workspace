@@ -1,0 +1,12 @@
+{
+  "verdict": "covered",
+  "confidence": 1.0,
+  "rationale": "The whitepaper explicitly addresses this requirement under the 'Per-query confidence' heading, stating that a confidence value is recorded for each review result and that model result confidence is derived from the task-specific ModelAccuracyProfile.",
+  "coverage_gaps": [],
+  "best_matching_section": "Concept: Verification Compiler / Verification Readiness Metric",
+  "whitepaper_improvement_suggestion": "",
+  "vqp_id": "B-REQ-4-1",
+  "vqp_type": "requirement_coverage",
+  "requirement_id": "REQ-4-1",
+  "requirement_title": "Per-Query Confidence"
+}

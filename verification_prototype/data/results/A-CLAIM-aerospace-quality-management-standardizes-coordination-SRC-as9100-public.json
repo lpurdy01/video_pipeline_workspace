@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source explicitly confirms that aerospace quality management systems like AS9100 help frame cross-organization coordination, supply-chain alignment, auditability, and process consistency. The claim accurately reflects this information based on the public summaries and metadata provided.",
+  "what_source_actually_says": "The source states that IAQG describes 9100 as standardizing quality management system requirements across supply-chain levels, and notes that aerospace quality systems generally help frame coordination, auditability, and process consistency.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "",
+  "vqp_id": "A-CLAIM-aerospace-quality-management-standardizes-coordination-SRC-as9100-public",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-aerospace-quality-management-standardizes-coordination",
+  "source_id": "SRC-as9100-public-references"
+}

@@ -1,0 +1,15 @@
+graphify-out/
+.git/
+.codex/
+.venv/
+.venv-graphify/
+**/__pycache__/
+**/.DS_Store
+
+# Avoid double-counting source material when a PDF has been extracted to Markdown.
+refrence_literature/**/*.pdf
+
+# Draft variants are useful history, but they should not drive the research graph.
+Introductory_composition.md
+Introductory_composition_full.md
+Introductory_composition_human_written.md

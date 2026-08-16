@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source explicitly states that DO-178C, a prominent safety-critical software standard, emphasizes bidirectional traceability across requirements, code, tests, procedures, and test results. This directly aligns with the claim that safety-critical verification depends on tracing requirements, implementation artifacts, verification activities, and results.",
+  "what_source_actually_says": "The NASA paper notes that DO-178C expects bidirectional traceability connecting requirements, source code, tests, procedures, and test results.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "",
+  "vqp_id": "A-CLAIM-safety-critical-verification-depends-on-traceability-SRC-nasa-jacklin-do",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-safety-critical-verification-depends-on-traceability",
+  "source_id": "SRC-nasa-jacklin-do178c-do278a"
+}

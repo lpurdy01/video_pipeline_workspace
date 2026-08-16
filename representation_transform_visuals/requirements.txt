@@ -1,0 +1,7 @@
+pillow==12.1.0
+numpy==2.4.2
+manim==0.20.1
+google-genai
+faster-whisper
+requests
+yt-dlp

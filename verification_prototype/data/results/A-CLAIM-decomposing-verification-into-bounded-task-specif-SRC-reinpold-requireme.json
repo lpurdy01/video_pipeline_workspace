@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source explicitly provides empirical data showing that LLM accuracy degrades (F1 score drops from 0.92 to 0.81) as the number of requirements per prompt increases from 5 to 20. It directly recommends decomposing queries into bounded prompts to improve performance, perfectly aligning with the whitepaper's claim.",
+  "what_source_actually_says": "The source states that evaluating multiple requirements in a single prompt degrades LLM accuracy, showing an F1 score drop from 0.92 at 5 requirements to 0.81 at 20 requirements, and explicitly recommends using multiple parallel bounded prompts.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "The source focuses on MBSE and smart grid configuration rather than safety-critical software, though the structural requirements-verification task is the same.",
+  "vqp_id": "A-CLAIM-decomposing-verification-into-bounded-task-specif-SRC-reinpold-requireme",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-decomposing-verification-into-bounded-task-specif",
+  "source_id": "SRC-reinpold-requirements-verification"
+}

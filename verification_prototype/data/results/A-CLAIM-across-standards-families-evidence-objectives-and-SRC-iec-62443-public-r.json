@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source explicitly confirms that across multiple standards families (IEC 62443, ISO 26262, DO-178C), verification objectives and required evidence artifacts are defined by tiered levels rather than a specified implementation method.",
+  "what_source_actually_says": "The source states that IEC 62443, ISO 26262, and DO-178C share a structural pattern of tiered severity/security levels, defined verification objectives, and required evidence artifacts, without mandating specific implementation methods.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "",
+  "vqp_id": "A-CLAIM-across-standards-families-evidence-objectives-and-SRC-iec-62443-public-r",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-across-standards-families-evidence-objectives-and",
+  "source_id": "SRC-iec-62443-public-references"
+}

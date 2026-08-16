@@ -1,0 +1,18 @@
+{
+  "return_address": {
+    "name": "Levi Purdy",
+    "line1": "4764 E Sunrise Dr, Unit #630",
+    "line2": "Tucson, AZ 85718-4535",
+    "line3": "lpurdy01@gmail.com  |  purdy3@wisc.edu"
+  },
+  "paper": {
+    "title": "Bounded LLM Review for Continuous Verification",
+    "subtitle": "A Graph-Decomposition Architecture for Safety-Critical Software",
+    "date": "June 2026",
+    "status": "Stage 1 Architecture Preview"
+  },
+  "qr_url": "https://TODO_INSERT_LINK",
+  "qr_label": "Full whitepaper available at the link above",
+  "diagram_artifact_graph": "../whitepaper/diagram1_artifact_graph.png",
+  "diagram_dual_mode": "../whitepaper/diagram3_dual_mode.png"
+}

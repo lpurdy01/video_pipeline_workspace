@@ -1,0 +1,45 @@
+SOURCE: NASA NTRS 20030017771
+TITLE: Learning Assumptions for Compositional Verification
+AUTHORS: Jamieson M. Cobleigh, Dimitra Giannakopoulou, Corina Pasăreanu, Daniel Clancy
+YEAR: 2002 (Report date: November 1, 2002; NTRS ID: 20030017771)
+REPORT NUMBER: RIACS-TR-02.09
+INSTITUTION: Research Institute for Advanced Computer Science, Ames Research Center
+STATUS: Public Use Permitted
+FETCHED: 2026-05-19 via ntrs.nasa.gov/citations/20030017771
+
+Note: Full PDF is image-based (scanned document). Abstract and metadata extracted from NTRS citation page.
+Full PDF: https://ntrs.nasa.gov/api/citations/20030017771/downloads/20030017771.pdf
+
+== ABSTRACT (from NTRS citation page) ==
+
+"Compositional verification is a promising approach to addressing the state explosion problem
+associated with model checking."
+
+The paper describes an automated assume-guarantee reasoning framework that generates
+environmental assumptions needed for component properties to hold. A learning algorithm
+iteratively refines these assumptions through counterexamples until reaching a definitive
+conclusion about system correctness.
+
+The authors implemented their approach in the LTSA (Labeled Transition System Analyzer) tool
+and validated it against a NASA system.
+
+== CORE CONCEPT ==
+
+Assume-guarantee reasoning: to verify a composite system M = M1 || M2, decompose into:
+1. Verify M1 against assumption A (what M1 assumes about its environment)
+2. Verify M2 under the constraint that it provides A to M1's environment
+If both hold, the full system M satisfies the property.
+
+Each component is verified independently against bounded interface specifications —
+no component needs to reason about the full system state at once.
+
+== RELEVANCE TO VERIFICATION COMPILER ==
+
+The state explosion problem in model checking is the formal methods equivalent of the
+context window problem in LLM-based verification: you cannot verify a large system
+in a single pass because the state space (or context) is too large.
+
+Assume-guarantee's compositional decomposition is the formal methods lineage for the
+VC's DAG query decomposition: each code unit is verified against its specific requirement
+chain and interface assumptions, encoded as VQP boundaries. The DAG edges are the
+assume-guarantee interfaces.

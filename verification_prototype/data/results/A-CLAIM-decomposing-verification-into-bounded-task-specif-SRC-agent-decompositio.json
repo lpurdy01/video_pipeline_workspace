@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source explicitly matches the claim, stating almost verbatim that decomposing complex verification tasks into bounded, separately-called queries improves LLM accuracy compared to monolithic single-prompt review. It also validates the requested 'empirical support' type by referencing Khot and Reinpold for measurable accuracy improvements.",
+  "what_source_actually_says": "The source states that decomposing verification tasks into bounded queries improves LLM accuracy over monolithic reviews, noting that Khot proves this generally and Reinpold proves it empirically for requirements verification.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "",
+  "vqp_id": "A-CLAIM-decomposing-verification-into-bounded-task-specif-SRC-agent-decompositio",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-decomposing-verification-into-bounded-task-specif",
+  "source_id": "SRC-agent-decomposition-literature"
+}

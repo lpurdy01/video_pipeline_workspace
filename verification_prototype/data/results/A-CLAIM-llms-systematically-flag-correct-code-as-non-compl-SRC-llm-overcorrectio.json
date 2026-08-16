@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source provides direct empirical data demonstrating that LLMs have high false rejection rates (flagging correct code) compared to much lower false acceptance rates (missing non-compliant code), directly supporting the claim of an asymmetric false-rejection bias.",
+  "what_source_actually_says": "The source explicitly states that LLMs over-flag correct code as failing at rates far higher than they miss genuinely non-compliant code, citing GPT-4o false acceptance rates of 3.70% vs false rejection rates of 35.9% (which worsen with explanation prompts).",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "The empirical data specifically references benchmarks like MBPP and HumanEval.",
+  "vqp_id": "A-CLAIM-llms-systematically-flag-correct-code-as-non-compl-SRC-llm-overcorrectio",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-llms-systematically-flag-correct-code-as-non-compl",
+  "source_id": "SRC-llm-overcorrection"
+}

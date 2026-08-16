@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 0.95,
+  "rationale": "The source explicitly states that DO-330 contains structured objectives, activities, and life cycle data for tool qualification, and notes that it is not merely a casual confidence statement. This provides direct support for the premise of the claim, which the author then applies to the qualification of LLM reviewer components.",
+  "what_source_actually_says": "The source notes that DO-330 provides an acceptable method for tool qualification through specific objectives, activities, and life cycle data, emphasizing that qualification requires objective evidence rather than just a casual statement of confidence.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "The source discusses traditional software tool qualification under DO-330, whereas the claim proposes extending these principles to LLM reviewer components in the Verification Compiler.",
+  "vqp_id": "A-CLAIM-do-330-tool-qualification-requires-structured-obje-SRC-faa-ac-20-115d",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-do-330-tool-qualification-requires-structured-obje",
+  "source_id": "SRC-faa-ac-20-115d"
+}

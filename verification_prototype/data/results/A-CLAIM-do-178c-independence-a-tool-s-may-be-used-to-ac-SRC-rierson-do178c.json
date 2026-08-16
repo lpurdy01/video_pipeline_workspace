@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source explicitly provides the verbatim quote from DO-178C regarding independence, stating that 'a tool(s) may be used to achieve equivalence to the human verification activity', which perfectly matches the claim.",
+  "what_source_actually_says": "The source states that DO-178C independence can be met by either a person or a qualified tool, and quotes the standard's exact definition showing that tools may be used to achieve equivalence to human verification.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "",
+  "vqp_id": "A-CLAIM-do-178c-independence-a-tool-s-may-be-used-to-ac-SRC-rierson-do178c",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-do-178c-independence-a-tool-s-may-be-used-to-ac",
+  "source_id": "SRC-rierson-do178c"
+}

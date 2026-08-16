@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source explicitly confirms that both ISO 26262 and DO-178C tie verification rigor to their respective levels (ASIL and DAL). It also directly states that these standards mandate evidence production and traceability without specifying or prescribing any particular method or technology.",
+  "what_source_actually_says": "The source states that ISO 26262 uses ASIL levels (analogous to DO-178C's DAL levels) to tie verification rigor to hazard severity, and that Volpe/NHTSA assessments note both standards focus on evidence objectives rather than mandating specific methods or technologies.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "",
+  "vqp_id": "A-CLAIM-across-standards-families-evidence-objectives-and-SRC-iso-26262-public-r",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-across-standards-families-evidence-objectives-and",
+  "source_id": "SRC-iso-26262-public-references"
+}

@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source explicitly matches the claim, stating directly that safety-critical verification includes review, analysis, and test activities rather than relying on testing alone.",
+  "what_source_actually_says": "The source states that safety-critical verification is an integral process that produces reviewable evidence through reviews, analyses, and tests, and is not just testing.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "",
+  "vqp_id": "A-CLAIM-verification-requires-review-analysis-and-test-SRC-rierson-do178c",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-verification-requires-review-analysis-and-test",
+  "source_id": "SRC-rierson-do178c"
+}

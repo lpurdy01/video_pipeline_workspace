@@ -1,0 +1,12 @@
+{
+  "verdict": "covered",
+  "confidence": 1.0,
+  "rationale": "The whitepaper explicitly includes a paragraph titled 'Immutable evidence records' that matches the requirement text and its rationale verbatim, clearly explaining that review results are versioned and never modified in place to preserve the evidentiary chain.",
+  "coverage_gaps": [],
+  "best_matching_section": "Concept: Verification Compiler / Evidence, Auditability, and Configuration Management",
+  "whitepaper_improvement_suggestion": "",
+  "vqp_id": "B-REQ-5-1",
+  "vqp_type": "requirement_coverage",
+  "requirement_id": "REQ-5-1",
+  "requirement_title": "Immutable Evidence Records"
+}

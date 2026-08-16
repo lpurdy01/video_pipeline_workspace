@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source explicitly states that models are highly adaptable within a context window but do not retain experience across sessions without retraining. This perfectly matches the core claim presented in the whitepaper.",
+  "what_source_actually_says": "The source asserts that while models exhibit strong in-context learning during a single session, they cannot retain this adapted experience across different sessions unless they undergo retraining.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "",
+  "vqp_id": "A-CLAIM-model-adaptability-is-strong-within-context-but-do-SRC-amodei-adaptabili",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-model-adaptability-is-strong-within-context-but-do",
+  "source_id": "SRC-amodei-adaptability"
+}

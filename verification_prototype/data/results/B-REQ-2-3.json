@@ -1,0 +1,12 @@
+{
+  "verdict": "covered",
+  "confidence": 1.0,
+  "rationale": "The whitepaper explicitly states that physical test evidence from a code version different from the source unit under evaluation is actively rejected during VQP assembly. It also includes the exact rationale that such evidence does not prove the current version's behavior.",
+  "coverage_gaps": [],
+  "best_matching_section": "Concept: Verification Compiler / Graph Traversal as Decomposition",
+  "whitepaper_improvement_suggestion": "",
+  "vqp_id": "B-REQ-2-3",
+  "vqp_type": "requirement_coverage",
+  "requirement_id": "REQ-2-3",
+  "requirement_title": "Version Consistency"
+}

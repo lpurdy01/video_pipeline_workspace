@@ -1,0 +1,51 @@
+Diagram 7: Verification Compiler Development Maturity Path
+
+PURPOSE:
+Show where this Stage 1 whitepaper sits in the concept's development progression. The key message is that Stage 1 records structure, requirements, traceability, and likely pitfalls; it is not a functional deployment claim. The path must clearly show the stages that must happen before real project deployment.
+
+LAYOUT:
+Use a clean horizontal tech-tree / roadmap layout with five sequential stages connected by arrows:
+
+1. Stage 1 — Research Architecture
+   - "Record structure, requirements, traceability model, known pitfalls"
+   - Mark this as "current stage / now"
+
+2. Stage 2 — Practice Deployment
+   - "Representative embedded C codebase"
+   - "Find graph-construction faults, VQP size limits, model error modes, human review ergonomics"
+   - Mark this as "next"
+
+3. Stage 3 — Formal Implementation
+   - "Harden deterministic graph builder, traverser, evidence store, review UI"
+   - Mark this as "then"
+
+4. Stage 4 — Qualification + Self-Verification
+   - "Analyze the implementation under the same VC infrastructure"
+   - "Prepare tool qualification evidence"
+   - Mark this as "before certification use"
+
+5. Stage 5 — Project Deployment
+   - "Use on real programs with calibrated gates and human review"
+   - Mark this as "eventual use"
+
+BOTTOM BAND:
+Add a labeled band under the Stage 2 node: "Stage 2 finds:" followed by compact tags:
+- graph faults
+- VQP size limits
+- model error modes
+- review UX issues
+- qualification gaps
+
+STYLE:
+- White background, print-friendly, no decorative gradients.
+- Use restrained colors: Stage 1 blue, Stage 2 green, Stage 3 amber, Stage 4 purple, Stage 5 red.
+- Make all text large and readable in a PDF at roughly 6.5 inches wide.
+- Keep all text inside boxes with generous padding.
+- Avoid overlap between arrows, text, and boxes.
+- Prefer a clean systems-engineering / roadmap aesthetic rather than a marketing timeline.
+
+TITLE:
+"Verification Compiler Development Maturity Path"
+
+SUBTITLE:
+"Stage 1 records structure and risk; it is not a deployment claim"

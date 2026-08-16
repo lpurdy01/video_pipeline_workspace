@@ -1,0 +1,58 @@
+{
+  "01_opening": [
+    ["Fourier transforms let us work with signals as frequencies", "Fourier transforms let us work with signals"],
+    ["Laplace transforms let engineers reason about dynamics", "Laplace transforms let engineers reason"],
+    ["The discrete cosine transform lets image and video systems", "discrete cosine transform lets image and video systems", "DCT lets image and video systems"],
+    ["Radio wireless communication image compression audio processing", "Radio wireless communication"],
+    ["My hypothesis is that large language models", "large language models are the beginning of another transform"],
+    ["you take a representation move it into another space", "take a representation move it into another space"]
+  ],
+  "02_the_classic_pattern": [
+    ["You start with some representation of the world", "start with some representation"],
+    ["The time signal becomes frequency components", "time signal becomes frequency components"],
+    ["The image becomes a stack of frequency-like patterns", "image becomes a stack of frequency like patterns"],
+    ["You can filter noise", "filter noise"],
+    ["Representation in Transform space Computation Representation out", "Representation in Transform space"]
+  ],
+  "03_the_new_thing": [
+    ["language is now part of this pattern", "language is part of this pattern"],
+    ["A sentence can be broken into tokens", "sentence can be broken into tokens"],
+    ["Those tokens can be turned into vectors", "tokens can be turned into vectors"],
+    ["English Python an image a plan a shell command", "English Python an image a plan"],
+    ["machines that can move human representations into a space", "move human representations into a space"],
+    ["preserves enough relationship structure to be useful", "relationship structure to be useful"]
+  ],
+  "05_pseudocode_to_code": [
+    ["A model can transform that intent"],
+    ["Because the input is missing information"],
+    ["the output has to contain assumptions"],
+    ["Sometimes those assumptions are helpful"],
+    ["Sometimes they are wrong"],
+    ["Sometimes they are inevitable"],
+    ["Sometimes they are invisible"]
+  ],
+  "07_the_loss": [
+    ["JPEG compression"],
+    ["With LLMs I think the loss is often semantic", "LLMs I think the loss is often semantic"],
+    ["Sometimes the model preserves"],
+    ["active subscription might become"],
+    ["The model has to choose some version"],
+    ["That choice is where loss and invention"],
+    ["semantic transform loss"],
+    ["Missing context can become executable assumptions"]
+  ],
+  "08_why_this_changes_the_technology_tree": [
+    ["writing programming design research planning review coordination education"],
+    ["Any workflow where humans pass around"]
+  ],
+  "10_validation_and_verification_become_the_work": [
+    ["validation asks whether"],
+    ["Verification asks whether"],
+    ["It can satisfy the prompt and fail the purpose"],
+    ["plausible output becomes abundant"],
+    ["Trustworthy output that still fits its purpose becomes scarce", "Trustworthy output", "Trustworthy output becomes scarce"],
+    ["You need requirements"],
+    ["When generation is expensive"],
+    ["When generation becomes cheap"]
+  ]
+}

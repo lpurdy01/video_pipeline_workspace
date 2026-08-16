@@ -1,0 +1,12 @@
+{
+  "verdict": "covered",
+  "confidence": 1.0,
+  "rationale": "The whitepaper provides a nearly verbatim description of the requirement, clearly explaining the challenge of multi-unit emergent properties and the proposed solution path using system-level VQPs and static analysis summaries.",
+  "coverage_gaps": [],
+  "best_matching_section": "Known Architectural Challenges / Multi-Unit and Emergent Requirements",
+  "whitepaper_improvement_suggestion": "",
+  "vqp_id": "B-REQ-8-2",
+  "vqp_type": "requirement_coverage",
+  "requirement_id": "REQ-8-2",
+  "requirement_title": "Multi-Unit and Emergent Requirements"
+}

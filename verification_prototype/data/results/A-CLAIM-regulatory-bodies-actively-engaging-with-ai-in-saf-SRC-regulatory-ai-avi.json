@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source explicitly states that the provided documents, including the EASA AI Roadmap 2.0, support the specific claim that regulatory bodies are actively engaging with AI in safety standards. The claim accurately reflects this narrow, permitted scope without overreaching.",
+  "what_source_actually_says": "The source notes that aviation and automotive regulators are actively engaging with AI as an open regulatory question, specifically citing the EASA AI Roadmap 2.0 as a strategic plan for integrating AI into aviation certification.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "The source clarifies that this engagement is about regulating AI as a component or open question, not an endorsement that AI verification tools currently satisfy existing standards.",
+  "vqp_id": "A-CLAIM-regulatory-bodies-actively-engaging-with-ai-in-saf-SRC-regulatory-ai-avi",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-regulatory-bodies-actively-engaging-with-ai-in-saf",
+  "source_id": "SRC-regulatory-ai-aviation-automotive"
+}

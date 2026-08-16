@@ -1,0 +1,29 @@
+{
+  "notes": [
+    "Reference videos supplied by the user for visual language and conceptual beats.",
+    "Use captured frames only as internal reference material for study, critique, and animation planning.",
+    "Do not copy finished frames directly into final public assets unless rights are clear."
+  ],
+  "videos": [
+    {
+      "id": "short_transform_reference",
+      "url": "https://www.youtube.com/shorts/FJtFZwbvkI4",
+      "focus": "Short-form visual explanation reference."
+    },
+    {
+      "id": "transform_math_reference_1",
+      "url": "https://www.youtube.com/watch?v=rURRYI66E54",
+      "focus": "Transform/math visualization reference."
+    },
+    {
+      "id": "vector_embedding_reference",
+      "url": "https://www.youtube.com/watch?v=LPZh9BOjkQs",
+      "focus": "Words, embeddings, vector-space relationships, and language-as-geometry reference."
+    },
+    {
+      "id": "llm_visual_reference",
+      "url": "https://www.youtube.com/watch?v=wjZofJX0v4M",
+      "focus": "LLM/transformer explanation visual reference."
+    }
+  ]
+}

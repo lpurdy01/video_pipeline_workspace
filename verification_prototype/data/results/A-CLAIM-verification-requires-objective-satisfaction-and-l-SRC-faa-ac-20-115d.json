@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source explicitly states that using DO-178C for compliance implies satisfying applicable objectives and producing life cycle data. It also directly states that assurance arguments should emphasize objective satisfaction and life cycle evidence rather than just final test results.",
+  "what_source_actually_says": "The source notes that DO-178C compliance requires satisfying applicable objectives and producing associated life cycle data, and emphasizes that assurance arguments must focus on objective satisfaction and life cycle evidence, not merely final test results.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "",
+  "vqp_id": "A-CLAIM-verification-requires-objective-satisfaction-and-l-SRC-faa-ac-20-115d",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-verification-requires-objective-satisfaction-and-l",
+  "source_id": "SRC-faa-ac-20-115d"
+}

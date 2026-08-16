@@ -1,0 +1,73 @@
+SOURCE: arXiv:2603.00539
+TITLE: Are LLMs Reliable Code Reviewers? Systematic Overcorrection in Requirement Conformance Judgement
+AUTHORS: Haolin Jin, Huaming Chen
+YEAR: 2026
+VENUE: arXiv cs.SE
+FETCHED: 2026-05-19 via arxiv.org/html/2603.00539
+
+== ABSTRACT ==
+
+Investigates whether large language models can dependably assess whether code implementations
+align with task requirements expressed in natural language. Reveals that LLMs frequently
+misclassify correct code implementations as non-compliant or defective (false rejections).
+More elaborate prompting strategies — particularly those requesting explanations and proposed
+corrections — actually increase misclassification rates.
+
+Proposes a "Fix-guided Verification Filter" that treats model-suggested fixes as testable
+evidence, validating both original and modified code against benchmark tests.
+
+== KEY EXPERIMENTAL RESULTS ==
+
+False Negative Rates (rejecting correct code that IS conformant):
+
+  GPT-4o on MBPP:
+    Direct prompt:    35.9% false rejection rate
+    Full prompt (with explanation request): 87.9% false rejection rate
+
+  Llama-3.1-8B on MBPP:
+    Direct prompt:    74.7% false rejection rate
+    Full prompt:      91.9% false rejection rate
+
+  Claude-4.5: more moderate increases but still substantial
+
+Prompt-Induced Tradeoff:
+  For GPT-4o on MBPP, moving to Full prompt:
+    - False acceptances reduced: 3.70% → 0.20% (improvement)
+    - False rejections increased: 184 → 451 cases (deterioration)
+  Adding explanation requirements eliminates false positives but more than doubles false negatives.
+
+== CATEGORIES OF FALSE REJECTION RATIONALES ==
+
+  Logic Error claims:           48.2% of false rejections
+  Added Requirements (hallucinated constraints): 14.1%
+  Boundary errors:              13.2%
+  Specification misreadings:    11.7%
+  Total for top 4 categories:  87.2%
+
+Models invent unsupported failure scenarios rather than genuinely identifying defects.
+
+== EXPLANATION RELIABILITY ==
+
+  Symptom awareness: 94-100% (high — model notices something seems wrong)
+  Root cause diagnosis: 44-75% (substantially weaker — model gets the why wrong)
+  Internal consistency: rationales sometimes contradict stated verdicts
+
+Models can be "right for wrong reasons."
+
+== PROPOSED MITIGATION ==
+
+Fix-guided Verification Filter: treat model's proposed fix as a testable hypothesis.
+Execute the fix against tests. If the fix passes and original passes too, reject the
+model's negative verdict.
+
+Result: reduced false negatives from 54.8% to 16.3% on HumanEval.
+
+== IMPLICATIONS FOR VERIFICATION COMPILER ==
+
+1. LLMs systematically over-reject correct code (FPR >> FNR in code review tasks)
+2. More elaborate prompting worsens false rejection, not improves it
+3. Asking for rationales does not improve accuracy — models invent plausible-sounding failures
+4. Execution-based grounding (running the fix) is necessary for reliable judgment
+5. This confirms the asymmetric PPV/NPV design: a model with high FPR makes each PASS
+   worth less (low PPV), while a model with high FNR makes FAILs less informative (low NPV).
+   Using a single accuracy number would mask this directional asymmetry.

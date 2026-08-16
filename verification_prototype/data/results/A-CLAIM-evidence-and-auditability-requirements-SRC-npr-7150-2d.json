@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 0.95,
+  "rationale": "The source document explicitly outlines NASA's requirements for software evidence and auditability, such as maintaining traceability, allowing audits of processes, and providing access to source code and verification artifacts. This directly supports the claim regarding evidence and auditability requirements.",
+  "what_source_actually_says": "The source is a NASA procedural requirements document (NPR 7150.2D) that mandates maintaining requirements mapping matrices, software bi-directional traceability, and allowing software assurance personnel to audit processes and review source artifacts.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "",
+  "vqp_id": "A-CLAIM-evidence-and-auditability-requirements-SRC-npr-7150-2d",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-evidence-and-auditability-requirements",
+  "source_id": "SRC-npr-7150-2d"
+}

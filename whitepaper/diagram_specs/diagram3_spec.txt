@@ -1,0 +1,40 @@
+Diagram 3: Dual-Mode Operation
+
+PURPOSE:
+Show that the same deterministic Verification Query Package can be reviewed by either an LLM model unit for development feedback or a qualified human reviewer for certification review. Emphasize structural equivalence, not LLM certification authority.
+
+TOP — Source:
+- Box at top center: "Verification Query Package (deterministic assembly from DAG)" — neutral gray or light blue
+
+TWO BRANCHES diverging from the source box:
+
+LEFT BRANCH — LLM Mode (purple):
+- Box: "LLM Review Mode"
+- Sub-items: "Automated CI / nightly review", "Task-specific model suitability profile", "Developmental feedback only"
+- Output box: "Structured Result" (white box with purple border)
+  - Contains: "pass / fail / uncertain", "confidence: 0.87", "rationale: ..."
+
+RIGHT BRANCH — Human Mode (blue):
+- Box: "Human Review Mode"
+- Sub-items: "Final certification review", "Qualified independent engineer", "Same evidence package as LLM"
+- Output box: "Structured Result" (white box with blue border)
+  - Contains: "pass / fail / uncertain", "confidence: high/med/low", "rationale: ..."
+
+CENTER — between the two branches:
+- Double-headed dashed arrow labeled "interchangeable per node"
+
+BOTTOM — Convergence:
+- Both Structured Result boxes point down to: "Evidence Graph" (green box)
+- From Evidence Graph, output: "VRM / Evidence Completeness = requirement coverage × evidence completeness × staleness"
+- Separate small annotation near LLM branch: "Model suitability is tracked separately; LLM outputs are not certification evidence"
+- Separate small annotation near Human branch: "Human verdict is certification evidence when formally reviewed"
+
+RIGHT SIDE NOTE (sidebar or callout):
+- "Graph structure independently proves scope completeness — any orphan surfaces as an anomaly"
+
+Style:
+- White background, clean technical illustration, readable sans-serif labels, minimum 1600×1100 px.
+- Use a wide 16:9 layout with large labels suitable for PDF embedding.
+- Keep all text inside boxes. No overlapping arrows or text.
+- Use restrained colors: LLM purple, Human blue, Evidence Graph green, VRM amber.
+- Avoid decorative shadows, gradients, or glossy effects.

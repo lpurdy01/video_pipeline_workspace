@@ -1,0 +1,37 @@
+Diagram 2: Verification Query Assembly
+
+Left panel — Artifact Graph Excerpt:
+- Show a small artifact graph with nodes: SR-1 (blue), HL-1 (blue), LL-1 (blue), read_sensor() (purple, highlighted with a glow or border), TC-001 (orange), TR-001 (green), SA-001 (yellow), ADC Datasheet (teal)
+- read_sensor() is visually highlighted as the "node under evaluation"
+
+Center — Traversal Arrow:
+- Large rightward arrow labeled "graph traversal collects all linked artifacts"
+
+Right panel — Verification Query Packet (a bounded box with sections):
+┌─────────────────────────────┐
+│  VERIFICATION QUERY         │
+│  Node: read_sensor()        │
+├─────────────────────────────┤
+│  REQUIREMENTS               │
+│  SR-1 → HL-1 → LL-1        │
+├─────────────────────────────┤
+│  CODE                       │
+│  read_sensor() : sensor.c   │
+├─────────────────────────────┤
+│  TESTS & RESULTS            │
+│  TC-001 → TR-001 ✓          │
+├─────────────────────────────┤
+│  SPECS                      │
+│  ADC Datasheet Rev B        │
+├─────────────────────────────┤
+│  EVALUATION INSTRUCTIONS    │
+│  Does the code satisfy LL-1 │
+│  given tests and specs?     │
+└─────────────────────────────┘
+Small note on query box: "~6–8K tokens"
+
+Bottom — Submission Flow:
+- Arrow from query box pointing down to a "LLM or Human Reviewer" node (split symbol or dual icon)
+- Arrow from reviewer to "Structured Result: pass / fail / uncertain + confidence + rationale"
+
+Style: white background, clean technical illustration, readable sans-serif labels, minimum 1200×900 px.

@@ -1,0 +1,18 @@
+{
+  "S01TransformCivilization": 90.85,
+  "S02PatternPipeline": 65.56,
+  "S03LanguageVectors": 90.63,
+  "S03bWordVectorAnalogy": 56.79,
+  "S05CodeAndLoss": 109.09,
+  "S05bMultimodalAnalogy": 67.65,
+  "S07SemanticTransformLoss": 108.86,
+  "S06cGameTechTree3D": 80.93,
+  "RectangularTechTreeAtlas": 80.93,
+  "RectangularTechTreeEnding": 49.48,
+  "S09LimitTrends": 54.39,
+  "S10ValidationVerification": 101.25,
+  "S11SelfInhabitingCompute": 135.33,
+  "S12OuterExperimentLoop": 97.27,
+  "S13BusinessPipelines": 91.58,
+  "S14EndingTechTreeZoomOut": 49.48
+}

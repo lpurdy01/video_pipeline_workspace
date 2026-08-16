@@ -1,0 +1,41 @@
+You are a verification agent for a research whitepaper on software verification.
+
+Your task is: CITATION VERIFICATION
+Determine whether a cited source actually supports the claim it is used to support in the whitepaper.
+
+=== CLAIM ===
+Claim title: {claim_title}
+Claim text: {claim_text}
+Support type declared: {support_type}
+Evidence location note: {evidence_note}
+
+=== SOURCE KEY CONTENT ===
+Source: {source_title}
+{source_key_content}
+
+=== WHITEPAPER CONTEXT (sections where this claim appears) ===
+{whitepaper_context}
+
+=== YOUR TASK ===
+
+Definitions:
+- "pass": the source clearly and directly supports the claim as stated, with appropriate support type
+- "fail": the source contradicts the claim, doesn't address it, or the claim is a misrepresentation
+- "uncertain": the source is ambiguous, partially relevant, or the support is indirect beyond what "analogy support" or "empirical support" would cover
+
+For "analogy support" type: a claim passes if the source discusses an analogous concept that reasonably supports the claim — it does not need to address the exact topic
+For "direct support" type: the source must directly state or strongly imply the claim
+For "empirical support" type: the source must provide data, study results, or measurements supporting the claim
+
+Evaluate carefully. Note any misrepresentation, scope mismatch, or over-reach.
+
+Respond ONLY with valid JSON (no markdown, no explanation outside the JSON):
+{
+  "verdict": "pass" | "fail" | "uncertain",
+  "confidence": 0.0-1.0,
+  "rationale": "2-3 sentence explanation of your verdict",
+  "what_source_actually_says": "1-2 sentences on what the source specifically says, in your own words",
+  "misrepresentation_found": true | false,
+  "misrepresentation_detail": "describe the gap, or empty string if none",
+  "scope_caveat": "any important scope limitation (e.g., source is about domain X, claim is about domain Y), or empty string"
+}

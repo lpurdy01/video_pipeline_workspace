@@ -1,0 +1,126 @@
+flowchart TB
+  origin((" "))
+
+  subgraph signal_wedge["classical signal and media transforms"]
+    fourier["Fourier transform"]
+    frequency_domain["frequency-domain view"]
+    signal_processing["signal processing"]
+    wireless["wireless communication"]
+    compressed_audio["compressed audio: MP3 / AAC"]
+    spectral_imaging["spectral imaging / MRI"]
+
+    dct["discrete cosine transform"]
+    block_frequency["block frequency bases"]
+    jpeg["JPEG image compression"]
+    video_codecs["video codecs: MPEG / H.26x / AV1"]
+
+    fourier --> frequency_domain --> signal_processing
+    signal_processing --> wireless
+    signal_processing --> compressed_audio
+    signal_processing --> spectral_imaging
+    dct --> block_frequency
+    block_frequency --> jpeg
+    block_frequency --> video_codecs
+  end
+
+  subgraph dynamics_wedge["dynamics, stability, and control"]
+    laplace["Laplace transform"]
+    transfer_functions["transfer functions"]
+    stability_control["stability and control"]
+    feedback_control["feedback controllers"]
+    motor_control["brushless motor control"]
+    flight_robotics["flight / robotics stability"]
+    state_space["state-space models"]
+    neural_ssm["neural SSMs: S4 / Mamba"]
+
+    laplace --> transfer_functions --> stability_control
+    stability_control --> feedback_control
+    feedback_control --> motor_control
+    feedback_control --> flight_robotics
+    stability_control --> state_space
+    state_space -. convergence .-> neural_ssm
+  end
+
+  subgraph learned_wedge["learned representation spaces"]
+    neural_networks["neural networks"]
+    embeddings["embeddings"]
+    transformers["transformer sequence models"]
+    llms["large language models"]
+    contrastive_space["contrastive multimodal spaces"]
+    autoencoders["autoencoders / GANs"]
+    neural_codecs["neural codecs: EnCodec"]
+    audio_tokens["discrete audio tokens"]
+    speech_agents["speech / audio agents"]
+    multimodal_tools["multimodal tools"]
+
+    neural_networks --> embeddings --> transformers --> llms
+    neural_networks --> contrastive_space --> multimodal_tools
+    neural_networks --> autoencoders --> neural_codecs --> audio_tokens
+    audio_tokens --> speech_agents
+    audio_tokens --> multimodal_tools
+    transformers -. convergence .-> neural_ssm
+    neural_ssm --> llms
+  end
+
+  subgraph software_wedge["language, code, and verification"]
+    software_formalisms["software as formal representation"]
+    expert_systems["classical expert systems"]
+    blackboard["blackboard architectures"]
+    formal_verifiers["SMT / Dafny / proof tools"]
+    code_agents["autonomous code agents"]
+    research_agents["research assistants"]
+    vv_systems["V&V / evidence systems"]
+    reliable_agents["reliable agent workflows"]
+
+    software_formalisms --> code_agents
+    llms --> code_agents
+    llms --> research_agents
+    expert_systems -. historical precedent .-> blackboard
+    code_agents --> blackboard
+    blackboard --> vv_systems
+    formal_verifiers -. convergence .-> vv_systems
+    code_agents --> vv_systems
+    vv_systems --> reliable_agents
+  end
+
+  subgraph frontier_layer["outer frontier / unrevealed research region"]
+    orgs["transform-native organizations"]
+    self_compute["self-inhabiting compute"]
+    experiment_loops["autonomous experiment loops"]
+    devs["discrete-event world models"]
+    closed_loop_rd["closed-loop R&D"]
+
+    reliable_agents --> orgs
+    code_agents --> orgs
+    research_agents --> orgs
+    reliable_agents --> self_compute
+    research_agents --> experiment_loops
+    multimodal_tools --> experiment_loops
+    reliable_agents --> experiment_loops
+    experiment_loops --> devs
+    devs --> closed_loop_rd
+    orgs --> closed_loop_rd
+    self_compute --> closed_loop_rd
+  end
+
+  origin --- fourier
+  origin --- dct
+  origin --- laplace
+  origin --- neural_networks
+  origin --- software_formalisms
+  origin --- expert_systems
+  origin --- formal_verifiers
+
+  classDef originNode fill:#04050a,stroke:#f8fbff,color:#f8fbff,stroke-width:1px;
+  classDef signalNode fill:#091827,stroke:#34d2ff,color:#f8fbff,stroke-width:2px;
+  classDef dynamicsNode fill:#1f1828,stroke:#ffd166,color:#f8fbff,stroke-width:2px;
+  classDef learnedNode fill:#141f19,stroke:#5dff9a,color:#f8fbff,stroke-width:2px;
+  classDef softwareNode fill:#101b25,stroke:#8ab6ff,color:#f8fbff,stroke-width:2px;
+  classDef frontierNode fill:#281421,stroke:#ff8fb0,color:#f8fbff,stroke-width:2px,stroke-dasharray: 5 4;
+
+  class origin originNode;
+  class fourier,frequency_domain,signal_processing,wireless,compressed_audio,spectral_imaging,dct,block_frequency,jpeg,video_codecs signalNode;
+  class laplace,transfer_functions,stability_control,feedback_control,motor_control,flight_robotics,state_space,neural_ssm dynamicsNode;
+  class neural_networks,embeddings,transformers,llms,contrastive_space,autoencoders,neural_codecs,audio_tokens,speech_agents,multimodal_tools learnedNode;
+  class software_formalisms,expert_systems,blackboard,formal_verifiers,code_agents,research_agents,vv_systems,reliable_agents softwareNode;
+  class orgs,self_compute,experiment_loops,devs,closed_loop_rd frontierNode;

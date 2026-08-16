@@ -1,0 +1,412 @@
+{
+  "project": "representation_transform_visuals",
+  "title": "The New Transform Space",
+  "version": "prototype-manifest-003-script-v2",
+  "prototype_defaults": {
+    "width": 854,
+    "height": 480,
+    "fps": 24,
+    "scratch_tts_model": "gemini-3.1-flash-tts-preview",
+    "scratch_tts_voice": "Kore",
+    "scratch_tts_style": "Read this clearly and naturally, like a thoughtful technical YouTube narrator. Keep the pace calm, curious, and slightly bold."
+  },
+  "notes": [
+    "Generated from drafts/script.md by manifest_pipeline/make_manifest_from_script.py.",
+    "Human audio remains local by default. Scratch TTS may use approved script text.",
+    "Use image_review_pipeline with --model auto for generated visual review."
+  ],
+  "sections": [
+    {
+      "id": "01_opening",
+      "title": "Opening",
+      "type": "manim_or_placeholder",
+      "narration_text": "I've been trying to think of a better way to explain why LLMs feel bigger than chatbots.\n\nThe mental model I keep coming back to is transforms.\n\nNot because an LLM is literally a Fourier transform for language. It is not that clean. It is trained, approximate, and lossy.\n\nBut it belongs in the same broad category of idea:\n\nyou take a representation,\nmove it into another space,\ndo useful computation there,\nand transform it back out.\n\nThat pattern has changed the technology tree before.\n\nFourier transforms let us work with signals as frequencies.\n\nLaplace transforms let engineers reason about dynamics, stability, and control systems with algebra.\n\nThe discrete cosine transform lets image and video systems throw away information in ways human perception can often tolerate.\n\nRadio, wireless communication, image compression, audio processing, control systems, robotics, aircraft stability, rockets landing on their tails, videos streaming over the internet.\n\nA lot of the modern world comes from taking one representation, moving it into another space, doing useful work there, and transforming it back.\n\nMy hypothesis is that large language models are the beginning of another transform like that.\n\nNot the same kind.\n\nNot as exact.\n\nNot as mathematical.\n\nBut probably just as important in the branches of the technology tree it opens.",
+      "audio": {
+        "human_path": "representation_transform_visuals/assets/human_audio/01_opening.wav",
+        "scratch_path": "representation_transform_visuals/manifest_pipeline/out/audio/01_opening.wav"
+      },
+      "visual": {
+        "kind": "existing_video",
+        "path": "representation_transform_visuals/prototype_pipeline/out/manim_media/videos/storyboard_sections/480p15/S01TransformCivilization.mp4",
+        "fallback_kind": "visual_placeholder",
+        "prompt": "Opening transform-history composition: signals, Laplace/control, DCT/image compression, and first technology-tree growth."
+      },
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
+      "human_assets": [
+        {
+          "kind": "human_narration",
+          "path": "representation_transform_visuals/assets/human_audio/01_opening.wav",
+          "prompt": "Record section 1: Opening."
+        }
+      ]
+    },
+    {
+      "id": "02_the_classic_pattern",
+      "title": "The Classic Pattern",
+      "type": "manim_or_placeholder",
+      "narration_text": "Here is the pattern.\n\nYou start with some representation of the world.\n\nA signal over time.\n\nA differential equation.\n\nAn image.\n\nA block of pixels.\n\nIn its original form, the problem may be messy. You can still work with it, but some operations are difficult.\n\nThen you transform it.\n\nThe time signal becomes frequency components.\n\nThe differential equation becomes something closer to algebra.\n\nThe image becomes a stack of frequency-like patterns.\n\nAnd once it is in that transformed space, different operations become possible.\n\nYou can filter noise.\n\nYou can design a controller.\n\nYou can compress an image.\n\nYou can reason about stability.\n\nThen, usually, you transform the result back out into the world.\n\nRepresentation in.\n\nTransform space.\n\nComputation.\n\nRepresentation out.\n\nThat is one of the deep patterns of engineering.\n\nIt lets us use mathematics to understand a design space, optimize toward better solutions, and sometimes unlock things that looked impossible from the original representation.",
+      "audio": {
+        "human_path": "representation_transform_visuals/assets/human_audio/02_the_classic_pattern.wav",
+        "scratch_path": "representation_transform_visuals/manifest_pipeline/out/audio/02_the_classic_pattern.wav"
+      },
+      "visual": {
+        "kind": "existing_video",
+        "path": "representation_transform_visuals/prototype_pipeline/out/manim_media/videos/storyboard_sections/480p15/S02PatternPipeline.mp4",
+        "fallback_kind": "visual_placeholder",
+        "prompt": "Concrete transform pipeline: representation in, transform space, computation, representation out."
+      },
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
+      "human_assets": [
+        {
+          "kind": "human_narration",
+          "path": "representation_transform_visuals/assets/human_audio/02_the_classic_pattern.wav",
+          "prompt": "Record section 2: The Classic Pattern."
+        }
+      ]
+    },
+    {
+      "id": "03_the_new_thing",
+      "title": "The New Thing",
+      "type": "manim_or_placeholder",
+      "narration_text": "What makes modern AI strange is that language is now part of this pattern.\n\nAnd I mean more than language.\n\nText, code, images, audio, diagrams, sensor readings, constraints, tasks, maybe eventually many kinds of physical state.\n\nAnything that can be represented in a form the model can transform.\n\nNot perfectly.\n\nNot magically.\n\nBut practically.\n\nA sentence can be broken into tokens. Those tokens can be turned into vectors. Those vectors can move through a learned high-dimensional space where relationships between words, concepts, code, images, and tasks become computational objects.\n\nThen the system can transform that internal representation back out as English, Python, an image, a plan, a shell command, a structured data record, or some other compatible representation.\n\nThat is the part I think is easy to understate.\n\nWe did not just build better autocomplete.\n\nYes, prediction is part of how these systems work.\n\nBut the deeper thing is that we built machines that can move human representations into a space where computation can act on meaning-like relationships.\n\nI am not claiming the model understands the way a person understands.\n\nI am claiming that the transform preserves enough relationship structure to be useful.\n\nAnd that is already changing how people work.",
+      "audio": {
+        "human_path": "representation_transform_visuals/assets/human_audio/03_the_new_thing.wav",
+        "scratch_path": "representation_transform_visuals/manifest_pipeline/out/audio/03_the_new_thing.wav"
+      },
+      "visual": {
+        "kind": "existing_video",
+        "path": "representation_transform_visuals/prototype_pipeline/out/manim_media/videos/storyboard_sections/480p15/S03LanguageVectors.mp4",
+        "fallback_kind": "visual_placeholder",
+        "prompt": "Language enters the pattern: tokens become vectors in a dark high-dimensional computational space."
+      },
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
+      "human_assets": [
+        {
+          "kind": "human_narration",
+          "path": "representation_transform_visuals/assets/human_audio/03_the_new_thing.wav",
+          "prompt": "Record section 3: The New Thing."
+        }
+      ]
+    },
+    {
+      "id": "04_word_vectors",
+      "title": "Word Vectors",
+      "type": "manim_or_placeholder",
+      "narration_text": "The smallest visual example is the classic word-vector analogy.\n\nKing minus man plus woman gets you something close to queen.\n\nThat example is overused, and it is not even close to how every concept works.\n\nBut it still shows the shape of the thing.\n\nIn vector space, words can become locations.\n\nRelationships can become directions.\n\nSimilarity can become distance.\n\nSearch can become geometry.\n\nIf you search for something like \"big cat with a mane,\" a vector search system can find \"lion\" even if the word lion never appeared in the query, because the concepts land near each other in the learned space.\n\nBefore this transform, words were mostly symbols on a page.\n\nNow they can also be points, neighborhoods, directions, and transformations.\n\nThat opens a new domain for computation.",
+      "audio": {
+        "human_path": "representation_transform_visuals/assets/human_audio/04_word_vectors.wav",
+        "scratch_path": "representation_transform_visuals/manifest_pipeline/out/audio/04_word_vectors.wav"
+      },
+      "visual": {
+        "kind": "existing_video",
+        "path": "representation_transform_visuals/prototype_pipeline/out/manim_media/videos/storyboard_sections/480p15/S03bWordVectorAnalogy.mp4",
+        "fallback_kind": "visual_placeholder",
+        "prompt": "Word vectors: king-man+woman\u2248queen plus a simple semantic-search idea."
+      },
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
+      "human_assets": [
+        {
+          "kind": "human_narration",
+          "path": "representation_transform_visuals/assets/human_audio/04_word_vectors.wav",
+          "prompt": "Record section 4: Word Vectors."
+        }
+      ]
+    },
+    {
+      "id": "05_pseudocode_to_code",
+      "title": "Pseudocode To Code",
+      "type": "manim_or_placeholder",
+      "narration_text": "The practical example most programmers already feel is code.\n\nYou write something like:\n\n\"Build a small API endpoint that takes a user id, checks whether the user has an active subscription, and returns the current usage limit.\"\n\nThat is not code.\n\nThat is not even a full specification.\n\nIt is the kind of thing a product manager might say to an engineer.\n\nThere are a lot of details missing.\n\nWhat framework are we using?\n\nWhat does the database schema look like?\n\nWhat does active mean?\n\nHow should errors be handled?\n\nWhat happens if the user does not exist?\n\nBut it is intent, written in compressed human English.\n\nA model can transform that intent into Python, TypeScript, SQL, tests, or documentation.\n\nIn a text-only model, that is still text to text.\n\nBut the useful mental model is that the word Python is operating on the rest of the intent in representation space. It moves the request toward the Python-shaped region of that intent.\n\nThen when the model transforms it back out, you get code.\n\nNot because the model is thinking like a human.\n\nIt is relational.\n\nIt is transformative.\n\nIt is transforming something nonspecific into something specific enough to run on a machine.\n\nAnd that is exactly where the danger lives.\n\nBecause the input is missing information, the output has to contain assumptions.\n\nSometimes those assumptions are helpful.\n\nSometimes they are wrong.\n\nSometimes they are inevitable.\n\nSometimes they are invisible until much later.\n\nThis is why coding with LLMs can feel both incredibly powerful and strangely slippery.\n\nThe transform preserves some things, invents some things, and loses others.",
+      "audio": {
+        "human_path": "representation_transform_visuals/assets/human_audio/05_pseudocode_to_code.wav",
+        "scratch_path": "representation_transform_visuals/manifest_pipeline/out/audio/05_pseudocode_to_code.wav"
+      },
+      "visual": {
+        "kind": "existing_video",
+        "path": "representation_transform_visuals/prototype_pipeline/out/manim_media/videos/storyboard_sections/480p15/S05CodeAndLoss.mp4",
+        "fallback_kind": "visual_placeholder",
+        "prompt": "Pseudocode to code as lossy transform: intent becomes code and hidden assumptions become executable."
+      },
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
+      "human_assets": [
+        {
+          "kind": "human_narration",
+          "path": "representation_transform_visuals/assets/human_audio/05_pseudocode_to_code.wav",
+          "prompt": "Record section 5: Pseudocode To Code."
+        }
+      ]
+    },
+    {
+      "id": "06_multimodal_transforms",
+      "title": "Multimodal Transforms",
+      "type": "manim_or_placeholder",
+      "narration_text": "Once you see the pattern, text-to-image stops feeling like a separate miracle.\n\nThe useful picture is not just \"text goes in and image comes out.\"\n\nThe useful picture is:\n\ntext encoder,\nshared representation space,\nimage decoder.\n\nThe front half transforms language into a representation. The back half transforms a compatible representation into pixels.\n\nIf the spaces are aligned well enough, you can cut across modalities.\n\nText can become an image.\n\nAn image can become a caption.\n\nA camera view can become a robot action.\n\nA sketch can become an interface.\n\nThe boundaries between text models, image models, audio models, code models, and agent systems start to blur because they are all learning ways to move between representations.\n\nThat does not mean every transform is equally good.\n\nIt means the question changes.\n\nThe question becomes:\n\nwhat kinds of representation can be transformed into what other kinds of representation, and how much useful structure survives the trip?",
+      "audio": {
+        "human_path": "representation_transform_visuals/assets/human_audio/06_multimodal_transforms.wav",
+        "scratch_path": "representation_transform_visuals/manifest_pipeline/out/audio/06_multimodal_transforms.wav"
+      },
+      "visual": {
+        "kind": "existing_video",
+        "path": "representation_transform_visuals/prototype_pipeline/out/manim_media/videos/storyboard_sections/480p15/S05bMultimodalAnalogy.mp4",
+        "fallback_kind": "visual_placeholder",
+        "prompt": "Multimodal bridge: text encoder, shared representation space, image decoder."
+      },
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
+      "human_assets": [
+        {
+          "kind": "human_narration",
+          "path": "representation_transform_visuals/assets/human_audio/06_multimodal_transforms.wav",
+          "prompt": "Record section 6: Multimodal Transforms."
+        }
+      ]
+    },
+    {
+      "id": "07_the_loss",
+      "title": "The Loss",
+      "type": "manim_or_placeholder",
+      "narration_text": "Every powerful transform has assumptions.\n\nFourier analysis can make frequency structure visible, but it emphasizes some things and hides others.\n\nLaplace-domain control design can make dynamic systems easier to reason about, but initial conditions, nonlinearities, and modeling assumptions still matter.\n\nJPEG compression keeps the parts of an image that usually matter to human perception and throws away detail your eye may not notice immediately.\n\nThe fact that a transform is lossy or assumption-dependent does not make it useless.\n\nOften, that is exactly what makes it useful.\n\nBut it means you have to know what kind of loss you are accepting.\n\nWith LLMs, I think the loss is often semantic.\n\nNot always factual loss in the simple sense.\n\nNot always hallucination.\n\nSometimes the model preserves the broad intent while losing a constraint.\n\nSometimes it keeps the shape of a request while changing the edge cases.\n\nSometimes it fills in missing information with a reasonable assumption, and that assumption becomes part of the output even though no one explicitly chose it.\n\nIn the API example, \"active subscription\" might become a boolean field, a join across billing tables, a call to Stripe, or a cached entitlement.\n\nThe model has to choose some version.\n\nThat choice is where loss and invention enter the output.\n\nFor this project, I have been calling that semantic transform loss.\n\nThe exact term matters less than the mental model.\n\nWhen we transform human intent through a learned representation space, the result can be useful without being a perfect preservation of the original.\n\nMissing context can become executable assumptions.",
+      "audio": {
+        "human_path": "representation_transform_visuals/assets/human_audio/07_the_loss.wav",
+        "scratch_path": "representation_transform_visuals/manifest_pipeline/out/audio/07_the_loss.wav"
+      },
+      "visual": {
+        "kind": "existing_video",
+        "path": "representation_transform_visuals/prototype_pipeline/out/manim_media/videos/storyboard_sections/480p15/S07SemanticTransformLoss.mp4",
+        "fallback_kind": "visual_placeholder",
+        "prompt": "Semantic transform loss: preservation, invention, and loss; missing context becomes executable assumptions."
+      },
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
+      "human_assets": [
+        {
+          "kind": "human_narration",
+          "path": "representation_transform_visuals/assets/human_audio/07_the_loss.wav",
+          "prompt": "Record section 7: The Loss."
+        }
+      ]
+    },
+    {
+      "id": "08_why_this_changes_the_technology_tree",
+      "title": "Why This Changes The Technology Tree",
+      "type": "manim_or_placeholder",
+      "narration_text": "So the big claim is not that LLMs are magic.\n\nThey are definitely not magic.\n\nIt is math. It is computation. It is training. It is data.\n\nThe claim is also not that vector space literally contains human meaning in some mystical way.\n\nThe useful claim is simpler:\n\nwe have found a practical way to transform language, code, images, and other human representations into a space where we can apply computation, extract relationships, and transform the result back out.\n\nThis used to mostly happen inside human interpretation.\n\nInside human brains.\n\nInside human organizations.\n\nThat is why the impact feels broad.\n\nNot because chatbots are one product category.\n\nBecause the underlying pattern touches almost every kind of symbolic work:\n\nwriting,\nprogramming,\ndesign,\nresearch,\nplanning,\nreview,\ncoordination,\neducation.\n\nAny workflow where humans pass around a representation of intent is now at least partly exposed to this new transform layer.\n\nAnd if history is a guide, when a new transform makes a space computable, the first applications are not the full story.\n\nThe full story is the technology tree that grows after people learn how to think in that space.",
+      "audio": {
+        "human_path": "representation_transform_visuals/assets/human_audio/08_why_this_changes_the_technology_tree.wav",
+        "scratch_path": "representation_transform_visuals/manifest_pipeline/out/audio/08_why_this_changes_the_technology_tree.wav"
+      },
+      "visual": {
+        "kind": "existing_video",
+        "path": "representation_transform_visuals/prototype_pipeline/out/manim_media/videos/tech_tree_rectangular_atlas/480p15/RectangularTechTreeAtlas.mp4",
+        "fallback_kind": "visual_placeholder",
+        "prompt": "Rectangular technology-tree atlas with classical transforms, learned transforms, and cross-category bridges revealing over the section."
+      },
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
+      "human_assets": [
+        {
+          "kind": "human_narration",
+          "path": "representation_transform_visuals/assets/human_audio/08_why_this_changes_the_technology_tree.wav",
+          "prompt": "Record section 8: Why This Changes The Technology Tree."
+        }
+      ]
+    },
+    {
+      "id": "09_thinking_in_the_limit",
+      "title": "Thinking In The Limit",
+      "type": "manim_or_placeholder",
+      "narration_text": "Thinking in the limit is a thought exercise I like to use.\n\nYou find the trends in a new technology.\n\nYou project those trends outward.\n\nYou ask what changes as they approach zero, infinity, or whatever practical asymptote they seem to be moving toward.\n\nSo let's push the trend.\n\nAccuracy keeps going up.\n\nThe complexity of what these systems can handle keeps going up.\n\nAnd the cost of generating another artifact keeps going down.\n\nAnother paragraph.\n\nAnother image.\n\nAnother program.\n\nAnother test suite.\n\nAnother design.\n\nAnother experiment plan.\n\nWhen you push those trends far enough, the bottleneck changes.\n\nThe important question is not just:\n\nwhat can the model generate?\n\nThe more important question becomes:\n\nwhat can we validate?\n\nWhat can we verify?\n\nWhat can we trust enough to connect back into the world?",
+      "audio": {
+        "human_path": "representation_transform_visuals/assets/human_audio/09_thinking_in_the_limit.wav",
+        "scratch_path": "representation_transform_visuals/manifest_pipeline/out/audio/09_thinking_in_the_limit.wav"
+      },
+      "visual": {
+        "kind": "existing_video",
+        "path": "representation_transform_visuals/prototype_pipeline/out/manim_media/videos/storyboard_sections/480p15/S09LimitTrends.mp4",
+        "fallback_kind": "visual_placeholder",
+        "prompt": "Thinking in the limit method: accuracy up, complexity up, generation cost down."
+      },
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
+      "human_assets": [
+        {
+          "kind": "human_narration",
+          "path": "representation_transform_visuals/assets/human_audio/09_thinking_in_the_limit.wav",
+          "prompt": "Record section 9: Thinking In The Limit."
+        }
+      ]
+    },
+    {
+      "id": "10_validation_and_verification_become_the_work",
+      "title": "Validation And Verification Become The Work",
+      "type": "manim_or_placeholder",
+      "narration_text": "There is a useful distinction from safety-critical engineering:\n\nvalidation asks whether we built the right thing.\n\nVerification asks whether we built the thing right.\n\nBoth matter.\n\nBut for this transform, validation may be the deeper problem.\n\nBecause a model can build something coherent, polished, and locally correct while still missing the real goal.\n\nIt can satisfy the prompt and fail the purpose.\n\nIt can preserve the shape of the request and lose the reason behind it.\n\nRight now, generating code is already getting cheap.\n\nGenerating text is cheap.\n\nGenerating plausible designs, test cases, plans, and documentation is getting cheap.\n\nBut knowing whether they are the right artifacts is not cheap.\n\nIn the limit, plausible output becomes abundant.\n\nWe are already dealing with this in software engineering.\n\nTrustworthy output becomes scarce.\n\nThis is where software starts to look more like safety-critical software, even when the software is not flying an airplane.\n\nYou need requirements.\n\nYou need traces.\n\nYou need tests.\n\nYou need reviews.\n\nYou need evidence that the thing you built still connects back to the thing you meant.\n\nWhen generation is expensive, the artifact is the work.\n\nWhen generation becomes cheap, the work moves to proving that the artifact is the right one, and that it behaves the way the world needs it to behave.\n\nThat is not the glamorous branch of the technology tree.\n\nBut it may be the load-bearing one.",
+      "audio": {
+        "human_path": "representation_transform_visuals/assets/human_audio/10_validation_and_verification_become_the_work.wav",
+        "scratch_path": "representation_transform_visuals/manifest_pipeline/out/audio/10_validation_and_verification_become_the_work.wav"
+      },
+      "visual": {
+        "kind": "existing_video",
+        "path": "representation_transform_visuals/prototype_pipeline/out/manim_media/videos/storyboard_sections/480p15/S10ValidationVerification.mp4",
+        "fallback_kind": "visual_placeholder",
+        "prompt": "Validation and verification become the work: artifact abundance flows into evidence gate."
+      },
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
+      "human_assets": [
+        {
+          "kind": "human_narration",
+          "path": "representation_transform_visuals/assets/human_audio/10_validation_and_verification_become_the_work.wav",
+          "prompt": "Record section 10: Validation And Verification Become The Work."
+        }
+      ]
+    },
+    {
+      "id": "11_self_inhabiting_compute",
+      "title": "Self-Inhabiting Compute",
+      "type": "manim_or_placeholder",
+      "narration_text": "Now take the same trends and push them further.\n\nAccuracy up.\n\nComplexity up.\n\nGeneration cost down.\n\nThe normal version is that a model writes Python.\n\nThe far-out version is that a model transforms intent, runtime state, constraints, and performance feedback into a low-level executable representation.\n\nSomething near the boundary where software becomes hardware behavior.\n\nNot necessarily literal machine code.\n\nSomething more like a PTX-like intermediate execution layer, or another representation that can be compiled onto the machine.\n\nThat distinction matters.\n\nRuntime code generation already exists.\n\nJIT compilers already exist.\n\nSelf-modifying code already exists.\n\nSo the novel idea is not \"code appears while the program is running.\"\n\nThe novel idea is a learned transform loop:\n\nthe system has a representation of what it is doing,\nwhat it is trying to optimize,\nwhat it is trying to achieve,\nwhat constraints it cannot violate,\nand what just happened.\n\nIt transforms that state into executable behavior.\n\nThe hardware runs it.\n\nThe system measures what happened.\n\nThat measurement feeds back into the next transform.\n\nAt that point, software is no longer just an artifact the machine runs.\n\nSoftware becomes part of the machine's own feedback loop.\n\nThe computer starts to inhabit its own execution.\n\nThat is the weird limit.\n\nAnd it is also where validation and verification stop being optional.\n\nBecause if a system can continuously generate new executable behavior, then the safety boundary cannot be a human reading every line.\n\nThe boundary has to be external validators, constrained execution environments, proofs, tests, monitors, traces, and evidence.\n\nAnd probably new ways of validating and verifying generated software that we have not invented yet.\n\nSource code does not necessarily disappear.\n\nIt may become more important as an audit surface.\n\nBut it stops being the only imaginable bridge between intent and execution.",
+      "audio": {
+        "human_path": "representation_transform_visuals/assets/human_audio/11_self_inhabiting_compute.wav",
+        "scratch_path": "representation_transform_visuals/manifest_pipeline/out/audio/11_self_inhabiting_compute.wav"
+      },
+      "visual": {
+        "kind": "existing_video",
+        "path": "representation_transform_visuals/prototype_pipeline/out/manim_media/videos/storyboard_sections/480p15/S11SelfInhabitingCompute.mp4",
+        "fallback_kind": "visual_placeholder",
+        "prompt": "Self-inhabiting compute: runtime state enters transform, executable behavior runs, telemetry feeds back."
+      },
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
+      "human_assets": [
+        {
+          "kind": "human_narration",
+          "path": "representation_transform_visuals/assets/human_audio/11_self_inhabiting_compute.wav",
+          "prompt": "Record section 11: Self-Inhabiting Compute."
+        }
+      ]
+    },
+    {
+      "id": "12_the_outer_loop_experiments",
+      "title": "The Outer Loop: Experiments",
+      "type": "manim_or_placeholder",
+      "narration_text": "Once you see that loop inside the machine, the same shape appears outside the machine.\n\nA hypothesis becomes an experiment.\n\nThe experiment becomes a simulation, a lab procedure, a robot protocol, or a piece of code.\n\nThe result becomes measurement.\n\nThe measurement becomes evidence.\n\nThe evidence becomes the next hypothesis.\n\nAutonomous labs and automated discovery systems already point in this direction.\n\nBut the limit thought is not just \"AI does science.\"\n\nThat is too generic.\n\nAnd automated discovery systems are already starting to push beyond what humans can easily reason through manually.\n\nThe limit is that representation transforms compress the loop from question to action to evidence and back.\n\nThe system does not merely answer a question.\n\nIt proposes the next thing to try.\n\nIt generates the procedure.\n\nIt runs or simulates the procedure.\n\nIt measures what happened.\n\nIt updates the representation.\n\nThen the loop runs again.\n\nIn the inward version, the system is transforming runtime state into executable behavior.\n\nIn the outward version, the system is transforming intent into experiments and experiments into evidence.\n\nThose are two faces of the same deeper pattern:\n\nrepresentation,\naction,\nmeasurement,\nupdated representation.\n\nThat is where the technology tree gets strange.\n\nNot because the model has a perfect mind.\n\nBecause a cheap, accurate-enough transform loop can search through possibilities faster than a human organization can manually translate every step.",
+      "audio": {
+        "human_path": "representation_transform_visuals/assets/human_audio/12_the_outer_loop_experiments.wav",
+        "scratch_path": "representation_transform_visuals/manifest_pipeline/out/audio/12_the_outer_loop_experiments.wav"
+      },
+      "visual": {
+        "kind": "existing_video",
+        "path": "representation_transform_visuals/prototype_pipeline/out/manim_media/videos/storyboard_sections/480p15/S12OuterExperimentLoop.mp4",
+        "fallback_kind": "visual_placeholder",
+        "prompt": "Outer experiment loop: hypothesis to procedure to measurement to evidence to updated representation."
+      },
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
+      "human_assets": [
+        {
+          "kind": "human_narration",
+          "path": "representation_transform_visuals/assets/human_audio/12_the_outer_loop_experiments.wav",
+          "prompt": "Record section 12: The Outer Loop: Experiments."
+        }
+      ]
+    },
+    {
+      "id": "13_businesses_are_transform_pipelines",
+      "title": "Businesses Are Transform Pipelines",
+      "type": "manim_or_placeholder",
+      "narration_text": "This also changes how I look at ordinary workplaces.\n\nA company is mostly just a series of transform pipelines.\n\nSomeone has an intent.\n\nThat intent becomes a strategy deck.\n\nThe deck becomes a product brief.\n\nThe brief becomes a design.\n\nThe design becomes tickets.\n\nThe tickets become code.\n\nThe code becomes a product.\n\nEvery handoff is an intermediate representation.\n\nAnd every handoff changes the thing.\n\nNot always by accident.\n\nOften on purpose.\n\nEach representation is shaped for the next audience.\n\nThe customer should not have to read code.\n\nThe executive should not have to read every ticket.\n\nThe compiler should not have to understand a strategy deck.\n\nHuman professionals add value because they transform the idea for the next stage while carrying context, judgment, and constraints.\n\nBut when representation transforms get automated, some handoffs compress.\n\nA smaller team can express intent at a higher level and get more executable structure back.\n\nA founder can move from idea to prototype through fewer translation steps.\n\nA researcher can move from hypothesis to experiment design to analysis faster.\n\nThat does not mean organizations vanish.\n\nIt means their shape changes.\n\nThe valuable work moves toward choosing the right intent, setting the right constraints, validating the goal, and verifying the outputs.",
+      "audio": {
+        "human_path": "representation_transform_visuals/assets/human_audio/13_businesses_are_transform_pipelines.wav",
+        "scratch_path": "representation_transform_visuals/manifest_pipeline/out/audio/13_businesses_are_transform_pipelines.wav"
+      },
+      "visual": {
+        "kind": "existing_video",
+        "path": "representation_transform_visuals/prototype_pipeline/out/manim_media/videos/storyboard_sections/480p15/S13BusinessPipelines.mp4",
+        "fallback_kind": "visual_placeholder",
+        "prompt": "Business as transform pipeline: intent to strategy to design to tickets to code to product, with compressed handoffs."
+      },
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
+      "human_assets": [
+        {
+          "kind": "human_narration",
+          "path": "representation_transform_visuals/assets/human_audio/13_businesses_are_transform_pipelines.wav",
+          "prompt": "Record section 13: Businesses Are Transform Pipelines."
+        }
+      ]
+    },
+    {
+      "id": "14_ending",
+      "title": "Ending",
+      "type": "manim_or_placeholder",
+      "narration_text": "I do not think the right question is simply:\n\n\"What can AI automate?\"\n\nThat question is too small.\n\nThe better question is:\n\nwhat new transformations between human representations are becoming possible?\n\nWhat information survives those transformations?\n\nWhat gets compressed away?\n\nWhat assumptions get added?\n\nAnd what new tools, institutions, and workflows become possible when we learn to engineer around those tradeoffs?\n\nThat, to me, is the interesting thing.\n\nLanguage is becoming a computable material.\n\nNot perfectly.\n\nNot safely by default.\n\nNot without loss.\n\nBut enough to matter.\n\nAnd when a civilization gets a new transform space, the technology tree changes.",
+      "audio": {
+        "human_path": "representation_transform_visuals/assets/human_audio/14_ending.wav",
+        "scratch_path": "representation_transform_visuals/manifest_pipeline/out/audio/14_ending.wav"
+      },
+      "visual": {
+        "kind": "existing_video",
+        "path": "representation_transform_visuals/prototype_pipeline/out/manim_media/videos/tech_tree_rectangular_atlas/480p15/RectangularTechTreeEnding.mp4",
+        "fallback_kind": "visual_placeholder",
+        "prompt": "Closing beat on the rectangular technology-tree atlas: the whole grown tree, then a gentle pull-back as the closing titles fade in."
+      },
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
+      "human_assets": [
+        {
+          "kind": "human_narration",
+          "path": "representation_transform_visuals/assets/human_audio/14_ending.wav",
+          "prompt": "Record section 14: Ending."
+        }
+      ]
+    }
+  ]
+}

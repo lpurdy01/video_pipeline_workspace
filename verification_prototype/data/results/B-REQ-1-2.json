@@ -1,0 +1,15 @@
+{
+  "verdict": "partial",
+  "confidence": 1.0,
+  "rationale": "The whitepaper explicitly lists all the required typed edges (traces-to, verified-by, has-result, analyzed-by, references, reviewed-by, version-tied, supports-claim) and mentions that version hashes support staleness detection and VRM discounting. However, it omits the specific requirement that these edges must carry both `Source_Version_Hash` and `Target_Version_Hash`, and the rule that a hash mismatch triggers human re-confirmation before VQP assembly.",
+  "coverage_gaps": [
+    "Missing explicit mention of recording both Source_Version_Hash and Target_Version_Hash on the supports-claim, traces-to, and verified-by edges.",
+    "Missing the specific rule that a hash mismatch marks the edge as stale and triggers human re-confirmation before VQP assembly."
+  ],
+  "best_matching_section": "Concept: Verification Compiler / The Artifact Graph",
+  "whitepaper_improvement_suggestion": "Detail the specific version hash attributes (Source_Version_Hash and Target_Version_Hash) on the relevant edges and explicitly state that a mismatch triggers human re-confirmation prior to VQP assembly.",
+  "vqp_id": "B-REQ-1-2",
+  "vqp_type": "requirement_coverage",
+  "requirement_id": "REQ-1-2",
+  "requirement_title": "Edge Types"
+}

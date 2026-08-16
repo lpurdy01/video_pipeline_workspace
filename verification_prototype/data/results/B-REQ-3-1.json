@@ -1,0 +1,12 @@
+{
+  "verdict": "covered",
+  "confidence": 1.0,
+  "rationale": "The whitepaper explicitly defines the 'Query format', stating that each Verification Query Package (VQP) is rendered in a structured format identical for both LLM and human review. It also explicitly lists the required clearly delimited sections: code, requirements, tests, results, and evaluation instructions.",
+  "coverage_gaps": [],
+  "best_matching_section": "Concept: Verification Compiler / Verification Query and Result Schema",
+  "whitepaper_improvement_suggestion": "",
+  "vqp_id": "B-REQ-3-1",
+  "vqp_type": "requirement_coverage",
+  "requirement_id": "REQ-3-1",
+  "requirement_title": "Structured Query Format"
+}

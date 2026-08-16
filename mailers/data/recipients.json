@@ -1,0 +1,59 @@
+[
+  {
+    "slug": "aws_albarghouthi",
+    "name": "Prof. Aws Albarghouthi",
+    "addr1": "Computer Sciences, UW-Madison",
+    "addr2": "Morgridge Hall 7647, 1205 University Ave",
+    "addr3": "Madison, WI 53706",
+    "letter": "Professor Albarghouthi,\n\nI'm a UW-Madison engineering grad student and I'm trying to find the right person to sanity check a verification project I've been developing.\n\nI found you through UW program verification / synthesis work. This seemed close enough that I wanted to send a short preview instead of just guessing from the outside.\n\nThe idea is a \"Verification Compiler.\" It takes requirements, code, tests, analysis outputs, and review records as a graph, then compiles that into small verification review packages. LLMs can review those during development, but they are not the certifier. The deterministic graph/query compiler is the part I think matters.\n\nI'm coming at this from embedded systems and DO-178C process thinking, not from PL theory, so I'm trying to figure out if this is a reasonable research framing or if I'm missing obvious prior work.\n\nThank you,\nLevi Purdy"
+  },
+  {
+    "slug": "adithya_murali",
+    "name": "Prof. Adithya Murali",
+    "addr1": "Computer Sciences, UW-Madison",
+    "addr2": "Morgridge Hall 6532, 1205 University Ave",
+    "addr3": "Madison, WI 53706",
+    "letter": "Professor Murali,\n\nI'm a UW-Madison engineering grad student and I wanted to send you a rough research preview because your work looked close to the \"make verification more usable\" side of what I'm trying to do.\n\nThe project is called a Verification Compiler. The short version is that it builds a graph of requirements, code, tests, analysis outputs, and evidence records, then compiles that into small review packages.\n\nAn LLM can pre-screen those during development, but it is not the certification endpoint. A human can review the same package later. I'm trying to keep the AI part useful but not trusted.\n\nI'm coming from embedded/UAV/power systems work, so I may be using different language than the verification community would. If this is near your area, I'd be interested in a short conversation or even just a pointer to what I should read first.\n\nThank you,\nLevi Purdy"
+  },
+  {
+    "slug": "corina_pasareanu",
+    "name": "Dr. Corina S. Pasareanu",
+    "addr1": "CMU Silicon Valley, Building 23, MS 23-11",
+    "addr2": "Moffett Field, CA 94035",
+    "addr3": "",
+    "letter": "Dr. Pasareanu,\n\nI'm a UW-Madison engineering grad student working on an independent verification project, and I wanted to send this because your work on compositional verification seems close to the part I'm trying to reason through.\n\nThe project is a rough architecture I'm calling a Verification Compiler. It builds an artifact graph from requirements, code, tests, analysis results, and review evidence, then turns that graph into bounded review packages.\n\nThe LLM part is not meant to prove or certify anything. It is more like a development pre-screen. The thing I care about more is whether the graph decomposition and evidence package are structured enough that a human or tool can review each unit cleanly.\n\nI found your work through assume-guarantee and compositional verification references. I'm trying to understand whether that analogy is actually fair, or if I'm stretching it too far.\n\nIf you have time for a short pointer or know a better prior-work trail, I'd really appreciate it.\n\nThank you,\nLevi Purdy"
+  },
+  {
+    "slug": "loris_dantoni",
+    "name": "Prof. Loris D'Antoni",
+    "addr1": "Computer Science and Engineering, UCSD",
+    "addr2": "Office 3214, 3235 Voigt Dr",
+    "addr3": "La Jolla, CA 92093",
+    "letter": "Professor D'Antoni,\n\nI'm a UW-Madison engineering grad student and I found your work through the UW/madPL connection. Your \"software people can trust\" framing seemed close enough to what I'm doing that I wanted to send this.\n\nI'm working on a rough architecture called a Verification Compiler. It treats requirements, code, tests, analysis outputs, and review evidence as a graph, then compiles that graph into bounded review packages.\n\nThe LLM is only a development pre-screen. The human review path stays the real endpoint. The part I'm interested in is whether this makes verification evidence easier to package, review, and keep current in CI.\n\nI'm not sure if this is framed correctly yet, but I'd really value a pointer if there is prior work I should know before I build the next prototype.\n\nThank you,\nLevi Purdy"
+  },
+  {
+    "slug": "somesh_jha",
+    "name": "Prof. Somesh Jha",
+    "addr1": "Computer Sciences, UW-Madison",
+    "addr2": "Morgridge Hall, 1205 University Ave",
+    "addr3": "Madison, WI 53706",
+    "letter": "Professor Jha,\n\nI'm a UW-Madison engineering grad student working independently on a software verification architecture, and I'm trying to get it in front of a few people who can challenge the security / trust assumptions.\n\nI found your work through the formal methods and security side, and especially because of the way your recent agent-security framing treats the model as an untrusted component and pushes guarantees into the surrounding system. That is very close to the design instinct in this project.\n\nThe project is called the Verification Compiler. It builds a graph of requirements, code, tests, analysis outputs, and evidence records, then deterministically compiles that graph into bounded verification query packages. LLMs can review those packages during development, but their output is explicitly not certification evidence. The system treats them as useful but fallible reviewers. The auditable part is the deterministic evidence packaging, graph coverage, invariant enforcement, and human review path.\n\nI'm sending this to you because I think the biggest risk is not just \"LLMs hallucinate,\" but whether the surrounding architecture actually constrains the failure modes well enough to be useful. If you think this is the wrong framing, I would rather find that out early.\n\nThank you,\nLevi Purdy"
+  },
+  {
+    "slug": "dan_negrut",
+    "name": "Prof. Dan Negrut",
+    "addr1": "Mechanical Engineering Building, Rm 4150A",
+    "addr2": "1513 University Avenue",
+    "addr3": "Madison, WI 53706",
+    "letter": "Professor Negrut,\n\nI took your 759 course and genuinely enjoyed it. This is a bit of a tangent from GPU computing, but I've been working on a side project and I'm trying to find people who might know where it fits.\n\nThe project is called a Verification Compiler. The short version is that it treats requirements, code, tests, and analysis evidence as a graph, then compiles that graph into small bounded review packages. During development, an LLM can pre-screen those packages. For anything that actually needs to be certified, a human reviews the same package. The point is making continuous integration work for verification, not just for builds and tests.\n\nI know this isn't directly in your area, but if any of it sounds familiar to someone you work with, I'd really appreciate a pass-along. If not, no worries at all.\n\nThanks again for the course.\n\nLevi Purdy"
+  },
+  {
+    "slug": "leanna_rierson",
+    "name": "Leanna Rierson",
+    "addr1": "c/o CRC Press / Taylor & Francis",
+    "addr2": "2385 Executive Center Dr, Suite 320",
+    "addr3": "Boca Raton, FL 33431",
+    "notes": "Publisher forwarding attempt. Mark envelope 'Please forward to author'. Medium-low confidence. Consider email first.",
+    "letter": "Dr. Rierson,\n\nI'm a UW-Madison engineering grad student and I wanted to send you this because your DO-178C book was one of the main reasons I started thinking about this project.\n\nI work around embedded and safety-critical-ish systems, and I've also been using agentic coding tools a lot. Reading your book made me start seeing the DO-178C workflow as a structured evidence and review problem, not just a paperwork problem. That is what led to this \"Verification Compiler\" idea.\n\nThe basic idea is to build a graph of requirements, code, tests, analysis outputs, and review evidence, then compile that into small review packages. LLMs can pre-screen during development, but they do not certify anything. The human review path is still the real endpoint.\n\nI'm not assuming this is correct yet. I'm sending it because your book is the foundation I kept coming back to, and I'd be very interested if you think this framing is useful, naive, or already covered somewhere I should be reading.\n\nThank you,\nLevi Purdy"
+  }
+]

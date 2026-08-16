@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source explicitly confirms the claim by stating that natural-language specifications suffer from ambiguity, rely on implicit assumptions, and cause implementations to drift from intent, citing peer-reviewed literature (Zave & Jackson 1997; Davis 1993).",
+  "what_source_actually_says": "The source explains that peer-reviewed literature identifies natural-language specifications as inherently ambiguous and prone to incompleteness, embedding unstated implicit assumptions that result in an implementation diverging or drifting from the original intent.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "",
+  "vqp_id": "A-CLAIM-natural-language-specifications-are-ambiguous-imp-SRC-requirements-engin",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-natural-language-specifications-are-ambiguous-imp",
+  "source_id": "SRC-requirements-engineering-nl-ambiguity"
+}

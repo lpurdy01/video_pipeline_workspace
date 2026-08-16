@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The claim matches the source text almost verbatim, correctly identifying the limited scope of the source as providing 'context only' that regulatory bodies are engaging with AI as an open question.",
+  "what_source_actually_says": "The source outlines several aviation and automotive regulatory documents (from EASA, FAA, and ISO) demonstrating that regulatory bodies are currently developing standards for AI as system components, proving it is an active area of regulation.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "The source explicitly notes that these regulations are about certifying AI systems as components, not about using AI as a verification tool.",
+  "vqp_id": "A-CLAIM-regulatory-bodies-are-actively-engaging-with-ai-in-SRC-regulatory-ai-avi",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-regulatory-bodies-are-actively-engaging-with-ai-in",
+  "source_id": "SRC-regulatory-ai-aviation-automotive"
+}

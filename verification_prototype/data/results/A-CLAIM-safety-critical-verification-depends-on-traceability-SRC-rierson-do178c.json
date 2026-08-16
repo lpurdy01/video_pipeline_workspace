@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 0.95,
+  "rationale": "The source explicitly states that safety-critical requirements work depends on bidirectional traceability connecting system and software requirements, test data, and verification results. This directly aligns with the claim's statement about safety-critical verification depending on maintained traceability across these artifacts.",
+  "what_source_actually_says": "The source explicitly states that safety-critical work relies on bidirectional traceability among system requirements, high-level and low-level software requirements, test data, and verification results.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "",
+  "vqp_id": "A-CLAIM-safety-critical-verification-depends-on-traceability-SRC-rierson-do178c",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-safety-critical-verification-depends-on-traceability",
+  "source_id": "SRC-rierson-do178c"
+}

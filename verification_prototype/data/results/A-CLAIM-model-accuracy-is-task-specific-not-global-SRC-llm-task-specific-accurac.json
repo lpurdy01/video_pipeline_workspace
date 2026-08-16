@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source explicitly states that a model's accuracy varies significantly across different task types, directly supporting the claim that model accuracy is task-specific rather than global. It also notes that this is empirically real and significant, aligning with the declared 'empirical support' type.",
+  "what_source_actually_says": "The source asserts that a model's performance on one task does not reliably predict its performance on another, citing empirical variations of 35-50 percentage points between different task categories.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "",
+  "vqp_id": "A-CLAIM-model-accuracy-is-task-specific-not-global-SRC-llm-task-specific-accurac",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-model-accuracy-is-task-specific-not-global",
+  "source_id": "SRC-llm-task-specific-accuracy"
+}

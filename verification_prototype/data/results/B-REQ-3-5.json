@@ -1,0 +1,12 @@
+{
+  "verdict": "covered",
+  "confidence": 1.0,
+  "rationale": "The whitepaper explicitly details all aspects of prompt configuration control in the 'Prompt configuration control' subsection. It covers versioning prompts like source code, unique version identifiers, recording the version in review results, prohibiting in-place edits, and reproducing historical queries exactly.",
+  "coverage_gaps": [],
+  "best_matching_section": "Concept: Verification Compiler / Verification Query and Result Schema",
+  "whitepaper_improvement_suggestion": "",
+  "vqp_id": "B-REQ-3-5",
+  "vqp_type": "requirement_coverage",
+  "requirement_id": "REQ-3-5",
+  "requirement_title": "Prompt Configuration Control"
+}

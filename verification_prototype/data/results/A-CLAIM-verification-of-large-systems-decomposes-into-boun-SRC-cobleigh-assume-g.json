@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source explicitly discusses assume-guarantee reasoning as a method to decompose the verification of large systems into bounded, independent sub-problems. This perfectly aligns with the claim that it provides a formal methods lineage for the whitepaper's DAG query decomposition architecture.",
+  "what_source_actually_says": "The source explains that assume-guarantee reasoning addresses the state explosion problem in model checking by decomposing a composite system into components that are verified independently against bounded interface assumptions.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "",
+  "vqp_id": "A-CLAIM-verification-of-large-systems-decomposes-into-boun-SRC-cobleigh-assume-g",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-verification-of-large-systems-decomposes-into-boun",
+  "source_id": "SRC-cobleigh-assume-guarantee"
+}

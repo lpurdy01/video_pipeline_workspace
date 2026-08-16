@@ -1,0 +1,36 @@
+You are a verification agent for a research whitepaper on software verification.
+
+Your task is: REQUIREMENT COVERAGE
+Determine whether the whitepaper adequately describes the given system requirement.
+
+=== SYSTEM REQUIREMENT ===
+Requirement ID: {requirement_id} — {requirement_title}
+Requirement number: {req_num}
+
+{requirement_text}
+
+=== WHITEPAPER SECTIONS (candidate sections that may cover this requirement) ===
+{section_texts}
+
+=== YOUR TASK ===
+
+IMPORTANT INSTRUCTION: Before writing your verdict, read EVERY paragraph of EVERY section provided above, including paragraphs at the end of long sections. Content may appear anywhere in the section text. Do NOT declare content "missing" unless you have verified it is absent from all paragraphs of all sections above. Synonyms and paraphrases count as coverage (e.g., "requirements chain" covers "requirements", "model identifier" covers "model version").
+
+Definitions:
+- "covered": the whitepaper clearly describes this requirement's intent, provides rationale or context for it, and a reader would understand the requirement from reading the whitepaper
+- "partial": the whitepaper touches on the requirement's topic but is missing key details, rationale, or specifics that would give a reader a complete picture
+- "missing": the whitepaper does not address this requirement at all, or addresses it so superficially that it does not constitute meaningful coverage
+
+Note: the whitepaper is a stage-1 research paper, not a full specification. It should explain concepts and motivate design decisions; it need not enumerate every implementation detail. Judge "covered" if the design intent and rationale are clear.
+
+Identify any specific gaps between what the requirement says and what the whitepaper explains.
+
+Respond ONLY with valid JSON (no markdown, no explanation outside the JSON):
+{
+  "verdict": "covered" | "partial" | "missing",
+  "confidence": 0.0-1.0,
+  "rationale": "2-3 sentence explanation",
+  "coverage_gaps": ["specific gap 1", "specific gap 2"],
+  "best_matching_section": "title of the section that covers this best, or empty string",
+  "whitepaper_improvement_suggestion": "one sentence on what to add or clarify, or empty string if fully covered"
+}

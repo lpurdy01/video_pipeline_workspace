@@ -1,0 +1,49 @@
+SOURCE: NASA NTRS
+PAPERS:
+  1. NTRS 20020043049 — "Automation Bias and Countermeasures in Flight Crews" (1997)
+     Authors: Kathleen L. Mosier, Linda J. Skitka, Melisa Dunbar, Lori McDonnell, Mark Rosekind
+     Institution: San Jose State University / NASA Ames Research Center
+  2. NTRS 20020041010 — "Decision Making In A High-Tech World: Automation Bias and Countermeasures" (1996)
+     Authors: Kathleen L. Mosier, Linda J. Skitka, Mark R. Burdick, Susan T. Heers, Mark R. Rosekind
+     Venue: Society for Judgment and Decision Making Conference, Chicago, IL (Nov 2-4, 1996)
+STATUS: Public Use Permitted (NASA NTRS)
+FETCHED: 2026-05-19 via ntrs.nasa.gov
+
+== CORE DEFINITION ==
+
+Automation bias: "errors made when decision makers rely on automated cues as a heuristic"
+replacement for vigilant information seeking and processing.
+
+Two distinct error types:
+- Commission errors: inappropriately following automated directives (over-trust)
+- Omission errors: failing to notice problems when automation doesn't alert (under-vigilance)
+
+== KEY FINDINGS (from NTRS 20020043049 and 20020041010) ==
+
+COUNTERMEASURE 1 — Accountability Effect:
+  Crews perceiving themselves as accountable for automation interactions showed:
+  - Significantly greater verification behaviors
+  - Significantly fewer automation-related errors
+  - Consistent effects across student and professional pilot samples
+  This directly supports: canary queries create accountability pressure (reviewer knows they
+  must independently verify, not just ratify LLM verdict)
+
+COUNTERMEASURE 2 — Display Prompts:
+  Visual prompts encouraging crews to verify automated system functioning improved
+  verification behaviors compared to control conditions.
+  This directly supports: evidence-first presentation (withholding LLM verdict until human
+  assessment submitted) is a display-architecture countermeasure to automation bias
+
+COUNTERMEASURE 3 — Training:
+  Explicit training on automation bias combined with verification instruction proved
+  effective at reducing reliance on faulty automation cues.
+  Improvements persisted at follow-up testing 6-9 weeks later.
+
+== SCOPE ==
+
+Research conducted in aviation/flight simulator contexts — directly applicable to the
+safety-critical software verification domain where human reviewers operate in supervisory
+control roles monitoring automated (LLM) assessments.
+
+Evidence-first presentation and canary queries are implementations of the accountability
+effect and display-prompt countermeasures documented in this NASA research.

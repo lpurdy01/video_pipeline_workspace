@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 1.0,
+  "rationale": "The source provides direct empirical evidence that accountability and display prompts are effective countermeasures against automation bias, reducing errors and improving verification behavior. The claim accurately reflects these findings and correctly maps them to the Verification Compiler's specific design features.",
+  "what_source_actually_says": "The cited research shows that establishing accountability leads to significantly fewer automation-related errors, and that visual display prompts successfully encourage human operators to verify automated system statuses.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "The original empirical research was conducted in the aviation/flight simulator domain with pilots, whereas the claim applies the concepts to human reviewers evaluating LLM outputs in software verification.",
+  "vqp_id": "A-CLAIM-accountability-effect-and-display-prompt-counterme-SRC-mosier-automation",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-accountability-effect-and-display-prompt-counterme",
+  "source_id": "SRC-mosier-automation-bias-nasa"
+}

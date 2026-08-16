@@ -1,0 +1,57 @@
+# ---------------------------------------------------------------------------
+# Secrets and local environment
+# ---------------------------------------------------------------------------
+.env
+.env.*
+.env_temp
+!.env.example
+*.pem
+*.key
+*api_key*
+*apikey*
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ---------------------------------------------------------------------------
+# Parked pre-import git history (local only)
+# ---------------------------------------------------------------------------
+.git_pre_import_history/
+
+# ---------------------------------------------------------------------------
+# Generated pipeline output -- all of this is rebuildable from the scripts and
+# manifests that ARE tracked. Nothing here should ever be committed.
+# ---------------------------------------------------------------------------
+out/
+graphify-out/
+
+# ---------------------------------------------------------------------------
+# Large source media. Not regenerable, but too large for plain git.
+# Backed up separately -- see README_BACKUP.md.
+# ---------------------------------------------------------------------------
+representation_transform_visuals/assets/human_audio/*
+!representation_transform_visuals/assets/human_audio/README.md
+representation_transform_visuals/assets/human_video/*
+!representation_transform_visuals/assets/human_video/README.md
+representation_transform_visuals/assets/source_stills/*
+!representation_transform_visuals/assets/source_stills/README.md
+
+# Downloaded third-party reference video (re-fetchable via source_videos.json)
+representation_transform_visuals/source_frame_pipeline/out/downloads/
+
+# ---------------------------------------------------------------------------
+# Third-party copyrighted material -- kept local, not redistributed
+# ---------------------------------------------------------------------------
+refrence_literature/Developing_safety_critical_software/
+
+# ---------------------------------------------------------------------------
+# OS / editor cruft
+# ---------------------------------------------------------------------------
+*:Zone.Identifier
+.DS_Store
+*.swp

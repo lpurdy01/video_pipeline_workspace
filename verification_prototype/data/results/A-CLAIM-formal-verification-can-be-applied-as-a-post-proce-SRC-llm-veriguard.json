@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 0.95,
+  "rationale": "The source text directly aligns with the claim, explicitly stating that VeriGuard demonstrates how LLM-generated code can be fed into formal verification tools to provide safety guarantees in safety-critical applications. The source confirms the structural viability of LLM outputs for this verification pipeline.",
+  "what_source_actually_says": "The source describes VeriGuard, a system where LLM code generation is parsed by formal verification tooling and monitored against pre-verified safety policies to guarantee safety in critical applications.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "The support type claims 'peer-reviewed empirical support', but the citation provided is an arXiv preprint (arXiv:2510.05156), which does not inherently guarantee peer review.",
+  "vqp_id": "A-CLAIM-formal-verification-can-be-applied-as-a-post-proce-SRC-llm-veriguard",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-formal-verification-can-be-applied-as-a-post-proce",
+  "source_id": "SRC-llm-veriguard"
+}

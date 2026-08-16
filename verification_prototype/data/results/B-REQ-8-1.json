@@ -1,0 +1,12 @@
+{
+  "verdict": "covered",
+  "confidence": 1.0,
+  "rationale": "The whitepaper explicitly addresses the graph invalidation cascade, matching the requirement text almost verbatim. It clearly outlines the current scope of re-running all VQPs and the future design constraint of conservative invalidation.",
+  "coverage_gaps": [],
+  "best_matching_section": "Known Architectural Challenges / Graph Invalidation Cascade",
+  "whitepaper_improvement_suggestion": "",
+  "vqp_id": "B-REQ-8-1",
+  "vqp_type": "requirement_coverage",
+  "requirement_id": "REQ-8-1",
+  "requirement_title": "Graph Invalidation Cascade"
+}

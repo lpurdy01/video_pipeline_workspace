@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "confidence": 0.95,
+  "rationale": "The source explicitly identifies Beningo's argument as a representative specimen of practitioner skepticism regarding AI in safety-critical software, specifically citing structural barriers like certification processes and evidence requirements. This aligns perfectly with the claim's use of the source to represent the skeptical framing that the whitepaper rebuts.",
+  "what_source_actually_says": "The source outlines Beningo's view that the main objection to AI in safety-critical software is structural (such as certification standards and evidence requirements) rather than just capability, acting as a barrier or 'moat'.",
+  "misrepresentation_found": false,
+  "misrepresentation_detail": "",
+  "scope_caveat": "",
+  "vqp_id": "A-CLAIM-certification-standards-require-demonstrable-evide-SRC-beningo-embedded-",
+  "vqp_type": "citation_verification",
+  "claim_id": "CLAIM-certification-standards-require-demonstrable-evide",
+  "source_id": "SRC-beningo-embedded-moats"
+}

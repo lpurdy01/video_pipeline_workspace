@@ -1,0 +1,12 @@
+{
+  "verdict": "covered",
+  "confidence": 1.0,
+  "rationale": "The whitepaper section provides a nearly verbatim match to the system requirement. It explicitly addresses DO-178C Section 6.4.4.e, explains the integration of OCV tool outputs as 'analyzed-by' edges in the artifact graph, and clearly defines its exclusion from Stage 1 scope.",
+  "coverage_gaps": [],
+  "best_matching_section": "Known Architectural Challenges / Object Code Verification",
+  "whitepaper_improvement_suggestion": "",
+  "vqp_id": "B-REQ-8-7",
+  "vqp_type": "requirement_coverage",
+  "requirement_id": "REQ-8-7",
+  "requirement_title": "Object Code Verification"
+}

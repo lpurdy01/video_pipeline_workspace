@@ -1,0 +1,12 @@
+{
+  "verdict": "covered",
+  "confidence": 1.0,
+  "rationale": "The whitepaper explicitly addresses all aspects of the conflict resolution requirement under the 'Conflict resolution' subsection. It clearly states that human results take precedence, model results are retained and flagged, and disagreements trigger recalibration events if thresholds are exceeded, while also matching the rationale completely.",
+  "coverage_gaps": [],
+  "best_matching_section": "Concept: Verification Compiler / Verification Query and Result Schema",
+  "whitepaper_improvement_suggestion": "",
+  "vqp_id": "B-REQ-3-4",
+  "vqp_type": "requirement_coverage",
+  "requirement_id": "REQ-3-4",
+  "requirement_title": "Conflict Resolution"
+}
