@@ -7,7 +7,7 @@ Usage:
         --spec "Artifact graph: three zones (Requirements blue, Code Units purple, \
                 Verification Evidence green) linked by typed edges..." \
         --out whitepaper/diagram1_rendered.png \
-        [--model nano-banana-pro-preview]
+        [--model gemini-3-pro-image]
 
 The wireframe is sent as a visual reference. The spec drives content and layout intent.
 The model generates a cleaner, publication-quality diagram and writes it as a PNG.
@@ -19,7 +19,7 @@ from pathlib import Path
 
 from gemini_client import generate_image, image_part
 
-DEFAULT_MODEL = "models/nano-banana-pro-preview"
+DEFAULT_MODEL = "models/gemini-3-pro-image"
 
 SYSTEM_PROMPT = """You are producing a clean, publication-quality technical diagram for a \
 whitepaper about a software verification system called the Verification Compiler.

@@ -1,64 +1,14 @@
-# The Compiler For Trust - Third-Pass Script
+# The Compiler For Trust — recording script
 
-Status: third pass, revised against the 2026-08-24 spoken commentary.
-See `narration_review/out/review_notes_2026_08_23.md` and
-`review_notes_2026_08_24.md` for what changed and why.
+Narration only. Every blank line is a breath; every heading is a section
+boundary and a natural place to stop and restart.
+**2246 words total — about 15 minutes at a measured read.**
 
-Target length: roughly 10 minutes. See the length note at the end of this file.
 
-Working title:
+## 1. Cold Open: Generation Got Cheap
+_33 lines · 379 words_
 
-**The Compiler For Trust**
-
-Alternate titles:
-
-- The Verification Compiler
-- AI Can Write Code. Who Checks It?
-- The Bottleneck Is Verification
-- From Code Generation To Evidence Generation
-
-## Voice Notes
-
-The voice should feel like an engineer thinking out loud, not like a compliance
-webinar. The key emotional motion is:
-
-```text
-excitement about AI generation -> discomfort about verification -> relief that
-the problem has a shape -> ambition around evidence generation
-```
-
-Avoid saying that AI certifies safety-critical software. LLM review is
-developmental unless a human promotes it. The final authority remains human.
-
-Concretely: safety-critical software is signed off today by humans who verify it
-and carry the responsibility for it. Be precise about the shape of that: it is
-not a professional-engineer stamp the way civil or mechanical engineering works.
-It is organizational and process-driven — the FAA signs off on it. That endpoint
-does not move. We cannot hand-wave and say the AI did it.
-
-But two things are still true. During development, a signal of how much human
-verification is still ahead of you is genuinely useful. And for teams who are not
-going for full certification and do not have the budget to verify everything, a
-readiness metric is a code quality signal richer than anything we have today.
-
-The video also has to work for people who do not write embedded software. Every
-abstract claim needs a "so what" — a concrete piece of the world it touches.
-
-## Full Narration Draft
-
-### 1. Cold Open: Generation Got Cheap
-
-[VISUAL: The open is aggressive — motion from frame one, not a build. Over "a
-whole category of software that AI is not allowed to write" and the stakes line,
-run a pictogram sequence: a small plane flying level, code streaming through it,
-the code going bad, the plane losing altitude and going in. Hard, fast, and over
-before it becomes tasteless — it is the reason the rest of the video exists, not
-a joke. Everything is drawn in the shape grammar: the plane as a silhouette, the
-code as the same cyan squares the flood uses, the failure in RED. Requested by
-the reviewer 2026-08-28.]
-
-Your agent wrote four thousand lines this week. Code, tests, docs, a migration
-plan.
+Your agent wrote four thousand lines this week. Code, tests, docs, a migration plan.
 
 How much of it did you read?
 
@@ -74,22 +24,17 @@ AI made writing code cheap. It did not make trusting code cheap.
 
 And that is a verification problem, which means I think it is solvable.
 
-This is not a thought experiment, either. Across the industry, more and more of
-the work already happens agentically.
+This is not a thought experiment, either. Across the industry, more and more of the work already happens agentically.
 
 Pull requests arrive faster than any team can actually read them.
 
-The pace becomes the product, and review is the thing that gets crushed
-underneath it.
+The pace becomes the product, and review is the thing that gets crushed underneath it.
 
 Because serious software is not just software that runs.
 
-Serious software is software where someone can explain what it is supposed to
-do, what requirement it satisfies, what test verified it, what version the test
-ran against, what evidence was produced, and who accepted the result.
+Serious software is software where someone can explain what it is supposed to do, what requirement it satisfies, what test verified it, what version the test ran against, what evidence was produced, and who accepted the result.
 
-Let me be concrete about what I mean, because there are really two different
-worlds here.
+Let me be concrete about what I mean, because there are really two different worlds here.
 
 In one of them, quality is a business problem.
 
@@ -103,8 +48,7 @@ It keeps satellites talking to the ground.
 
 It decides how hard your car brakes when a child steps into the road.
 
-That software is certified before it is allowed to run, and somebody has to be
-accountable for it — an organization, a process, a regulator signing off.
+That software is certified before it is allowed to run, and somebody has to be accountable for it — an organization, a process, a regulator signing off.
 
 AI has made generation faster.
 
@@ -118,14 +62,11 @@ Not to the model.
 
 To trust.
 
-And that is why I have been thinking about something I call a Verification
-Compiler.
+And that is why I have been thinking about something I call a Verification Compiler.
 
 The goal is not to bring AI into safety-critical work for the sake of it.
 
-The goal is to automate the verification scaffolding during development, so that
-the standards that keep that software safe stay fully intact while you move
-faster.
+The goal is to automate the verification scaffolding during development, so that the standards that keep that software safe stay fully intact while you move faster.
 
 It is a process, not a shortcut.
 
@@ -133,7 +74,10 @@ Or, less formally:
 
 a compiler for trust.
 
-### 2. The Hidden Cost Of "Looks Good"
+---
+
+## 2. The Hidden Cost Of "Looks Good"
+_21 lines · 133 words_
 
 Here is the trap.
 
@@ -153,8 +97,7 @@ And a chat transcript is not evidence.
 
 For a quick iteration, that may be fine.
 
-Where failure actually matters, the question is not whether the answer sounds
-reasonable.
+Where failure actually matters, the question is not whether the answer sounds reasonable.
 
 The question is:
 
@@ -178,7 +121,10 @@ The model can generate an answer.
 
 But the answer still has to be turned into evidence.
 
-### 3. Safety-Critical Software Already Has The Shape
+---
+
+## 3. Safety-Critical Software Already Has The Shape
+_33 lines · 331 words_
 
 High-assurance software has been dealing with this kind of problem for decades.
 
@@ -192,8 +138,7 @@ ISO 26262, and ASIL levels, in automotive.
 
 There are more, industry by industry.
 
-The details vary, and the standards themselves are careful legal and engineering
-documents.
+The details vary, and the standards themselves are careful legal and engineering documents.
 
 But the broad pattern is simple enough to see.
 
@@ -217,15 +162,13 @@ That can sound like bureaucracy from the outside.
 
 And I want to be honest about it: it is a lot of overhead work.
 
-It is part of why the same function can cost a hundred times more to ship on an
-aircraft than on a drone.
+It is part of why the same function can cost a hundred times more to ship on an aircraft than on a drone.
 
 But the deeper idea is not bureaucracy.
 
 It is coordination.
 
-It is a way for a large group of limited humans to make a complicated system
-reviewable.
+It is a way for a large group of limited humans to make a complicated system reviewable.
 
 And reviewable is the word that matters.
 
@@ -241,18 +184,18 @@ You verify the small units first.
 
 Unit tests. Integration tests. System tests. Verification tests.
 
-And the requirements stack the same way, sub-requirements rolling up into the
-requirements that actually matter.
+And the requirements stack the same way, sub-requirements rolling up into the requirements that actually matter.
 
-You climb that ladder until the system is as true as you can make it, before
-anyone's life depends on it.
+You climb that ladder until the system is as true as you can make it, before anyone's life depends on it.
 
 And that is the clue for AI-assisted software.
 
-If models are going to generate more artifacts, faster, then the project needs
-an even stronger structure for knowing what those artifacts mean.
+If models are going to generate more artifacts, faster, then the project needs an even stronger structure for knowing what those artifacts mean.
 
-### 4. Artifacts Become A Graph
+---
+
+## 4. Artifacts Become A Graph
+_27 lines · 163 words_
 
 The first move is to stop thinking of a project as a folder full of files.
 
@@ -280,8 +223,7 @@ Model review outputs.
 
 Human review outputs.
 
-Even specific sections of source documents become nodes, because a citation that
-only says "see the standard" is not precise enough.
+Even specific sections of source documents become nodes, because a citation that only says "see the standard" is not precise enough.
 
 Then the relationships become edges.
 
@@ -309,15 +251,16 @@ Those are not philosophical questions anymore.
 
 They are graph questions.
 
-### 5. Compilation Means Traversal
+---
+
+## 5. Compilation Means Traversal
+_22 lines · 135 words_
 
 This is where the compiler analogy starts to matter.
 
-A normal compiler takes source code, walks a structured representation, and
-emits something else.
+A normal compiler takes source code, walks a structured representation, and emits something else.
 
-It turns one representation into another representation through a defined
-process.
+It turns one representation into another representation through a defined process.
 
 A Verification Compiler would not compile code into a binary.
 
@@ -357,14 +300,16 @@ But the package they receive should not be a vibe.
 
 It should be a reproducible artifact.
 
-### 6. The Verification Query Package
+---
+
+## 6. The Verification Query Package
+_19 lines · 218 words_
 
 I have been calling that artifact a Verification Query Package. A VQP.
 
 The name is clunky, but the idea is useful.
 
-A Verification Query Package is the smallest unit of verification work that can
-stand on its own.
+A Verification Query Package is the smallest unit of verification work that can stand on its own.
 
 It includes the code under review.
 
@@ -386,25 +331,22 @@ But complete enough that the reviewer is not guessing what context matters.
 
 And a package does not have to be text.
 
-[VISUAL: a VQP opening to show a rendered screenshot and a captured waveform
-alongside the code and requirement panes.]
+A rendered screen, a captured output, a physical test trace — if it is evidence about the thing being checked, it belongs in the package.
 
-A rendered screen, a captured output, a physical test trace — if it is evidence
-about the thing being checked, it belongs in the package.
-
-That matters well beyond aerospace, though aerospace is where the standards are
-strictest, and that is the case this is built for.
+That matters well beyond aerospace, though aerospace is where the standards are strictest, and that is the case this is built for.
 
 This is one of the important shifts.
 
-Instead of asking a model to review an entire project, or asking a human to
-search through a pile of artifacts, the graph assembles the relevant slice.
+Instead of asking a model to review an entire project, or asking a human to search through a pile of artifacts, the graph assembles the relevant slice.
 
 The huge problem becomes many smaller review packages.
 
 And each package can leave behind a structured result.
 
-### 7. Same Package, Two Review Modes
+---
+
+## 7. Same Package, Two Review Modes
+_18 lines · 172 words_
 
 This also gives us a cleaner way to talk about AI review.
 
@@ -430,9 +372,7 @@ That is valuable.
 
 But it is developmental review.
 
-For certification-facing decisions, a human reviewer can inspect the same
-package — rendered into something actually readable, a page rather than a blob of
-JSON — and produce the accepted result.
+For certification-facing decisions, a human reviewer can inspect the same package — rendered into something actually readable, a page rather than a blob of JSON — and produce the accepted result.
 
 If the model and the human disagree, the disagreement is not swept away.
 
@@ -442,10 +382,12 @@ It can update the model's suitability for that kind of task.
 
 The system is not trying to pretend the model is a perfect certifier.
 
-It is trying to make model assistance fit inside a review structure that humans
-can audit.
+It is trying to make model assistance fit inside a review structure that humans can audit.
 
-### 8. Evidence Cards, Not Conversations
+---
+
+## 8. Evidence Cards, Not Conversations
+_12 lines · 137 words_
 
 The output should not be a chat bubble.
 
@@ -453,12 +395,7 @@ It should be an evidence record.
 
 And a record has fields.
 
-[VISUAL: evidence card — Result, Rationale, Citations, Reviewer, Version. The
-table carries the field names; do not read them aloud.]
-
-Every one of those fields answers a question you would otherwise have to walk
-over and ask somebody: what was decided, why, what supports it, who decided, and
-against which version of the code.
+Every one of those fields answers a question you would otherwise have to walk over and ask somebody: what was decided, why, what supports it, who decided, and against which version of the code.
 
 And once that record exists, it should not be edited in place.
 
@@ -466,8 +403,7 @@ If the code changes, the old evidence does not disappear.
 
 It becomes stale.
 
-If the source document changes, links depending on that source region need to be
-rechecked.
+If the source document changes, links depending on that source region need to be rechecked.
 
 If a human overrides a model result, both records stay visible.
 
@@ -477,7 +413,10 @@ The point is not that every record is true forever.
 
 The point is that every record has provenance.
 
-### 9. Verification Readiness Is A Map, Not Magic
+---
+
+## 9. Verification Readiness Is A Map, Not Magic
+_24 lines · 217 words_
 
 Once the project is a graph and the reviews are structured, you can zoom out.
 
@@ -503,8 +442,7 @@ it is not a magic safety score.
 
 It does not say the system is safe because the number is high.
 
-It says the evidence surface is more or less complete, more or less current,
-more or less reviewed.
+It says the evidence surface is more or less complete, more or less current, more or less reviewed.
 
 It makes the gaps visible.
 
@@ -514,13 +452,11 @@ Not certainty.
 
 Visibility.
 
-And one more distinction, because the two words get used interchangeably and
-they are not the same thing.
+And one more distinction, because the two words get used interchangeably and they are not the same thing.
 
 Verification is checking that you built the thing you meant to build.
 
-Validation is checking that the thing you built is the thing you should have
-built — that it actually holds up out in the world.
+Validation is checking that the thing you built is the thing you should have built — that it actually holds up out in the world.
 
 Those are two separate processes.
 
@@ -530,7 +466,10 @@ It will not tell you that you designed the right system.
 
 It tells you whether you can show that you built the system you specified.
 
-### 10. Closing: The Future Is Evidence Generation
+---
+
+## 10. Closing: The Future Is Evidence Generation
+_22 lines · 127 words_
 
 I think this is where AI software is going.
 
@@ -538,8 +477,7 @@ Not because models will magically replace verification.
 
 They will not.
 
-But because generation is getting cheaper, and every cheap generation step
-creates a verification obligation.
+But because generation is getting cheaper, and every cheap generation step creates a verification obligation.
 
 Another function.
 
@@ -577,8 +515,10 @@ Because the future of AI software is not just generating code.
 
 It is generating evidence we can actually inspect.
 
+---
 
-### 11. End Card
+## 11. End Card
+_9 lines · 234 words_
 
 Thank you for sitting through my thinking on this.
 
@@ -598,39 +538,4 @@ If you want to know when that lands, like the video and subscribe.
 
 And if you know someone working on this problem — someone who has to get software through a certification process — send it to them. That is the conversation I am hoping to start.
 
-
 ---
-
-## Length Note (second pass, 2026-08-23)
-
-At 150 wpm this draft reads **13.4 minutes**, against a 10-minute target. The
-first pass was 10.4. The commentary asked for material that necessarily adds
-time — the "so what" grounding, the standards context, the decomposition
-argument, and the verification/validation split — so the overage is the cost of
-those notes, not padding that crept in.
-
-Where the time went:
-
-| Section | Was | Now |
-|---|---|---|
-| 1. Cold Open | 70s | 161s |
-| 3. Already Has The Shape | 63s | 132s |
-| 9. Readiness Is A Map | 52s | 90s |
-| everything else | ~10s net cut |
-
-Three ways to get back toward ten minutes, in the order I would try them:
-
-1. **Split the cold open.** Section 1 is now 2:41, which is long for an opening.
-   The two-worlds contrast (web software vs. certified software) could move into
-   section 3, where the standards discussion already lives. Saves ~50s and gives
-   section 1 a single job again.
-2. **Compress the test ladder.** "Unit tests. Integration tests. System tests.
-   Verification tests." plus the sub-requirements sentence is the most
-   compressible new material — the visual can carry the ladder while the
-   narration states only the principle. Saves ~25s.
-3. **Trim sections 4-7.** These are untouched from the first pass and are the
-   most abstract stretch of the video. Roughly 10% could come out of each without
-   losing an argument. Saves ~25s.
-
-Applying all three lands near 11 minutes. Getting under 10 would mean cutting an
-argument, not tightening prose — that is a call for the next pass.

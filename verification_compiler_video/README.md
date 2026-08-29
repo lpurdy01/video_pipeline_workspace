@@ -30,6 +30,23 @@ and review artifacts live here.
   turning local transcripts into review notes.
 - `assets/human_audio/`: local human narration/commentary recordings.
 
+## Final Output Policy
+
+Set 2026-08-22. Applies to anything that ships, not to prototyping.
+
+- **Visuals are rendered, not generated.** Final frames come from Manim (or
+  other deterministic rendering). No image-generation model output in the cut.
+  `diagram_render.py` / Nano Banana are for wireframe exploration and whitepaper
+  figures only — treat their output as reference, never as a shipped frame.
+- **Narration is real human speech.** Gemini TTS is scratch audio for timing and
+  rough cuts only. Every shipped second of voice is a human recording.
+- **No generated video.** Veo and similar are out of scope for the final cut.
+- **No music**, generated or otherwise, unless that decision is revisited.
+
+Generated content remains fine as *scaffolding*: scratch TTS for pacing,
+generated stills for composition tests, model critique of frames. The line is
+what lands in the exported video.
+
 ## Human Audio Policy
 
 Keep raw human audio local by default. Do not upload human voice recordings,

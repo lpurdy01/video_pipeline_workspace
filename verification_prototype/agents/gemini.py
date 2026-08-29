@@ -27,7 +27,7 @@ class QuotaExhaustedError(RuntimeError):
     Re-run without --force after the quota resets (~24h).
     """
 # REST model for image/visual calls (visual_review.py)
-REST_MODEL = "models/gemini-2.5-pro"
+REST_MODEL = "models/gemini-3.1-pro-preview"
 PROMPTS_DIR = Path(__file__).parent.parent / "prompts"
 
 

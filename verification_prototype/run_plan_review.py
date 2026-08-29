@@ -41,8 +41,8 @@ parts = [
     {"text": "\n\n---\n\n## PLAN TO REVIEW\n\n" + plan_text},
 ]
 
-print("Sending to Gemini 2.5 Pro — this may take up to 2 minutes...")
-response = generate_content(model="models/gemini-2.5-pro", parts=parts, timeout=180)
+print("Sending to Gemini 3.1 Pro — this may take up to 2 minutes...")
+response = generate_content(model="models/gemini-3.1-pro-preview", parts=parts, timeout=180)
 
 print("\n" + "=" * 80)
 print(response)

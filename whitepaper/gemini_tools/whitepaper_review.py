@@ -4,7 +4,7 @@ Submit the whitepaper draft + key wiki pages to Gemini for structured critique.
 Usage:
     python3 whitepaper/gemini_tools/whitepaper_review.py \
         [--out whitepaper/gemini_tools/out/review_YYYYMMDD.md] \
-        [--model gemini-2.5-pro] \
+        [--model models/gemini-3.1-pro-preview] \
         [--focus "argument structure"]
 
 What it bundles:

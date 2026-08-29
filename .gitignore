@@ -30,6 +30,10 @@ venv/
 out/
 graphify-out/
 
+# Manim's render tree. Rebuildable from the scene files by re-rendering, and
+# large: the video-2 scenes alone put 40MB of mp4 in here.
+media/
+
 # ---------------------------------------------------------------------------
 # Large source media. Not regenerable, but too large for plain git.
 # Backed up separately -- see README_BACKUP.md.
@@ -40,6 +44,12 @@ representation_transform_visuals/assets/human_video/*
 !representation_transform_visuals/assets/human_video/README.md
 representation_transform_visuals/assets/source_stills/*
 !representation_transform_visuals/assets/source_stills/README.md
+
+# Video 2's commentary and narration takes. Same rule as above, and the same
+# reason twice over: 54MB of audio does not belong in plain git, and a voice
+# recording is personal data that should not be pushed to a remote by default.
+verification_compiler_video/assets/human_audio/*
+!verification_compiler_video/assets/human_audio/README.md
 
 # Downloaded third-party reference video (re-fetchable via source_videos.json)
 representation_transform_visuals/source_frame_pipeline/out/downloads/

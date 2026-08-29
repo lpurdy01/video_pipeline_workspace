@@ -12,14 +12,18 @@
   "notes": [
     "Raw human audio stays local by default.",
     "Text transcripts, script drafts, review notes, and generated frames may be sent to approved compute APIs under current repo policy.",
-    "LLM review must be framed as developmental unless promoted by a human reviewer."
+    "LLM review must be framed as developmental unless promoted by a human reviewer.",
+    "FINAL OUTPUT POLICY (2026-08-22): visuals rendered (Manim), not model-generated.",
+    "Narration in the final cut is human speech only; scratch TTS is for timing and rough cuts.",
+    "No generated video (Veo) and no music in the final cut.",
+    "Section target durations retimed to the 2026-08-23 second-pass script (150 wpm estimate; replace with real human take lengths once recorded)."
   ],
   "sections": [
     {
       "id": "01_generation_got_cheap",
       "title": "Cold Open: Generation Got Cheap",
       "scene_class": "S01GenerationGate",
-      "target_duration_seconds": 45,
+      "target_duration_seconds": 161,
       "script_section": "verification_compiler_video/drafts/script.md#1-cold-open-generation-got-cheap",
       "audio": {
         "human_path": "verification_compiler_video/assets/human_audio/01_generation_got_cheap.wav"
@@ -42,7 +46,7 @@
       "id": "02_chat_log_fallacy",
       "title": "The Hidden Cost Of Looks Good",
       "scene_class": "S02ChatLogFallacy",
-      "target_duration_seconds": 60,
+      "target_duration_seconds": 56,
       "script_section": "verification_compiler_video/drafts/script.md#2-the-hidden-cost-of-looks-good",
       "audio": {
         "human_path": "verification_compiler_video/assets/human_audio/02_chat_log_fallacy.wav"
@@ -65,7 +69,7 @@
       "id": "03_traceability_shape",
       "title": "Safety-Critical Software Already Has The Shape",
       "scene_class": "S03TraceabilityChain",
-      "target_duration_seconds": 60,
+      "target_duration_seconds": 132,
       "script_section": "verification_compiler_video/drafts/script.md#3-safety-critical-software-already-has-the-shape",
       "audio": {
         "human_path": "verification_compiler_video/assets/human_audio/03_traceability_shape.wav"
@@ -88,7 +92,7 @@
       "id": "04_artifact_graph",
       "title": "Artifacts Become A Graph",
       "scene_class": "S04ArtifactGraph",
-      "target_duration_seconds": 70,
+      "target_duration_seconds": 67,
       "script_section": "verification_compiler_video/drafts/script.md#4-artifacts-become-a-graph",
       "audio": {
         "human_path": "verification_compiler_video/assets/human_audio/04_artifact_graph.wav"
@@ -111,7 +115,7 @@
       "id": "05_compilation_traversal",
       "title": "Compilation Means Traversal",
       "scene_class": "S05TraversalCompiler",
-      "target_duration_seconds": 75,
+      "target_duration_seconds": 56,
       "script_section": "verification_compiler_video/drafts/script.md#5-compilation-means-traversal",
       "audio": {
         "human_path": "verification_compiler_video/assets/human_audio/05_compilation_traversal.wav"
@@ -134,7 +138,7 @@
       "id": "06_vqp",
       "title": "The Verification Query Package",
       "scene_class": "S06VQPPackage",
-      "target_duration_seconds": 75,
+      "target_duration_seconds": 66,
       "script_section": "verification_compiler_video/drafts/script.md#6-the-verification-query-package",
       "audio": {
         "human_path": "verification_compiler_video/assets/human_audio/06_vqp.wav"
@@ -157,7 +161,7 @@
       "id": "07_dual_mode_review",
       "title": "Same Package, Two Review Modes",
       "scene_class": "S07DualModeReview",
-      "target_duration_seconds": 60,
+      "target_duration_seconds": 65,
       "script_section": "verification_compiler_video/drafts/script.md#7-same-package-two-review-modes",
       "audio": {
         "human_path": "verification_compiler_video/assets/human_audio/07_dual_mode_review.wav"
@@ -180,7 +184,7 @@
       "id": "08_evidence_cards",
       "title": "Evidence Cards, Not Conversations",
       "scene_class": "S08EvidenceCards",
-      "target_duration_seconds": 60,
+      "target_duration_seconds": 57,
       "script_section": "verification_compiler_video/drafts/script.md#8-evidence-cards-not-conversations",
       "audio": {
         "human_path": "verification_compiler_video/assets/human_audio/08_evidence_cards.wav"
@@ -203,7 +207,7 @@
       "id": "09_readiness_map",
       "title": "Verification Readiness Is A Map, Not Magic",
       "scene_class": "S09ReadinessMap",
-      "target_duration_seconds": 55,
+      "target_duration_seconds": 90,
       "script_section": "verification_compiler_video/drafts/script.md#9-verification-readiness-is-a-map-not-magic",
       "audio": {
         "human_path": "verification_compiler_video/assets/human_audio/09_readiness_map.wav"
@@ -226,7 +230,7 @@
       "id": "10_evidence_surface",
       "title": "Closing: The Future Is Evidence Generation",
       "scene_class": "S10EvidenceSurface",
-      "target_duration_seconds": 40,
+      "target_duration_seconds": 54,
       "script_section": "verification_compiler_video/drafts/script.md#10-closing-the-future-is-evidence-generation",
       "audio": {
         "human_path": "verification_compiler_video/assets/human_audio/10_evidence_surface.wav"

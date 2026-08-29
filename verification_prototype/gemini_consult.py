@@ -124,10 +124,10 @@ prompt = prompt.replace("REQUIREMENTS_PLACEHOLDER", requirements)
 prompt = prompt.replace("WHITEPAPER_PLACEHOLDER", whitepaper_excerpt)
 
 print(f"Prompt length: {len(prompt):,} characters")
-print("Calling Gemini 2.5 Pro (timeout=300s)...")
+print("Calling Gemini 3.1 Pro (timeout=300s)...")
 
 response = gemini_client.generate_content(
-    model="models/gemini-2.5-pro",
+    model="models/gemini-3.1-pro-preview",
     parts=[{"text": prompt}],
     timeout=300,
 )

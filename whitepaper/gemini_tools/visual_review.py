@@ -5,7 +5,7 @@ Usage:
     python3 whitepaper/gemini_tools/visual_review.py \
         [--pages-dir whitepaper/out/pages] \
         [--out whitepaper/gemini_tools/out/visual_review_YYYYMMDD.md] \
-        [--model models/gemini-2.5-pro] \
+        [--model models/gemini-3.1-pro-preview] \
         [--batch-size 6]
 """
 from __future__ import annotations
@@ -19,7 +19,7 @@ from gemini_client import generate_content, image_part
 REPO = Path(__file__).resolve().parents[2]
 DEFAULT_OUT = Path(__file__).parent / "out" / f"visual_review_{date.today().isoformat()}.md"
 DEFAULT_PAGES = REPO / "whitepaper/out/pages"
-DEFAULT_MODEL = "models/gemini-2.5-pro"
+DEFAULT_MODEL = "models/gemini-3.1-pro-preview"
 
 SYSTEM_PROMPT = """\
 You are reviewing rendered pages of a technical whitepaper PDF for visual and layout quality.

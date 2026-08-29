@@ -48,34 +48,25 @@ abstract claim needs a "so what" — a concrete piece of the world it touches.
 
 ### 1. Cold Open: Generation Got Cheap
 
-[VISUAL: The open is aggressive — motion from frame one, not a build. Over "a
-whole category of software that AI is not allowed to write" and the stakes line,
-run a pictogram sequence: a small plane flying level, code streaming through it,
-the code going bad, the plane losing altitude and going in. Hard, fast, and over
-before it becomes tasteless — it is the reason the rest of the video exists, not
-a joke. Everything is drawn in the shape grammar: the plane as a silhouette, the
-code as the same cyan squares the flood uses, the failure in RED. Requested by
-the reviewer 2026-08-28.]
+AI made writing code cheap.
 
-Your agent wrote four thousand lines this week. Code, tests, docs, a migration
-plan.
+But it did not make trusting code cheap.
 
-How much of it did you read?
+That is the part I think people are still underestimating.
 
-There is a whole category of software that AI is not allowed to write.
+If a model can write a function in ten seconds, that is impressive.
 
-Aircraft. Medical devices.
+If it can write the tests, the documentation, the migration plan, the review
+summary, and the issue comment in another ten seconds, that is even more
+impressive.
 
-Not because the models are bad at it.
+But now you have a new problem.
 
-Because nobody can check the work fast enough to keep the standards intact.
+Who checks all of it?
 
-AI made writing code cheap. It did not make trusting code cheap.
+And this is not a thought experiment.
 
-And that is a verification problem, which means I think it is solvable.
-
-This is not a thought experiment, either. Across the industry, more and more of
-the work already happens agentically.
+Across the industry, more and more of the work happens agentically.
 
 Pull requests arrive faster than any team can actually read them.
 
@@ -105,6 +96,12 @@ It decides how hard your car brakes when a child steps into the road.
 
 That software is certified before it is allowed to run, and somebody has to be
 accountable for it — an organization, a process, a regulator signing off.
+
+Right now that second world is almost closed to AI-assisted development.
+
+Not because the models write bad code.
+
+Because nobody can check the flood fast enough to keep the standards intact.
 
 AI has made generation faster.
 
