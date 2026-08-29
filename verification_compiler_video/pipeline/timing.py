@@ -262,3 +262,54 @@ def audio_duration(section_id: str, out_dir: Path) -> float | None:
     """Length of the narration file, including any silence after the last word."""
     data = json.loads((out_dir / f"{section_id}.timing.json").read_text())
     return data.get("audio_duration")
+
+
+# ----------------------------------------------------------------- cli ------
+def section_from_script(script: Path, heading_prefix: str) -> str:
+    """
+    Pull one section's narration out of the script.
+
+    The heading line itself is dropped. It is not spoken, and leaving it in sent
+    "1. Cold Open: Generation Got Cheap" to the synthesizer as line zero, which
+    put two and a half seconds of read-aloud heading in front of every cue in
+    the section.
+    """
+    body = script.read_text(encoding="utf-8").split("## Full Narration Draft", 1)[1]
+    for block in re.split(r"\n### ", body)[1:]:
+        if block.startswith(heading_prefix):
+            return block.split("\n", 1)[1]
+    raise SystemExit(f"no section starting {heading_prefix!r}")
+
+
+def main() -> int:
+    import argparse
+
+    ap = argparse.ArgumentParser(description="Build one section's timing table.")
+    ap.add_argument("--section", required=True, help="e.g. 01_generation_got_cheap")
+    ap.add_argument("--heading", required=True, help="script heading prefix, e.g. '1. Cold Open'")
+    ap.add_argument("--script", type=Path, default=VIDEO / "drafts" / "script.md")
+    ap.add_argument("--out-dir", type=Path, default=VIDEO / "out" / "timing")
+    ap.add_argument("--audio", type=Path,
+                    help="align against a real take instead of synthesizing scratch TTS")
+    ap.add_argument("--model", default="small", help="faster-whisper model size")
+    ap.add_argument("--refresh", action="store_true",
+                    help="discard the cached scratch audio and transcript first")
+    args = ap.parse_args()
+
+    if args.refresh and args.audio is None:
+        # build() reuses whatever is already on disk, which is what makes an
+        # iteration loop cheap — and exactly wrong after the script changes.
+        (args.out_dir / f"{args.section}.scratch.wav").unlink(missing_ok=True)
+        (args.out_dir / f"{args.section}.words.json").unlink(missing_ok=True)
+
+    lines = build(args.section, section_from_script(args.script, args.heading),
+                  args.out_dir, audio=args.audio, model=args.model)
+    for l in lines:
+        print(f"[{l.index:2d}] {l.start:7.2f} -> {l.end:7.2f}  ({l.duration:4.1f}s) "
+              f"c={l.confidence:.2f}  {l.text[:64]}")
+    print(f"\n{len(lines)} lines, {lines[-1].end:.1f}s")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

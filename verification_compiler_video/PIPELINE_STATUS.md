@@ -179,39 +179,96 @@ fast enough"), and the open's own stakes line shortened to "Aircraft. Medical
 devices." so the child-in-the-road sentence stays the only place that image
 lands. Section 1: 151.6s -> ~143s estimated.
 
-### Owed on section 1's animation — not started, by request
+### Section 1 reanimated — done 2026-08-28
 
-Beats whose anchor line no longer exists, so they need rewriting when section 1
-is reanimated: `b01_review_above`, `b02_strain`, `b03_multiply`,
-`b04_artifact_web`, `b05_stop`, `b06_lone_reviewer`, and the three in the trimmed
-b21-b23 stretch.
+Section 1 is rebuilt against the locked cold open: 33 beats, one per narration
+line, 100% coverage, drift -0.05s, gate clean. Timing was regenerated from the
+new script (`python3 -m verification_compiler_video.pipeline.timing --section
+01_generation_got_cheap --heading "1. Cold Open" --refresh`) — 154.0s, up from
+151.1s, because the scratch voice reads the new open slightly slower than the
+2.65 w/s estimate.
 
-The visual arc has to invert. The old one *built* to the flood over 36 seconds;
-the new open has to *start* in it:
+The visual arc inverted as planned. The old one *built* to the flood over
+thirty-six seconds; this one starts in it:
 
-| line | visual |
-|---|---|
-| four thousand lines | the flood arrives immediately — the old beat 9's rain, moved to beat 1 |
-| code, tests, docs, a migration plan | artifact families land as each is named |
-| how much did you read | one reviewer, dwarfed |
-| not allowed to write | **the plane pictogram — see below** |
-| aircraft, medical devices | the stakes, held |
-| nobody can check fast enough | the wall and the flood that cannot cross it |
+| line | window | visual |
+|---|---|---|
+| four thousand lines / code, tests, docs, a plan | 8.1s | the flood, falling from frame one — 15 tiles inside 0.45s, then a typed family per named artifact |
+| how much of it did you read | 2.5s | the flood dims, one reviewer below it, and a cursor on exactly one tile out of sixty |
+| not allowed to write | 5.9s | the plane, flying level, code streaming into it |
+| aircraft, medical devices | 3.3s | the code goes red, the dive, the impact, the ground going red — then a device trace that stops |
+| not because the models are bad | 2.3s | the code, clean and well-formed |
+| nobody can check fast enough | 5.2s | the standard, and the flood piling against it |
+| cheap / not cheap | 6.3s | the left keeps filling; one record gets across |
+| a verification problem, so solvable | 5.7s | **the thesis at 0:34** — the wall opens and a gate stands in the gap |
 
-**The reviewer asked for an aggressive open with a plane pictogram**: a small
-plane flying level, code streaming through it, the code going bad, the plane
-losing altitude and going in. Hard and fast, over before it becomes tasteless —
-it is the reason the rest of the video exists, not a joke. Drawn in the shape
-grammar: silhouette plane, the same cyan squares the flood uses for the code, RED
-for the failure. The direction is also recorded as a [VISUAL:] note against the
-opening in `drafts/script.md`.
+Choices worth knowing about:
+
+- **No section title.** Every other section opens on a title card. This one
+  opens on the flood already falling — a card reading "Generation got cheap" as
+  frame one is a build, and it spends the first half-second telling the viewer
+  the thing the next eight seconds are meant to show them.
+- **The open runs full-bleed.** Because the section sets no title, the title
+  lane is provably unused for its whole length, so the flood fills the frame top
+  to bottom and the picture settles back into the normal letterbox at the cut to
+  the plane. `title_lane_intrusion` is waived on those two beats, with that
+  reason.
+- **Tiles are filled with their own colour** (0.18) rather than panel black.
+  A flood of 2px outlines on a near-black ground reads as scattered confetti
+  however many tiles are in it.
+- **The flood is typed.** `flood_tile()` picks a *kind* — blue square, cyan
+  circle, violet slice, green record — instead of picking a random colour for a
+  square, which was producing cyan and green squares in a video that has just
+  spent cyan on tests and green on evidence.
+- **The plane pictogram** is `plane()`, a fourteen-point side-view silhouette in
+  WHITE, turning RED when the bad code goes in. The impact is splayed lines, not
+  a ring: a red circle drawn round the wreck reads as a prohibition sign. The
+  medical half is `heartbeat()`, a device trace that breaks and stops rather
+  than a flatline.
+
+### Known, and deliberately left
+
+- `stage_imbalance` is waived on nine beats where the asymmetry is the meaning
+  (sky above a plane, a flood above the reviewers under it, a chain that is
+  top-heavy until its lower half is named). Reported elsewhere, never blocking.
+- The closing card shows "a compiler for trust" one line early. Gemini flagged
+  it in both passes. It has to: the last line's window is 1.8s and the phrase
+  needs 3.2s to read at 1.25x.
+- **Awaiting the reviewer's call**: Gemini keeps reading the `source` node
+  (a tall rounded rect) as a plain rectangle and the `vqp` node (a clipped-corner
+  polygon) as a document slice, and it reads the gold barrier labelled "the
+  standard" as a mis-typed requirement. Those are the shape-grammar decision
+  still open across the whole video — see the Next section.
 
 ## Where it stands
 
-11 sections, 100% line coverage everywhere, drift within 0.07s, 14.7 minutes
-including the end card. 23 machine findings outstanding across the whole cut,
-all of them short transients (mostly 0.5-2s outlines crossing a label during an
-animation) — down from the 200 the same checks found before this pass.
+11 sections, 100% line coverage everywhere, drift within 0.07s. Section 1 now
+runs 154.0s, so the cut is about 14.8 minutes including the end card.
+
+Gate, measured 2026-08-28 after the section 1 rework — 2/11 sections clean:
+
+| | findings |
+|---|---|
+| 01, 07 | clean |
+| 02 | outline_over_text ×3, stage_imbalance ×3 |
+| 03 | stage_imbalance ×3 |
+| 04 | edge_through_node ×1, partial_dim ×1, stage_imbalance ×1 |
+| 05 | stage_imbalance ×3 |
+| 06 | text_too_brief ×1 |
+| 08 | outline_over_text ×1 |
+| 09 | outline_over_text ×6, stage_imbalance ×2 |
+| 10 | stage_imbalance ×2 |
+| 11 | stage_imbalance ×2 |
+
+29 findings, 16 of them `stage_imbalance`. The 13 that are not are the same
+short transients as before — mostly a 0.5-2s outline crossing a label during an
+animation. None of them are in section 1, and nothing here changed in sections
+2-11: the only shared-pipeline edits this pass were a pass-through `**kwargs` on
+`BeatContext.play` and a new CLI entrypoint on `timing.py`, neither of which any
+existing scene exercises.
+
+(The "23 findings" figure in the previous version of this note is superseded.
+It was not measured the same way and should not be read as a regression.)
 
 `stage_imbalance` is reported but not treated as blocking: the reviewer said
 explicitly that composition balance is not a priority for this iteration.

@@ -338,8 +338,15 @@ class BeatContext:
         self.scene._set_caption(cap, self.budget(0.4)[0], self.window)
         return cap
 
-    def play(self, *anims, run_time: float = 0.6):
-        self.scene.play(*anims, run_time=self.budget(run_time)[0])
+    def play(self, *anims, run_time: float = 0.6, **kwargs):
+        """
+        Play, with the run time budgeted against the beat's window.
+
+        Extra keywords go straight through to manim. `rate_func` in particular:
+        a plane losing altitude has to accelerate, and a linear descent reads as
+        a controlled glide, which is the opposite of the point.
+        """
+        self.scene.play(*anims, run_time=self.budget(run_time)[0], **kwargs)
 
     def hold(self, seconds: float = 0.3):
         self.scene.wait(min(seconds, max(self.window, 0.05)))
