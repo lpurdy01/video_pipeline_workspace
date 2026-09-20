@@ -168,14 +168,16 @@ def xhtml(title: str, body: str) -> str:
 
 
 def intro_xhtml(title: str, source_name: str, source_hash: str, prompts: Iterable[str]) -> str:
-    prompt_items = "".join(f"<li>{escape(prompt)}</li>" for prompt in prompts)
+    prompt_items = "".join(
+        f'<p class="review-step"><b>{number}.</b> {escape(prompt)}</p>' for number, prompt in enumerate(prompts, start=1)
+    )
     body = f"""
 <h1>{escape(title)}</h1>
 <p class="locator">Review copy generated from <b>{escape(source_name)}</b>.</p>
 <p class="locator">Original PDF SHA-256: {source_hash}</p>
 <p>This EPUB is a reader-friendly transcription organized by original PDF page. The chapter heading and bookmark location are the authoritative source locator. Formatting, figures, columns, and footnotes can change during extraction, so use the original PDF whenever visual layout matters.</p>
-<h2>On-device review workflow</h2><ol><li>Use the table of contents to jump to a source PDF page.</li><li>Bookmark any page that needs a decision, correction, or follow-up.</li><li>Use a screenshot for a visual handoff when useful.</li><li>Report the PDF page number with the bookmark or screenshot; the machine-readable manifest beside this EPUB records the matching text hash.</li></ol>
-<h2>Review prompts</h2><ol>{prompt_items}</ol>
+<h2>On-device review workflow</h2><p class="review-step"><b>1.</b> Use the table of contents to jump to a source PDF page.</p><p class="review-step"><b>2.</b> Bookmark any page that needs a decision, correction, or follow-up.</p><p class="review-step"><b>3.</b> Use a screenshot for a visual handoff when useful.</p><p class="review-step"><b>4.</b> Report the PDF page number with the bookmark or screenshot; the machine-readable manifest beside this EPUB records the matching text hash.</p>
+<h2>Review prompts</h2>{prompt_items}
 <p class="warning">CrossPoint supports bookmarks and screenshots, not in-book highlights or typed annotations. This package makes review locations stable; it does not capture a decision automatically.</p>
 """
     return xhtml(title, textwrap.dedent(body))
@@ -188,7 +190,7 @@ def page_xhtml(page: ExtractedPage, source_hash: str) -> str:
     return xhtml(
         f"Source PDF page {page.number}",
         f"<h1>Source PDF page {page.number}</h1>"
-        f'<p class="locator">Locator: PDF p. {page.number} · source SHA-256: {source_hash}</p>'
+        f'<p class="locator">Locator: PDF p. {page.number}</p>'
         '<p class="notice">Reflowed text extracted from this one PDF page. It is not a visual facsimile; verify layout-dependent material against the original PDF.</p>'
         f"{content}<p class='review'>Review cue: bookmark this chapter to retain the stable source locator PDF p. {page.number}.</p>",
     )
@@ -200,7 +202,8 @@ h2 { text-align: left; font-weight: bold; margin-top: 1.2em; }
 p { text-align: left; margin-top: 0; margin-bottom: 0.8em; }
 .locator, .notice, .review { font-style: italic; }
 .warning { font-weight: bold; margin-top: 1.0em; }
-li { margin-bottom: 0.5em; }
+li { text-align: left; margin-bottom: 0.5em; }
+.review-step { text-align: left; margin-top: 0; margin-bottom: 0.8em; }
 """
 
 
