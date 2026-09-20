@@ -1,0 +1,6 @@
+[submodule "autonomous_systems_assurance/tools/crosspoint-reader"]
+	path = autonomous_systems_assurance/tools/crosspoint-reader
+	url = https://github.com/lpurdy01/crosspoint-reader.git
+[submodule "autonomous_systems_assurance/tools/crosspoint-simulator"]
+	path = autonomous_systems_assurance/tools/crosspoint-simulator
+	url = https://github.com/crosspoint-reader/crosspoint-simulator.git
