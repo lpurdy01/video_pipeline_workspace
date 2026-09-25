@@ -69,6 +69,7 @@ def prompt(task: str, result: dict) -> str:
         "argument": "Find scoped overclaims, missing transitions, unclear distinctions, and material argument gaps in the whitepaper. Prefer a small number of consequential findings over stylistic edits.",
         "research": "Prioritize recovery of missing primary-source context and identify narrowly framed primary-source search targets. Do not claim a source says something until it is retrieved and inspected.",
         "video": "Compare the narration against the paper. Find factual compression, missing qualifications, weak hook/payoff structure, or visual opportunities that could mislead a technical generalist.",
+        "audience": "Act as a technical-generalist editor. Audit the complete paper and script for reader journey, jargon load, concrete examples, useful takeaways, qualification placement, and whether evidence infrastructure has displaced the learning experience. Do not fact-check sources or score claims.",
     }[task]
     packet = {
         "compiler_snapshot": {
@@ -78,8 +79,8 @@ def prompt(task: str, result: dict) -> str:
         },
         "context_limited_claims": context_limited,
         "first_pass_report": clip(report, 18000),
-        "whitepaper": clip(paper, 42000) if task != "video" else clip(paper, 22000),
-        "video_script": clip(script, 24000),
+        "whitepaper": clip(paper, 72000) if task == "audience" else (clip(paper, 42000) if task != "video" else clip(paper, 22000)),
+        "video_script": clip(script, 42000) if task == "audience" else clip(script, 24000),
     }
     return f"""You are an independent technical research editor auditing a whitepaper and video project about assurance for frozen, trained autonomous-system components.
 
@@ -98,17 +99,19 @@ Return ONLY JSON with this schema:
 {{
   "summary": "two or three sentences",
   "findings": [
-    {{"priority": "high|medium|low", "category": "evidence|scope|argument|video|source_retrieval", "location": "claim ID, heading, or script section", "finding": "specific problem", "recommended_action": "concrete next action", "source_status": "no source needed|retrieve primary source|recheck existing source", "suggested_targets": ["optional official URL or exact document title"]}}
+    {{"priority": "high|medium|low", "category": "evidence|scope|argument|video|source_retrieval|audience|structure|language", "location": "claim ID, heading, or script section", "finding": "specific problem", "recommended_action": "concrete next action", "source_status": "no source needed|retrieve primary source|recheck existing source", "suggested_targets": ["optional official URL or exact document title"]}}
   ],
   "do_not_conclude": ["unsupported conclusions to avoid"]
 }}
+For task audience, return NO MORE THAN FIVE findings. Each must be tied to a missing reader-contract element (question, scene, mechanism, takeaway, or boundary). Prefer removal, consolidation, or reordering over more explanation. Do not count claim tags, caveats, or standards as reader value. This five-finding maximum overrides the general limit below.
+
 Limit findings to 12. Here is the bounded project packet:
 {json.dumps(packet, ensure_ascii=False)}"""
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--task", choices=("argument", "research", "video"), required=True)
+    parser.add_argument("--task", choices=("argument", "research", "video", "audience"), required=True)
     parser.add_argument("--model", default="gemini-3.8-flash")
     args = parser.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)

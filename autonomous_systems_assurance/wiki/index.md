@@ -8,7 +8,10 @@
 - [AMLAS/MAA/EASA crosswalk](../assurance/amlas_maa_easa_crosswalk.md): comparison to the eight evidence contracts and their boundaries.
 - [Machine-readable method crosswalk](../assurance/method_crosswalk.json): typed method-to-obligation mappings and stated coverage limits.
 - [Figure plan](../resource_composition/figures.md): rendered and planned figures, their claim links, and their visual limits.
+- [Whitepaper reader contract](../resource_composition/reader_contract.md): section-level audience acceptance map, separate from claim verification.
+- [Technical reference](../resource_composition/technical_reference.md): detailed companion preserving the full methods, case, compiler and source-card argument.
 - [Long-form project flow](../planning/longform_project_flow.md): evidence gates, 14-part reader journey and 30+ minute video/paper targets.
+- [Editorial audience gate](../planning/editorial_audience_gate.md): artifact-level reader contract and advisory audience audit, kept separate from claim verification coverage.
 - [Long-form video proposal](../video/nextgen_structure/README.md): isolated 34-minute treatment, visual inventory and claim map pending formal review.
 - [Direction/risk coverage integration](../research/integration_round5.md): EASA proposed authority/risk boundaries, NHTSA incident-data limits, EV denominator limits and the professional-qualification finding.
 - [Recording-feedback script](../video/script.md): claim-tagged long-form narration draft with local feedback pauses.

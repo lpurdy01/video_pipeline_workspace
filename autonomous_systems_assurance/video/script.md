@@ -88,7 +88,7 @@ This is not a blanket declaration that a learned perception model is safe in eve
 
 [Visual: a dated news-style card for an inquiry, then a large “not a safety finding” label.]
 
-A current inquiry can illustrate the distinction without becoming this project's subject. NHTSA opened an audit query into process and technical data behind Tesla Cybercab self-certification. The inquiry is not a finding that the product is unsafe or noncompliant. [C-ROAD2-004] [C-ROAD2-005]
+NHTSA's Cybercab audit query is an unresolved inquiry into self-certification process and technical data, not a safety or noncompliance finding. [C-ROAD2-004] [C-ROAD2-005]
 
 The same separation matters more visibly in aviation. A Technical Standard Order is distinct from installation approval and operation. A vendor product page, a scoped operating permission, or an article authorization cannot disclose the evidence for a particular learned model. [C-INTAKE-003] [C-INTAKE-001]
 
@@ -161,10 +161,6 @@ The useful replacement for a single number is a disciplined question: what does 
 Road data teaches the same lesson. NHTSA's Standing General Order collects incident reports for automated driving systems and Level 2 assistance. The data dictionary warns that access to crash data can affect reporting, reports may be incomplete or unverified, multiple reports can describe the same crash, and the published summary data are not normalized. [C-DIR-003]
 
 So an incident count is a prompt to investigate, not a rate and not a safety conclusion. The denominator matters.
-
-The same is true when people compare electric and combustion vehicles. In a 2016 hybrid and electric quiet-car rulemaking, NHTSA said it did not have the powertrain-specific vehicle-miles-traveled data needed to directly measure the pedestrian and pedalcyclist rate per mile against conventional vehicles. It used a proxy and case-control analysis with stated limits. [C-DIR-002]
-
-For this film, electric-vehicle accident comparisons are context for measurement discipline, not a target for autonomy. Powertrain, automation, vehicle design, driver population, operating domain, and reporting are different variables. A useful risk number names every one it depends on.
 
 **FEEDBACK PAUSE 6:** Is the probability section specific enough without becoming a statistics lecture?
 
@@ -240,9 +236,7 @@ A trained autonomous system does not become safe because we attach a permit, a s
 
 That proposal does not certify a car or an aircraft. It gives engineers, reviewers, and authorities a more useful question to challenge: **what exactly lets this machine take this action, here, now—and what evidence would prove us wrong?**
 
-The whitepaper, source library, and verification dashboard make the current argument inspectable. They distinguish source support, adversarial challenge, cross-artifact consistency, and human disposition. A green review mark is not a safety result. It only says a particular review task passed for a particular frozen input.
-
-The open edges are part of the result. They tell us where the next experiment, source, design change, or authority conversation has to begin.
+The next experiment should attack one of the four levers: sensing, envelope, authority, or recovery. The open edge tells the team where to begin. The source library and compiler keep the resulting argument inspectable; neither is the argument’s payoff.
 
 [End screen: “Read the paper / inspect the evidence graph / challenge an open edge.” Keep the graph in motion; do not introduce a verbal sign-off before the cards appear.]
 

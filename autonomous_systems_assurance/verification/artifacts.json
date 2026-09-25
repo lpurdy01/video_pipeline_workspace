@@ -227,6 +227,14 @@
       ]
     },
     {
+      "id": "A-TECHNICAL-REFERENCE",
+      "path": "resource_composition/technical_reference.md",
+      "kind": "technical_reference",
+      "depends_on": [
+        "A-PAPER"
+      ]
+    },
+    {
       "id": "A-FIGURES",
       "path": "resource_composition/figures.md",
       "kind": "figure_descriptions",

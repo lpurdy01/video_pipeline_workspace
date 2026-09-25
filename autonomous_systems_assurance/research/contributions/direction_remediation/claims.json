@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "C-BASE-001",
+      "text": "FAA AC 20-115D describes an acceptable, nonexclusive means for showing compliance for the software aspects of airborne systems/equipment and recognizes the ED-12C/DO-178C and ED-215/DO-330 document set.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "FAA AC 20-115D public framing; not the licensed standards' clause content or an ML approval method",
+      "evidence": [{"region_id": "S-BASE-001-R1", "relation": "supports"}, {"region_id": "S-BASE-001-R2", "relation": "supports"}],
+      "challenge": "Check the currently active FAA AC and project-specific certification basis before characterizing any applicant's exact obligations; do not call the AC a regulation or infer learned-model coverage.",
+      "review_records": []
+    },
+    {
+      "id": "C-BASE-002",
+      "text": "NASA's public explanation of DO-178C describes requirements-based and structural coverage, bidirectional traceability, lifecycle/configuration processes, and tool qualification as parts of its conventional airborne-software assurance account.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NASA NTRS explanatory paper; manager-level characterization of conventional airborne-software assurance, not clause-level licensed-standard content",
+      "evidence": [{"region_id": "S-BASE-002-R1", "relation": "supports"}, {"region_id": "S-BASE-002-R2", "relation": "supports"}],
+      "challenge": "Confirm the original context and current FAA recognition before treating any listed practice as a specific project's binding obligation; MC/DC and level-specific detail are deliberately not claimed here.",
+      "review_records": []
+    },
+    {
+      "id": "C-BASE-003",
+      "text": "FAA AC 20-174 recognizes ARP4754A as an acceptable method for a civil-aircraft/system development-assurance process, including requirements validation and verification of design implementation.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "FAA AC 20-174 and ARP4754A public characterization; not ARP4754B text or a learned-system approval path",
+      "evidence": [{"region_id": "S-BASE-003-R1", "relation": "supports"}],
+      "challenge": "Keep ARP4754A and B distinct, and check the applicable aircraft regulation/system-safety guidance before asserting development-assurance-level allocation for a real program.",
+      "review_records": []
+    },
+    {
+      "id": "C-BASE-004",
+      "text": "ISO's public ISO 26262 collection presents a road-vehicle functional-safety family spanning management, concept, system, hardware, software, production/operation, supporting processes, and ASIL-oriented analyses.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "ISO public collection-page scope only; series-production road vehicles",
+      "evidence": [{"region_id": "S-BASE-004-R1", "relation": "supports"}],
+      "challenge": "Use the licensed text or an authorized public proxy for clause-level claims; do not equate ISO 26262 fault-oriented functional safety with SOTIF or aviation approval.",
+      "review_records": []
+    },
+    {
+      "id": "C-BASE-005",
+      "text": "In the completed Tempe investigation, NTSB reports that the developmental ADS detected the pedestrian 5.6 seconds before impact and identifies inadequate safety-risk assessment procedures among the contributing factors.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NTSB final investigation HWY18MH010; facts of the 2018 Tempe crash, not a general ADS-performance conclusion",
+      "evidence": [{"region_id": "S-BASE-005-R1", "relation": "supports"}, {"region_id": "S-BASE-005-R2", "relation": "supports"}],
+      "challenge": "Read HAR-19/03 in full before adding classification, prediction, braking-suppression, or track-history details. Do not transfer the findings to other systems or use the crash as a rate estimate.",
+      "review_records": []
+    }
+  ]
+}

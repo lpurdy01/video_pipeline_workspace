@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-25",
+  "sources": [
+    {
+      "id": "S-BASE-001",
+      "title": "AC 20-115D — Airborne Software Development Assurance Using EUROCAE ED-12( ) and RTCA DO-178( )",
+      "publisher": "Federal Aviation Administration",
+      "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_20-115D.pdf",
+      "published_at": "2017-07-21",
+      "source_type": "regulator_advisory_circular",
+      "jurisdiction": "US civil aviation",
+      "accessed_at": "2026-09-25",
+      "inspection_scope": "Inspected the public FAA advisory circular through its retained public extraction. It describes an acceptable means, rather than a regulation or the only means, for software aspects of type certification or TSO authorization; it names ED-12C/DO-178C and ED-215/DO-330.",
+      "regions": [
+        {
+          "id": "S-BASE-001-R1",
+          "locator": "PDF p. 1, Purpose; retained extraction lines 13–39",
+          "excerpt": "This AC describes an acceptable means, but not the only means, for showing compliance",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        },
+        {
+          "id": "S-BASE-001-R2",
+          "locator": "PDF p. 2, document set; retained extraction lines 22–39",
+          "excerpt": "RTCA DO-330, Software Tool Qualification Considerations",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "This public AC recognizes a method as an acceptable means for stated FAA purposes. It is not the licensed DO-178C/DO-330 text and does not establish an ML assurance method, a project certification basis, or an approval.",
+      "independence_group": "FAA-AC-20-115D",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-BASE-002",
+      "title": "Certification of Safety-Critical Software Under DO-178C",
+      "publisher": "NASA / NASA Technical Reports Server",
+      "url": "https://ntrs.nasa.gov/citations/20120016835",
+      "published_at": "2012-12-01",
+      "source_type": "government_technical_paper",
+      "jurisdiction": "Public explanation of airborne software assurance",
+      "accessed_at": "2026-09-25",
+      "inspection_scope": "Inspected the retained public NASA text. The paper explains requirements-based and structural coverage, bidirectional traceability, lifecycle/configuration processes, and tool qualification as its account of the DO-178C approach.",
+      "regions": [
+        {
+          "id": "S-BASE-002-R1",
+          "locator": "pp. 4–6, verification philosophy; retained extraction lines 140–154",
+          "excerpt": "requirements-based coverage and structural coverage",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        },
+        {
+          "id": "S-BASE-002-R2",
+          "locator": "pp. 6–9, traceability, lifecycle and tools; retained extraction lines 192–215 and 278–284",
+          "excerpt": "two-way or bi-directional traceability",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "This is NASA's public explanatory paper, not the licensed standard. It supports a manager-level characterization only; readers must not treat it as clause-level text or a current FAA approval for an ML component.",
+      "independence_group": "NASA-NTRS-20120016835",
+      "refresh_days": 365
+    },
+    {
+      "id": "S-BASE-003",
+      "title": "AC 20-174 — Development of Civil Aircraft and Systems",
+      "publisher": "Federal Aviation Administration",
+      "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_20-174.pdf",
+      "published_at": "2011-09-30",
+      "source_type": "regulator_advisory_circular",
+      "jurisdiction": "US civil aviation",
+      "accessed_at": "2026-09-25",
+      "inspection_scope": "Inspected the official public FAA page and document description. It says AC 20-174 recognizes ARP4754A as an acceptable method for establishing a development-assurance process, including requirements validation and design-implementation verification.",
+      "regions": [
+        {
+          "id": "S-BASE-003-R1",
+          "locator": "PDF p. 1, Purpose",
+          "excerpt": "recognizes ... ARP 4754A ... as an acceptable method for establishing a development assurance process",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "The source recognizes ARP4754A, not ARP4754B, and does not provide the licensed standard's contents. It is used only to describe the public FAA system-development-assurance framing.",
+      "independence_group": "FAA-AC-20-174",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-BASE-004",
+      "title": "ISO 26262 road-vehicle functional-safety collection",
+      "publisher": "International Organization for Standardization",
+      "url": "https://www.iso.org/publication/PUB200262.html",
+      "published_at": "2018-12",
+      "source_type": "standards_body_public_scope",
+      "jurisdiction": "Series-production road vehicles",
+      "accessed_at": "2026-09-25",
+      "inspection_scope": "Inspected ISO's public collection page and public abstract. They list management, concept, system, hardware, software, production/operation, supporting-process and ASIL-oriented-analysis parts of ISO 26262.",
+      "regions": [
+        {
+          "id": "S-BASE-004-R1",
+          "locator": "ISO public collection page, included parts",
+          "excerpt": "Product development at the system level ... Product development at the software level ... Automotive safety integrity level (ASIL)-oriented",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "The public page shows scope and document-part names only. It is not the licensed ISO 26262 text and cannot establish clause-level obligations, a vehicle's conformance, or aviation applicability.",
+      "independence_group": "ISO-26262-PUBLIC",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-BASE-005",
+      "title": "HWY18MH010 — Collision Between Vehicle Controlled by Developmental Automated Driving System and Pedestrian",
+      "publisher": "National Transportation Safety Board",
+      "url": "https://www-s.ntsb.gov/investigations/Pages/HWY18MH010.aspx",
+      "published_at": "2019-11-19",
+      "source_type": "accident_investigation_final_report",
+      "jurisdiction": "Tempe, Arizona, US road automated-driving-system testing",
+      "accessed_at": "2026-09-25",
+      "inspection_scope": "Inspected NTSB's completed-investigation page and its summary of ADS detection timing, probable cause and contributing factors. The final board report is the source for the limited walkthrough point; no reconstruction beyond the stated findings is made.",
+      "regions": [
+        {
+          "id": "S-BASE-005-R1",
+          "locator": "NTSB investigation page, What Happened / What We Found",
+          "excerpt": "The ADS detected the pedestrian 5.6 seconds before impact.",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        },
+        {
+          "id": "S-BASE-005-R2",
+          "locator": "NTSB investigation page, probable cause / contributing factors",
+          "excerpt": "inadequate safety risk assessment procedures",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "The NTSB findings concern this 2018 crash and testing operation. They do not establish the behavior, evidence, or safety of another vehicle, model, company, or current regulatory regime.",
+      "independence_group": "NTSB-HWY18MH010",
+      "refresh_days": 365
+    }
+  ]
+}

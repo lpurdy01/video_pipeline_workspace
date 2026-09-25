@@ -139,7 +139,7 @@ Review the supplied original PDF page image against this extraction summary:
 Find only concrete conversion risks: missing/garbled text, wrong reading order, tables/equations/figures that need a source-image companion, or density that will not reflow readably. Do not rewrite content and do not assert facts outside this page.
 Return only JSON: {{"issues":[{{"severity":"low|medium|high","category":"...","evidence":"...","suggested_action":"..."}}]}}."""
         response = client.models.generate_content(
-            model="gemini-3.1-pro-preview",
+            model="gemini-3.8-flash",
             contents=[prompt, types.Part.from_bytes(data=image_path.read_bytes(), mime_type="image/png")],
             config=types.GenerateContentConfig(temperature=0.0),
         )
@@ -199,7 +199,7 @@ def main() -> int:
         result["simulator_review"] = {"captures": simulator_records, "issues": simulator_issues}
     if args.model_review:
         result["model_review"] = cloud_review(args.pdf, manifest, renders, args.max_model_pages)
-        result["model_review_scope"] = {"model": "gemini-3.1-pro-preview", "pages": min(args.max_model_pages, len(renders))}
+        result["model_review_scope"] = {"model": "gemini-3.8-flash", "pages": min(args.max_model_pages, len(renders))}
     (output_dir / "conversion_review.json").write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps({"review": str(output_dir / "conversion_review.json"), "source_page_images": len(renders), "local_issues": len(result["local_issues"]), "simulator_issues": len(simulator_issues), "model_review": args.model_review}, indent=2))
     return 0

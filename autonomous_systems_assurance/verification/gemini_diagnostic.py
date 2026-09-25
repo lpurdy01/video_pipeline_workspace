@@ -18,20 +18,21 @@ OUT = PROJECT / "verification" / "out" / "gemini_diagnostic"
 sys.path.insert(0, str(WORKSPACE))
 
 from workspace_credentials import require  # noqa: E402
-from google import genai  # noqa: E402
+from google import genai
+from google.genai import types  # noqa: E402
 
 
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     result = {
         "checked_at": datetime.now(timezone.utc).isoformat(),
-        "model": "gemini-3.1-pro-preview",
+        "model": "gemini-3.8-flash",
         "request": "minimal health check; no project content uploaded",
     }
     try:
         client = genai.Client(api_key=require("GEMINI_API_KEY"))
         response = client.models.generate_content(
-            model=result["model"], contents="Reply with exactly: ok"
+            model=result["model"], contents="Reply with exactly: ok", config=types.GenerateContentConfig(thinking_config=types.ThinkingConfig(thinking_level="HIGH"))
         )
         result.update({"outcome": "success", "response_text": (response.text or "")[:100]})
         code = 0

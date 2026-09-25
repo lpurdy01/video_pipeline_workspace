@@ -118,7 +118,7 @@ PROJECT STATE PACKET:\n""" + json.dumps(packet, ensure_ascii=False)
         temperature=0.2,
     )
     response = client.models.generate_content(
-        model="gemini-3.1-pro-preview",
+        model="gemini-3.8-flash",
         contents=prompt,
         config=config,
     )

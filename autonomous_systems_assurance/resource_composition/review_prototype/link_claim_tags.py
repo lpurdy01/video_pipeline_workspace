@@ -13,7 +13,7 @@ from pathlib import Path
 path = Path(sys.argv[1])
 text = path.read_text(encoding="utf-8")
 text = text.replace('src="figures/', 'src="../figures/')
-pattern = re.compile(r"\[(C-(?:AUTH|CHAL|EVID|TRAIN)-\d{3}|C-002)\]")
+pattern = re.compile(r"\[(C-[A-Z0-9-]+)\]")
 text = pattern.sub(
     lambda match: f'<a class="claim-link" href="#{match.group(1)}" title="Open source and review card">{match.group(0)}</a>',
     text,

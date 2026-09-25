@@ -23,7 +23,7 @@ PROJECT = Path(__file__).resolve().parents[1]
 WORKSPACE = PROJECT.parent
 OUT = PROJECT / "verification/out/first_pass_model_reviews"
 TASKS = ("source_support", "challenge", "cross_artifact")
-MODEL = "gemini-3.1-pro-preview"
+MODEL = "gemini-3.8-flash"
 PROMPT_VERSION = "assurance-first-pass-v2-local-context"
 
 sys.path.insert(0, str(WORKSPACE))
