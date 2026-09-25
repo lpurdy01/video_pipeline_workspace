@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-004-cross_artifact-D404e19b159d5",
+  "package_id": "P-C-004-cross_artifact",
+  "input_digest": "404e19b159d54d47736b15f5e3f71d36967e12159ce8eaf375fa733ff62782b8",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts accurately reflect the claim's specific geographic (Salt Lake City) and temporal (2023) scope. They explicitly preserve the limitations by warning against inferring unrestricted DAA equipment certification and noting the need to inspect the underlying approval letters before making architectural claims.",
+  "evidence_locators": [
+    "research/initial_findings.md#a-useful-acoustic-perception-research-branch",
+    "video/narrative.md#sequence",
+    "video/storyboard.md#v-07"
+  ],
+  "limitations": [
+    "Underlying FAA approval letters and primary technical material must be inspected to verify exact onboard architecture and current geographic scope."
+  ],
+  "resolves": []
+}

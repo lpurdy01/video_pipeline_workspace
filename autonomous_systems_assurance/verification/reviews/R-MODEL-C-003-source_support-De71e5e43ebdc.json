@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-003-source_support-De71e5e43ebdc",
+  "package_id": "P-C-003-source_support",
+  "input_digest": "e71e5e43ebdce439b6aab347ab2c93e31e95c483f65039c86e137a6916cf63dc",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided excerpt from the June 2025 UK MOD publication explicitly confirms that Protector was awarded a Military Type Certificate, directly supporting the claim.",
+  "evidence_locators": [
+    "S-003-R1",
+    "research/initial_findings.md"
+  ],
+  "limitations": [
+    "The underlying certificate itself was not inspected, limiting the ability to verify the exact technical scope or conditions of the approval.",
+    "Does not establish civil authorization or all-airspace permission."
+  ],
+  "resolves": []
+}

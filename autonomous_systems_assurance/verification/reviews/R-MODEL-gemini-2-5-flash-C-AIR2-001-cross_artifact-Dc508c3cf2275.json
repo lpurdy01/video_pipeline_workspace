@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AIR2-001-cross_artifact-Dc508c3cf2275",
+  "package_id": "P-C-AIR2-001-cross_artifact",
+  "input_digest": "c508c3cf227576b380879667b110c226fcf3a0db933de8d1ca05aee52516cf97",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of claim C-AIR2-001 consistently preserves its scope and limitations. The claim states that GA-ASI 'publicly describes a DAA architecture combining cooperative surveillance sources such as TCAS/ADS-B with an air-to-air radar for non-cooperative aircraft,' with a scope limited to 'GA-ASI vendor description; architecture claim only.' All uses in the artifacts explicitly refer to the 'vendor-described architecture' or 'public material' and include clear qualifiers such as 'not an authority record for a current TSO authorization,' 'vendor architecture does not prove performance or certification,' and 'Do not imply GA-ASI approval status beyond exact claims.' The artifacts also explicitly reject overstatements like 'GA-ASI is the only certified DAA system,' reinforcing the claim's boundaries.",
+  "evidence_locators": [
+    "research/contributions/air_round2/findings.md",
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-ROAD2-005-challenge-D91d2a59e4edb",
+  "package_id": "P-C-ROAD2-005-challenge",
+  "input_digest": "91d2a59e4edb368c574a780f74129719562cd251e63e7849ea46fef5ff36134d",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The claim accurately states three specific pieces of information recorded in the NHTSA AQ26002 opening resume: the opening date, the estimated population, and the description of missing conventional manual controls. The provided evidence directly quotes these details from the specified document, confirming the claim's accuracy within its stated scope. No counterevidence, alternative interpretation, or scope limitation was found to defeat the claim.",
+  "evidence_locators": [
+    "S-ROAD2-004-R1",
+    "S-ROAD2-004-R2",
+    "S-ROAD2-004-R3"
+  ],
+  "limitations": [
+    "This review is strictly limited to the content of the 'NHTSA AQ26002 opening resume' as per the claim's scope. It does not assess the current status of the investigation, the actual number of vehicles deployed, or the ultimate agency determination, as these are outside the claim's scope and the provided evidence."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-ROAD2-004-cross_artifact-D7ca2cce43afa",
+  "package_id": "P-C-ROAD2-004-cross_artifact",
+  "input_digest": "7ca2cce43afac4d176196184d8c46accb0706184fef1a9a77ef925be2d73b989",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact use of claim C-ROAD2-004 accurately preserves its scope and limitations. The claim states that NHTSA opened Audit Query AQ26002 to examine the process and technical data behind Tesla Cybercab's FMVSS self-certification after Austin deployment, with a scope of 'US federal compliance inquiry, opened September 2026' and a challenge to 'Keep the inquiry distinct from a final noncompliance finding, defect determination, recall, or safety verdict.' All uses in the video script, narration map, script outline, video treatment, and research findings consistently describe the Audit Query as an 'inquiry' or 'examination' into 'process and technical data behind self-certification,' and explicitly state that it is 'not a finding that the product is unsafe or noncompliant' or 'not a safety conclusion.' The research status document also correctly notes the retrieval of the opening resume and the ongoing nature of the inquiry, without misrepresenting its status.",
+  "evidence_locators": [
+    "video/script.md (Section 3, 06:30\u201310:30)",
+    "video/nextgen_structure/narration_evidence_map.md (Cybercab inquiry row)",
+    "video/nextgen_structure/script_outline.md (Section 3, 06:30\u201310:30)",
+    "video/nextgen_structure/treatment.md (Section 3, Separate access from proof)",
+    "research/retrieval_status.md (NHTSA AQ26002 entries)",
+    "research/contributions/road_round2/findings.md (The authorization stack is layered, Implications for the project's compiler and narrative)"
+  ],
+  "limitations": [],
+  "resolves": []
+}

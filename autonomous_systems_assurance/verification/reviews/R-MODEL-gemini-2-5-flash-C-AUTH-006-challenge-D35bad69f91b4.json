@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-006-challenge-D35bad69f91b4",
+  "package_id": "P-C-AUTH-006-challenge",
+  "input_digest": "35bad69f91b4e166492be17238da7bde5a8d619fb2b5b566ad040857881eb6de",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The claim accurately states that ISO/PAS 8800:2024 is a published road-vehicle specification whose public abstract explicitly includes trained AI models and describes properties for constructing a safety-assurance claim. The provided evidence from the ISO public page and abstract (S-AUTH-004-R1, S-AUTH-004-R2, S-AUTH-004-R3) directly supports these positive assertions. Furthermore, the claim's negative assertions\u2014that its public page does not establish aviation applicability or a vehicle's conformance\u2014are also directly supported by the source's stated jurisdiction ('series-production road vehicles') and explicit limitations ('not an aviation regulation', 'conformance evidence remain uninspected') within the specified scope of the public page and abstract. No counterevidence or alternative interpretation within the stated scope was found to defeat the claim.",
+  "evidence_locators": [
+    "S-AUTH-004-R1",
+    "S-AUTH-004-R2",
+    "S-AUTH-004-R3",
+    "S-AUTH-004 (source metadata: jurisdiction)",
+    "S-AUTH-004 (source limitations)",
+    "research/contributions/assurance_authority/findings.md (ISO/PAS 8800 entry)"
+  ],
+  "limitations": [
+    "This review is strictly limited to the ISO public page and abstract as specified in the claim's scope. The licensed text of ISO/PAS 8800:2024 was not acquired or inspected, as per the stated limitations of the source material and the claim's scope."
+  ],
+  "resolves": []
+}

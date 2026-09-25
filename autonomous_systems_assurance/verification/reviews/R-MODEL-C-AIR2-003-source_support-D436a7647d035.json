@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-C-AIR2-003-source_support-D436a7647d035",
+  "package_id": "P-C-AIR2-003-source_support",
+  "input_digest": "436a7647d0356065da79f89f94e7963aae4bad8b08cdf2a2b9cd07880a6be10a",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided sources and artifact context directly support the claim. The GA-ASI vendor page (S-AIR2-001) is described as containing forward-looking statements (e.g., a 2025 TSO target) and does not serve as an authoritative record of TSO issuance. The FAA/GA-ASI document (S-AIR2-002) is explicitly identified as a 2022 research deliverable for sensor model validation, not a product approval. The artifacts accurately reflect this ambiguity and the research nature of the report.",
+  "evidence_locators": [
+    "S-AIR2-001 limitations and inspection_scope",
+    "S-AIR2-002 limitations",
+    "research/contributions/air_round2/findings.md (Findings section)"
+  ],
+  "limitations": [
+    "The absence of a TSO authorization on the inspected marketing and research pages does not prove non-issuance; an authoritative search of the FAA DRS for article-specific authorization letters remains an open retrieval task.",
+    "Full local context for the source regions was not captured (short_excerpt_only)."
+  ],
+  "resolves": []
+}

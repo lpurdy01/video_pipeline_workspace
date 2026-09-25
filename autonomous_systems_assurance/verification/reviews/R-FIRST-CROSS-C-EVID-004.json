@@ -1,0 +1,25 @@
+{
+  "id": "R-FIRST-CROSS-C-EVID-004",
+  "package_id": "P-C-EVID-004-cross_artifact",
+  "input_digest": "274b1db504b7aba4201d9eb77262902f637760bfabb472d4316638e403bcae92",
+  "task": "cross_artifact",
+  "reviewer_id": "first-pass-cross-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-cross-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The reviewed uses retain calibration as a scenario-conditioned evidence item and explicitly avoid turning confidence or temperature scaling into a system-level safety bound. The case graph labels the needed test evidence planned and uncertainty obligations open.",
+  "evidence_locators": [
+    "assurance/assurance_case.json, tagged use [C-EVID-004], EA-ROAD-003/EA-AIR-003 and O-002/O-004/O-AIR-002/O-AIR-004 links",
+    "assurance/amlas_maa_easa_crosswalk.md, tagged use [C-EVID-004], O-004 calibration-assumption row",
+    "research/contributions/assurance_evidence/findings.md, tagged use [C-EVID-004], calibration finding",
+    "assurance/method_crosswalk.json, tagged use [C-EVID-004], AMLAS/EASA performance mapping notes",
+    "assurance_case_links: EA-AIR-003, EA-ROAD-003, O-002, O-004, O-AIR-002, O-AIR-004"
+  ],
+  "limitations": [
+    "This review does not evaluate calibration data or generalization beyond the source study's experiments.",
+    "No operational threshold or safety probability is inferred."
+  ],
+  "resolves": []
+}

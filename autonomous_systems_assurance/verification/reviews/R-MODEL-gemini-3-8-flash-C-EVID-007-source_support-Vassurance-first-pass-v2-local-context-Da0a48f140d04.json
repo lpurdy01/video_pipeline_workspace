@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-EVID-007-source_support-Vassurance-first-pass-v2-local-context-Da0a48f140d04",
+  "package_id": "P-C-EVID-007-source_support",
+  "input_digest": "a0a48f140d044dc795d5deb05282c66f55ce7398d3beb21a11eaf252ba442ddf",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The supplied paper text directly supports the claim: it reports a small positive regression slope/correlation between Isolation Neuron Coverage (INC) and steering-angle deviation (SAD), while explicitly cautioning that 'care must be taken with this correlation as we do not know that the increase in neuron coverage is causing the increase in steering angle deviations' and noting the need for further investigation regarding whether neuron coverage is a consistent indicator. The paper also documents the stated scope limitations: testing was conducted on only one DNN model (Rambo) without establishing a threshold for failure-inducing deviations.",
+  "evidence_locators": [
+    "S-EVID-007-R1 (PDF pp. 7-8, 'RQ2: Is there a Connection Between INC and SAD' and 'Threats to Validity')",
+    "S-EVID-007-R2 (PDF p. 8, conclusion)"
+  ],
+  "limitations": [
+    "Review is bounded to the supplied excerpts of the single-DNN transformed-image study (Toohey et al., 2021)."
+  ],
+  "resolves": []
+}

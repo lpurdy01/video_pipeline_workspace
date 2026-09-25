@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-RISK-007-source_support-D728fa2105c9a",
+  "package_id": "P-C-RISK-007-source_support",
+  "input_digest": "728fa2105c9a90d032267af4abfec79ec4796b3a603d9e282530d62ba806689a",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The EASA NPA 2025-07(B) (proposed DS.AI.130 risk assessment) explicitly defines likelihood bands 'per operational hour' from 'Frequent' (>1E-3) to 'Extremely improbable' (\u22641E-9). Table 2 classifies all H1 (potential fatalities) scenarios as 'Unacceptable risk'. The document states that 'acceptable risk' or 'moderate risk' (non-unacceptable aggregated cases) support direct allocation of Assurance Levels (AL) or Tool Qualification Levels (TQL). The risk assessment steps also incorporate 'credit based on human or procedural elements' in both hazard assessment and likelihood determination, indicating that qualitative judgment supplements quantitative tools.",
+  "evidence_locators": [
+    "PDF pp. 17-18, DS.AI.130(b)(2)(i)-(v) (hazard likelihood determination, per operational hour definitions)",
+    "PDF p. 17, DS.AI.130(b)(1)(v) (H1 definition and unacceptable status)",
+    "PDF p. 18, Table 2 (H1 row showing 'Unacceptable risk' across all likelihoods)",
+    "PDF p. 18, DS.AI.130(b)(3)(ii)-(iii) (allocation of AL/TQL for 'acceptable risk' and 'moderate risk')",
+    "PDF p. 17, DS.AI.130(b)(1) (credit for human/procedural elements in hazard assessment)",
+    "PDF p. 18, DS.AI.130(b)(2) (credit for human/procedural elements in hazard likelihood determination)"
+  ],
+  "limitations": [],
+  "resolves": []
+}

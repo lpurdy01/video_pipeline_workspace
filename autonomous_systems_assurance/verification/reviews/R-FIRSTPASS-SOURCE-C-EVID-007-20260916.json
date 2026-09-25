@@ -1,0 +1,22 @@
+{
+  "id": "R-FIRSTPASS-SOURCE-C-EVID-007-20260916",
+  "package_id": "P-C-EVID-007-source_support",
+  "input_digest": "7c73b8b4dbc26e2ed7f7e6407fa67a77ad71e1f5f8214b385b0940f6c0bbc363",
+  "task": "source_support",
+  "reviewer_id": "first-pass-source-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-source-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The study reports a small positive association between its neuron-coverage measure and steering-angle deviation, then explicitly states that it does not know whether increased neuron coverage causes the deviation and calls for further work on whether coverage is a consistent indicator. The claim accurately retains those limits.",
+  "evidence_locators": [
+    "S-EVID-007-R1 \u2014 PDF pp. 7\u20138, correlation and threats to validity",
+    "S-EVID-007-R2 \u2014 PDF p. 8, conclusion"
+  ],
+  "limitations": [
+    "The study concerns one DNN and a steering-angle-deviation proxy, without a safety-failure threshold.",
+    "It cannot validate neuron coverage or a derived scalar as safety evidence for a perception/planning stack or DAA system."
+  ],
+  "resolves": []
+}

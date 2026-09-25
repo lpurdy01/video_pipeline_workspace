@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-METHOD2-019-source_support-D9fe003acb062",
+  "package_id": "P-C-METHOD2-019-source_support",
+  "input_digest": "9fe003acb062addd8954cdd8c3afc48dc50d1ce6583d59a5469e0c1b0026057d",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided evidence consists of extremely short excerpts without full local context. While the excerpts mention monitors and sample rates, they are inadequate to verify the specific architectural requirements of 'bounded authority' and 'independent evidence for the monitor and recovery path' as stated in the claim.",
+  "evidence_locators": [
+    "S-METHOD2-003-R1",
+    "S-METHOD2-004-R1"
+  ],
+  "limitations": [
+    "Full text of the cited NASA and DeepMind sources is required to determine if they explicitly support the proposed architectural constraints.",
+    "Current excerpts lack sufficient context to support the exact claim wording regarding bounded authority and independent evidence."
+  ],
+  "resolves": []
+}

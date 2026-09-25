@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-001-cross_artifact-Dbe2d0485651f",
+  "package_id": "P-C-EVID-001-cross_artifact",
+  "input_digest": "be2d0485651f4b7dfcb484cf8c9fb4841ac4d2b2859af5c911f955aac2f13200",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Every artifact use of C-EVID-001 (NIST AI RMF 1.0) consistently preserves the claim's scope and limitations. The claim states that NIST AI RMF 1.0 calls for documenting specific aspects of an AI lifecycle. The supporting evidence from NIST AI RMF 1.0 (regions R1, R2, R3) directly confirms these calls for documentation regarding intended context, knowledge limits, data/TEVV considerations, and post-deployment change and recovery processes. All artifacts that reference C-EVID-001 (e.g., `assurance/assurance_case.json`, `research/contributions/assurance_evidence/findings.md`, `resource_composition/figures.md`, `assurance/method_crosswalk.json`, `resource_composition/whitepaper_outline.md`, `resource_composition/whitepaper.md`) explicitly acknowledge the voluntary, non-sector-specific, and non-certification nature of the NIST AI RMF. They use the RMF as a basis for defining 'obligations,' 'required evidence,' or 'inspectable records' within a hypothetical research context, without presenting it as a certification or proof of safety for a real system. The limitations of the source material and the claim's provisional status are consistently respected.",
+  "evidence_locators": [
+    "PDF pp. 26-27, MAP 1-3 outcomes",
+    "PDF p. 28, MEASURE introductory text",
+    "PDF pp. 31-32, MANAGE 2 and 4 outcomes"
+  ],
+  "limitations": [
+    "NIST AI RMF 1.0 is under revision; recheck before publication.",
+    "This is voluntary horizontal risk-management guidance, not a transportation certification basis, acceptance criterion, probability-of-safety method or approval of a particular system."
+  ],
+  "resolves": []
+}

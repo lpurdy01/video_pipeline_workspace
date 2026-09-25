@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-RISK-003-cross_artifact-D01486cb54f08",
+  "package_id": "P-C-RISK-003-cross_artifact",
+  "input_digest": "01486cb54f082941b35aafcc108ebf4bc28d96a494f5004d0f6d369fb074faf3",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts consistently and accurately apply the claim, explicitly maintaining the distinction that EASA's NPA 2025-07(B) is proposed material rather than final guidance. They correctly cite the specific scope exclusions (fatalities, multiple life-threatening injuries, and certain online-learning cases) and the H1 unacceptable risk classification, while preserving the limitation that this does not constitute a universal prohibition on all aviation AI.",
+  "evidence_locators": [
+    "research/contributions/direction_evidence/findings.md",
+    "research/integration_round4.md",
+    "research/contributions/risk_evidence/findings.md"
+  ],
+  "limitations": [
+    "Must check for the final EASA decision, CRD, or successor material before publication to verify if the proposed scope and risk acceptability have changed."
+  ],
+  "resolves": []
+}

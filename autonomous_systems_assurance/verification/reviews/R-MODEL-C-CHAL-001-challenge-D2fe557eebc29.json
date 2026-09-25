@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-CHAL-001-challenge-D2fe557eebc29",
+  "package_id": "P-C-CHAL-001-challenge",
+  "input_digest": "2fe557eebc299fea8232318469f1a50da45755feee92843c07c398d6002fc155",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The MAA Regulatory Notice explicitly states that applicants 'should raise a Military Certification Review Item (MCRI) for MAA agreement' and 'recommends' using fixed models within a defined operational design domain for early applications. The claim accurately reflects the notice's wording and distinguishes between the process and the technical recommendation. The challenge to inspect a completed public MCRI is blocked because the source metadata confirms these agreements remain applicant-specific and non-public, preserving the claim within its stated scope.",
+  "evidence_locators": [
+    "S-CHAL-001-R1",
+    "S-CHAL-001-R2",
+    "S-CHAL-001 (limitations)"
+  ],
+  "limitations": [
+    "Completed MCRIs and underlying applicant-specific evidence remain non-public, preventing the inspection of a finalized military AI safety case or its exact mandatory requirements in practice."
+  ],
+  "resolves": []
+}

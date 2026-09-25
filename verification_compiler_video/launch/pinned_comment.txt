@@ -1,0 +1,6 @@
+The whole argument in one line: a chat transcript is not an audit trail, and as generation gets cheaper the scarce thing becomes evidence you can inspect.
+
+If you work with coding agents, the repo has an agent handoff written for exactly this — point one at it and have it build its own Verification Compiler:
+https://github.com/lpurdy01/verification_compiler_resources/blob/main/FOR_AGENTS.md
+
+Then tell me how it went. I genuinely want to know: what tagging system did you use? How did you specify requirements and sub-requirements? Did you end up needing unique hyperlinkable IDs, or did you get away without them?

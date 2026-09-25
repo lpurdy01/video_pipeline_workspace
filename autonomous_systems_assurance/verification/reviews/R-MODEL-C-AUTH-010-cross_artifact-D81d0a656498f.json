@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-AUTH-010-cross_artifact-D81d0a656498f",
+  "package_id": "P-C-AUTH-010-cross_artifact",
+  "input_digest": "81d0a656498f4b834a3e2d4b3afbec183b1973a95d52caea0489d4e6056af6c3",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "Every artifact use accurately reflects the claim's specific focus on the break in lower-level requirement traceability for learned algorithms. The artifacts consistently enforce the claim's challenge by explicitly warning against overstatements (e.g., 'never \"all traceability is gone\"') and affirming that conventional hardware and software assurance methods still apply to the surrounding system.",
+  "evidence_locators": [
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

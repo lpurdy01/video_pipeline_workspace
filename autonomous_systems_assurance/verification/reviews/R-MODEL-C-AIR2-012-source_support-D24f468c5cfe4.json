@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-AIR2-012-source_support-D24f468c5cfe4",
+  "package_id": "P-C-AIR2-012-source_support",
+  "input_digest": "24f468c5cfe45169287b3f5b94ea0e4ceb164b9b7754152a02534229e8660d47",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided evidence lacks full local context for the FAA announcement, containing only a short excerpt ('without visual observers'). The research findings explicitly note that region records have 'short_excerpt_only' and direct the compiler to report context blockers, making the exact claim text and scope uncertain until the full text is evaluated.",
+  "evidence_locators": [
+    "S-AIR2-011-R1",
+    "research/contributions/air_round2/findings.md"
+  ],
+  "limitations": [
+    "Full source context is absent (short_excerpt_only)",
+    "Linked approval letters (Exemption 19111B/C) must be fully integrated and reviewed to confirm exact conditions and lack of TSO/unrestricted authority"
+  ],
+  "resolves": []
+}

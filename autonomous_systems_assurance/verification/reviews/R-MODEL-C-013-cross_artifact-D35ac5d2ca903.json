@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-013-cross_artifact-D35ac5d2ca903",
+  "package_id": "P-C-013-cross_artifact",
+  "input_digest": "35ac5d2ca903b5ab7731a7597850b4d1ceb1606179aff2b11d6e878c0fd8bc71",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifact accurately cites C-013 to note that ISO/PAS 8800 supplies a published automotive AI safety scope. It preserves the claim's limitations by explicitly distinguishing engineering standards from operational permissions, avoiding any implication of vendor compliance or product authorization.",
+  "evidence_locators": [
+    "research/initial_findings.md",
+    "## Cybercab: deployment and self-certification"
+  ],
+  "limitations": [
+    "Standard existence does not prove vendor compliance or operational authorization",
+    "Licensed clauses of ISO/PAS 8800 not accessed"
+  ],
+  "resolves": []
+}

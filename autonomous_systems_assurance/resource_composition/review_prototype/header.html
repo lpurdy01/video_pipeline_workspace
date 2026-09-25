@@ -1,0 +1,10 @@
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  const controls = document.createElement('div');
+  controls.id = 'reader-controls';
+  controls.innerHTML = 'Reader view <button type="button" id="density">compact</button> <button type="button" id="print">print / PDF</button>';
+  document.body.append(controls);
+  document.getElementById('density').addEventListener('click', () => document.body.classList.toggle('compact'));
+  document.getElementById('print').addEventListener('click', () => window.print());
+});
+</script>

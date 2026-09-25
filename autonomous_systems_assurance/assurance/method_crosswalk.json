@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "case_id": "CASE-ROAD-TO-AIR-001",
+  "limitations": "This is a comparison map, not a compliance matrix. Coverage labels describe the project team's scoped reading of the cited material and retain the cited document's jurisdiction, status and limits.",
+  "methods": [
+    {
+      "id": "M-AMLAS-001",
+      "title": "AMLAS Version 1.1",
+      "status": "guidance",
+      "scope": "Public, primarily offline-supervised ML-component assurance methodology; explicitly requires complementary system/domain assurance.",
+      "claim_ids": [
+        "C-CHAL-006",
+        "C-TRAIN-001",
+        "C-TRAIN-002",
+        "C-TRAIN-003"
+      ],
+      "mappings": [
+        {
+          "obligation_id": "O-001",
+          "coverage": "direct",
+          "note": "ML safety-assurance scoping links allocated system safety requirements and operating context to the component.",
+          "claim_ids": [
+            "C-CHAL-006"
+          ]
+        },
+        {
+          "obligation_id": "O-002",
+          "coverage": "partial",
+          "note": "AMLAS data requirements make installed viewpoint, visible features, completeness and label accuracy explicit, but do not prove an independent observation path for a missed hazard.",
+          "claim_ids": [
+            "C-CHAL-006",
+            "C-TRAIN-001"
+          ]
+        },
+        {
+          "obligation_id": "O-003",
+          "coverage": "direct",
+          "note": "Data management, a logged model-learning process, candidate selection and deployment provide a learned-component lifecycle structure; this does not supply a case-specific dataset or release.",
+          "claim_ids": [
+            "C-CHAL-006",
+            "C-TRAIN-001",
+            "C-TRAIN-002"
+          ]
+        },
+        {
+          "obligation_id": "O-004",
+          "coverage": "partial",
+          "note": "Independent verification data and realistic challenge classes structure component evidence but provide no universal safety metric or shifted-ODD result for this release.",
+          "claim_ids": [
+            "C-CHAL-006",
+            "C-EVID-003",
+            "C-EVID-004",
+            "C-TRAIN-003"
+          ]
+        },
+        {
+          "obligation_id": "O-005",
+          "coverage": "outside_scope",
+          "note": "System safety requirements are an input, so controller/plant composition remains external to ML-component guidance.",
+          "claim_ids": [
+            "C-CHAL-006"
+          ]
+        },
+        {
+          "obligation_id": "O-006",
+          "coverage": "outside_scope",
+          "note": "The methodology does not establish monitor independence, switching delay or a recoverable state.",
+          "claim_ids": [
+            "C-CHAL-006",
+            "C-EVID-005"
+          ]
+        },
+        {
+          "obligation_id": "O-007",
+          "coverage": "outside_scope",
+          "note": "AMLAS states that it should not be used in isolation from system and domain assurance.",
+          "claim_ids": [
+            "C-CHAL-006"
+          ]
+        },
+        {
+          "obligation_id": "O-008",
+          "coverage": "partial",
+          "note": "Iteration and deployment artifacts make a place for change evidence, but a specific operational release-control regime remains external.",
+          "claim_ids": [
+            "C-CHAL-006",
+            "C-EVID-001"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M-MAA-001",
+      "title": "UK MAA/RN/2025/04",
+      "status": "current_authority_guidance",
+      "scope": "Case-specific UK military aviation guidance; not civil-airworthiness approval or a public product safety case.",
+      "claim_ids": [
+        "C-CHAL-001",
+        "C-CHAL-002"
+      ],
+      "mappings": [
+        {
+          "obligation_id": "O-001",
+          "coverage": "partial",
+          "note": "Applicant/MAA MCRI engagement and a defined ODD inform the case-specific scope.",
+          "claim_ids": [
+            "C-CHAL-001"
+          ]
+        },
+        {
+          "obligation_id": "O-002",
+          "coverage": "partial",
+          "note": "Architectural mitigation is discussed when a prescriptive approach is unavailable, without proving a particular sensor path.",
+          "claim_ids": [
+            "C-CHAL-002"
+          ]
+        },
+        {
+          "obligation_id": "O-003",
+          "coverage": "partial",
+          "note": "The notice recommends fixed supervised models for early safety-related applications but does not supply a public training-lineage package.",
+          "claim_ids": [
+            "C-CHAL-001"
+          ]
+        },
+        {
+          "obligation_id": "O-004",
+          "coverage": "partial",
+          "note": "Verification, trials, testing and analysis are case-specific evidence, not a published universal acceptance threshold.",
+          "claim_ids": [
+            "C-CHAL-002"
+          ]
+        },
+        {
+          "obligation_id": "O-005",
+          "coverage": "partial",
+          "note": "A system safety case and architectural mitigation are retained, but the method is not prescriptive for this worked controller.",
+          "claim_ids": [
+            "C-CHAL-002"
+          ]
+        },
+        {
+          "obligation_id": "O-006",
+          "coverage": "partial",
+          "note": "Architectural mitigation makes recovery/monitor design visible but does not discharge its observability or timing evidence.",
+          "claim_ids": [
+            "C-CHAL-002",
+            "C-EVID-005"
+          ]
+        },
+        {
+          "obligation_id": "O-007",
+          "coverage": "partial",
+          "note": "The guidance is military and applicant-specific, so civil operational-authority evidence remains outside its scope.",
+          "claim_ids": [
+            "C-CHAL-001"
+          ]
+        },
+        {
+          "obligation_id": "O-008",
+          "coverage": "partial",
+          "note": "Continuing performance monitoring is part of the retained system-safety-case approach, not a public release procedure.",
+          "claim_ids": [
+            "C-CHAL-002"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M-EASA-DSAI-001",
+      "title": "EASA NPA 2025-07(B), Proposed DS.AI",
+      "status": "proposed_guidance",
+      "scope": "Proposed EASA AI-trustworthiness material; not final AMC/GM and explicitly excludes some high-consequence systems and online-learning cases.",
+      "claim_ids": [
+        "C-CHAL-003",
+        "C-CHAL-004"
+      ],
+      "mappings": [
+        {
+          "obligation_id": "O-001",
+          "coverage": "proposed",
+          "note": "Operational-domain and risk-assessment material are candidate civil objectives.",
+          "claim_ids": [
+            "C-CHAL-003"
+          ]
+        },
+        {
+          "obligation_id": "O-002",
+          "coverage": "proposed",
+          "note": "System-development assurance is proposed, without a worked independent-observability proof here.",
+          "claim_ids": [
+            "C-CHAL-003"
+          ]
+        },
+        {
+          "obligation_id": "O-003",
+          "coverage": "proposed",
+          "note": "The proposed lifecycle includes supervised-ML learning assurance and configuration/lifecycle data.",
+          "claim_ids": [
+            "C-CHAL-003"
+          ]
+        },
+        {
+          "obligation_id": "O-004",
+          "coverage": "proposed",
+          "note": "Candidate objectives require later inspection for exact performance and uncertainty evidence requirements.",
+          "claim_ids": [
+            "C-CHAL-003",
+            "C-EVID-004"
+          ]
+        },
+        {
+          "obligation_id": "O-005",
+          "coverage": "proposed",
+          "note": "System-development assurance is proposed, but this NPA does not close the worked flight-critical case.",
+          "claim_ids": [
+            "C-CHAL-003",
+            "C-CHAL-004"
+          ]
+        },
+        {
+          "obligation_id": "O-006",
+          "coverage": "partial",
+          "note": "In-service monitoring is proposed, while recovery premises remain architecture-specific; an airborne active escape still needs evidence-backed traffic-and-clearance observation.",
+          "claim_ids": [
+            "C-CHAL-003",
+            "C-EVID-005"
+          ]
+        },
+        {
+          "obligation_id": "O-007",
+          "coverage": "outside_scope",
+          "note": "The proposal excludes systems where AI risk directly contributes to fatalities or multiple life-threatening injuries.",
+          "claim_ids": [
+            "C-CHAL-004"
+          ]
+        },
+        {
+          "obligation_id": "O-008",
+          "coverage": "proposed",
+          "note": "Configuration/lifecycle data, in-service monitoring and continuous risk assessment are proposed.",
+          "claim_ids": [
+            "C-CHAL-003"
+          ]
+        }
+      ]
+    }
+  ]
+}

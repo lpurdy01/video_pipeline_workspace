@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="970" viewBox="0 0 1400 970" role="img" aria-labelledby="title desc">
+  <title id="title">Public assurance material has different coverage boundaries</title>
+  <desc id="desc">A source-scoped map places proposed EASA AI authority and risk boundaries beside AMLAS, FAA, UK MAA, NHTSA reporting, and the project's proposed evidence graph. It does not rank safety or claim approval.</desc>
+  <style>
+    .bg{fill:#071322}.panel{fill:#0d2034;stroke:#42617e;stroke-width:1.3}.grid{stroke:#35516c;stroke-width:1}.axis{fill:#a9c3d9;font:600 15px Arial,sans-serif}.small{fill:#a9c3d9;font:13px Arial,sans-serif}.tiny{fill:#90afc8;font:11px Arial,sans-serif}.h{fill:#f0f7ff;font:700 28px Arial,sans-serif}.sub{fill:#c9d9e8;font:15px Arial,sans-serif}.row{fill:#dceaf5;font:700 15px Arial,sans-serif}.tag{fill:#071322;font:700 11px Arial,sans-serif}.note{fill:#f5cb72;font:600 12px Arial,sans-serif}.bar{fill:#39c79a}.limited{fill:#4987cc}.proposed{fill:#9c7ae5}.open{fill:#3d5368}.bad{fill:#f07678}.white{fill:#fff}
+  </style>
+  <rect class="bg" width="1400" height="970"/>
+  <text class="h" x="56" y="54">Public assurance material has different coverage boundaries</text>
+  <text class="sub" x="56" y="81">A source-scoped map, not a safety ranking. Filled regions mean “the document addresses this”; they do not mean a product is approved.</text>
+  <rect class="panel" x="56" y="112" width="1288" height="262" rx="12"/>
+  <text class="axis" x="84" y="143">1. Delegated authority / end-user role in EASA’s proposed DS.AI</text>
+  <text class="tiny" x="84" y="165">This is EASA’s proposed aviation taxonomy, not SAE road levels and not a general permission matrix. [C-RISK-006]</text>
+  <line class="grid" x1="190" y1="190" x2="1260" y2="190"/>
+  <line class="grid" x1="190" y1="295" x2="1260" y2="295"/>
+  <path d="M190 243 H1260" stroke="#d5e6f6" stroke-width="3"/>
+  <g>
+    <circle cx="225" cy="243" r="15" class="limited"/><text class="tag" x="210" y="247">1A</text><text class="small" x="196" y="278">information</text><text class="small" x="201" y="296">support</text>
+    <circle cx="410" cy="243" r="15" class="limited"/><text class="tag" x="395" y="247">1B</text><text class="small" x="365" y="278">decision support</text><text class="small" x="383" y="296">full user authority</text>
+    <circle cx="620" cy="243" r="15" class="limited"/><text class="tag" x="605" y="247">2A</text><text class="small" x="560" y="278">directed action</text><text class="small" x="558" y="296">full user authority</text>
+    <circle cx="825" cy="243" r="15" class="limited"/><text class="tag" x="810" y="247">2B</text><text class="small" x="750" y="278">supervised action</text><text class="small" x="748" y="296">partial user authority</text>
+    <circle cx="1030" cy="243" r="15" class="proposed"/><text class="tag" x="1015" y="247">3A</text><text class="small" x="940" y="278">safeguarded action</text><text class="small" x="950" y="296">limited authority on alert</text>
+    <circle cx="1215" cy="243" r="15" class="bad"/><text class="tag" x="1200" y="247">3B</text><text class="note" x="1153" y="278">RESERVED</text><text class="small" x="1151" y="296">no assignment in proposal</text>
+  </g>
+  <text class="tiny" x="190" y="338">Increasing delegated action →</text>
+  <text class="note" x="84" y="353">Key boundary: Level 3B is reserved. This source does not provide an approved “no human in the loop” category.</text>
+
+  <rect class="panel" x="56" y="397" width="1288" height="286" rx="12"/>
+  <text class="axis" x="84" y="428">2. EASA’s proposed risk matrix is scenario- and operational-hour-based</text>
+  <text class="tiny" x="84" y="450">H1 means potential fatalities. It is unacceptable at every likelihood in this proposal. [C-RISK-007]</text>
+  <g class="small" text-anchor="middle"><text x="510" y="479">Frequent</text><text x="670" y="479">Probable</text><text x="830" y="479">Remote</text><text x="990" y="479">Extremely remote</text><text x="1150" y="479">Extremely improbable</text></g>
+  <g class="tiny" text-anchor="middle"><text x="510" y="496">&gt;1E−3/hr</text><text x="670" y="496">1E−3…1E−5/hr</text><text x="830" y="496">1E−5…1E−7/hr</text><text x="990" y="496">1E−7…1E−9/hr</text><text x="1150" y="496">≤1E−9/hr</text></g>
+  <g>
+    <text class="row" x="385" y="540">H1 fatalities</text><text class="row" x="385" y="583">H2 serious injury</text><text class="row" x="385" y="626">H3 significant degradation</text><text class="row" x="385" y="669">H4 slight degradation</text>
+    <g stroke="#0b1726" stroke-width="2">
+      <rect class="bad" x="430" y="514" width="160" height="34"/><rect class="bad" x="590" y="514" width="160" height="34"/><rect class="bad" x="750" y="514" width="160" height="34"/><rect class="bad" x="910" y="514" width="160" height="34"/><rect class="bad" x="1070" y="514" width="160" height="34"/>
+      <rect class="bad" x="430" y="557" width="160" height="34"/><rect class="bad" x="590" y="557" width="160" height="34"/><rect class="bad" x="750" y="557" width="160" height="34"/><rect class="bar" x="910" y="557" width="160" height="34"/><rect class="proposed" x="1070" y="557" width="160" height="34"/>
+      <rect class="bad" x="430" y="600" width="160" height="34"/><rect class="bad" x="590" y="600" width="160" height="34"/><rect class="bar" x="750" y="600" width="160" height="34"/><rect class="proposed" x="910" y="600" width="160" height="34"/><rect class="proposed" x="1070" y="600" width="160" height="34"/>
+      <rect class="bad" x="430" y="643" width="160" height="34"/><rect class="bar" x="590" y="643" width="160" height="34"/><rect class="proposed" x="750" y="643" width="160" height="34"/><rect class="proposed" x="910" y="643" width="160" height="34"/><rect class="proposed" x="1070" y="643" width="160" height="34"/>
+    </g>
+    <g class="tag" text-anchor="middle"><text x="510" y="536">UNACCEPTABLE</text><text x="670" y="536">UNACCEPTABLE</text><text x="830" y="536">UNACCEPTABLE</text><text x="990" y="536">UNACCEPTABLE</text><text x="1150" y="536">UNACCEPTABLE</text><text x="510" y="579">UNACCEPTABLE</text><text x="670" y="579">UNACCEPTABLE</text><text x="830" y="579">UNACCEPTABLE</text><text x="990" y="579">ACCEPTABLE</text><text x="1150" y="579">MODERATE</text><text x="510" y="622">UNACCEPTABLE</text><text x="670" y="622">UNACCEPTABLE</text><text x="830" y="622">ACCEPTABLE</text><text x="990" y="622">MODERATE</text><text x="1150" y="622">MODERATE</text><text x="510" y="665">UNACCEPTABLE</text><text x="670" y="665">ACCEPTABLE</text><text x="830" y="665">MODERATE</text><text x="990" y="665">MODERATE</text><text x="1150" y="665">MODERATE</text></g>
+  </g>
+
+  <rect class="panel" x="56" y="707" width="1288" height="207" rx="12"/>
+  <text class="axis" x="84" y="738">3. What each public source addresses — and what it explicitly leaves open</text>
+  <g>
+    <text class="row" x="86" y="779">AMLAS</text><rect class="limited" x="250" y="760" width="360" height="25" rx="4"/><text class="small" x="264" y="778">ML-component lifecycle: data, model, verification, deployment</text><text class="tiny" x="632" y="778">not whole vehicle / authority approval [C-CHAL-006]</text>
+    <text class="row" x="86" y="815">UK MAA</text><rect class="limited" x="250" y="796" width="475" height="25" rx="4"/><text class="small" x="264" y="814">applicant-specific military path; fixed supervised model / defined domain</text><text class="tiny" x="744" y="814">not civil approval [C-CHAL-001]</text>
+    <text class="row" x="86" y="851">FAA roadmap</text><rect class="open" x="250" y="832" width="320" height="25" rx="4"/><text class="small" x="264" y="850">problem framing and research direction</text><text class="tiny" x="590" y="850">not a complete means of compliance [C-AUTH-010] [C-RISK-002]</text>
+    <text class="row" x="86" y="887">NHTSA SGO</text><rect class="open" x="250" y="868" width="265" height="25" rx="4"/><text class="small" x="264" y="886">incident reporting and oversight data</text><text class="tiny" x="534" y="886">not normalized safety-rate evidence [C-DIR-003]</text>
+  </g>
+  <rect class="proposed" x="974" y="753" width="332" height="126" rx="9"/><text class="white" x="995" y="783" style="font:700 16px Arial,sans-serif">PROJECT PROPOSAL</text><text class="white" x="995" y="810" style="font:14px Arial,sans-serif">Connect domain, sensing, release,</text><text class="white" x="995" y="832" style="font:14px Arial,sans-serif">scenario evidence, recovery, and change.</text><text class="white" x="995" y="860" style="font:12px Arial,sans-serif">It names the remaining evidence; it is not approval.</text>
+  <text class="tiny" x="56" y="945">Colors: red = explicitly unacceptable in EASA’s proposal; green/purple = acceptable/moderate proposed classifications; blue/grey = document coverage, not safety status.</text>
+</svg>

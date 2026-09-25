@@ -1,0 +1,27 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-007-cross_artifact-D207ef30f5465",
+  "package_id": "P-C-EVID-007-cross_artifact",
+  "input_digest": "207ef30f54653a747879286e2ab881e2dfce63890256f9b1d83a9c5c5f1f9a3c",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of claim C-EVID-007 consistently preserves its scope and limitations. The claim states that a neuron-coverage study reports a small positive association with steering-angle deviation but explicitly does not establish causation or a consistent test-adequacy indicator. All artifacts that reference C-EVID-007, including the `findings.md`, `video/script.md`, `narration_evidence_map.md`, `script_outline.md`, `treatment.md`, `visual_inventory.md`, `whitepaper_outline.md`, and `whitepaper.md`, explicitly reiterate these limitations. They qualify neuron coverage as a 'limited empirical association,' a 'diagnostic' that 'does not establish it as a causal safety measure,' and state that it 'lacks established causal adequacy meaning.' The artifacts also prevent its use as a 'universal safety score' or as evidence that 'establishes safety.' The structural links in `assurance_case.json` and `whitepaper.md` to an evidence artifact and an obligation for 'hazard-relevant performance' are appropriate, as the claim is about a test-adequacy metric, and its limitations are consistently maintained.",
+  "evidence_locators": [
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_evidence/findings.md",
+    "resource_composition/figures.md",
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

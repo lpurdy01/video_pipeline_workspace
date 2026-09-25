@@ -1,0 +1,23 @@
+{
+  "id": "R-FIRSTPASS-C-EVID-004-challenge",
+  "package_id": "P-C-EVID-004-challenge",
+  "input_digest": "e14241a5fffde8be60a7894cb11ffe08ed996ecf7ff154ad5ffbfbf37a5ec963",
+  "task": "challenge",
+  "reviewer_id": "first-pass-challenge-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-challenge-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "Guo et al.'s evaluated modern classification networks are described as poorly calibrated, and the paper reports empirical improvement from temperature scaling on its evaluated settings. The claim retains both qualifiers\u2014'studied' and 'empirically'\u2014and expressly refuses to turn a calibrated confidence estimate into a system safety bound. The challenge found no conflicting result within the source's stated experimental scope.",
+  "evidence_locators": [
+    "S-EVID-004-R1, Guo et al., 'On Calibration of Modern Neural Networks', abstract, PDF p. 1",
+    "S-EVID-004-R2, Guo et al., temperature-scaling experiments, PDF pp. 2-3",
+    "https://arxiv.org/abs/1706.04599"
+  ],
+  "limitations": [
+    "The results cover selected classification architectures and data distributions, not a released perception stack under ODD shift or correlated sensor faults.",
+    "No link from calibrated output to monitor thresholds, authority decisions, or closed-loop hazard outcomes has been demonstrated."
+  ],
+  "resolves": []
+}

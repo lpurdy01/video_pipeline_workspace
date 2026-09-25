@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-013-source_support-D488dc99e8fc3",
+  "package_id": "P-C-013-source_support",
+  "input_digest": "488dc99e8fc32f75f0319f8c959bed3b42fba3e578490d5df6d5efc40d980b2f",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided metadata and artifact text confirm that ISO/PAS 8800:2024 is a published standard concerning road vehicles, safety, and artificial intelligence, and that its public scope establishes an automotive AI safety framework.",
+  "evidence_locators": [
+    "S-014 metadata",
+    "research/initial_findings.md (Cybercab: deployment and self-certification)"
+  ],
+  "limitations": [
+    "The full standard text was not accessed; verification is limited to the public abstract and scope.",
+    "The existence of the standard does not establish compliance by any specific vendor or product."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-C-RISK-004-cross_artifact-De7f265058d8c",
+  "package_id": "P-C-RISK-004-cross_artifact",
+  "input_digest": "e7f265058d8caad2fb2aead8b27ab14b4b13e9746e70838c5eec329f79edafbd",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts consistently apply the claim's finding that aggregate DAA risk ratios can hide specific encounter deficiencies and cannot serve as a standalone safety score. They also explicitly preserve the claim's scope limitations, noting that CAP3127 is consultation/test-phase material rather than a universal AI criterion, and correctly log the challenge to retrieve CAP3015 before making final statements about UK acceptance criteria.",
+  "evidence_locators": [
+    "resource_composition/figures.md (F-009)",
+    "research/integration_round4.md (Risk and probability distinctions; Source-quality and conflict ledger)",
+    "resource_composition/whitepaper_outline.md (Sections 3, 6, 10; Coverage and language gates)",
+    "research/contributions/risk_evidence/findings.md (Risk numbers need an argument around them; Open retrieval and research tasks)"
+  ],
+  "limitations": [
+    "CAP3127 is a consultation response and test-phase policy concept, not a final approval standard or universal AI criterion.",
+    "Must retrieve CAP3015 version 2 and accepted AMC/GM before describing UK DAA requirements as final.",
+    "Risk-ratio results depend on definitions, encounter distributions, operational restrictions, and the rest of the mitigation stack."
+  ],
+  "resolves": []
+}

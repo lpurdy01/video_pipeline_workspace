@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-RISK-003-source_support-Dd27e10e095f5",
+  "package_id": "P-C-RISK-003-source_support",
+  "input_digest": "d27e10e095f5ea64c296c2947b4d581eb25cf7f6f20560853cb4720db1ca0910",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The EASA NPA 2025-07(B) explicitly defines scope exclusions for AI systems contributing to fatalities or multiple life-threatening injuries (DS.AI.010 (d)(1)) and certain online-learning cases (DS.AI.010 (d)(2)). It outlines a scenario-based risk assessment (DS.AI.130) with severity and likelihood categories, and clearly states that H1 (potential for fatalities) is \"considered an unacceptable risk for an AI-based system operation at this point in time\" (DS.AI.130 (b)(1)(v) and Table 2). The locator for S-RISK-003-R1 also indicates the presence of authority boundaries in Table 1, supporting the 'authority levels' part of the claim. The claim's status as 'provisional' and scope as 'proposed DS.AI material' align with the nature of an NPA.",
+  "evidence_locators": [
+    "PDF p. 4, DS.AI.010 (d)(1), (d)(2)",
+    "PDF pp. 11-13, DS.AI Table 1 authority boundaries",
+    "PDF pp. 17-20, DS.AI.130 (b)(1)(v), Table 2"
+  ],
+  "limitations": [],
+  "resolves": []
+}

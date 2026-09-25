@@ -1,0 +1,22 @@
+{
+  "id": "R-PAPERSCOPE-CHAL-C-CHAL-006-20260916",
+  "package_id": "P-C-CHAL-006-challenge",
+  "input_digest": "36d6b9097628f368b7281609792b121782040bd603175066a18f37f5bde2f785",
+  "task": "challenge",
+  "reviewer_id": "paper-scope-challenge-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-scope-digest-pinned-challenge-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "AMLAS Version 1.1 explicitly names six stages and says its scope is the ML component, it should not be used in isolation, and it primarily concerns offline supervised learning. The claim keeps those boundaries and does not represent AMLAS as regulator acceptance or end-to-end vehicle/aircraft approval.",
+  "evidence_locators": [
+    "S-CHAL-004-R1 through S-CHAL-004-R3, AMLAS Version 1.1, PDF pp. 2-3",
+    "https://www.york.ac.uk/media/assuring-autonomy/documents/AMLASv1.1.pdf"
+  ],
+  "limitations": [
+    "This is research guidance, not regulator acceptance or a completed high-criticality application.",
+    "Its component scope leaves system authority, operation, recovery, and integrated closed-loop evidence open."
+  ],
+  "resolves": []
+}

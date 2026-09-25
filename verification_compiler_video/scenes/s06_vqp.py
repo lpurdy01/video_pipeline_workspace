@@ -204,13 +204,13 @@ class S06VQP(Beat3DScene):
                      run_time=0.3)
 
     def b14_beyond(self, ctx):
+        cap = self.caption3d("strictest case", style.GOLD)
+        ctx.play(cap.animate.set_opacity(1), run_time=0.35)
+        self._own("cap3", cap)
         # Use the window. Capping the move at 1.8s of a 7.9s line left four
         # seconds of parked camera with the narrator still talking.
         self.move_camera(phi=70 * DEGREES, theta=-100 * DEGREES,
-                         run_time=max(ctx.window - 2.6, 0.8))
-        cap = self.caption3d("strictest case", style.GOLD)
-        ctx.play(cap.animate.set_opacity(1), run_time=0.45)
-        self._own("cap3", cap)
+                         run_time=max(ctx.window - 2.5, 0.8))
         for tag in ("mrev", "hrev"):
             ctx.play(*style.highlight(self._owned[tag], style.GOLD), run_time=0.3)
             ctx.hold(0.5)
@@ -276,7 +276,7 @@ class S06VQP(Beat3DScene):
                          run_time=min(ctx.window - 1.0, 1.4))
 
     def b18_result(self, ctx):
-        cap = self.caption3d("a structured result", style.GREEN)
+        cap = self.caption3d("review result", style.GREEN)
         ctx.play(cap.animate.set_opacity(1), run_time=0.45)
         self._own("cap4", cap)
         for pk in self._owned["packs"]:

@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-016-source_support-D463cc4623323",
+  "package_id": "P-C-016-source_support",
+  "input_digest": "463cc4623323a9767c6539f40fc5f747adaf3551a72c9f08582c1ed1de1fcf29",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The supplied source excerpt only mentions the timing needed for a recovery controller to act. It lacks the full context required to evaluate the claim's specific assertion that an avoidance monitor cannot rely on the same failed perception output (shared-input failure).",
+  "evidence_locators": [
+    "S-010-R1"
+  ],
+  "limitations": [
+    "Full local context is absent",
+    "Search boundary must be expanded to find explicit discussion of shared perception inputs or shared-input failures"
+  ],
+  "resolves": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "R-PAPER-READER-SOURCE-C-002-20260916",
+  "package_id": "P-C-002-source_support",
+  "input_digest": "0723a8729aca7dd3fc298416194eb7ca60ce4583bdd0cde690478275cf26e99e",
+  "task": "source_support",
+  "reviewer_id": "paper-reader-source-support-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "source-support-digest-pinned-v2",
+  "verdict": "uncertain",
+  "created_at": "2026-09-16",
+  "rationale": "The supplied FAA excerpt states the claimed TSO-versus-installation distinction directly. Its short_excerpt_only status, absent snapshot and absent captured source context prevent a review of its boundaries, applicability and current page context, so the precise US-civil-aviation claim cannot receive a pass.",
+  "evidence_locators": ["S-002-R1 — TSO authorization versus installation approval"],
+  "limitations": ["No full local source context or snapshot was captured for S-002-R1.", "This evidence does not establish a particular article's installation, aircraft, or operational approval."],
+  "resolves": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-RISK-002-source_support-Vassurance-first-pass-v2-local-context-D61665cbba434",
+  "package_id": "P-C-RISK-002-source_support",
+  "input_digest": "61665cbba434ed9259f77c28cb692ff58431b01da607d2c4f9758d1ba956fdf4",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The supplied FAA Roadmap Version I directly supports the claim text. On PDF page 15, the text explicitly notes that ARP4754A/ARP4761 system safety assessment determines DAL to differentiate assurance rigor, providing a starting point for learned AI implementations, while stating directly that 'existing software and complex hardware guidance is not adequate to address learned AI implementations.' Artifact usages consistently respect the document's direction-setting, non-approval boundary.",
+  "evidence_locators": [
+    "S-RISK-002, PDF pp. 11-12 (Safety Continuum / DAL discussion)",
+    "S-RISK-002, PDF pp. 14-15 (Application of Principles to Aircraft Certification Safety Assurance of Learned AI Implementations)"
+  ],
+  "limitations": [
+    "The roadmap is non-binding, direction-setting guidance and does not establish a means of compliance or formal approval for any specific learned AI application or DAL."
+  ],
+  "resolves": []
+}

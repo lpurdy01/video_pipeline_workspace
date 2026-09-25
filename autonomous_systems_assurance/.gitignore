@@ -1,0 +1,12 @@
+out/
+book_dump/
+media/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+video/assets/human_audio/*
+!video/assets/human_audio/README.md
+video/assets/human_video/*
+!video/assets/human_video/README.md

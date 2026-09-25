@@ -1,0 +1,24 @@
+{
+  "id": "R-MODEL-C-CHAL-006-source_support-De321ebd21f66",
+  "package_id": "P-C-CHAL-006-source_support",
+  "input_digest": "e321ebd21f662f48de9df593c896e8fff97211f846b78cb480e5d5ce8c8653bb",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided source material explicitly defines AMLAS as a six-stage methodology covering scoping, requirements, data management, model learning, verification, and deployment. It also directly supports the claim's limitations, stating that AMLAS is limited to the ML component, should not be used in isolation, and has a primary focus on off-line supervised learning.",
+  "evidence_locators": [
+    "S-CHAL-004-R1",
+    "S-CHAL-004-R2",
+    "S-CHAL-004-R3",
+    "PDF pp. 2\u20133, Introduction and Overview of AMLAS",
+    "PDF p. 3, Using this Document"
+  ],
+  "limitations": [
+    "AMLAS is a component-level research methodology and does not provide end-to-end system certification or regulatory approval."
+  ],
+  "resolves": []
+}

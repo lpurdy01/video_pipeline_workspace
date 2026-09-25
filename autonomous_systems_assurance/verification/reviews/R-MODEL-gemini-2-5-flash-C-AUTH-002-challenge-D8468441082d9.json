@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-002-challenge-D8468441082d9",
+  "package_id": "P-C-AUTH-002-challenge",
+  "input_digest": "8468441082d936f4a4cef7ad844e959404787044be7b027ee6e6bb4e362e4243",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The FAA's 'Roadmap for Artificial Intelligence Safety Assurance, Version I' (S-AUTH-001) distinguishes 'static learned AI' (equivalent to a frozen learned AI implementation) from systems that learn in operation. The roadmap explicitly states that 'each new version is subjected to safety assurance' (S-AUTH-001-R2), directly supporting the claim that a new safety-assurance treatment is required for each updated version. This interpretation is consistently reflected across the project's artifacts, which note that the roadmap frames this distinction and requirement (e.g., `research/contributions/assurance_authority/findings.md`, `video/script.md`, `resource_composition/whitepaper.md`). The claim's scope acknowledges that the roadmap is a direction-setting document, not a complete means of compliance, which aligns with the source's stated limitations. No counterevidence or alternative interpretation within the provided materials defeats this claim.",
+  "evidence_locators": [
+    "S-AUTH-001-R2 (PDF p. 10, excerpt: \"each new version is subjected to safety assurance\")",
+    "research/contributions/assurance_authority/findings.md (under 'FAA AI roadmap' and 'Direct findings' for C-AUTH-002)",
+    "resource_composition/whitepaper.md (Section 1, under 'The first object of this project is therefore a frozen trained release...')"
+  ],
+  "limitations": [
+    "The review for 'later FAA policy' was limited to the provided review packet, which did not contain any FAA policy documents published after the 2024 roadmap that would supersede or alter this specific principle."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-RISK-003-source_support-D8a7454c1de63",
+  "package_id": "P-C-RISK-003-source_support",
+  "input_digest": "8a7454c1de6372f9292d1c36b923d927675be7e31831f83de692fea8a31d595c",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided context confirms the proposed scenario-based severity/likelihood risk assessment and explicitly states that H1 (potential for fatalities) is considered an unacceptable risk at this time (Region 2). However, the captured context for Region 1 only contains the Table of Contents (page 3) and omits pages 12-14. Consequently, the specific claims about scope exclusions for 'multiple life-threatening injuries' and 'certain online-learning cases' cannot be verified from the supplied text.",
+  "evidence_locators": [
+    "S-RISK-003-R1",
+    "S-RISK-003-R2"
+  ],
+  "limitations": [
+    "The captured context for Region 1 is missing pages 12-14, which are required to verify the exact scope exclusions regarding multiple life-threatening injuries and online-learning.",
+    "NPA 2025-07(B) is proposed material, not a final EASA decision, AMC/GM, or approval, and must be checked for successor material before publication."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "R-FIRST-CROSS-C-002",
+  "package_id": "P-C-002-cross_artifact",
+  "input_digest": "2af8172455b77914da0aaa14ab6c0d84067013ad577555848263be75e9de263f",
+  "task": "cross_artifact",
+  "reviewer_id": "first-pass-cross-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-cross-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The five tagged uses preserve the claim's approval-object distinction. They identify TSO authorization as separate from installation and operational use, keep US civil aviation as the scope, and use it to require separate graph edges rather than treating a TSO as an aircraft or operational approval.",
+  "evidence_locators": [
+    "resource_composition/figures.md, tagged use [C-002], approval-scope figure note",
+    "research/initial_findings.md, tagged use [C-002], FAA/Protector comparison paragraph",
+    "resource_composition/whitepaper_outline.md, tagged use [C-002], road-to-air outline row",
+    "video/narrative.md, tagged use [C-002], aviation transition wording",
+    "wiki/concepts/assurance_vocabulary.md, tagged use [C-002], TSO/install/aircraft/operation distinction",
+    "assurance_case_links: O-AIR-007 (obligation)"
+  ],
+  "limitations": [
+    "Cross-artifact review only; it does not verify FAA source context or whether the claim is factually correct.",
+    "No rendered figure, recorded narration, or final paper prose is in the reviewed package."
+  ],
+  "resolves": []
+}

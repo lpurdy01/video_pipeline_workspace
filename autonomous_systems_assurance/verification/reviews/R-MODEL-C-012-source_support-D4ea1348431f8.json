@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-012-source_support-D4ea1348431f8",
+  "package_id": "P-C-012-source_support",
+  "input_digest": "4ea1348431f8cb35bb3eab6ad791537584c64f3f55ed68b264074169276c011e",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The source metadata and limitations explicitly confirm a May 2026 arXiv preprint studying representation analysis and monitoring for a vision-based landing system. The provisional status and research scope align with the pending methods review noted in the source inspection and initial findings.",
+  "evidence_locators": [
+    "S-013",
+    "research/initial_findings.md"
+  ],
+  "limitations": [
+    "Full methods/limitations audit and reproduction pending; no certification established."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-010-challenge-Ddc7fb58f0192",
+  "package_id": "P-C-AUTH-010-challenge",
+  "input_digest": "dc7fb58f01924e72c1ee2d8f65b81b0f1f3a9d98c1b783751ec4c1c7d7ac5b0c",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The FAA Roadmap for Artificial Intelligence Safety Assurance, Version I, PDF p. 14, explicitly states: 'When AI is used to develop a learned AI implementation, those links are broken; the designer cannot derive the requirements that directly describe the AI implementation and cannot validate them by showing that they provide coverage to the next higher level.' This directly supports the claim that the FAA describes learned implementation as a break from conventional lower-level requirement traceability for the learned algorithm. The claim's scope correctly limits this to the FAA's framing and acknowledges that other conventional methods still apply, which is consistent with the surrounding text in the source.",
+  "evidence_locators": [
+    "S-AUTH-001-R4"
+  ],
+  "limitations": [
+    "The claim is specific to the FAA's framing in Version I of the 'Roadmap for Artificial Intelligence Safety Assurance'. Future versions or other FAA documents might present adapted views or solutions, but this does not defeat the accuracy of the claim regarding the specified document."
+  ],
+  "resolves": []
+}

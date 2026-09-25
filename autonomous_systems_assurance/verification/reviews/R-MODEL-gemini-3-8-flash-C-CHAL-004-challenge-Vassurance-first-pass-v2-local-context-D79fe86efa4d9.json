@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-004-challenge-Vassurance-first-pass-v2-local-context-D79fe86efa4d9",
+  "package_id": "P-C-CHAL-004-challenge",
+  "input_digest": "79fe86efa4d97efe1a00411155a62dda1042c61fe6b7f4d7dcc4d56d493fe5f2",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "EASA NPA 2025-07(B) Section DS.AI.010(d) explicitly excludes AI-based systems presenting a risk directly contributing to fatalities or multiple life-threatening injuries, as well as online-learning systems whose failure contribution exceeds 'no safety effect'. The claim is scoped specifically to this limitation of the proposed framework and correctly concludes that DS.AI cannot serve as a complete proposed path for the most demanding flight-critical case without function-level failure allocation and architectural mitigations, which the manuscript and artifacts also acknowledge.",
+  "evidence_locators": [
+    "S-CHAL-002-R1",
+    "EASA NPA 2025-07 (B), PDF p. 4, DS.AI.010 Scope(d)(1)-(2)"
+  ],
+  "limitations": [
+    "Applies to EASA NPA 2025-07(B) as proposed; future revisions, AMC/GM changes, or an architecture that mitigates an AI component to a non-direct failure contribution would alter applicability to a specific airframe."
+  ],
+  "resolves": []
+}

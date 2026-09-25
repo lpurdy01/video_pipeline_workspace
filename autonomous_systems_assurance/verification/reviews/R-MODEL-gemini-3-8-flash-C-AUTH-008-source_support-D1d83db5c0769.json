@@ -1,0 +1,24 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-AUTH-008-source_support-D1d83db5c0769",
+  "package_id": "P-C-AUTH-008-source_support",
+  "input_digest": "1d83db5c0769b4be24035ecdd8f7368b51f8a0742e28509cc94193ae88cd4aa1",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-25",
+  "rationale": "The supplied source regions contain only short excerpts with no full local context captured. While excerpts support the non-binding nature, lack of federal approval, and mention ODD, OEDR, and fallback, full context is absent and the excerpt does not explicitly substantiate 'validation' within the safety elements list.",
+  "evidence_locators": [
+    "https://www.nhtsa.gov/vehicle-manufacturers/automated-driving-systems",
+    "S-AUTH-006-R1",
+    "S-AUTH-006-R2",
+    "S-AUTH-006-R3"
+  ],
+  "limitations": [
+    "Source context is marked 'short_excerpt_only' with '[no full local context captured]'",
+    "Verification of all enumerated safety elements (specifically validation) requires capturing the full page text or the underlying ADS 2.0 document"
+  ],
+  "resolves": []
+}

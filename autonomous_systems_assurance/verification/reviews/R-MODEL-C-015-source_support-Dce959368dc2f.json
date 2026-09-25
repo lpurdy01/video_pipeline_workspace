@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-015-source_support-Dce959368dc2f",
+  "package_id": "P-C-015-source_support",
+  "input_digest": "ce959368dc2f586eae734327144918628ca892c668f101291d4d01c1602359b3",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The claim outlines a proposed project architecture linking operating assumptions, perception, authority, fallback, and versioning. The provided evidence consists of isolated fragments from S-008 (on versioning) and S-010 (on recovery timing) with no full local context captured, making it impossible to verify their exact meaning or adequate support for the background concepts.",
+  "evidence_locators": [
+    "S-008-R1",
+    "S-010-R1"
+  ],
+  "limitations": [
+    "Full local context for S-008 and S-010 is missing",
+    "Need complete source sections to verify the background concepts of versioned change and fallback timing"
+  ],
+  "resolves": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "R-FIRSTPASS-SOURCE-C-EVID-001-20260916",
+  "package_id": "P-C-EVID-001-source_support",
+  "input_digest": "9de8e743f08d5810e20dc0fb0b12c4998ca73ae285c1b98973a646a8c0f0b5f9",
+  "task": "source_support",
+  "reviewer_id": "first-pass-source-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-source-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "NIST AI RMF 1.0 MAP outcomes address intended context and knowledge limits; MEASURE addresses TEVV considerations and uncertainty/performance measures; MANAGE outcomes address superseding, disengaging or deactivating systems as part of response and recovery. The claim accurately describes lifecycle-oriented calls for documentation without converting them into a sector safety criterion.",
+  "evidence_locators": [
+    "S-EVID-001-R1 \u2014 PDF pp. 26\u201327, MAP 1\u20133 outcomes",
+    "S-EVID-001-R2 \u2014 PDF p. 28, MEASURE introductory text",
+    "S-EVID-001-R3 \u2014 PDF pp. 31\u201332, MANAGE 2 and 4 outcomes"
+  ],
+  "limitations": [
+    "AI RMF 1.0 is voluntary horizontal guidance and is under revision according to the source record.",
+    "It does not establish transportation certification, an acceptable risk level, or approval of a system."
+  ],
+  "resolves": []
+}

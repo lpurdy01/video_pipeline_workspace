@@ -1,0 +1,26 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-RISK-005-cross_artifact-Dbb4f25db6ce3",
+  "package_id": "P-C-RISK-005-cross_artifact",
+  "input_digest": "bb4f25db6ce3088aac29965cbb1ba21c64b99439315c72db986463d2e3529032",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact that uses claim C-RISK-005 consistently preserves its scope and limitations. The AMLAS clinical example is explicitly framed as an 'explanatory evaluation pattern' or 'teaching pattern' for understanding trade-offs and non-uniform error costs. Artifacts directly address the challenge by stating that the example is 'not evidence about cars, aviation, detect-and-avoid performance' and warn against using human benchmarks for autonomous systems. The use of the claim is to illustrate principles of evaluation, not to assert safety for autonomous vehicles or aircraft. The provided excerpts for `video/script.md` and `resource_composition/whitepaper.md` do not contain the sections where C-RISK-005 is intended to be used, so their usage could not be assessed.",
+  "evidence_locators": [
+    "resource_composition/figures.md: F-009 row",
+    "research/integration_round4.md: 'Risk and probability distinctions' section",
+    "research/integration_round4.md: 'How to use the supplied medical-evaluation figure' section",
+    "resource_composition/whitepaper_outline.md: '3. What \u201csafe enough\u201d means' row",
+    "resource_composition/whitepaper_outline.md: 'Coverage and language gates' section",
+    "research/contributions/risk_evidence/findings.md: 'How to use the supplied medical-evaluation figure' section",
+    "research/contributions/risk_evidence/findings.md: 'Proposed paper/video use' section"
+  ],
+  "limitations": [
+    "The full usage of C-RISK-005 in `video/script.md` and `resource_composition/whitepaper.md` could not be assessed as the provided excerpts did not contain the relevant sections."
+  ],
+  "resolves": []
+}

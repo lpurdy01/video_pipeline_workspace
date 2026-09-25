@@ -1,0 +1,21 @@
+{
+  "id": "R-FIRSTPASS-SOURCE-C-AUTH-002-20260916",
+  "package_id": "P-C-AUTH-002-source_support",
+  "input_digest": "79e1d7396754f9412e943841b788a01b588cec48d309d5fba6a734c6c175216e",
+  "task": "source_support",
+  "reviewer_id": "first-pass-source-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-source-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-16",
+  "rationale": "The excerpt supports the updated-version portion of the claim, but its short_excerpt_only status and absent captured context prevent an inspection of the surrounding learned-versus-learning discussion. That is necessary to verify the claim's frozen-model and design-time wording without expanding a roadmap into a compliance method.",
+  "evidence_locators": [
+    "S-AUTH-001-R2 \u2014 PDF p. 10, learned AI implementation and update discussion"
+  ],
+  "limitations": [
+    "No full local source context was captured for S-AUTH-001-R2.",
+    "The FAA roadmap is direction-setting material, not a model-specific approval or complete means of compliance."
+  ],
+  "resolves": []
+}

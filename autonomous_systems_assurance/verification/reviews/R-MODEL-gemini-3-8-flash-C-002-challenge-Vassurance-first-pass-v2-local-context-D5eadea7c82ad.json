@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-002-challenge-Vassurance-first-pass-v2-local-context-D5eadea7c82ad",
+  "package_id": "P-C-002-challenge",
+  "input_digest": "5eadea7c82add6588d72ce62ccec2651014fe4546da315827c609f70ce2dbac1",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Under FAA regulations (14 CFR Part 21 Subpart O) and official guidance, a Technical Standard Order (TSO) authorization evaluates only an article's design and production against minimum performance standards. It explicitly does not grant installation approval, which requires separate certification (e.g., TC, STC, or logbook entry under Part 43). No counterevidence or regulatory exemption conflates equipment TSOA with aircraft installation or operational approval.",
+  "evidence_locators": [
+    "https://www.faa.gov/aircraft/air_cert/design_approvals/tso",
+    "S-002-R1"
+  ],
+  "limitations": [
+    "Review is restricted to US civil aviation jurisdiction under Title 14 CFR and does not assess foreign civil aviation authority equivalents (e.g., EASA ETSO) or bilateral acceptance procedures."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-009-source_support-D678ba88fb9c4",
+  "package_id": "P-C-009-source_support",
+  "input_digest": "678ba88fb9c44b037ba89edac28652d69d9769f17c0ef5fbd68be37c98a12055",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The short excerpt mentions having 'enough time for the RC to correct the impending problem' and the source metadata notes a requirement for 'monitor timing and trusted fallback', which aligns with the claim's text regarding timely monitoring and a recovery fallback. However, the evidence explicitly states that no full local context was captured ('short_excerpt_only'). Per instructions, the verdict must be uncertain when full context is absent.",
+  "evidence_locators": [
+    "S-010-R1",
+    "PDF page 1, Introduction; page 2, scope"
+  ],
+  "limitations": [
+    "Full local context is absent from the review packet.",
+    "Full proof audit is pending as noted in the source inspection scope."
+  ],
+  "resolves": []
+}

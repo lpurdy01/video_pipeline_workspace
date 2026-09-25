@@ -1,0 +1,25 @@
+{
+  "id": "R-PAPER-CROSS-C-EVID-004-20260916",
+  "package_id": "P-C-EVID-004-cross_artifact",
+  "input_digest": "f03b2f82e68e761e9288931123f31407d0d33aef43263c81079398314009232c",
+  "task": "cross_artifact",
+  "reviewer_id": "paper-compiler-review-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-cross-artifact-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The paper accurately treats calibration as measurable and improvable on a stated evaluation distribution, then limits its use under shift and requires a response rule. The method map and crosswalk present calibration as conditional performance evidence rather than a universal threshold, matching the evaluated-setting scope of the claim.",
+  "evidence_locators": [
+    "resource_composition/whitepaper.md, calibration subsection and metrics matrix",
+    "resource_composition/whitepaper.md:207, R4 requires partitioned calibration evidence",
+    "assurance/amlas_maa_easa_crosswalk.md:15, conditional uncertainty evidence",
+    "assurance/method_crosswalk.json, AMLAS/EASA O-004 notes",
+    "assurance/assurance_case.json, performance evidence remains planned"
+  ],
+  "limitations": [
+    "This does not prove calibration under shift or establish an authority threshold.",
+    "The review does not inspect the calibration paper's source regions."
+  ],
+  "resolves": []
+}

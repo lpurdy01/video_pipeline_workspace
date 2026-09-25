@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "template_not_an_approved_baseline",
+  "baseline_id": null,
+  "created_at": null,
+  "integrator": null,
+  "base_commit": null,
+  "ordered_handoff_ids": [],
+  "input_files": [],
+  "input_file_format": {"path": "project-relative/path", "sha256": "actual-file-sha256"},
+  "pin_required": [
+    "canonical and contribution source registries",
+    "canonical and contribution claim registries",
+    "relevant source snapshots and compiler review inputs",
+    "shared worked-example architecture and assumptions",
+    "whitepaper, figure specifications, narrative and storyboard",
+    "compiler code/configuration and report"
+  ],
+  "compiler_report": null,
+  "unresolved_claim_ids": [],
+  "paper_owner_acknowledgment": null,
+  "video_owner_acknowledgment": null,
+  "human_disposition": null,
+  "release_authorized": false
+}

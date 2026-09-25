@@ -1,0 +1,24 @@
+{
+  "id": "R-MODEL-C-EVID-003-source_support-D4c806a2a0b45",
+  "package_id": "P-C-EVID-003-source_support",
+  "input_digest": "4c806a2a0b451b8827002890e003ca4cefc60ff23b382002bef625ef27dce7e5",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The source explicitly supports the claim, describing a rare-event simulation framework using importance sampling to estimate accident probability (a risk metric) conditional on a base distribution of traffic behavior, a simulator, and a defined safety threshold. It contrasts this approach with the billions of miles required to statistically validate safety through real-world testing.",
+  "evidence_locators": [
+    "S-EVID-003-R1",
+    "S-EVID-003-R2",
+    "PDF p. 1, abstract and introduction",
+    "PDF p. 2, base distribution and simulation inputs"
+  ],
+  "limitations": [
+    "The source is a research preprint and not a regulatory-approved safety case.",
+    "The estimated probability is strictly conditional on the chosen base distribution, simulator fidelity, and risk threshold, and does not prove unconditional safety."
+  ],
+  "resolves": []
+}

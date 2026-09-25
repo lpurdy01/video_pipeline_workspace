@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-ROAD2-005-source_support-D8fa04e38c1ba",
+  "package_id": "P-C-ROAD2-005-source_support",
+  "input_digest": "8fa04e38c1badb53dc88f513b63c161829850fcee1b85564db407f7298a7c4fc",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided NHTSA OVSC resume explicitly lists the 'Date Opened' as 09/03/2026, the 'Population' as '1,000 (Estimated)', and states in the summary that the vehicles 'lack permanently attached, conventional manual controls', directly supporting all elements of the claim.",
+  "evidence_locators": [
+    "S-ROAD2-004-R1",
+    "S-ROAD2-004-R2",
+    "S-ROAD2-004-R3"
+  ],
+  "limitations": [
+    "The resume records the opening of the inquiry and an estimated population, not the final agency determination or the exact number of vehicles currently deployed in Austin."
+  ],
+  "resolves": []
+}

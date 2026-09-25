@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-C-016-cross_artifact-Df82d30137a77",
+  "package_id": "P-C-016-cross_artifact",
+  "input_digest": "f82d30137a776220e679fe1ed7e023b11ee327b3dfab82df40374dbfec9ad94c",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts consistently preserve the claim's scope as an illustrative project reasoning exercise under a shared-input assumption. They explicitly disclaim the scenario as a reconstruction of a real vehicle or a finding about a specific certified product, accurately maintaining the distinction between the project's information argument and the cited NASA paper's formal scope.",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "research/initial_findings.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/visual_inventory.md"
+  ],
+  "limitations": [
+    "Requires explicit observability analysis and counterexamples to validate sensor independence in a real deployed system."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-C-CHAL-006-challenge-D796991b097a9",
+  "package_id": "P-C-CHAL-006-challenge",
+  "input_digest": "796991b097a9afd3f6d9fa8a7739b0ae9d0bf73418ca01008ac4056c7e4c478e",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim accurately reflects the provided AMLAS Version 1.1 text, explicitly acknowledging its six stages, its limitation to the ML component, its reliance on external system assurance, and its focus on offline supervised learning. The claim's scope explicitly disclaims regulatory acceptance, satisfying the challenge's warning not to treat the methodology as proof of safety or regulatory approval.",
+  "evidence_locators": [
+    "S-CHAL-004-R1",
+    "S-CHAL-004-R2",
+    "S-CHAL-004-R3",
+    "assurance/amlas_maa_easa_crosswalk.md"
+  ],
+  "limitations": [
+    "The claim relies on the methodology's self-stated scope and does not establish whether any regulatory body has formally accepted an AMLAS-based safety case for a deployed system."
+  ],
+  "resolves": []
+}

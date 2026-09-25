@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-002-source_support-Da1ea146e46c9",
+  "package_id": "P-C-EVID-002-source_support",
+  "input_digest": "a1ea146e46c923accd51bf13b9824ffad411ce7176afaa9e9d5bfe86276d17b9",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The claim states that combinatorial input-space coverage can expose missing combinations and quantify dataset coverage, but does not by itself establish learned-model performance or a probability of safe operation. The source paper, 'Assured Autonomy through Combinatorial Methods' (S-EVID-002), directly supports this. Region S-EVID-002-R1 explains how the method shows 'the fraction of the total input space that is missing' and notes 'This is where the performance of the ML model is unknown.' The source's overall limitations, as described in the inspection scope, explicitly state that a coverage measure 'does not establish a failure rate, simulator fidelity or safe system behavior by itself.' This is further reinforced by the `findings.md` artifact, which states that combinatorial coverage provides 'Measured coverage of selected factor combinations and a way to expose coverage gaps' but notes that 'A causal factor omitted from the scenario model can defeat an apparently high coverage result,' directly addressing the limitations on establishing performance or safety.",
+  "evidence_locators": [
+    "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957175#page=3",
+    "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957175#page=5",
+    "research/contributions/assurance_evidence/findings.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

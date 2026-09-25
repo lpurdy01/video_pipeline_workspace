@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-METHOD2-018-source_support-D0f49c947b997",
+  "package_id": "P-C-METHOD2-018-source_support",
+  "input_digest": "0f49c947b997a454c9a637a24d62ef9a6122a1ee8d0b6f0d06f1fd72c71d990e",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim is explicitly scoped as a project architecture proposal, which the artifacts accurately preserve (e.g., 'This is a project proposal, not source-backed certification guidance'). The artifacts consistently outline the exact proposed chain\u2014from operational assumptions and sensing through learned behavior, decision authority, monitor timing, and change control. While the external background sources lack full context, they are correctly utilized merely as thematic background rather than direct authoritative proof for the project's specific architecture.",
+  "evidence_locators": [
+    "research/contributions/method_round2/findings.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/treatment.md"
+  ],
+  "limitations": [
+    "Full local context for the background sources (NASA, FAA, ISO) is absent, limiting deep verification of their specific conceptual contributions to the proposal."
+  ],
+  "resolves": []
+}

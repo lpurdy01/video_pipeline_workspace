@@ -1,0 +1,34 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-001-cross_artifact-D6abc35788296",
+  "package_id": "P-C-CHAL-001-cross_artifact",
+  "input_digest": "6abc3578829635c16a28ef5d5d501bb8d29ee6a0beed6fb792712fe8ebda79bb",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of claim C-CHAL-001 accurately preserves its scope and limitations. The claim describes the UK MAA's current AI notice as providing an applicant-specific assurance path for certified military air systems, recommending fixed supervised models within a defined ODD for early safety-related ML applications, and explicitly states its scope as 'UK military aviation guidance effective 10 October 2025; not civil-airworthiness approval or a product safety case'. All artifacts consistently qualify the MAA guidance as 'military', 'case-specific', 'applicant-specific', and explicitly state that it is 'not civil approval' or 'not a civil approval path'. The distinction between 'should' (for MCRI) and 'recommends' (for models) is also maintained. No artifact presents the MAA guidance as a final civil approval or a product safety case, nor does it transfer military guidance to civil approval contexts without explicit qualification.",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_challenge/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "resource_composition/figures.md",
+    "research/integration_round3.md",
+    "video/script.md",
+    "assurance/method_crosswalk.json",
+    "planning/learned_systems_assurance_next_steps.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [
+    "The review is limited to the provided artifacts and does not include an independent inspection of the MAA/RN/2025/04 document itself beyond the provided excerpts and inspection scope."
+  ],
+  "resolves": []
+}

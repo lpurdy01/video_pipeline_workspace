@@ -1,0 +1,24 @@
+{
+  "id": "R-PAPER-ONLY-C-AUTH-006-cross-20260916",
+  "package_id": "P-C-AUTH-006-cross_artifact",
+  "input_digest": "9f1f6db527f259c5c5a3132ee9a6ff7099de7d966efe364b58c751d88e40fb16",
+  "task": "cross_artifact",
+  "reviewer_id": "paper-compiler-review-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-only-review-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The authority findings, project plan, paper, and static source card all keep ISO/PAS 8800 within road-vehicle public scope. They use it to rebut a claim that no learned-system assurance process exists while preserving that it supplies neither aviation applicability, a licensed clause interpretation, nor evidence about a real model or product.",
+  "evidence_locators": [
+    "research/contributions/assurance_authority/findings.md:20, scoped portfolio framing",
+    "planning/learned_systems_assurance_next_steps.md:36, differing status/scope framing",
+    "resource_composition/whitepaper.md:146, bounded road-guidance use",
+    "resource_composition/review_prototype/sources.html, C-AUTH-006 scope card"
+  ],
+  "limitations": [
+    "The rendered interactive source card is not yet a manifested compiler artifact.",
+    "This checks wording consistency, not the ISO page's source support."
+  ],
+  "resolves": []
+}

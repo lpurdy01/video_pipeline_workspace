@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-METHOD2-019-challenge-D97531707c07f",
+  "package_id": "P-C-METHOD2-019-challenge",
+  "input_digest": "97531707c07f97e9f94e0a3e6a22e76af642e8d5cef46374397531bae784b7fe",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The claim states that a practical architecture should require 'independent evidence for the monitor and recovery path' when learned perception may fail. The challenge clarifies that 'independence is an engineering claim requiring failure-correlation, timing and observability analysis; a second model or a confidence score alone does not establish it.' The project's reasoning, as detailed in the supplied materials, explicitly addresses these rigorous requirements for independence. It highlights the critical boundary of observation, noting that 'a monitor that sees the same failed perception output, with the same latency and common sensor path, may not detect the failure that matters' (findings.md). The proposed assurance architecture explicitly calls for the assurance case to 'name the observation path, sampling interval, latency budget, recoverable set and the failure modes that defeat observability' and to 'Test omission, commission, shared-cause and stale-state failures' for the monitor and recovery contract (findings.md). The video script further illustrates this 'shared-input case' where a monitor can share the failure it is supposed to catch. This demonstrates that the project's interpretation and proposed implementation of 'independent evidence' align with the detailed engineering analysis required by the challenge, thus preserving the claim within its stated scope of project reasoning under shared-sensor and missed-detection hazards.",
+  "evidence_locators": [
+    "research/contributions/method_round2/findings.md: 'The important boundary is observation. A monitor that sees the same failed perception output, with the same latency and common sensor path, may not detect the failure that matters. NASA's R2U2 description is useful because it treats sensors, software and hardware as monitored system elements and makes timing a stated property. For this project's car encounter, the assurance case should therefore name the observation path, sampling interval, latency budget, recoverable set and the failure modes that defeat observability. [C-METHOD2-004] [C-METHOD2-019]'",
+    "research/contributions/method_round2/findings.md: 'Monitor and recovery contract. Define monitor inputs, sampling interval, worst-case execution time, switching rule, recoverable set, fallback behavior and transition proof. Test omission, commission, shared-cause and stale-state failures.'",
+    "video/script.md: 'In this illustrative shared-input case, a monitor that relies only on the same failed perception output can share the failure it is supposed to catch.'",
+    "video/nextgen_structure/treatment.md: 'If the relevant difference cannot be observed early enough, the honest response is to restrict the ODD or authority, improve the independent-enough observation path, or block release. [C-016] [C-METHOD2-019]'",
+    "video/nextgen_structure/visual_inventory.md: VNG-08 'Deterministic wrapper stress test' - 'C. Shared blind spot | Monitor uses the same absent world-state fact as the planner. | No downstream deterministic logic can react differently to indistinguishable inputs. [C-016]'",
+    "video/nextgen_structure/visual_inventory.md: VNG-07 'certified-stack shells' - 'Do not use independent-looking spatial separation to imply sensor independence. The diagram shows a dashed **shared failure analysis required** link wherever monitoring draws on common sensing. [C-016]'"
+  ],
+  "limitations": [
+    "This review is based solely on the provided textual evidence and does not include external research or verification of the project's actual implementation or the completeness of its proposed architecture."
+  ],
+  "resolves": []
+}

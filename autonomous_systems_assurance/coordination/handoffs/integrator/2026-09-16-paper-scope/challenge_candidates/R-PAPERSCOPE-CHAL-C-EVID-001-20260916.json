@@ -1,0 +1,16 @@
+{
+  "id": "R-PAPERSCOPE-CHAL-C-EVID-001-20260916",
+  "package_id": "P-C-EVID-001-challenge",
+  "input_digest": "7c7bce158322e592a0eccdcf98e96e8e5cf876eb0d53bc051f988cd65f3b3321",
+  "task": "challenge",
+  "reviewer_id": "paper-scope-challenge-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-scope-digest-pinned-challenge-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "NIST AI RMF 1.0 MAP, MEASURE, and MANAGE outcomes support the stated intended-context, knowledge-limit, data/TEVV, and recovery/change themes. The claim is confined to the voluntary cross-sector 1.0 framework and does not make it a safety threshold or certification criterion.",
+  "evidence_locators": ["S-EVID-001-R1 through S-EVID-001-R3, NIST AI 100-1, PDF pp. 26-32", "https://doi.org/10.6028/NIST.AI.100-1"],
+  "limitations": ["Retain the version number and refresh status because AI RMF 1.0 is being revised.", "The RMF supplies no transport risk threshold or evidence that a particular road or aircraft system is safe."],
+  "resolves": []
+}

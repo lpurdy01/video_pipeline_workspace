@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-C-010-cross_artifact-D85412e1ec654",
+  "package_id": "P-C-010-cross_artifact",
+  "input_digest": "85412e1ec654a5f13a19233c7f789f3a98a799cc34c0e9daf9594101f62b68d6",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts accurately reflect the claim's scope and explicitly preserve its limitations. The research findings note that the deployed model version is unverified, and the assurance vocabulary correctly distinguishes the visualization of predicted objects from causal or mechanistic interpretation.",
+  "evidence_locators": [
+    "research/initial_findings.md",
+    "wiki/concepts/assurance_vocabulary.md"
+  ],
+  "limitations": [
+    "The exact video clip remembered by the researcher remains unidentified",
+    "The deployed model version and current Cybercab internals remain unverified",
+    "Visualized representations do not constitute proof of causal interpretability"
+  ],
+  "resolves": []
+}

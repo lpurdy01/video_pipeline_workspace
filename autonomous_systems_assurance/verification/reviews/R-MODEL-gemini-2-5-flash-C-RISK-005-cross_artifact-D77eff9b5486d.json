@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-RISK-005-cross_artifact-D77eff9b5486d",
+  "package_id": "P-C-RISK-005-cross_artifact",
+  "input_digest": "77eff9b5486debd27bbcd6896196471ce52250eef2392eabfe49363d762516ba",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of C-RISK-005 preserves the claim's scope and limitations. The claim describes AMLAS's use of ROC curves and confusion matrices as an illustrative example for model-evaluation trade-offs, emphasizing context-dependent judgment and non-uniform error costs. The scope explicitly limits this to the 'AMLAS clinical-referral example; explanatory evaluation pattern only, not autonomous-road or aviation evidence.' The challenge warns against reusing the medical figure as evidence for vehicle/aircraft safety or human benchmarks. All artifacts that reference C-RISK-005 (resource_composition/figures.md, research/integration_round4.md, resource_composition/whitepaper_outline.md, research/contributions/risk_evidence/findings.md) consistently label the AMLAS example as a 'teaching pattern' or 'explanatory pattern.' They explicitly state that it is not evidence for autonomous systems and reinforce the need to keep its limits visible, directly addressing the challenge's warnings. The artifacts resource_composition/whitepaper.md and video/script.md do not directly cite C-RISK-005 in the provided excerpts, nor do they misuse the underlying concepts.",
+  "evidence_locators": [
+    "resource_composition/figures.md",
+    "research/integration_round4.md",
+    "resource_composition/whitepaper_outline.md",
+    "research/contributions/risk_evidence/findings.md"
+  ],
+  "limitations": [
+    "The provided excerpts for video/script.md and resource_composition/whitepaper.md are partial; a full review of these artifacts would confirm no unstated use of C-RISK-005 concepts."
+  ],
+  "resolves": []
+}

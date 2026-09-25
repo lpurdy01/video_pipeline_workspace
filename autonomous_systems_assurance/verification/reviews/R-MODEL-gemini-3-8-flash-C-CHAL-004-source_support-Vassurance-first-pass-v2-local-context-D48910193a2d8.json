@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-004-source_support-Vassurance-first-pass-v2-local-context-D48910193a2d8",
+  "package_id": "P-C-CHAL-004-source_support",
+  "input_digest": "48910193a2d8741cf4a316f6e455335f16290e99353e6cd4c9bae2eddbb3adaf",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "EASA NPA 2025-07 (B), Proposed DS.AI, section DS.AI.010(d) explicitly excludes AI-based systems presenting a risk directly contributing to the potential for fatalities or multiple life-threatening injuries, as well as AI-based systems with online learning capabilities where failure contribution is more stringent than 'no safety effect'. The claim and its artifact uses accurately preserve this scope restriction and note that DS.AI cannot serve as a complete proposed civil path for highest-consequence catastrophic cases.",
+  "evidence_locators": [
+    "NPA 2025-07 (B), PDF p. 4, DS.AI.010 Scope, paragraph (d)(1)-(2)"
+  ],
+  "limitations": [
+    "NPA 2025-07 (B) is a Notice of Proposed Amendment, not final adopted EASA rules or acceptable means of compliance. Determining whether a specific airborne perception or DAA function falls under this exclusion depends on system-level functional hazard assessment and failure condition allocation."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-STD-004-source_support-D17e66e2e65e1",
+  "package_id": "P-C-STD-004-source_support",
+  "input_digest": "17e66e2e65e1dcf97a94ca5feee3c9b6cc908511ece37819ffb732b51e575c3a",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The claim accurately reflects the browser-inspected summary of the 2025 NHTSA interpretation regarding pre-approval, self-certification, and defect authority. However, because the direct snapshot retrieval failed (HTTP 403) and full local context is absent, the evidence is inadequate for final verification.",
+  "evidence_locators": [
+    "S-STD-004-R1",
+    "research/contributions/standards_authority/findings.md"
+  ],
+  "limitations": [
+    "Full original HTML was unavailable to the project snapshot tool (HTTP 403).",
+    "A renewed capture of the full source context is required before release use."
+  ],
+  "resolves": []
+}

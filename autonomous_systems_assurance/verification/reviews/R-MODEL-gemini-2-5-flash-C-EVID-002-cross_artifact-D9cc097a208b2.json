@@ -1,0 +1,33 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-002-cross_artifact-D9cc097a208b2",
+  "package_id": "P-C-EVID-002-cross_artifact",
+  "input_digest": "9cc097a208b236f3616cd5e51ade6cdafe894a30c0b0359c8f57f59835bf0f31",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact use of claim C-EVID-002 consistently preserves its scope and limitations. The claim states that combinatorial input-space coverage can expose missing combinations and quantify dataset coverage, but 'does not by itself establish learned-model performance or a probability of safe operation.' The supplied evidence (S-EVID-002-R1 and R2) supports this by noting the unclear relationship to model performance and the insufficiency of large data volumes alone. All artifact uses, including the `findings.md` table, `video/script.md` narration, and `whitepaper.md` text, accurately reflect both what combinatorial coverage 'can support' (e.g., 'Measured coverage of selected factor combinations and a way to expose coverage gaps') and its explicit limitations (e.g., 'does not establish performance/safety probability,' 'Factors, bins and interaction strength are analyst choices'). No artifact presents combinatorial coverage as authority evidence for model performance or safe operation, nor does it omit the necessary qualifications.",
+  "evidence_locators": [
+    "S-EVID-002-R1",
+    "S-EVID-002-R2",
+    "assurance/assurance_case.json:EA-ROAD-002",
+    "assurance/assurance_case.json:EA-ROAD-003",
+    "assurance/assurance_case.json:EA-AIR-002",
+    "assurance/assurance_case.json:EA-AIR-003",
+    "assurance/assurance_case.json:O-002",
+    "research/contributions/assurance_evidence/findings.md:C-EVID-002 table entry",
+    "video/script.md:Section 5, 'What probability can and cannot say'",
+    "video/nextgen_structure/narration_evidence_map.md:C-EVID-002 table entry",
+    "video/nextgen_structure/script_outline.md:Section 5, 'What probability can and cannot say'",
+    "video/nextgen_structure/treatment.md:Section 5, 'Reframe probability as an evidence question'",
+    "video/nextgen_structure/visual_inventory.md:VNG-06 table entry",
+    "resource_composition/whitepaper_outline.md:Section 6, 'Risk evidence is conditional'",
+    "resource_composition/whitepaper.md:Section '2. The worked encounter: a car sees an incomplete world', 'A concrete failure trace'",
+    "resource_composition/whitepaper.md:Section '3. The assurance object: an evidence graph, not a folder of reports', 'O-002: observability' and 'O-004: hazard-relevant performan'"
+  ],
+  "limitations": [],
+  "resolves": []
+}

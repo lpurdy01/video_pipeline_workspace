@@ -1,0 +1,18 @@
+{
+  "id": "R-MODEL-C-002-source_support-D3eecc411a04b",
+  "package_id": "P-C-002-source_support",
+  "input_digest": "3eecc411a04b9addca095173619a3f0a02746fb27e99c26d362c4d3499bad6fd",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The FAA excerpt explicitly states that receiving a TSO authorization is not an approval to install and use the article in the aircraft, directly supporting the claim's distinction.",
+  "evidence_locators": [
+    "S-002-R1"
+  ],
+  "limitations": [],
+  "resolves": []
+}

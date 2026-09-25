@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-RISK-002-cross_artifact-D986c7b1d4f75",
+  "package_id": "P-C-RISK-002-cross_artifact",
+  "input_digest": "986c7b1d4f75ca9ce85799f9565cb922eac3d01661b1aaa7e00cb204abc54b76",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact use of claim C-RISK-002 accurately preserves its scope and limitations. The claim states the FAA AI roadmap presents DAL assignment as a starting point for scaling rigor and notes the inadequacy of existing guidance for learned AI. The claim's scope specifies it is 'direction-setting material rather than binding means of compliance,' and the challenge warns against turning incremental examples into 'a public approval boundary.' All artifact uses (figures.md, integration_round4.md, visual_inventory.md, findings.md) consistently qualify the roadmap as 'direction-setting,' 'research/problem-framing,' 'not a final acceptance process,' and 'not an approval basis,' directly addressing the claim's stated boundaries and the challenge.",
+  "evidence_locators": [
+    "resource_composition/figures.md",
+    "research/integration_round4.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "research/contributions/risk_evidence/findings.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

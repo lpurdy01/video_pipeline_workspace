@@ -1,0 +1,24 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-INTAKE-003-cross_artifact-Dc3417d157011",
+  "package_id": "P-C-INTAKE-003-cross_artifact",
+  "input_digest": "c3417d1570115d0220d0cb85ecc30c48199b4d55b59450137f0e2efb984584f1",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact use of C-INTAKE-003 accurately reflects that TSO-C211a sets minimum performance standards for DAA equipment and requires separate installation approval. The uses consistently reinforce the claim's scope and limitations, particularly by distinguishing equipment approval from installation or operational authorization, directly addressing the challenge to avoid over-inference.",
+  "evidence_locators": [
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "resource_composition/whitepaper_outline.md",
+    "research/retrieval_status.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-002-cross_artifact-D22d90ca19787",
+  "package_id": "P-C-EVID-002-cross_artifact",
+  "input_digest": "22d90ca19787d97747758940f108ffaa49980623fd831ada3d9e7b77a09189e6",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Every artifact use of claim C-EVID-002 consistently preserves its scope and limitations. The claim states that combinatorial coverage can expose missing combinations and quantify dataset coverage, but does not by itself establish learned-model performance or a probability of safe operation. All artifacts that reference C-EVID-002 (e.g., `findings.md`, `video/script.md`, `whitepaper_outline.md`) explicitly reiterate both its capabilities and its limitations, often emphasizing that the measure depends on analyst choices (factors, bins, interaction strength) and does not equate to a safety probability or overall performance. The `assurance_case.json` links the claim to relevant evidence artifacts and obligations (e.g., data lineage, scenario taxonomy, sensor observability) without overstating its implications, which is consistent with its role as a coverage measure.",
+  "evidence_locators": [
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_evidence/findings.md",
+    "video/script.md: Section 5, 16:00\u201321:30",
+    "video/nextgen_structure/narration_evidence_map.md: Scenario coverage row",
+    "video/nextgen_structure/script_outline.md: Section 5, 16:00\u201321:30",
+    "video/nextgen_structure/treatment.md: Section 5, 16:00\u201321:30",
+    "video/nextgen_structure/visual_inventory.md: VNG-06 (Metric lenses), VNG-05 (certainty, reliability, safety)",
+    "resource_composition/whitepaper_outline.md: Section 6",
+    "resource_composition/whitepaper.md: Section 2 (general framing of metrics)"
+  ],
+  "limitations": [],
+  "resolves": []
+}

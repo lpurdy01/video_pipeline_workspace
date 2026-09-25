@@ -1,0 +1,21 @@
+{
+  "id": "R-FIRSTPASS-SOURCE-C-CHAL-004-20260916",
+  "package_id": "P-C-CHAL-004-source_support",
+  "input_digest": "0a33ff79477c035a7d7086af3eb95589e77db87ac374ac712f5b448634496291",
+  "task": "source_support",
+  "reviewer_id": "first-pass-source-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-source-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "DS.AI.010 explicitly excludes AI-based systems whose risk directly contributes to potential fatalities or multiple life-threatening injuries and specifies an exclusion for certain online-learning capabilities. Given the project's expressly demanding flight-critical case, the conclusion is correctly limited: this proposed DS.AI cannot itself be presented as its complete path.",
+  "evidence_locators": [
+    "S-CHAL-002-R1 \u2014 PDF p. 4, DS.AI.010 Scope"
+  ],
+  "limitations": [
+    "The function-level hazard allocation must still be performed before applying this exclusion to a specific DAA function.",
+    "The source is a proposed NPA, not final EASA material."
+  ],
+  "resolves": []
+}

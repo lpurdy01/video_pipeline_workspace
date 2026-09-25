@@ -1,0 +1,19 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-RISK-002-source_support-D55fe67d3d9cd",
+  "package_id": "P-C-RISK-002-source_support",
+  "input_digest": "55fe67d3d9cd0db8d247b27e367c4684ddec9d9134eb628ce32230317ab39af7",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The FAA AI roadmap (S-RISK-002) explicitly states that 'DALs are assigned through the system safety assessment process' and that this method 'can be applied to learned AI implementations to provide a starting point for addressing the safety assurance of AI,' which supports the claim about DAL assignment as a starting point for scaling assurance rigor. The roadmap further states, 'However, existing software and complex hardware guidance is not adequate to address learned AI implementations,' directly supporting the second part of the claim.",
+  "evidence_locators": [
+    "PDF pp. 11-12, incremental approach and Safety Continuum",
+    "PDF pp. 14-16, application to aircraft certification of learned AI implementations"
+  ],
+  "limitations": [],
+  "resolves": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-INTAKE-003-source_support-D77c80ecf4212",
+  "package_id": "P-C-INTAKE-003-source_support",
+  "input_digest": "77c80ecf4212f6001edccc3ac0c2a69c115d08cabc05d6676fe15148be399cf5",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided context confirms TSO-C211a sets minimum performance standards for DAA equipment manufacturers (page 1, section 1). However, the captured context for Region 2 truncates at page 3 and omits page 8, section 5.b.(3), leaving the claim that installation requires separate approval unsupported by the visible text.",
+  "evidence_locators": [
+    "S-INTAKE-003-R1",
+    "S-INTAKE-003-R2"
+  ],
+  "limitations": [
+    "Missing full text of PDF page 8, section 5.b.(3) to verify installation approval requirements"
+  ],
+  "resolves": []
+}

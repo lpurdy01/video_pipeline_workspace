@@ -1,0 +1,26 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-002-cross_artifact-Dd6ecea81a592",
+  "package_id": "P-C-CHAL-002-cross_artifact",
+  "input_digest": "d6ecea81a5926d5fbd1c4eb664f244ea40a09769943d57890d1ba288ecba392f",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of claim C-CHAL-002 accurately preserves its scope and limitations. The claim, which describes the UK MAA notice's approach to AI assurance, is consistently cited as military guidance, case-specific, and non-prescriptive where architectural mitigation is required. Artifacts correctly link the claim to concepts like architectural mitigation, system-safety-case approach, verification, testing, analysis, and continuing performance monitoring. No instances of omitted qualifications, changed status, or inferences presented as authority evidence were found.",
+  "evidence_locators": [
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_challenge/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "video/script.md",
+    "assurance/method_crosswalk.json",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

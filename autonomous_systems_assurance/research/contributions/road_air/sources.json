@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-08",
+  "sources": [
+    {
+      "id": "S-ROAD-AIR-001",
+      "title": "Automated Vehicles Regulatory Program",
+      "publisher": "Texas Department of Motor Vehicles",
+      "url": "https://www.txdmv.gov/AVprogram",
+      "published_at": null,
+      "source_type": "authority_explanation",
+      "jurisdiction": "Texas commercial driverless road-vehicle operation",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected program requirements, May 28 2026 enforcement date, application acknowledgments and enforcement description; no individual operator record or underlying statutory clauses inspected.",
+      "regions": [
+        {
+          "id": "S-ROAD-AIR-001-R1",
+          "locator": "AV Authorization Application System, application acknowledgment numbered item 3",
+          "excerpt": "Equipped with an automated driving system in compliance with applicable federal law;",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        },
+        {
+          "id": "S-ROAD-AIR-001-R2",
+          "locator": "Automated Vehicle Authorization Requirements, enforcement-date paragraph",
+          "excerpt": "May 28, 2026",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "Authority explanation of program only. No Tesla-specific active authorization, federal finding, independent technical safety evaluation, or unrestricted deployment established. Read enacted statute and final rules before clause-level legal interpretation.",
+      "independence_group": "TXDMV-AV-PROGRAM",
+      "refresh_days": 30
+    },
+    {
+      "id": "S-ROAD-AIR-002",
+      "title": "Connected Autonomous Vehicles — First Responder Interaction Plans",
+      "publisher": "Texas Department of Public Safety",
+      "url": "https://www.dps.texas.gov/section/cav/connected-autonomous-vehicles",
+      "published_at": null,
+      "source_type": "authority_listing",
+      "jurisdiction": "Texas first-responder interaction plans",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected listing page only, including Cybercab link label. Displayed February 27 2026 date is not established as the addition date of that link.",
+      "regions": [
+        {
+          "id": "S-ROAD-AIR-002-R1",
+          "locator": "First Responder Interaction Plans list",
+          "excerpt": "Tesla Cybercab Robotaxi",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "Linked plan not inspected. Listing alone does not establish TxDMV authorization or federal compliance.",
+      "independence_group": "TXDPS-FRIP-LIST",
+      "refresh_days": 30
+    }
+  ]
+}

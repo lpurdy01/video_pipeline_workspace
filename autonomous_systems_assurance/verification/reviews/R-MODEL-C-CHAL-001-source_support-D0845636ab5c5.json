@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-CHAL-001-source_support-D0845636ab5c5",
+  "package_id": "P-C-CHAL-001-source_support",
+  "input_digest": "0845636ab5c57fa2550d54514835f14c28fde1f6dfb1af4826cd9fb8ccced158",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The source explicitly states that for Certified Air Systems, applicants should raise an MCRI for MAA agreement. It also recommends that early applications of ML techniques use supervised learning to generate models that remain fixed within a defined operational design domain. The scope and date match the document's metadata and text.",
+  "evidence_locators": [
+    "PDF pp. 2\u20133, paragraphs 6-7, Certified Air Systems"
+  ],
+  "limitations": [
+    "The notice is informative guidance and requires applicant-specific MAA agreement; it is not a civil-airworthiness approval."
+  ],
+  "resolves": []
+}

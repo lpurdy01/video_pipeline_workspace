@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-RISK-001-source_support-D23533c39d084",
+  "package_id": "P-C-RISK-001-source_support",
+  "input_digest": "23533c39d084a11d8e56d0ec153e701c9ae07b234eb57e80bb43331eb82dc4b2",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided excerpts from AC 25.1309-1A explicitly describe the 'logical and acceptable inverse relationship between the probability and the severity of each failure condition.' The text further confirms that compliance is demonstrated through qualitative analyses, tests, and the selective use of quantitative analysis to support engineering judgment, directly matching the claim's wording.",
+  "evidence_locators": [
+    "AC 25.1309-1A PDF pp. 1-2 (Paragraphs 3 and 4)",
+    "AC 25.1309-1A PDF pp. 13-14 (Paragraph 10)"
+  ],
+  "limitations": [
+    "This is a 1988 advisory circular providing historical guidance for conventional systems, not a modern standard or acceptance method for learned AI/ML models.",
+    "The current certification basis and guidance for any specific modern aircraft or project must be verified separately."
+  ],
+  "resolves": []
+}

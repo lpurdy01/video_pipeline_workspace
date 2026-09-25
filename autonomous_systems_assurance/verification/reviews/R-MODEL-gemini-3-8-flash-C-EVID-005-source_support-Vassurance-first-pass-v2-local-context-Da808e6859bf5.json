@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-EVID-005-source_support-Vassurance-first-pass-v2-local-context-Da808e6859bf5",
+  "package_id": "P-C-EVID-005-source_support",
+  "input_digest": "a808e6859bf5527fbd5acfb6ce035082d1cbe8f0965cbb8a3d8ebebda87152da",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The captured context from NASA Langley's DASC 2024 presentation (S-EVID-005, PDF pp. 5-8) directly formalizes the Plaidypvs RTA rule for a black-box controller alpha and reversionary controller beta. The rule establishes the safety property S ('for all runs of the system, the safety property S is satisfied') only IF the vehicle starts in a safe state, the monitored advanced system controller always ends in a state where the vehicle can recover, and repeated execution of the reversionary system controller leads to a safe state, with explicit monitor sample-rate/timing (tau, M) and carry-over state (G) premises.",
+  "evidence_locators": [
+    "S-EVID-005-R1 (PDF pp. 5-8, Simplex architecture and Plaidypvs rule)",
+    "S-EVID-005-R2 (PDF pp. 8-12, RTA premises and productive-conflict-avoidance example)"
+  ],
+  "limitations": [
+    "The source is a research conference presentation and formalization framework, not a civil aviation airworthiness certification or implementation safety case.",
+    "The formal proof assumes monitor observability and validity of plant dynamics bounds; it does not solve common-cause perception failures where the monitor shares an unobserved hazard."
+  ],
+  "resolves": []
+}

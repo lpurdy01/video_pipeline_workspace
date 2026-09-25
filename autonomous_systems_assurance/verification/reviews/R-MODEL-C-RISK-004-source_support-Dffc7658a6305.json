@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-RISK-004-source_support-Dffc7658a6305",
+  "package_id": "P-C-RISK-004-source_support",
+  "input_digest": "ffc7658a63050a79e6888a1dd2d0ddc89359548012ba0cc19700bd29d1c0080c",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided text from CAP3127 explicitly confirms that Risk Ratios (RRs) illustrate performance relative to defined NMAC/DWC volumes and chosen encounter sets. Furthermore, the CAA formally accepts the feedback that RRs are averaging functions that can hide deficiencies in specific encounters, stating they will require investigation of individual DWC or NMAC loss events. This directly supports the claim that a single aggregate score is insufficient for assurance.",
+  "evidence_locators": [
+    "CAP3127 PDF pp. 15-16, Sections 4.14 and 4.15",
+    "CAP3127 PDF p. 19, Section 4.27"
+  ],
+  "limitations": [
+    "CAP3127 is a consultation response regarding a policy concept and test phase, not a finalized certification standard or universal AI criterion.",
+    "Final UK acceptance criteria would require current CAP3015 and project-specific approval material."
+  ],
+  "resolves": []
+}

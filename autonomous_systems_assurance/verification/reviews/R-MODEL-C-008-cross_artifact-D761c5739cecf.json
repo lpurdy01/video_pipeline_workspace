@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-008-cross_artifact-D761c5739cecf",
+  "package_id": "P-C-008-cross_artifact",
+  "input_digest": "761c5739cecf32d0fd2513c5eaf95db9af54dd879c98f4ef5b6ea53aaf353eac",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifact accurately reflects the claim and explicitly preserves its limitation by noting that only the landing page was inspected and the PDF retrieval failed, avoiding any unsupported assertions about the document's technical contents.",
+  "evidence_locators": [
+    "research/initial_findings.md"
+  ],
+  "limitations": [
+    "Retrieve and review the PDF of EASA AI Concept Paper Proposed Issue 3 to assess its technical objectives."
+  ],
+  "resolves": []
+}

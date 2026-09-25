@@ -1,0 +1,32 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-001-cross_artifact-D67eb5d98c2fa",
+  "package_id": "P-C-CHAL-001-cross_artifact",
+  "input_digest": "67eb5d98c2fa22cb0a9e0e5511f09f37ec6b3c9ae10d9c51da6991e20442b6ba",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Every supplied artifact use of claim C-CHAL-001 consistently preserves its scope and limitations. The claim, which describes the UK MAA's applicant-specific assurance path for certified military air systems, including recommendations for fixed supervised models within a defined ODD, is always qualified as 'UK military guidance' and explicitly stated as 'not civil-airworthiness approval' or a 'civil approval path'. This consistent qualification is present in prose, tables, and visual specifications across all relevant artifacts, preventing any misrepresentation of its status or applicability.",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_challenge/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "resource_composition/figures.md",
+    "research/integration_round3.md",
+    "video/script.md",
+    "assurance/method_crosswalk.json",
+    "planning/learned_systems_assurance_next_steps.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

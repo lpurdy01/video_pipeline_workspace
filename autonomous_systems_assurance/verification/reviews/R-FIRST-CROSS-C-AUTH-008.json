@@ -1,0 +1,24 @@
+{
+  "id": "R-FIRST-CROSS-C-AUTH-008",
+  "package_id": "P-C-AUTH-008-cross_artifact",
+  "input_digest": "298e60b0b63c20d6ccbd5c1750341b4428c34a8f52dda1d3ab1f7ddc7f195f6a",
+  "task": "cross_artifact",
+  "reviewer_id": "first-pass-cross-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-cross-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "All uses retain the voluntary and non-approval limitation. The case graph treats operating authorization and model evidence as separate planned evidence, and the crosswalk uses the claim only to keep road permits, equipment approval, aircraft approval, and operational evidence on separate edges.",
+  "evidence_locators": [
+    "assurance/assurance_case.json, tagged use [C-AUTH-008], O-007 system/operational-composition claim link",
+    "research/contributions/assurance_authority/findings.md, tagged use [C-AUTH-008], voluntary VSSA and distinct-graph-edges paragraph",
+    "assurance/amlas_maa_easa_crosswalk.md, tagged use [C-AUTH-008], O-007 row",
+    "assurance_case_links: O-007 (obligation)"
+  ],
+  "limitations": [
+    "The artifacts do not inspect a specific state permit, vehicle, or self-assessment.",
+    "This review does not establish the factual status of ADS 2.0 or later NHTSA policy."
+  ],
+  "resolves": []
+}

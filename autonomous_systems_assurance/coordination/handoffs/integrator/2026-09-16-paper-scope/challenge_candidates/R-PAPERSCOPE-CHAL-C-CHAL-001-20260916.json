@@ -1,0 +1,23 @@
+{
+  "id": "R-PAPERSCOPE-CHAL-C-CHAL-001-20260916",
+  "package_id": "P-C-CHAL-001-challenge",
+  "input_digest": "20f89bec0d61183b165657fefe39e69968377f7530693bc51675fdf254fe5a71",
+  "task": "challenge",
+  "reviewer_id": "paper-scope-challenge-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-scope-digest-pinned-challenge-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The full-context MAA notice states its current position, says a certified-air-system applicant should raise an MCRI for MAA agreement, and recommends fixed supervised models within a defined ODD for early safety-related applications. The claim preserves the applicant-specific, UK-military character and does not turn a recommendation into civil approval or a public product case.",
+  "evidence_locators": [
+    "S-CHAL-001-R1, MAA/RN/2025/04, PDF pp. 1-2, Scope, Implementation and Background",
+    "S-CHAL-001-R2, MAA/RN/2025/04, PDF pp. 2-3, Certified Air Systems",
+    "https://assets.publishing.service.gov.uk/media/68f0b97c1c9076042263ef2a/MAA_RN_2025_04.pdf"
+  ],
+  "limitations": [
+    "The notice is informative UK military guidance; the package has no underlying MMAC/MCRI or completed public MCRI.",
+    "It cannot establish FAA/EASA civil-airworthiness acceptance or a particular system's safety."
+  ],
+  "resolves": []
+}

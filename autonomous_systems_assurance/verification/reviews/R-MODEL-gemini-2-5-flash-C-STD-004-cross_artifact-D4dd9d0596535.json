@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-STD-004-cross_artifact-D4dd9d0596535",
+  "package_id": "P-C-STD-004-cross_artifact",
+  "input_digest": "4dd9d05965359bd7c5df3c5a951116446448643c728a2a0048b44a3818621f0a",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of claim C-STD-004 consistently preserves its scope and limitations. The artifacts explicitly state that the NHTSA interpretation is 'nonbinding' and relates to a 'specific lighting/ADAS question,' directly reflecting the claim's scope and the source's limitations. Furthermore, the artifacts actively prevent the misinterpretation warned in the claim's challenge by clarifying that self-certification is not a 'blanket declaration that a learned perception model is safe' or a 'substitute for a readable safety argument.' The ongoing limitation regarding the full source snapshot is also consistently noted across relevant artifacts.",
+  "evidence_locators": [
+    "research/integration_round4.md: Authority and standards distinctions table, Source-quality and conflict ledger table",
+    "video/script.md: Section '3. Permission is not proof \u2014 06:30\u201310:30'",
+    "resource_composition/whitepaper_outline.md: Section '4. Approval is not one thing', 'Coverage and language gates' section",
+    "research/contributions/standards_authority/findings.md: 'Audit of the proposed video deductions' table, 'U.S. road vehicles: self-certification is narrower than it sounds' section, 'Retrieval and source-quality record' table"
+  ],
+  "limitations": [
+    "The full original HTML of the NHTSA interpretation (S-STD-004) was unavailable to the project snapshot tool and needs a renewed capture before release use."
+  ],
+  "resolves": []
+}

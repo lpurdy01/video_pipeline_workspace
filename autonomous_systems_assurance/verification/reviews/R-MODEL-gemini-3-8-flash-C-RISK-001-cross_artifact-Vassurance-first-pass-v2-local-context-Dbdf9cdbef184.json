@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-RISK-001-cross_artifact-Vassurance-first-pass-v2-local-context-Dbdf9cdbef184",
+  "package_id": "P-C-RISK-001-cross_artifact",
+  "input_digest": "bdf9cdbef1842cdfd23d652fecb18ca31dae38eedf48b30bb3e99142ca4733c1",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all supplied artifact uses (figures.md, integration_round4.md, video/script.md, whitepaper_outline.md, whitepaper.md, and findings.md), the claim is consistently cited within its strict historical context (FAA AC 25.1309-1A). Each artifact preserves the claim's scope and qualifications, explicitly reiterating that conventional system-safety severity/likelihood relationships are a framework/context rather than an acceptance method or direct failure-rate calculation for learned perception models.",
+  "evidence_locators": [
+    "resource_composition/figures.md",
+    "research/integration_round4.md",
+    "video/script.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md",
+    "research/contributions/risk_evidence/findings.md"
+  ],
+  "limitations": [
+    "AC 25.1309-1A represents 1988 advisory guidance; active aircraft programs require verification against current FAA certification bases and applicable AC revisions."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "R-PAPER-CROSS-C-AUTH-008-20260916",
+  "package_id": "P-C-AUTH-008-cross_artifact",
+  "input_digest": "b7bc682b57103013dc15488f4312dc7a2d7121d594aca9c4910e52508846d57f",
+  "task": "cross_artifact",
+  "reviewer_id": "paper-compiler-review-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-cross-artifact-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The authority findings, crosswalk, case graph, and paper consistently treat NHTSA ADS material as a voluntary framework rather than federal approval. The paper explicitly separates permits, exemptions, equipment conformance, state conditions, and model evidence, and warns that the policy status must be refreshed. No current use infers proprietary model assurance from road operation.",
+  "evidence_locators": [
+    "research/contributions/assurance_authority/findings.md:24, voluntary VSSA and contrary interpretation",
+    "resource_composition/whitepaper.md:148, voluntary-not-approval and status-refresh wording",
+    "assurance/amlas_maa_easa_crosswalk.md:19, separate approval/evidence graph edges",
+    "assurance/assurance_case.json, O-007/O-AIR-007 and related claim links"
+  ],
+  "limitations": [
+    "The underlying NHTSA page has not been captured with full local context and policy currency remains open.",
+    "This is not a review of current state, federal, or manufacturer operating authorization."
+  ],
+  "resolves": []
+}

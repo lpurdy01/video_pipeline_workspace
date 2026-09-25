@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-RISK-003-cross_artifact-Vassurance-first-pass-v2-local-context-D9e8ea218a0bf",
+  "package_id": "P-C-RISK-003-cross_artifact",
+  "input_digest": "9e8ea218a0bf1ca594bbe32a6f8e1ad1e3f81208caf3037d43a9fc933bd8e859",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "All four supplied artifact uses consistently preserve the claim's exact scope, noting that the exclusions (H1 fatality potential and specified online-learning cases) apply specifically to EASA's proposed DS.AI framework in NPA 2025-07(B) and do not represent final adopted guidance or a universal ban on all aviation AI.",
+  "evidence_locators": [
+    "EASA NPA 2025-07 (B), PDF p. 4 (DS.AI.010(d))",
+    "EASA NPA 2025-07 (B), PDF pp. 17-18 (DS.AI.130(b), Table 2)",
+    "research/contributions/direction_evidence/findings.md",
+    "research/integration_round4.md",
+    "resource_composition/whitepaper.md",
+    "research/contributions/risk_evidence/findings.md"
+  ],
+  "limitations": [
+    "Evidence is restricted to NPA 2025-07(B) proposed rulemaking material; final EASA decision or successor AMC/GM was not inspected."
+  ],
+  "resolves": []
+}

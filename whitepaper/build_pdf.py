@@ -24,7 +24,7 @@ REPO = Path(__file__).parents[1]
 OUT_DIR = Path(__file__).parent / "out"
 OUT_DIR.mkdir(exist_ok=True)
 
-# Keyed by data-fig marker number (document appearance order, 1–6)
+# Keyed by data-fig marker number (document appearance order, 1–7)
 # Diagram files mapped to match the order they appear in the text:
 #   1 = Units of Intelligence (appears first, in Core Concepts section)
 #   2 = Cross-Standard Evidence (appears second, in Coordination System section)
@@ -132,14 +132,18 @@ def _add_section_numbers(md: str) -> str:
 
 
 def load_markdown() -> str:
-    src = REPO / "Introductory_composition.md"
+    release_src = REPO / "whitepaper" / "verification_compiler_whitepaper.md"
+    src = release_src if release_src.exists() else REPO / "Introductory_composition.md"
     text = src.read_text()
 
     # Strip non-content sections
     text = re.sub(r"## Expansion Areas.*", "", text, flags=re.DOTALL)
     text = re.sub(r"## Working Title\n\n.*?\n\n", "", text, count=1)
-    # Strip the document's H1 title (we have a proper title block in the PDF header)
-    text = re.sub(r"^# Introductory Composition\n+", "", text)
+    # Strip the document's H1 title and release metadata because the PDF has a
+    # formatted title block.
+    text = re.sub(r"^# .+\n+", "", text, count=1)
+    text = re.sub(r"^Subtitle: .+\n+", "", text, count=1)
+    text = re.sub(r"^Version: .+\n+", "", text, count=1)
 
     # Add section numbers (so TOC and body headings are both numbered)
     text = _add_section_numbers(text)
@@ -185,7 +189,7 @@ CSS_REPORT = """
     size: letter;
     margin: 1in 1.1in 1in 1.1in;
     @top-center {
-        content: "Verification Compiler — Stage 1 Research Draft";
+        content: "Verification Compiler";
         font-family: "Source Serif 4", Georgia, serif;
         font-size: 9pt;
         color: #555;
@@ -235,17 +239,6 @@ body {
     color: #666;
     line-height: 1.7;
 }
-.draft-notice {
-    display: inline-block;
-    background: #fff3cd;
-    border: 1pt solid #f59e0b;
-    padding: 2pt 8pt;
-    font-size: 9pt;
-    font-weight: 600;
-    color: #92400e;
-    margin-bottom: 10pt;
-}
-
 /* Abstract */
 .abstract {
     margin: 24pt 0;
@@ -319,14 +312,16 @@ code {
 }
 pre {
     font-family: "Source Code Pro", "Courier New", monospace;
-    font-size: 8.5pt;
+    font-size: 8pt;
     background: #f5f5f5;
     border: 0.5pt solid #d0d0d0;
     border-left: 3pt solid #1a3a6b;
     padding: 10pt 12pt;
-    overflow-x: auto;
     margin: 10pt 0;
     line-height: 1.4;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 pre code { background: none; padding: 0; font-size: inherit; }
 
@@ -573,17 +568,6 @@ body {
     font-size: 8.5pt;
     color: #666;
 }
-.draft-notice {
-    display: inline-block;
-    background: #fff3cd;
-    border: 0.5pt solid #f59e0b;
-    padding: 1pt 6pt;
-    font-size: 8pt;
-    font-weight: 600;
-    color: #92400e;
-    margin-bottom: 6pt;
-}
-
 /* Abstract — full width */
 .abstract {
     column-span: all;
@@ -664,6 +648,9 @@ pre {
     margin: 6pt 0;
     line-height: 1.35;
     column-span: all;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 pre code { background: none; padding: 0; }
 
@@ -831,7 +818,7 @@ CSS_PRINT = """
     size: letter;
     margin: 0.7in 1.1in 0.7in 1.1in;
     @top-center {
-        content: "Verification Compiler — Stage 1 Research Draft";
+        content: "Verification Compiler";
         font-family: "Source Serif 4", Georgia, serif;
         font-size: 7.5pt;
         color: #555;
@@ -883,17 +870,6 @@ body {
     color: #333;
     line-height: 1.6;
 }
-.draft-notice {
-    display: inline-block;
-    background: #e8e8e8;
-    border: 0.5pt solid #555;
-    padding: 1pt 5pt;
-    font-size: 7.5pt;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 7pt;
-}
-
 /* Abstract */
 .abstract {
     margin: 10pt 0 12pt 0;
@@ -1105,12 +1081,11 @@ p { orphans: 3; widows: 3; }
 def build_title_block(layout: str) -> str:
     return """
 <div class="title-block">
-  <div class="draft-notice">STAGE 1 RESEARCH DRAFT — NOT FOR DISTRIBUTION</div>
   <h1>Bounded LLM Review for Continuous Verification:<br>A Graph-Decomposition Architecture for Safety-Critical Software</h1>
   <div class="subtitle">The Verification Compiler: CI-Integrated Verification with Interchangeable LLM and Human Reviewer Endpoints</div>
   <div class="meta">
     Levi Purdy &mdash; Student, University of Wisconsin&ndash;Madison &mdash; lpurdy01@gmail.com<br>
-    Research Draft &mdash; May 2026 &mdash; v0.2
+    Public Release &mdash; August 2026 &mdash; v1.0
   </div>
 </div>
 """
@@ -1267,7 +1242,7 @@ def build_full_html(body_html: str, toc_html: str, acronyms_html: str, layout: s
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Verification Compiler — Stage 1 Research Draft</title>
+<title>Verification Compiler</title>
 <style>
 {css}
 </style>

@@ -1,0 +1,27 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-RISK-004-cross_artifact-Vassurance-first-pass-v2-local-context-D38ef0abc1991",
+  "package_id": "P-C-RISK-004-cross_artifact",
+  "input_digest": "38ef0abc1991ffaad45684835132bcc0221afa60ab18db791184aac6e01b9ee1",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "All artifact uses across the whitepaper, outline, integration notes, research findings, figures, and video script accurately preserve the claim's scope and boundary. The UK CAA's CAP3127 statements regarding DAA risk-ratio averaging limits, encounter-set dependencies, and the insufficiency of aggregate metrics are consistently framed as consultation/test-phase DAA metric context and used to justify disaggregating risk evidence rather than asserted as an established universal AI certification standard or approved design standard.",
+  "evidence_locators": [
+    "CAP3127 Section 4.14-4.15, PDF pp. 15-16",
+    "CAP3127 Section 4.27, PDF p. 19",
+    "resource_composition/figures.md",
+    "research/integration_round4.md",
+    "video/script.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md",
+    "research/contributions/risk_evidence/findings.md"
+  ],
+  "limitations": [
+    "CAP3127 reflects a UK consultation response summary on a policy concept and progressive test phase; project-specific UK acceptance criteria require inspection of current CAP3015 and published AMC/GM."
+  ],
+  "resolves": []
+}

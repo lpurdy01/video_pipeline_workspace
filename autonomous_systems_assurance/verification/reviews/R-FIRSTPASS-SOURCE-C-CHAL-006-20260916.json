@@ -1,0 +1,23 @@
+{
+  "id": "R-FIRSTPASS-SOURCE-C-CHAL-006-20260916",
+  "package_id": "P-C-CHAL-006-source_support",
+  "input_digest": "7272488d371febe174fb2f83dde3b6978c4fddd1a5000b98626b0299451912a9",
+  "task": "source_support",
+  "reviewer_id": "first-pass-source-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-source-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "AMLAS Version 1.1 enumerates six lifecycle stages from safety-assurance scoping through deployment and describes their relation to system safety requirements. Its introduction and using-this-document section expressly limit the guidance to the ML component, state it should not be used in isolation, and state a primary focus on offline supervised learning. The claim keeps the absence of regulator acceptance and end-to-end approval explicit.",
+  "evidence_locators": [
+    "S-CHAL-004-R1 \u2014 PDF pp. 2\u20133, Introduction and Overview of AMLAS",
+    "S-CHAL-004-R2 \u2014 PDF p. 3, Using this Document",
+    "S-CHAL-004-R3 \u2014 PDF p. 3, Using this Document"
+  ],
+  "limitations": [
+    "AMLAS is research guidance, not a regulator-issued means of compliance or product authorization.",
+    "The methodology itself cannot close system-level risk, acceptable-risk thresholds, or a particular vehicle/aircraft safety case."
+  ],
+  "resolves": []
+}

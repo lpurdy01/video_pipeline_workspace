@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-AIR2-004-cross_artifact-D670e2a1b8499",
+  "package_id": "P-C-AIR2-004-cross_artifact",
+  "input_digest": "670e2a1b8499f8fbb47553f224479e5a1ccbf9824d856df7792b6ad9e3153961",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "All three artifacts accurately reflect the claim's definition of a TSO authorization, explicitly preserving the distinction between manufacturing to a minimum performance standard and the separate requirement for installation and operational approval.",
+  "evidence_locators": [
+    "research/contributions/air_round2/findings.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/treatment.md"
+  ],
+  "limitations": [
+    "Verify specific aircraft type-certificate or STC installation approvals for any product-specific claims, as TSO authorization alone is insufficient."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-C-CHAL-001-cross_artifact-D2b7ad36e55f4",
+  "package_id": "P-C-CHAL-001-cross_artifact",
+  "input_digest": "2b7ad36e55f48232d3c80680fe28ea1c7ff1ec6bdfc64f44b3cb5c629a00d368",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "All artifact uses accurately reflect the claim's scope and limitations. They consistently identify the MAA notice as case-specific military guidance, explicitly distinguish it from civil airworthiness approval, and correctly characterize the use of fixed supervised models within a defined ODD as a recommendation rather than a mandate.",
+  "evidence_locators": [
+    "video/script.md",
+    "assurance/method_crosswalk.json",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "research/contributions/assurance_challenge/findings.md"
+  ],
+  "limitations": [
+    "The underlying completed MCRI material and specific evidence accepted by the MAA remain non-public and applicant-specific, preventing inspection of a finalized military safety case."
+  ],
+  "resolves": []
+}

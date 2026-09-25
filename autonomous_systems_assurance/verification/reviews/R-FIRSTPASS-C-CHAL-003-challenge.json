@@ -1,0 +1,23 @@
+{
+  "id": "R-FIRSTPASS-C-CHAL-003-challenge",
+  "package_id": "P-C-CHAL-003-challenge",
+  "input_digest": "5f6a91911ca6e61b9510e44f3fe6e463aefedc007ba2f15a9e14a7424a5f0ca1",
+  "task": "challenge",
+  "reviewer_id": "first-pass-challenge-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-challenge-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The inspected official 43-page document is titled Notice of Proposed Amendment 2025-07(B) and labels the material Proposed DS.AI. Its provisions include operating domain/risk work, system development assurance, supervised-ML learning assurance, configuration and lifecycle data, and in-service monitoring. Calling it a substantial candidate lifecycle is appropriate because the claim does not call it final or sufficient for the worked case.",
+  "evidence_locators": [
+    "S-CHAL-002-R2, EASA NPA 2025-07(B), DS.AI.150 and AMC1/AMC2 AI.150, PDF pp. 24-26",
+    "S-CHAL-002-R3, EASA NPA 2025-07(B), DS.AI.160 and AMC1 AI.160(a), PDF pp. 31-33",
+    "https://www.easa.europa.eu/en/downloads/142701/en"
+  ],
+  "limitations": [
+    "The review checked the cited NPA but did not establish a final EASA decision, comment-resolution publication, or adopted AMC/GM edition.",
+    "Coverage named in a proposed framework does not show that all evidence obligations are operationalised for a DAA case."
+  ],
+  "resolves": []
+}

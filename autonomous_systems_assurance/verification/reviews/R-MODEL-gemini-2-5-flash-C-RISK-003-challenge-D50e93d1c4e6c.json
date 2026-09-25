@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-RISK-003-challenge-D50e93d1c4e6c",
+  "package_id": "P-C-RISK-003-challenge",
+  "input_digest": "50e93d1c4e6c9ca760cb4d74cde2702b7416ae7c5d2bc87a08ed314ff02ae8d3",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The claim accurately describes the EASA NPA 2025-07(B) by identifying its definition of authority levels and scenario-based risk assessment, its explicit exclusions for AI contributing to fatalities or multiple life-threatening injuries and certain online-learning cases, and its treatment of H1 fatality potential as unacceptable. All these points are directly supported by the provided excerpts from the NPA. The claim's scope is appropriately limited to this proposed material, as advised by the challenge, and does not overstate the finality or universality of EASA's position.",
+  "evidence_locators": [
+    "S-RISK-003-R1: PDF p. 4, DS.AI scope (d)(1) and (d)(2)",
+    "S-RISK-003-R1: PDF pp. 11-13, DS.AI Table 1 authority boundaries (context for DS.AI.110 levels)",
+    "S-RISK-003-R2: PDF pp. 17-20, proposed DS.AI.130 risk assessment, Tables 2\u20133 (H1 definition and Table 2)"
+  ],
+  "limitations": [
+    "NPA 2025-07(B) is proposed material, not a final EASA decision, AMC/GM, type-certification basis or approval. The exclusions and risk table describe this proposal's scope; they do not establish a worldwide prohibition on AI functions contributing to higher-severity hazards."
+  ],
+  "resolves": []
+}

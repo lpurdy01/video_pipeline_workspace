@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-ROAD2-001-source_support-D40659a0b8277",
+  "package_id": "P-C-ROAD2-001-source_support",
+  "input_digest": "40659a0b8277520d01ab6226bc2cda2ff9e60d6dc3a59feade88fd641889e563",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided source excerpt ('required to maintain an active authorization with TxDMV.') lacks the surrounding context necessary to verify the specific enforcement date (May 28, 2026) and the exact scope (commercial operation of qualifying automated vehicles) asserted in the claim.",
+  "evidence_locators": [
+    "S-ROAD2-001-R1"
+  ],
+  "limitations": [
+    "Full local context is absent from the captured source region.",
+    "Requires inspection of the full TxDMV program page, enacted Texas statute, or final rules to verify the May 28, 2026 date and commercial-use boundary."
+  ],
+  "resolves": []
+}

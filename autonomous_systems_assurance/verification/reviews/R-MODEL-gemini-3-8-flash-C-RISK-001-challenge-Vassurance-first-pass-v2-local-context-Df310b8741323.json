@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-RISK-001-challenge-Vassurance-first-pass-v2-local-context-Df310b8741323",
+  "package_id": "P-C-RISK-001-challenge",
+  "input_digest": "f310b8741323d933e80c2954c945534c320440fb1a0527e899ac1a86ad16ba3f",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The challenge highlights that AC 25.1309-1A is historical guidance and should not be treated as a direct learned-model acceptance method or current aircraft-specific certification basis. The claim explicitly scopes itself to historical FAA transport-airplane system-safety guidance under AC 25.1309-1A, and all artifact uses consistently treat the inverse severity-probability relationship as a conceptual framework rather than a component failure rate or acceptance metric for learned perception models. The source directly substantiates the inverse relationship, the safety assessment requirement, qualitative analyses, tests, and the selective use of quantitative analysis.",
+  "evidence_locators": [
+    "AC 25.1309-1A, Section 3 (Applicability), p. 1",
+    "AC 25.1309-1A, Section 4 (Background), pp. 1-2",
+    "AC 25.1309-1A, Section 10 (Quantitative Assessment), pp. 14-15"
+  ],
+  "limitations": [
+    "AC 25.1309-1A (1988) is non-mandatory historical guidance and does not reflect subsequent revisions, Arsenal drafts/AC 25.1309-1B-Pre, or project-specific Means of Compliance for learned or autonomous systems."
+  ],
+  "resolves": []
+}

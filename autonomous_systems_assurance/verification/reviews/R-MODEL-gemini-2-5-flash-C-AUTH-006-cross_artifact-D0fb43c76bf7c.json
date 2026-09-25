@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-006-cross_artifact-D0fb43c76bf7c",
+  "package_id": "P-C-AUTH-006-cross_artifact",
+  "input_digest": "0fb43c76bf7c3036c7ddb0de8d802af7fd96f79f3abea8306b202b1aa324dd6b",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of claim C-AUTH-006 consistently preserves its stated scope and limitations. The claim specifies that ISO/PAS 8800:2024 is a published road-vehicle specification whose public abstract includes trained AI models and describes properties for constructing a safety-assurance claim, but its public page does not establish aviation applicability or a vehicle's conformance. All artifacts either explicitly state or implicitly maintain the road-vehicle scope and the limitation that it does not provide aviation applicability or conformance evidence. No instances of omitted qualifications, changed status, or inferences presented as authority evidence were found.",
+  "evidence_locators": [
+    "research/contributions/assurance_authority/findings.md (Matrix table, Direct findings, Contrary evidence)",
+    "video/script.md (Section 4)",
+    "planning/learned_systems_assurance_next_steps.md (State-of-art position)",
+    "video/nextgen_structure/narration_evidence_map.md (Road methods section)",
+    "video/nextgen_structure/script_outline.md (Section 4)",
+    "video/nextgen_structure/treatment.md (Editorial thesis, Viewer journey, Story structure)",
+    "resource_composition/whitepaper.md (Abstract, Section 1)",
+    "research/contributions/standards_authority/findings.md (Finding, Standards are emerging)"
+  ],
+  "limitations": [],
+  "resolves": []
+}

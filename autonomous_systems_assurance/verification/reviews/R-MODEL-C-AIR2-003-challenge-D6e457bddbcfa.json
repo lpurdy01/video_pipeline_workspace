@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-AIR2-003-challenge-D6e457bddbcfa",
+  "package_id": "P-C-AIR2-003-challenge",
+  "input_digest": "6e457bddbcfa2f3e0207a43e26954091878eac12a84e4a80c6b1ac3bf73c02cc",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim accurately reflects the limitations of the inspected sources. While the artifact notes the vendor page contains a feature list mentioning 'FAA TSO authorization', it also uses 'on track' language. This internal marketing ambiguity, combined with the lack of a primary FAA DRS record, means the public pages do not authoritatively establish issuance. The 2022 FAA/GA-ASI document is correctly classified as a research deliverable rather than an approval.",
+  "evidence_locators": [
+    "research/contributions/air_round2/findings.md",
+    "S-AIR2-001",
+    "S-AIR2-002"
+  ],
+  "limitations": [
+    "Absence of evidence on a vendor page is not proof of non-issuance; a definitive conclusion requires retrieving the actual article-specific authorization letters from the FAA DRS."
+  ],
+  "resolves": []
+}

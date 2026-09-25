@@ -1,0 +1,18 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-DIR-002-source_support-D6681243bc585",
+  "package_id": "P-C-DIR-002-source_support",
+  "input_digest": "6681243bc5859ce963c597205b6eb2821b09729963c55a53a652a8e172a9144a",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The 2016 Federal Register document, specifically page 6, explicitly states that NHTSA was \"unable to directly measure the pedestrian and pedalcyclist crash rates per mile travelled ... because the Agency does not have data on VMT for HVs and EVs.\" The surrounding text details the use of a case-control analysis comparing HVs and ICE vehicles in similar situations and low-speed maneuvers, and notes a confounding limit regarding the lack of pedestrian vision status data, directly supporting all aspects of the claim.",
+  "evidence_locators": [
+    "Federal Register PDF p. 6, NHTSA analysis of pedestrian/pedalcyclist crash rates and VMT"
+  ],
+  "limitations": [],
+  "resolves": []
+}

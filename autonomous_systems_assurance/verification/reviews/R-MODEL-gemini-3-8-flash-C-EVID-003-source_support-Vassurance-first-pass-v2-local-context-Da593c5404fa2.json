@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-EVID-003-source_support-Vassurance-first-pass-v2-local-context-Da593c5404fa2",
+  "package_id": "P-C-EVID-003-source_support",
+  "input_digest": "a593c5404fa202dd6eb3126e2aaebf2acb3ced450929179f7b04f1d41927507a",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The original context in O'Kelly et al. directly supports the claim. The paper explicitly contrasts rare-event simulation against requiring hundreds of millions or billions of test miles, and formally defines its risk-based framework as estimating the probability of a dangerous event p_gamma := P0(f(X) <= gamma) conditional on a base distribution P0 modeling traffic behavior, a physics-based/perceptual simulator, and a chosen threshold gamma. All inspected artifact uses preserve this conditional boundary and do not treat the research study as regulatory approval or unconditional proof of safety.",
+  "evidence_locators": [
+    "https://arxiv.org/abs/1811.00145",
+    "PDF p. 1, abstract and introduction",
+    "PDF p. 2, Section 1 (base distribution P0, simulator realization X, and threshold gamma in Eq. 1)"
+  ],
+  "limitations": [
+    "Inspection is limited to the provided preprint text (arXiv:1811.00145v3); it does not validate simulator fidelity, empirical convergence of the estimator, or transferability beyond the evaluated highway scenario."
+  ],
+  "resolves": []
+}

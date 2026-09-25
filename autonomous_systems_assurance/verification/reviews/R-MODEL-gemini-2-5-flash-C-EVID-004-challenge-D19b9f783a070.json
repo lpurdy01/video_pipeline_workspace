@@ -1,0 +1,24 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-004-challenge-D19b9f783a070",
+  "package_id": "P-C-EVID-004-challenge",
+  "input_digest": "19b9f783a07080c65a54f4a9272bb2c64a7cb91ccb8a347a0e91faaed95f0e31",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The claim states that modern neural networks were often poorly calibrated and that temperature scaling improved calibration empirically on the paper's evaluated settings. The provided source (Guo et al.) directly supports this within its experimental context. However, the challenge specifically asks for evaluation under out-of-distribution (OOD)/shift conditions and demonstration of how calibrated output changes monitor or authority behavior. The source paper does not provide this, and its own stated limitations (S-EVID-004, source limitations) explicitly note that 'Calibration on a held-out distribution does not show calibrated uncertainty under operational distribution shift, correlated sensor faults or closed-loop control effects.' Other project artifacts (e.g., research/contributions/assurance_evidence/findings.md, video/script.md, resource_composition/whitepaper.md) further reinforce that calibration can fail under distribution shift and does not establish system-level safety. Therefore, while the claim is accurately supported within its stated scope, the challenge successfully identifies critical scope limits and counter-arguments to the generalizability of the claim's findings for real-world safety-critical applications.",
+  "evidence_locators": [
+    "S-EVID-004, source limitations",
+    "research/contributions/assurance_evidence/findings.md, 'Uncertainty / ODD exit' row for C-EVID-004",
+    "video/script.md, 'Calibration' row in 'Section-by-section factual narration map'",
+    "resource_composition/whitepaper.md, Section 5, 'Risk evidence is conditional'"
+  ],
+  "limitations": [
+    "The original paper (Guo et al.) does not evaluate calibration under operational distribution shift, correlated sensor faults, or closed-loop control effects.",
+    "The provided material does not demonstrate how a calibrated output from temperature scaling specifically changes monitor or authority behavior in a real-world system context."
+  ],
+  "resolves": []
+}

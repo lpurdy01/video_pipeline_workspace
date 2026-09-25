@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-AUTH-008-source_support-Vassurance-first-pass-v2-local-context-D1d83db5c0769",
+  "package_id": "P-C-AUTH-008-source_support",
+  "input_digest": "1d83db5c0769b4be24035ecdd8f7368b51f8a0742e28509cc94193ae88cd4aa1",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "uncertain",
+  "created_at": "2026-09-25",
+  "rationale": "The captured excerpts confirm that NHTSA's ADS 2.0 guidance lacks compliance requirements, notes self-assessments are not subject to Federal approval, and lists ODD, OEDR, and Fallback. However, full local context is absent ('[no full local context captured]', short_excerpt_only), and the specific safety element of 'validation' asserted in the claim is omitted from the captured excerpt.",
+  "evidence_locators": [
+    "https://www.nhtsa.gov/vehicle-manufacturers/automated-driving-systems (regions S-AUTH-006-R1, S-AUTH-006-R2, S-AUTH-006-R3)"
+  ],
+  "limitations": [
+    "Full page context has not been captured; verify the complete list of 12 safety elements (specifically validation) against the primary NHTSA ADS 2.0 source."
+  ],
+  "resolves": []
+}

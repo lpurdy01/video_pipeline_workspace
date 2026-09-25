@@ -1,0 +1,24 @@
+{
+  "id": "R-MODEL-C-RISK-001-cross_artifact-FP1",
+  "package_id": "P-C-RISK-001-cross_artifact",
+  "input_digest": "a0482f5a3af3845470fea133a4dd4c85df005929270fe88dead80666b2e9b701",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts consistently use the claim within its stated boundaries, explicitly framing AC 25.1309-1A as historical context for the inverse probability/severity relationship. They repeatedly warn against treating this conventional guidance as a numerical acceptance rule or failure-rate arithmetic for learned perception models, directly satisfying the claim's challenge and limitations.",
+  "evidence_locators": [
+    "research/integration_round4.md",
+    "research/contributions/risk_evidence/findings.md",
+    "resource_composition/figures.md",
+    "resource_composition/whitepaper_outline.md"
+  ],
+  "limitations": [
+    "Must retrieve and inspect the current FAA certification-basis guidance for the actual target aircraft class, as AC 25.1309-1A is historical context and not a substitute.",
+    "Conventional component-failure probability reasoning cannot be transferred to distribution-dependent learned behavior without a justified model of scenarios, exposure, dependencies, and mitigations."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-EVID-003-cross_artifact-Vassurance-first-pass-v2-local-context-D47f4c18c4f00",
+  "package_id": "P-C-EVID-003-cross_artifact",
+  "input_digest": "47f4c18c4f0006bd62053e28e144392677db41c8600c7d9becf78a1b5b0e439b",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all supplied artifact uses (including the assurance case, method crosswalks, findings table, video script/outlines, visual inventory, and whitepaper), claim C-EVID-003 is consistently framed as providing a conditional risk metric dependent on simulator fidelity, base traffic distribution, and hazard threshold. The artifacts explicitly disclaim unconditional safety proofs, direct transfer across sensor/weather shifts, or regulatory acceptance, preserving the claim's exact scope and limitations.",
+  "evidence_locators": [
+    "assurance/assurance_case.json",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "assurance/method_crosswalk.json",
+    "research/contributions/assurance_evidence/findings.md",
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [
+    "Review is bounded by the excerpted contexts of the supplied artifacts; downstream implementations must still independently validate base distributions, simulator fidelity, and importance-sampling estimators."
+  ],
+  "resolves": []
+}

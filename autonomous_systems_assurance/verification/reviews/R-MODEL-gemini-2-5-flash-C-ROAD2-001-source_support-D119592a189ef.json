@@ -1,0 +1,19 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-ROAD2-001-source_support-D119592a189ef",
+  "package_id": "P-C-ROAD2-001-source_support",
+  "input_digest": "119592a189ef6bbc8cc2e41653df10f9bd9727f4c4cdc02539f27cf077a5e27f",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The TxDMV 'Automated Vehicles Regulatory Program' source, as detailed in the research findings, explicitly states that 'companies operating commercially on or after May 28, 2026 must maintain an active authorization' for qualifying automated vehicles. This directly supports the claim's requirement, scope, and date.",
+  "evidence_locators": [
+    "S-ROAD2-001: Automated Vehicle Authorization Requirements, enforcement paragraph",
+    "research/contributions/road_round2/findings.md: The authorization stack is layered, first paragraph"
+  ],
+  "limitations": [],
+  "resolves": []
+}

@@ -1,0 +1,81 @@
+There is a whole category of software that AI is not allowed to write. Aircraft. Medical devices. Not because the models are bad at it — because nobody can check the work fast enough to keep the standards intact.
+
+AI made writing code cheap. It did not make trusting code cheap. That's a verification problem, which means I think it's solvable.
+
+If an agent wrote four thousand lines this week, the bottleneck is no longer writing the next four thousand — it's showing that any of it does what you said it would. This video works through a proposal I've been calling the Verification Compiler: turn a project into a graph of artifacts, traverse it deterministically to assemble bounded review packages, let models help during development, keep humans in authority, and preserve the result as evidence you can inspect.
+
+The core move: a chat transcript is not an audit trail. "Looks good to me" from a model is a developmental signal, not a record. An evidence card — which requirement, which artifact version, which check, which result, who reviewed it — is a record.
+
+Safety-critical software already has this shape — avionics and automotive have carried requirement-to-evidence traceability for decades. The argument is that as generation gets cheaper, ordinary software needs the same shape, and the tooling to produce it can finally be built.
+
+CHAPTERS
+0:00 Generation got cheap
+1:50 The hidden cost of "looks good"
+2:34 Safety-critical software already has the shape
+4:21 Artifacts become a graph
+5:20 Compilation means traversal
+6:10 The Verification Query Package
+7:16 Same package, two review modes
+8:05 Evidence cards, not conversations
+8:45 Verification readiness is a map, not magic
+9:48 The future is evidence generation
+10:30 Where this goes next
+
+COMPANION REPO — whitepaper, evidence, and agent handoff
+https://github.com/lpurdy01/verification_compiler_resources
+
+Whitepaper (PDF)
+https://github.com/lpurdy01/verification_compiler_resources/blob/main/whitepaper/verification_compiler_whitepaper.pdf
+
+Whitepaper (Markdown — best for GitHub or agent context)
+https://github.com/lpurdy01/verification_compiler_resources/blob/main/whitepaper/verification_compiler_whitepaper.md
+
+The concept map, one page
+https://github.com/lpurdy01/verification_compiler_resources/blob/main/CONCEPT_MAP.md
+
+What this is NOT — boundaries, please read before quoting me
+https://github.com/lpurdy01/verification_compiler_resources/blob/main/BOUNDARIES.md
+
+BUILD YOUR OWN VERSION
+If you work with coding agents, point one at these and have it build its own version. Tell me in the comments how it went.
+
+Agent handoff
+https://github.com/lpurdy01/verification_compiler_resources/blob/main/FOR_AGENTS.md
+
+Agent brief
+https://github.com/lpurdy01/verification_compiler_resources/blob/main/agent_resources/agent_brief.md
+
+Implementation conversation guide
+https://github.com/lpurdy01/verification_compiler_resources/blob/main/agent_resources/implementation_conversation_guide.md
+
+Critique checklist
+https://github.com/lpurdy01/verification_compiler_resources/blob/main/agent_resources/critique_checklist.md
+
+Open questions — what I have not solved
+https://github.com/lpurdy01/verification_compiler_resources/blob/main/agent_resources/open_questions.md
+
+EVIDENCE TRAIL
+I ran the idea against its own whitepaper as a self-verification prototype:
+
+Evidence bundle
+https://github.com/lpurdy01/verification_compiler_resources/tree/main/evidence
+
+Claim support summary
+https://github.com/lpurdy01/verification_compiler_resources/blob/main/evidence/claim_support_summary.md
+
+Source-to-claim matrix
+https://github.com/lpurdy01/verification_compiler_resources/blob/main/evidence/source_to_claim_matrix.md
+
+Prototype verification report
+https://github.com/lpurdy01/verification_compiler_resources/blob/main/evidence/verification_report.md
+
+A NOTE ON TERMS
+"Verification Compiler," "Verification Query Package (VQP)," "evidence card," and "Verification Readiness Metric" are my own framings, not established industry jargon. I use them to make the idea concrete enough to argue with.
+
+WHAT THIS IS NOT
+This is a Stage 1 research and discussion package, not a product and not a certified process. Nothing here claims an LLM can certify safety-critical software, or that a readiness number means a system is safe. Sign-off stays organisational and process-driven — the regulator signs off, and that endpoint does not move. A readiness metric says the evidence surface is more or less complete, current, and reviewed. It makes gaps visible. That is all it does, and it is still worth having.
+
+Verification is checking you built the thing you specified. Validation is checking it was the right thing to build. This is aimed at the first one.
+
+—
+Next up: I'm going to build it. Subscribe if you want to know when that lands, and if you know someone who has to get software through a certification process, send this to them — that's the conversation I'm hoping to start.

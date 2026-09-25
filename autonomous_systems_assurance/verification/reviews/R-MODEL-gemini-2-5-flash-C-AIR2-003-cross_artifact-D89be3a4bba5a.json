@@ -1,0 +1,24 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AIR2-003-cross_artifact-D89be3a4bba5a",
+  "package_id": "P-C-AIR2-003-cross_artifact",
+  "input_digest": "89be3a4bba5a4748dc0d04f2694993dc03aa19e4e8f17d74fb846f45f5bd7e73",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of claim C-AIR2-003 preserves its scope and limitations. The claim states that inspected public GA-ASI pages do not establish TSO authorization, containing 'target or on-track language,' and that the FAA report is a research report. The artifacts consistently use this claim to support statements about the distinction between vendor marketing/research reports and actual TSO authorization, or to emphasize that public sources did not establish such authorization. Crucially, the artifacts avoid inferring non-issuance from the absence of evidence in the inspected pages, and they maintain the 'public-source status audit' scope. Explicit qualifiers like 'The public sources inspected for this project\u2026' and 'Do not imply GA-ASI approval status beyond exact claims' are used to prevent overstatement.",
+  "evidence_locators": [
+    "research/contributions/air_round2/findings.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md"
+  ],
+  "limitations": [
+    "The review is limited to the provided artifacts and does not include an independent search for GA-ASI TSO authorizations."
+  ],
+  "resolves": []
+}

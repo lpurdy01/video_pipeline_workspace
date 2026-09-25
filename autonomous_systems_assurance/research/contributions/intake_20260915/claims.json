@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "C-INTAKE-001",
+      "text": "FAA's 2023 Zipline Exemption 19111B distinguishes operation-specific relief from authorization of the DAA system itself.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "US civil UAS; Zipline Exemption 19111B; historical 2023 decision",
+      "evidence": [{"region_id": "S-INTAKE-001-R2", "relation": "supports"}],
+      "challenge": "Read the exact later amendment, each condition and any separate DAA-system approval before describing current authority or a particular system configuration.",
+      "review_records": []
+    },
+    {
+      "id": "C-INTAKE-002",
+      "text": "Zipline's 2024 exemption amendment requires an Area of Operations plan to include a safety case for DAA expansion and an airspace analysis below 500 feet.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "US civil UAS; Zipline Exemption 19111C; historical 2024 decision",
+      "evidence": [{"region_id": "S-INTAKE-002-R1", "relation": "supports"}],
+      "challenge": "This is a condition in a specific dated decision; do not convert it into a universal FAA learned-autonomy assurance requirement.",
+      "review_records": []
+    },
+    {
+      "id": "C-INTAKE-003",
+      "text": "TSO-C211a sets minimum performance standards for DAA equipment manufacturer applications and states that installation requires separate approval.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "US civil aviation DAA equipment; TSO-C211a effective 2026-02-26",
+      "evidence": [
+        {"region_id": "S-INTAKE-003-R1", "relation": "supports"},
+        {"region_id": "S-INTAKE-003-R2", "relation": "supports"}
+      ],
+      "challenge": "Do not infer that an article is authorized, installed, operationally approved, or capable in a particular ODD merely because this TSO exists.",
+      "review_records": []
+    },
+    {
+      "id": "C-INTAKE-004",
+      "text": "On September 15, 2026, the public TxDMV lookup listed Tesla Robotaxi, LLC as Authorized from May 14, 2026 and showed 2026 Tesla Cybercab entries in its vehicle table.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Texas live operator lookup, inspected 2026-09-15",
+      "evidence": [
+        {"region_id": "S-INTAKE-005-R1", "relation": "supports"},
+        {"region_id": "S-INTAKE-005-R2", "relation": "supports"}
+      ],
+      "challenge": "Recheck the live record before publication and preserve the date. Texas operating authorization does not establish federal compliance, passenger-service scope, or the safety of the learned driving system.",
+      "review_records": []
+    },
+    {
+      "id": "C-INTAKE-005",
+      "text": "FAA Exemption 19031B records that Amazon Prime Air's requested relief to remove visual observers when onboard DAA is employed remained under review and would be addressed separately.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "US civil UAS; Amazon Prime Air Exemption 19031B; historical 2023 decision",
+      "evidence": [{"region_id": "S-INTAKE-004-R1", "relation": "supports"}],
+      "challenge": "Find the later FAA disposition before stating whether Amazon received that relief or whether its scope resembles Zipline's authorization.",
+      "review_records": []
+    }
+  ]
+}

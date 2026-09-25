@@ -1,0 +1,24 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-INTAKE-001-cross_artifact-D2e1dbe9fe810",
+  "package_id": "P-C-INTAKE-001-cross_artifact",
+  "input_digest": "2e1dbe9fe810d72c735dc192a946b57254a0eef257245b4ecc18822a56d6a615",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact use of claim C-INTAKE-001 accurately preserves its scope and limitations. The claim states that FAA's 2023 Zipline Exemption 19111B distinguishes operation-specific relief from authorization of the DAA system itself. The supporting evidence (S-INTAKE-001-R2) explicitly states, 'The exemption does not authorize the system.' All artifact uses leverage this claim to illustrate the distinction between a scoped operational permission (like the Zipline exemption) and broader DAA system authorization or the underlying safety case for a learned model. No artifact presents the exemption as a general DAA-equipment authorization or an unrestricted safety finding, nor do they omit its historical or operation-specific nature. The `narration_evidence_map.md` even explicitly requires a 'Date/location/scope card' qualifier for this claim, further ensuring its limitations are preserved.",
+  "evidence_locators": [
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "research/retrieval_status.md"
+  ],
+  "limitations": [
+    "The review is limited to the supplied artifacts and does not assess the accuracy of the claim itself, only its use within the provided material."
+  ],
+  "resolves": []
+}

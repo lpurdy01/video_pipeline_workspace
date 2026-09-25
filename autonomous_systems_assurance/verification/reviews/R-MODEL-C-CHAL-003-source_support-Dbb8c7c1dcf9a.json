@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-C-CHAL-003-source_support-Dbb8c7c1dcf9a",
+  "package_id": "P-C-CHAL-003-source_support",
+  "input_digest": "bb8c7c1dcf9ac72e1a189dc97ebf52f5110d3ecd00c3e66f6b9e7deaeb72dffc",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided excerpts from EASA NPA 2025-07 (B) explicitly contain proposed provisions for operational design domain, risk assessment, system development assurance, supervised-ML learning assurance, configuration/life-cycle data, and in-service monitoring, directly supporting the claim's description of the framework.",
+  "evidence_locators": [
+    "S-CHAL-002-R2",
+    "S-CHAL-002-R3",
+    "PDF pp. 24-26, AMC1 AI.150 and AMC2 AI.150",
+    "PDF pp. 31-33, GM1 AI.150 and DS.AI.160"
+  ],
+  "limitations": [
+    "The material is a Notice of Proposed Amendment (NPA), not a final regulatory decision or approved means of compliance."
+  ],
+  "resolves": []
+}

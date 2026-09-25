@@ -1,0 +1,23 @@
+{
+  "id": "R-PAPER-READER-SOURCE-C-CHAL-006-20260916",
+  "package_id": "P-C-CHAL-006-source_support",
+  "input_digest": "a425e9a6309435bfbb521595fb4f8a4787712114c66396bb6b1313904281212b",
+  "task": "source_support",
+  "reviewer_id": "paper-reader-source-support-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "source-support-digest-pinned-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The inspected AMLAS guidance lists the six lifecycle stages, connects ML assurance to safety requirements, data, learning, verification and deployment, limits its scope to the ML component, says it should not be used in isolation and states its primary offline-supervised-learning focus. The claim tracks all of those boundaries.",
+  "evidence_locators": [
+    "S-CHAL-004-R1 \u2014 PDF pp. 2\u20133, Introduction and Overview of AMLAS",
+    "S-CHAL-004-R2 \u2014 PDF p. 3, Using this Document",
+    "S-CHAL-004-R3 \u2014 PDF p. 3, Using this Document"
+  ],
+  "limitations": [
+    "AMLAS is research guidance, not a regulator-issued means of compliance or product authorization.",
+    "It does not close vehicle/aircraft system, domain or operational assurance."
+  ],
+  "resolves": []
+}

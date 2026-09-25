@@ -1,0 +1,19 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-STD-001-source_support-D72b10e06498a",
+  "package_id": "P-C-STD-001-source_support",
+  "input_digest": "72b10e06498abe026575a726da07071781257f25d1f93c0b65f7c88579b9c046",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The FAA's 'Technical Discipline: Artificial Intelligence \u2013 Machine Learning' page (S-STD-001), captured on 2026-04-09, explicitly states its work includes 'international collaboration with industry, other government agencies, standards development organizations, and academic institutions'. The inspection scope of the source and the project's internal findings (standards_authority/findings.md) confirm that this collaboration is aimed at advancing understanding of AI functionality and performance within the aviation certification framework, directly matching the claim's wording and scope.",
+  "evidence_locators": [
+    "S-STD-001: FAA page, main text and update stamp",
+    "research/contributions/standards_authority/findings.md: 'Authority status in plain language' section, 'U.S. civil aviation: FAA' subsection"
+  ],
+  "limitations": [],
+  "resolves": []
+}

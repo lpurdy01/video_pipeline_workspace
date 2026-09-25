@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-RISK-001-source_support-D931a749019b9",
+  "package_id": "P-C-RISK-001-source_support",
+  "input_digest": "931a749019b90cda23d5d91698084e5de4f5b6dac06a2eb00eabccfd3e179a87",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The inspected FAA Advisory Circular 25.1309-1A explicitly states that Section 25.1309(b) provides general requirements for 'a logical and acceptable inverse relationship between the probability and the severity of each failure condition' (p. 1, Sec 3). It further details that compliance is shown primarily by analysis, including 'safety assessment,' 'thorough qualitative analyses,' and 'tests' (p. 2, Sec 4a, 4b). Quantitative analysis is also mentioned as being used 'where justified' to 'support experienced engineering and operational judgment' and 'supplement qualitative analyses and tests' (p. 2, Sec 4b; p. 13, Sec 10), with recognition of its precision limitations (p. 14, Sec 10a(1)). This aligns precisely with the claim's wording, scope, date, and status.",
+  "evidence_locators": [
+    "AC 25.1309-1A: System Design and Analysis, PDF p. 1, Sec 3",
+    "AC 25.1309-1A: System Design and Analysis, PDF p. 2, Sec 4a, 4b",
+    "AC 25.1309-1A: System Design and Analysis, PDF p. 13, Sec 10",
+    "AC 25.1309-1A: System Design and Analysis, PDF p. 14, Sec 10a(1)"
+  ],
+  "limitations": [],
+  "resolves": []
+}

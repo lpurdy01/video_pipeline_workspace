@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-002-challenge-D7cc23b57ca63",
+  "package_id": "P-C-002-challenge",
+  "input_digest": "7cc23b57ca637a02b4f7b16f8ae1b6c69d7b993c934c68b6cb4f33122f8983c7",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim states that a TSO authorization is distinct from approval to install and use equipment on an aircraft within US civil aviation. The provided FAA source (S-002) directly supports this distinction, explicitly stating: 'Receiving a TSO authorization is not an approval to install and use the article in the aircraft.' No counterevidence, alternative interpretation, or scope limitation that would defeat this claim was found within the supplied review packet. All other internal artifacts (initial_findings.md, wiki/concepts/assurance_vocabulary.md) reinforce this distinction.",
+  "evidence_locators": [
+    "S-002-R1"
+  ],
+  "limitations": [
+    "This review is limited to the provided packet; an exhaustive search of all FAA regulations or specific TSO authorization grants was not performed. The source's own limitation notes that specific product claims require obtaining specific grants, but the claim here is about the general distinction."
+  ],
+  "resolves": []
+}

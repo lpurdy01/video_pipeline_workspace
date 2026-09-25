@@ -1,0 +1,27 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-003-challenge-D06c3611e5ec1",
+  "package_id": "P-C-CHAL-003-challenge",
+  "input_digest": "06c3611e5ec180073483ea07b9a6656e84fb34194d1e502f9610b8920de10e83",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "fail",
+  "created_at": "2026-09-25",
+  "rationale": "While EASA's NPA 2025-07(B) proposes a detailed AI-trustworthiness framework spanning the listed domains, its stated scope explicitly excludes systems directly contributing to fatalities or multiple life-threatening injuries. This limitation directly impacts its 'substantiality' as a candidate lifecycle for the project's comparison, particularly for the 'hardest flight-critical case' that the project considers. Additionally, a key standard referenced for supervised-ML learning assurance (ED-324/ARP6983) is noted as still being in draft form, further limiting the immediate operationalization of the proposed framework for all necessary obligations.",
+  "evidence_locators": [
+    "S-CHAL-002, limitations field",
+    "findings.md, 'What did not defeat the narrower gap' section, bullet 2",
+    "findings.md, 'What did not defeat the narrower gap' section, bullet 3",
+    "assurance/method_crosswalk.json, methods[2].mappings[6].note",
+    "planning/learned_systems_assurance_next_steps.md, 'The project claim to investigate' section, paragraph 3",
+    "video/nextgen_structure/treatment.md, 'Editorial thesis' section, paragraph 2",
+    "video/nextgen_structure/script_outline.md, Section 4, Narration draft, paragraph 4",
+    "resource_composition/whitepaper.md, Abstract, paragraph 3"
+  ],
+  "limitations": [
+    "The review is limited to the provided review packet and does not include external searches for updates to EASA's NPA or the final publication status of ED-324/ARP6983 beyond what is stated in the supplied documents."
+  ],
+  "resolves": []
+}

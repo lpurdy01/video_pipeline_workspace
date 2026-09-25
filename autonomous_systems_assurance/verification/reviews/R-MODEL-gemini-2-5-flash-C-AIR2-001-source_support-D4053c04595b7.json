@@ -1,0 +1,19 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AIR2-001-source_support-D4053c04595b7",
+  "package_id": "P-C-AIR2-001-source_support",
+  "input_digest": "4053c04595b719dc2ed4cbba03477d13376093a67c095d8b2611c15942e4abcf",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim states that GA-ASI publicly describes a DAA architecture combining cooperative surveillance (TCAS/ADS-B) with air-to-air radar for non-cooperative aircraft. The `findings.md` artifact, which summarizes the inspection of the GA-ASI 'Detect and Avoid System' public page (S-AIR2-001), explicitly states: 'The page describes a layered system: TCAS and ADS-B for cooperative aircraft, Due Regard Radar/ATAR for non-cooperative aircraft, and a processor/display path for the remote pilot.' This directly supports the claim's wording, scope (vendor description, architecture claim), and status.",
+  "evidence_locators": [
+    "research/contributions/air_round2/findings.md (paragraph 2)",
+    "S-AIR2-001 (full public page, as per inspection scope)"
+  ],
+  "limitations": [],
+  "resolves": []
+}

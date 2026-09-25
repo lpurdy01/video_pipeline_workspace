@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-001-cross_artifact-Dc78aeeb3ccd9",
+  "package_id": "P-C-EVID-001-cross_artifact",
+  "input_digest": "c78aeeb3ccd9dca45ca8a6c2779cb59ed8f0a8165a5a9b338a176b7d18be8e36",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact using C-EVID-001 accurately reflects that NIST AI RMF 1.0 calls for documenting intended context, knowledge limits, data/TEVV considerations, and post-deployment change and recovery processes. Crucially, all uses consistently preserve the claim's scope and limitations by explicitly stating that the RMF is voluntary, non-sector-specific guidance, not a safety certification criterion, and that a documented process is not proof of safety. For example, `findings.md` directly links C-EVID-001 to 'An inspectable record of intended use, knowledge limits, TEVV inputs, recovery and change processes' while immediately qualifying that 'The RMF is voluntary and supplies no transport-specific acceptance threshold. A well-documented release can still fail in an unrepresented fog, glare or sensor-fault case.' Other artifacts like `assurance_case.json`, `figures.md`, `whitepaper_outline.md`, `whitepaper.md`, and `method_crosswalk.json` also use C-EVID-001 to establish obligations or inform proposed architectures, consistently reiterating its status as guidance and not a certification or safety guarantee.",
+  "evidence_locators": [
+    "research/contributions/assurance_evidence/findings.md",
+    "assurance/assurance_case.json",
+    "resource_composition/figures.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md",
+    "assurance/method_crosswalk.json"
+  ],
+  "limitations": [],
+  "resolves": []
+}

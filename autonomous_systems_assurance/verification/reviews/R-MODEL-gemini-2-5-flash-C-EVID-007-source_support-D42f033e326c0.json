@@ -1,0 +1,19 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-007-source_support-D42f033e326c0",
+  "package_id": "P-C-EVID-007-source_support",
+  "input_digest": "42f033e326c0b12d1b6c398caff361a559da3be12633b10fdb6de1350af2da21",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The inspected study explicitly reports a 'small positive correlation' between neuron coverage (INC) and steering angle deviation (SAD), as shown by the regression equation SAD = 0.043 + 0.0017 \u00d7 INC. It also explicitly states, 'we do not know that the increase in neuron coverage is causing the increase in steering angle deviations,' thereby not establishing causation. Furthermore, the study concludes there is 'a need for further investigation to discover whether neuron coverage is a consistent indicator,' which supports the claim that it does not establish a consistent test-adequacy indicator. The scope of the claim (one DNN and transformed-image test study, no demonstrated safety-failure threshold) is consistent with the source's stated limitations and experimental setup.",
+  "evidence_locators": [
+    "PDF pp. 7-8, correlation and threats to validity",
+    "PDF p. 8, conclusion"
+  ],
+  "limitations": [],
+  "resolves": []
+}

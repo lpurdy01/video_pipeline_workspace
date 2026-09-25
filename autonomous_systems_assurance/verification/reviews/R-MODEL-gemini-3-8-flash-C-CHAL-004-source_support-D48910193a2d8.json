@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-004-source_support-D48910193a2d8",
+  "package_id": "P-C-CHAL-004-source_support",
+  "input_digest": "48910193a2d8741cf4a316f6e455335f16290e99353e6cd4c9bae2eddbb3adaf",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The source context DS.AI.010(d) explicitly excludes AI-based systems presenting a risk directly contributing to the potential for fatalities or multiple life-threatening injuries, as well as AI-based systems with online learning capabilities whose failure contribution is more stringent than 'no safety effect'. This directly supports the claim that proposed DS.AI excludes these systems and cannot serve as a complete proposed path for the highest-severity flight-critical autonomy case.",
+  "evidence_locators": [
+    "NPA 2025-07 (B), PDF p. 4, DS.AI.010 Scope, paragraph (d)"
+  ],
+  "limitations": [
+    "NPA 2025-07 (B) is a Notice of Proposed Amendment and not a finalized EASA decision; application to any specific flight function requires an aircraft-level failure-condition hazard allocation."
+  ],
+  "resolves": []
+}

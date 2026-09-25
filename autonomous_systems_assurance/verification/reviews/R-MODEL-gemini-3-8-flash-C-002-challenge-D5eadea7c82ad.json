@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-002-challenge-D5eadea7c82ad",
+  "package_id": "P-C-002-challenge",
+  "input_digest": "5eadea7c82add6588d72ce62ccec2651014fe4546da315827c609f70ce2dbac1",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Under FAA regulatory framework (14 CFR Part 21 Subpart O), a TSO authorization is solely a design and production approval for an article to meet specified minimum performance standards. FAA guidance explicitly states that receiving a TSO authorization does not grant approval to install and use the article in an aircraft, which separately requires type certification, supplemental type certification, or airworthiness alteration approvals.",
+  "evidence_locators": [
+    "https://www.faa.gov/aircraft/air_cert/design_approvals/tso",
+    "S-002-R1",
+    "research/initial_findings.md",
+    "wiki/concepts/assurance_vocabulary.md"
+  ],
+  "limitations": [
+    "Review limited to US civil aviation statutory and regulatory frameworks (FAA 14 CFR Part 21); does not evaluate military airworthiness authorities or non-US civil aviation jurisdictions (e.g., EASA ETSO processes)."
+  ],
+  "resolves": []
+}

@@ -50,6 +50,20 @@ def normalize(word: str) -> str:
     return re.sub(r"[^a-z0-9]", "", word.lower())
 
 
+COMPOUND_WORDS = {
+    # Whisper often hears this as "data sheets"; the script and scene cue use
+    # the closed form. Expanding it keeps the beat on the first spoken word.
+    "datasheets": ["data", "sheets"],
+}
+
+
+def normalized_tokens(word: str) -> list[str]:
+    normalized = normalize(word)
+    if not normalized:
+        return []
+    return COMPOUND_WORDS.get(normalized, [normalized])
+
+
 def script_lines(section_text: str) -> list[str]:
     """
     Narration lines, in speaking order.
@@ -114,8 +128,7 @@ def align(lines: list[str], words_json: Path) -> list[Line]:
     owner: list[int] = []           # which line each script word belongs to
     for i, line in enumerate(lines):
         for w in line.split():
-            n = normalize(w)
-            if n:
+            for n in normalized_tokens(w):
                 script_words.append(n)
                 owner.append(i)
 
@@ -296,7 +309,12 @@ def main() -> int:
                     help="discard the cached scratch audio and transcript first")
     args = ap.parse_args()
 
-    if args.refresh and args.audio is None:
+    if args.audio is not None:
+        # Human-audio timing is an explicit replacement for the cached scratch
+        # transcript. Reusing an existing words JSON here silently leaves scenes
+        # timed to the wrong narration.
+        (args.out_dir / f"{args.section}.words.json").unlink(missing_ok=True)
+    elif args.refresh:
         # build() reuses whatever is already on disk, which is what makes an
         # iteration loop cheap — and exactly wrong after the script changes.
         (args.out_dir / f"{args.section}.scratch.wav").unlink(missing_ok=True)

@@ -1,0 +1,27 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-002-cross_artifact-D9f8a015e37f1",
+  "package_id": "P-C-AUTH-002-cross_artifact",
+  "input_digest": "9f8a015e37f119af016f33bdfc1b219298c7f52cbc66600cd89b10be65bca7b2",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact use of claim C-AUTH-002 accurately attributes the statement to the FAA roadmap, distinguishes between frozen and learning AI, and explicitly qualifies the roadmap as 'direction-setting material, not a complete acceptance method' or similar phrasing. This consistently preserves the claim's scope and the source's limitations, avoiding any overstatement or misrepresentation.",
+  "evidence_locators": [
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_authority/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

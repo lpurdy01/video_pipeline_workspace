@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-002-challenge-D5737e005fbbc",
+  "package_id": "P-C-AUTH-002-challenge",
+  "input_digest": "5737e005fbbc838693ecb3656472597e0da20a2736bea5593627c20ceee24ac5",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The FAA Roadmap for Artificial Intelligence Safety Assurance, Version I (S-AUTH-001), explicitly distinguishes between 'Learned AI Implementation' (static in the operating environment) and 'Learning AI Implementation' (dynamic). For 'Learned AI Implementation,' the roadmap states it 'is subjected to design time safety assurance processes prior to its use in an operational context' and that 'each new version is subjected to safety assurance.' This directly supports both parts of the claim. The challenge to inspect the complete learned-versus-learning section and later FAA policy did not yield counterevidence; the distinction between learned and learning AI reinforces the claim, and no later FAA policy contradicting these specific principles was found in the provided materials. The limitations of the roadmap (not a binding means of compliance) are already acknowledged in the claim's scope.",
+  "evidence_locators": [
+    "S-AUTH-001-R2 (PDF physical p. 11 / printed p. 10, 'Learned AI Implementation' definition and subsequent paragraph)",
+    "research/contributions/assurance_authority/findings.md (Direct findings section, 'FAA AI roadmap' row in matrix)"
+  ],
+  "limitations": [
+    "The review is limited to the provided FAA Roadmap Version I and the research findings document. No other 'later FAA policy' documents were available for inspection to confirm or deny potential changes to these principles."
+  ],
+  "resolves": []
+}

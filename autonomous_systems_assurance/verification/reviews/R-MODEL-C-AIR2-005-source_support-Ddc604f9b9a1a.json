@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-AIR2-005-source_support-Ddc604f9b9a1a",
+  "package_id": "P-C-AIR2-005-source_support",
+  "input_digest": "dc604f9b9a1ab5be3c783b708cf1ffac67baf170394d06464fa48b9bdad58b5b",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided short excerpt exactly matches the claim text regarding the titles for TSO-C211 and TSO-C212 in FAA Order 8100.18A, but the full local context is absent, preventing complete verification.",
+  "evidence_locators": [
+    "PDF p. 47, Appendix C TSO table"
+  ],
+  "limitations": [
+    "Full local context of the source document is absent (short_excerpt_only)"
+  ],
+  "resolves": []
+}

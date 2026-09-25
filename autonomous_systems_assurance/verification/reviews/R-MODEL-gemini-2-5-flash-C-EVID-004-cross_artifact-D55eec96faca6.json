@@ -1,0 +1,28 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-004-cross_artifact-D55eec96faca6",
+  "package_id": "P-C-EVID-004-cross_artifact",
+  "input_digest": "55eec96faca6d1ea2c200ea69cbc5c3d0d98ded0c19cf4a218fc31b91afc3704",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of claim C-EVID-004 preserves its scope and limitations. The claim states that modern neural networks were often poorly calibrated and temperature scaling improved calibration empirically on the paper's evaluated settings, with the explicit scope that 'a calibrated confidence estimate is not a system-level safety bound'. The challenge further emphasizes evaluating calibration for the released model, ODD partitions, and OOD/shift conditions, and linking it to monitor/authority behavior, not as an unexplained safety score. All artifacts consistently reflect these qualifications. They acknowledge that calibration can be measured and improved but explicitly state its limitations, such as its potential failure under distribution shift, and the necessity of evaluating it within specific operational domains and linking it to concrete actions or restrictions. No artifact presents calibration as a universal safety metric or omits the necessary qualifications.",
+  "evidence_locators": [
+    "assurance/assurance_case.json",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "research/contributions/assurance_evidence/findings.md",
+    "video/script.md",
+    "assurance/method_crosswalk.json",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

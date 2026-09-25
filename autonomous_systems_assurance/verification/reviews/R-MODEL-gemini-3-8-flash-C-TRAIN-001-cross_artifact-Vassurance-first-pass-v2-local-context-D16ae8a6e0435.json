@@ -1,0 +1,27 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-TRAIN-001-cross_artifact-Vassurance-first-pass-v2-local-context-D16ae8a6e0435",
+  "package_id": "P-C-TRAIN-001-cross_artifact",
+  "input_digest": "16ae8a6e043571dec7c244dd15fb9d97ff0114a2aa5b4abad0589a0a776fb0c5",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "All cross-artifact uses preserve the claim's scope and limitations. AMLAS v1.1 Artefact [L] (printed pp. 20\u201322 / PDF pp. 21\u201323) explicitly mandates data requirements covering relevance, completeness, accuracy, and balance tied to operating-domain assumptions, citing examples of sensor positioning (Example 8), lighting conditions (Example 10), and partially occluded pedestrian labeling (Example 12). Downstream artifacts in architecture, whitepaper, crosswalk, script, findings, and figures consistently present these as component-level guidance and open obligations rather than authoritative system approvals or evidence of dataset compliance.",
+  "evidence_locators": [
+    "S-CHAL-004-R4: PDF pp. 21\u201323 (printed pp. 20\u201322), Artefact [L] and Examples 8, 10, 12",
+    "assurance/architecture.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "resource_composition/figures.md",
+    "video/script.md",
+    "resource_composition/whitepaper.md",
+    "research/contributions/training_case/findings.md",
+    "resource_composition/figures/vision_training_contract.svg"
+  ],
+  "limitations": [
+    "AMLAS v1.1 is guidance from research literature and does not constitute a regulatory means of compliance or formal product certification."
+  ],
+  "resolves": []
+}

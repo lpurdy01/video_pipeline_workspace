@@ -1,0 +1,18 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-INTAKE-001-source_support-Ddbefc50b9223",
+  "package_id": "P-C-INTAKE-001-source_support",
+  "input_digest": "dbefc50b92230525f8847f6d2429c06f2d8dbe171079f4b161ebecc2dd1af0c5",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The FAA Exemption No. 19111B, dated September 18, 2023, explicitly states on PDF printed page 10, in its response to DAA safety-standard comments, that 'The exemption does not authorize the system.' This directly supports the claim that the exemption (operation-specific relief) is distinct from the authorization of the DAA system itself.",
+  "evidence_locators": [
+    "FAA Exemption No. 19111B \u2014 Zipline International, Inc., PDF printed page 10, FAA response to DAA safety-standard comments"
+  ],
+  "limitations": [],
+  "resolves": []
+}

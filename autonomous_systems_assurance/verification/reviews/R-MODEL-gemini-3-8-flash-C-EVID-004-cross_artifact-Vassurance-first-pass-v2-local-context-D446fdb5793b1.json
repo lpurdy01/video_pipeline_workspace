@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-EVID-004-cross_artifact-Vassurance-first-pass-v2-local-context-D446fdb5793b1",
+  "package_id": "P-C-EVID-004-cross_artifact",
+  "input_digest": "446fdb5793b1d55a97286d4ab122251f7d17152977c405e8cb5cf477ad594518",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all examined artifacts (assurance case, crosswalks, findings matrix, video scripts, treatment, visual inventory, and whitepaper), C-EVID-004 is consistently cited within its defined scope. The artifacts accurately characterize temperature scaling and confidence calibration as empirical techniques tied to evaluated distributions, repeatedly emphasizing that calibration does not establish safety under distribution shift or serve as an unexplained system-level safety bound.",
+  "evidence_locators": [
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "research/contributions/assurance_evidence/findings.md",
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [
+    "Review is limited to the excerpts provided in the packet; omitted portions of the full artifacts were not inspected."
+  ],
+  "resolves": []
+}

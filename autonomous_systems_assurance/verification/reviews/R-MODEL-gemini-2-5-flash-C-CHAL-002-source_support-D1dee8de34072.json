@@ -1,0 +1,18 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-002-source_support-D1dee8de34072",
+  "package_id": "P-C-CHAL-002-source_support",
+  "input_digest": "1dee8de34072dd4e69117e4b834a25ff601ac345325212f4a5654b524c1aefb7",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The MAA notice (MAA/RN/2025/04) explicitly states in paragraph 13: 'It is not currently possible to be prescriptive on resolving these issues without architectural mitigation.' It further states: 'Where compliance cannot be demonstrated due to lack of suitable AI standards, or the difficulty posed by the unpredictability of the AI involved, the exposition of the fundamental regulatory principles articulated in the Air System Safety Case and supporting evidence remains valid such that evidence is gathered through verification (including trials, testing and analysis) and mechanisms for continuing performance monitoring for counter-evidence of system Safety.' This directly supports all elements of the claim regarding architectural mitigation, the system-safety-case approach, the methods used (verification, trials, testing, analysis, continuing performance monitoring), and the conditions (unavailability of suitable AI standards or unpredictable behavior).",
+  "evidence_locators": [
+    "PDF pp. 3\u20134, paragraph 13"
+  ],
+  "limitations": [],
+  "resolves": []
+}

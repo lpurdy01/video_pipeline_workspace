@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-011-source_support-D4a21d0105881",
+  "package_id": "P-C-011-source_support",
+  "input_digest": "4a21d0105881bac373483cbbdb74b007042570a51a602836d55b3f79321dc302",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided evidence consists only of a short excerpt without full local context, which is insufficient to verify the claim's specific details regarding structural and data assumptions for recovering compact governing models.",
+  "evidence_locators": [
+    "S-012-R1"
+  ],
+  "limitations": [
+    "Full local context of the source is missing, preventing verification of the specific structural and data assumptions mentioned in the claim."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-EVID-001-source_support-D91b405481b5c",
+  "package_id": "P-C-EVID-001-source_support",
+  "input_digest": "91b405481b5c07b4f392b2680c4aac5724da2eebbc672d9928ee1e1c1815457e",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided evidence supports the first half of the claim: MAP 1.1, MAP 2.2, and MAP 2.3 (found in the captured context for Region 3, pages 26-27) explicitly call for documenting intended context, knowledge limits, and data/TEVV considerations. However, the captured context for Region 3 is mismatched with its locator ('PDF pp. 31-32, MANAGE 2 and 4 outcomes'). The actual text for the MANAGE function, which would support the 'post-deployment change and recovery processes' (such as superseding or deactivating systems), is absent from the provided material.",
+  "evidence_locators": [
+    "S-EVID-001-R3"
+  ],
+  "limitations": [
+    "The captured context for Region 3 provides pages 26-27 (MAP function) instead of the stated pages 31-32 (MANAGE function). The full text for MANAGE 2 and 4 outcomes must be retrieved to verify the post-deployment change and recovery processes portion of the claim."
+  ],
+  "resolves": []
+}

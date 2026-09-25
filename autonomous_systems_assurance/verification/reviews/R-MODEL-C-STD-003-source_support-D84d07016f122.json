@@ -1,0 +1,18 @@
+{
+  "id": "R-MODEL-C-STD-003-source_support-D84d07016f122",
+  "package_id": "P-C-STD-003-source_support",
+  "input_digest": "84d07016f122dffb3cbd5a334837eee885f2faf715ad6b0455ff5adf1a1dc86a",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The captured text of 49 U.S.C. \u00a7 30115(a) explicitly requires manufacturers or distributors to certify at delivery that the vehicle or equipment complies with applicable motor vehicle safety standards, and prohibits issuing the certificate if, exercising reasonable care, the person has reason to know it is false or misleading in a material respect.",
+  "evidence_locators": [
+    "49 U.S.C. \u00a7 30115(a), In General"
+  ],
+  "limitations": [],
+  "resolves": []
+}

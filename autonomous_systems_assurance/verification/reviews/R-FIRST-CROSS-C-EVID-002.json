@@ -1,0 +1,23 @@
+{
+  "id": "R-FIRST-CROSS-C-EVID-002",
+  "package_id": "P-C-EVID-002-cross_artifact",
+  "input_digest": "d4baff272443214d905a2fd9c78f15305e27707361d8f354b920d21f804cbf2f",
+  "task": "cross_artifact",
+  "reviewer_id": "first-pass-cross-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-cross-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The graph uses combinatorial coverage as one planned input/encounter-evidence artifact and does not call it a learned-model performance proof or a probability of safe operation. The evidence findings retain the variable-selection and interaction-strength boundary.",
+  "evidence_locators": [
+    "assurance/assurance_case.json, tagged use [C-EVID-002], EA-ROAD-002/EA-ROAD-003 and EA-AIR-002/EA-AIR-003 links",
+    "research/contributions/assurance_evidence/findings.md, tagged use [C-EVID-002], combinatorial-coverage finding",
+    "assurance_case_links: EA-AIR-002, EA-AIR-003, EA-ROAD-002, EA-ROAD-003, O-002, O-AIR-002"
+  ],
+  "limitations": [
+    "This review does not reproduce the cited coverage study or assess the chosen scenario variables.",
+    "It does not show that the planned artifact will have adequate coverage."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-ROAD2-006-challenge-D6421948c9e0e",
+  "package_id": "P-C-ROAD2-006-challenge",
+  "input_digest": "6421948c9e0ef3b4df2aa7e0316d443ed22ed45ed4553f4359abf9cbb8693cfb",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The claim states that the California DMV's inspected permit page, dated August 12, 2026, lists Tesla Robotaxi LLC and Waymo LLC among testing-with-driver permit holders and publishes separate driverless-testing and deployment tables. The provided evidence directly supports all components of this claim. Regions S-ROAD2-005-R1 and S-ROAD2-005-R2 explicitly excerpt 'TESLA ROBOTAXI LLC' and 'WAYMO LLC' from the 'Testing with a Driver list, dated August 12 2026'. Region S-ROAD2-005-R3 confirms the existence of 'Driverless Testing and Deployment tables' on the same page. No alternative interpretation, primary counterevidence, scope limit, or current-status change within the supplied material defeats the claim as worded and dated.",
+  "evidence_locators": [
+    "S-ROAD2-005-R1: Testing with a Driver list, dated August 12 2026",
+    "S-ROAD2-005-R2: Testing with a Driver list, dated August 12 2026",
+    "S-ROAD2-005-R3: Driverless Testing and Deployment tables"
+  ],
+  "limitations": [
+    "Review confined to the provided review packet and the specific wording of the claim.",
+    "The challenge in the claim's metadata ('Inspect individual permits and current ODD records before attributing a specific operation, vehicle, or model version to either company.') is a limitation on the *use* of the permit listing, not a challenge to the accuracy of the listing itself, which is the scope of this claim."
+  ],
+  "resolves": []
+}

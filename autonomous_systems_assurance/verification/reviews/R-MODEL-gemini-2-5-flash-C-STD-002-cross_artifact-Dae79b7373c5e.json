@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-STD-002-cross_artifact-Dae79b7373c5e",
+  "package_id": "P-C-STD-002-cross_artifact",
+  "input_digest": "ae79b7373c5e5f1c18b986b3d06ea2d4b04a990fae89e422ca090520d83d63a0",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of C-STD-002 accurately preserves the claim's scope and limitations. The artifacts consistently state that EASA's DS.AI NPA 2025-07(B) is 'proposed' and 'awaiting responses to comments' based on the 2026-09-22 EASA CRT page capture, and explicitly include the qualification that this status is time-sensitive and subject to change by a final publication. No inference is presented as authority evidence, and no qualifications are omitted.",
+  "evidence_locators": [
+    "research/integration_round4.md",
+    "resource_composition/whitepaper_outline.md",
+    "research/contributions/standards_authority/findings.md"
+  ],
+  "limitations": [
+    "The status of EASA's DS.AI is a time-sensitive website observation and must be rechecked immediately before any final publication or operational claim."
+  ],
+  "resolves": []
+}

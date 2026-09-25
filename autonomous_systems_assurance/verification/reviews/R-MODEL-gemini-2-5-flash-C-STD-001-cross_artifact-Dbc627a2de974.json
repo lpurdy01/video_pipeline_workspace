@@ -1,0 +1,24 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-STD-001-cross_artifact-Dbc627a2de974",
+  "package_id": "P-C-STD-001-cross_artifact",
+  "input_digest": "bc627a2de974125a3240ec07925870878319aaccaa00fcc2d3006fcccbd8d701",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The claim C-STD-001 states that the FAA's AI/ML technical-discipline page describes collaboration activities to advance understanding in the aviation certification context. The claim's scope explicitly limits this to a 'statement of activity, not a completed standard or approval outcome.' All artifact uses of C-STD-001 in the provided material (specifically `research/integration_round4.md` and `resource_composition/whitepaper_outline.md`) accurately reflect the claim's content and consistently preserve its stated scope and limitations. The artifacts explicitly qualify that the described collaboration is not a completed standard or approval outcome, and they adhere to the challenge's warnings by avoiding unsupported inferences about the reasons for unfinished standards work.",
+  "evidence_locators": [
+    "research/integration_round4.md::Authority and standards distinctions",
+    "research/integration_round4.md::Audit of the proposed video deductions",
+    "research/integration_round4.md::Authority status in plain language",
+    "resource_composition/whitepaper_outline.md::5. The public methods landscape",
+    "resource_composition/whitepaper_outline.md::Coverage and language gates"
+  ],
+  "limitations": [
+    "The full content of `resource_composition/whitepaper.md` was not provided, so the assessment of its complete use of C-STD-001 is based on the outline and general language gates."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-RISK-001-source_support-Vassurance-first-pass-v2-local-context-De0bdcea5c1b6",
+  "package_id": "P-C-RISK-001-source_support",
+  "input_digest": "e0bdcea5c1b61dc585063e6e8468e50800c8916be9f8b11cc3cb4a0a6adb8a0f",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "FAA AC 25.1309-1A explicitly establishes that compliance is framed around a logical and acceptable inverse relationship between the probability and severity of each failure condition (paragraphs 3 and 4a), substantiated through a safety assessment, qualitative analyses, tests, and selective/supplemental quantitative analyses where justified (paragraphs 4a, 4b, and 10). The claim's historical framing and explicitly limited scope (noting it is not an AI/learned-model acceptance method) match both the source text and all artifact uses.",
+  "evidence_locators": [
+    "AC 25.1309-1A, paragraph 3 (Applicability), p. 1",
+    "AC 25.1309-1A, paragraph 4a-b (Background), pp. 1-2",
+    "AC 25.1309-1A, paragraph 10 (Quantitative Assessment), p. 14"
+  ],
+  "limitations": [
+    "AC 25.1309-1A is advisory and historical (issued 1988); modern certification projects may utilize later revisions or issue papers, and its conventional component-level probability framework does not directly translate to learned perception models."
+  ],
+  "resolves": []
+}

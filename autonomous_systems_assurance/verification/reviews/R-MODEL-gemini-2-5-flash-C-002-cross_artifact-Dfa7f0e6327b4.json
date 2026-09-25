@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-002-cross_artifact-Dfa7f0e6327b4",
+  "package_id": "P-C-002-cross_artifact",
+  "input_digest": "fa7f0e6327b4e29db28c3fab065bd1f747ecbbd7a6619ade6899ae6a1c1f1068",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of claim C-002 preserves its scope and limitations. The claim states that 'A TSO authorization is distinct from approval to install and use equipment on an aircraft,' with a scope of 'US civil aviation' and a challenge to 'Do not conflate equipment, installation, aircraft or operational approvals.' The evidence (FAA TSO explanation) supports this distinction. The artifacts use C-002 to: 1) directly state the FAA's distinction between TSO authorization and installation/use approval (`research/initial_findings.md`), 2) instruct to introduce specific approval scopes precisely (`video/narrative.md`), and 3) define a key vocabulary distinction to 'Keep the object and scope of each decision visible' (`wiki/concepts/assurance_vocabulary.md`). All uses align with the claim's core message and its challenge, without conflating different approval types or exceeding the US civil aviation scope.",
+  "evidence_locators": [
+    "research/initial_findings.md",
+    "video/narrative.md",
+    "wiki/concepts/assurance_vocabulary.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-002-cross_artifact-Dcac3e3237ee6",
+  "package_id": "P-C-CHAL-002-cross_artifact",
+  "input_digest": "cac3e3237ee653ed2e82baf9b9ca4cbd513aedadd8b29fa497884464133a7182",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Every use of claim C-CHAL-002 accurately reflects the MAA notice's statement that AI issues cannot currently be resolved prescriptively without architectural mitigation and that a system-safety-case approach is retained. All artifacts consistently preserve the claim's scope and limitations, explicitly qualifying the MAA notice as 'UK military guidance,' 'case-specific,' and 'not civil approval.' No omitted qualifications, changed status, or inferences presented as authority evidence were found.",
+  "evidence_locators": [
+    "S-CHAL-001-R3",
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_challenge/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "video/script.md",
+    "assurance/method_crosswalk.json",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

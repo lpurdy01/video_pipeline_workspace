@@ -1,0 +1,27 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-001-cross_artifact-D02bc4560d1b6",
+  "package_id": "P-C-CHAL-001-cross_artifact",
+  "input_digest": "02bc4560d1b6fa90072ce3e5029bdcbf4eba2f8b24030dce5b260a735d825144",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all supplied artifacts (including architecture descriptions, crosswalks, findings, outlines, video treatment/script, and visual inventories), uses of claim C-CHAL-001 consistently adhere to its precise scope and limitations. The document is strictly characterized as current UK military aviation guidance requiring applicant-specific MCRI agreement with the MAA, recommending fixed supervised models within a defined ODD for early safety-related applications, and explicitly distinguishing this military pathway from civil airworthiness approval or an off-the-shelf product safety case.",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "assurance/method_crosswalk.json",
+    "research/contributions/assurance_challenge/findings.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md"
+  ],
+  "limitations": [
+    "Review is limited to the supplied artifacts and citations; underlying proprietary MMAC certification documents and completed applicant MCRIs remain non-public."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-016-source_support-D331bdb1bf1d4",
+  "package_id": "P-C-016-source_support",
+  "input_digest": "331bdb1bf1d43844d53dedd89e4472304a1bfa9f5d0ef0ec44dcbf6210ec8408",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided source excerpt only discusses timing for a recovery controller and lacks the full context needed to determine if it supports the claim regarding shared perception failures and monitor independence.",
+  "evidence_locators": [
+    "S-010-R1"
+  ],
+  "limitations": [
+    "Full text of the NASA paper is needed to verify if it discusses shared perception failures or if this claim relies entirely on separate project-level reasoning."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-METHOD2-019-source_support-Dcd3f93088f4b",
+  "package_id": "P-C-METHOD2-019-source_support",
+  "input_digest": "cd3f93088f4b33bb94f200e0b6d2602bfdbcbfd8d8c25ad3260c9e2239ca30c0",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim, which is provisional and within the scope of 'Project reasoning,' is directly and extensively supported by the project's own research findings and proposed architecture. The `findings.md` artifact explicitly states that a 'constrained controller and/or reversionary path limits authority' and a 'monitor watches state and timing through an explicitly analyzed observation path' as part of the recommended architecture, directly tagging C-METHOD2-019. It also highlights that a monitor seeing the 'same failed perception output' may not detect the failure, necessitating an 'observation path' for the monitor. The `video/script.md` and `video/nextgen_structure/treatment.md` further reinforce this by stating that 'a monitor that relies only on the same failed perception output can share the failure it is supposed to catch' and that 'if the relevant difference cannot be observed early enough, the honest response is to restrict the ODD or authority, improve the independent-enough observation path, or block release,' both explicitly linking to C-METHOD2-019. The external sources (S-METHOD2-003, S-METHOD2-004, S-METHOD2-016) provide the foundational concepts of runtime assurance, monitoring system components, and the potential unreliability of learned perception, which are integrated into the project's architectural proposal.",
+  "evidence_locators": [
+    "research/contributions/method_round2/findings.md",
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "S-METHOD2-003-R1",
+    "S-METHOD2-004-R1",
+    "S-METHOD2-016-R1"
+  ],
+  "limitations": [],
+  "resolves": []
+}

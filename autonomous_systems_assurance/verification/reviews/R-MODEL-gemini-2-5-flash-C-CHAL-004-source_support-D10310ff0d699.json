@@ -1,0 +1,18 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-004-source_support-D10310ff0d699",
+  "package_id": "P-C-CHAL-004-source_support",
+  "input_digest": "10310ff0d69950b9ea38dabf750b3b7704e41dbe437e69759b459a8e19a323ed",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The provided excerpt from EASA NPA 2025-07(B) explicitly states that 'AI-based systems presenting a risk directly contributing to the potential for fatalities or multiple life-threatening injuries' and 'AI-based systems with online learning capabilities, for which the failure contribution is more stringent than \u2018no safety effect\u2019' are excluded from the scope of DS.AI. This directly supports the claim that EASA's proposed DS.AI does not cover such systems and excludes certain online-learning systems. Given these exclusions, the logical conclusion that it 'cannot be presented as a complete proposed path for the project's most demanding flight-critical autonomy case' is also supported, as such a case would inherently involve risks leading to fatalities or multiple life-threatening injuries.",
+  "evidence_locators": [
+    "PDF p. 4, DS.AI.010 Scope"
+  ],
+  "limitations": [],
+  "resolves": []
+}

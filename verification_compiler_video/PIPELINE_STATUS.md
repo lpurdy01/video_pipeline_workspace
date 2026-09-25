@@ -286,5 +286,89 @@ frame behind each one.
    belongs.
 3. Stale frames — 14 beats where the line changed and the picture did not. Worth
    a `beat_no_change` check: compare each beat's settled frame to the previous.
-4. The delivery render at 1080p30, and the human narration take replacing the
-   scratch TTS (the timing table rebuilds from the real audio with no scene edits).
+4. The delivery render at 1080p30 after the review-marked human cut is accepted.
+
+## Human narration integrated — 2026-08-29
+
+The cleaned human narration is now the clock for all 11 sections. The combined
+`04_05_artifact_graph_and_traversal.wav` take was split at 67.720s, inside the
+silence between section 4 and section 5, producing `04_artifact_graph.wav` and
+`05_compilation_traversal.wav`.
+
+Local faster-whisper STT produced `out/timing/*.words.json`, and the timing
+pipeline produced `out/timing/*.timing.json` pointing at the cleaned human WAVs.
+One aligner correction was added for `Datasheets` -> spoken `data sheets`, so
+section 4's datasheet beat starts on the first word of the phrase.
+
+Timing audit after the correction:
+
+| check | result |
+|---|---:|
+| narration lines | 240 |
+| beat anchors | 240 |
+| uncovered lines | 0 |
+| duplicate line hits | 0 |
+| unresolved anchors | 0 |
+| lowest meaningful confidence | 0.68 on section 3 line 0 |
+
+The section 3 low-confidence case is STT clipping "High-assurance" to
+"Assurance"; it still lands on the correct opening phrase. Other low text-ratio
+cases are expected line-boundary bleed or deliberate spoken wording changes
+(`The question is` including the next word, `Datasheets` spoken as two words,
+and end-card wording drift).
+
+Review-marked full cuts for human comments:
+
+- `out/review/full_cut_human_review_marks_1x.mp4` — 796.3s
+- `out/review/full_cut_human_review_marks_1x_1.25x.mp4` — 637.3s
+
+Latest retimed render drift:
+
+| section | drift |
+|---|---:|
+| 01_generation_got_cheap | -0.02s |
+| 02_chat_log_fallacy | -0.00s |
+| 03_traceability_shape | -0.01s |
+| 04_artifact_graph | -0.02s |
+| 05_compilation_traversal | -0.04s |
+| 06_vqp | -0.02s |
+| 07_dual_mode_review | -0.02s |
+| 08_evidence_cards | -0.02s |
+| 09_readiness_map | -0.05s |
+| 10_evidence_surface | -0.03s |
+| 11_end_card | -0.02s |
+
+Visual QA still fails on readability/layout issues (`text_too_brief`,
+`stage_imbalance`, `outline_over_text`, plus a few section-specific geometry
+findings). Those are review targets, not evidence of dropped timing events.
+
+## Readability triage — 2026-08-29
+
+Inspected the reported `outline_over_text` and `text_too_brief` frames against
+the human-retimed review render. The section 2 outline hits were intentional
+strike-throughs on "proof / certification / audit trail" and now carry a local
+waiver. The real readability/collision issues were fixed in sections 1, 4, 5,
+6, 8, 9, 10, and 11 by shortening cue labels, moving captions into the reserved
+caption lane, introducing final phrases earlier, or moving marks away from text.
+
+Current target-class count after rerendering affected sections:
+
+| check | count |
+|---|---:|
+| `outline_over_text` | 0 |
+| `text_too_brief` | 0 |
+| `text_overlap` | 0 |
+
+Remaining visual QA findings are outside this pass: `stage_imbalance` x15,
+`dead_air` x2, `edge_through_node` x1, and `partial_dim` x1.
+
+## Final clean render — 2026-08-29
+
+Rendered all 11 sections slate-free at Manim high quality and assembled the
+delivery cut at 1920x1080, 30 fps, with human narration.
+
+- `out/final/compiler_for_trust_clean_1080p30_1x.mp4` — 796.4s
+- `out/final/compiler_for_trust_clean_1080p30_1x_1.15x.mp4` — 692.7s
+
+Spot-checked frames at the opening, mid-video, and the 1.15x tail; no review
+slates or feedback marks are visible.

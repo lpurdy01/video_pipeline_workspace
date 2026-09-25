@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-C-AIR2-010-source_support-D2ead2cc15508",
+  "package_id": "P-C-AIR2-010-source_support",
+  "input_digest": "2ead2cc1550805e0af4ed578bd07242e296aec648e430b6e35de8ad4fefc843a",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided evidence confirms the publication of the EASA Proposed Issue 3 AI Concept Paper dated June 3, 2026. The source limitations and findings explicitly state that only the landing page metadata was initially inspected, the document is in a proposed status, and no detailed technical requirements are established or supported by this specific claim.",
+  "evidence_locators": [
+    "S-AIR2-009 metadata (published_at, limitations)",
+    "research/contributions/air_round2/findings.md (Findings section)",
+    "research/retrieval_status.md (Requires human attention section)"
+  ],
+  "limitations": [
+    "The full PDF has been downloaded but its contents remain unextracted and uninspected for technical requirements.",
+    "The document is a proposed concept paper, not a final regulatory requirement or guidance."
+  ],
+  "resolves": []
+}

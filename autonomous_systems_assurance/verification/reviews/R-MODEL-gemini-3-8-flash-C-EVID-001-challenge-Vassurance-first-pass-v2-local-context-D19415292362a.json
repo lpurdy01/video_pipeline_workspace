@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-EVID-001-challenge-Vassurance-first-pass-v2-local-context-D19415292362a",
+  "package_id": "P-C-EVID-001-challenge",
+  "input_digest": "19415292362aafd7b7655975dd1b804b17cce432e8e11c6df237431b892d7a47",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The challenge correctly identifies that NIST AI RMF 1.0 is voluntary, horizontal guidance and that documenting processes is not proof of safety or safety certification. However, the claim's explicit scope ('NIST voluntary, non-sector-specific AI risk-management guidance; not a safety certification criterion') and its artifact uses explicitly restrict the claim to this boundary. The cited subcategories (MAP 1.1 for context, MAP 2.2 for knowledge limits, MAP 2.3 for data/TEVV, and GOVERN 1.7 / MANAGE functions for change/recovery) directly call for documenting these lifecycle elements without claiming transport safety certification.",
+  "evidence_locators": [
+    "https://doi.org/10.6028/NIST.AI.100-1 (PDF pp. 21-23, 26-27, 31-32)",
+    "research/contributions/assurance_evidence/findings.md",
+    "assurance/assurance_case.json"
+  ],
+  "limitations": [
+    "NIST AI RMF 1.0 is voluntary horizontal guidance subject to ongoing NIST revisions and community profiles; it does not substitute for domain-specific safety certification standards."
+  ],
+  "resolves": []
+}

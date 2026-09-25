@@ -1,0 +1,24 @@
+{
+  "id": "R-MODEL-C-009-cross_artifact-D7df99920f995",
+  "package_id": "P-C-009-cross_artifact",
+  "input_digest": "7df99920f995619000d127bd87630311fed935683e3dc9ab8ffc1557c55b8de8",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "All artifact uses accurately preserve the claim's scope and limitations. They explicitly emphasize that runtime assurance requires sufficient intervention time, control authority, and a trusted fallback capable of recovery. Furthermore, the artifacts correctly distinguish the conditional formal research from production implementation and industrial deployment difficulties, directly addressing the claim's challenge.",
+  "evidence_locators": [
+    "assurance/architecture.md (Section: Competing designs)",
+    "research/initial_findings.md (Section: A monitor needs evidence too)",
+    "video/storyboard.md (Row V-03)",
+    "wiki/concepts/assurance_vocabulary.md (Table row: Runtime monitor / recovery guarantee)"
+  ],
+  "limitations": [
+    "Full proof audit of the NASA paper remains pending",
+    "Production implementations must still be independently verified to meet the formal model's assumptions regarding sensors and dynamics"
+  ],
+  "resolves": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-ROAD2-006-source_support-D0b50aa78e407",
+  "package_id": "P-C-ROAD2-006-source_support",
+  "input_digest": "0b50aa78e407bc4c655f95b5b81707e6097bfa4e449f0a6c9b680a6f1537329f",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The supplied excerpts and locators from the California DMV source explicitly confirm that Tesla Robotaxi LLC and Waymo LLC are on the testing-with-driver list dated August 12, 2026, and note the presence of separate driverless testing and deployment tables.",
+  "evidence_locators": [
+    "Testing with a Driver list, dated August 12 2026",
+    "Driverless Testing and Deployment tables"
+  ],
+  "limitations": [
+    "A permit listing gives program status and stated operating scope; it is not evidence that a specific learned model is safe in every environment or that another state permits operation."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "R-PAPER-READER-SOURCE-C-AUTH-008-20260916",
+  "package_id": "P-C-AUTH-008-source_support",
+  "input_digest": "5896fdca11a70f2e596c214b334ab987deb517c425ebe768aec321f6d258c071",
+  "task": "source_support",
+  "reviewer_id": "paper-reader-source-support-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "source-support-digest-pinned-v2",
+  "verdict": "uncertain",
+  "created_at": "2026-09-16",
+  "rationale": "The three excerpts align with the voluntary/no-federal-approval distinction and the listed ODD, OEDR and fallback elements. All three remain short excerpts with no captured original context, so the review cannot establish the page's current status, complete framing or whether the selection preserves the full safety-element list.",
+  "evidence_locators": [
+    "S-AUTH-006-R1 \u2014 NHTSA page, ADS 2.0 status explanation",
+    "S-AUTH-006-R2 \u2014 NHTSA page, current guidance and approval statement",
+    "S-AUTH-006-R3 \u2014 NHTSA page, safety-element list"
+  ],
+  "limitations": [
+    "No full local source context or snapshot was captured for the three S-AUTH-006 regions.",
+    "Voluntary ADS 2.0 guidance cannot establish certification or safety of a particular ADS."
+  ],
+  "resolves": []
+}

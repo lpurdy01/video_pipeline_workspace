@@ -1,0 +1,22 @@
+{
+  "id": "R-FIRSTPASS-C-AUTH-008-challenge",
+  "package_id": "P-C-AUTH-008-challenge",
+  "input_digest": "995fc02ec62571812b50229eb2402e501970a7e082eaa76fc06d0a92afc485b3",
+  "task": "challenge",
+  "reviewer_id": "first-pass-challenge-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-challenge-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "NHTSA's current ADS page calls ADS 2.0 voluntary, states that it has no compliance requirement or enforcement mechanism, says assessments are not subject to federal approval, and lists ODD, OEDR, fallback and validation among its safety elements. The page also says ADS 2.0 remains its current operating guidance for SAE Levels 3-5. Later AV 3.0/4.0 material on the same page does not make the narrowly described ADS 2.0 statements false.",
+  "evidence_locators": [
+    "S-AUTH-006-R1 through S-AUTH-006-R3, NHTSA Automated Driving Systems page, ADS 2.0 section",
+    "NHTSA Automated Driving Systems page lines 81-99 and 120-126, https://www.nhtsa.gov/vehicle-manufacturers/automated-driving-systems"
+  ],
+  "limitations": [
+    "The guidance originated in 2017 and is voluntary; its presence on a current page does not settle later enforcement, rulemaking, state-permit, exemption, or defect-law questions.",
+    "The registry lacks full local source-context capture for these regions."
+  ],
+  "resolves": []
+}

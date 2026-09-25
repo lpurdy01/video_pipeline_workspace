@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "C-DIR-001",
+      "text": "NCEES's current United States PE-exam offerings describe discipline-specific competency and list more than 20 PE examinations, including computer engineering but no machine-learning specialty; this is evidence of the current NCEES examination taxonomy, not proof that machine-learning practitioners are unqualified or that no other credential exists.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Current NCEES PE-exam page and its listed offerings; not a global credential census or causal explanation of standards maturity",
+      "evidence": [{"region_id": "S-DIR-001-R1", "relation": "supports"}],
+      "challenge": "Search state boards, international registries, vendor and association certifications before making any wider credential claim. Do not infer professional maturity, competence, legal authorization, or safety from the presence or absence of an NCEES specialty.",
+      "review_records": []
+    },
+    {
+      "id": "C-DIR-002",
+      "text": "In its 2016 hybrid/electric quiet-car rulemaking, NHTSA said it could not directly measure pedestrian and pedalcyclist crash rates per mile for hybrids/electric vehicles against internal-combustion vehicles because it lacked powertrain-specific VMT data; it used a proxy and case-control analysis with stated confounding limits.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NHTSA 2016 low-speed hybrid/electric audibility rulemaking; not a current all-crash EV comparison or ADS evaluation",
+      "evidence": [{"region_id": "S-DIR-002-R1", "relation": "supports"}],
+      "challenge": "Locate a current, exposure-normalized U.S. study with a defined powertrain population, vehicle miles, crash endpoint and confounder controls before comparing EV and ICE risk. Do not treat this older denominator limitation as proof that no such current data exist.",
+      "review_records": []
+    },
+    {
+      "id": "C-DIR-003",
+      "text": "NHTSA's current Standing General Order data dictionary records ADS and Level-2-ADAS incidents but warns that reporting access may affect reporting, reports may be incomplete or unverified, multiple reports may describe one crash, and summary data are not normalized; the public incident log therefore cannot by itself provide a comparative crash rate or a learned-system safety conclusion.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NHTSA Standing General Order 2021-01 data dictionary, third-amendment public data; not an agency finding about a manufacturer or system",
+      "evidence": [{"region_id": "S-DIR-003-R1", "relation": "supports"}],
+      "challenge": "Keep ADS and Level 2 reporting thresholds separate, identify the deployed exposure denominator, deduplicate updates and cross-reporting, and validate incident classification before using the log in a comparative analysis.",
+      "review_records": []
+    }
+  ]
+}

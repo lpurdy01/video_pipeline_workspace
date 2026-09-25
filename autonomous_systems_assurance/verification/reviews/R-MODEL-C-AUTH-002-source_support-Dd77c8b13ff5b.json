@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-AUTH-002-source_support-Dd77c8b13ff5b",
+  "package_id": "P-C-AUTH-002-source_support",
+  "input_digest": "d77c8b13ff5b5daffb9e07ae93b8294f3d1fcd6277790413cec189e7046ef6bb",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided excerpt is too brief and lacks the full local context necessary to verify the claim's specific assertions regarding 'frozen learned AI implementation' and 'design-time safety assurance'.",
+  "evidence_locators": [
+    "S-AUTH-001-R2"
+  ],
+  "limitations": [
+    "Requires the full text of the FAA roadmap's discussion on static/frozen learned AI and version updates to confirm the exact phrasing and context."
+  ],
+  "resolves": []
+}

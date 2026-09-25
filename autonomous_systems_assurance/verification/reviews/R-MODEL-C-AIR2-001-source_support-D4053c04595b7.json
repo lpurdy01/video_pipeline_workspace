@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-AIR2-001-source_support-D4053c04595b7",
+  "package_id": "P-C-AIR2-001-source_support",
+  "input_digest": "4053c04595b719dc2ed4cbba03477d13376093a67c095d8b2611c15942e4abcf",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided source excerpt confirms the system targets cooperative and non-cooperative aircraft, but the full text is absent ('[no full local context captured]'). The specific architectural components claimed (TCAS/ADS-B and air-to-air radar) are asserted in the artifact findings but cannot be independently verified from the heavily truncated source excerpt.",
+  "evidence_locators": [
+    "S-AIR2-001-R2"
+  ],
+  "limitations": [
+    "Full local context is absent; requires capture of the complete source text to verify the specific mention of TCAS, ADS-B, and air-to-air radar."
+  ],
+  "resolves": []
+}

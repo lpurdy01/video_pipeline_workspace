@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-002-challenge-D766c642ba6d9",
+  "package_id": "P-C-002-challenge",
+  "input_digest": "766c642ba6d9ce7f1d3ee1eb4a0fb83aee44b06ad1166f82dd58287debbc86f2",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The FAA source explicitly confirms that receiving a TSO authorization is not an approval to install and use the article. The provided artifacts consistently preserve this distinction within US civil aviation, and no counterevidence conflating the approvals was found.",
+  "evidence_locators": [
+    "S-002-R1",
+    "wiki/concepts/assurance_vocabulary.md"
+  ],
+  "limitations": [
+    "Relies on a short excerpt of the FAA's general public explanation rather than comprehensive regulatory text (e.g., 14 CFR Part 21) or specific bundled approval cases like STCs."
+  ],
+  "resolves": []
+}

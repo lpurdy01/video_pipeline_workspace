@@ -1,0 +1,26 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-008-cross_artifact-D50489d2e7655",
+  "package_id": "P-C-AUTH-008-cross_artifact",
+  "input_digest": "50489d2e76558e63be68975b25620e79e21a53c32bee01a11be501571504432d",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Every supplied artifact use of the claim 'NHTSA's ADS 2.0 material presents a voluntary road-ADS safety framework with ODD, object-and-event detection/response, fallback and validation as safety elements; self-assessments are not subject to federal approval' consistently preserves its scope and limitations. The artifacts accurately reflect that ADS 2.0 is voluntary guidance, not subject to federal approval, and list its safety elements. Several artifacts explicitly address the claim's challenge by distinguishing this voluntary guidance from federal approval, certification, or current rulemaking, and by emphasizing the need to keep different types of evidence (permits, compliance, technical evidence) separate. No omitted qualifications, changed status, or inferences presented as authority evidence were found.",
+  "evidence_locators": [
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_authority/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "resource_composition/whitepaper.md",
+    "research/contributions/standards_authority/findings.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

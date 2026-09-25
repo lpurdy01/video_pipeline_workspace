@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "C-CHAL-001",
+      "text": "The UK Military Aviation Authority's current AI notice provides an applicant-specific assurance path for certified military air systems: applicants should raise an MCRI for MAA agreement, and the notice recommends fixed supervised models within a defined ODD for early safety-related ML applications.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "UK military aviation guidance effective 10 October 2025; not civil-airworthiness approval or a product safety case",
+      "evidence": [
+        {"region_id": "S-CHAL-001-R1", "relation": "supports"},
+        {"region_id": "S-CHAL-001-R2", "relation": "supports"}
+      ],
+      "challenge": "Obtain and inspect the MAA's underlying MMAC/MCRI material and a completed public MCRI if one is available. Determine what is mandatory rather than recommended and do not transfer military guidance to FAA/EASA civil approval.",
+      "review_records": []
+    },
+    {
+      "id": "C-CHAL-002",
+      "text": "The same MAA notice says the AI issues cannot currently be resolved prescriptively without architectural mitigation and retains a system-safety-case approach using verification, trials, testing, analysis and continuing performance monitoring when suitable AI standards are unavailable or behaviour is unpredictable.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "UK MAA notice's stated approach to assurance deficits and non-compliances",
+      "evidence": [
+        {"region_id": "S-CHAL-001-R3", "relation": "supports"}
+      ],
+      "challenge": "The phrase is a regulator's current guidance judgment, not proof that no other jurisdiction has a prescriptive method. Challenge with a final civil authority decision or completed high-criticality approval case.",
+      "review_records": []
+    },
+    {
+      "id": "C-CHAL-003",
+      "text": "EASA's NPA 2025-07(B) proposes a detailed AI-trustworthiness framework that spans operational domain, risk assessment, system development assurance, supervised-ML learning assurance, configuration/life-cycle data and in-service monitoring; this is a substantial candidate lifecycle against which the project must compare its own evidence contracts.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "EASA Notice of Proposed Amendment; proposed material, not final AMC/GM or an approved application",
+      "evidence": [
+        {"region_id": "S-CHAL-002-R2", "relation": "supports"},
+        {"region_id": "S-CHAL-002-R3", "relation": "supports"}
+      ],
+      "challenge": "Track whether EASA issues a final decision; inspect the explanatory note, comment resolution and any adopted edition. Check whether all necessary performance, data, test and system-composition obligations are actually operationalised for a worked DAA case.",
+      "review_records": []
+    },
+    {
+      "id": "C-CHAL-004",
+      "text": "EASA's proposed DS.AI does not itself cover an AI-based system whose risk directly contributes to fatalities or multiple life-threatening injuries, and it excludes certain online-learning systems; it therefore cannot be presented as a complete proposed path for the project's most demanding flight-critical autonomy case.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Scope limitation of EASA NPA 2025-07(B), which itself remains proposed",
+      "evidence": [
+        {"region_id": "S-CHAL-002-R1", "relation": "supports"}
+      ],
+      "challenge": "Map the specific DAA function and aircraft-level failure-condition allocation before classifying it under this exclusion. Do not assume every perception function is catastrophic solely from its vehicle context.",
+      "review_records": []
+    },
+    {
+      "id": "C-CHAL-005",
+      "text": "As of the inspected 2026-09-16 EUROCAE WG-114 status page, ED-324 is listed as a draft with a target publication date of 31 December 2026; it is not evidence of a currently published aviation ML assurance standard.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "EUROCAE work-program status page as inspected; not a claim about any private draft or later release",
+      "evidence": [
+        {"region_id": "S-CHAL-003-R1", "relation": "supports"}
+      ],
+      "challenge": "Refresh directly with EUROCAE and SAE before release; a status page can lag publication or use a nomenclature that differs from an authority's proposal.",
+      "review_records": []
+    },
+    {
+      "id": "C-CHAL-006",
+      "text": "AMLAS is an existing public six-stage safety-assurance methodology for ML components that links system safety requirements to data, learning, verification and deployment evidence. Its own guidance limits it to the ML component, says it should not be used alone, and focuses primarily on offline supervised learning.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "University of York AMLAS Version 1.1 research guidance; no claim of regulatory acceptance or end-to-end vehicle/aircraft approval",
+      "evidence": [
+        {"region_id": "S-CHAL-004-R1", "relation": "supports"},
+        {"region_id": "S-CHAL-004-R2", "relation": "supports"},
+        {"region_id": "S-CHAL-004-R3", "relation": "supports"}
+      ],
+      "challenge": "Compare AMLAS artefacts and argument patterns directly with the project's eight contracts. Identify demonstrated applications and any independent regulator acceptance; do not take the methodology's stated objective as proof that any particular ML component is safe.",
+      "review_records": []
+    },
+    {
+      "id": "C-CHAL-007",
+      "text": "The project should not claim to invent the first lifecycle for trained learned systems. It should position its contribution as a cross-verifiable, road-to-air worked assurance case that compares and operationalises existing methods such as AMLAS, MAA case-specific assurance and EASA's proposed DS.AI while exposing the evidence and authority gaps that remain.",
+      "kind": "proposal",
+      "status": "provisional",
+      "scope": "Project framing recommendation based on challenge sources; not a statement of regulatory fact",
+      "evidence": [
+        {"region_id": "S-CHAL-001-R2", "relation": "background"},
+        {"region_id": "S-CHAL-002-R2", "relation": "background"},
+        {"region_id": "S-CHAL-004-R1", "relation": "background"}
+      ],
+      "challenge": "A later public final standard or inspection-ready approval case could shift the project from comparison/operationalisation toward a direct implementation or audit of that framework.",
+      "review_records": []
+    }
+  ]
+}

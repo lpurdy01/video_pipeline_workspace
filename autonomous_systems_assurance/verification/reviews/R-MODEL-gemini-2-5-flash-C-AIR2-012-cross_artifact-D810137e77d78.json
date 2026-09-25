@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AIR2-012-cross_artifact-D810137e77d78",
+  "package_id": "P-C-AIR2-012-cross_artifact",
+  "input_digest": "810137e77d78c7ac14d99accd38fd4c12bf66c77ff86677267584ff172109675",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "All artifact uses of claim C-AIR2-012 accurately preserve its scope and limitations. The `research/contributions/air_round2/findings.md` artifact directly states the FAA announcement details and explicitly reiterates that it 'is not a TSO article approval, unrestricted operational permission, or proof that the same architecture is approved elsewhere,' consistent with the claim's stated limitations. The `video/nextgen_structure/narration_evidence_map.md` plans to use the claim with the proposition that 'Zipline authorization/exemption is scoped operation-specific relief, distinct from DAA-system authorization,' and requires a 'Date/location/scope card' qualifier, which also aligns with the claim's boundaries. Other video artifacts discuss the general principle of separating operational authorization from equipment approval, which is consistent with the claim's underlying message, without misrepresenting C-AIR2-012.",
+  "evidence_locators": [
+    "research/contributions/air_round2/findings.md",
+    "video/nextgen_structure/narration_evidence_map.md"
+  ],
+  "limitations": [
+    "Linked approval letters and conditions for the Zipline authorization must be obtained before asserting exact DAA architecture, aircraft configuration, current validity, or all-airspace operation."
+  ],
+  "resolves": []
+}

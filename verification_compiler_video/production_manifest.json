@@ -16,28 +16,32 @@
     "FINAL OUTPUT POLICY (2026-08-22): visuals rendered (Manim), not model-generated.",
     "Narration in the final cut is human speech only; scratch TTS is for timing and rough cuts.",
     "No generated video (Veo) and no music in the final cut.",
-    "Section target durations retimed to the 2026-08-23 second-pass script (150 wpm estimate; replace with real human take lengths once recorded)."
+    "Section target durations retimed to the 2026-08-28 cleaned human takes; timing tables live in verification_compiler_video/out/timing."
   ],
   "sections": [
     {
       "id": "01_generation_got_cheap",
       "title": "Cold Open: Generation Got Cheap",
-      "scene_class": "S01GenerationGate",
-      "target_duration_seconds": 161,
+      "scene_class": "S01GenerationGotCheap",
+      "target_duration_seconds": 126.944,
       "script_section": "verification_compiler_video/drafts/script.md#1-cold-open-generation-got-cheap",
       "audio": {
-        "human_path": "verification_compiler_video/assets/human_audio/01_generation_got_cheap.wav"
+        "human_path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/01_generation_got_cheap.wav"
       },
       "visual": {
         "kind": "manim_scene",
-        "path": "verification_compiler_video/manim_prototypes/storyboard_scenes.py",
+        "path": "verification_compiler_video/scenes/s01_generation_got_cheap.py",
         "prompt": "Artifact flood into a narrow verification gate; title lands as The Compiler For Trust."
       },
-      "review_keyframes": ["start", "middle", "end"],
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
       "human_assets": [
         {
           "kind": "human_narration",
-          "path": "verification_compiler_video/assets/human_audio/01_generation_got_cheap.wav",
+          "path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/01_generation_got_cheap.wav",
           "prompt": "Record section 1: Cold Open: Generation Got Cheap."
         }
       ]
@@ -46,21 +50,25 @@
       "id": "02_chat_log_fallacy",
       "title": "The Hidden Cost Of Looks Good",
       "scene_class": "S02ChatLogFallacy",
-      "target_duration_seconds": 56,
+      "target_duration_seconds": 50.734,
       "script_section": "verification_compiler_video/drafts/script.md#2-the-hidden-cost-of-looks-good",
       "audio": {
-        "human_path": "verification_compiler_video/assets/human_audio/02_chat_log_fallacy.wav"
+        "human_path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/02_chat_log_fallacy.wav"
       },
       "visual": {
         "kind": "manim_scene",
-        "path": "verification_compiler_video/manim_prototypes/storyboard_scenes.py",
+        "path": "verification_compiler_video/scenes/s02_chat_log_fallacy.py",
         "prompt": "A model chat explanation is scanned and found missing audit fields, then dissolves into an evidence card."
       },
-      "review_keyframes": ["start", "middle", "end"],
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
       "human_assets": [
         {
           "kind": "human_narration",
-          "path": "verification_compiler_video/assets/human_audio/02_chat_log_fallacy.wav",
+          "path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/02_chat_log_fallacy.wav",
           "prompt": "Record section 2: The Hidden Cost Of Looks Good."
         }
       ]
@@ -68,22 +76,26 @@
     {
       "id": "03_traceability_shape",
       "title": "Safety-Critical Software Already Has The Shape",
-      "scene_class": "S03TraceabilityChain",
-      "target_duration_seconds": 132,
+      "scene_class": "S03TraceabilityShape",
+      "target_duration_seconds": 122.408,
       "script_section": "verification_compiler_video/drafts/script.md#3-safety-critical-software-already-has-the-shape",
       "audio": {
-        "human_path": "verification_compiler_video/assets/human_audio/03_traceability_shape.wav"
+        "human_path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/03_traceability_shape.wav"
       },
       "visual": {
         "kind": "manim_scene",
-        "path": "verification_compiler_video/manim_prototypes/storyboard_scenes.py",
+        "path": "verification_compiler_video/scenes/s03_traceability_shape.py",
         "prompt": "A clean traceability chain builds from requirement to code, test, result, review, and evidence."
       },
-      "review_keyframes": ["start", "middle", "end"],
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
       "human_assets": [
         {
           "kind": "human_narration",
-          "path": "verification_compiler_video/assets/human_audio/03_traceability_shape.wav",
+          "path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/03_traceability_shape.wav",
           "prompt": "Record section 3: Safety-Critical Software Already Has The Shape."
         }
       ]
@@ -92,21 +104,25 @@
       "id": "04_artifact_graph",
       "title": "Artifacts Become A Graph",
       "scene_class": "S04ArtifactGraph",
-      "target_duration_seconds": 67,
+      "target_duration_seconds": 67.755,
       "script_section": "verification_compiler_video/drafts/script.md#4-artifacts-become-a-graph",
       "audio": {
-        "human_path": "verification_compiler_video/assets/human_audio/04_artifact_graph.wav"
+        "human_path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/04_artifact_graph.wav"
       },
       "visual": {
         "kind": "manim_scene",
-        "path": "verification_compiler_video/manim_prototypes/storyboard_scenes.py",
+        "path": "verification_compiler_video/scenes/s04_artifact_graph.py",
         "prompt": "Multiple traceability chains bend into a typed artifact DAG with orphan anomalies pulsing red."
       },
-      "review_keyframes": ["start", "middle", "end"],
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
       "human_assets": [
         {
           "kind": "human_narration",
-          "path": "verification_compiler_video/assets/human_audio/04_artifact_graph.wav",
+          "path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/04_artifact_graph.wav",
           "prompt": "Record section 4: Artifacts Become A Graph."
         }
       ]
@@ -114,22 +130,26 @@
     {
       "id": "05_compilation_traversal",
       "title": "Compilation Means Traversal",
-      "scene_class": "S05TraversalCompiler",
-      "target_duration_seconds": 56,
+      "scene_class": "S05CompilationTraversal",
+      "target_duration_seconds": 57.309,
       "script_section": "verification_compiler_video/drafts/script.md#5-compilation-means-traversal",
       "audio": {
-        "human_path": "verification_compiler_video/assets/human_audio/05_compilation_traversal.wav"
+        "human_path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/05_compilation_traversal.wav"
       },
       "visual": {
         "kind": "manim_scene",
-        "path": "verification_compiler_video/manim_prototypes/storyboard_scenes.py",
+        "path": "verification_compiler_video/scenes/s05_compilation_traversal.py",
         "prompt": "A conventional compiler analogy becomes artifact graph traversal and VQP output."
       },
-      "review_keyframes": ["start", "middle", "end"],
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
       "human_assets": [
         {
           "kind": "human_narration",
-          "path": "verification_compiler_video/assets/human_audio/05_compilation_traversal.wav",
+          "path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/05_compilation_traversal.wav",
           "prompt": "Record section 5: Compilation Means Traversal."
         }
       ]
@@ -137,22 +157,26 @@
     {
       "id": "06_vqp",
       "title": "The Verification Query Package",
-      "scene_class": "S06VQPPackage",
-      "target_duration_seconds": 66,
+      "scene_class": "S06VQP",
+      "target_duration_seconds": 76.753,
       "script_section": "verification_compiler_video/drafts/script.md#6-the-verification-query-package",
       "audio": {
-        "human_path": "verification_compiler_video/assets/human_audio/06_vqp.wav"
+        "human_path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/06_vqp.wav"
       },
       "visual": {
         "kind": "manim_scene",
-        "path": "verification_compiler_video/manim_prototypes/storyboard_scenes.py",
+        "path": "verification_compiler_video/scenes/s06_vqp.py",
         "prompt": "A selected subgraph folds into a bounded Verification Query Package that opens into dossier panes."
       },
-      "review_keyframes": ["start", "middle", "end"],
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
       "human_assets": [
         {
           "kind": "human_narration",
-          "path": "verification_compiler_video/assets/human_audio/06_vqp.wav",
+          "path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/06_vqp.wav",
           "prompt": "Record section 6: The Verification Query Package."
         }
       ]
@@ -161,21 +185,25 @@
       "id": "07_dual_mode_review",
       "title": "Same Package, Two Review Modes",
       "scene_class": "S07DualModeReview",
-      "target_duration_seconds": 65,
+      "target_duration_seconds": 56.087,
       "script_section": "verification_compiler_video/drafts/script.md#7-same-package-two-review-modes",
       "audio": {
-        "human_path": "verification_compiler_video/assets/human_audio/07_dual_mode_review.wav"
+        "human_path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/07_dual_mode_review.wav"
       },
       "visual": {
         "kind": "manim_scene",
-        "path": "verification_compiler_video/manim_prototypes/storyboard_scenes.py",
+        "path": "verification_compiler_video/scenes/s07_dual_mode_review.py",
         "prompt": "One VQP branches into developmental model review and human certification-facing review, producing the same schema with different authority."
       },
-      "review_keyframes": ["start", "middle", "end"],
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
       "human_assets": [
         {
           "kind": "human_narration",
-          "path": "verification_compiler_video/assets/human_audio/07_dual_mode_review.wav",
+          "path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/07_dual_mode_review.wav",
           "prompt": "Record section 7: Same Package, Two Review Modes."
         }
       ]
@@ -184,21 +212,25 @@
       "id": "08_evidence_cards",
       "title": "Evidence Cards, Not Conversations",
       "scene_class": "S08EvidenceCards",
-      "target_duration_seconds": 57,
+      "target_duration_seconds": 45.821,
       "script_section": "verification_compiler_video/drafts/script.md#8-evidence-cards-not-conversations",
       "audio": {
-        "human_path": "verification_compiler_video/assets/human_audio/08_evidence_cards.wav"
+        "human_path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/08_evidence_cards.wav"
       },
       "visual": {
         "kind": "manim_scene",
-        "path": "verification_compiler_video/manim_prototypes/storyboard_scenes.py",
+        "path": "verification_compiler_video/scenes/s08_evidence_cards.py",
         "prompt": "An evidence card fills with structured fields, receives a hash seal, then becomes stale when code changes."
       },
-      "review_keyframes": ["start", "middle", "end"],
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
       "human_assets": [
         {
           "kind": "human_narration",
-          "path": "verification_compiler_video/assets/human_audio/08_evidence_cards.wav",
+          "path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/08_evidence_cards.wav",
           "prompt": "Record section 8: Evidence Cards, Not Conversations."
         }
       ]
@@ -207,21 +239,25 @@
       "id": "09_readiness_map",
       "title": "Verification Readiness Is A Map, Not Magic",
       "scene_class": "S09ReadinessMap",
-      "target_duration_seconds": 90,
+      "target_duration_seconds": 72.316,
       "script_section": "verification_compiler_video/drafts/script.md#9-verification-readiness-is-a-map-not-magic",
       "audio": {
-        "human_path": "verification_compiler_video/assets/human_audio/09_readiness_map.wav"
+        "human_path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/09_readiness_map.wav"
       },
       "visual": {
         "kind": "manim_scene",
-        "path": "verification_compiler_video/manim_prototypes/storyboard_scenes.py",
+        "path": "verification_compiler_video/scenes/s09_readiness_map.py",
         "prompt": "Artifact graph becomes a heat map with separate readiness bars for coverage, completeness, staleness, and suitability."
       },
-      "review_keyframes": ["start", "middle", "end"],
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
       "human_assets": [
         {
           "kind": "human_narration",
-          "path": "verification_compiler_video/assets/human_audio/09_readiness_map.wav",
+          "path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/09_readiness_map.wav",
           "prompt": "Record section 9: Verification Readiness Is A Map, Not Magic."
         }
       ]
@@ -230,25 +266,55 @@
       "id": "10_evidence_surface",
       "title": "Closing: The Future Is Evidence Generation",
       "scene_class": "S10EvidenceSurface",
-      "target_duration_seconds": 54,
+      "target_duration_seconds": 48.965,
       "script_section": "verification_compiler_video/drafts/script.md#10-closing-the-future-is-evidence-generation",
       "audio": {
-        "human_path": "verification_compiler_video/assets/human_audio/10_evidence_surface.wav"
+        "human_path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/10_evidence_surface.wav"
       },
       "visual": {
         "kind": "manim_scene",
-        "path": "verification_compiler_video/manim_prototypes/storyboard_scenes.py",
+        "path": "verification_compiler_video/scenes/s10_evidence_surface.py",
         "prompt": "Evidence packages flow into a human decision gate while unresolved gaps remain visible."
       },
-      "review_keyframes": ["start", "middle", "end"],
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
       "human_assets": [
         {
           "kind": "human_narration",
-          "path": "verification_compiler_video/assets/human_audio/10_evidence_surface.wav",
+          "path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/10_evidence_surface.wav",
           "prompt": "Record section 10: Closing: The Future Is Evidence Generation."
+        }
+      ]
+    },
+    {
+      "id": "11_end_card",
+      "title": "End Card",
+      "scene_class": "S11EndCard",
+      "target_duration_seconds": 71.217,
+      "script_section": "verification_compiler_video/drafts/script.md#11-end-card",
+      "audio": {
+        "human_path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/11_end_card.wav"
+      },
+      "visual": {
+        "kind": "manim_scene",
+        "path": "verification_compiler_video/scenes/s11_end_card.py",
+        "prompt": "A restrained end card that carries the compiler-for-trust idea into the next build step and leaves a clear subscribe/comment invitation."
+      },
+      "review_keyframes": [
+        "start",
+        "middle",
+        "end"
+      ],
+      "human_assets": [
+        {
+          "kind": "human_narration",
+          "path": "verification_compiler_video/assets/human_audio/cleaned_final_takes/11_end_card.wav",
+          "prompt": "Record section 11: End Card."
         }
       ]
     }
   ]
 }
-

@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-ROAD2-008-source_support-Ddbef48635ce9",
+  "package_id": "P-C-ROAD2-008-source_support",
+  "input_digest": "dbef48635ce9083a209a37e9d2b7f91ca1c0e2bde1ed7138539a6b4550c8950d",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim states three requirements for California's CPUC passenger-service layer. The provided excerpts from the California Public Utilities Commission's 'Autonomous Vehicle Passenger Service Programs' page directly support each part: S-ROAD2-007-R3 confirms the requirement for DMV permits ('must obtain an Autonomous Vehicle Deployment Permit'), S-ROAD2-007-R1 confirms the remote-operator communication link for driverless pilot service ('a communication link between passengers and \u2018remote operators\u2019'), and S-ROAD2-007-R2 confirms the Passenger Safety Plans for driverless programs ('required to submit Passenger Safety Plans').",
+  "evidence_locators": [
+    "S-ROAD2-007-R1",
+    "S-ROAD2-007-R2",
+    "S-ROAD2-007-R3"
+  ],
+  "limitations": [],
+  "resolves": []
+}

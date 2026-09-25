@@ -1,0 +1,27 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-002-cross_artifact-Dcc7216eebda4",
+  "package_id": "P-C-AUTH-002-cross_artifact",
+  "input_digest": "cc7216eebda42b0573800232568fcb42ebb367066319aff65ea9ebd268fa418a",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Every supplied artifact use of claim C-AUTH-002 consistently preserves its scope and limitations. The claim states that the FAA roadmap distinguishes frozen learned AI from learning AI and requires new safety assurance for updated versions of frozen learned AI. All artifacts that cite C-AUTH-002 either explicitly include the qualification that the roadmap is 'direction-setting material, not a complete means of compliance or model-specific approval' or implicitly respect this limitation by focusing on the principle rather than presenting it as a detailed acceptance checklist. The project's emphasis on 'frozen, versioned trained releases' and the need for 'change control' and 'new release and impact assessment' directly aligns with the claim's content regarding updated versions requiring new safety assurance treatment.",
+  "evidence_locators": [
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_authority/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

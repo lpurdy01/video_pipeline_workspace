@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-CHAL-004-challenge-D46d2a7246e4a",
+  "package_id": "P-C-CHAL-004-challenge",
+  "input_digest": "46d2a7246e4a2f33ed8ce8216ea56b0ccfae8a88450e0f10a8dcbc6be22a449c",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim accurately reflects the explicit scope exclusions in DS.AI.010(d)(1) and (2) of EASA NPA 2025-07(B). While the challenge correctly notes that classifying a specific DAA function under this exclusion requires a formal aircraft-level failure-condition allocation, the claim remains factually supported regarding the document's boundary for the most demanding flight-critical cases.",
+  "evidence_locators": [
+    "S-CHAL-002-R1",
+    "PDF p. 4, DS.AI.010 Scope"
+  ],
+  "limitations": [
+    "Applying the exclusion to a specific real-world DAA function requires a formal aircraft-level safety assessment and failure-condition allocation."
+  ],
+  "resolves": []
+}

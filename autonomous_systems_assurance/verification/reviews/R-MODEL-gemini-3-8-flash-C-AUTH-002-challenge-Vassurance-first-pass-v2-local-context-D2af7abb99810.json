@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-AUTH-002-challenge-Vassurance-first-pass-v2-local-context-D2af7abb99810",
+  "package_id": "P-C-AUTH-002-challenge",
+  "input_digest": "2af7abb99810ff22058b756caf06ea4afb006ef7fbadaaf7bd0fe09b680d4132",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The FAA's AI Safety Assurance Roadmap (Version I, p. 10) explicitly defines 'Learned AI Implementation' as static in the operating environment and 'subjected to design time safety assurance processes prior to its use in an operational context.' It further specifies that while in-service operational data may be recorded to retrain and deploy an updated version, 'each new version is subjected to safety assurance.' The claim is strictly scoped to the roadmap's conceptual discussion of static learned AI rather than a binding means of compliance or certification recipe, and all artifact uses preserve this boundary.",
+  "evidence_locators": [
+    "S-AUTH-001 (Roadmap for Artificial Intelligence Safety Assurance, Version I, Section 'Differentiate Between Learned AI and Learning AI', p. 10 of 31 / PDF p. 11)"
+  ],
+  "limitations": [
+    "Review is bounded to FAA Roadmap Version I (July 2024); it does not evaluate subsequent FAA issue papers, draft Advisory Circulars, or international harmonization documents specifying detailed update-acceptance mechanisms."
+  ],
+  "resolves": []
+}

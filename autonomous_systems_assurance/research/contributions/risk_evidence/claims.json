@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "C-RISK-001",
+      "text": "FAA's conventional transport-airplane system-safety guidance frames acceptability as an inverse relationship between the severity and probability of each failure condition, supported by a safety assessment, qualitative analysis, tests and, where justified, quantitative analysis.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Historical FAA AC 25.1309-1A guidance for transport-category airplane systems; not a direct learned-model acceptance method",
+      "evidence": [
+        {"region_id": "S-RISK-001-R1", "relation": "supports"},
+        {"region_id": "S-RISK-001-R2", "relation": "supports"}
+      ],
+      "challenge": "Verify the current certification basis and current FAA guidance for the particular aircraft/project. Do not treat conventional component failure-rate arithmetic as an estimate of a learned perception model's encounter-conditioned error probability.",
+      "review_records": []
+    },
+    {
+      "id": "C-RISK-002",
+      "text": "The FAA AI roadmap presents DAL assignment through system safety assessment as a starting point for scaling assurance rigor, while stating that existing software and complex-hardware guidance is not adequate for learned AI implementations.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "FAA Version I roadmap, 2024; direction-setting material rather than binding means of compliance",
+      "evidence": [
+        {"region_id": "S-RISK-002-R1", "relation": "supports"},
+        {"region_id": "S-RISK-002-R2", "relation": "supports"}
+      ],
+      "challenge": "Do not turn the roadmap's incremental examples into a public approval boundary. Check current FAA guidance and the project-specific certification basis before making any claim about what DAL or learned function an FAA program would accept.",
+      "review_records": []
+    },
+    {
+      "id": "C-RISK-003",
+      "text": "EASA's proposed DS.AI framework defines authority levels and a scenario-based severity/likelihood risk assessment, but its stated scope excludes AI whose risk directly contributes to fatalities or multiple life-threatening injuries and certain online-learning cases; the proposal itself treats H1 fatality potential as unacceptable at this time.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "EASA NPA 2025-07(B), proposed DS.AI material as published; not final guidance or an approval",
+      "evidence": [
+        {"region_id": "S-RISK-003-R1", "relation": "supports"},
+        {"region_id": "S-RISK-003-R2", "relation": "supports"}
+      ],
+      "challenge": "Check the final EASA decision or successor material before publication. Keep the scope statement exact: it limits this proposed DS.AI framework and does not show that EASA universally forbids every aviation AI function connected to a fatal hazard.",
+      "review_records": []
+    },
+    {
+      "id": "C-RISK-004",
+      "text": "The UK CAA says DAA risk-ratio metrics are relative to chosen NMAC/DWC definitions and encounter sets, and acknowledges that averaging can hide deficiencies in particular encounters; a single aggregate performance score therefore cannot stand alone as the assurance argument.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "UK CAA CAP3127 consultation response and policy-concept test phase; DAA metrics, not a universal learned-system criterion",
+      "evidence": [
+        {"region_id": "S-RISK-004-R1", "relation": "supports"},
+        {"region_id": "S-RISK-004-R2", "relation": "supports"}
+      ],
+      "challenge": "A scenario-level ledger is still only as good as the encounter generator, sensor/aircraft model, event definitions, test coverage and operational restrictions. Obtain current CAP3015 and project-specific approval material before making a statement about UK acceptance criteria.",
+      "review_records": []
+    },
+    {
+      "id": "C-RISK-005",
+      "text": "AMLAS uses ROC curves, confusion matrices and a selected operating threshold to illustrate model-evaluation trade-offs; it says the performance judgment depends on the context of use and potentially non-uniform costs of different errors.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "AMLAS clinical-referral example; explanatory evaluation pattern only, not autonomous-road or aviation evidence",
+      "evidence": [
+        {"region_id": "S-RISK-005-R1", "relation": "supports"}
+      ],
+      "challenge": "Do not reuse the medical figure as evidence that a vehicle/aircraft model is safe or that beating a human benchmark is enough. For a real autonomous-system claim, specify the hazard-cost model, operating threshold, representative data, calibration/shift results, downstream control response and independent evidence.",
+      "review_records": []
+    },
+    {
+      "id": "C-RISK-006",
+      "text": "EASA's proposed DS.AI classification gives Levels 1A–3A defined forms of end-user authority and responsibility, while Level 3B is explicitly reserved with no authority or responsibility assignment; it should not be presented as an approved no-human-involvement operating category.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "EASA NPA 2025-07(B) proposed DS.AI Table 1; not final EASA guidance or a general autonomy taxonomy",
+      "evidence": [{"region_id": "S-RISK-003-R3", "relation": "supports"}],
+      "challenge": "Do not equate EASA's proposed AI-level labels with SAE road-automation levels, a certification prohibition, or a statement about every possible human role. Check successor material before publication.",
+      "review_records": []
+    },
+    {
+      "id": "C-RISK-007",
+      "text": "EASA's proposed DS.AI risk table uses per-operational-hour likelihood bands from frequent (>1E-3) through extremely improbable (≤1E-9); it classifies every H1 potential-fatality scenario as unacceptable, and maps only non-unacceptable aggregated cases to proposed assurance/tool qualification levels. The proposal says quantitative tools supplement rather than replace qualitative engineering and operational judgement.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "EASA NPA 2025-07(B) proposed DS.AI risk assessment and proposed AL/TQL allocation; not an approved risk threshold for a real aviation system",
+      "evidence": [{"region_id": "S-RISK-003-R2", "relation": "supports"}],
+      "challenge": "Retain the unit (per operational hour), scenario aggregation, H1 scope limitation and proposed status. Do not turn the table into a loss-of-life-per-mile metric, a global industry threshold, or proof that an acceptable-risk cell establishes a system safety case.",
+      "review_records": []
+    }
+  ]
+}

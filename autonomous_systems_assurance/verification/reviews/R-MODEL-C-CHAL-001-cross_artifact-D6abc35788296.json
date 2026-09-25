@@ -1,0 +1,24 @@
+{
+  "id": "R-MODEL-C-CHAL-001-cross_artifact-D6abc35788296",
+  "package_id": "P-C-CHAL-001-cross_artifact",
+  "input_digest": "6abc3578829635c16a28ef5d5d501bb8d29ee6a0beed6fb792712fe8ebda79bb",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts consistently preserve the claim's scope and limitations. They accurately cite the MAA notice as case-specific military guidance, explicitly warn against treating it as a civil approval pathway, and correctly distinguish the mandatory MCRI process from the recommendation to use fixed supervised models. The artifacts also respect the limitation that completed MCRIs are applicant-specific and non-public.",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "video/script.md",
+    "assurance/method_crosswalk.json",
+    "video/nextgen_structure/narration_evidence_map.md"
+  ],
+  "limitations": [
+    "Underlying completed MCRIs and their specific architectural mitigations remain applicant-specific and non-public, preventing inspection of a finalized military safety case."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-CHAL-006-cross_artifact-Db442d575e85c",
+  "package_id": "P-C-CHAL-006-cross_artifact",
+  "input_digest": "b442d575e85c795717edf28dc11e439d9fe73e94baef0d3d6748f13ce520a015",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "All artifacts consistently use the claim within its stated scope, accurately describing AMLAS as a six-stage ML-component methodology that focuses on offline supervised learning and explicitly requires complementary system and domain assurance. No artifact presents AMLAS as a complete vehicle/aircraft approval or regulatory certification.",
+  "evidence_locators": [
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "video/script.md",
+    "assurance/method_crosswalk.json",
+    "video/nextgen_structure/script_outline.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

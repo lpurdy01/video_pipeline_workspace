@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-STD-004-challenge-D5b8bc461c31b",
+  "package_id": "P-C-STD-004-challenge",
+  "input_digest": "5b8bc461c31bd5560f778b60111d3ba4938f2bc76dac9bc1d49ce17235115bea",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-23",
+  "rationale": "The claim accurately summarizes the content described in the `inspection_scope` of the provided NHTSA interpretation. However, the source's `limitations` explicitly state that a full snapshot of the original HTML was unavailable to the project's snapshot tool and needs renewed capture. Project internal records (e.g., `research/integration_round4.md`, `research/contributions/standards_authority/findings.md`) consistently flag this as a 'context/retrieval blocker' and advise against 'release-grade' use until a full snapshot is obtained. This technical limitation in evidence retention means the evidence is insufficient for full project verification, leading to an 'uncertain' verdict.",
+  "evidence_locators": [
+    "S-STD-004: inspection_scope",
+    "S-STD-004: limitations",
+    "research/integration_round4.md: NHTSA oversight boundary row",
+    "research/contributions/standards_authority/findings.md: Retrieval and source-quality record table, NHTSA 2025 interpretation row"
+  ],
+  "limitations": [
+    "A full, retained snapshot of the NHTSA interpretation (S-STD-004) was not successfully captured by the project's automated tools, despite a human browser inspection."
+  ],
+  "resolves": []
+}

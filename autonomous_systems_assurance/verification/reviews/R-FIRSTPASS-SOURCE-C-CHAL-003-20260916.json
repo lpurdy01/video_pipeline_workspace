@@ -1,0 +1,22 @@
+{
+  "id": "R-FIRSTPASS-SOURCE-C-CHAL-003-20260916",
+  "package_id": "P-C-CHAL-003-source_support",
+  "input_digest": "560e010b523ee1c303f1f86e860e77bdfe7781ff943ef8ef26c7cf7bfd0d1c9d",
+  "task": "source_support",
+  "reviewer_id": "first-pass-source-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-source-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The inspected NPA includes sections and objectives for operational domain, risk assessment, system development assurance, AI/ML constituent learning assurance, configuration management/lifecycle information, and in-service monitoring and recording. Calling it a substantial candidate lifecycle is a bounded project comparison, while the claim explicitly retains its proposed status.",
+  "evidence_locators": [
+    "S-CHAL-002-R2 \u2014 PDF pp. 24\u201326, DS.AI.150 and AMC1/AMC2 AI.150",
+    "S-CHAL-002-R3 \u2014 PDF pp. 31\u201333, DS.AI.160 and AMC1 AI.160(a)"
+  ],
+  "limitations": [
+    "NPA 2025-07(B) is proposed material, not final AMC/GM or an approval of an application.",
+    "The source's exclusions and uninspected operational detail still require comparison before treating it as a worked-case lifecycle."
+  ],
+  "resolves": []
+}

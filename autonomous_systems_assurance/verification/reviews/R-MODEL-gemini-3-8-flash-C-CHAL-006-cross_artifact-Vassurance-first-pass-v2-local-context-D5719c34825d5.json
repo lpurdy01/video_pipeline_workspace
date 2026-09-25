@@ -1,0 +1,27 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-006-cross_artifact-Vassurance-first-pass-v2-local-context-D5719c34825d5",
+  "package_id": "P-C-CHAL-006-cross_artifact",
+  "input_digest": "5719c34825d541b3fd7a4a3185dddda15267ce4a6fb64dbade291856c6821fec",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Every supplied artifact use accurately preserves the claim's scope, methodology stages, and explicit limitations. The artifacts consistently present AMLAS as a public six-stage research methodology limited to the ML component (primarily offline supervised learning), emphasize that it requires complementary system and domain assurance, and never represent it as a regulator-issued means of compliance or whole-vehicle/aircraft approval.",
+  "evidence_locators": [
+    "assurance/architecture.md: character 3505",
+    "assurance/amlas_maa_easa_crosswalk.md: character 604",
+    "assurance/method_crosswalk.json: M-AMLAS-001",
+    "research/contributions/assurance_challenge/findings.md: character 479",
+    "research/contributions/standards_authority/findings.md: character 345, 3146",
+    "resource_composition/whitepaper.md: characters 1306, 21325, 32317, 55938, 58868",
+    "video/script.md: characters 12526, 16426",
+    "video/nextgen_structure/treatment.md: characters 2206, 7190, 14181"
+  ],
+  "limitations": [
+    "Review is bounded by the excerpted text of the supplied artifacts in the packet; unsupplied portions of long artifacts were not evaluated."
+  ],
+  "resolves": []
+}

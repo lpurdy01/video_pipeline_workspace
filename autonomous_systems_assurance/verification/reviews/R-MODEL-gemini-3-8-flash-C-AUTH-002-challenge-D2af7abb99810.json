@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-AUTH-002-challenge-D2af7abb99810",
+  "package_id": "P-C-AUTH-002-challenge",
+  "input_digest": "2af7abb99810ff22058b756caf06ea4afb006ef7fbadaaf7bd0fe09b680d4132",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The claim specifically attributes this treatment to the FAA's roadmap rather than a binding regulation or full means of compliance, which aligns precisely with its stated scope. Primary text in S-AUTH-001 (p. 10) explicitly defines learned AI implementations as static/offline-trained and subjected to design-time safety assurance, stating that when in-service data is used to deploy an updated version, 'each new version is subjected to safety assurance' and constrained by that need. No conflicting FAA text or defeating interpretation within this scope was identified.",
+  "evidence_locators": [
+    "S-AUTH-001, printed p. 10 / PDF physical p. 11 (Section 'Differentiate Between Learned AI and Learning AI')"
+  ],
+  "limitations": [
+    "Review is bounded by FAA Roadmap Version I (July 2024); it does not evaluate subsequent project-specific issue papers, rulemaking, or binding means of compliance that may specify detailed technical criteria for update assurance."
+  ],
+  "resolves": []
+}

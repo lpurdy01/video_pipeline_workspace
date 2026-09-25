@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-AIR2-009-cross_artifact-D538cddaae15b",
+  "package_id": "P-C-AIR2-009-cross_artifact",
+  "input_digest": "538cddaae15b33278d6ca3c233ec8bf0c6ad87a7b52fe91d55f9ad5f510cd862",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts accurately reflect the claim's reliance on the EASA landing-page summary and explicitly preserve the limitation that the full PDF, although subsequently downloaded, has not yet been inspected or reviewed for detailed requirements.",
+  "evidence_locators": [
+    "research/contributions/air_round2/findings.md (Findings section)",
+    "research/contributions/air_round2/findings.md (Inspection limits and next retrieval tasks)",
+    "research/retrieval_status.md (Requires human attention table)"
+  ],
+  "limitations": [
+    "Extract text and page ranges from the retrieved EASA Issue 2 PDF and verify qualifications before making detailed requirements claims."
+  ],
+  "resolves": []
+}

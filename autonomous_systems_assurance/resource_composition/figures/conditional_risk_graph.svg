@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="An evidence graph that keeps performance measurements, uncertainty, lifecycle reliability, exposure and recovery evidence distinct before a bounded-authority decision.">
+  <style>
+    .f9title{font-family:Arial,sans-serif;font-size:30px;font-weight:700;fill:#103452}.f9sub{font:16px Arial,sans-serif;fill:#4d6474}.f9head{font-family:Arial,sans-serif;font-size:18px;font-weight:700;fill:#103452}.f9text{font:15px Arial,sans-serif;fill:#183142}.f9small{font:13px Arial,sans-serif;fill:#465e70}.f9card{fill:#fffefa;stroke:#8aa4b8;stroke-width:2}.f9blue{fill:#e5f2fb;stroke:#2879ad;stroke-width:2}.f9gold{fill:#fff3d8;stroke:#c68519;stroke-width:2}.f9green{fill:#e7f4ed;stroke:#28734d;stroke-width:3}.f9risk{fill:#f2eaf8;stroke:#8057a3;stroke-width:3}.f9line{stroke:#526c7d;stroke-width:3;fill:none}.f9dash{stroke:#c68519;stroke-width:3;stroke-dasharray:8 6;fill:none}
+  </style>
+  <defs><marker id="f9arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#526c7d"/></marker><marker id="f9amber" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#c68519"/></marker></defs>
+  <rect width="1200" height="720" fill="#f7fafc"/>
+  <text x="55" y="56" class="f9title">A safety argument joins several kinds of evidence; it does not average them into a score</text>
+  <text x="55" y="84" class="f9sub">Each branch carries conditions that can fail. A high model score is one observation, not the final decision.</text>
+
+  <rect x="65" y="135" width="245" height="145" rx="16" class="f9gold"/>
+  <text x="92" y="171" class="f9head">1. Hazard and exposure</text>
+  <text x="92" y="200" class="f9text">What harm can occur?</text><text x="92" y="222" class="f9text">Which encounters are in scope?</text><text x="92" y="249" class="f9small">severity • ODD • base rate</text>
+
+  <rect x="65" y="365" width="245" height="145" rx="16" class="f9blue"/>
+  <text x="92" y="401" class="f9head">2. Measured performance</text>
+  <text x="92" y="430" class="f9text">Which errors occur at this</text><text x="92" y="452" class="f9text">threshold and scenario slice?</text><text x="92" y="479" class="f9small">misses • false alarms • delay</text>
+
+  <rect x="890" y="135" width="245" height="145" rx="16" class="f9blue"/>
+  <text x="917" y="171" class="f9head">3. Uncertainty and shift</text>
+  <text x="917" y="200" class="f9text">When does confidence match</text><text x="917" y="222" class="f9text">outcomes, and when might it not?</text><text x="917" y="249" class="f9small">calibration • sensing limits</text>
+
+  <rect x="890" y="365" width="245" height="145" rx="16" class="f9gold"/>
+  <text x="917" y="401" class="f9head">4. System response</text>
+  <text x="917" y="430" class="f9text">Can monitoring and control</text><text x="917" y="452" class="f9text">still avoid harm in time?</text><text x="917" y="479" class="f9small">margin • recovery • constraints</text>
+
+  <path d="M310 207 C380 207 390 275 458 305" class="f9line" marker-end="url(#f9arrow)"/>
+  <path d="M310 438 C380 438 390 383 458 356" class="f9line" marker-end="url(#f9arrow)"/>
+  <path d="M890 207 C820 207 810 275 742 305" class="f9line" marker-end="url(#f9arrow)"/>
+  <path d="M890 438 C820 438 810 383 742 356" class="f9line" marker-end="url(#f9arrow)"/>
+
+  <path d="M600 230 L755 335 L600 440 L445 335 Z" class="f9risk"/>
+  <text x="512" y="318" class="f9head">Conditional risk argument</text>
+  <text x="490" y="344" class="f9text">What residual risk is supported</text><text x="501" y="366" class="f9text">for this release and operation?</text><text x="521" y="394" class="f9small">assumptions remain visible</text>
+
+  <path d="M600 440 V558" class="f9line" marker-end="url(#f9arrow)"/>
+  <text x="461" y="540" class="f9small">exact release identity and change control bind every branch</text>
+  <rect x="405" y="570" width="390" height="88" rx="16" class="f9green"/>
+  <text x="438" y="605" class="f9head">Bounded authority decision</text>
+  <text x="438" y="632" class="f9text">allow only within stated limits • restrict • gather evidence • block release</text>
+
+  <path d="M330 600 C345 560 376 542 405 540" class="f9dash" marker-end="url(#f9amber)"/>
+  <text x="80" y="568" class="f9small">A changed model, sensor, data set or ODD</text><text x="80" y="586" class="f9small">reopens the linked branches.</text>
+  <line x1="55" y1="684" x2="1145" y2="684" stroke="#526c7d" stroke-width="2"/>
+  <text x="55" y="712" class="f9small">Project proposal informed by FAA system-safety context, UK CAA DAA metric limits and AMLAS evaluation examples. It is not a numerical acceptance rule.</text>
+</svg>

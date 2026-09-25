@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-001-challenge-D76c8c93286fb",
+  "package_id": "P-C-CHAL-001-challenge",
+  "input_digest": "76c8c93286fb31ec57e1f5bcacfd9c924be78fed7154350aac973e96ef359a6c",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The claim strictly adheres to the text, normative weight, and jurisdiction of MAA/RN/2025/04. Paragraph 6 specifies that for certified air systems, an applicant 'should raise a Military Certification Review Item (MCRI) for MAA agreement', and paragraph 7 explicitly 'recommended that early applications of ML techniques for Air System PE use... supervised learning... to generate models that then remain fixed for system integration and use within a defined operational design domain'. The claim accurately characterizes these provisions as recommendations and applicant-specific guidance rather than mandatory requirements or civil certifications.",
+  "evidence_locators": [
+    "MAA/RN/2025/04, PDF p. 1, paras 2\u20133",
+    "MAA/RN/2025/04, PDF p. 2, paras 6\u20137"
+  ],
+  "limitations": [
+    "Underlying completed MCRIs and specific MAA certification agreements are proprietary or applicant-specific and not publicly inspectable in this packet.",
+    "The inspection is bounded to MAA/RN/2025/04 Version 5.0 (published 10 October 2025) and does not inspect external Manual of Military Air System Certification (MMAC) baseline clauses."
+  ],
+  "resolves": []
+}

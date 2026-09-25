@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-EVID-006-source_support-D22ef7fc18f37",
+  "package_id": "P-C-EVID-006-source_support",
+  "input_digest": "22ef7fc18f375925dd0ae4210df08e068aaa75fa7d055b4b78f124d54bb74aab",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided text from Adebayo et al. explicitly states that some evaluated saliency methods are independent of both model parameters and data labeling, and concludes that relying solely on visual assessment can be misleading. This directly supports the claim's text and its scoped boundary.",
+  "evidence_locators": [
+    "PDF p. 1, abstract",
+    "PDF p. 2, contribution list"
+  ],
+  "limitations": [
+    "The findings apply to the specific saliency methods and image classification tasks tested, and do not universally invalidate all interpretability techniques or establish a safety acceptance criterion."
+  ],
+  "resolves": []
+}

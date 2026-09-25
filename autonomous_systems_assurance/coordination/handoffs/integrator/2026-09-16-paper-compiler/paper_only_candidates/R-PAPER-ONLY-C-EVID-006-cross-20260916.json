@@ -1,0 +1,23 @@
+{
+  "id": "R-PAPER-ONLY-C-EVID-006-cross-20260916",
+  "package_id": "P-C-EVID-006-cross_artifact",
+  "input_digest": "e5da1031bec50b7f7a8a5846bd2bfd95af22d8d56b9c0d3be225b2dc62f82708",
+  "task": "cross_artifact",
+  "reviewer_id": "paper-compiler-review-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-only-review-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The evidence-method table, paper prose, and source card use saliency checks as a reason to test an explanation's dependence on model/data structure. They do not claim to solve the black box, make heat maps proof of safety, or reject every interpretability tool. The paper's requirement for a specific failure mechanism and counterexample is consistent with the claim's limitation.",
+  "evidence_locators": [
+    "research/contributions/assurance_evidence/findings.md:14 and minimum-evidence item 8",
+    "resource_composition/whitepaper.md:182-186, interpretability/coverage limits",
+    "resource_composition/review_prototype/sources.html, C-EVID-006 source-card scope"
+  ],
+  "limitations": [
+    "The source card remains a static, non-manifested derivative.",
+    "This cross-artifact review does not establish the scientific validity of a specific explanation method."
+  ],
+  "resolves": []
+}

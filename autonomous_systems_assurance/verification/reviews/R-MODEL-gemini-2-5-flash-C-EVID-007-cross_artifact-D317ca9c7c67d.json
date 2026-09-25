@@ -1,0 +1,27 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-007-cross_artifact-D317ca9c7c67d",
+  "package_id": "P-C-EVID-007-cross_artifact",
+  "input_digest": "317ca9c7c67df1b407776bc2caf20e5967f7181ebd8949832506b2e3a0db7e4a",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Every supplied artifact use of claim C-EVID-007 consistently preserves its scope and limitations. The claim states that the neuron-coverage study reports a small positive association but 'explicitly does not establish causation or a consistent test-adequacy indicator.' All artifact uses, including the `findings.md` table, video scripts, figure instructions, and whitepaper text, either directly quote or accurately paraphrase this limitation, emphasizing that neuron coverage is a 'limited empirical association' or 'does not establish it as a causal safety measure.' No artifact presents neuron coverage as definitive safety evidence or omits the crucial qualifications.",
+  "evidence_locators": [
+    "assurance/assurance_case.json (EA-ROAD-003, O-004)",
+    "research/contributions/assurance_evidence/findings.md (Test-adequacy metrics row)",
+    "resource_composition/figures.md (F-007 row)",
+    "video/script.md (Section 'Existing methods: structure, not a finished answer')",
+    "video/nextgen_structure/narration_evidence_map.md (Interpretability row)",
+    "video/nextgen_structure/script_outline.md (Section 'What probability can and cannot say')",
+    "video/nextgen_structure/treatment.md (Section 'Risk evidence is conditional')",
+    "video/nextgen_structure/visual_inventory.md (VNG-06 row)",
+    "resource_composition/whitepaper_outline.md (Section 'Inspection and simplification')",
+    "resource_composition/whitepaper.md (Section 'The constructive move: replace the missing link with an evidence bridge')"
+  ],
+  "limitations": [],
+  "resolves": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-TRAIN-003-source_support-Vassurance-first-pass-v2-local-context-D35a92a26e893",
+  "package_id": "P-C-TRAIN-003-source_support",
+  "input_digest": "35a92a26e893ce76d42e7e773d3fb03d8929324eaa4e44d020a1098aed355d7d",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "AMLAS v1.1 directly supports each element of the claim: Section 3 / Activity 7 Note 21 (PDF p. 26) specifies that verification data is gathered to test models to breaking point by focusing on realistic ways the model may fail in challenging conditions; Stage 5 / Activity 13 (PDF pp. 40\u201341) requires verification activities to be sufficiently independent from development activities and evaluates whether model performance and robustness are maintained in the presence of adverse conditions or signal perturbations on data not present during development.",
+  "evidence_locators": [
+    "S-CHAL-004-R5 (AMLAS v1.1, PDF p. 26, Section 3.2, Activity 7 / Note 21)",
+    "S-CHAL-004-R7 (AMLAS v1.1, PDF pp. 40\u201341, Stage 5 Model Verification, Activity 13)"
+  ],
+  "limitations": [
+    "AMLAS v1.1 is research guidance for offline supervised ML assurance and does not constitute regulatory certification or prove generalization to all operational encounters."
+  ],
+  "resolves": []
+}

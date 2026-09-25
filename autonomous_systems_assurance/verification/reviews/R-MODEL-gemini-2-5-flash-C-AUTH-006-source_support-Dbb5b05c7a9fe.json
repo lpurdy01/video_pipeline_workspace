@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-006-source_support-Dbb5b05c7a9fe",
+  "package_id": "P-C-AUTH-006-source_support",
+  "input_digest": "bb5b05c7a9fe9f8e5b3be8da135b9bc8b7616c843dea73602c28d834424b4e5f",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim states that ISO/PAS 8800:2024 is a published road-vehicle specification whose public abstract explicitly includes the trained AI model and describes properties for constructing a safety-assurance claim, but its public page does not establish aviation applicability or a vehicle's conformance. The evidence supports each component of this claim:\n- **Published road-vehicle specification**: Source S-AUTH-004's title, jurisdiction, and R1 excerpt confirm it is 'ISO/PAS 8800:2024 \u2014 Road Vehicles \u2014 Safety and Artificial Intelligence' and 'Published (Edition 1, 2024)'.\n- **Public abstract explicitly includes the trained AI model**: R2 excerpt from the 'ISO public abstract, examples' states, 'Examples of AI elements within the vehicle include the trained AI model'.\n- **Describes properties for constructing a safety-assurance claim**: R3 excerpt from the 'ISO public abstract, safety-case statement' mentions 'construct a convincing safety assurance claim for the absence of unreasonable risk'.\n- **Public page does not establish aviation applicability**: Source S-AUTH-004's limitations explicitly state, 'ISO/PAS 8800 is a published Publicly Available Specification for a stated road-vehicle scope, not an aviation regulation'. The inspection scope is limited to the 'ISO's public product page, public abstract'.\n- **Public page does not establish a vehicle's conformance**: Source S-AUTH-004's limitations further state, 'The licensed text, clauses, conformity mechanism and any real operator's conformance evidence remain uninspected.' This aligns with the claim that the public page does not establish a vehicle's conformance.",
+  "evidence_locators": [
+    "S-AUTH-004-R1",
+    "S-AUTH-004-R2",
+    "S-AUTH-004-R3",
+    "S-AUTH-004: ISO public page, jurisdiction, inspection_scope, limitations"
+  ],
+  "limitations": [],
+  "resolves": []
+}

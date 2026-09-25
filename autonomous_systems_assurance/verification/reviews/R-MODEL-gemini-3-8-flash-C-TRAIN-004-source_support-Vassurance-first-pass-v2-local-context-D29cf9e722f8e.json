@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-TRAIN-004-source_support-Vassurance-first-pass-v2-local-context-D29cf9e722f8e",
+  "package_id": "P-C-TRAIN-004-source_support",
+  "input_digest": "29cf9e722f8e6740b6d235ef0b7458b8503113bb6c0f506a7a51fc963101d766",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The source context from Goodfellow, Bengio, and Courville (2016), Chapter 5, Section 5.2 and Figure 5.3 explicitly states that at low capacity training error and generalization error are both high ('underfitting regime'), and that as capacity becomes too large above optimal capacity, the gap between training and generalization error increases into the 'overfitting regime'. The claim accurately reflects this conceptual relationship within its stated general machine-learning textbook scope.",
+  "evidence_locators": [
+    "Official HTML Chapter 5, Section 5.2 Capacity, Overfitting and Underfitting, Figure 5.3 (book printed pp. 112\u2013113)"
+  ],
+  "limitations": [
+    "Source provides general machine learning background theory and schematics; it does not set safety margins or establish that capacity alone explains real-world vision failures."
+  ],
+  "resolves": []
+}

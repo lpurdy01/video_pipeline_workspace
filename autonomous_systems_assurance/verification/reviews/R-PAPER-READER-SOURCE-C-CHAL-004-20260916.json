@@ -1,0 +1,21 @@
+{
+  "id": "R-PAPER-READER-SOURCE-C-CHAL-004-20260916",
+  "package_id": "P-C-CHAL-004-source_support",
+  "input_digest": "dffce65490919eca560dd12dd692ebdd28927b5865b794e59b8d0b3b7da69720",
+  "task": "source_support",
+  "reviewer_id": "paper-reader-source-support-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "source-support-digest-pinned-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The full DS.AI scope explicitly excludes an AI-based system whose risk directly contributes to fatalities or multiple life-threatening injuries and certain online-learning systems. The conclusion that it cannot be presented as the complete path for this deliberately demanding hypothetical case is a bounded project inference; it does not claim that every DAA function necessarily falls in the exclusion.",
+  "evidence_locators": [
+    "S-CHAL-002-R1 \u2014 PDF p. 4, DS.AI.010 Scope"
+  ],
+  "limitations": [
+    "The NPA remains proposed material.",
+    "A function-level failure-condition allocation is still required before classifying a concrete DAA function under the exclusion."
+  ],
+  "resolves": []
+}

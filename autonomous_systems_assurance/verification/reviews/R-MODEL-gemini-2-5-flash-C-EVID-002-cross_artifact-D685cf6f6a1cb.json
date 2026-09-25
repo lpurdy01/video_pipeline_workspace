@@ -1,0 +1,26 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-002-cross_artifact-D685cf6f6a1cb",
+  "package_id": "P-C-EVID-002-cross_artifact",
+  "input_digest": "685cf6f6a1cb8705374862f0d658c1806d5b5aa0c7f082d60d0af8f2cb51fdb0",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of claim C-EVID-002 consistently preserves its scope and limitations. The claim states that combinatorial input-space coverage can expose missing combinations and quantify dataset coverage, but 'does not by itself establish learned-model performance or a probability of safe operation.' All artifacts either directly quote this distinction or explicitly frame combinatorial coverage within its stated limits, acknowledging that it depends on analyst choices (factors, bins, interaction strength) and does not equate to overall model performance or safety probability. No artifact presents an inference as authority evidence or omits necessary qualifications.",
+  "evidence_locators": [
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_evidence/findings.md",
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

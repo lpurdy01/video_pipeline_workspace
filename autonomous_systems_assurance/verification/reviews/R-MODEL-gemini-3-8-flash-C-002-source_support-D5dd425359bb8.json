@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-002-source_support-D5dd425359bb8",
+  "package_id": "P-C-002-source_support",
+  "input_digest": "5dd425359bb8b0b0c90cc5ded229cb0c67664b37130df336ae7e786b468ab07a",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-25",
+  "rationale": "The short excerpt ('Receiving a TSO authorization is not an approval to install and use the article in the aircraft') directly matches the claim text and US civil aviation scope. However, full local context is absent from the review packet ('[no full local context captured]', context_status: 'short_excerpt_only'). Per the review instructions, uncertain is required when full context is absent or inadequate.",
+  "evidence_locators": [
+    "https://www.faa.gov/aircraft/air_cert/design_approvals/tso",
+    "TSO authorization versus installation approval"
+  ],
+  "limitations": [
+    "Full local context was not captured for source S-002 (short excerpt only); complete page text must be inspected to ensure no surrounding qualifications or exceptions apply."
+  ],
+  "resolves": []
+}

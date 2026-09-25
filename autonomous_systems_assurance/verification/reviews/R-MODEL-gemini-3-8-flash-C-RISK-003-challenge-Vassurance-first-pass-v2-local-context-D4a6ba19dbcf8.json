@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-RISK-003-challenge-Vassurance-first-pass-v2-local-context-D4a6ba19dbcf8",
+  "package_id": "P-C-RISK-003-challenge",
+  "input_digest": "4a6ba19dbcf85dda7f82abbadafd8ca82551ec271139c06011e782fb13d5befe",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The claim strictly characterizes EASA's proposed DS.AI framework within NPA 2025-07(B) rather than asserting final regulatory policy or an industry-wide ban. DS.AI.010(d)(1)\u2013(2) explicitly excludes AI systems directly contributing to fatalities/multiple life-threatening injuries and online learning with failure contributions beyond 'no safety effect', while DS.AI.130(b)(1)(v) and Table 2 classify H1 fatality potential as an unacceptable risk across all likelihood categories at this time. All manuscript and findings uses preserve this scoped interpretation.",
+  "evidence_locators": [
+    "EASA NPA 2025-07 (B), proposed DS.AI.010(d), PDF p. 4",
+    "EASA NPA 2025-07 (B), proposed DS.AI.130(b)(1)(v) and Table 2, PDF pp. 17-18"
+  ],
+  "limitations": [
+    "NPA 2025-07(B) represents proposed specifications under public consultation, not a finalized EASA Decision or adopted certification basis; subsequent regulatory revisions must be monitored prior to formal publication."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-008-source_support-D062ccaa935ba",
+  "package_id": "P-C-008-source_support",
+  "input_digest": "062ccaa935ba89e7c737d81958547bb3af7098c168b3e6e6f85b38e0c545489e",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The source metadata and artifact text confirm the existence of an EASA landing page for a 'Proposed Issue 3' AI concept paper dated June 3, 2026. The claim accurately reflects this limited scope without asserting the contents of the unretrieved PDF.",
+  "evidence_locators": [
+    "S-009 metadata",
+    "research/initial_findings.md"
+  ],
+  "limitations": [
+    "PDF contents not reviewed; technical objectives of Issue 3 cannot be claimed from this source."
+  ],
+  "resolves": []
+}

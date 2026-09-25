@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-002-challenge-Vassurance-first-pass-v2-local-context-D22881357203f",
+  "package_id": "P-C-CHAL-002-challenge",
+  "input_digest": "22881357203f6088f05b1bfb09fcac322a94d5fcfa4b4decc330397985dd84ed",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The claim is strictly scoped to what the UK MAA regulatory notice (MAA/RN/2025/04) states regarding assurance deficits, non-compliances, and architectural mitigation. The challenge points out that this is an authority's guidance judgment rather than proof that no other jurisdiction has a prescriptive method; however, the claim text makes no assertion of universal or civil exclusivity, and its artifact uses explicitly restrict its relevance to applicant-specific UK military aviation guidance.",
+  "evidence_locators": [
+    "S-CHAL-001, PDF pp. 3\u20134, paragraphs 11, 13\u201314"
+  ],
+  "limitations": [
+    "Search is bounded to MAA/RN/2025/04 and does not evaluate non-public applicant-specific MCRI/ATM-ARI submissions or civil authority approval records."
+  ],
+  "resolves": []
+}

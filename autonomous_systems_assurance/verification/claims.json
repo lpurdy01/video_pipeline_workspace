@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "C-001",
+      "text": "The inspected GA-ASI page forecasts TSO authorization in 2025; it does not establish issuance or exclusivity.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "vendor, US equipment",
+      "evidence": [
+        {
+          "region_id": "S-001-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Obtain actual authorization holder/model/date and current configuration; no inference of absence from search failure.",
+      "review_records": []
+    },
+    {
+      "id": "C-002",
+      "text": "A TSO authorization is distinct from approval to install and use equipment on an aircraft.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "US civil aviation",
+      "evidence": [
+        {
+          "region_id": "S-002-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Do not conflate equipment, installation, aircraft or operational approvals.",
+      "review_records": []
+    },
+    {
+      "id": "C-003",
+      "text": "A UK government publication reports Protector received a Military Type Certificate in 2025.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "UK military aircraft",
+      "evidence": [
+        {
+          "region_id": "S-003-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Underlying certificate/scope still needed for narrower technical claims.",
+      "review_records": []
+    },
+    {
+      "id": "C-004",
+      "text": "FAA announced Zipline BVLOS delivery authorization without visual observers in 2023.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "US Salt Lake City operations, historical",
+      "evidence": [
+        {
+          "region_id": "S-004-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Read approval letters before claiming exact onboard architecture or current geographic scope.",
+      "review_records": []
+    },
+    {
+      "id": "C-005",
+      "text": "On September 4, 2026, NHTSA announced an Audit Query into Cybercab FMVSS self-certification.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "US federal compliance, dated event",
+      "evidence": [
+        {
+          "region_id": "S-006-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Separate inquiry from final finding, state operation permissions and model safety assessment.",
+      "review_records": []
+    },
+    {
+      "id": "C-006",
+      "text": "California distinguishes testing with a safety driver, driverless testing and deployment permits.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "California",
+      "evidence": [
+        {
+          "region_id": "S-007-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "No inference about Texas law or any company's current permit without its record.",
+      "review_records": []
+    },
+    {
+      "id": "C-007",
+      "text": "FAA's 2024 roadmap distinguishes learned implementations from systems learning during operation, with updated learned versions subject to assurance.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "FAA roadmap; not authorization",
+      "evidence": [
+        {
+          "region_id": "S-008-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Read complete technical sections and verify current guidance before clause-level interpretation.",
+      "review_records": []
+    },
+    {
+      "id": "C-008",
+      "text": "EASA published a Proposed Issue 3 AI concept-paper page dated June 3, 2026.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "EASA proposed guidance",
+      "evidence": [
+        {
+          "region_id": "S-009-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Landing page only; retrieve PDF before using its technical objectives.",
+      "review_records": []
+    },
+    {
+      "id": "C-009",
+      "text": "A runtime assurance design depends on timely monitoring and a fallback able to recover under its assumptions.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Conditional RTA research",
+      "evidence": [
+        {
+          "region_id": "S-010-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Formal model guarantee is not proof that sensors, dynamics and implementation meet assumptions.",
+      "review_records": []
+    },
+    {
+      "id": "C-010",
+      "text": "Tesla publicly describes camera-derived representations of road layout and 3D objects used for planning.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Undated public technical overview",
+      "evidence": [
+        {
+          "region_id": "S-011-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Not a current Cybercab model specification; internal representations are not automatically causal explanations.",
+      "review_records": []
+    },
+    {
+      "id": "C-011",
+      "text": "Sparse system identification can recover compact governing models under structural and data assumptions.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "System identification",
+      "evidence": [
+        {
+          "region_id": "S-012-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Do not generalize to arbitrary large perception networks or claim simplification guarantees safety.",
+      "review_records": []
+    },
+    {
+      "id": "C-012",
+      "text": "A 2026 preprint studies representation analysis and runtime monitoring for a vision-based landing model.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Research case study",
+      "evidence": [
+        {
+          "region_id": "S-013-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Full methods/limitations audit and reproduction pending; no certification established.",
+      "review_records": []
+    },
+    {
+      "id": "C-013",
+      "text": "ISO/PAS 8800:2024 addresses AI-related vehicle safety risks in its published scope.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Automotive standard scope",
+      "evidence": [
+        {
+          "region_id": "S-014-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Public abstract only; standard existence is not evidence a product follows it.",
+      "review_records": []
+    },
+    {
+      "id": "C-014",
+      "text": "The inspected EUROCAE working-group page lists an ED-324 draft; final ED-324/ARP6983 publication status is unresolved here.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Working-group status, not final catalog",
+      "evidence": [
+        {
+          "region_id": "S-015-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Refresh current publisher catalog and distinguish editions, planned dates and regulatory recognition.",
+      "review_records": []
+    },
+    {
+      "id": "C-015",
+      "text": "Our DAA architecture will link operating assumptions, perception evidence, decision authority, fallback and versioned change evidence.",
+      "kind": "proposal",
+      "status": "provisional",
+      "scope": "Illustrative architecture, not approved design",
+      "evidence": [
+        {
+          "region_id": "S-008-R1",
+          "relation": "background"
+        },
+        {
+          "region_id": "S-010-R1",
+          "relation": "background"
+        }
+      ],
+      "challenge": "Stress-test shared perception failures; do not represent a diagram as safety evidence.",
+      "review_records": []
+    },
+    {
+      "id": "C-016",
+      "text": "For the worked example, an avoidance monitor cannot rely solely on the same failed perception output it is meant to guard.",
+      "kind": "inference",
+      "status": "provisional",
+      "scope": "Project reasoning under shared-input failure assumption",
+      "evidence": [
+        {
+          "region_id": "S-010-R1",
+          "relation": "reasoning_basis"
+        }
+      ],
+      "challenge": "Need explicit observability analysis, counterexamples and expert challenge; diverse sensors do not imply independent failures.",
+      "review_records": []
+    }
+  ]
+}

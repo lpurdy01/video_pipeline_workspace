@@ -1,0 +1,24 @@
+{
+  "id": "R-PAPER-ONLY-C-EVID-006-source-20260916",
+  "package_id": "P-C-EVID-006-source_support",
+  "input_digest": "e4df896f145be5d910fc8dc59a03e042a4fad5e3c367a9254c3070ff3e47db9b",
+  "task": "source_support",
+  "reviewer_id": "paper-compiler-review-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-only-review-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The complete captured Adebayo et al. source directly supports a bounded claim: selected saliency methods can be insensitive to model parameters or label structure, so visual plausibility alone cannot establish faithful explanation. The claim preserves the paper's method-specific visual-classification scope and does not generalize the finding to every interpretability technique.",
+  "evidence_locators": [
+    "S-EVID-006-R1, PDF p. 1 abstract: visual assessment alone can mislead",
+    "S-EVID-006-R2, PDF p. 2 contribution list: some tested methods independent of model parameters and labels",
+    "research/contributions/assurance_evidence/out/context/adebayo-saliency-sanity-checks.txt, captured full context",
+    "S-EVID-006 limitations, selected methods/settings only"
+  ],
+  "limitations": [
+    "The result does not establish that all saliency or interpretability methods fail.",
+    "It supplies no transport safety threshold or evidence for a particular learned controller."
+  ],
+  "resolves": []
+}

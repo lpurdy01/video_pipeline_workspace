@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "C-AUTH-001",
+      "text": "FAA's 2024 AI roadmap states that the aviation industry lacks a method for AI safety assurance, while setting out a plan to develop and adapt methods within the existing aviation ecosystem.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "FAA Roadmap for Artificial Intelligence Safety Assurance, Version I; date-bound regulator assessment and roadmap, not a 2026 proof of global absence",
+      "evidence": [{"region_id": "S-AUTH-001-R1", "relation": "supports"}],
+      "challenge": "Search for FAA updates, completed consensus standards, accepted issue papers and public certification bases after Version I. The 2024 wording must not become the unsupported statement that no end-to-end method exists today.",
+      "review_records": []
+    },
+    {
+      "id": "C-AUTH-002",
+      "text": "FAA's roadmap treats a frozen learned AI implementation as subject to design-time safety assurance and requires a new safety-assurance treatment for each updated version.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "FAA roadmap discussion of static learned AI; not a complete means of compliance or model-specific approval",
+      "evidence": [{"region_id": "S-AUTH-001-R2", "relation": "supports"}],
+      "challenge": "Inspect the complete learned-versus-learning section and later FAA policy before translating this lifecycle principle into detailed release evidence requirements.",
+      "review_records": []
+    },
+    {
+      "id": "C-AUTH-003",
+      "text": "FAA describes project-specific issue papers as one way to tailor AI safety-assurance discussions to individual projects, which is not a general published certification recipe.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "FAA roadmap discussion of incremental experience and project-specific engagement",
+      "evidence": [{"region_id": "S-AUTH-001-R3", "relation": "supports"}],
+      "challenge": "Obtain a public issue paper or certification basis with its scope and disposition before implying what any particular applicant was required to show.",
+      "review_records": []
+    },
+    {
+      "id": "C-AUTH-004",
+      "text": "EASA Issue 02 offers usable objectives for Level 1 and Level 2 machine-learning applications, but says it is not yet definitive or detailed guidance and does not itself warrant final EASA approval.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "EASA Concept Paper Issue 02; EASA civil aviation concept guidance",
+      "evidence": [{"region_id": "S-AUTH-002-R1", "relation": "supports"}, {"region_id": "S-AUTH-002-R2", "relation": "supports"}, {"region_id": "S-AUTH-002-R3", "relation": "supports"}],
+      "challenge": "Determine whether subsequent RMT.0742 outputs or final AMC/GM supersede any Issue 02 objective. Do not present a concept-paper objective as a mandated acceptance criterion.",
+      "review_records": []
+    },
+    {
+      "id": "C-AUTH-005",
+      "text": "EASA Proposed Issue 03 extends the concept-paper approach to safety-related AI and candidate means of compliance, while expressly saying the set is neither complete nor binding and does not itself warrant final approval.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "EASA Concept Paper Proposed Issue 03, dated June 2026; proposed guidance only",
+      "evidence": [{"region_id": "S-AUTH-003-R1", "relation": "supports"}, {"region_id": "S-AUTH-003-R2", "relation": "supports"}, {"region_id": "S-AUTH-003-R3", "relation": "supports"}],
+      "challenge": "Check EASA's publication and rulemaking pages for a final Issue 03, AMC/GM, Certification Review Item or RMT.0742 deliverable before publication. Proposed text cannot prove an approved high-criticality learned-system path.",
+      "review_records": []
+    },
+    {
+      "id": "C-AUTH-006",
+      "text": "ISO/PAS 8800:2024 is a published road-vehicle specification whose public abstract explicitly includes the trained AI model and describes properties for constructing a safety-assurance claim, but its public page does not establish aviation applicability or a vehicle's conformance.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "ISO public page and abstract only; series-production road-vehicle scope",
+      "evidence": [{"region_id": "S-AUTH-004-R1", "relation": "supports"}, {"region_id": "S-AUTH-004-R2", "relation": "supports"}, {"region_id": "S-AUTH-004-R3", "relation": "supports"}],
+      "challenge": "Acquire authorized access to the licensed text before citing clause-level obligations or any conformance process; assess how its stated vehicle scope changes when the worked example takes flight.",
+      "review_records": []
+    },
+    {
+      "id": "C-AUTH-007",
+      "text": "ANSI/UL 4600 Edition 3 is active and its public scope describes building and evaluating an autonomous-product safety argument, while also stating that its requirements may be necessary but not sufficient for a complete safety case.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "UL public Edition 3 scope; voluntary consensus standard, not a government authorization",
+      "evidence": [{"region_id": "S-AUTH-005-R1", "relation": "supports"}, {"region_id": "S-AUTH-005-R2", "relation": "supports"}, {"region_id": "S-AUTH-005-R3", "relation": "supports"}],
+      "challenge": "Inspect the licensed standard and determine whether the 2026 CSDS proposal affects the relevant clauses. Do not infer any operator, vehicle or aircraft has passed a UL 4600 evaluation.",
+      "review_records": []
+    },
+    {
+      "id": "C-AUTH-008",
+      "text": "NHTSA's ADS 2.0 material presents a voluntary road-ADS safety framework with ODD, object-and-event detection/response, fallback and validation as safety elements; self-assessments are not subject to federal approval.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NHTSA public ADS guidance page; US federal voluntary guidance for ADS Levels 3-5",
+      "evidence": [{"region_id": "S-AUTH-006-R1", "relation": "supports"}, {"region_id": "S-AUTH-006-R2", "relation": "supports"}, {"region_id": "S-AUTH-006-R3", "relation": "supports"}],
+      "challenge": "Reconcile this older operating-guidance page with NHTSA's current rulemaking, enforcement, state permit and exemption materials. A voluntary self-assessment is neither model certification nor proof a particular deployment is safe.",
+      "review_records": []
+    },
+    {
+      "id": "C-AUTH-009",
+      "text": "NHTSA's July 2026 announcement says it has initiated development of AV performance standards and an update to federal AV technical guidance, while a temporary vehicle exemption remains a limited operational mechanism rather than a disclosed learned-model assurance case.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NHTSA policy announcement dated July 30, 2026; initiatives and limited exemption, not final standards",
+      "evidence": [{"region_id": "S-AUTH-007-R1", "relation": "supports"}, {"region_id": "S-AUTH-007-R2", "relation": "supports"}, {"region_id": "S-AUTH-007-R3", "relation": "supports"}],
+      "challenge": "Monitor the cited docket, A2SCEND outputs, updated guidance and exemption decision records. The announcement's phrase 'first-ever' is an agency description of its initiative, not a universal claim about every existing international or private standard.",
+      "review_records": []
+    },
+    {
+      "id": "C-AUTH-010",
+      "text": "In its learned-AI certification discussion, the FAA describes the learned implementation as a break from conventional lower-level requirement traceability: the designer cannot derive requirements that directly describe the learned algorithm or validate their coverage to higher-level requirements.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "FAA Roadmap for Artificial Intelligence Safety Assurance, Version I, PDF p. 14; the FAA's framing for learned AI in aviation, not a claim that all requirements, software traceability or assurance methods disappear.",
+      "evidence": [{"region_id": "S-AUTH-001-R4", "relation": "supports"}],
+      "challenge": "Keep the claim tied to the FAA's lower-level learned-algorithm traceability problem. The surrounding text says conventional hardware/software methods still apply to the item implementation, though they may need adaptation.",
+      "review_records": []
+    }
+  ]
+}

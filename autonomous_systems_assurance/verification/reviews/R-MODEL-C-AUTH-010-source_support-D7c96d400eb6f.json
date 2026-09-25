@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-AUTH-010-source_support-D7c96d400eb6f",
+  "package_id": "P-C-AUTH-010-source_support",
+  "input_digest": "7c96d400eb6ff847eb0351e18125ef9d0f826a42e5a0bee857e209bb107068cc",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided text from page 14 of the FAA Roadmap explicitly states that for learned AI implementations, traditional traceability links are broken because 'the designer cannot derive the requirements that directly describe the AI implementation and cannot validate them by showing that they provide coverage to the next higher level.' The claim accurately reflects this specific limitation while respecting the boundary that conventional hardware/software methods still apply.",
+  "evidence_locators": [
+    "S-AUTH-001-R4",
+    "PDF p. 14"
+  ],
+  "limitations": [
+    "The 2024 roadmap is a living direction-setting document, not a binding means of compliance or final regulatory approval."
+  ],
+  "resolves": []
+}

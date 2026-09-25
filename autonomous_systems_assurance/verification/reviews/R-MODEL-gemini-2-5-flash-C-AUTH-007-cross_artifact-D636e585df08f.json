@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-007-cross_artifact-D636e585df08f",
+  "package_id": "P-C-AUTH-007-cross_artifact",
+  "input_digest": "636e585df08f94f033a13ad02910563b7d082638333205b1f10a67ce8e8cfe7e",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact use of C-AUTH-007 accurately preserves the claim's scope and limitations. The claim states that ANSI/UL 4600 Edition 3 is active, describes building and evaluating an autonomous-product safety argument, and is 'necessary but not sufficient' for a complete safety case. The claim's scope also specifies it is a 'voluntary consensus standard, not a government authorization,' and the challenge warns against inferring product evaluation. All uses in the supplied artifacts consistently present UL 4600 as an active standard for safety arguments, explicitly acknowledge its voluntary nature and 'not sufficient' qualification, and refrain from inferring product-specific evaluation or government authorization. The August 2026 proposal is correctly identified as a proposed revision, not a change to Edition 3.",
+  "evidence_locators": [
+    "research/contributions/assurance_authority/findings.md: Matrix table, Direct findings, Contrary evidence and unresolved questions (points 1 and 2)",
+    "video/script.md: Section 4. Existing methods: structure, not a finished answer \u2014 10:30\u201316:00",
+    "planning/learned_systems_assurance_next_steps.md: State-of-art position after research wave one",
+    "video/nextgen_structure/narration_evidence_map.md: Section-by-section factual narration map (row for 'Road methods')",
+    "video/nextgen_structure/script_outline.md: Section 4. Existing methods: real structure, different boundaries \u2014 10:30\u201316:00",
+    "video/nextgen_structure/treatment.md: Editorial thesis, Section 4. The standards landscape is structure, not a finished answer"
+  ],
+  "limitations": [
+    "The active consensus standard is not a government approval, does not prove a particular vehicle conforms, and its public scope explicitly leaves completeness/rigor conditional. A CSDS proposal dated August 2026 is a proposed revision, not evidence that Edition 3 has changed."
+  ],
+  "resolves": []
+}

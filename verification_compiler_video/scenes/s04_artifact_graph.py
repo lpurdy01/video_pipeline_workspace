@@ -238,7 +238,7 @@ class S04ArtifactGraph(Beat3DScene):
                          run_time=max(ctx.window - 0.15, 0.6))
 
     def b20_questions(self, ctx):
-        cap = self.caption3d("questions the shape can answer", style.GOLD)
+        cap = self.caption3d("structural questions", style.GOLD)
         ctx.play(cap.animate.set_opacity(1), run_time=0.4)
         self._own("cap4", cap)
         # Settle into the reading angle across the rest of the line rather than

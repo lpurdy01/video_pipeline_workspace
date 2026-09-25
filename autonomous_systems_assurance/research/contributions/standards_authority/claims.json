@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "C-STD-001",
+      "text": "FAA's current AI/ML technical-discipline page says its work includes collaboration with industry, other government agencies, standards-development organizations and academia to advance understanding of AI algorithms, data and model performance in the aviation certification context.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "FAA public technical-discipline page, captured 2026-09-22; statement of activity, not a completed standard or approval outcome",
+      "evidence": [{"region_id": "S-STD-001-R1", "relation": "supports"}],
+      "challenge": "Check later FAA roadmap versions, consensus-standard publications and certification decisions. This page cannot establish whether enough qualified people exist, what any committee has concluded, or whether an adequate method has been accepted for a particular high-criticality function.",
+      "review_records": []
+    },
+    {
+      "id": "C-STD-002",
+      "text": "On the captured EASA CRT status page, RMT.0742's DS.AI NPA 2025-07(B) is still labelled proposed and 'awaiting responses to comments'; the page therefore does not show a final published DS.AI AMC/GM result.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "EASA CRT page captured 2026-09-22; online rulemaking-status observation for RMT.0742, not a conclusion about all EASA AI approvals",
+      "evidence": [{"region_id": "S-STD-002-R1", "relation": "supports"}],
+      "challenge": "Recheck EASA's rulemaking portal and Official Publication pages immediately before publication. A final decision, CRD, AMC/GM or other page may supersede this time-sensitive status display.",
+      "review_records": []
+    },
+    {
+      "id": "C-STD-003",
+      "text": "U.S. law requires a motor-vehicle or equipment manufacturer/distributor to certify compliance with applicable federal motor-vehicle safety standards at delivery, and prohibits a certificate the issuer knows, with reasonable care, is materially false or misleading.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "49 U.S.C. § 30115(a), current preliminary U.S. Code page captured 2026-09-22; certification of applicable FMVSS compliance",
+      "evidence": [{"region_id": "S-STD-003-R1", "relation": "supports"}],
+      "challenge": "Pair with the specific FMVSS, defect/recall provisions, exemptions and state operation authorities relevant to any example. This statute cannot be paraphrased as manufacturer certification that a trained model is safe in every scenario.",
+      "review_records": []
+    },
+    {
+      "id": "C-STD-004",
+      "text": "In a 2025 interpretation, NHTSA states that it does not pre-approve new motor vehicles, equipment or ADS technologies, while describing manufacturer self-certification to applicable FMVSS and NHTSA's safety-defect authority.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NHTSA nonbinding interpretation of a particular ADAS/FMVSS No. 108 question; used only to describe the stated federal oversight boundary",
+      "evidence": [{"region_id": "S-STD-004-R1", "relation": "supports"}],
+      "challenge": "Obtain a full source snapshot and compare current NHTSA rules, exemptions and investigations. Do not use this specific interpretation as an approval of driverless deployment or as a substitute for any required applicable-standard evidence.",
+      "review_records": []
+    },
+    {
+      "id": "C-STD-005",
+      "text": "SAE's public page for J3321_202603 shows that a new ground-vehicle AI/ML V&V document exists, but describes it as an information report with no mandatory requirements and general V&V methods.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "SAE public product-page scope, 2026-03-16; no licensed-text or regulator-recognition claim",
+      "evidence": [{"region_id": "S-STD-005-R1", "relation": "supports"}],
+      "challenge": "Acquire the authorized text and check SAE's document classification and any later revision. Its existence counters a blanket claim that no automotive AI/ML V&V guidance exists, but its public scope cannot establish a complete accepted certification method.",
+      "review_records": []
+    }
+  ]
+}
+

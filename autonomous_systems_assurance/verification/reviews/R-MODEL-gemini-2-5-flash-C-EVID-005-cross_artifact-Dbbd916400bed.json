@@ -1,0 +1,29 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-005-cross_artifact-Dbbd916400bed",
+  "package_id": "P-C-EVID-005-cross_artifact",
+  "input_digest": "bbd916400bedc98f6e176e8011d3718a377c8c502b5d68cb63624191d42a3ce5",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of claim C-EVID-005 consistently preserves its scope and limitations. The claim states that the NASA runtime-assurance formalization can establish a system safety property 'only under explicit safe-start, monitor/timing, recovery-state and reversionary-controller premises,' and that its scope is a 'formal model, not civil approval or an implementation assurance case.' All artifacts that reference C-EVID-005 (e.g., `assurance/assurance_case.json`, `research/contributions/assurance_evidence/findings.md`, `video/script.md`, `video/nextgen_structure/treatment.md`, `resource_composition/whitepaper.md`) explicitly reiterate these conditions and limitations. They emphasize that the formal result is conditional on the premises holding, that a shared perception blind spot can defeat the claimed rescue path, and that the framework is for research/formal models, not civil approval.",
+  "evidence_locators": [
+    "assurance/assurance_case.json",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "research/contributions/assurance_evidence/findings.md",
+    "resource_composition/figures.md",
+    "video/script.md",
+    "assurance/method_crosswalk.json",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

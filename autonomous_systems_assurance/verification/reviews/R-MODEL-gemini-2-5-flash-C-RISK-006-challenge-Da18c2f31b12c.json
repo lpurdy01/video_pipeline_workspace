@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-RISK-006-challenge-Da18c2f31b12c",
+  "package_id": "P-C-RISK-006-challenge",
+  "input_digest": "a18c2f31b12cd1508df7d84edd3645772cb2c4ce167ecdedc90e82a219d7b5ad",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The claim states that EASA's proposed DS.AI classification (NPA 2025-07(B) Table 1) defines end-user authority and responsibility for Levels 1A\u20133A, explicitly reserves Level 3B with no such assignment, and therefore Level 3B should not be presented as an approved no-human-involvement operating category. The provided evidence, S-RISK-003-R3 (EASA NPA 2025-07(B), PDF pp. 11-13, Table 1), directly supports this. Table 1 lists specific 'Authority of the end user' and 'Responsibility of the end user' for Levels 1A through 3A. For 'Level 3B', the table explicitly states 'Reserved' under the AI level column and 'n/a' for both 'Authority of the end user' and 'Responsibility of the end user'. The source's limitation (S-RISK-003) also clarifies that the NPA is 'proposed material, not a final EASA decision, AMC/GM, type-certification basis or approval', which further reinforces that a 'Reserved' category in a proposed document is not an 'approved' operating category. No alternative interpretation or counterevidence was found within the provided material to defeat the claim within its stated scope.",
+  "evidence_locators": [
+    "S-RISK-003-R3: PDF pp. 11-13, DS.AI Table 1 AI-level authority boundaries",
+    "S-RISK-003: limitations"
+  ],
+  "limitations": [
+    "This review is limited to the provided EASA NPA 2025-07(B) and does not include any successor EASA material or final guidance that may have been published after the NPA."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-AIR2-001-cross_artifact-Dc508c3cf2275",
+  "package_id": "P-C-AIR2-001-cross_artifact",
+  "input_digest": "c508c3cf227576b380879667b110c226fcf3a0db933de8d1ca05aee52516cf97",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts accurately use the claim to describe the GA-ASI DAA architecture (cooperative surveillance plus air-to-air radar). They strictly preserve the claim's scope and limitations by explicitly stating that the vendor description is not an authority record for TSO authorization, installation approval, or certification, and by mandating visual/spoken qualifiers like 'Vendor-described architecture'.",
+  "evidence_locators": [
+    "research/contributions/air_round2/findings.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/visual_inventory.md"
+  ],
+  "limitations": [
+    "The architecture description relies on vendor marketing material; independent primary records (e.g., FAA DRS TSO authorization, installation approvals) are still required to verify actual certification and operational status."
+  ],
+  "resolves": []
+}

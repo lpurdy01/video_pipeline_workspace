@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-RISK-001-source_support-Dc933702fe7c7",
+  "package_id": "P-C-RISK-001-source_support",
+  "input_digest": "c933702fe7c73b508b2ca081c7b0ea743f4f85c1df23f5cd7c255a90d0ed51a9",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided text from FAA AC 25.1309-1A explicitly describes the 'inverse relationship between the probability and the severity of each failure condition' and lists safety assessments, qualitative analyses, tests, and selective quantitative analyses as supporting methods. The claim accurately reflects this historical guidance and correctly scopes it as conventional system-safety context rather than a learned-model acceptance method.",
+  "evidence_locators": [
+    "S-RISK-001-R1 (AC 25.1309-1A PDF pp. 1-2, Paragraphs 3 and 4)",
+    "S-RISK-001-R2 (AC 25.1309-1A PDF pp. 13-14, Paragraph 10)"
+  ],
+  "limitations": [
+    "This is historical 1988 guidance (AC 25.1309-1A) and does not represent the current certification basis for specific modern aircraft.",
+    "Conventional component failure-rate arithmetic cannot be directly transferred to estimate a learned perception model's encounter-conditioned error probability."
+  ],
+  "resolves": []
+}

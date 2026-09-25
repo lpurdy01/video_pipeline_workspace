@@ -1,0 +1,18 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-DIR-003-source_support-Db24790253bac",
+  "package_id": "P-C-DIR-003-source_support",
+  "input_digest": "b24790253bacef195a736e59e279237e5ca8dd15ce8e73ae21bb368f1ea7370a",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided context from the 'Standing General Order 2021-01 Incident Report' directly states that 'Reporting requirements are different for Automated Driving Systems (ADS) and Level 2 Advanced Driver Assistance System (ADAS),' confirming the recording of such incidents. It also explicitly lists the warnings: 'Access to crash data may affect crash reporting,' 'Incident report data may be incomplete or unverified,' 'The same crash may have multiple reports,' and 'Summary incident report data are not normalized.' These limitations directly support the conclusion that the public incident log cannot by itself provide a comparative crash rate or a learned-system safety conclusion.",
+  "evidence_locators": [
+    "PDF p. 3"
+  ],
+  "limitations": [],
+  "resolves": []
+}

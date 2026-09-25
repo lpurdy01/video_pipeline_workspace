@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-AUTH-002-cross_artifact-De4ac4b14fd32",
+  "package_id": "P-C-AUTH-002-cross_artifact",
+  "input_digest": "e4ac4b14fd327b9ca093f6e296956c98d957d7e104858155737be8a8f0d1ba13",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all supplied artifacts (the assurance case, findings matrix, method crosswalk, video script/outline/treatment/visual inventory, and whitepaper draft/outline), C-AUTH-002 is consistently used within its stated scope. Every artifact preserves the FAA roadmap's framing as non-binding, direction-setting guidance distinguishing static (learned) AI from online (learning) AI, requiring design-time assurance and renewed safety-assurance treatment for updates, without presenting it as an established means of compliance or formal model certification.",
+  "evidence_locators": [
+    "S-AUTH-001-R2 (PDF physical p. 11 / printed p. 10)",
+    "assurance/assurance_case.json (EA-ROAD-005, EA-AIR-005)",
+    "research/contributions/assurance_authority/findings.md",
+    "video/script.md (Section 2)",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "resource_composition/whitepaper.md (Section 1)"
+  ],
+  "limitations": [
+    "Review is limited to the supplied artifacts and citations of C-AUTH-002; it does not evaluate subsequent regulatory policy releases past the 2024 FAA Roadmap Version I."
+  ],
+  "resolves": []
+}

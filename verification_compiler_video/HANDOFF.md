@@ -12,6 +12,32 @@ what is true right now. It is written for an agent picking the work up cold.
   log. Append to it; do not rewrite history in it.
 - **this file** — method and live state.
 
+## Follow-up status — human-audio final cuts
+
+The cleaned human narration is now integrated. Section `04_05` was split at
+67.720s into `04_artifact_graph.wav` and `05_compilation_traversal.wav`; all 11
+sections have local faster-whisper word tables and timing tables in
+`out/timing/`.
+
+The review-marked full cuts are:
+
+- `out/review/full_cut_human_review_marks_1x.mp4` — 796.3s
+- `out/review/full_cut_human_review_marks_1x_1.25x.mp4` — 637.3s
+
+The slate-free 1080p30 delivery cuts are:
+
+- `out/final/compiler_for_trust_clean_1080p30_1x.mp4` — 796.4s
+- `out/final/compiler_for_trust_clean_1080p30_1x_1.15x.mp4` — 692.7s
+
+Timing audit: 240 beats / 240 narration lines, 100% coverage, no duplicate line
+hits, no unresolved anchors. The only low-confidence line left is section 3 line
+0, where STT clipped "High-assurance" to "Assurance"; the timing still lands on
+the correct opening phrase. One aligner fix was added so script `Datasheets`
+matches spoken `data sheets` in section 4.
+
+Visual QA is still failing, but on visual/readability findings rather than
+timing drift. The latest marked render has per-section drift within 0.05s.
+
 ---
 
 ## 1. Hard constraints
@@ -356,10 +382,6 @@ ffmpeg -y -v error \
 
 ## 7. Still to do on the video as a whole
 
-1. **The human narration take** replaces the scratch TTS. Timing rebuilds, no
-   scene edits. Transcribe locally.
-2. **Delivery render at 1080p30.** Everything so far is 480p15 for the
-   iteration loop.
-3. **Re-render sections 2–11 slate-free** before assembling any full cut for the
-   user.
-4. The shape-grammar decision, if and when the user makes it.
+1. Review the slate-free 1.15x delivery cut for final content/visual notes.
+2. Fix any remaining review-blocking visual findings the user calls out.
+3. The shape-grammar decision, if and when the user makes it.

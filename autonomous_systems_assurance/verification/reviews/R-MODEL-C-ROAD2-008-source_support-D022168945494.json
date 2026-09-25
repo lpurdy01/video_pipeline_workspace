@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-ROAD2-008-source_support-D022168945494",
+  "package_id": "P-C-ROAD2-008-source_support",
+  "input_digest": "022168945494e343d7c0dfd236a8dfcc9b3f9847578bb56a931088952a2af495",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided excerpts from the CPUC source directly support the claim's specific elements: the requirement for a DMV permit, a communication link with remote operators for driverless pilots, and Passenger Safety Plans for deployment programs.",
+  "evidence_locators": [
+    "S-ROAD2-007-R1",
+    "S-ROAD2-007-R2",
+    "S-ROAD2-007-R3"
+  ],
+  "limitations": [
+    "The captured context consists only of short excerpts; full local context is absent, limiting broader verification of program conditions and exceptions."
+  ],
+  "resolves": []
+}

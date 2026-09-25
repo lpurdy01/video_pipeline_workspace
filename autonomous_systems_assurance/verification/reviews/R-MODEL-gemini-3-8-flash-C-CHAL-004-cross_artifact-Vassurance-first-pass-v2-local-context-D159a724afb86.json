@@ -1,0 +1,31 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-004-cross_artifact-Vassurance-first-pass-v2-local-context-D159a724afb86",
+  "package_id": "P-C-CHAL-004-cross_artifact",
+  "input_digest": "159a724afb86b15ffc78f4beb70969aeb0028404005085bcdb8c3de5b7365537",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all supplied artifact uses (architecture, assurance case, crosswalks, findings, figures, script, outline, treatment, and whitepaper), the claim's scope and qualifications are strictly preserved. EASA DS.AI is consistently identified as proposed material under NPA 2025-07(B), and the text repeatedly notes that the high-consequence and online-learning exclusions mean it cannot be treated as a complete civil approval path for catastrophic/flight-critical autonomy cases. Furthermore, artifact uses consistently retain the challenge qualification that applying this boundary requires an aircraft-level failure-condition allocation rather than an unverified assumption about the function.",
+  "evidence_locators": [
+    "S-CHAL-002-R1 (NPA 2025-07 (B), PDF p. 4, DS.AI.010 Scope)",
+    "assurance/architecture.md",
+    "assurance/assurance_case.json",
+    "assurance/method_crosswalk.json",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "research/contributions/assurance_challenge/findings.md",
+    "video/script.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/treatment.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [
+    "Review is limited to the provided excerpts and files in the packet.",
+    "EASA NPA 2025-07(B) remains a proposed amendment and not a final EASA decision or established AMC/GM."
+  ],
+  "resolves": []
+}

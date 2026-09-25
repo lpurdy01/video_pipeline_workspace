@@ -1,0 +1,28 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-004-cross_artifact-D5c870bb6f53b",
+  "package_id": "P-C-EVID-004-cross_artifact",
+  "input_digest": "5c870bb6f53b065cbbdb9944dc18fe189841853493286aff77c9927533cd04fc",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Every artifact use of claim C-EVID-004 consistently preserves its scope and limitations. The claim, 'The studied modern neural networks were often poorly calibrated, and temperature scaling improved calibration empirically on the paper's evaluated settings,' is always qualified by explicitly stating that calibration is measured on 'evaluated settings' or 'stated evaluation distribution' and that it 'can fail under shift' or 'is not the same as hazard awareness after an unfamiliar shift.' Artifacts also emphasize that calibration does not establish 'system safety after shift' or serve as a 'universal safety metric' or 'safety score.' This directly aligns with the claim's scope ('a calibrated confidence estimate is not a system-level safety bound') and the challenge's requirements to evaluate calibration under OOD/shift conditions and not accept confidence as an unexplained safety score. No omitted qualifications, changed status, or inferences presented as authority evidence were found.",
+  "evidence_locators": [
+    "assurance/assurance_case.json",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "research/contributions/assurance_evidence/findings.md",
+    "video/script.md",
+    "assurance/method_crosswalk.json",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

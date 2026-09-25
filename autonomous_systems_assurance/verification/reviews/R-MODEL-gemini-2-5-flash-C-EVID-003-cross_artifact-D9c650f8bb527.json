@@ -1,0 +1,29 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-003-cross_artifact-D9c650f8bb527",
+  "package_id": "P-C-EVID-003-cross_artifact",
+  "input_digest": "9c650f8bb5277527218f7bb1c1793e5f092eeed1f483ee779a6a4f6cf40da4cc",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact use of claim C-EVID-003 consistently preserves its scope and limitations. The claim states that rare-event simulation provides a conditional risk estimate, 'rather than proving unconditional safety from total test miles,' and is specific to the O'Kelly et al. highway research case study. All supplied artifacts, including the assurance case, crosswalks, research findings, and video scripts, explicitly reiterate the conditional nature of the rare-event simulation, its dependence on modeled distributions, simulators, and thresholds, and explicitly state that it does not prove unconditional safety or transfer automatically to changed conditions. Qualifications from the source's limitations (e.g., 'not a regulator-approved safety case') are also consistently maintained or reinforced by the artifacts' own limitations and qualifiers.",
+  "evidence_locators": [
+    "S-EVID-003-R1",
+    "S-EVID-003-R2",
+    "assurance/assurance_case.json (EA-ROAD-003, EA-AIR-003, O-004, RC-ROAD-001, RC-AIR-001)",
+    "assurance/amlas_maa_easa_crosswalk.md (O-004 row)",
+    "research/contributions/assurance_evidence/findings.md (C-EVID-003 row, point 5)",
+    "video/script.md (Section 5)",
+    "assurance/method_crosswalk.json (M-AMLAS-001, O-004 mapping)",
+    "video/nextgen_structure/narration_evidence_map.md (Rare event row)",
+    "video/nextgen_structure/script_outline.md (Section 5)",
+    "video/nextgen_structure/treatment.md (Section 5)",
+    "video/nextgen_structure/visual_inventory.md (VNG-05)",
+    "resource_composition/whitepaper.md (Section 2, Section 5)"
+  ],
+  "limitations": [],
+  "resolves": []
+}

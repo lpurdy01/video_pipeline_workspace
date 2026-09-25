@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-RISK-005-cross_artifact-Vassurance-first-pass-v2-local-context-Da682fb08409d",
+  "package_id": "P-C-RISK-005-cross_artifact",
+  "input_digest": "a682fb08409d7fd1de9a7b9cd22ea98f1531d9a0200677e8b1998a6a73671568",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all reviewed artifacts (white paper outline, white paper draft, integration ledger, video script, figures table, and research findings), AMLAS's retinal diagnosis example is consistently used strictly as an explanatory teaching pattern illustrating evaluation trade-offs, non-uniform error costs, and operating threshold selection. None of the uses misapply it as autonomous driving/aviation evidence or as proof of vehicle/aircraft safety.",
+  "evidence_locators": [
+    "resource_composition/figures.md",
+    "research/integration_round4.md",
+    "video/script.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md",
+    "research/contributions/risk_evidence/findings.md"
+  ],
+  "limitations": [
+    "Review is restricted to the provided artifact excerpts referencing C-RISK-005 in this packet."
+  ],
+  "resolves": []
+}

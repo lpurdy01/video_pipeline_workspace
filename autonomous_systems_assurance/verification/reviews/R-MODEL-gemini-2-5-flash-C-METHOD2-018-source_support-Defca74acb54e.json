@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-METHOD2-018-source_support-Defca74acb54e",
+  "package_id": "P-C-METHOD2-018-source_support",
+  "input_digest": "efca74acb54eed3146512cc9067b2396d86227f34314ba2d9bdce7babae8f984",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim describes a proposed assurance model for the project. The `research/contributions/method_round2/findings.md` artifact, under the section 'Proposed assurance architecture for the worked example', explicitly outlines the recommended project architecture as 'six coupled evidence regions' that directly correspond to the elements of the assurance chain mentioned in the claim: 'Operating domain and hazard contract' (operational assumptions), 'Sensing and state-estimation contract' (sensor evidence), 'Learned component contract' (learned behavior), 'Decision and control contract' (decision authority), 'Monitor and recovery contract' (monitor timing, fallback behavior), and 'Operations and change contract' (version change control). This section also explicitly links to claim C-METHOD2-018. The `video/nextgen_structure/treatment.md` and `video/nextgen_structure/visual_inventory.md` artifacts further corroborate this by describing the visual representation of these 'safety layers' as a 'project proposal based on the evidence-contract architecture' and linking it to C-METHOD2-018.",
+  "evidence_locators": [
+    "research/contributions/method_round2/findings.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "video/nextgen_structure/narration_evidence_map.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

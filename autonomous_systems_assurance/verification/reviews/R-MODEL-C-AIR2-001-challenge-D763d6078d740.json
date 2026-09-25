@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-AIR2-001-challenge-D763d6078d740",
+  "package_id": "P-C-AIR2-001-challenge",
+  "input_digest": "763d6078d7409b902d2ad57448911c3a8b5fb52608c3dad87bd74ad81d53fa7b",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim accurately reflects the vendor's public description of its layered DAA architecture (TCAS/ADS-B for cooperative and radar for non-cooperative aircraft). By explicitly restricting its scope to 'vendor description' and 'architecture claim only', the claim successfully survives the challenge that vendor marketing does not equate to independent certification, performance proof, or operational approval.",
+  "evidence_locators": [
+    "research/contributions/air_round2/findings.md",
+    "S-AIR2-001 (GA-ASI Detect and Avoid System page)"
+  ],
+  "limitations": [
+    "The source is vendor marketing material; this claim cannot be used to imply that the described architecture has received a TSO authorization, installation approval, or unrestricted operational permission."
+  ],
+  "resolves": []
+}

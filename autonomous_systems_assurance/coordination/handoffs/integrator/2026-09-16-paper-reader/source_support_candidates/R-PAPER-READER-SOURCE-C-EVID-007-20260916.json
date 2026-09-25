@@ -1,0 +1,16 @@
+{
+  "id": "R-PAPER-READER-SOURCE-C-EVID-007-20260916",
+  "package_id": "P-C-EVID-007-source_support",
+  "input_digest": "e01f2d97d96a5175cf2fde1a952ea2e530f0fcba97631ffc01ce9459e48a46cb",
+  "task": "source_support",
+  "reviewer_id": "paper-reader-source-support-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "source-support-digest-pinned-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The inspected autonomous-vehicle study reports a small positive correlation between transformations associated with neuron coverage and steering-angle deviation, then explicitly says it does not establish causation and calls for investigation of whether neuron coverage is a consistent indicator. The claim accurately retains the study's limited result.",
+  "evidence_locators": ["S-EVID-007-R1 — PDF pp. 7–8, correlation and threats to validity", "S-EVID-007-R2 — PDF p. 8, conclusion"],
+  "limitations": ["The experiment used one DNN and a steering-angle-deviation proxy, with no established safety-failure threshold.", "It cannot validate neuron coverage or a derived scalar as safety evidence for a perception/planning stack or airborne DAA."],
+  "resolves": []
+}

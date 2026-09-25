@@ -1,0 +1,22 @@
+{
+  "id": "R-PAPERSCOPE-CHAL-C-002-20260916",
+  "package_id": "P-C-002-challenge",
+  "input_digest": "8fcd757f02513621ffa423c7d10540b7a2b1626b2273d0b3421cfd5715a05d03",
+  "task": "challenge",
+  "reviewer_id": "paper-scope-challenge-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-scope-digest-pinned-challenge-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-16",
+  "rationale": "The excerpt directly states that a TSO authorization is not approval to install and use an article, which supports the narrow distinction. But it is only a short captured excerpt, and the broader artifact use connects equipment, installation, aircraft and operational approval objects. Without full current context, this challenge cannot determine whether the displayed wording preserves the FAA page's exact applicability and limits.",
+  "evidence_locators": [
+    "S-002-R1, FAA Technical Standard Orders page, locator 'TSO authorization versus installation approval'",
+    "https://www.faa.gov/aircraft/air_cert/design_approvals/tso"
+  ],
+  "limitations": [
+    "This is a US civil-aviation distinction, not a complete map of a DAA article, installation, aircraft, or operational approval path.",
+    "The source context is short_excerpt_only; this review cannot cure the missing full-context source record."
+  ],
+  "resolves": []
+}

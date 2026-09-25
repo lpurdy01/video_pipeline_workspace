@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-C-RISK-007-source_support-D66703a7315fc",
+  "package_id": "P-C-RISK-007-source_support",
+  "input_digest": "66703a7315fc0bf26c9fc66b116962fcc174196cafad042a1b0a6c6dd4055ce8",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided excerpt confirms the H1 classification as an unacceptable risk and introduces per-operational-hour likelihood bands (Frequent >1E-3, Probable, Remote). However, the text truncates before defining the 'extremely improbable (\u22641E-9)' band. Furthermore, the provided context does not contain the mapping of non-unacceptable aggregated cases to assurance/tool qualification levels, nor does it include the statement that quantitative tools supplement qualitative engineering judgement. Full context is required to verify these specific claims.",
+  "evidence_locators": [
+    "S-RISK-003-R2",
+    "PDF pp. 16-18, proposed DS.AI.130 risk assessment"
+  ],
+  "limitations": [
+    "The captured context truncates before listing the 'extremely improbable' likelihood band.",
+    "The provided text lacks the specific sections detailing the AL/TQL mapping for non-unacceptable cases.",
+    "The provided text lacks the statement regarding quantitative tools supplementing qualitative judgement."
+  ],
+  "resolves": []
+}

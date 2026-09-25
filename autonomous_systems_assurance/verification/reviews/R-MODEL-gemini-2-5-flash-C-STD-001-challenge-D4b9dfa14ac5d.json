@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-STD-001-challenge-D4b9dfa14ac5d",
+  "package_id": "P-C-STD-001-challenge",
+  "input_digest": "4b9dfa14ac5dcaffce6bafd546af334278c22f2a8ea848f049992c7cdb784dbf",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The claim states what the FAA's AI/ML technical-discipline page says about its collaborative work. The provided evidence (S-STD-001-R1) directly quotes the page mentioning 'international collaboration with industry, other government agencies, standards development organizations, and academic institutions'. The claim's scope explicitly limits it to a 'statement of activity, not a completed standard or approval outcome', which aligns with the challenge's points about what the page cannot establish (e.g., existence of qualified people, committee conclusions, or accepted methods). Therefore, the challenge points do not defeat the claim as worded and scoped, but rather reinforce its stated limitations.",
+  "evidence_locators": [
+    "S-STD-001-R1",
+    "S-STD-001"
+  ],
+  "limitations": [
+    "Review limited to provided evidence and artifacts; no external search was performed.",
+    "The full text of the FAA page was not provided, only an excerpt and inspection scope, though the excerpt directly supports the core of the claim."
+  ],
+  "resolves": []
+}

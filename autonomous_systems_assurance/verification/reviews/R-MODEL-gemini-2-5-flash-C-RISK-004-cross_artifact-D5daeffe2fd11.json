@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-RISK-004-cross_artifact-D5daeffe2fd11",
+  "package_id": "P-C-RISK-004-cross_artifact",
+  "input_digest": "5daeffe2fd11b08c4077222115b76745d1538a3ba8ca5c48683cdd042ff8815b",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of C-RISK-004 accurately preserves the claim's scope and limitations. The claim states that the UK CAA acknowledges DAA risk-ratio metrics are relative and that averaging can hide deficiencies, concluding that a single aggregate score cannot stand alone. The artifacts consistently use the CAA's statements from CAP3127 to support the necessity of considering distinct evidence elements beyond a single aggregate score, without omitting qualifications, changing status, or presenting inferences as authority evidence. The claim's scope (UK CAA CAP3127 consultation response and policy-concept test phase; DAA metrics, not a universal learned-system criterion) is respected in all uses.",
+  "evidence_locators": [
+    "resource_composition/figures.md (F-009 visual limit)",
+    "research/integration_round4.md (Risk and probability distinctions section)",
+    "resource_composition/whitepaper_outline.md (Section 3 and Coverage and language gates)",
+    "research/contributions/risk_evidence/findings.md (Risk numbers need an argument around them section)"
+  ],
+  "limitations": [],
+  "resolves": []
+}

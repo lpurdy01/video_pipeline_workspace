@@ -1,0 +1,24 @@
+{
+  "id": "R-PAPER-CROSS-C-EVID-001-20260916",
+  "package_id": "P-C-EVID-001-cross_artifact",
+  "input_digest": "a56250b3828661bd9ae08a89a5a28f7807b872a060132a575f9680f9c33366b9",
+  "task": "cross_artifact",
+  "reviewer_id": "paper-compiler-review-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-cross-artifact-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The case graph and method map use the NIST AI RMF claim only as lifecycle evidence for intended context, limits, evaluation, recovery, and change records. The paper identifies NIST AI RMF as voluntary and does not cast it as transport approval or as an acceptance threshold. This remains aligned with the claim's lifecycle scope.",
+  "evidence_locators": [
+    "research/contributions/assurance_evidence/findings.md, NIST AI RMF lifecycle finding",
+    "assurance/assurance_case.json, change/operational evidence links for C-EVID-001",
+    "assurance/method_crosswalk.json, M-AMLAS-001 O-008 evidence linkage",
+    "resource_composition/whitepaper.md:313, primary-reading entry identifies the source as voluntary"
+  ],
+  "limitations": [
+    "The manuscript's main body does not make this NIST claim a central argumentative step; the review assesses only its present bounded uses.",
+    "This does not review NIST AI RMF source support or a sector-specific implementation."
+  ],
+  "resolves": []
+}

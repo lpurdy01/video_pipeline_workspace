@@ -1,0 +1,25 @@
+{
+  "id": "R-PAPER-CROSS-C-EVID-005-20260916",
+  "package_id": "P-C-EVID-005-cross_artifact",
+  "input_digest": "c84062a1b649d6dc18d777d0d8ed9fbf1dc688ba2c8c99dac043a26996cff2d9",
+  "task": "cross_artifact",
+  "reviewer_id": "paper-compiler-review-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-cross-artifact-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The revised road and air arguments retain premise dependence throughout: a monitor must observe a differentiating signal, act within a bound, and leave a recoverable state. The air transfer explicitly rejects treating landing or a generic fallback as an immediate collision-avoidance solution. The case keeps monitor, switching, dynamics, and recovery evidence planned/open, so no artifact treats runtime assurance as an automatic approval or magic intervention.",
+  "evidence_locators": [
+    "resource_composition/whitepaper.md:63 and :209, road monitor/recovery condition",
+    "resource_composition/whitepaper.md:282-288, air encounter timeline and no immediate landing fallback",
+    "assurance/amlas_maa_easa_crosswalk.md:16-18, O-005/O-006 conditional monitor/recovery statements",
+    "assurance/method_crosswalk.json, monitor/recovery mapping notes",
+    "assurance/assurance_case.json, EA-ROAD-004/EA-AIR-004 and O-005/O-006/O-AIR-005/O-AIR-006 links"
+  ],
+  "limitations": [
+    "No actual monitor, fallback controller, timing bound, or recoverable-state proof was reviewed.",
+    "This does not establish a civil approval basis."
+  ],
+  "resolves": []
+}

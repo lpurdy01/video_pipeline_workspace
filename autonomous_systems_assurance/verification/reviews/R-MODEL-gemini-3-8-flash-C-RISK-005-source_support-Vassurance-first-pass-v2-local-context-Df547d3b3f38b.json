@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-RISK-005-source_support-Vassurance-first-pass-v2-local-context-Df547d3b3f38b",
+  "package_id": "P-C-RISK-005-source_support",
+  "input_digest": "f547d3b3f38b31052a09ff4729fe76b7e162ee10c16ca9511202f96478afb611",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "AMLAS v1.1 Activity 11, Example 32 directly presents the retinal disease diagnosis referral system using an ROC curve, confusion matrices, and an operating threshold ('balanced performance' star marker) to demonstrate trade-offs. The text explicitly notes that 'costs associated with mis-classification are not uniform' and that trade-offs between metrics are required 'in order to form a judgement on the acceptability of the model's performance in the given context of use.' All artifact uses respect the stated scope as an explanatory teaching pattern rather than autonomous vehicle/aviation evidence.",
+  "evidence_locators": [
+    "AMLAS v1.1, Activity 11, Example 32, PDF pp. 34-36"
+  ],
+  "limitations": [
+    "Example 32 is an illustrative clinical classification pattern from secondary literature, not direct autonomous-driving or aviation flight-safety evidence, and does not establish operational safety thresholds for autonomous cyber-physical systems."
+  ],
+  "resolves": []
+}

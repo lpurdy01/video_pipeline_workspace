@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-RISK-007-challenge-D2f8dbe4aadaa",
+  "package_id": "P-C-RISK-007-challenge",
+  "input_digest": "2f8dbe4aadaa71e5b02809be02eb482a6de1ed89eced148d8e9db22cd7eadda7",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim accurately reflects the proposed EASA NPA 2025-07(B) risk matrix, preserving the 'per operational hour' metric, the strict 'unacceptable' classification for all H1 (potential fatality) scenarios, and the mapping of only acceptable/moderate risks to AL/TQL. It successfully avoids overextending the proposal into a global threshold, a per-mile metric, or a definitive safety proof, aligning perfectly with the challenge constraints.",
+  "evidence_locators": [
+    "S-RISK-003-R2",
+    "research/contributions/direction_evidence/findings.md"
+  ],
+  "limitations": [
+    "The provided raw excerpt for S-RISK-003-R2 truncates before explicitly showing the text regarding quantitative tools supplementing qualitative judgement, relying on the summary provided in findings.md."
+  ],
+  "resolves": []
+}

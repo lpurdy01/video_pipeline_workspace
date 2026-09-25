@@ -1,0 +1,23 @@
+{
+  "id": "R-PAPERSCOPE-CHAL-C-CHAL-003-20260916",
+  "package_id": "P-C-CHAL-003-challenge",
+  "input_digest": "affc08b825bf2eaef08bc277a0787018a67b9f128ecc15dc7af6d5bfb8d7c2c9",
+  "task": "challenge",
+  "reviewer_id": "paper-scope-challenge-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-scope-digest-pinned-challenge-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The full-context NPA is expressly proposed and contains candidate system-development, supervised-learning, lifecycle-data and in-service-monitoring material. Describing it as a substantial candidate lifecycle is supportable because the claim retains proposed status and frames the crosswalk as a project comparison rather than a complete DAA compliance path.",
+  "evidence_locators": [
+    "S-CHAL-002-R2, EASA NPA 2025-07(B), PDF pp. 24-26, DS.AI.150 and AMC1/AMC2 AI.150",
+    "S-CHAL-002-R3, EASA NPA 2025-07(B), PDF pp. 31-33, DS.AI.160 and AMC1 AI.160(a)",
+    "https://www.easa.europa.eu/en/downloads/142701/en"
+  ],
+  "limitations": [
+    "The NPA is not final AMC/GM, an adopted decision, or evidence of an approved application.",
+    "Named coverage does not establish that the framework operationalises every performance, composition, and authority obligation in this worked case."
+  ],
+  "resolves": []
+}

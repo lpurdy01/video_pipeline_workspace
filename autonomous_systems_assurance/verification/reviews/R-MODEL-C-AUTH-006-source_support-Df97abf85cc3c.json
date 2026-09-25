@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-AUTH-006-source_support-Df97abf85cc3c",
+  "package_id": "P-C-AUTH-006-source_support",
+  "input_digest": "f97abf85cc3c60e09b1713bfcbbd4342ed3c7d8473626e6b11b7bab07ab4de4f",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided excerpts from the ISO public page and abstract directly support the claim's text. They confirm ISO/PAS 8800:2024 is a published road-vehicle specification that explicitly mentions 'the trained AI model' and constructing a 'safety assurance claim'. The source metadata and limitations explicitly confirm the claim's boundary that the public page does not establish aviation applicability or disclose a specific vehicle's conformance.",
+  "evidence_locators": [
+    "ISO public page, status and edition metadata",
+    "ISO public abstract, examples",
+    "ISO public abstract, safety-case statement"
+  ],
+  "limitations": [
+    "The 172-page licensed text was not acquired or inspected, meaning clause-level obligations, conformity mechanisms, and real operator conformance evidence remain unverified."
+  ],
+  "resolves": []
+}

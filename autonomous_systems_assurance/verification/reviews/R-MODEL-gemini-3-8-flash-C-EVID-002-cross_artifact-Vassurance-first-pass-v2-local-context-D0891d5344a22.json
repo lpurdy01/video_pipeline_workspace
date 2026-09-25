@@ -1,0 +1,29 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-EVID-002-cross_artifact-Vassurance-first-pass-v2-local-context-D0891d5344a22",
+  "package_id": "P-C-EVID-002-cross_artifact",
+  "input_digest": "0891d5344a22de5c4950986123ebf7d7c9612d7a5d3c38e1c8120e581e780fde",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all supplied artifact uses (white paper, outlines, video script, narration map, treatment, visual inventory, findings matrix, and assurance case), claim C-EVID-002 is consistently cited within its defined scope and limitations. Every occurrence explicitly retains the boundary that combinatorial coverage exposes missing combinations and quantifies coverage only for chosen factors, discretization bins, and interaction strengths, and does not by itself establish model performance or safe operation probability.",
+  "evidence_locators": [
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_evidence/findings.md:character 528",
+    "video/script.md:character 17672",
+    "video/nextgen_structure/narration_evidence_map.md:character 2356",
+    "video/nextgen_structure/script_outline.md:character 9524",
+    "video/nextgen_structure/treatment.md:character 9018",
+    "video/nextgen_structure/visual_inventory.md:character 2440",
+    "resource_composition/whitepaper_outline.md:character 1608",
+    "resource_composition/whitepaper.md:character 40379"
+  ],
+  "limitations": [
+    "Review is bounded by the artifact-use excerpts provided in the packet.",
+    "Does not evaluate real-world system safety or simulator fidelity beyond verifying consistent claim propagation."
+  ],
+  "resolves": []
+}

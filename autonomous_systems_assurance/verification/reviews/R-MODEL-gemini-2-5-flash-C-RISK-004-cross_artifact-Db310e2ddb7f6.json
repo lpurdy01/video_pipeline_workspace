@@ -1,0 +1,24 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-RISK-004-cross_artifact-Db310e2ddb7f6",
+  "package_id": "P-C-RISK-004-cross_artifact",
+  "input_digest": "b310e2ddb7f6f44eb35d9c6ceb1194c095c69c9aa35942a40dca55dd1d54d5cf",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Every supplied artifact use of C-RISK-004 accurately preserves the claim's scope and limitations. The claim states that the UK CAA acknowledges DAA risk-ratio metrics are relative and that averaging can hide deficiencies, meaning a single aggregate score is insufficient for assurance. The artifacts consistently use this claim to justify the need for detailed, scenario-level evidence, to design figures that separate risk elements, and to emphasize the limitations of aggregate metrics. They correctly attribute the information to the UK CAA's CAP3127 consultation response and policy-concept test phase, without presenting it as a final certification standard or universal AI criterion, thereby respecting the claim's stated scope and the source's limitations.",
+  "evidence_locators": [
+    "resource_composition/figures.md (Figure F-009 visual limit)",
+    "research/integration_round4.md (Section 'Risk and probability distinctions')",
+    "resource_composition/whitepaper_outline.md (Section '3. What \u201csafe enough\u201d means', '6. Risk evidence is conditional', '10. Let the car take off', and 'Coverage and language gates')",
+    "research/contributions/risk_evidence/findings.md (Section 'Risk numbers need an argument around them' and 'Proposed paper/video use')"
+  ],
+  "limitations": [
+    "The claim is based on a UK CAA consultation response and policy-concept test phase, not a final certification standard or approved DAA design.",
+    "NMAC, DWC, and risk-ratio results depend on their specific definitions, encounter distributions, operational restrictions, and the rest of the mitigation stack."
+  ],
+  "resolves": []
+}

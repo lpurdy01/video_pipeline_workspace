@@ -1,0 +1,24 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-RISK-006-cross_artifact-Dff10da478874",
+  "package_id": "P-C-RISK-006-cross_artifact",
+  "input_digest": "ff10da4788743aa91f7e0e698274e27cbcf7b2c985942c570f846cf4ecb37129",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact use of claim C-RISK-006 accurately preserves its scope and limitations. The EASA material is consistently identified as 'proposed' and 'not final guidance'. Level 3B is correctly described as 'reserved' with 'n/a' for authority and responsibility, and artifacts explicitly state it should not be presented as an approved no-human-involvement operating category, directly addressing the claim's negative constraint. No artifact equates EASA's proposed levels with SAE road-automation levels or presents them as a certification prohibition.",
+  "evidence_locators": [
+    "research/contributions/direction_evidence/findings.md",
+    "resource_composition/figures.md",
+    "research/integration_round5.md",
+    "video/script.md",
+    "video/nextgen_structure/visual_inventory.md"
+  ],
+  "limitations": [
+    "NPA 2025-07(B) is proposed material, not a final EASA decision, AMC/GM, type-certification basis or approval. The exclusions and risk table describe this proposal's scope; they do not establish a worldwide prohibition on AI functions contributing to higher-severity hazards."
+  ],
+  "resolves": []
+}

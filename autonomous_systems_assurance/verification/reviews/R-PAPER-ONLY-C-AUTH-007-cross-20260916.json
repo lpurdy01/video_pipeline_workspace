@@ -1,0 +1,24 @@
+{
+  "id": "R-PAPER-ONLY-C-AUTH-007-cross-20260916",
+  "package_id": "P-C-AUTH-007-cross_artifact",
+  "input_digest": "68ec1400ea67dbb980e596c650efda1aef57ea888480f9f323d58bb7798f7553",
+  "task": "cross_artifact",
+  "reviewer_id": "paper-compiler-review-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-only-review-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "Across the authority findings, plan, paper, and source card, UL 4600 remains a voluntary goal-based autonomous-product safety-argument example. No artifact turns it into a road operating permission, aviation requirement, complete approval recipe, or disclosed evidence for a particular model.",
+  "evidence_locators": [
+    "research/contributions/assurance_authority/findings.md:20, partial/scoped-method framing",
+    "planning/learned_systems_assurance_next_steps.md:36-38, standards/authorization distinction",
+    "resource_composition/whitepaper.md:146, limited road-guidance statement",
+    "resource_composition/review_prototype/sources.html, C-AUTH-007 scope card"
+  ],
+  "limitations": [
+    "The static source card is outside the current manifest.",
+    "This does not validate the underlying UL page or current edition status."
+  ],
+  "resolves": []
+}

@@ -232,7 +232,7 @@ class S01GenerationGotCheap(BeatScene):
             Beat("The goal is to automate the verification scaffolding", self.b29_fold,
                  note="9.5s line — scaffolding snaps on, then folds into the package"),
             Beat("It is a process, not a shortcut", self.b30_through_gate),
-            Beat("Or, less formally", self.b31_beat),
+            Beat("Or, less formally", self.b31_beat, lead=0.55),
             Beat("a compiler for trust", self.b32_title),
         ]
 
@@ -895,11 +895,14 @@ class S01GenerationGotCheap(BeatScene):
         ctx.play(*style.highlight(gate, style.GOLD), run_time=0.4)
 
     def b31_beat(self, ctx):
-        ctx.retire("packet", "name", run_time=0.4)
-        ctx.retire("frame", "gate2", run_time=0.35)
         final = style.title_text("a compiler for trust")
         final.move_to(stage.STAGE.center)
-        ctx.show(final, tag="final", anim=lambda m: FadeIn(m, scale=0.92), run_time=0.55)
+        leaving = [self._owned[t] for t in ("packet", "name", "frame", "gate2")
+                   if t in self._owned]
+        for tag in ("packet", "name", "frame", "gate2"):
+            self._owned.pop(tag, None)
+        self.remove(*leaving)
+        ctx.show(final, tag="final", anim=lambda m: FadeIn(m, scale=0.92), run_time=0.25)
 
     def b32_title(self, ctx):
         # The closing words are already up — this line lands on them rather than

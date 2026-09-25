@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-AIR2-008-source_support-D59f51027fcdf",
+  "package_id": "P-C-AIR2-008-source_support",
+  "input_digest": "59f51027fcdf80d8aa7ecb41c84723be8b15a642c958b3feb97bc7ef216d36cb",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided evidence excerpts only mention 'Software Runtime Assurance in AI' and a policy statement. Because the full context is absent, there is insufficient evidence to verify that the FAA roadmap identifies formal/numerical methods, system-level testing, explainability, and black-box validation as research or method-development topics.",
+  "evidence_locators": [
+    "S-AIR2-007-R2",
+    "S-AIR2-007-R3"
+  ],
+  "limitations": [
+    "Full text of the FAA Roadmap for Artificial Intelligence Safety Assurance is required to verify the complete list of research topics."
+  ],
+  "resolves": []
+}

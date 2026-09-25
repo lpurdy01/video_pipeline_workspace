@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-RISK-006-source_support-D28107f612dba",
+  "package_id": "P-C-RISK-006-source_support",
+  "input_digest": "28107f612dba0dfa56b83a119f4574d60dd1ce4e853ca986fc08513d904570b1",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The EASA NPA 2025-07(B) Table 1, 'AI levels,' explicitly lists Levels 1A through 3A with defined 'Authority of the end user' and 'Responsibility of the end user' (e.g., Full, Partial, Limited upon alerting, Remains with the end user, Reserved (operations dependent)). For Level 3B, the table clearly states 'Reserved' under 'AI level' and 'n/a' for both 'Authority of the end user' and 'Responsibility of the end user.' The source is identified as 'Proposed DS.AI' and its limitations confirm it is 'proposed material, not a final EASA decision, AMC/GM, type-certification basis or approval,' which supports the claim that it 'should not be presented as an approved no-human-involvement operating category.'",
+  "evidence_locators": [
+    "PDF p. 12, Table 1 \u2013 AI levels",
+    "S-RISK-003: inspection_scope",
+    "S-RISK-003: limitations"
+  ],
+  "limitations": [],
+  "resolves": []
+}

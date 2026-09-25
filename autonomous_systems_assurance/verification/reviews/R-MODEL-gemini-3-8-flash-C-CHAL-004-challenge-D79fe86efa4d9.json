@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-004-challenge-D79fe86efa4d9",
+  "package_id": "P-C-CHAL-004-challenge",
+  "input_digest": "79fe86efa4d97efe1a00411155a62dda1042c61fe6b7f4d7dcc4d56d493fe5f2",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The claim accurately reflects the explicit scope exclusions in EASA NPA 2025-07(B) DS.AI.010(d)(1) and (d)(2), which exclude AI-based systems directly contributing to fatalities or multiple life-threatening injuries as well as online-learning systems with safety effects. The challenge's caution\u2014that a specific DAA perception function must not be assumed catastrophic without an aircraft-level failure-condition allocation\u2014is preserved by the claim's precise restriction to the project's most demanding flight-critical autonomy case rather than a blanket assertion on all airborne functions.",
+  "evidence_locators": [
+    "S-CHAL-002-R1",
+    "NPA 2025-07 (B), PDF p. 4, DS.AI.010 Scope"
+  ],
+  "limitations": [
+    "NPA 2025-07(B) remains a proposed notice of amendment rather than final adopted AMC/GM; actual exclusion depends on function hazard allocation and architectural mitigations."
+  ],
+  "resolves": []
+}

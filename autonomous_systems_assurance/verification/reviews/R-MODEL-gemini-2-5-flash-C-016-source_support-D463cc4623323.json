@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-016-source_support-D463cc4623323",
+  "package_id": "P-C-016-source_support",
+  "input_digest": "463cc4623323a9767c6539f40fc5f747adaf3551a72c9f08582c1ed1de1fcf29",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim states that for the worked example, an avoidance monitor cannot rely solely on the same failed perception output it is meant to guard. The provided artifacts consistently present this as a core piece of project reasoning and an illustrative shared-input failure case. For instance, `assurance/architecture.md` explicitly states: 'A monitor using only the same missed-object output as the planner can share the failure. [C-016]' and describes a 'First falsification exercise' to demonstrate this. `research/initial_findings.md` reinforces this as 'project reasoning to test' and a 'key challenge is observability.' The `video/script.md` and `video/nextgen_structure/script_outline.md` use this exact phrasing in the context of an 'illustrative shared-input case' for the video's cold open. The `video/nextgen_structure/treatment.md` further clarifies that 'The precise claim is narrow: if the monitor and planner depend only on that same failed perception output, they cannot use it to distinguish the worlds.' This aligns perfectly with the claim's text, scope ('Project reasoning under shared-input failure assumption'), and provisional status.",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "research/initial_findings.md",
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "wiki/concepts/open_tensions.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

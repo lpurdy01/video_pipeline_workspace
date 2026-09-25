@@ -1,0 +1,22 @@
+{
+  "id": "R-FIRSTPASS-C-CHAL-006-challenge",
+  "package_id": "P-C-CHAL-006-challenge",
+  "input_digest": "459cfd789d6442ef52d4d5ebf5399d672347298cbd722cf3bf22d5b885c6621a",
+  "task": "challenge",
+  "reviewer_id": "first-pass-challenge-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-challenge-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "AMLAS Version 1.1 explicitly lists six lifecycle stages from ML safety-assurance scoping through deployment, links system hazard/risk analysis to ML requirements, limits its scope to the ML component, says it should not be used in isolation, and states a primary focus on offline supervised learning. The challenge found no wording that turns this research guidance into regulator acceptance or a complete vehicle/aircraft approval method; the claim does not make either leap.",
+  "evidence_locators": [
+    "S-CHAL-004-R1 through S-CHAL-004-R3, AMLAS Version 1.1, PDF pp. 2-3",
+    "AMLAS Version 1.1, 'Overview of AMLAS' and 'Using this Document', https://www.york.ac.uk/media/assuring-autonomy/documents/AMLASv1.1.pdf"
+  ],
+  "limitations": [
+    "AMLAS is 2021 University of York guidance; no independent regulator acceptance or completed high-criticality application was established here.",
+    "Its stated component scope leaves system authority, operational permission, and integrated recovery evidence open."
+  ],
+  "resolves": []
+}

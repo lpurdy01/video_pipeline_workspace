@@ -1,10 +1,10 @@
 """
 Assemble the sections into one cut.
 
-Each section is muxed with its own narration and the pieces are concatenated in
-order. The rendered length of every scene is checked against its narration before
-anything is joined — video 1 concatenated first and discovered a truncated
-section never, because ffmpeg's `-t` had quietly cut it.
+Each section is muxed with the narration named in its timing table and the pieces
+are concatenated in order. The rendered length of every scene is checked against
+its narration before anything is joined — video 1 concatenated first and
+discovered a truncated section never, because ffmpeg's `-t` had quietly cut it.
 """
 from __future__ import annotations
 
@@ -39,11 +39,39 @@ def probe(path: Path) -> float:
     return float(out.stdout.strip())
 
 
+def narration_for(section_id: str) -> Path:
+    timing_path = VIDEO / "out" / "timing" / f"{section_id}.timing.json"
+    if not timing_path.exists():
+        raise SystemExit(f"{section_id} has no timing table")
+    data = json.loads(timing_path.read_text())
+    raw = data.get("audio")
+    if not raw:
+        raise SystemExit(f"{section_id} timing table does not name an audio file")
+    audio = Path(raw)
+    if not audio.is_absolute():
+        audio = VIDEO.parent / audio
+    if not audio.exists():
+        raise SystemExit(f"{section_id} narration file is missing: {audio}")
+    return audio
+
+
+def latest_render(scene: str) -> Path:
+    hits = sorted((VIDEO / "scenes" / "media" / "videos").rglob(f"{scene}.mp4"))
+    if not hits:
+        raise SystemExit(f"{scene} has not been rendered")
+    return max(hits, key=lambda p: p.stat().st_mtime)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--out", type=Path, default=VIDEO / "out" / "review" / "full_cut.mp4")
     ap.add_argument("--speed", type=float, default=1.0,
                     help="Export speed; the final cut ships sped up.")
+    ap.add_argument("--width", type=int, default=854)
+    ap.add_argument("--height", type=int, default=480)
+    ap.add_argument("--fps", type=int, default=15)
+    ap.add_argument("--crf", type=int, default=23)
+    ap.add_argument("--audio-bitrate", default="128k")
     args = ap.parse_args()
 
     tmp = args.out.parent / "_sections"
@@ -51,11 +79,8 @@ def main() -> int:
     clips, report = [], []
 
     for section_id, module, scene in SECTIONS:
-        hits = sorted((VIDEO / "scenes" / "media" / "videos").rglob(f"{scene}.mp4"))
-        if not hits:
-            raise SystemExit(f"{scene} has not been rendered")
-        video = hits[-1]
-        audio = VIDEO / "out" / "timing" / f"{section_id}.scratch.wav"
+        video = latest_render(scene)
+        audio = narration_for(section_id)
         v_len, a_len = probe(video), probe(audio)
         drift = v_len - a_len
         status = "ok" if abs(drift) <= TOLERANCE else "DRIFT"
@@ -64,10 +89,11 @@ def main() -> int:
         clip = tmp / f"{section_id}.mp4"
         subprocess.run(
             ["ffmpeg", "-y", "-i", str(video), "-i", str(audio),
-             "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
-             "-c:a", "aac", "-b:a", "128k", "-pix_fmt", "yuv420p",
-             "-vf", "scale=854:480:force_original_aspect_ratio=decrease,"
-                    "pad=854:480:(ow-iw)/2:(oh-ih)/2,fps=15",
+             "-c:v", "libx264", "-preset", "veryfast", "-crf", str(args.crf),
+             "-c:a", "aac", "-b:a", args.audio_bitrate, "-pix_fmt", "yuv420p",
+             "-vf", f"scale={args.width}:{args.height}:force_original_aspect_ratio=decrease,"
+                    f"pad={args.width}:{args.height}:(ow-iw)/2:(oh-ih)/2,"
+                    f"fps={args.fps}",
              str(clip)],
             check=True, capture_output=True)
         clips.append(clip)
@@ -85,7 +111,8 @@ def main() -> int:
         fast = args.out.with_name(args.out.stem + f"_{args.speed}x.mp4")
         subprocess.run(["ffmpeg", "-y", "-i", str(args.out),
                         "-vf", f"setpts=PTS/{args.speed}", "-af", f"atempo={args.speed}",
-                        "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
+                        "-c:v", "libx264", "-preset", "veryfast", "-crf", str(args.crf),
+                        "-c:a", "aac", "-b:a", args.audio_bitrate,
                         "-pix_fmt", "yuv420p", str(fast)], check=True, capture_output=True)
         print(f"sped-up export: {fast}")
 

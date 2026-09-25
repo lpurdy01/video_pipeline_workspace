@@ -1,0 +1,18 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-004-source_support-D40644ddcc525",
+  "package_id": "P-C-CHAL-004-source_support",
+  "input_digest": "40644ddcc525db371b9dcecebe7846fe41cb3c818d563537403266a3db9dfe8a",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided EASA NPA 2025-07(B) document, specifically section DS.AI.010 Scope, explicitly states two exclusions that directly support the claim. Exclusion (1) states 'AI-based systems presenting a risk directly contributing to the potential for fatalities or multiple life-threatening injuries'. Exclusion (2) states 'AI-based systems with online learning capabilities, for which the failure contribution is more stringent than \u2018no safety effect\u2019'. These exclusions confirm that the proposed DS.AI does not cover such systems, and therefore cannot be presented as a complete path for the project's most demanding flight-critical autonomy case, which would inherently involve such high-risk scenarios. The document's status as a 'Notice of Proposed Amendment' also aligns with the claim's 'proposed path' and 'provisional' status.",
+  "evidence_locators": [
+    "PDF p. 4, DS.AI.010 Scope"
+  ],
+  "limitations": [],
+  "resolves": []
+}

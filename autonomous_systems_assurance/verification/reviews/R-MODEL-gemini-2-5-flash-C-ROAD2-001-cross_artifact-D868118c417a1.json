@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-ROAD2-001-cross_artifact-D868118c417a1",
+  "package_id": "P-C-ROAD2-001-cross_artifact",
+  "input_digest": "868118c417a1d77b7eaf72ac298017f751b7156331ed72992abbd31bb888e731",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The claim C-ROAD2-001, which states Texas requires TxDMV authorization for commercial AV operation, is consistently used across all artifacts. Every instance explicitly preserves the claim's scope and limitations by clarifying that this authorization is an operational permission layer and not a substitute for technical safety evidence or proof of model safety. The artifacts emphasize the distinction between various regulatory layers and technical assurance, aligning with the source's limitations and the claim's challenge.",
+  "evidence_locators": [
+    "video/script.md#L70",
+    "video/nextgen_structure/narration_evidence_map.md#L20",
+    "video/nextgen_structure/script_outline.md#L60",
+    "video/nextgen_structure/treatment.md#L40",
+    "video/nextgen_structure/visual_inventory.md#L30",
+    "research/contributions/road_round2/findings.md#L6"
+  ],
+  "limitations": [
+    "The review is limited to the provided artifacts and does not re-evaluate the primary source material for C-ROAD2-001 beyond its documented inspection scope and limitations."
+  ],
+  "resolves": []
+}

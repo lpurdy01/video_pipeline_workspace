@@ -1,0 +1,18 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-STD-003-source_support-Dc8281050bf20",
+  "package_id": "P-C-STD-003-source_support",
+  "input_digest": "c8281050bf20e0b600e0cf9f1e597498e30b3f7c2b67069715362ff8b102a893",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The captured text from 49 U.S.C. \u00a7 30115(a) directly states that a manufacturer or distributor 'shall certify... at delivery that the vehicle or equipment complies with applicable motor vehicle safety standards' and prohibits issuing a certificate if, 'in exercising reasonable care, the person has reason to know the certificate is false or misleading in a material respect.' This precisely matches the claim's wording, scope, and date.",
+  "evidence_locators": [
+    "49 U.S.C. \u00a7 30115(a), In General"
+  ],
+  "limitations": [],
+  "resolves": []
+}

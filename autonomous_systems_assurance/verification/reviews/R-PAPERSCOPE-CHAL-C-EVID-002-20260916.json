@@ -1,0 +1,23 @@
+{
+  "id": "R-PAPERSCOPE-CHAL-C-EVID-002-20260916",
+  "package_id": "P-C-EVID-002-challenge",
+  "input_digest": "0bab8278e318f5be743ccafbebd17ff78bb8c0fbc3c2b6351122f4b6702fd727",
+  "task": "challenge",
+  "reviewer_id": "paper-scope-challenge-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-scope-digest-pinned-challenge-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The source says selected input-space coverage can quantify coverage and expose gaps, while explicitly saying its relation to model performance is not yet clear. The claim therefore correctly refuses to treat a selected coverage metric as performance or a probability of safe operation.",
+  "evidence_locators": [
+    "S-EVID-002-R1, Assured Autonomy through Combinatorial Methods, PDF p. 3",
+    "S-EVID-002-R2, Assured Autonomy through Combinatorial Methods, PDF p. 5",
+    "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957175"
+  ],
+  "limitations": [
+    "Chosen variables, discretization, and interaction strength govern the result; omitted factors can defeat apparent coverage.",
+    "It is a method paper, not a DAA result, regulator method, or safety-probability proof."
+  ],
+  "resolves": []
+}

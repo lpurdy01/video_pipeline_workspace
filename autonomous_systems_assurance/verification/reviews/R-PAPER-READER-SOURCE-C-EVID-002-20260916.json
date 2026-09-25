@@ -1,0 +1,22 @@
+{
+  "id": "R-PAPER-READER-SOURCE-C-EVID-002-20260916",
+  "package_id": "P-C-EVID-002-source_support",
+  "input_digest": "562e3507737a41f53710d2aee13ebd4a052aa989d684b5b4bef181a93b8ed477",
+  "task": "source_support",
+  "reviewer_id": "paper-reader-source-support-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "source-support-digest-pinned-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The inspected paper shows how combinatorial input coverage quantifies selected attribute-value combinations and identifies insufficient data regions. It also says the relation of neuron-style coverage to performance is unclear. The claim's warning that selected input coverage alone is not a model-performance or safety-probability result is a faithful bounded interpretation of those method limits.",
+  "evidence_locators": [
+    "S-EVID-002-R1 \u2014 PDF p. 3, structural versus input coverage discussion",
+    "S-EVID-002-R2 \u2014 PDF p. 5, transfer-learning and conclusion discussion"
+  ],
+  "limitations": [
+    "Variables, discretisation and interaction strength are analyst choices; unmodelled causal factors remain outside the measure.",
+    "This methods paper does not demonstrate a certification process, failure rate or safe closed-loop behaviour."
+  ],
+  "resolves": []
+}

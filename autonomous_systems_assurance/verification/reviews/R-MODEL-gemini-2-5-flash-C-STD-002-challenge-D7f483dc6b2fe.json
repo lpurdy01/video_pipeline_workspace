@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-STD-002-challenge-D7f483dc6b2fe",
+  "package_id": "P-C-STD-002-challenge",
+  "input_digest": "7f483dc6b2fecc6a7d9c1650d22cba628768df875a941aa4a7aff1bbe89e737a",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The claim accurately describes the content of the specified captured EASA CRT page (S-STD-002). The page's legend defines the status icon 'Document is awaiting responses to comments', which is displayed next to RMT.0742's NPA 2025-07(B). The title for this entry explicitly states 'Proposed detailed specifications and associated acceptable means of compliance and guidance material for AI trustworthiness (DS.AI)'. This confirms that the document is labelled as proposed and awaiting responses, and therefore does not show a final published DS.AI AMC/GM result on that specific captured page.",
+  "evidence_locators": [
+    "S-STD-002-R1"
+  ],
+  "limitations": [
+    "This review is limited to the EASA CRT page captured on 2026-09-22. The current status of RMT.0742 / NPA 2025-07(B) on EASA's live rulemaking portal or official publications may have changed since the capture date, but this does not defeat the claim about the historical captured page."
+  ],
+  "resolves": []
+}

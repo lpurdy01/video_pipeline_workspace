@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-AIR2-009-source_support-D24a9814308ec",
+  "package_id": "P-C-AIR2-009-source_support",
+  "input_digest": "24a9814308ecb22746c3fe503f7af2be0793851c5213e99348a644bca1ace3a1",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided short excerpt confirms the landing page mentions 'learning assurance' and 'AI explainability', and the metadata confirms the PDF was not inspected during that pass. However, the excerpt does not contain the phrase 'Level 2 human-AI teaming', mentioning 'ethics-based assessment' instead. Because the full context of the landing page is absent, it cannot be verified if Level 2 human-AI teaming is actually stated in the summary.",
+  "evidence_locators": [
+    "S-AIR2-008-R1",
+    "research/contributions/air_round2/findings.md"
+  ],
+  "limitations": [
+    "Full text of the EASA landing-page summary is needed to verify the mention of Level 2 human-AI teaming.",
+    "The retrieved EASA Issue 2 PDF must be extracted and inspected to verify the actual guidance contents."
+  ],
+  "resolves": []
+}

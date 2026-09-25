@@ -1,0 +1,24 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-RISK-002-challenge-Vassurance-first-pass-v2-local-context-D55f416843cd5",
+  "package_id": "P-C-RISK-002-challenge",
+  "input_digest": "55f416843cd55cc52d7a7706b7f1455ed772e0697f03635f6622c84dad71840c",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The claim strictly characterizes the FAA Version I roadmap's framing\u2014identifying DAL determination via system safety assessment (ARP4754A/ARP4761) as a starting point to scale rigor, while quoting its finding that existing software/complex-hardware guidance is inadequate for learned implementations. Across all artifact uses, the claim is confined to non-binding, direction-setting material and explicitly avoids claiming approval boundaries, means of compliance, or accepted flight-critical DAL allocations, directly satisfying the challenge condition.",
+  "evidence_locators": [
+    "S-RISK-002, PDF p. 15, section 'Application of Principles to Aircraft Certification Safety Assurance of Learned AI Implementations'",
+    "resource_composition/figures.md (F-010)",
+    "research/integration_round4.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "research/contributions/risk_evidence/findings.md"
+  ],
+  "limitations": [
+    "The source is non-binding direction-setting roadmap material from 2024 and does not constitute a published means of compliance, FAA special condition, or project-specific certification basis."
+  ],
+  "resolves": []
+}

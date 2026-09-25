@@ -1,0 +1,22 @@
+{
+  "id": "R-FIRSTPASS-SOURCE-C-EVID-002-20260916",
+  "package_id": "P-C-EVID-002-source_support",
+  "input_digest": "0dcc3394e62eb2a51a531d6baacdcec4dbc1f1f86d0a3c97f3440dfcb8250d56",
+  "task": "source_support",
+  "reviewer_id": "first-pass-source-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-source-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The inspected methods paper explains that combinatorial input coverage can quantify coverage over selected combinations and identify gaps, while stating that its relation to model performance is not yet clear. Its discussion of data insufficiency supports the claim's limitation that coverage alone neither establishes learned-model performance nor a safe-operation probability.",
+  "evidence_locators": [
+    "S-EVID-002-R1 \u2014 PDF p. 3, structural versus input coverage discussion",
+    "S-EVID-002-R2 \u2014 PDF p. 5, transfer-learning and conclusion discussion"
+  ],
+  "limitations": [
+    "The result depends on chosen variables, discretization, and interaction strength.",
+    "It is a methods paper, not a demonstrated certification process or failure-rate bound."
+  ],
+  "resolves": []
+}

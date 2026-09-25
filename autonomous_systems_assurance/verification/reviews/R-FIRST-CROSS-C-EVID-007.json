@@ -1,0 +1,23 @@
+{
+  "id": "R-FIRST-CROSS-C-EVID-007",
+  "package_id": "P-C-EVID-007-cross_artifact",
+  "input_digest": "72360abccba809296f86ebfd70f7e7a60200e58ad409ebf66076378f3a881f5c",
+  "task": "cross_artifact",
+  "reviewer_id": "first-pass-cross-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-cross-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The two uses keep neuron coverage as a limited study result, not a causal adequacy measure or safety-failure threshold. In the case graph it is only one claim linked to planned scenario evidence and an open performance obligation.",
+  "evidence_locators": [
+    "assurance/assurance_case.json, tagged use [C-EVID-007], EA-ROAD-003 and O-004 links",
+    "research/contributions/assurance_evidence/findings.md, tagged use [C-EVID-007], neuron-coverage limitation finding",
+    "assurance_case_links: EA-ROAD-003, O-004"
+  ],
+  "limitations": [
+    "This review does not reproduce the study or validate a neuron-coverage measurement for the worked model.",
+    "No system safety or test-adequacy threshold is established."
+  ],
+  "resolves": []
+}

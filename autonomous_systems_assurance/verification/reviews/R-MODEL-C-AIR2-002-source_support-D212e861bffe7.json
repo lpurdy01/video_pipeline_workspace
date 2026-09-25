@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-AIR2-002-source_support-D212e861bffe7",
+  "package_id": "P-C-AIR2-002-source_support",
+  "input_digest": "212e861bffe7b7ed9b8f1566c90f8f4f7fbf105093ace06d5f909a06e8ffec3d",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided excerpt confirms the collection of ATAR, ADS-B, and Active Surveillance data, but it is too short to verify the claims regarding flight testing and comparison with simulation models. Full context is absent.",
+  "evidence_locators": [
+    "S-AIR2-002-R1"
+  ],
+  "limitations": [
+    "Full text of the FAA/GA-ASI 2022 report is required to verify the mentions of flight testing and comparison with simulation models."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-002-source_support-Ddda075077348",
+  "package_id": "P-C-EVID-002-source_support",
+  "input_digest": "dda0750773481bc7c2850a0b1a3cf229cc63f935ad7281f93541199a31f42c97",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The NIST/Virginia Tech paper 'Assured Autonomy through Combinatorial Methods' (S-EVID-002) directly supports the claim. Region S-EVID-002-R1 explicitly discusses how combinatorial coverage can show 'the fraction of the total input space that is missing' and how 'the area under the curve... is populated by the 2-way combinations that are covered,' thereby exposing missing combinations and quantifying coverage. The same region states, 'it is not yet clear how closely this form of coverage is related to model performance' and 'This is where the performance of the ML model is unknown,' directly supporting that it does not by itself establish learned-model performance. The source's overall limitations, as noted in the inspection scope, state that 'it does not establish a failure rate, simulator fidelity or safe system behavior by itself,' which covers the 'probability of safe operation' aspect. Region S-EVID-002-R2, by noting the insufficiency of 'large volumes of data,' reinforces the need for methods like combinatorial coverage to identify gaps, implicitly supporting the limitations of coverage alone for performance/safety claims.",
+  "evidence_locators": [
+    "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957175#page=3",
+    "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957175#page=5"
+  ],
+  "limitations": [],
+  "resolves": []
+}

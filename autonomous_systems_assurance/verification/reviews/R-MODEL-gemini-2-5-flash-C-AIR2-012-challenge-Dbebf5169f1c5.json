@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AIR2-012-challenge-Dbebf5169f1c5",
+  "package_id": "P-C-AIR2-012-challenge",
+  "input_digest": "bebf5169f1c546c4a99909a78688d28f7c1d1bcf7643cf99141faacccd9f97fc",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The retrieved FAA Exemption letters (19111B and 19111C, both dated September 15, 2023) confirm that Zipline was authorized for scoped Salt Lake City commercial package deliveries BVLOS without visual observers. The letters explicitly state that operations are under Part 135 as amended by the exemption, require separate COA/OpSpecs, and mandate compliance with aircraft airworthiness (Part 21 Subpart H). However, the letters do not establish a Technical Standard Order (TSO) for the DAA equipment itself, nor do they grant unrestricted flight authority, as evidenced by numerous operational limitations (e.g., specific geographic area, altitude, weather, time of day, weight, speed, separation distances, and an expiration date). The challenge to distinguish these approval types was met, and the claim remains accurate within its stated scope.",
+  "evidence_locators": [
+    "verification/out/sources/book_intake/authority/faa-2020-0499-0033-zipline-exemption-19111b.pdf (pages 1, 3-4, 10-12, 14-22, 25)",
+    "verification/out/sources/book_intake/authority/faa-2020-0499-0034-zipline-exemption-19111c.pdf (pages 1, 10-19)",
+    "https://www.faa.gov/newsroom/faa-authorizes-zipline-deliver-commercial-packages-beyond-line-sight"
+  ],
+  "limitations": [
+    "The review confirms that the provided documents do not establish a DAA equipment TSO. It does not constitute an exhaustive search for a separate TSO authorization for Zipline's DAA equipment, which would be outside the scope of this claim's negative assertion."
+  ],
+  "resolves": []
+}

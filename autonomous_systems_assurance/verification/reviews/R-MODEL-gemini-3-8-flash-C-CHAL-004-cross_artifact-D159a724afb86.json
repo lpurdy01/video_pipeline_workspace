@@ -1,0 +1,26 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-004-cross_artifact-D159a724afb86",
+  "package_id": "P-C-CHAL-004-cross_artifact",
+  "input_digest": "159a724afb86b15ffc78f4beb70969aeb0028404005085bcdb8c3de5b7365537",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all artifact uses (architecture document, worked case JSON, challenge findings, method crosswalk, figures, video treatment and scripts, and whitepaper), the claim's scope and qualifications are strictly preserved. The documents consistently identify EASA NPA 2025-07(B) / DS.AI as proposed rather than final material, accurately reflect its explicit scope exclusions (fatalities/multiple life-threatening injuries and certain online-learning systems), and actively incorporate the challenge limitation noting that an aircraft-level failure-condition allocation is necessary before classifying any specific autonomy function under this exclusion.",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "assurance/method_crosswalk.json (M-EASA-DSAI-001)",
+    "research/contributions/assurance_challenge/findings.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "S-CHAL-002-R1 (NPA 2025-07 (B), PDF p. 4, DS.AI.010 Scope)"
+  ],
+  "limitations": [
+    "Appraisal is limited to the supplied artifacts and does not constitute verification of a real aircraft safety case or final EASA regulatory rulemaking."
+  ],
+  "resolves": []
+}

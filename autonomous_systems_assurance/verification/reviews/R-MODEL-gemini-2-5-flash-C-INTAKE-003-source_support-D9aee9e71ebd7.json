@@ -1,0 +1,19 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-INTAKE-003-source_support-D9aee9e71ebd7",
+  "package_id": "P-C-INTAKE-003-source_support",
+  "input_digest": "9aee9e71ebd7ecf4d0dfd18e8eaebc412c2cb974081f47cd8c594bc0ff6b8c0e",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The TSO-C211a document explicitly states its purpose is to define 'minimum performance standards (MPS) your DAA equipment must first meet for approval' for manufacturers (Section 1, page 1). It also clearly states, 'Installation of this article requires separate approval' (Section 5.b.(3), page 8). The effective date of the TSO (02/26/2026) aligns with the claim's scope.",
+  "evidence_locators": [
+    "PDF printed page 1, sections 1\u20133",
+    "PDF printed page 8, section 5.b.(3), installation limitations"
+  ],
+  "limitations": [],
+  "resolves": []
+}

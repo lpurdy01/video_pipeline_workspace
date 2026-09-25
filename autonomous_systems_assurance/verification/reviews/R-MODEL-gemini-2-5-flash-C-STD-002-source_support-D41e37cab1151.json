@@ -1,0 +1,19 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-STD-002-source_support-D41e37cab1151",
+  "package_id": "P-C-STD-002-source_support",
+  "input_digest": "41e37cab1151f63b10c44cefbff02e2d62619317b07953e312a1fa432ae2e973",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The captured EASA CRT document list page, dated 2026-09-22, clearly shows RMT.0742 with NPA 2025-07(B) in the 'Number' column. Its 'Title' is 'Proposed detailed specifications and associated acceptable means of compliance and guidance material for AI trustworthiness (DS.AI)'. The status icon for this entry corresponds to the legend 'Document is awaiting responses to comments'. This directly supports the claim that it is labelled 'proposed' and 'awaiting responses to comments', and therefore not a final published result.",
+  "evidence_locators": [
+    "S-STD-002-R1: HTML table row trDoc30_1133; status legend and RMT.0742 row",
+    "research/contributions/standards_authority/findings.md: As of: 2026-09-22"
+  ],
+  "limitations": [],
+  "resolves": []
+}

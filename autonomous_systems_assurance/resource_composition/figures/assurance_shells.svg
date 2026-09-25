@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Nested assurance scopes around a learned component, showing that deterministic action constraints and monitoring have stated observation and timing assumptions.">
+  <style>
+    .f8title{font-family:Arial,sans-serif;font-size:31px;font-weight:700;fill:#103452}.f8sub{font:16px Arial,sans-serif;fill:#4d6474}.f8head{font-family:Arial,sans-serif;font-size:18px;font-weight:700;fill:#103452}.f8text{font:15px Arial,sans-serif;fill:#183142}.f8small{font:13px Arial,sans-serif;fill:#465e70}.f8outer{fill:#edf5f8;stroke:#567f98;stroke-width:2}.f8system{fill:#e7f1f7;stroke:#2879ad;stroke-width:2}.f8platform{fill:#fff4d9;stroke:#c68519;stroke-width:2}.f8learned{fill:#fde8c6;stroke:#bc7611;stroke-width:3}.f8action{fill:#e7f4ed;stroke:#28734d;stroke-width:3}.f8line{stroke:#2879ad;stroke-width:3;fill:none}.f8dash{stroke:#c68519;stroke-width:3;stroke-dasharray:8 6;fill:none}.f8note{fill:#fffefa;stroke:#8aa4b8;stroke-width:2}.f8bad{fill:#fff7e5;stroke:#c68519;stroke-width:2}
+  </style>
+  <defs>
+    <marker id="f8arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#2879ad"/></marker>
+    <marker id="f8green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#28734d"/></marker>
+  </defs>
+  <rect width="1200" height="760" fill="#f7fafc"/>
+  <text x="55" y="58" class="f8title">A learned component lives inside several assurance shells</text>
+  <text x="55" y="86" class="f8sub">Conceptual architecture: every shell needs evidence. The figure does not say that any particular product is certified.</text>
+
+  <rect x="70" y="130" width="700" height="540" rx="36" class="f8outer"/>
+  <text x="105" y="170" class="f8head">1. Operating authority and change control</text>
+  <text x="105" y="193" class="f8small">hazard, operating domain, allowed mission, release identity, monitoring and updates</text>
+
+  <rect x="115" y="225" width="610" height="390" rx="30" class="f8system"/>
+  <text x="145" y="262" class="f8head">2. System safety argument</text>
+  <text x="145" y="284" class="f8small">sensor limits, allocation, timing, integration, failure propagation and recovery margin</text>
+
+  <rect x="165" y="320" width="510" height="240" rx="24" class="f8platform"/>
+  <text x="195" y="355" class="f8head">3. Platform and conventional implementation</text>
+  <text x="195" y="378" class="f8small">sensors • preprocessing • compute • interfaces • controller • actuator health</text>
+
+  <rect x="215" y="418" width="210" height="100" rx="18" class="f8learned"/>
+  <text x="244" y="455" class="f8head">Learned release</text>
+  <text x="244" y="478" class="f8small">data + labels +</text><text x="244" y="497" class="f8small">model + configuration</text>
+
+  <rect x="470" y="400" width="165" height="136" rx="18" class="f8action"/>
+  <text x="491" y="435" class="f8head">Action envelope</text>
+  <text x="491" y="458" class="f8small">deterministic</text><text x="491" y="477" class="f8small">constraints and</text><text x="491" y="496" class="f8small">recovery policy</text>
+  <path d="M425 468 H470" class="f8line" marker-end="url(#f8arrow)"/>
+  <path d="M635 468 H690" class="f8line" marker-end="url(#f8green)"/>
+  <text x="650" y="458" class="f8small">allowed</text><text x="650" y="477" class="f8small">action</text>
+
+  <rect x="830" y="150" width="310" height="150" rx="16" class="f8note"/>
+  <text x="857" y="186" class="f8head">The wrapper is conditional</text>
+  <text x="857" y="212" class="f8text">A deterministic constraint can</text><text x="857" y="234" class="f8text">bound an action only if its inputs,</text><text x="857" y="256" class="f8text">timing and control authority are</text><text x="857" y="278" class="f8text">adequate for the hazard.</text>
+  <path d="M830 278 C770 305 735 360 645 417" class="f8line" marker-end="url(#f8arrow)"/>
+
+  <rect x="830" y="350" width="310" height="166" rx="16" class="f8bad"/>
+  <text x="857" y="386" class="f8head">Shared blind spot test</text>
+  <text x="857" y="412" class="f8text">If the learned component and</text><text x="857" y="434" class="f8text">monitor receive the same missing</text><text x="857" y="456" class="f8text">world information, the monitor may</text><text x="857" y="478" class="f8text">repeat the same mistake.</text>
+  <text x="857" y="500" class="f8small">Independence is an evidence question.</text>
+  <path d="M830 431 C737 431 705 452 637 458" class="f8dash" marker-end="url(#f8arrow)"/>
+
+  <rect x="830" y="565" width="310" height="80" rx="16" class="f8note"/>
+  <text x="857" y="598" class="f8head">What the assurance case traces</text>
+  <text x="857" y="622" class="f8small">hazard → evidence → bounded authority → release/change impact</text>
+  <line x1="70" y1="704" x2="1140" y2="704" stroke="#526c7d" stroke-width="2"/>
+  <text x="70" y="734" class="f8small">Project proposal. The nested shapes show responsibility and evidence boundaries, not a hierarchy of guaranteed protection.</text>
+</svg>

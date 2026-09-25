@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-RISK-003-cross_artifact-D00503ff000e7",
+  "package_id": "P-C-RISK-003-cross_artifact",
+  "input_digest": "00503ff000e76d4c2e99c0ac943c089d78a8ee048523eeb3f242412109fb4075",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Every supplied artifact use of claim C-RISK-003 accurately preserves its scope and limitations. The artifacts consistently highlight that EASA's DS.AI material is 'proposed' (NPA 2025-07(B)), not final guidance, and that its exclusions and H1 fatality potential being unacceptable are specific to this proposal, not a universal prohibition. This directly addresses the claim's stated scope and the challenge to keep the scope exact and avoid presenting it as a universal ban. No omitted qualifications, changed status, or inferences presented as authority evidence were found.",
+  "evidence_locators": [
+    "research/contributions/direction_evidence/findings.md",
+    "research/integration_round4.md",
+    "research/contributions/risk_evidence/findings.md"
+  ],
+  "limitations": [
+    "NPA 2025-07(B) is proposed material, not a final EASA decision, AMC/GM, type-certification basis or approval. The exclusions and risk table describe this proposal's scope; they do not establish a worldwide prohibition on AI functions contributing to higher-severity hazards."
+  ],
+  "resolves": []
+}

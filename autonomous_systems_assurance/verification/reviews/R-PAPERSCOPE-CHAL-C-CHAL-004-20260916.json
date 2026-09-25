@@ -1,0 +1,22 @@
+{
+  "id": "R-PAPERSCOPE-CHAL-C-CHAL-004-20260916",
+  "package_id": "P-C-CHAL-004-challenge",
+  "input_digest": "298f3f0b6a59d363474fe584a9676dc50175019aa605b5e0ef6c741446c7e499",
+  "task": "challenge",
+  "reviewer_id": "paper-scope-challenge-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-scope-digest-pinned-challenge-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-16",
+  "rationale": "DS.AI.010 directly excludes AI-based systems whose risk directly contributes to potential fatalities or multiple life-threatening injuries and some online-learning cases. That supports the document-scope portion. The inference that the hypothetical flight-critical DAA case lies outside the proposal remains untested until the function has an aircraft-level failure-condition allocation; vehicle context alone cannot perform that mapping.",
+  "evidence_locators": [
+    "S-CHAL-002-R1, EASA NPA 2025-07(B), PDF p. 4, DS.AI.010 Scope",
+    "https://www.easa.europa.eu/en/downloads/142701/en"
+  ],
+  "limitations": [
+    "No functional hazard assessment or DAA failure-condition allocation is included for REL-AIR-001.",
+    "The cited material remains proposed; this review does not classify a real DAA implementation."
+  ],
+  "resolves": []
+}

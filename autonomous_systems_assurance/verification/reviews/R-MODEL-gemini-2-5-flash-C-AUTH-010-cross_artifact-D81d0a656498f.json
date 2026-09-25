@@ -1,0 +1,26 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-010-cross_artifact-D81d0a656498f",
+  "package_id": "P-C-AUTH-010-cross_artifact",
+  "input_digest": "81d0a656498f4b834a3e2d4b3afbec183b1973a95d52caea0489d4e6056af6c3",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact use of claim C-AUTH-010 accurately reflects the FAA's framing of the lower-level learned-algorithm traceability problem, as described in the 'Roadmap for Artificial Intelligence Safety Assurance, Version I'. The artifacts consistently include explicit qualifications, such as 'FAA framing,' 'not a claim that all conventional traceability fails,' and 'conventional system/software/hardware assurance remains part of the surrounding system,' directly preserving the claim's scope and limitations and addressing the challenge to avoid overstatement.",
+  "evidence_locators": [
+    "resource_composition/figures.md",
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md",
+    "research/contributions/standards_authority/findings.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "R-MODEL-C-EVID-001-challenge-Ddd51870ddc92",
+  "package_id": "P-C-EVID-001-challenge",
+  "input_digest": "dd51870ddc927947dc9ebe0e15e5c323d6a5eb9b2b9995159aa4f756f48450f7",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim accurately summarizes the documentation outcomes specified in NIST AI RMF 1.0, including intended context (MAP 1.1), knowledge limits (MAP 2.2), TEVV considerations (MAP 2.3), and lifecycle monitoring/decommissioning (GOVERN 1.5, 1.7). It survives the challenge because its stated scope explicitly restricts it to voluntary, non-sector-specific guidance and disclaims it as a safety certification criterion, directly addressing the challenge's warning that documentation does not prove operational safety.",
+  "evidence_locators": [
+    "S-EVID-001-R1",
+    "S-EVID-001-R2",
+    "S-EVID-001-R3",
+    "research/contributions/assurance_evidence/findings.md"
+  ],
+  "limitations": [
+    "NIST AI RMF 1.0 is under revision; its status as current guidance and any superseding sector-specific profiles must be verified before publication.",
+    "Voluntary documentation of these processes does not provide a transportation-specific acceptance threshold or prove that a specific system is acceptably safe."
+  ],
+  "resolves": []
+}

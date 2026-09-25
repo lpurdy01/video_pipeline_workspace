@@ -1,0 +1,24 @@
+{
+  "id": "R-PAPER-ONLY-C-AUTH-007-source-20260916",
+  "package_id": "P-C-AUTH-007-source_support",
+  "input_digest": "0d7faa3c8489c4e3455d68160e4c64c838d4ee52b0ccd1f4b390d36d9dc5a190",
+  "task": "source_support",
+  "reviewer_id": "paper-compiler-review-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-only-review-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-16",
+  "rationale": "The recorded UL public-page excerpts match the limited claim's components: Edition 3 is labelled active/ANSI-approved, the scope names building and evaluating an autonomous-product safety argument, and the scope warns that the requirements may be necessary but not sufficient. Yet each region has only a short excerpt, with no preserved full page context or licensed text. A source-support pass would overstate what has been captured.",
+  "evidence_locators": [
+    "S-AUTH-005-R1, UL public status/date excerpt",
+    "S-AUTH-005-R2, UL public scope-summary excerpt",
+    "S-AUTH-005-R3, UL public completeness/rigor excerpt",
+    "S-AUTH-005 limitations: licensed standard/proposal text uninspected"
+  ],
+  "limitations": [
+    "No original-page snapshot or full local context is available.",
+    "The review does not establish Edition 3's current status beyond the recorded public-page excerpt or address the proposed revision's effect."
+  ],
+  "resolves": []
+}

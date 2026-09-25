@@ -1,0 +1,19 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-004-source_support-Dcdccb4bad7a3",
+  "package_id": "P-C-EVID-004-source_support",
+  "input_digest": "cdccb4bad7a37ad959ae8178e528a9df9fbc8ca09eb1e9b9391f7012799f831b",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The abstract and main body of the cited paper directly state that modern neural networks were found to be poorly calibrated and that temperature scaling empirically improved calibration on the evaluated settings. This aligns with the claim's wording, scope, date, and status.",
+  "evidence_locators": [
+    "PDF p. 1, abstract",
+    "PDF pp. 2-3, calibration and temperature-scaling experiments"
+  ],
+  "limitations": [],
+  "resolves": []
+}

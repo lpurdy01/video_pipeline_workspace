@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-STD-004-source_support-Db9609f40b77a",
+  "package_id": "P-C-STD-004-source_support",
+  "input_digest": "b9609f40b77a23237a6350215f011cef0474430a1786cb86d627744e3706ff02",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The `inspection_scope` for source `S-STD-004` explicitly states that the complete NHTSA interpretation, published on 2025-07-22, was inspected and confirms that 'NHTSA does not pre-approve new vehicles, equipment or ADS technologies; it describes the applicable-FMVSS and safety-defect conditions and manufacturer self-certification. It also states that the interpretation itself is nonbinding.' This directly supports the claim's text, date, and scope. The provided excerpt also aligns with these statements.",
+  "evidence_locators": [
+    "S-STD-004: NHTSA interpretation, Background, paragraphs 1\u20132",
+    "S-STD-004: inspection_scope"
+  ],
+  "limitations": [
+    "The full original HTML of the NHTSA interpretation was unavailable to the project snapshot tool (HTTP 403) and needs a renewed capture before release use. The current support relies on the `inspection_scope` and a short excerpt."
+  ],
+  "resolves": []
+}

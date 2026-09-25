@@ -1,0 +1,22 @@
+{
+  "id": "R-FIRSTPASS-C-CHAL-004-challenge",
+  "package_id": "P-C-CHAL-004-challenge",
+  "input_digest": "c165c99e412ae7629db98e927f63df8572d8a92fe69b64ff284c2b5d6890a260",
+  "task": "challenge",
+  "reviewer_id": "first-pass-challenge-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-challenge-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "DS.AI.010 expressly excludes AI-based systems whose risk directly contributes to fatalities or multiple life-threatening injuries and excludes specified online-learning cases. The claim's conclusion is conditional: the proposal cannot be presented as a complete path for the project's most demanding flight-critical case. That follows unless a function-level hazard allocation places the concrete DAA role outside the stated exclusion; the claim expressly requires such allocation before classification.",
+  "evidence_locators": [
+    "S-CHAL-002-R1, EASA NPA 2025-07(B), DS.AI.010 Scope, PDF p. 4",
+    "https://www.easa.europa.eu/en/downloads/142701/en"
+  ],
+  "limitations": [
+    "No aircraft-level functional hazard assessment or DAA failure-condition allocation has been reviewed, so this cannot classify a real DAA implementation.",
+    "The source remains proposed material rather than final EASA policy."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-ROAD2-004-source_support-Ddcb1337fcb4b",
+  "package_id": "P-C-ROAD2-004-source_support",
+  "input_digest": "dcb1337fcb4b5a8c79976c1674189994ae159fbaf82754045c23870d8c9b510f",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided evidence contains only short excerpts and explicitly states that no full local context was captured. Without the full original text, the exact scope, context, and details of the NHTSA Audit Query cannot be independently verified.",
+  "evidence_locators": [
+    "S-ROAD2-003-R1",
+    "S-ROAD2-003-R2"
+  ],
+  "limitations": [
+    "Full source context is absent, preventing independent verification of the excerpts."
+  ],
+  "resolves": []
+}

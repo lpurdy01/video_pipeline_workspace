@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-004-challenge-Deccf89a04d2d",
+  "package_id": "P-C-004-challenge",
+  "input_digest": "eccf89a04d2df1fcd7dfc4a2351647a530e22df65824b0801a2ffe61d11f4a7b",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim and its artifact uses survive the challenge by explicitly restricting their scope to the historical 2023 Salt Lake City announcement. The artifacts actively warn against inferring unrestricted certification and explicitly state that acoustic/ML implementation details and exact approval conditions still require inspecting the underlying letters.",
+  "evidence_locators": [
+    "research/initial_findings.md#A-useful-acoustic-perception-research-branch",
+    "S-004 inspection_scope",
+    "S-004 limitations"
+  ],
+  "limitations": [
+    "The underlying FAA approval letters and primary technical material detailing the onboard architecture and exact approval conditions remain uninspected."
+  ],
+  "resolves": []
+}

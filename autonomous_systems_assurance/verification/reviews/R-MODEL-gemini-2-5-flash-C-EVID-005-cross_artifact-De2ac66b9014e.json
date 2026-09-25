@@ -1,0 +1,30 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-005-cross_artifact-De2ac66b9014e",
+  "package_id": "P-C-EVID-005-cross_artifact",
+  "input_digest": "e2ac66b9014eb1d1e226743d9b839b70a2fc09a1c0750ab9e62f91da33bc7958",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Every supplied artifact use of claim C-EVID-005 consistently preserves its scope and limitations. The claim states that the NASA runtime-assurance formalization can establish a system safety property 'only under explicit safe-start, monitor/timing, recovery-state and reversionary-controller premises,' and its scope is limited to a 'formal model, not civil approval or an implementation assurance case.' All artifacts, including the assurance case, crosswalks, research findings, video scripts, and whitepaper, explicitly reiterate these conditions and limitations. They emphasize that the formal result is conditional on the demonstration of these premises (e.g., monitor observability, timing, recovery authority) and do not present the formalization as a standalone guarantee, civil approval, or a solution to the perception problem. The artifacts correctly use the claim to define what evidence is required to satisfy these premises, rather than asserting that they are automatically met.",
+  "evidence_locators": [
+    "S-EVID-005: PDF pp. 5-8, 8-12",
+    "assurance/assurance_case.json: EA-ROAD-004, EA-AIR-004, O-005, O-006, O-AIR-005, O-AIR-006",
+    "assurance/amlas_maa_easa_crosswalk.md: O-005, O-006",
+    "research/contributions/assurance_evidence/findings.md: Table entry for C-EVID-005, 'Runtime assurance does not dissolve the perception problem...'",
+    "resource_composition/figures.md: F-004, F-008",
+    "video/script.md: Section 6",
+    "assurance/method_crosswalk.json: MAP-AMLAS-001-006, MAP-MAA-001-006, MAP-EASA-DSAI-001-006",
+    "video/nextgen_structure/narration_evidence_map.md: Table entry for 'Safety wrapper'",
+    "video/nextgen_structure/script_outline.md: Section 6",
+    "video/nextgen_structure/treatment.md: Section 6",
+    "video/nextgen_structure/visual_inventory.md: VNG-07, VNG-08",
+    "resource_composition/whitepaper_outline.md: Section 1, Section 7",
+    "resource_composition/whitepaper.md: 'The conditional nature of runtime assurance is important...', Figure 3 caption"
+  ],
+  "limitations": [],
+  "resolves": []
+}

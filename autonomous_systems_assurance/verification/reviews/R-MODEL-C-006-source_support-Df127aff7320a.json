@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-006-source_support-Df127aff7320a",
+  "package_id": "P-C-006-source_support",
+  "input_digest": "f127aff7320a3506983f47f9874dda56dfa775637f5cdcb468de0d4caec54a27",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The California DMV source excerpt explicitly lists 'testing with a safety driver, driverless testing, and deployment' as distinct categories, directly supporting the claim.",
+  "evidence_locators": [
+    "S-007-R1"
+  ],
+  "limitations": [
+    "Individual live permits/ODDs not yet audited.",
+    "California rules are not evidence for Texas permission."
+  ],
+  "resolves": []
+}

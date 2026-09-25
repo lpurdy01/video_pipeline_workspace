@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-RISK-001-challenge-FP1",
+  "package_id": "P-C-RISK-001-challenge",
+  "input_digest": "c3558e9cf3109b9e7967e69f023b32ce425b9dea34e1dd783ff4b12223e87772",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim accurately reflects the historical text of FAA AC 25.1309-1A regarding the inverse relationship between failure severity and probability, and the use of qualitative and quantitative analyses. The claim and supporting artifacts explicitly restrict this to historical context and warn against applying conventional component failure-rate arithmetic directly to learned perception models, satisfying the challenge's constraints.",
+  "evidence_locators": [
+    "S-RISK-001-R1",
+    "S-RISK-001-R2",
+    "research/contributions/risk_evidence/findings.md"
+  ],
+  "limitations": [
+    "The claim relies on a 1988 advisory circular (AC 25.1309-1A) which serves only as historical context; current certification basis and guidance for specific modern aircraft projects must be verified separately as noted in the project findings."
+  ],
+  "resolves": []
+}

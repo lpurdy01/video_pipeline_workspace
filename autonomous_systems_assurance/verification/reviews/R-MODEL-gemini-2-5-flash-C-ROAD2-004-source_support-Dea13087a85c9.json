@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-ROAD2-004-source_support-Dea13087a85c9",
+  "package_id": "P-C-ROAD2-004-source_support",
+  "input_digest": "ea13087a85c9c6411858173dcce13eb14aa0381eb4c2763fc21b8617c7db923c",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The NHTSA press release (S-ROAD2-003) explicitly states that NHTSA opened an investigation into Tesla Cybercab's self-certification following Austin deployment. The excerpts from the source confirm the purpose is to 'assess the basis for Tesla\u2019s self-certification' and examine 'technical data and processes Tesla relied upon'. Further context from `research/contributions/road_round2/findings.md` and `research/retrieval_status.md` confirms the specific Audit Query number AQ26002 and the opening date of September 2026, aligning with the claim's scope and date. The source's limitations and the claim's wording correctly distinguish the inquiry from a final finding.",
+  "evidence_locators": [
+    "S-ROAD2-003: Title, Additional Information, Audit Query scope, technical-data paragraph",
+    "research/contributions/road_round2/findings.md: NHTSA adds a federal vehicle-compliance layer...Its September 4 announcement says AQ26002 examines...",
+    "research/retrieval_status.md: NHTSA AQ26002 opening resume"
+  ],
+  "limitations": [],
+  "resolves": []
+}

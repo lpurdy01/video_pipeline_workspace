@@ -1,6 +1,8 @@
 # Verifiability Compiler Workspace
 
-This repository currently contains two related but separate projects.
+This repository contains three separate projects, including the new [Assurance for Learned Autonomous Systems](autonomous_systems_assurance/README.md) whitepaper/video workspace.
+
+The new project starts with a car perceiving and avoiding hazards, then takes the same architecture into flight. It includes [research](autonomous_systems_assurance/research/initial_findings.md), [resource composition](autonomous_systems_assurance/resource_composition/README.md), [video](autonomous_systems_assurance/video/README.md), an [executable verification compiler](autonomous_systems_assurance/verification/README.md), and a [parallel-agent workflow](autonomous_systems_assurance/coordination/README.md).
 
 ## Project 1: Verifiability Compiler
 

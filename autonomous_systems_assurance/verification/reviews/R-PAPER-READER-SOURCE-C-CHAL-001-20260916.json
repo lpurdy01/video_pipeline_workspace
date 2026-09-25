@@ -1,0 +1,22 @@
+{
+  "id": "R-PAPER-READER-SOURCE-C-CHAL-001-20260916",
+  "package_id": "P-C-CHAL-001-source_support",
+  "input_digest": "ca598f978e441c30d0168deb9dd2be263198b72b64c7ce6279eaf082fdbcc9ce",
+  "task": "source_support",
+  "reviewer_id": "paper-reader-source-support-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "source-support-digest-pinned-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The full MAA notice identifies its current position, directs certified-air-system applicants to raise an MCRI for MAA agreement, and recommends supervised training that produces models fixed for integration and use in a defined operational-design domain. The claim preserves the notice's applicant-specific UK-military scope.",
+  "evidence_locators": [
+    "S-CHAL-001-R1 \u2014 PDF pp. 1\u20132, Scope, Implementation and Background",
+    "S-CHAL-001-R2 \u2014 PDF pp. 2\u20133, Certified Air Systems"
+  ],
+  "limitations": [
+    "This is informative UK military guidance, not a completed MCRI, civil-airworthiness approval or product safety case.",
+    "The recommendation does not establish that a particular model or operation is safe."
+  ],
+  "resolves": []
+}

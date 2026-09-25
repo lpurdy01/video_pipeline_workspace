@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-C-007-cross_artifact-Ddd1b96388a12",
+  "package_id": "P-C-007-cross_artifact",
+  "input_digest": "dd1b96388a129ae7c8054c420cbfb45a8ea53532fcb5919fed8b18ef419989e5",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts accurately reflect the claim's distinction between pre-deployment learning and learning during operation, as well as the requirement for lifecycle assurance of updated versions. They correctly attribute this framework to the FAA roadmap and preserve the limitation by not presenting it as a final authorization or blanket product approval.",
+  "evidence_locators": [
+    "research/initial_findings.md",
+    "wiki/concepts/assurance_vocabulary.md",
+    "assurance/architecture.md"
+  ],
+  "limitations": [
+    "Roadmap proposes an assurance direction; not a blanket product approval",
+    "Remaining technical sections need detailed review before clause-level interpretation"
+  ],
+  "resolves": []
+}

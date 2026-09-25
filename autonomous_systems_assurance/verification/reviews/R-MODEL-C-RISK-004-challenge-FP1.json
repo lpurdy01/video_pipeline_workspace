@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-RISK-004-challenge-FP1",
+  "package_id": "P-C-RISK-004-challenge",
+  "input_digest": "2bb6cf857003b8f948572a72e9d53412add5ec7531ac72b66787c7e811f8273f",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim accurately reflects the CAP3127 consultation response, which states that risk ratios are averaging functions that may hide deficiencies in certain encounters. It survives the challenge because its scope explicitly restricts the statement to the CAP3127 policy-concept test phase, avoiding any assertion about final UK acceptance criteria or universal AI standards.",
+  "evidence_locators": [
+    "S-RISK-004-R1",
+    "research/contributions/risk_evidence/findings.md"
+  ],
+  "limitations": [
+    "Final UK DAA acceptance criteria (e.g., CAP3015 v2 and AMC/GM) must be retrieved before making claims about final regulatory approval."
+  ],
+  "resolves": []
+}

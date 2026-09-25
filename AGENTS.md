@@ -1,6 +1,6 @@
 # Workspace Instructions
 
-This workspace has two distinct projects:
+This workspace has three distinct projects:
 
 1. **Verifiability Compiler**
    - Use `project_wiki/`, `WHITEPAPER_STAGE_1_STRUCTURE.md`, `graphify-corpus/`, `graphify-out/`, and `refrence_literature/`.
@@ -13,7 +13,14 @@ This workspace has two distinct projects:
    - Favor bold philosophical framing over deep implementation detail.
    - Build toward two outputs: a narrated 3Blue1Brown-style video and a LinkedIn/article-style whitepaper.
 
-Do not merge the representation-transform project into the verifiability compiler wiki unless explicitly asked. It can be referenced later as conceptual background, but it should stand alone.
+3. **Assurance for Learned Autonomous Systems**
+   - Use `autonomous_systems_assurance/` and read its `AGENTS.md`.
+   - Separate whitepaper/video/resource project; begin with car perception/navigation/avoidance, then take the same visual architecture into flight.
+   - Target technical generalists and engineers with an accessible video and rigorous whitepaper.
+   - Use its own compiler, source records, wiki and publication inputs.
+   - Support concurrent research, whitepaper and video agents through `autonomous_systems_assurance/coordination/README.md`; assign exclusive write paths and stable ID namespaces before parallel work.
+
+Do not merge the representation-transform or autonomous-systems project into the verifiability compiler wiki unless explicitly asked. They should stand alone.
 
 For the representation-transform project:
 

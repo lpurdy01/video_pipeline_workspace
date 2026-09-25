@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-EVID-004-source_support-D6f62ce681cf7",
+  "package_id": "P-C-EVID-004-source_support",
+  "input_digest": "6f62ce681cf7279c3f96a6294f9bf0cf026c2d05592ea9965e2fd46079f7024d",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided source explicitly states that modern neural networks are poorly calibrated and identifies temperature scaling as a surprisingly effective method for calibrating predictions on the evaluated classification datasets.",
+  "evidence_locators": [
+    "S-EVID-004-R1",
+    "S-EVID-004-R2"
+  ],
+  "limitations": [
+    "The experiments cover selected classification datasets and architectures. Calibration on a held-out distribution does not show calibrated uncertainty under operational distribution shift, correlated sensor faults, or closed-loop control effects, and does not constitute a system-level safety bound."
+  ],
+  "resolves": []
+}

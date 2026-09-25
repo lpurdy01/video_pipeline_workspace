@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-08",
+  "sources": [
+    {
+      "id": "S-ROAD2-001",
+      "title": "Automated Vehicles Regulatory Program",
+      "publisher": "Texas Department of Motor Vehicles",
+      "url": "https://www.txdmv.gov/AVprogram",
+      "published_at": null,
+      "source_type": "authority_explanation",
+      "jurisdiction": "Texas commercial automated-vehicle operation",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected the TxDMV authorization scope, effective/enforcement dates, personal-use exclusion, update duty, and separate administrative/on-road enforcement descriptions; no enacted statute text or individual authorization application was audited.",
+      "regions": [
+        {"id": "S-ROAD2-001-R1", "locator": "Automated Vehicle Authorization Requirements, enforcement paragraph", "excerpt": "required to maintain an active authorization with TxDMV.", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-001-R2", "locator": "AV Authorization Application System, personal-use paragraph", "excerpt": "Individually owned vehicles, operated for personal use, do not require an authorization.", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-001-R3", "locator": "Administrative enforcement paragraph", "excerpt": "TxDMV and is managed by the Enforcement Division.", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null}
+      ],
+      "limitations": "An agency program explanation describes the authorization layer; it does not establish technical safety of any vehicle, model, or learned component. Read the enacted Texas statute and final rules for legal interpretation.",
+      "independence_group": "TXDMV-AV-PROGRAM",
+      "refresh_days": 30
+    },
+    {
+      "id": "S-ROAD2-002",
+      "title": "Automated Motor Vehicle Lookup — Tesla Robotaxi, LLC",
+      "publisher": "Texas Department of Motor Vehicles",
+      "url": "https://txmccs.txdmv.gov/automated-vehicles/operators/AV8313426653583",
+      "published_at": null,
+      "source_type": "authority_record",
+      "jurisdiction": "Texas automated-vehicle operator authorization",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected the public lookup record returned for authorization AV8313426653583, including status, company identity, and registered-vehicle table; no underlying application or technical evidence was available on the page.",
+      "regions": [
+        {"id": "S-ROAD2-002-R1", "locator": "Automated Vehicle Operator Information, Status", "excerpt": "Authorized", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-002-R2", "locator": "Registered Vehicles table", "excerpt": "2026 | TESLA | Model Y", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null}
+      ],
+      "limitations": "The record is an authorization lookup, not a safety assessment. The inspected vehicle rows were Model Y; no Cybercab row was established by this page inspection. Live records can change.",
+      "independence_group": "TXDMV-AV-LOOKUP",
+      "refresh_days": 7
+    },
+    {
+      "id": "S-ROAD2-003",
+      "title": "NHTSA Opens Investigation into Tesla Cybercab Self-Certification Following Austin Deployment",
+      "publisher": "National Highway Traffic Safety Administration",
+      "url": "https://www.nhtsa.gov/press-releases/investigation-tesla-cybercab-self-certification",
+      "published_at": "2026-09-04",
+      "source_type": "authority_announcement",
+      "jurisdiction": "US federal motor-vehicle compliance",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected the complete public announcement, including the self-certification description, scope of the Audit Query, and statement that existing standards remain in force.",
+      "regions": [
+        {"id": "S-ROAD2-003-R1", "locator": "Additional Information, Audit Query scope", "excerpt": "assess the basis for Tesla’s self-certification", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-003-R2", "locator": "Additional Information, technical-data paragraph", "excerpt": "technical data and processes Tesla relied upon", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null}
+      ],
+      "limitations": "An open Audit Query is an ongoing compliance inquiry, not a finding of defect, noncompliance, unsafe operation, recall, or stop-service order.",
+      "independence_group": "NHTSA-AQ26002",
+      "refresh_days": 7
+    },
+    {
+      "id": "S-ROAD2-004",
+      "title": "OVSC Resume — Investigation AQ26002, Tesla Cybercab FMVSS Certification",
+      "publisher": "National Highway Traffic Safety Administration",
+      "url": "https://static.nhtsa.gov/odi/inv/2026/INOA-AQ26002-17078.pdf",
+      "published_at": "2026-09-03",
+      "source_type": "authority_investigation_record",
+      "jurisdiction": "US federal motor-vehicle compliance",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected the one-page opening resume and all fields, including date opened, estimated population, subject, action, and problem summary.",
+      "regions": [
+        {"id": "S-ROAD2-004-R1", "locator": "OVSC Resume, fields Date Opened and Population", "excerpt": "Date Opened: 09/03/2026", "context_status": "full_context", "snapshot_path": "verification/out/sources/book_intake/authority/nhtsa-aq26002-opening-resume-2026.pdf", "snapshot_sha256": "48b37f751f82ca5f544d42a73e0c30293f6a2e38805e0dfeba0554a27c471061", "context_path": "verification/out/sources/book_intake/text/nhtsa-aq26002-opening-resume-2026.txt"},
+        {"id": "S-ROAD2-004-R2", "locator": "OVSC Resume, Population field", "excerpt": "Population: 1,000 (Estimated)", "context_status": "full_context", "snapshot_path": "verification/out/sources/book_intake/authority/nhtsa-aq26002-opening-resume-2026.pdf", "snapshot_sha256": "48b37f751f82ca5f544d42a73e0c30293f6a2e38805e0dfeba0554a27c471061", "context_path": "verification/out/sources/book_intake/text/nhtsa-aq26002-opening-resume-2026.txt"},
+        {"id": "S-ROAD2-004-R3", "locator": "OVSC Resume, controls description", "excerpt": "The vehicles lack permanently attached, conventional manual controls", "context_status": "full_context", "snapshot_path": "verification/out/sources/book_intake/authority/nhtsa-aq26002-opening-resume-2026.pdf", "snapshot_sha256": "48b37f751f82ca5f544d42a73e0c30293f6a2e38805e0dfeba0554a27c471061", "context_path": "verification/out/sources/book_intake/text/nhtsa-aq26002-opening-resume-2026.txt"}
+      ],
+      "limitations": "The resume records the opening and intended examination. It does not report the eventual agency determination or prove that the estimated population equals vehicles carrying passengers in Austin.",
+      "independence_group": "NHTSA-AQ26002",
+      "refresh_days": 7
+    },
+    {
+      "id": "S-ROAD2-005",
+      "title": "Autonomous Vehicle Permit Holders",
+      "publisher": "California Department of Motor Vehicles",
+      "url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/autonomous-vehicle-testing-permit-holders/",
+      "published_at": null,
+      "source_type": "authority_permit_listing",
+      "jurisdiction": "California autonomous-vehicle testing and deployment permits",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected the dated testing-with-driver list, driverless-testing table, and deployment table; followed the Waymo approved-area link but did not inspect individual permit applications.",
+      "regions": [
+        {"id": "S-ROAD2-005-R1", "locator": "Testing with a Driver list, dated August 12 2026", "excerpt": "TESLA ROBOTAXI LLC", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-005-R2", "locator": "Testing with a Driver list, dated August 12 2026", "excerpt": "WAYMO LLC", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-005-R3", "locator": "Driverless Testing and Deployment tables", "excerpt": "Permit Holders (Deployment)", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null}
+      ],
+      "limitations": "A permit listing gives program status and stated operating scope; it is not evidence that a specific learned model is safe in every environment or that another state permits operation.",
+      "independence_group": "CA-DMV-AV-PERMITS",
+      "refresh_days": 30
+    },
+    {
+      "id": "S-ROAD2-006",
+      "title": "Waymo Approved Areas of Operation for Driverless Testing and Deployment",
+      "publisher": "California Department of Motor Vehicles",
+      "url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/autonomous-vehicle-testing-permit-holders/waymo-approved-areas-of-operation-for-driverless-testing-and-deployment/",
+      "published_at": null,
+      "source_type": "authority_operating_scope",
+      "jurisdiction": "California Waymo driverless testing and deployment",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected vehicle platforms, hours, ODD characteristics, and approved-map links on the current Waymo-specific DMV page.",
+      "regions": [
+        {"id": "S-ROAD2-006-R1", "locator": "Vehicle Platforms", "excerpt": "Jaguar I-Pace and Zeekr Ojai", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-006-R2", "locator": "Hours of Operations and ODD Characteristics", "excerpt": "All times of day and night", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-006-R3", "locator": "ODD Characteristics", "excerpt": "All rain, fog, and other conditions", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null}
+      ],
+      "limitations": "The page states an approved operating scope but does not disclose the evidence reviewed by DMV, model version, fleet size, or a conclusion of unrestricted safety. Its update date is not shown in the inspected page.",
+      "independence_group": "CA-DMV-AV-PERMITS",
+      "refresh_days": 30
+    },
+    {
+      "id": "S-ROAD2-007",
+      "title": "Autonomous Vehicle Passenger Service Programs",
+      "publisher": "California Public Utilities Commission",
+      "url": "https://webtraining.cpuc.ca.gov/regulatory-services/licensing/transportation-licensing-and-analysis-branch/autonomous-vehicle-programs",
+      "published_at": null,
+      "source_type": "authority_program_explanation",
+      "jurisdiction": "California passenger-service regulation",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected pilot/deployment distinctions, DMV permit prerequisites, remote-operator communication requirement for driverless pilot, passenger safety-plan requirement for driverless programs, and fare rules.",
+      "regions": [
+        {"id": "S-ROAD2-007-R1", "locator": "Background, driverless pilot", "excerpt": "a communication link between passengers and ‘remote operators’", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-007-R2", "locator": "Background, deployment programs", "excerpt": "required to submit Passenger Safety Plans", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-007-R3", "locator": "Background, DMV prerequisite", "excerpt": "must obtain an Autonomous Vehicle Deployment Permit", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null}
+      ],
+      "limitations": "The CPUC program layer concerns passenger service; it does not replace DMV permits, federal FMVSS obligations, or a technical assurance case for perception and control.",
+      "independence_group": "CA-CPUC-AV-PROGRAM",
+      "refresh_days": 30
+    },
+    {
+      "id": "S-ROAD2-008",
+      "title": "Autonomous Vehicle Program Permits Issued",
+      "publisher": "California Public Utilities Commission",
+      "url": "https://webtraining.cpuc.ca.gov/regulatory-services/licensing/transportation-licensing-and-analysis-branch/autonomous-vehicle-programs/autonomous-vehicle-program-permits-issued",
+      "published_at": null,
+      "source_type": "authority_permit_listing",
+      "jurisdiction": "California passenger-service permits",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected the table and Waymo rows for Drivered Pilot, Driverless Pilot, Drivered Deployment, and Driverless Deployment; linked permit document was separately inspected.",
+      "regions": [
+        {"id": "S-ROAD2-008-R1", "locator": "Permit table, Waymo rows", "excerpt": "Waymo | Driverless Deployment", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-008-R2", "locator": "Table description", "excerpt": "copies of Autonomous Vehicle permits and exemptions", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null}
+      ],
+      "limitations": "A current table listing and an underlying certificate can have different update/renewal states; use the linked document and current carrier record before asserting current authority.",
+      "independence_group": "CA-CPUC-AV-PERMITS",
+      "refresh_days": 30
+    },
+    {
+      "id": "S-ROAD2-009",
+      "title": "Waymo Consolidated TCP Certificate, August 11 2023",
+      "publisher": "California Public Utilities Commission",
+      "url": "https://webtraining.cpuc.ca.gov/-/media/cpuc-website/divisions/consumer-protection-and-enforcement-division/documents/tlab/av-programs/waymo-consolidated-tcp-a-20230811_signed.pdf",
+      "published_at": "2023-08-11",
+      "source_type": "authority_permit_document",
+      "jurisdiction": "California Waymo passenger-service authority",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected all two pages, including covered program types, DMV prerequisite, compensation condition, and expiration/amendment fields.",
+      "regions": [
+        {"id": "S-ROAD2-009-R1", "locator": "Page 1, program authorization and conditions", "excerpt": "PHASE I DRIVERLESS AUTONOMOUS VEHICLE PASSENGER SERVICE DEPLOYMENT", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-009-R2", "locator": "Page 2, paragraph (16)", "excerpt": "This certificate expires July 2, 2025.", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null}
+      ],
+      "limitations": "This specific certificate is historical and states an expiration date. It cannot by itself establish current Waymo passenger-service authority; the current CPUC listing and renewal record need reconciliation.",
+      "independence_group": "CA-CPUC-WAYMO-CERTIFICATE",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-ROAD2-010",
+      "title": "AI and Robotics",
+      "publisher": "Tesla",
+      "url": "https://www.tesla.com/AI",
+      "published_at": null,
+      "source_type": "vendor_technical_description",
+      "jurisdiction": "Tesla vehicle autonomy claims; global company page",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected the Neural Networks, Autonomy Algorithms, Code Foundations, and Evaluation Infrastructure sections.",
+      "regions": [
+        {"id": "S-ROAD2-010-R1", "locator": "Neural Networks section", "excerpt": "birds-eye-view networks take video from all cameras", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-010-R2", "locator": "Autonomy Algorithms section", "excerpt": "creating a high-fidelity representation of the world", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-010-R3", "locator": "Evaluation Infrastructure section", "excerpt": "open- and closed-loop, hardware-in-the-loop evaluation tools", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null}
+      ],
+      "limitations": "Tesla's recruiting/technical page is a vendor account, not a Cybercab-specific design record, regulator finding, or evidence that intermediate tensors are interpretable or traceable in the DO-178C sense.",
+      "independence_group": "TESLA-AI-PUBLIC",
+      "refresh_days": 90
+    },
+    {
+      "id": "S-ROAD2-011",
+      "title": "Cybercab Frequently Asked Questions",
+      "publisher": "Tesla",
+      "url": "https://www.tesla.com/support/robotaxi/cybercab",
+      "published_at": null,
+      "source_type": "vendor_service_description",
+      "jurisdiction": "Tesla Cybercab service; Austin, Texas",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected the steering-wheel explanation and listed service locations/limited Austin availability.",
+      "regions": [
+        {"id": "S-ROAD2-011-R1", "locator": "What is Cybercab? FAQ", "excerpt": "Cybercab vehicles don’t have a steering wheel", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-011-R2", "locator": "Where are Cybercab rides available? FAQ", "excerpt": "Cybercab rides are currently available in limited areas of Austin, Texas.", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null}
+      ],
+      "limitations": "Tesla service information supports what the company publicly says and where it says service is available; it does not establish legal authorization, FMVSS compliance, or operational safety.",
+      "independence_group": "TESLA-CYBERCAB-PUBLIC",
+      "refresh_days": 7
+    },
+    {
+      "id": "S-ROAD2-012",
+      "title": "Safe to Deploy: How We Know The Waymo Driver Is Ready For The Road",
+      "publisher": "Waymo",
+      "url": "https://waymo.com/blog/2025/06/safe-to-deploy/",
+      "published_at": "2025-06-16",
+      "source_type": "vendor_safety_process_description",
+      "jurisdiction": "Waymo autonomous driving deployment process",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected claims about software updates, new geographies, new vehicle platforms, twelve acceptance criteria, governance, and post-deployment data.",
+      "regions": [
+        {"id": "S-ROAD2-012-R1", "locator": "Opening paragraph", "excerpt": "Before any major advancement ... we apply the same rigorous, evidence-based analysis", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-012-R2", "locator": "Criteria section", "excerpt": "each of the twelve criteria plays a distinct role", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-012-R3", "locator": "Safety Framework / Safety Case section", "excerpt": "continuous analysis of post-deployment performance data", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null}
+      ],
+      "limitations": "This is Waymo's own process description. It is useful evidence of a public assurance approach, not independent confirmation that its criteria, data, or conclusions are sufficient for another operator.",
+      "independence_group": "WAYMO-SAFETY-PUBLIC",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-ROAD2-013",
+      "title": "The Waymo Driver Handbook: Teaching an autonomous vehicle how to perceive and understand the world",
+      "publisher": "Waymo",
+      "url": "https://waymo.com/blog/2021/10/the-waymo-driver-handbook-perception/",
+      "published_at": "2021-10-28",
+      "source_type": "vendor_technical_description",
+      "jurisdiction": "Waymo autonomous driving perception; company account",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected sensor descriptions, sensor fusion, ML stack, occlusion reasoning, and stated awareness of perception limits.",
+      "regions": [
+        {"id": "S-ROAD2-013-R1", "locator": "Sensor description", "excerpt": "custom suite of sensors ... and state-of-the-art software", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-013-R2", "locator": "Fusing our sensors’ inputs for safety", "excerpt": "sensor fusion to improve the confidence of our detections", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-013-R3", "locator": "Perception limits paragraph", "excerpt": "our perception system is aware of its own limits", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null}
+      ],
+      "limitations": "Waymo's page reports architecture claims and examples, not a complete current system specification, quantitative failure bounds, or certification evidence.",
+      "independence_group": "WAYMO-TECH-PUBLIC",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-ROAD2-014",
+      "title": "Independent Audits of Waymo’s Safety Case and Remote Assistance Programs",
+      "publisher": "Waymo",
+      "url": "https://waymo.com/blog/2025/11/independent-audits/",
+      "published_at": "2025-11-05",
+      "source_type": "vendor_announcement",
+      "jurisdiction": "Waymo safety-case and remote-assistance process",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected Waymo's report of TÜV SÜD audits, stated scope against AVSC/ISO 15026-2, and remote-assistance description; no auditor report was located.",
+      "regions": [
+        {"id": "S-ROAD2-014-R1", "locator": "Opening audit announcement", "excerpt": "complete independent, third-party audits", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null},
+        {"id": "S-ROAD2-014-R2", "locator": "Remote Assistance Program Audit", "excerpt": "does not rely solely on the inputs it receives", "context_status": "short_excerpt_only", "snapshot_path": null, "snapshot_sha256": null}
+      ],
+      "limitations": "The inspected page is Waymo's announcement and includes a quoted auditor statement; the auditor's full report, audit criteria, findings, and limitations were not independently inspected.",
+      "independence_group": "WAYMO-TUV-ANNOUNCEMENT",
+      "refresh_days": 180
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-003-source_support-Dd89be1629ebf",
+  "package_id": "P-C-CHAL-003-source_support",
+  "input_digest": "d89be1629ebffd3409ec9c5ad1863634972f897f13e5b93b41ec2c072375f9cd",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The EASA NPA 2025-07(B) document, as inspected and excerpted, explicitly proposes a detailed AI-trustworthiness framework. The document's title and internal sections confirm its status as a 'Notice of Proposed Amendment' and 'Proposed DS.AI', aligning with the claim's scope and status. The excerpts and inspection scope directly mention and detail provisions for 'system development assurance', 'supervised-ML learning assurance', 'configuration management' (life-cycle data), 'in-service monitoring', and 'continuous risk assessment'. Other project documents consistently describe the NPA as a 'proposed detailed civil framework' covering 'operational domain, risk assessment, system development assurance, learning assurance, configuration/life-cycle data and in-service monitoring', further supporting the claim's description of the framework's span and its role as a 'substantial candidate lifecycle'.",
+  "evidence_locators": [
+    "S-CHAL-002: PDF pp. 24\u201326, DS.AI.150 and AMC1/AMC2 AI.150",
+    "S-CHAL-002: PDF pp. 31\u201333, DS.AI.160 and AMC1 AI.160(a)",
+    "S-CHAL-002: inspection_scope",
+    "research/contributions/assurance_challenge/findings.md: EASA has proposed a much more detailed civil framework...",
+    "assurance/amlas_maa_easa_crosswalk.md: EASA NPA 2025-07(B) is a detailed proposed civil framework...",
+    "assurance/method_crosswalk.json: M-EASA-DSAI-001"
+  ],
+  "limitations": [],
+  "resolves": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "R-PAPERSCOPE-CHAL-C-EVID-004-20260916",
+  "package_id": "P-C-EVID-004-challenge",
+  "input_digest": "ace08ce4f1b0963d691ca95880c0b0423e1caad68a7fe560025a82088f1714a7",
+  "task": "challenge",
+  "reviewer_id": "paper-scope-challenge-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-scope-digest-pinned-challenge-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "Guo et al. report poor calibration for their studied modern classification networks and empirical improvement from temperature scaling on evaluated settings. The claim preserves those experimental qualifiers and does not call calibrated confidence a system-level safety bound.",
+  "evidence_locators": ["S-EVID-004-R1, Guo et al., On Calibration of Modern Neural Networks, abstract, PDF p. 1", "S-EVID-004-R2, Guo et al., calibration and temperature-scaling experiments, PDF pp. 2-3", "https://arxiv.org/abs/1706.04599"],
+  "limitations": ["The evidence covers selected classification experiments, not a released perception stack under ODD shift, sensor fault, or correlated failure.", "No monitor threshold, authority action, or closed-loop hazard outcome follows from calibration alone."],
+  "resolves": []
+}

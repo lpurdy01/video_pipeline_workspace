@@ -1,0 +1,19 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-005-source_support-Dc281db9fa016",
+  "package_id": "P-C-EVID-005-source_support",
+  "input_digest": "c281db9fa0169d702fb4bde252afc3371837de57e243f4c3c8d3e07de55e31eb",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The provided NASA DASC 2024 presentation explicitly details the 'RTA rule in Plaidypvs' which formally establishes a safety property for a black-box controller. The rule is presented with clear 'IF' conditions that directly correspond to the premises stated in the claim: 'the vehicle starts in a safe state' (safe-start), 'the monitored advanced system controller always ends in a state where the vehicle can recover' (monitor/timing and recovery-state), and 'repeated execution of the reversionary system controller leads to a safe state' (reversionary-controller). The 'THEN' clause confirms the establishment of the safety property, and the 'IF' structure supports the 'only under explicit' aspect of the claim.",
+  "evidence_locators": [
+    "PDF pp. 5-8, Simplex architecture and Plaidypvs rule",
+    "PDF pp. 8-12, RTA premises and productive-conflict-avoidance example"
+  ],
+  "limitations": [],
+  "resolves": []
+}

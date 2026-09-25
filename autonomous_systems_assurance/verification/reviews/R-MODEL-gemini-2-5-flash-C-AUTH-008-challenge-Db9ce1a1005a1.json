@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-008-challenge-Db9ce1a1005a1",
+  "package_id": "P-C-AUTH-008-challenge",
+  "input_digest": "b9ce1a1005a1611aa568357525ddafc214c83a124d85f5537c78702dc17ddc2e",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The claim accurately describes NHTSA's ADS 2.0 material as a voluntary framework with specified safety elements (ODD, OEDR, fallback, validation) and states that self-assessments are not subject to federal approval. The provided evidence directly supports these points (S-AUTH-006-R1, S-AUTH-006-R2, S-AUTH-006-R3). The challenge asks to reconcile this 'older operating-guidance page' with NHTSA's current rulemaking and to clarify that voluntary self-assessments are not model certification or proof of safety. The research findings (research/contributions/assurance_authority/findings.md, research/contributions/standards_authority/findings.md) explicitly address this reconciliation: they confirm ADS 2.0 is voluntary guidance, note that NHTSA's page still calls it 'current operating guidance' while new guidance and performance standards are 'being developed' (acknowledging the 'older' aspect), and clearly state that 'NHTSA's older public ADS guidance makes its VSSA process voluntary and not subject to federal approval' and that 'operating, exemption, state-permit, FMVSS and learned-model evidence belong on distinct graph edges.' This reconciliation confirms the claim's accuracy regarding ADS 2.0's nature and does not defeat it. The claim itself does not assert that ADS 2.0 is model certification or proof of safety, only that its self-assessments are not subject to federal approval, which is consistent with the challenge's clarification.",
+  "evidence_locators": [
+    "S-AUTH-006-R1",
+    "S-AUTH-006-R2",
+    "S-AUTH-006-R3",
+    "research/contributions/assurance_authority/findings.md:NHTSA ADS 2.0 / 2026 activity",
+    "research/contributions/assurance_authority/findings.md:Road operation is not evidence that an undisclosed trained model passed a public safety certification.",
+    "research/contributions/standards_authority/findings.md:NHTSA's ADS guidance is voluntary and its self-assessments are not federal approvals."
+  ],
+  "limitations": [
+    "The provided material notes a 'Current-status tension' where NHTSA's page still calls ADS 2.0 current operating guidance, while a July 2026 announcement indicates new guidance is being developed. This review confirms the claim's description of ADS 2.0's content and status as voluntary guidance, but does not verify the release status of any newer guidance documents or performance standards."
+  ],
+  "resolves": []
+}

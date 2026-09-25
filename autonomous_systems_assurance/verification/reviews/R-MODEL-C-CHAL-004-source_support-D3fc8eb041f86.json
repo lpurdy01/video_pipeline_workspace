@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-CHAL-004-source_support-D3fc8eb041f86",
+  "package_id": "P-C-CHAL-004-source_support",
+  "input_digest": "3fc8eb041f8686dde3baa45810750b601890bfcf9d0f8b5e26acdfc44c38d67b",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided source material explicitly excludes AI-based systems presenting a risk directly contributing to fatalities or multiple life-threatening injuries, as well as certain online learning systems, from the scope of the proposed DS.AI. This directly supports the claim's statement and its conclusion that the proposed framework does not cover the most demanding flight-critical autonomy cases.",
+  "evidence_locators": [
+    "S-CHAL-002-R1",
+    "DS.AI.010 Scope (d)(1)",
+    "DS.AI.010 Scope (d)(2)"
+  ],
+  "limitations": [
+    "The document is a Notice of Proposed Amendment (NPA) and does not represent final EASA regulation."
+  ],
+  "resolves": []
+}

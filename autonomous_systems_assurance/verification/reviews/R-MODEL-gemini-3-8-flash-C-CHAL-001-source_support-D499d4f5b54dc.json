@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-001-source_support-D499d4f5b54dc",
+  "package_id": "P-C-CHAL-001-source_support",
+  "input_digest": "499d4f5b54dc9dc73770289623fc676646c0d6035bae0f14a4d4156dc72b6be6",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "MAA/RN/2025/04 (effective 10 October 2025) explicitly documents the MAA's current guidance for military air systems subject to MRP design assurance. Paragraph 6 directs that applicants for Certified Air Systems should raise a Military Certification Review Item (MCRI) for MAA agreement, and paragraph 7 recommends that early applications of ML techniques use training methods such as supervised learning to generate models that remain fixed within a defined operational design domain (ODD). The claim preserves the military scope, advisory nature, and date without asserting civil approval.",
+  "evidence_locators": [
+    "MAA/RN/2025/04, PDF p. 1, paras 1\u20133",
+    "MAA/RN/2025/04, PDF p. 2, paras 6\u20137"
+  ],
+  "limitations": [
+    "Informative military guidance; specific MCRI agreements and underlying project safety cases remain applicant-specific and non-public.",
+    "Does not apply to civil airworthiness certification (e.g., FAA or EASA)."
+  ],
+  "resolves": []
+}

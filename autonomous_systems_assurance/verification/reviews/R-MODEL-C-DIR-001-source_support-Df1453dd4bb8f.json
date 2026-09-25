@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-DIR-001-source_support-Df1453dd4bb8f",
+  "package_id": "P-C-DIR-001-source_support",
+  "input_digest": "f1453dd4bb8f59bed3a2e9d497726138087a2c518161fe35580bc8a700cd29eb",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The source excerpt directly confirms that NCEES offers more than 20 PE exams, including Computer Engineering, and lacks a machine-learning specialty. The source's documented inspection scope and limitations explicitly support the claim's boundary, confirming that this single taxonomy does not prove practitioners are unqualified or that no other credentials exist.",
+  "evidence_locators": [
+    "S-DIR-001-R1",
+    "S-DIR-001 inspection_scope",
+    "S-DIR-001 limitations"
+  ],
+  "limitations": [
+    "The source is limited to the NCEES taxonomy and cannot establish the existence or absence of global credentials, state board rules, vendor certifications, or the overall professional maturity of machine-learning practitioners."
+  ],
+  "resolves": []
+}

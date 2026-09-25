@@ -1,0 +1,28 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-TRAIN-003-cross_artifact-Vassurance-first-pass-v2-local-context-D422af23cde6c",
+  "package_id": "P-C-TRAIN-003-cross_artifact",
+  "input_digest": "422af23cde6cd349c3687e42eabb88fcc33924937fb63b09739073f609336092",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all supplied artifact uses (architecture document, crosswalk table, figures table, SVG diagram, video narration script, whitepaper, and findings), AMLAS verification guidance is consistently represented within scope. The artifacts accurately characterize verification data as an independent challenge set targeting realistic failure modes and testing robustness to unseen conditions, while properly maintaining that held-out verification scores establish performance only on that set and do not constitute universal proof of generalization, system safety, or regulatory compliance.",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "resource_composition/figures.md",
+    "video/script.md",
+    "resource_composition/whitepaper.md",
+    "research/contributions/training_case/findings.md",
+    "resource_composition/figures/vision_training_contract.svg",
+    "S-CHAL-004-R5",
+    "S-CHAL-004-R7"
+  ],
+  "limitations": [
+    "Review is restricted to the excerpted artifact contexts and the AMLAS v1.1 source evidence provided in the packet."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-METHOD2-001-source_support-Deaecb45410f9",
+  "package_id": "P-C-METHOD2-001-source_support",
+  "input_digest": "eaecb45410f9ec4e4b1251971feaa719055c45045d15763aa32db4bdd4477484",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided excerpt ('If the monitor is triggered, a trusted component takes over operation') aligns with the claim's description of the Simplex architecture. However, because the full source PDF returned an HTTP 403 error and only a single-sentence search-index excerpt was captured, the full context is absent. Per the strict review guidelines, inadequate or absent full context requires an uncertain verdict.",
+  "evidence_locators": [
+    "Indexed slide 12, Basic structure of a simplex architecture"
+  ],
+  "limitations": [
+    "PDF retrieval returned HTTP 403, preventing inspection of the full presentation context.",
+    "Reliance on a single-sentence search-index excerpt."
+  ],
+  "resolves": []
+}

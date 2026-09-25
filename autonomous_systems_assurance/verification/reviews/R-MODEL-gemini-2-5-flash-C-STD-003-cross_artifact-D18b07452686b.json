@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-STD-003-cross_artifact-D18b07452686b",
+  "package_id": "P-C-STD-003-cross_artifact",
+  "input_digest": "18b07452686baa3998cca2c109e6cbfbe1a51fd43a85120e0820cc9c181b928e",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of C-STD-003 accurately preserves the claim's scope and limitations. The claim states that U.S. law requires certification of compliance with *applicable federal motor-vehicle safety standards* and prohibits materially false or misleading certificates. The challenge explicitly warns against paraphrasing this as 'manufacturer certification that a trained model is safe in every scenario.' All artifacts consistently highlight the 'applicable FMVSS' qualification and explicitly state that this self-certification is not a blanket declaration of a trained model's safety in all scenarios, nor does it equate to general pre-market approval of autonomous driving systems. The artifacts also correctly distinguish product compliance from operational permission and technical assurance evidence, directly addressing the claim's limitations.",
+  "evidence_locators": [
+    "research/integration_round4.md",
+    "resource_composition/whitepaper_outline.md",
+    "video/script.md",
+    "research/contributions/standards_authority/findings.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

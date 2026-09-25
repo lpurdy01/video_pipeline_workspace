@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-RISK-006-source_support-D44c303f13426",
+  "package_id": "P-C-RISK-006-source_support",
+  "input_digest": "44c303f134268cfc5ab13a22c0e23c46e93f770dc9b5a96a8c7bf51c74d67649",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided source excerpt and captured context only display a table of contents and a brief phrase about fatality risk. They lack the actual text or Table 1 from EASA NPA 2025-07(B) needed to verify the definitions of Levels 1A\u20133A and the 'reserved' status of Level 3B.",
+  "evidence_locators": [
+    "S-RISK-003-R1"
+  ],
+  "limitations": [
+    "Missing the actual text of proposed DS.AI Table 1 (PDF pp. 12-14) detailing the AI-level authority boundaries and the specific reservation of Level 3B."
+  ],
+  "resolves": []
+}

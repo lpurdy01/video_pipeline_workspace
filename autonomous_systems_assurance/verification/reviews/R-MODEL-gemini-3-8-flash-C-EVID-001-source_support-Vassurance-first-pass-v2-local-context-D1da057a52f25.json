@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-EVID-001-source_support-Vassurance-first-pass-v2-local-context-D1da057a52f25",
+  "package_id": "P-C-EVID-001-source_support",
+  "input_digest": "1da057a52f2522ab235255b318f36e420b0d468695e355262adeb6c06d2f2ae4",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "uncertain",
+  "created_at": "2026-09-25",
+  "rationale": "The captured context from NIST AI RMF 1.0 explicitly supports documenting intended context (MAP 1.1, p. 26), knowledge limits (MAP 2.2, p. 26), and scientific integrity/TEVV considerations (MAP 2.3, p. 27). However, the text captured under region S-EVID-001-R3 provides pages 26-27 (MAP function) rather than pages 31-32 (MANAGE function), so the original text substantiating 'post-deployment change and recovery processes' (and the excerpt 'supersede, disengage, or deactivate AI systems') is absent from the provided context.",
+  "evidence_locators": [
+    "S-EVID-001, PDF pp. 26-27, MAP 1-3 outcomes",
+    "S-EVID-001, PDF pp. 31-32, MANAGE 2 and 4 outcomes",
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_evidence/findings.md"
+  ],
+  "limitations": [
+    "Captured context for region S-EVID-001-R3 is truncated/mismatched and lacks the MANAGE categories (pp. 31-32) needed to verify change and recovery requirements."
+  ],
+  "resolves": []
+}

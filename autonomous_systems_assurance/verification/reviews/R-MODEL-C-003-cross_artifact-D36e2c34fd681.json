@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-003-cross_artifact-D36e2c34fd681",
+  "package_id": "P-C-003-cross_artifact",
+  "input_digest": "36e2c34fd681e0c47e2002049f680029a82c8c198585f0036015f6b37e767c98",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts accurately reflect the claim, explicitly noting that the UK MOD's report of a Military Type Certificate for Protector is a distinct approval object and jurisdiction from civil FAA authorizations, thereby preserving the claim's scope and limitations.",
+  "evidence_locators": [
+    "research/initial_findings.md#what-the-ga-asi-page-actually-establishes",
+    "video/narrative.md#sequence"
+  ],
+  "limitations": [
+    "Underlying certificate and exact scope still needed for narrower technical claims",
+    "Does not establish civil DAA TSO authorization, all-airspace permission, or learned perception certification"
+  ],
+  "resolves": []
+}

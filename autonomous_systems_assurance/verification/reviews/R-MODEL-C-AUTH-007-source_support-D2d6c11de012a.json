@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-C-AUTH-007-source_support-D2d6c11de012a",
+  "package_id": "P-C-AUTH-007-source_support",
+  "input_digest": "2d6c11de012a34585f69fd3342fac8b8e2e20638261d8ed87248f96ba9b81681",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The evidence consists only of short excerpts from the public product page and scope summary. The full licensed standard and the 2026 CSDS proposal text were not acquired, meaning the full context is absent and the challenge to inspect the licensed standard cannot be fulfilled.",
+  "evidence_locators": [
+    "UL public product page, status/date",
+    "UL public scope summary, 2.1.1",
+    "UL public scope summary, 2.1.6"
+  ],
+  "limitations": [
+    "The licensed full standard and proposal text were not acquired",
+    "Full local context is absent for the provided excerpts"
+  ],
+  "resolves": []
+}

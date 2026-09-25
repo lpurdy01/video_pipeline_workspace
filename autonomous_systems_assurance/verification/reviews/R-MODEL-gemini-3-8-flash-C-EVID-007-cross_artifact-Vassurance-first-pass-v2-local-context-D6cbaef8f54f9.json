@@ -1,0 +1,27 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-EVID-007-cross_artifact-Vassurance-first-pass-v2-local-context-D6cbaef8f54f9",
+  "package_id": "P-C-EVID-007-cross_artifact",
+  "input_digest": "6cbaef8f54f92f1005ee102c6289ff91b8c26baf38cb885539e6ab7b3a76133a",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all artifact occurrences (assurance case, findings table, figures table, video narration/script outline/treatment, and whitepaper), the neuron-coverage study is consistently cited within its bounded scope: an empirical study showing a small positive association that does not establish causality, safety failure thresholds, or an adequate general safety measure.",
+  "evidence_locators": [
+    "research/contributions/assurance_evidence/findings.md:2108",
+    "resource_composition/figures.md:1383",
+    "video/script.md:19180",
+    "video/nextgen_structure/narration_evidence_map.md:2939",
+    "video/nextgen_structure/script_outline.md:10436",
+    "video/nextgen_structure/treatment.md:3598,9348",
+    "resource_composition/whitepaper.md:43105,60264"
+  ],
+  "limitations": [
+    "Review is restricted to the excerpted artifact uses supplied in the packet.",
+    "The underlying empirical study is restricted to a single DNN architecture and synthetic image transformations without established safety-failure thresholds."
+  ],
+  "resolves": []
+}

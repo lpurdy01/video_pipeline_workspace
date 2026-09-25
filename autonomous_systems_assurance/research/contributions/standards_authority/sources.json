@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-22",
+  "sources": [
+    {
+      "id": "S-STD-001",
+      "title": "Technical Discipline: Artificial Intelligence – Machine Learning",
+      "publisher": "Federal Aviation Administration",
+      "url": "https://www.faa.gov/aircraft/air_cert/step/disciplines/artificial_intelligence",
+      "published_at": null,
+      "source_type": "regulator_program_page",
+      "jurisdiction": "US civil aviation",
+      "accessed_at": "2026-09-22",
+      "inspection_scope": "Captured the complete public FAA page, last updated 2026-04-09. Inspected its description of the FAA AI/ML technical discipline, certification-framework focus, and collaboration with industry, government, standards-development organizations and academia.",
+      "regions": [
+        {
+          "id": "S-STD-001-R1",
+          "locator": "FAA page, main text and update stamp",
+          "excerpt": "international collaboration with industry, other government agencies, standards development organizations, and academic institutions",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/standards_authority/out/sources/faa_ai_discipline.html",
+          "snapshot_sha256": "dc702e243d9e39984ffca826b3ac71a8ddc01647df028c471d2b050230f0adf8",
+          "context_path": "research/contributions/standards_authority/out/context/faa_ai_discipline.txt"
+        }
+      ],
+      "limitations": "This current program page describes FAA research and policy-support activity. It is not a rule, accepted means of compliance, consensus-standard publication, certification basis, or evidence that an applicant has shown a high-criticality learned component is safe.",
+      "independence_group": "FAA-AI-TECHNICAL-DISCIPLINE",
+      "refresh_days": 30
+    },
+    {
+      "id": "S-STD-002",
+      "title": "EASA Comment-Response Tool listing for RMT.0742 / NPA 2025-07",
+      "publisher": "European Union Aviation Safety Agency",
+      "url": "https://hub.easa.europa.eu/crt/docs/by_npa_ref/dir_1/dpp_50",
+      "published_at": null,
+      "source_type": "regulator_rulemaking_status",
+      "jurisdiction": "EASA civil aviation",
+      "accessed_at": "2026-09-22",
+      "inspection_scope": "Captured the complete EASA CRT document-list page. Inspected the RMT.0742 rows, which label NPA 2025-07(B) as proposed DS.AI detailed specifications / AMC / GM, display a 2026-03-10 comment deadline, and use the page's defined status icon 'Document is awaiting responses to comments'.",
+      "regions": [
+        {
+          "id": "S-STD-002-R1",
+          "locator": "HTML table row trDoc30_1133; status legend and RMT.0742 row",
+          "excerpt": "Document is awaiting responses to comments ... Proposed detailed specifications and associated acceptable means of compliance and guidance material for AI trustworthiness (DS.AI)",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/standards_authority/out/sources/easa_crt.html",
+          "snapshot_sha256": "3f6e232c35309182de20fa7623be58395059cb0e4307f2859486332fd534161b",
+          "context_path": "research/contributions/standards_authority/out/context/easa_crt.txt"
+        }
+      ],
+      "limitations": "The status is a time-sensitive website observation. This document-list page establishes neither the substance of DS.AI nor the status of any private certification project. It must not override an EASA final decision, CRD, AMC/GM publication, or later rulemaking page if one appears.",
+      "independence_group": "EASA-RMT-0742-STATUS",
+      "refresh_days": 14
+    },
+    {
+      "id": "S-STD-003",
+      "title": "49 U.S.C. § 30115 — Certification of compliance",
+      "publisher": "Office of the Law Revision Counsel, U.S. House of Representatives",
+      "url": "https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title49-section30115",
+      "published_at": null,
+      "source_type": "statute",
+      "jurisdiction": "United States federal motor-vehicle safety",
+      "accessed_at": "2026-09-22",
+      "inspection_scope": "Captured the complete current preliminary U.S. Code page, which states that its text contains laws in effect on 2026-09-21. Inspected subsection (a), including the certification duty, reasonable-care qualification, and false-or-misleading limitation.",
+      "regions": [
+        {
+          "id": "S-STD-003-R1",
+          "locator": "49 U.S.C. § 30115(a), In General",
+          "excerpt": "shall certify ... complies with applicable motor vehicle safety standards ... exercising reasonable care",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/standards_authority/out/sources/usc_49_30115.html",
+          "snapshot_sha256": "2cc52f63ff4f4455f6e94a07500af5803c128cdb34cce5c4963447794cf6a104",
+          "context_path": "research/contributions/standards_authority/out/context/usc_49_30115.txt"
+        }
+      ],
+      "limitations": "Section 30115 addresses certification of compliance with applicable federal motor-vehicle safety standards. It does not create a general federal pre-market approval of an autonomous-driving system, prescribe an ML development process, state that all hazards are covered by FMVSS, or decide state operating authority.",
+      "independence_group": "USC-49-30115",
+      "refresh_days": 60
+    },
+    {
+      "id": "S-STD-004",
+      "title": "NHTSA interpretation: automatic activation of hazard warning signal for nonresponsive driver",
+      "publisher": "National Highway Traffic Safety Administration",
+      "url": "https://www.nhtsa.gov/interpretations/ncc-230607-001-571108-automatic-activation-hazard-warning-signal-nonresponsive",
+      "published_at": "2025-07-22",
+      "source_type": "regulator_interpretation",
+      "jurisdiction": "United States federal motor-vehicle safety",
+      "accessed_at": "2026-09-22",
+      "inspection_scope": "Inspected the complete NHTSA public interpretation through an accessible browser rendering. Direct snapshot retrieval returned HTTP 403. The page says NHTSA does not pre-approve new vehicles, equipment or ADS technologies; it describes the applicable-FMVSS and safety-defect conditions and manufacturer self-certification. It also states that the interpretation itself is nonbinding.",
+      "regions": [
+        {
+          "id": "S-STD-004-R1",
+          "locator": "NHTSA interpretation, Background, paragraphs 1–2",
+          "excerpt": "NHTSA does not pre-approve new motor vehicles ... The Safety Act requires manufacturers to self-certify",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "This is a nonbinding interpretation of a specific lighting/ADAS question, not an autonomous-vehicle approval, a blanket permission to deploy, or an ML assurance standard. The full original HTML was unavailable to the project snapshot tool and needs a renewed capture before release use.",
+      "independence_group": "NHTSA-INTERPRETATION-2025-ADAS",
+      "refresh_days": 30
+    },
+    {
+      "id": "S-STD-005",
+      "title": "SAE J3321_202603 — Verification and Validation of AI/ML-Based Systems in Ground Vehicles",
+      "publisher": "SAE International",
+      "url": "https://saemobilus.sae.org/standards/j3321_202603-verification-validation-ai-ml-based-systems-ground-vehicles",
+      "published_at": "2026-03-16",
+      "source_type": "standards_body_public_scope",
+      "jurisdiction": "Ground-vehicle AI/ML verification and validation",
+      "accessed_at": "2026-09-22",
+      "inspection_scope": "Inspected the complete public SAE Mobilus product page through an accessible browser rendering. The page lists the document as new on 2026-03-16 and describes broad AI/ML lifecycle coverage, but expressly calls it an information report with no mandatory requirements and says its V&V methods are general. Direct snapshot retrieval timed out.",
+      "regions": [
+        {
+          "id": "S-STD-005-R1",
+          "locator": "SAE public product page, Scope / Content",
+          "excerpt": "The document is an information report with no mandatory requirements.",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "The public product page is not the licensed document text. The wording establishes published public scope and status only; it does not establish clause-level requirements, a conformance scheme, regulatory recognition, or a particular vehicle's safety case. Reacquire a lawful complete copy or authorized excerpt before release-grade use.",
+      "independence_group": "SAE-J3321-202603",
+      "refresh_days": 60
+    }
+  ]
+}
+

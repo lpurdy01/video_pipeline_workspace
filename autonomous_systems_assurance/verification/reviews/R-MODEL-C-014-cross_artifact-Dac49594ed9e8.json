@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-014-cross_artifact-Dac49594ed9e8",
+  "package_id": "P-C-014-cross_artifact",
+  "input_digest": "ac49594ed9e8adc62f288cd8f8c80012c3d023b3aa613d7dfa72b4cc2e71e54f",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifact accurately reflects the claim by stating the EUROCAE WG-114 page lists an ED-324 draft, and it explicitly preserves the limitation that final publication status remains open and target dates are not proof of publication.",
+  "evidence_locators": [
+    "research/initial_findings.md",
+    "Section: Aviation is working on assurance for learning"
+  ],
+  "limitations": [
+    "Verify final publication status of ED-324/ARP6983 in the current publisher catalog"
+  ],
+  "resolves": []
+}

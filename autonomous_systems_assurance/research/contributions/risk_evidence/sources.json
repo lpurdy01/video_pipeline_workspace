@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-22",
+  "sources": [
+    {
+      "id": "S-RISK-001",
+      "title": "AC 25.1309-1A: System Design and Analysis",
+      "publisher": "Federal Aviation Administration",
+      "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_25.1309-1A.pdf",
+      "published_at": "1988-06-21",
+      "source_type": "government_advisory_circular",
+      "jurisdiction": "US transport-category airplane system design; historical FAA advisory material",
+      "accessed_at": "2026-09-22",
+      "inspection_scope": "Downloaded and inspected the complete 18-page advisory circular. Reviewed its stated non-mandatory status, failure-condition severity definitions, inverse probability/severity relationship, quantitative-analysis limits, and fail-safe design principles.",
+      "regions": [
+        {
+          "id": "S-RISK-001-R1",
+          "locator": "PDF pp. 1-2 and 5-7, scope, fail-safe principles and probability/severity discussion",
+          "excerpt": "a logical and acceptable inverse relationship between the probability and the severity of each failure condition",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/risk_evidence/out/sources/ac-25-1309-1a.pdf",
+          "snapshot_sha256": "7d590700259749384ae405df8da449c480aadf02dbc52a8432d6751edb9515d6",
+          "context_path": "research/contributions/risk_evidence/out/context/ac-25-1309-1a.txt"
+        },
+        {
+          "id": "S-RISK-001-R2",
+          "locator": "PDF pp. 13-15, quantitative assessment",
+          "excerpt": "component failure rate data are not precise enough to enable accurate estimates",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/risk_evidence/out/sources/ac-25-1309-1a.pdf",
+          "snapshot_sha256": "7d590700259749384ae405df8da449c480aadf02dbc52a8432d6751edb9515d6",
+          "context_path": "research/contributions/risk_evidence/out/context/ac-25-1309-1a.txt"
+        }
+      ],
+      "limitations": "This is a 1988 advisory circular, not a learned-model standard or a numerical acceptance rule for a model's perception error. It explicitly says it is guidance rather than mandatory material. Its conventional component-failure probability reasoning cannot be transferred to distribution-dependent learned behavior without a justified model of scenarios, exposure, dependencies and mitigations.",
+      "independence_group": "FAA-AC-25-1309-1A",
+      "refresh_days": 365
+    },
+    {
+      "id": "S-RISK-002",
+      "title": "Roadmap for Artificial Intelligence Safety Assurance, Version I",
+      "publisher": "Federal Aviation Administration",
+      "url": "https://www.faa.gov/aircraft/air_cert/step/roadmap_for_AI_safety_assurance",
+      "published_at": "2024",
+      "source_type": "government_roadmap",
+      "jurisdiction": "US civil aviation; direction-setting material",
+      "accessed_at": "2026-09-22",
+      "inspection_scope": "Copied and inspected the complete 31-page FAA roadmap from the project's retained FAA snapshot. Reviewed the safety-continuum/DAL discussion, the incremental-project approach, and the learned-implementation discussion. The source is duplicated locally for this lane but belongs to the same FAA-AI-ROADMAP evidence family as existing project records.",
+      "regions": [
+        {
+          "id": "S-RISK-002-R1",
+          "locator": "PDF pp. 11-12, incremental approach and Safety Continuum",
+          "excerpt": "DALs are assigned through the system safety assessment process based on the potential risks of failure or malfunction",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/risk_evidence/out/sources/faa-ai-roadmap.pdf",
+          "snapshot_sha256": "b8683625358a9f624aaf1567c0b083ad22235d3b518684f499b1e9c588fc4908",
+          "context_path": "research/contributions/risk_evidence/out/context/faa-ai-roadmap.txt"
+        },
+        {
+          "id": "S-RISK-002-R2",
+          "locator": "PDF pp. 14-16, application to aircraft certification of learned AI implementations",
+          "excerpt": "existing software and complex hardware guidance is not adequate to address learned AI implementations",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/risk_evidence/out/sources/faa-ai-roadmap.pdf",
+          "snapshot_sha256": "b8683625358a9f624aaf1567c0b083ad22235d3b518684f499b1e9c588fc4908",
+          "context_path": "research/contributions/risk_evidence/out/context/faa-ai-roadmap.txt"
+        }
+      ],
+      "limitations": "The roadmap is a living, direction-setting document. It is not a binding means of compliance, a public approval decision, or evidence that an identified DAL has been accepted for a learned flight-critical component. Its lower-risk examples are an incremental-policy proposal, not a categorical permission boundary.",
+      "independence_group": "FAA-AI-ROADMAP",
+      "refresh_days": 90
+    },
+    {
+      "id": "S-RISK-003",
+      "title": "NPA 2025-07 (B): Proposed detailed specifications and AMC & GM for AI trustworthiness (DS.AI)",
+      "publisher": "European Union Aviation Safety Agency",
+      "url": "https://www.easa.europa.eu/en/document-library/notices-of-proposed-amendment/npa-2025-07",
+      "published_at": "2025-11-10",
+      "source_type": "government_proposed_regulatory_material",
+      "jurisdiction": "European civil aviation; proposed material",
+      "accessed_at": "2026-09-22",
+      "inspection_scope": "Copied and inspected the complete 43-page EASA NPA PDF from the project's retained snapshot. Reviewed its proposed scope exclusions, AI level/authority table, operational-domain requirement and scenario hazard-likelihood risk assessment. This is the same EASA NPA evidence family as existing challenge-lane records, not independent corroboration.",
+      "regions": [
+        {
+          "id": "S-RISK-003-R1",
+          "locator": "PDF p. 4, DS.AI scope; PDF pp. 11-13, DS.AI Table 1 authority boundaries",
+          "excerpt": "AI-based systems presenting a risk directly contributing to the potential for fatalities",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/risk_evidence/out/sources/easa-npa-2025-07b.pdf",
+          "snapshot_sha256": "a42ac47d3eb3129667bdefe104da634960260788f0d3a8f8400f2d943d22fb1f",
+          "context_path": "research/contributions/risk_evidence/out/context/easa-npa-2025-07b.txt"
+        },
+        {
+          "id": "S-RISK-003-R2",
+          "locator": "PDF pp. 17-20, proposed DS.AI.130 risk assessment, Tables 2–3 and qualitative-judgement limit",
+          "excerpt": "H1: potential for fatalities ... considered an unacceptable risk for an AI-based system operation at this point in time",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/risk_evidence/out/sources/easa-npa-2025-07b.pdf",
+          "snapshot_sha256": "a42ac47d3eb3129667bdefe104da634960260788f0d3a8f8400f2d943d22fb1f",
+          "context_path": "research/contributions/risk_evidence/out/context/easa-npa-2025-07b.txt"
+        },
+        {
+          "id": "S-RISK-003-R3",
+          "locator": "PDF pp. 11-13, DS.AI Table 1 AI-level authority boundaries",
+          "excerpt": "Level 3B Reserved n/a n/a",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/risk_evidence/out/sources/easa-npa-2025-07b.pdf",
+          "snapshot_sha256": "a42ac47d3eb3129667bdefe104da634960260788f0d3a8f8400f2d943d22fb1f",
+          "context_path": "research/contributions/risk_evidence/out/context/easa-npa-2025-07b.txt"
+        }
+      ],
+      "limitations": "NPA 2025-07(B) is proposed material, not a final EASA decision, AMC/GM, type-certification basis or approval. The exclusions and risk table describe this proposal's scope; they do not establish a worldwide prohibition on AI functions contributing to higher-severity hazards.",
+      "independence_group": "EASA-AI-CONCEPT",
+      "refresh_days": 30
+    },
+    {
+      "id": "S-RISK-004",
+      "title": "CAP3127: Detect and Avoid Policy Concept – Consultation Response Summary",
+      "publisher": "UK Civil Aviation Authority",
+      "url": "https://www.caa.co.uk/publication/download/25286",
+      "published_at": "2025-06-19",
+      "source_type": "government_consultation_response",
+      "jurisdiction": "United Kingdom uncrewed-aircraft DAA policy concept; consultation/test-phase material",
+      "accessed_at": "2026-09-22",
+      "inspection_scope": "Downloaded and inspected the complete 26-page CAP3127 PDF. Reviewed its DAA metric discussion, risk-ratio/encounter-set limits, proposed progressive test-phase approach, and statements about required evidence and future AMC/GM.",
+      "regions": [
+        {
+          "id": "S-RISK-004-R1",
+          "locator": "PDF pp. 15-16, Section 4.15 DAA metrics consultation response",
+          "excerpt": "RRs are essentially averaging functions and may hide deficiencies in certain encounter cases",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/risk_evidence/out/sources/caa-cap3127.pdf",
+          "snapshot_sha256": "85a72defeb2cb96225f632e46742786789448fe7aa7b10f3c9d2374de16aa217",
+          "context_path": "research/contributions/risk_evidence/out/context/caa-cap3127.txt"
+        },
+        {
+          "id": "S-RISK-004-R2",
+          "locator": "PDF p. 19, Section 4.27 progressive test phase and next steps",
+          "excerpt": "Only after sufficient experience with this test phase, evidence of suitable performance and a lack of unexpected negative consequences",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/risk_evidence/out/sources/caa-cap3127.pdf",
+          "snapshot_sha256": "85a72defeb2cb96225f632e46742786789448fe7aa7b10f3c9d2374de16aa217",
+          "context_path": "research/contributions/risk_evidence/out/context/caa-cap3127.txt"
+        }
+      ],
+      "limitations": "This is a UK consultation response about a policy concept and its test phase, not a learned-model certification standard or proof of an approved DAA design. NMAC, DWC and risk-ratio results depend on their definitions, encounter distributions, operational restrictions and the rest of the mitigation stack.",
+      "independence_group": "UK-CAA-CAP3127",
+      "refresh_days": 90
+    },
+    {
+      "id": "S-RISK-005",
+      "title": "Assuring Machine Learning in Autonomous Systems (AMLAS), Version 1.1",
+      "publisher": "University of York / Assuring Autonomy International Programme",
+      "url": "https://www.cs.york.ac.uk/ris/papers/AMLAS.pdf",
+      "published_at": "2021",
+      "source_type": "research_assurance_method",
+      "jurisdiction": "General learned-system assurance method; clinical example only",
+      "accessed_at": "2026-09-22",
+      "inspection_scope": "Copied and inspected the complete 60-page AMLAS v1.1 report from the project's retained snapshot. Reviewed Activity 11 and Example 32, including its ROC and confusion-matrix explanation. This is the same AMLAS evidence family as the project's assurance-challenge lane, not independent corroboration.",
+      "regions": [
+        {
+          "id": "S-RISK-005-R1",
+          "locator": "PDF pp. 34-36, Activity 11 and Example 32 / Figure 11",
+          "excerpt": "a trade-off is therefore required between different metrics",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/risk_evidence/out/sources/amlas-v1.1.pdf",
+          "snapshot_sha256": "18eab2179ccd2c8d6aeb651099c72536d192dddb58094bf2b440de5885322429",
+          "context_path": "research/contributions/risk_evidence/out/context/amlas-v1.1.txt"
+        }
+      ],
+      "limitations": "The retinal-referral figure is an illustrative medical-classification example, not an autonomous-driving or DAA study. ROC points and confusion matrices describe performance on a defined test set and selected operating point; they do not establish operational exposure, sensor reliability, closed-loop safety, calibration under shift or certification acceptance.",
+      "independence_group": "AMLAS-V1.1",
+      "refresh_days": 365
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-RISK-002-cross_artifact-Vassurance-first-pass-v2-local-context-D9178ce7e97dc",
+  "package_id": "P-C-RISK-002-cross_artifact",
+  "input_digest": "9178ce7e97dc916438981eb5712fa7709f0ca2cd0b67d1c28222274bb3f51668",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Every supplied artifact use accurately preserves the claim's scope and limitations. Across the integration notes, visual inventory, findings document, and figure manifest, the FAA roadmap is consistently cited as direction-setting/problem-framing context highlighting DAL assignment as an initial starting point alongside DO-178C/DO-254 inadequacy for learned models, while explicitly disclaiming it as a formal approval boundary or means of compliance.",
+  "evidence_locators": [
+    "resource_composition/figures.md:2335",
+    "research/integration_round4.md:3042",
+    "video/nextgen_structure/visual_inventory.md:4612",
+    "research/contributions/risk_evidence/findings.md:1349",
+    "research/contributions/risk_evidence/findings.md:6446",
+    "S-RISK-002-R1",
+    "S-RISK-002-R2"
+  ],
+  "limitations": [
+    "Inspection is confined to the excerpted artifact-use contexts provided in the review packet.",
+    "Roadmap is Version 1 (2024) non-binding direction-setting material and does not constitute a certified means of compliance."
+  ],
+  "resolves": []
+}

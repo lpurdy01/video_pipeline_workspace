@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-AUTH-001-source_support-Dda0ed76a9f02",
+  "package_id": "P-C-AUTH-001-source_support",
+  "input_digest": "da0ed76a9f026d77cfd5d61b04cd2f5aa25d5d9d25f50eda8bcd7c9bed195daa",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The short excerpt supports the first half of the claim regarding the lack of an AI safety assurance method. However, the captured context is explicitly marked as absent, meaning the text detailing the roadmap's plan to develop and adapt methods within the existing ecosystem cannot be independently verified.",
+  "evidence_locators": [
+    "S-AUTH-001-R1",
+    "PDF p. 4, introduction"
+  ],
+  "limitations": [
+    "Full local context from the roadmap (e.g., pp. 12, 24-30) must be captured to verify the plan to develop and adapt methods.",
+    "Search for FAA updates, completed consensus standards, and accepted issue papers after Version I to satisfy the claim's challenge."
+  ],
+  "resolves": []
+}

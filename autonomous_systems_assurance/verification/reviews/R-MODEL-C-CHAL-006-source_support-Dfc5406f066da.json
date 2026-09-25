@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-C-CHAL-006-source_support-Dfc5406f066da",
+  "package_id": "P-C-CHAL-006-source_support",
+  "input_digest": "fc5406f066da7786faee762d08b3174116d87c5bbecf8521512db400f91430c7",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided excerpts from the AMLAS Version 1.1 guidance explicitly confirm it is a six-stage methodology that links system safety requirements to ML lifecycle stages (including data, learning, verification, and deployment). The text directly supports the claim that AMLAS is limited to the ML component, should not be used in isolation, and focuses primarily on off-line supervised learning.",
+  "evidence_locators": [
+    "S-CHAL-004-R1",
+    "S-CHAL-004-R2",
+    "S-CHAL-004-R3",
+    "PDF pp. 2\u20133"
+  ],
+  "limitations": [
+    "AMLAS is public research guidance, not a regulator-issued means of compliance or product authorization."
+  ],
+  "resolves": []
+}

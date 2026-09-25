@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-AIR2-001-source_support-D9bcbfb665d19",
+  "package_id": "P-C-AIR2-001-source_support",
+  "input_digest": "9bcbfb665d192ded0d79571eb3fefda3c2b43292ec536bbad6a1ffe1149f8c46",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided excerpt confirms the system must detect cooperative and non-cooperative aircraft, but the captured text lacks the full context necessary to verify the specific architectural claims regarding TCAS/ADS-B and air-to-air radar.",
+  "evidence_locators": [
+    "S-AIR2-001-R2"
+  ],
+  "limitations": [
+    "Full local context is absent; requires the complete text from the GA-ASI page detailing the specific sensor architecture (TCAS/ADS-B and radar)."
+  ],
+  "resolves": []
+}

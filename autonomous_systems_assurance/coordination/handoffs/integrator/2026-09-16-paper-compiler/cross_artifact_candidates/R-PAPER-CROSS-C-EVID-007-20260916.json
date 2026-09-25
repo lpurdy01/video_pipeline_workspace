@@ -1,0 +1,23 @@
+{
+  "id": "R-PAPER-CROSS-C-EVID-007-20260916",
+  "package_id": "P-C-EVID-007-cross_artifact",
+  "input_digest": "656eaffdad6f44f62d42d51225fd6081c4cf213a858e1ee650952dd0cc21ea95",
+  "task": "cross_artifact",
+  "reviewer_id": "paper-compiler-review-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-cross-artifact-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The paper and evidence findings use the neuron-coverage study only to challenge a metric: activation coverage is not promoted to a causal guarantee or a consistent test-adequacy proxy. The metrics matrix groups it with diagnostic tools rather than safety evidence capable of closing an obligation, preserving the claim's stated empirical limitation.",
+  "evidence_locators": [
+    "resource_composition/whitepaper.md, interpretability/coverage subsection and metrics matrix",
+    "research/contributions/assurance_evidence/findings.md, neuron-coverage limitation finding",
+    "assurance/assurance_case.json, related evidence remains planned and no closure uses neuron coverage"
+  ],
+  "limitations": [
+    "This does not replicate the underlying empirical study or assess a current neural model.",
+    "The review does not validate an interpretability or coverage metric for a specific hazard."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "id": "A-ROAD-AIR-FINDINGS",
+      "path": "research/contributions/road_air/findings.md",
+      "kind": "research",
+      "depends_on": []
+    },
+    {
+      "id": "A-ROAD2-FINDINGS",
+      "path": "research/contributions/road_round2/findings.md",
+      "kind": "research",
+      "depends_on": []
+    },
+    {
+      "id": "A-AIR2-FINDINGS",
+      "path": "research/contributions/air_round2/findings.md",
+      "kind": "research",
+      "depends_on": []
+    },
+    {
+      "id": "A-METHOD2-FINDINGS",
+      "path": "research/contributions/method_round2/findings.md",
+      "kind": "research",
+      "depends_on": []
+    },
+    {
+      "id": "A-AUTH-FINDINGS",
+      "path": "research/contributions/assurance_authority/findings.md",
+      "kind": "research",
+      "depends_on": []
+    },
+    {
+      "id": "A-EVID-FINDINGS",
+      "path": "research/contributions/assurance_evidence/findings.md",
+      "kind": "research",
+      "depends_on": []
+    },
+    {
+      "id": "A-CHAL-FINDINGS",
+      "path": "research/contributions/assurance_challenge/findings.md",
+      "kind": "research",
+      "depends_on": []
+    },
+    {
+      "id": "A-RISK-FINDINGS",
+      "path": "research/contributions/risk_evidence/findings.md",
+      "kind": "research",
+      "depends_on": []
+    },
+    {
+      "id": "A-STD-FINDINGS",
+      "path": "research/contributions/standards_authority/findings.md",
+      "kind": "research",
+      "depends_on": []
+    },
+    {
+      "id": "A-DIR-FINDINGS",
+      "path": "research/contributions/direction_evidence/findings.md",
+      "kind": "research",
+      "claim_ids": [
+        "C-DIR-001",
+        "C-DIR-002",
+        "C-DIR-003",
+        "C-RISK-006",
+        "C-RISK-007"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "A-TRAIN-FINDINGS",
+      "path": "research/contributions/training_case/findings.md",
+      "kind": "research",
+      "depends_on": []
+    },
+    {
+      "id": "A-INTEGRATION2",
+      "path": "research/integration_round2.md",
+      "kind": "research_integration",
+      "depends_on": [
+        "A-ROAD2-FINDINGS",
+        "A-AIR2-FINDINGS",
+        "A-METHOD2-FINDINGS"
+      ]
+    },
+    {
+      "id": "A-INTEGRATION3",
+      "path": "research/integration_round3.md",
+      "kind": "research_integration",
+      "depends_on": [
+        "A-AUTH-FINDINGS",
+        "A-EVID-FINDINGS",
+        "A-CHAL-FINDINGS"
+      ]
+    },
+    {
+      "id": "A-INTEGRATION4",
+      "path": "research/integration_round4.md",
+      "kind": "research_integration",
+      "depends_on": [
+        "A-RISK-FINDINGS",
+        "A-STD-FINDINGS"
+      ]
+    },
+    {
+      "id": "A-INTEGRATION5",
+      "path": "research/integration_round5.md",
+      "kind": "research_integration",
+      "depends_on": [
+        "A-DIR-FINDINGS",
+        "A-INTEGRATION4"
+      ]
+    },
+    {
+      "id": "A-RETRIEVAL2",
+      "path": "research/retrieval_status.md",
+      "kind": "retrieval_status",
+      "depends_on": [
+        "A-INTEGRATION2"
+      ]
+    },
+    {
+      "id": "A-FINDINGS",
+      "path": "research/initial_findings.md",
+      "kind": "research",
+      "depends_on": []
+    },
+    {
+      "id": "A-VOCAB",
+      "path": "wiki/concepts/assurance_vocabulary.md",
+      "kind": "wiki",
+      "depends_on": []
+    },
+    {
+      "id": "A-TENSIONS",
+      "path": "wiki/concepts/open_tensions.md",
+      "kind": "wiki",
+      "depends_on": []
+    },
+    {
+      "id": "A-ASSURANCE-CASE",
+      "path": "assurance/assurance_case.json",
+      "kind": "assurance_case",
+      "claim_ids": [
+        "C-CHAL-001",
+        "C-CHAL-002",
+        "C-CHAL-003",
+        "C-CHAL-004",
+        "C-CHAL-006",
+        "C-AUTH-002",
+        "C-AUTH-008",
+        "C-EVID-001",
+        "C-EVID-002",
+        "C-EVID-003",
+        "C-EVID-004",
+        "C-EVID-005",
+        "C-EVID-007"
+      ],
+      "depends_on": [
+        "A-INTEGRATION3"
+      ]
+    },
+    {
+      "id": "A-METHOD-CROSSWALK",
+      "path": "assurance/method_crosswalk.json",
+      "kind": "method_crosswalk",
+      "claim_ids": [
+        "C-CHAL-001",
+        "C-CHAL-002",
+        "C-CHAL-003",
+        "C-CHAL-004",
+        "C-CHAL-006",
+        "C-EVID-001",
+        "C-EVID-003",
+        "C-EVID-004",
+        "C-EVID-005"
+      ],
+      "depends_on": [
+        "A-ASSURANCE-CASE",
+        "A-INTEGRATION3"
+      ]
+    },
+    {
+      "id": "A-CROSSWALK",
+      "path": "assurance/amlas_maa_easa_crosswalk.md",
+      "kind": "assurance_crosswalk",
+      "depends_on": [
+        "A-INTEGRATION3",
+        "A-ASSURANCE-CASE",
+        "A-METHOD-CROSSWALK"
+      ]
+    },
+    {
+      "id": "A-NEXT-STEPS",
+      "path": "planning/learned_systems_assurance_next_steps.md",
+      "kind": "project_plan",
+      "depends_on": [
+        "A-INTEGRATION3",
+        "A-CROSSWALK"
+      ]
+    },
+    {
+      "id": "A-ARCH",
+      "path": "assurance/architecture.md",
+      "kind": "architecture",
+      "depends_on": [
+        "A-CROSSWALK",
+        "A-INTEGRATION4",
+        "A-INTEGRATION5"
+      ]
+    },
+    {
+      "id": "A-OUTLINE",
+      "path": "resource_composition/whitepaper_outline.md",
+      "kind": "outline",
+      "depends_on": [
+        "A-ARCH"
+      ]
+    },
+    {
+      "id": "A-PAPER",
+      "path": "resource_composition/whitepaper.md",
+      "kind": "whitepaper",
+      "depends_on": [
+        "A-ARCH"
+      ]
+    },
+    {
+      "id": "A-FIGURES",
+      "path": "resource_composition/figures.md",
+      "kind": "figure_descriptions",
+      "depends_on": [
+        "A-ARCH"
+      ]
+    },
+    {
+      "id": "A-SCRIPT",
+      "path": "video/narrative.md",
+      "kind": "narration",
+      "depends_on": [
+        "A-ARCH"
+      ]
+    },
+    {
+      "id": "A-LONGFORM-SCRIPT",
+      "path": "video/script.md",
+      "kind": "narration_recording_draft",
+      "depends_on": [
+        "A-NEXTGEN-TREATMENT",
+        "A-ARCH"
+      ]
+    },
+    {
+      "id": "A-STORYBOARD",
+      "path": "video/storyboard.md",
+      "kind": "storyboard",
+      "depends_on": [
+        "A-SCRIPT",
+        "A-FIGURES"
+      ]
+    },
+    {
+      "id": "A-NEXTGEN-TREATMENT",
+      "path": "video/nextgen_structure/treatment.md",
+      "kind": "video_treatment_proposal",
+      "depends_on": [
+        "A-ARCH"
+      ]
+    },
+    {
+      "id": "A-NEXTGEN-SCRIPT",
+      "path": "video/nextgen_structure/script_outline.md",
+      "kind": "video_script_proposal",
+      "depends_on": [
+        "A-NEXTGEN-TREATMENT"
+      ]
+    },
+    {
+      "id": "A-NEXTGEN-VISUALS",
+      "path": "video/nextgen_structure/visual_inventory.md",
+      "kind": "video_visual_proposal",
+      "depends_on": [
+        "A-NEXTGEN-TREATMENT",
+        "A-FIGURES"
+      ]
+    },
+    {
+      "id": "A-NEXTGEN-EVIDENCE",
+      "path": "video/nextgen_structure/narration_evidence_map.md",
+      "kind": "video_evidence_map",
+      "depends_on": [
+        "A-NEXTGEN-TREATMENT",
+        "A-NEXTGEN-SCRIPT"
+      ]
+    },
+    {
+      "id": "A-VISION-FIGURE",
+      "path": "resource_composition/figures/vision_training_contract.svg",
+      "kind": "figure",
+      "claim_ids": [
+        "C-TRAIN-001",
+        "C-TRAIN-002",
+        "C-TRAIN-003",
+        "C-TRAIN-004"
+      ],
+      "depends_on": [
+        "A-FIGURES"
+      ]
+    }
+  ]
+}

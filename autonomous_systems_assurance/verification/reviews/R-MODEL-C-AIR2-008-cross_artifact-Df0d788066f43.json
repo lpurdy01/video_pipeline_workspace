@@ -1,0 +1,18 @@
+{
+  "id": "R-MODEL-C-AIR2-008-cross_artifact-Df0d788066f43",
+  "package_id": "P-C-AIR2-008-cross_artifact",
+  "input_digest": "f0d788066f43c2db517a8f35365ffd87ba44037fce9bccb22baa8247e2733520",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifact accurately incorporates the claim and explicitly preserves the limitation that the FAA roadmap is a direction-setting document for research and method-development, not a certification standard or blanket route to certify a flight-critical learned controller.",
+  "evidence_locators": [
+    "research/contributions/air_round2/findings.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

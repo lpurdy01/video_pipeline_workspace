@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-AIR2-012-source_support-Db054484a76e4",
+  "package_id": "P-C-AIR2-012-source_support",
+  "input_digest": "b054484a76e4dbfc0b47c8af70d920c2443c87ded1d9da6b4a540bb5d0c58e89",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "While the research artifacts summarize the FAA's September 2023 announcement regarding Zipline's BVLOS authorization in Salt Lake City, the primary source region (S-AIR2-011-R1) contains only a three-word excerpt ('without visual observers') and explicitly states that no full local context was captured. Independent verification of the exact claim text against the primary source is therefore blocked.",
+  "evidence_locators": [
+    "S-AIR2-011-R1",
+    "research/contributions/air_round2/findings.md"
+  ],
+  "limitations": [
+    "Primary source context is absent (context_status: short_excerpt_only)",
+    "Requires full text of the FAA announcement and the retrieved exemption letters (19111B/C) to verify the exact operational scope and TSO limitations"
+  ],
+  "resolves": []
+}

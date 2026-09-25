@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-RISK-003-source_support-Vassurance-first-pass-v2-local-context-D253be038d375",
+  "package_id": "P-C-RISK-003-source_support",
+  "input_digest": "253be038d375f108e68d2d4322d73b6fecda92664ac109c849c94ed726c559d3",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The supplied text of EASA NPA 2025-07(B) directly supports every element of the claim: DS.AI.010(d)(1)-(2) explicitly excludes AI systems presenting a risk directly contributing to fatalities or multiple life-threatening injuries, as well as online-learning capabilities with failure contributions beyond 'no safety effect'; DS.AI.130(b)(1)(v) and Table 2 explicitly classify H1 (fatality potential) as an unacceptable risk across all likelihood categories at this point in time. The claim strictly bounds itself to the proposed NPA material rather than final EASA policy or approval.",
+  "evidence_locators": [
+    "NPA 2025-07 (B), DS.AI.010 Scope, PDF p. 4",
+    "NPA 2025-07 (B), DS.AI.130 Risk assessment and Table 2, PDF pp. 17-18"
+  ],
+  "limitations": [
+    "NPA 2025-07(B) is a notice of proposed amendment and does not represent an adopted EASA decision, AMC/GM, or general prohibition beyond this proposed framework's boundary."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-001-source_support-De6b54a536a68",
+  "package_id": "P-C-EVID-001-source_support",
+  "input_digest": "e6b54a536a68feb9baaf5754456f3c8d72a81743becf56596847f3c0c1b4875c",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "NIST AI RMF 1.0 explicitly calls for documenting intended context (MAP 1.1), knowledge limits (MAP 2.2), and data/TEVV considerations (MAP 2.3). It also details processes for post-deployment change through ongoing monitoring and periodic review (GOVERN 1.5, MANAGE 4.1, 4.2) and recovery processes, including decommissioning and deactivation of AI systems (GOVERN 1.7, MANAGE 2.2). These requirements are presented as applicable across the AI lifecycle.",
+  "evidence_locators": [
+    "PDF pp. 26-27, MAP 1.1, MAP 2.2, MAP 2.3",
+    "PDF p. 23, GOVERN 1.5, GOVERN 1.7",
+    "PDF pp. 31-32, MANAGE 2.2, MANAGE 4.1, MANAGE 4.2"
+  ],
+  "limitations": [
+    "The captured_context for S-EVID-001-R3 incorrectly shows pages 26-27 (MAP functions) instead of pages 31-32 (MANAGE functions) as indicated by the locator and excerpt. However, the excerpt 'supersede, disengage, or deactivate AI systems' is directly from MANAGE 2.2 on page 31 of the NIST AI RMF 1.0 document, and the inspection scope confirms review of MANAGE outcomes."
+  ],
+  "resolves": []
+}

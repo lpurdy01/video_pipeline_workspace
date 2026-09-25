@@ -1,0 +1,19 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-006-source_support-Dea46aa115581",
+  "package_id": "P-C-EVID-006-source_support",
+  "input_digest": "ea46aa115581f088c979ce2857b7010c64e72a20a643c8e1c8cb937bcaf2ea94",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The abstract (p. 1) explicitly states, \"reliance, solely, on visual assessment can be misleading\" and that \"some existing saliency methods are independent both of the model and of the data generating process.\" This directly supports the claim that visually plausible saliency output alone is not evidence of a faithful model explanation and that some methods were insensitive to model parameters or training-label structure. The contribution list (p. 2) further reinforces this, stating, \"some of the methods tested are independent of both the model parameters and the labeling of the data that the model was trained on.\" The source, date, and scope align with the claim.",
+  "evidence_locators": [
+    "PDF p. 1, abstract",
+    "PDF p. 2, contribution list"
+  ],
+  "limitations": [],
+  "resolves": []
+}

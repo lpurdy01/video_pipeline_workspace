@@ -1,0 +1,31 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-003-cross_artifact-D5ec74b554436",
+  "package_id": "P-C-CHAL-003-cross_artifact",
+  "input_digest": "5ec74b5544366eeddcc726d602b793744b992b48e9402668b8f54dff905eede0",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Every artifact using claim C-CHAL-003 consistently preserves its scope and limitations. The claim states that EASA's NPA 2025-07(B) 'proposes' a framework and is 'proposed material, not final AMC/GM or an approved application.' All artifacts, including the assurance architecture, challenge findings, crosswalks, integration reports, video scripts, and whitepaper drafts, explicitly refer to the EASA material as 'proposed,' 'not final,' 'candidate,' or 'emerging framework,' and frequently highlight its stated scope boundaries (e.g., excluding highest-consequence systems). No instance presents the proposed material as final authority evidence or omits these crucial qualifications.",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_challenge/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "resource_composition/figures.md",
+    "research/integration_round3.md",
+    "video/script.md",
+    "assurance/method_crosswalk.json",
+    "planning/learned_systems_assurance_next_steps.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

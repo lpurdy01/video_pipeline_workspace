@@ -1,0 +1,29 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-004-cross_artifact-D4b67f1c2206e",
+  "package_id": "P-C-CHAL-004-cross_artifact",
+  "input_digest": "4b67f1c2206e35345ea4ea97c7744fe0fcbb4db8a1ceda748022399870fdb406",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Every artifact use of claim C-CHAL-004 consistently preserves its scope and limitations. The claim states that EASA's proposed DS.AI does not cover AI systems contributing to fatalities or multiple life-threatening injuries, excludes certain online-learning systems, and therefore cannot be presented as a complete path for the most demanding flight-critical autonomy case. All artifacts explicitly acknowledge the 'proposed' status of EASA NPA 2025-07(B) and its high-consequence scope exclusions, ensuring it is not misrepresented as a final or complete solution for the hardest cases. No omitted qualifications, changed status, or inferences presented as authority evidence were found.",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_challenge/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "resource_composition/figures.md",
+    "research/integration_round3.md",
+    "video/script.md",
+    "assurance/method_crosswalk.json",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

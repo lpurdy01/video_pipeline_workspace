@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-008-source_support-D990899e174ef",
+  "package_id": "P-C-AUTH-008-source_support",
+  "input_digest": "990899e174efb491bc8894541d3b14e2df5fb969f907e085b6f9bc3cd9a007e6",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The claim states that NHTSA's ADS 2.0 material presents a voluntary road-ADS safety framework with ODD, object-and-event detection/response, fallback, and validation as safety elements, and that self-assessments are not subject to federal approval. The evidence directly supports these points: S-AUTH-006-R1 and S-AUTH-006-R2 confirm the voluntary nature and lack of federal approval for self-assessments. S-AUTH-006-R3 explicitly lists 'Operational Design Domain (ODD)', 'Object and Event Detection and Response (OEDR)', and 'Fall Back' as safety elements. The `research/contributions/assurance_authority/findings.md` artifact further confirms 'validation' as another safety element provided by ADS 2.0. The source's inspection scope and limitations also align with the claim's scope and status.",
+  "evidence_locators": [
+    "S-AUTH-006-R1",
+    "S-AUTH-006-R2",
+    "S-AUTH-006-R3",
+    "research/contributions/assurance_authority/findings.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

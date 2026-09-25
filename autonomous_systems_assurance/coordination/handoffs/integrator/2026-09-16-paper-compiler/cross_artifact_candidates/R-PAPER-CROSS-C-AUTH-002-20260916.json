@@ -1,0 +1,24 @@
+{
+  "id": "R-PAPER-CROSS-C-AUTH-002-20260916",
+  "package_id": "P-C-AUTH-002-cross_artifact",
+  "input_digest": "73e376c9b2a362541b21ff3e15117525ab4f7a96fc5d21ee1eacc20a62e50924",
+  "task": "cross_artifact",
+  "reviewer_id": "paper-compiler-review-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-cross-artifact-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "Every use keeps the FAA roadmap bounded to frozen learned releases and renewed assurance after updates. The paper identifies it as direction-setting rather than a complete acceptance method; the case and crosswalk use it as a change-control input while retaining planned evidence and open obligations. The broader project change list is presented as a project contract rather than as an FAA-mandated exhaustive trigger list.",
+  "evidence_locators": [
+    "resource_composition/whitepaper.md:31 and :215, frozen-release and project change-impact uses",
+    "research/contributions/assurance_authority/findings.md:18, static-versus-operational-learning scope",
+    "assurance/amlas_maa_easa_crosswalk.md:20, O-008 change/in-service-control comparison",
+    "assurance/assurance_case.json, EA-ROAD-005/EA-AIR-005 and O-008/O-AIR-008 claim links"
+  ],
+  "limitations": [
+    "This does not verify exact FAA roadmap wording, current regulatory status, or full source context.",
+    "No reviewed artifact establishes that a real model update has adequate assurance."
+  ],
+  "resolves": []
+}

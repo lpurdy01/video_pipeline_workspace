@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-001-source_support-Vassurance-first-pass-v2-local-context-D499d4f5b54dc",
+  "package_id": "P-C-CHAL-001-source_support",
+  "input_digest": "499d4f5b54dc9dc73770289623fc676646c0d6035bae0f14a4d4156dc72b6be6",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The original context from MAA/RN/2025/04 (effective 10 October 2025) directly supports all elements of the claim. Paragraph 6 states that for Certified Air Systems, applicants should raise a Military Certification Review Item (MCRI) for MAA agreement. Paragraph 7 explicitly recommends that early applications of ML techniques use training methods such as supervised learning to generate models that remain fixed for integration and use within a defined operational design domain (ODD). The stated scope correctly bounds this as UK military guidance rather than civil airworthiness approval.",
+  "evidence_locators": [
+    "MAA/RN/2025/04, p. 1, Implementation, para. 3",
+    "MAA/RN/2025/04, p. 2, Certified Air Systems, paras. 6\u20137"
+  ],
+  "limitations": [
+    "The notice constitutes informative military guidance and regulatory position for the UK Defence Air Environment; individual MCRIs and certification agreements remain applicant-specific and non-public."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "R-MODEL-C-AUTH-010-source_support-D182509b3924b",
+  "package_id": "P-C-AUTH-010-source_support",
+  "input_digest": "182509b3924b84bc0257d2c78f7666c70d062b769313ecd09ab0937e5daa1e39",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The source explicitly states that for learned AI implementations, traditional traceability links are broken because the designer cannot derive requirements that directly describe the AI implementation or validate their coverage to the next higher level. The claim accurately reflects this specific limitation while respecting the boundary that conventional hardware and software methods still apply.",
+  "evidence_locators": [
+    "S-AUTH-001-R4",
+    "PDF p. 14"
+  ],
+  "limitations": [],
+  "resolves": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "R-FIRST-CROSS-C-AUTH-002",
+  "package_id": "P-C-AUTH-002-cross_artifact",
+  "input_digest": "89ba99a2e64f62e8ea621323842043477444912c66ede6a32116ef46c781b35c",
+  "task": "cross_artifact",
+  "reviewer_id": "first-pass-cross-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-cross-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The case graph and crosswalk use the FAA roadmap claim as a scoped design-time/change-control input. They label the evidence artifacts planned and obligations open, do not call the roadmap a complete means of compliance, and preserve the distinction between updated release treatment and a completed approval path.",
+  "evidence_locators": [
+    "assurance/assurance_case.json, tagged use [C-AUTH-002], EA-ROAD-005, EA-AIR-005, O-008 and O-AIR-008",
+    "research/contributions/assurance_authority/findings.md, tagged use [C-AUTH-002], frozen-version and update-safety-assurance paragraph",
+    "assurance/amlas_maa_easa_crosswalk.md, tagged use [C-AUTH-002], O-008 change/in-service-control row",
+    "assurance_case_links: EA-ROAD-005, EA-AIR-005, O-008, O-AIR-008"
+  ],
+  "limitations": [
+    "The graph's broader project change list is a project obligation, not proof that FAA mandates every listed trigger.",
+    "This review does not evaluate roadmap source wording or regulatory currency."
+  ],
+  "resolves": []
+}

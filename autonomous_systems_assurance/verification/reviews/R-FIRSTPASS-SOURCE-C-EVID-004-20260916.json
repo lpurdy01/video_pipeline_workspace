@@ -1,0 +1,22 @@
+{
+  "id": "R-FIRSTPASS-SOURCE-C-EVID-004-20260916",
+  "package_id": "P-C-EVID-004-source_support",
+  "input_digest": "ef3000d8768542d4d34632b19548c888eb16cd514244fae01229d74179020826",
+  "task": "source_support",
+  "reviewer_id": "first-pass-source-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-source-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The paper's abstract reports poor calibration in the studied modern neural networks, and its experimental discussion reports empirical calibration improvement from temperature scaling across its evaluated settings. The claim correctly confines both assertions to the paper's studied networks and settings.",
+  "evidence_locators": [
+    "S-EVID-004-R1 \u2014 PDF p. 1, abstract",
+    "S-EVID-004-R2 \u2014 PDF pp. 2\u20133, calibration and temperature-scaling experiments"
+  ],
+  "limitations": [
+    "Held-out-distribution calibration does not demonstrate calibrated uncertainty under operational distribution shift, sensor faults, or closed-loop effects.",
+    "The result is not a system-level safety bound."
+  ],
+  "resolves": []
+}

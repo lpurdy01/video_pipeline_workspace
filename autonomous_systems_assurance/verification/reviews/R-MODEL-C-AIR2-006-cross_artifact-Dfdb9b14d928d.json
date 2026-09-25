@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-AIR2-006-cross_artifact-Dfdb9b14d928d",
+  "package_id": "P-C-AIR2-006-cross_artifact",
+  "input_digest": "fdb9b14d928d6fc491f084875d66dee55feb39221c0cf13aba31d19a09eaeed5",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifact accurately reflects the claim by explicitly identifying TSO-C212a as a draft, noting its function for detecting non-cooperative traffic, and stating that installation requires separate approval, preserving the claim's scope and limitations.",
+  "evidence_locators": [
+    "research/contributions/air_round2/findings.md"
+  ],
+  "limitations": [
+    "Confirm final TSO revision and effective date before publication"
+  ],
+  "resolves": []
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "S-DIR-001",
+      "title": "PE Exam",
+      "publisher": "National Council of Examiners for Engineering and Surveying",
+      "url": "https://ncees.org/exams/pe-exam/",
+      "published_at": null,
+      "source_type": "professional_licensure_body_page",
+      "jurisdiction": "United States; NCEES examination offerings and state-board licensure pathway",
+      "accessed_at": "2026-09-22",
+      "inspection_scope": "Captured the current complete NCEES PE-exam page and inspected its description of discipline-specific competency, experience, and the selectable examination disciplines. The page does not establish every credential offered worldwide or every state-board practice rule.",
+      "regions": [
+        {
+          "id": "S-DIR-001-R1",
+          "locator": "Current PE Exam page, opening competency/experience description and Select Discipline list",
+          "excerpt": "NCEES offers more than 20 different PE exams ... Electrical and Computer: Computer Engineering ... [no machine-learning examination listed]",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/direction_evidence/out/sources/ncees_pe_exam.html",
+          "snapshot_sha256": "f4c839da523a5970ae9e0131c07b555320aa905a8554d411ba43f65e9a87fa23",
+          "context_path": "research/contributions/direction_evidence/out/context/ncees_pe_exam.txt"
+        }
+      ],
+      "limitations": "An NCEES exam list cannot establish that no employer, university, vendor, association, nation, or state offers a machine-learning credential. It also does not demonstrate why a particular specialty has or lacks a PE examination, nor whether a PE is required for a given software role.",
+      "independence_group": "NCEES",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-DIR-002",
+      "title": "Federal Motor Vehicle Safety Standards; Minimum Sound Requirements for Hybrid and Electric Vehicles",
+      "publisher": "National Highway Traffic Safety Administration / Federal Register",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2016-12-14/pdf/2016-28804.pdf",
+      "published_at": "2016-12-14",
+      "source_type": "federal_final_rule",
+      "jurisdiction": "United States; 2016 hybrid/electric low-speed sound rulemaking",
+      "accessed_at": "2026-09-22",
+      "inspection_scope": "Downloaded and inspected the complete 107-page final rule, specifically its discussion of powertrain-specific pedestrian/pedalcyclist crash-rate denominators, proxies, confounders, and the low-speed sound requirement.",
+      "regions": [
+        {
+          "id": "S-DIR-002-R1",
+          "locator": "Federal Register PDF p. 6, NHTSA analysis of pedestrian/pedalcyclist crash rates and VMT",
+          "excerpt": "NHTSA has also been unable to directly measure the pedestrian and pedalcyclist crash rates per mile travelled ... because the Agency does not have data on VMT for HVs and EVs.",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/direction_evidence/out/sources/nhtsa_quiet_cars_final_rule.pdf",
+          "snapshot_sha256": "2fde67e62a5e99e60cc2e533a8b3aca3770ecbc7dbd6fe353d686cadfc584e17",
+          "context_path": "research/contributions/direction_evidence/out/context/nhtsa_quiet_cars_final_rule.txt"
+        }
+      ],
+      "limitations": "This is a 2016 rulemaking about hybrid/electric low-speed audibility, not a current all-crash EV-versus-ICE rate or an automated-driving-system study. It records a specific denominator limitation and case-control/proxy analysis; it should not be used to infer present EV safety or autonomous-system safety.",
+      "independence_group": "NHTSA-QUIET-CARS",
+      "refresh_days": 365
+    },
+    {
+      "id": "S-DIR-003",
+      "title": "Standing General Order 2021-01 Data Dictionary",
+      "publisher": "National Highway Traffic Safety Administration",
+      "url": "https://static.nhtsa.gov/odi/ffdd/sgo-2021-01/SGO-2021-01_Data_Element_Definitions.pdf",
+      "published_at": "2026-09-15",
+      "source_type": "authority_data_dictionary",
+      "jurisdiction": "United States; identified ADS and Level 2 ADAS reporting entities",
+      "accessed_at": "2026-09-22",
+      "inspection_scope": "Downloaded and inspected the complete 33-page current data dictionary, including its third-amendment change log, reporting data fields, and stated data limitations.",
+      "regions": [
+        {
+          "id": "S-DIR-003-R1",
+          "locator": "PDF pp. 3-4, Standing General Order incident-report limitations and change log",
+          "excerpt": "Incident report data may be incomplete or unverified ... Summary incident report data are not normalized.",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/direction_evidence/out/sources/nhtsa_sgo_data_dictionary.pdf",
+          "snapshot_sha256": "c92e1bec238e757867d67ea5bf0b26f4a3e9223d0b92a9a7ce76d446518f4fa4",
+          "context_path": "research/contributions/direction_evidence/out/context/nhtsa_sgo_data_dictionary.txt"
+        }
+      ],
+      "limitations": "The data dictionary describes reporting and public-data limitations. It is not an exposure-normalized crash-rate analysis, a finding about any manufacturer, or an assessment of an ADS model's safety. Reporting obligations differ between ADS and Level 2 ADAS.",
+      "independence_group": "NHTSA-SGO",
+      "refresh_days": 30
+    }
+  ]
+}

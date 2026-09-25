@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-DIR-002-source_support-Deadc84a10fef",
+  "package_id": "P-C-DIR-002-source_support",
+  "input_digest": "eadc84a10fef3a7583dc16ba1adb19707f91d6a492486c40f6da9f45e628a2ea",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided Federal Register excerpt explicitly confirms NHTSA's statement that it could not directly measure per-mile crash rates due to a lack of Vehicle Miles Traveled (VMT) data for hybrid and electric vehicles. The surrounding context supports the use of an alternative odds-ratio analysis based on maneuvers and speed limits, and notes specific data limitations (such as lacking pedestrian vision status), directly matching the claim's description of the 2016 rulemaking.",
+  "evidence_locators": [
+    "S-DIR-002-R1",
+    "Federal Register / Vol. 81, No. 240 / p. 90421"
+  ],
+  "limitations": [
+    "This source documents a specific denominator limitation in a 2016 low-speed audibility rulemaking; it does not represent a current, exposure-normalized EV-versus-ICE crash rate comparison or an automated driving system evaluation."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-C-011-cross_artifact-D722c11d28f69",
+  "package_id": "P-C-011-cross_artifact",
+  "input_digest": "722c11d28f694cb46bce6294bf8a9fa081867d60cf0b54da0ec7b837a31c73e2",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "All artifacts using C-011 accurately reflect the claim's scope and explicitly enforce its limitations. The artifacts distinguish symbolic identification from other simplification methods, explicitly state that SINDy does not generalize to arbitrary perception networks, and warn that compact equations do not automatically guarantee safety or handle rare cases.",
+  "evidence_locators": [
+    "research/initial_findings.md",
+    "video/storyboard.md",
+    "wiki/concepts/open_tensions.md",
+    "wiki/concepts/assurance_vocabulary.md"
+  ],
+  "limitations": [
+    "SINDy depends on sparse representation, coordinates, candidate functions, and data; it does not guarantee safety or applicability to arbitrary vision networks."
+  ],
+  "resolves": []
+}

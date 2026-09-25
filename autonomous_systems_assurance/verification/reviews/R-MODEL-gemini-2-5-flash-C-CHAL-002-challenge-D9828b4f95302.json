@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-002-challenge-D9828b4f95302",
+  "package_id": "P-C-CHAL-002-challenge",
+  "input_digest": "9828b4f95302b8da394e9a2788d8ceb5188f4929c6fc4451dce13552c5d26a7f",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The claim accurately states that the UK MAA notice (MAA/RN/2025/04) indicates AI issues cannot currently be resolved prescriptively without architectural mitigation and retains a system-safety-case approach. The challenge sought a final civil authority decision or completed high-criticality approval case from another jurisdiction that demonstrates a prescriptive method for resolving AI issues without architectural mitigation. The provided materials explicitly state that no such source was found within the scope of this review, noting that EASA's proposed material is not final and excludes high-consequence systems, and AMLAS requires complementary system assurance.",
+  "evidence_locators": [
+    "S-CHAL-001-R3 (PDF pp. 3\u20134, paragraphs 13\u201314)",
+    "research/contributions/assurance_challenge/findings.md (What did not defeat the narrower gap)",
+    "assurance/amlas_maa_easa_crosswalk.md (M-MAA-001, M-EASA-DSAI-001 mappings for O-002, O-005, O-007)"
+  ],
+  "limitations": [
+    "The search for counter-evidence was limited to the provided review packet.",
+    "Failure to find a source in this packet is not proof of absence of such a method or approval in other jurisdictions or non-public records."
+  ],
+  "resolves": []
+}

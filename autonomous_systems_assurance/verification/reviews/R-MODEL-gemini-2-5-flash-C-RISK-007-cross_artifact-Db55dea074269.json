@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-RISK-007-cross_artifact-Db55dea074269",
+  "package_id": "P-C-RISK-007-cross_artifact",
+  "input_digest": "b55dea07426991ea982aaa892c77a732702261066182ea582cb32b4e83cf5d7a",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact using C-RISK-007 consistently preserves the claim's scope and limitations. Artifacts explicitly state EASA's material is 'proposed,' maintain the 'per-operational-hour' unit for likelihood bands, highlight the 'unacceptable' classification for H1 potential-fatality scenarios, and avoid presenting the risk table as a final approval, a global industry threshold, or proof of a system safety case. The use of the claim directly aligns with the challenge to retain its proposed status and specific scope.",
+  "evidence_locators": [
+    "research/contributions/direction_evidence/findings.md",
+    "resource_composition/figures.md",
+    "research/integration_round5.md",
+    "video/script.md",
+    "video/nextgen_structure/visual_inventory.md"
+  ],
+  "limitations": [
+    "EASA NPA 2025-07(B) is proposed material, not a final EASA decision, AMC/GM, type-certification basis or approval.",
+    "The proposed DS.AI risk assessment is not an approved risk threshold for a real aviation system."
+  ],
+  "resolves": []
+}

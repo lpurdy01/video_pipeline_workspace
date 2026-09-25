@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-003-source_support-D0b462a9d528c",
+  "package_id": "P-C-CHAL-003-source_support",
+  "input_digest": "0b462a9d528c383be84e4fc0ce6d9e4c9e504c84d401665f81cc793d7c3bb140",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The inspected text of EASA NPA 2025-07(B) directly supports the claim components: DS.AI.150 and associated AMC1/AMC2/GM1 cover operational domain/ODD, system development assurance, configuration and life-cycle data, and supervised-ML learning assurance (recognising ED-324/ARP6983), while DS.AI.160 and AMC1 AI.160(a) address continuous risk assessment and in-service monitoring. The claim preserves the exact status and scope of the source as a proposed framework rather than an adopted decision or certified application.",
+  "evidence_locators": [
+    "S-CHAL-002, PDF pp. 24\u201326 (DS.AI.150, AMC1 AI.150, AMC2 AI.150)",
+    "S-CHAL-002, PDF pp. 31\u201333 (GM1 AI.150, DS.AI.160, AMC1 AI.160(a))"
+  ],
+  "limitations": [
+    "EASA NPA 2025-07(B) is a Notice of Proposed Amendment containing proposed DS.AI material; it is not an adopted EASA decision or final AMC/GM.",
+    "Inspection is bounded to the excerpted PDF regions covering DS.AI.150 and DS.AI.160."
+  ],
+  "resolves": []
+}

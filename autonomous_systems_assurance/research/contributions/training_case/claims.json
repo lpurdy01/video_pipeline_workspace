@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "C-TRAIN-001",
+      "text": "AMLAS Version 1.1 requires ML data requirements to address relevance, completeness, accuracy and balance, tied to operating-domain assumptions; its examples include installed sensor viewpoint, lighting variation and labeling partially occluded pedestrians.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "AMLAS v1.1 guidance and examples for a learned component; not evidence that the hypothetical road or air dataset meets them",
+      "evidence": [
+        {
+          "region_id": "S-CHAL-004-R4",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Confirm physical/printed PDF page offset and distinguish examples from universal prescribed bins or sensor configurations.",
+      "review_records": []
+    },
+    {
+      "id": "C-TRAIN-002",
+      "text": "AMLAS warns that a model can overfit development data, that simulator artifacts can become spurious class cues, and that repeated model selection using internal test data can leak information into development; it calls for a model development log and justifications of key learning choices.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "AMLAS v1.1 model-learning discussion and examples; this does not diagnose any real model or establish that a particular defense prevents overfitting",
+      "evidence": [
+        {
+          "region_id": "S-CHAL-004-R6",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Check the exact distinction between AMLAS development data, internal test data and independent verification data; avoid claiming every simulator artifact necessarily causes failure.",
+      "review_records": []
+    },
+    {
+      "id": "C-TRAIN-003",
+      "text": "AMLAS treats verification data as an independent challenge set aimed at realistic failure classes, requires sufficiently independent verification activity, and asks whether performance and robustness to adverse conditions continue on data not used in learning.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "AMLAS v1.1 research guidance; finite verification data cannot prove generalization to all road or airborne encounters",
+      "evidence": [
+        {
+          "region_id": "S-CHAL-004-R5",
+          "relation": "supports"
+        },
+        {
+          "region_id": "S-CHAL-004-R7",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Distinguish a challenge set from a statistically representative operational sample; test whether source language is framed as methodology guidance rather than demonstrated safety.",
+      "review_records": []
+    },
+    {
+      "id": "C-TRAIN-004",
+      "text": "The official Deep Learning textbook describes underfitting as high training and generalization error at insufficient model capacity, and overfitting as a growing gap between training and generalization error as capacity becomes excessive for the learning setup.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "General machine-learning textbook model-capacity illustration, not a safety threshold or proof that capacity alone explains vision-system failures",
+      "evidence": [
+        {
+          "region_id": "S-020-R3",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Chapter 5 Figure 5.3 is a typical schematic; real deep-learning behavior can depend on data, optimization, regularization and measurement.",
+      "review_records": []
+    }
+  ]
+}

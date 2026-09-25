@@ -1,0 +1,27 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-AUTH-008-cross_artifact-Vassurance-first-pass-v2-local-context-Dc4eb807a3d3f",
+  "package_id": "P-C-AUTH-008-cross_artifact",
+  "input_digest": "c4eb807a3d3ff614e429256f2638ce61ebfd6d680697eedb759bb39675c9aaf3",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all supplied artifact uses (findings, whitepaper, crosswalk table, narration map, script, treatment, and outline), the claim's core boundaries are strictly maintained: NHTSA's ADS guidance is consistently described as a voluntary framework rather than federal approval or vehicle/model certification, and is kept distinct from state permits, exemptions, and compliance obligations.",
+  "evidence_locators": [
+    "research/contributions/assurance_authority/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "resource_composition/whitepaper.md",
+    "research/contributions/standards_authority/findings.md"
+  ],
+  "limitations": [
+    "Context in S-AUTH-006 is captured as short excerpts only; ongoing federal regulatory developments and post-2017 guidance updates must be verified against current official releases."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-ROAD2-008-cross_artifact-D5d063b3b64cc",
+  "package_id": "P-C-ROAD2-008-cross_artifact",
+  "input_digest": "5d063b3b64cc6820af09558a1537af97fbb4d7477267b9d214bc4b616b25f895",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of claim C-ROAD2-008 accurately preserves its scope and limitations. The claim, which details California CPUC passenger-service requirements (DMV permits, remote-operator link, Passenger Safety Plans), is consistently presented as one distinct layer of authorization within a broader 'permission stack.' The artifacts explicitly separate CPUC authority from federal vehicle compliance or learned-component safety, directly addressing the challenge's warning. Qualifiers are used in narration maps and visual specifications to prevent over-inference or conflation of different authorization types. The research findings also demonstrate an active effort to verify current CPUC conditions, aligning with the challenge.",
+  "evidence_locators": [
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "research/contributions/road_round2/findings.md"
+  ],
+  "limitations": [
+    "The claim's status is provisional, and the research findings note a lead to reconcile a current CPUC table with an expired certificate for Waymo, indicating ongoing verification of 'current CPUC decisions and program conditions'."
+  ],
+  "resolves": []
+}

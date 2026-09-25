@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-ROAD2-006-source_support-D1d34267629cc",
+  "package_id": "P-C-ROAD2-006-source_support",
+  "input_digest": "1d34267629cc82e2a8a73b4060e1136bb5f0371b104a1fdfc14f428d27163fa1",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The California DMV source explicitly states that its 'Autonomous Vehicle Permit Holders' page was inspected, dated August 12, 2026. The evidence locators confirm that 'TESLA ROBOTAXI LLC' and 'WAYMO LLC' are listed under the 'Testing with a Driver list' on that date. Furthermore, the source's inspection scope and a specific locator confirm the presence of 'Driverless Testing and Deployment tables' on the same page.",
+  "evidence_locators": [
+    "S-ROAD2-005-R1",
+    "S-ROAD2-005-R2",
+    "S-ROAD2-005-R3"
+  ],
+  "limitations": [],
+  "resolves": []
+}

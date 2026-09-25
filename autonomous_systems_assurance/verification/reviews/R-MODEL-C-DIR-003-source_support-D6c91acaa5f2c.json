@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-DIR-003-source_support-D6c91acaa5f2c",
+  "package_id": "P-C-DIR-003-source_support",
+  "input_digest": "6c91acaa5f2c794d4558ab69fdb656c91234f5da01128f2f0a0c0ff4c7d32325",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided NHTSA Standing General Order 2021-01 Data Dictionary explicitly lists the limitations cited in the claim on page 3, including different reporting requirements for ADS and Level 2 ADAS, the impact of data access on reporting, incomplete or unverified data, multiple reports for the same crash, and unnormalized summary data. These stated limitations directly support the claim's conclusion that the log cannot independently provide a comparative crash rate.",
+  "evidence_locators": [
+    "PDF pp. 3-4, Standing General Order incident-report limitations and change log"
+  ],
+  "limitations": [
+    "The source establishes data limitations for the public incident log, but does not provide the actual crash data or a comparative safety analysis."
+  ],
+  "resolves": []
+}

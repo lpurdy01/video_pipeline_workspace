@@ -123,7 +123,8 @@ class S09ReadinessMap(BeatScene):
         cross = VGroup(
             Line(UL * 0.34, DR * 0.34, color=style.RED, stroke_width=5),
             Line(UR * 0.34, DL * 0.34, color=style.RED, stroke_width=5),
-        ).move_to(self._owned["vrm"])
+        )
+        cross.next_to(self._owned["vrm"], RIGHT, buff=0.28)
         ctx.show(cross, tag="cross", anim=lambda m: Create(m), run_time=0.45)
         ctx.hold(0.6)
         ctx.play(FadeOut(cross), run_time=0.35)
@@ -244,6 +245,7 @@ class S09ReadinessMap(BeatScene):
         ctx.show(tag, tag="notright", run_time=0.45)
 
     def b23_close(self, ctx):
-        tag = style.label_text("can you show what you built?", color=style.CYAN)
-        tag.move_to(np.array([0.0, stage.STAGE.bottom + 0.75, 0.0]))
+        tag = style.label_text("show what you built", color=style.CYAN)
+        stage.fit(tag, stage.CAPTION)
+        tag.shift(LEFT * 2.2)
         ctx.show(tag, tag="final", anim=lambda m: FadeIn(m, scale=0.94), run_time=0.5)

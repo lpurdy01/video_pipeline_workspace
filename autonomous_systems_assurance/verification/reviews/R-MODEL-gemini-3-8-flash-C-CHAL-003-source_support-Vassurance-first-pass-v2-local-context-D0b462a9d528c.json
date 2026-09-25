@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-003-source_support-Vassurance-first-pass-v2-local-context-D0b462a9d528c",
+  "package_id": "P-C-CHAL-003-source_support",
+  "input_digest": "0b462a9d528c383be84e4fc0ce6d9e4c9e504c84d401665f81cc793d7c3bb140",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "EASA NPA 2025-07(B) (Proposed DS.AI) directly sets out proposed specifications and AMC/GM covering operational domain/ODD definition (GM1 AI.150), risk assessment and continuous risk assessment (DS.AI.160), system development assurance (AMC1 AI.150), supervised-ML learning assurance via recognition of ED-324/ARP6983 (AMC2 AI.150), configuration and life-cycle data (AMC1/AMC2 AI.150), and in-service monitoring capabilities (DS.AI.160, AMC1 AI.160(a)). Across all artifact uses, the document is strictly characterized as proposed civil guidance rather than final AMC/GM or an approved application.",
+  "evidence_locators": [
+    "S-CHAL-002-R2 (NPA 2025-07 (B), PDF pp. 24\u201326, DS.AI.150, AMC1 AI.150, AMC2 AI.150)",
+    "S-CHAL-002-R3 (NPA 2025-07 (B), PDF pp. 31\u201333, GM1 AI.150, DS.AI.160, AMC1 AI.160(a))"
+  ],
+  "limitations": [
+    "NPA 2025-07(B) is a Notice of Proposed Amendment, not a final adopted EASA Decision.",
+    "The proposed DS.AI framework contains scope boundaries (e.g., Level 1/2 systems, excluding direct catastrophic contributions) that require failure-condition allocation when evaluating specific applications."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-EVID-001-cross_artifact-Vassurance-first-pass-v2-local-context-D5434c28f51d9",
+  "package_id": "P-C-EVID-001-cross_artifact",
+  "input_digest": "5434c28f51d9935a91bc6a7bdb42de2ac34954e62363348fd5a9d1610400ef9f",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all supplied artifact uses (assurance case, evidence findings, method crosswalk, figures, and whitepaper draft), C-EVID-001 is consistently cited within its defined scope as voluntary, non-sector-specific lifecycle risk-management guidance rather than a safety certification standard or proof of safety.",
+  "evidence_locators": [
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_evidence/findings.md",
+    "resource_composition/figures.md",
+    "assurance/method_crosswalk.json",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [
+    "Artifact uses are excerpted around claim tags; review is bounded by the captured contexts in the review packet."
+  ],
+  "resolves": []
+}

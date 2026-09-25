@@ -1,0 +1,26 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-TRAIN-004-cross_artifact-Vassurance-first-pass-v2-local-context-D0aebd92e5e7b",
+  "package_id": "P-C-TRAIN-004-cross_artifact",
+  "input_digest": "0aebd92e5e7b5f02cf9391a9385ea0e13d559386c9f9acccb497e53bd620203d",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all supplied artifact uses (whitepaper, script, figure catalog, SVG, and research findings), the textbook capacity schematic is consistently cited within its narrow theoretical scope as a diagnostic concept rather than a safety threshold or complete explanation of real-world deep learning behavior.",
+  "evidence_locators": [
+    "resource_composition/figures.md:2734",
+    "video/script.md:7343",
+    "resource_composition/whitepaper.md:23335",
+    "resource_composition/whitepaper.md:25390",
+    "research/contributions/training_case/findings.md:617",
+    "resource_composition/figures/vision_training_contract.svg",
+    "S-020-R3"
+  ],
+  "limitations": [
+    "Review is restricted to the provided artifact excerpts and the cited Chapter 5 text of the Goodfellow et al. Deep Learning textbook."
+  ],
+  "resolves": []
+}

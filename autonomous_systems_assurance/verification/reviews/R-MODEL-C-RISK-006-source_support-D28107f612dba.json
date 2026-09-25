@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-RISK-006-source_support-D28107f612dba",
+  "package_id": "P-C-RISK-006-source_support",
+  "input_digest": "28107f612dba0dfa56b83a119f4574d60dd1ce4e853ca986fc08513d904570b1",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided excerpt from EASA NPA 2025-07(B) explicitly lists Levels 1A through 3A with defined end-user authority (e.g., 'Full', 'Partial', 'Limited') and responsibility (e.g., 'Remains with the end user', 'Reserved'). The row for Level 3B explicitly states 'Reserved' for the task nature and 'n/a' for both authority and responsibility. The document is clearly marked as proposed material, supporting the claim's constraint that it is not an approved category.",
+  "evidence_locators": [
+    "NPA 2025-07 (B) PDF p. 12",
+    "AMC1 AI.110 AI-based system classification, Table 12 \u2013 AI levels (referenced as Table 1 in the AMC text)"
+  ],
+  "limitations": [
+    "The source is a Notice of Proposed Amendment (NPA) and does not represent final EASA guidance, adopted regulation, or a certification basis."
+  ],
+  "resolves": []
+}

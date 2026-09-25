@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-C-001-cross_artifact-D45f7d56ccb52",
+  "package_id": "P-C-001-cross_artifact",
+  "input_digest": "45f7d56ccb5222b70c17182953971a7685343b1110d7f35ff97dfb2516ab5825",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts accurately reflect the claim and its limitations by explicitly stating the GA-ASI page only forecasts 2025 authorization and does not prove issuance, exclusivity, or the use of a neural network. The video planning documents also explicitly mandate preserving these precise authorization limits.",
+  "evidence_locators": [
+    "research/initial_findings.md",
+    "video/narrative.md",
+    "video/storyboard.md"
+  ],
+  "limitations": [
+    "Must obtain actual authorization holder, model, date, and current configuration to confirm issuance",
+    "Failure to find a certificate during search is not proof that none exists"
+  ],
+  "resolves": []
+}

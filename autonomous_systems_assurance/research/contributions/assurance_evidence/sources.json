@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-16",
+  "sources": [
+    {
+      "id": "S-EVID-001",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "publisher": "National Institute of Standards and Technology",
+      "url": "https://doi.org/10.6028/NIST.AI.100-1",
+      "published_at": "2023-01-26",
+      "source_type": "government_guidance",
+      "jurisdiction": "US; voluntary and non-sector-specific",
+      "accessed_at": "2026-09-16",
+      "inspection_scope": "Downloaded and inspected the complete 40-page NIST AI 100-1 PDF. Reviewed its stated voluntary, non-sector-specific scope; MAP context/knowledge-limit/data-TEVV outcomes; MEASURE testing, uncertainty and independent-review discussion; and MANAGE change/recovery outcomes.",
+      "regions": [
+        {
+          "id": "S-EVID-001-R1",
+          "locator": "PDF pp. 26-27, MAP 1-3 outcomes",
+          "excerpt": "knowledge limits and how system output may be utilized and overseen",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_evidence/out/sources/nist-ai-rmf-100-1.pdf",
+          "snapshot_sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+          "context_path": "research/contributions/assurance_evidence/out/context/nist-ai-rmf-100-1.txt"
+        },
+        {
+          "id": "S-EVID-001-R2",
+          "locator": "PDF p. 28, MEASURE introductory text",
+          "excerpt": "associated measures of uncertainty, comparisons to performance benchmarks",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_evidence/out/sources/nist-ai-rmf-100-1.pdf",
+          "snapshot_sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+          "context_path": "research/contributions/assurance_evidence/out/context/nist-ai-rmf-100-1.txt"
+        },
+        {
+          "id": "S-EVID-001-R3",
+          "locator": "PDF pp. 31-32, MANAGE 2 and 4 outcomes",
+          "excerpt": "supersede, disengage, or deactivate AI systems",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_evidence/out/sources/nist-ai-rmf-100-1.pdf",
+          "snapshot_sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+          "context_path": "research/contributions/assurance_evidence/out/context/nist-ai-rmf-100-1.txt"
+        }
+      ],
+      "limitations": "This is voluntary horizontal risk-management guidance, not a transportation certification basis, acceptance criterion, probability-of-safety method or approval of a particular system. NIST states AI RMF 1.0 is under revision; recheck before publication.",
+      "independence_group": "NIST-AI-RMF",
+      "refresh_days": 90
+    },
+    {
+      "id": "S-EVID-002",
+      "title": "Assured Autonomy through Combinatorial Methods",
+      "publisher": "National Institute of Standards and Technology and Virginia Tech National Security Institute",
+      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957175",
+      "published_at": "2023",
+      "source_type": "government_research_paper",
+      "jurisdiction": "US research; autonomy assurance methods",
+      "accessed_at": "2026-09-16",
+      "inspection_scope": "Downloaded and inspected the complete five-page paper. Reviewed its contrast between conventional structural coverage and learned-model inputs, its combinatorial data-coverage method, transfer-learning example and stated boundaries.",
+      "regions": [
+        {
+          "id": "S-EVID-002-R1",
+          "locator": "PDF p. 3, structural versus input coverage discussion",
+          "excerpt": "it is not yet clear how closely this form of coverage is related to model performance",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_evidence/out/sources/nist-assured-autonomy-combinatorial.pdf",
+          "snapshot_sha256": "e885084a11895357c14d6e89d4be784bedfa01608ff2eaba984550d8bb1a2341",
+          "context_path": "research/contributions/assurance_evidence/out/context/nist-assured-autonomy-combinatorial.txt"
+        },
+        {
+          "id": "S-EVID-002-R2",
+          "locator": "PDF p. 5, transfer-learning and conclusion discussion",
+          "excerpt": "identify where even large volumes of data are insufficient",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_evidence/out/sources/nist-assured-autonomy-combinatorial.pdf",
+          "snapshot_sha256": "e885084a11895357c14d6e89d4be784bedfa01608ff2eaba984550d8bb1a2341",
+          "context_path": "research/contributions/assurance_evidence/out/context/nist-assured-autonomy-combinatorial.txt"
+        }
+      ],
+      "limitations": "This is a methods paper, not a demonstrated certification process. A coverage measure depends on the selected variables, discretization and interaction strength; it does not establish a failure rate, simulator fidelity or safe system behavior by itself.",
+      "independence_group": "NIST-COMBINATORIAL-AUTONOMY",
+      "refresh_days": 365
+    },
+    {
+      "id": "S-EVID-003",
+      "title": "Scalable End-to-End Autonomous Vehicle Testing via Rare-event Simulation",
+      "publisher": "O'Kelly, Sinha, Namkoong, Duchi and Tedrake",
+      "url": "https://arxiv.org/abs/1811.00145",
+      "published_at": "2019-01-12",
+      "source_type": "research_preprint",
+      "jurisdiction": "Autonomous-vehicle research; highway case study",
+      "accessed_at": "2026-09-16",
+      "inspection_scope": "Downloaded and inspected the complete 18-page arXiv version. Reviewed the abstract, base-distribution definition, simulator inputs, importance-sampling process and authors' stated scope for a multi-agent highway scenario.",
+      "regions": [
+        {
+          "id": "S-EVID-003-R1",
+          "locator": "PDF p. 1, abstract and introduction",
+          "excerpt": "probability of an accident under a base distribution governing standard traffic behavior",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_evidence/out/sources/okelly-rare-event-simulation.pdf",
+          "snapshot_sha256": "7b5bbbfebf319034ff77c16e79e7d2331c5a302d05b6d6674b3196c6eeb72f24",
+          "context_path": "research/contributions/assurance_evidence/out/context/okelly-rare-event-simulation.txt"
+        },
+        {
+          "id": "S-EVID-003-R2",
+          "locator": "PDF p. 2, base distribution and simulation inputs",
+          "excerpt": "an essential component of this approach is to estimate the base distribution",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_evidence/out/sources/okelly-rare-event-simulation.pdf",
+          "snapshot_sha256": "7b5bbbfebf319034ff77c16e79e7d2331c5a302d05b6d6674b3196c6eeb72f24",
+          "context_path": "research/contributions/assurance_evidence/out/context/okelly-rare-event-simulation.txt"
+        }
+      ],
+      "limitations": "This is a research preprint, not a regulator-approved safety case. Its estimated probability is conditional on the base distribution, scenario abstraction, simulator and selected risk threshold; it does not validate those assumptions or transfer the result to aircraft encounters.",
+      "independence_group": "OKELLY-RARE-EVENT-SIMULATION",
+      "refresh_days": 365
+    },
+    {
+      "id": "S-EVID-004",
+      "title": "On Calibration of Modern Neural Networks",
+      "publisher": "Guo, Pleiss, Sun and Weinberger",
+      "url": "https://arxiv.org/abs/1706.04599",
+      "published_at": "2017-08-03",
+      "source_type": "peer_reviewed_research_paper_preprint",
+      "jurisdiction": "Machine-learning research; image and document classification experiments",
+      "accessed_at": "2026-09-16",
+      "inspection_scope": "Downloaded and inspected the complete six-page arXiv version. Reviewed its calibration definition, experiments showing poor calibration in studied modern networks, and temperature-scaling evaluation.",
+      "regions": [
+        {
+          "id": "S-EVID-004-R1",
+          "locator": "PDF p. 1, abstract",
+          "excerpt": "modern neural networks, unlike those from a decade ago, are poorly calibrated",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_evidence/out/sources/guo-calibration.pdf",
+          "snapshot_sha256": "cb654a65acb785ed4387d6c2db1301d065075dddc2d363676836a2f2a14bc50d",
+          "context_path": "research/contributions/assurance_evidence/out/context/guo-calibration.txt"
+        },
+        {
+          "id": "S-EVID-004-R2",
+          "locator": "PDF pp. 2-3, calibration and temperature-scaling experiments",
+          "excerpt": "a single-parameter variant of Platt Scaling",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_evidence/out/sources/guo-calibration.pdf",
+          "snapshot_sha256": "cb654a65acb785ed4387d6c2db1301d065075dddc2d363676836a2f2a14bc50d",
+          "context_path": "research/contributions/assurance_evidence/out/context/guo-calibration.txt"
+        }
+      ],
+      "limitations": "The experiments cover selected classification datasets and architectures. Calibration on a held-out distribution does not show calibrated uncertainty under operational distribution shift, correlated sensor faults or closed-loop control effects.",
+      "independence_group": "GUO-CALIBRATION",
+      "refresh_days": 365
+    },
+    {
+      "id": "S-EVID-005",
+      "title": "A Verification Framework for Runtime Assurance of Autonomous UAS",
+      "publisher": "NASA Langley Research Center",
+      "url": "https://ntrs.nasa.gov/citations/20240010429",
+      "published_at": "2024-10",
+      "source_type": "government_conference_presentation",
+      "jurisdiction": "US research; autonomous uncrewed aircraft systems",
+      "accessed_at": "2026-09-16",
+      "inspection_scope": "Downloaded and inspected the complete 14-page DASC presentation. Reviewed the Simplex architecture, Plaidypvs rule, explicit safe-state/recovery/reversionary-controller premises, and productive-conflict-avoidance assumptions.",
+      "regions": [
+        {
+          "id": "S-EVID-005-R1",
+          "locator": "PDF pp. 5-8, Simplex architecture and Plaidypvs rule",
+          "excerpt": "formally verify UAS operations where the vehicle is guided by a black box controller",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_evidence/out/sources/nasa-rta-uas.pdf",
+          "snapshot_sha256": "b29fe168281d2adb4685c34b7d2d8f89c193b39b3169e1abc60436cdf3337cb8",
+          "context_path": "research/contributions/assurance_evidence/out/context/nasa-rta-uas.txt"
+        },
+        {
+          "id": "S-EVID-005-R2",
+          "locator": "PDF pp. 8-12, RTA premises and productive-conflict-avoidance example",
+          "excerpt": "the monitored advanced system controller always ends in a state where the vehicle can recover",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_evidence/out/sources/nasa-rta-uas.pdf",
+          "snapshot_sha256": "b29fe168281d2adb4685c34b7d2d8f89c193b39b3169e1abc60436cdf3337cb8",
+          "context_path": "research/contributions/assurance_evidence/out/context/nasa-rta-uas.txt"
+        }
+      ],
+      "limitations": "A formalized research framework and presentation are not a civil approval, an implementation audit, or evidence that perception failures can always be observed early enough. The guarantee is conditional on model, monitor, timing, dynamics, switching and recovery-controller premises. This is the same NASA/Plaidypvs runtime-assurance method family as S-010 and S-METHOD2-003; it supplies separately inspected presentation context and is not independent corroboration.",
+      "independence_group": "NASA-PLAIDYPVS-RTA",
+      "refresh_days": 365
+    },
+    {
+      "id": "S-EVID-006",
+      "title": "Sanity Checks for Saliency Maps",
+      "publisher": "Adebayo, Gilmer, Muelly, Goodfellow, Hardt and Kim",
+      "url": "https://arxiv.org/abs/1810.03292",
+      "published_at": "2020-11-06",
+      "source_type": "peer_reviewed_research_paper_preprint",
+      "jurisdiction": "Machine-learning interpretability research; visual classification experiments",
+      "accessed_at": "2026-09-16",
+      "inspection_scope": "Downloaded and inspected the complete 20-page arXiv version, including the abstract, model/data randomization tests and stated findings for the saliency methods evaluated.",
+      "regions": [
+        {
+          "id": "S-EVID-006-R1",
+          "locator": "PDF p. 1, abstract",
+          "excerpt": "reliance, solely, on visual assessment can be misleading",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_evidence/out/sources/adebayo-saliency-sanity-checks.pdf",
+          "snapshot_sha256": "654cb2393d1e2bf96374c2d8bf85d2561ed9a162ce58249e640d7685701c9ce0",
+          "context_path": "research/contributions/assurance_evidence/out/context/adebayo-saliency-sanity-checks.txt"
+        },
+        {
+          "id": "S-EVID-006-R2",
+          "locator": "PDF p. 2, contribution list",
+          "excerpt": "some of the methods tested are independent of both the model parameters and the labeling",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_evidence/out/sources/adebayo-saliency-sanity-checks.pdf",
+          "snapshot_sha256": "654cb2393d1e2bf96374c2d8bf85d2561ed9a162ce58249e640d7685701c9ce0",
+          "context_path": "research/contributions/assurance_evidence/out/context/adebayo-saliency-sanity-checks.txt"
+        }
+      ],
+      "limitations": "The paper evaluates selected saliency methods and model/data settings. It does not establish that every interpretability technique fails, nor provide a safety acceptance criterion; its randomization checks must be adapted and validated for the explanation's intended assurance role.",
+      "independence_group": "ADEBAYO-SALIENCY-SANITY",
+      "refresh_days": 365
+    },
+    {
+      "id": "S-EVID-007",
+      "title": "From Neuron Coverage to Steering Angle: Testing Autonomous Vehicles Effectively",
+      "publisher": "Toohey, Raunak and Binkley; National Institute of Standards and Technology publication record",
+      "url": "https://doi.org/10.1109/MC.2021.3079921",
+      "published_at": "2021-08-02",
+      "source_type": "peer_reviewed_research_paper",
+      "jurisdiction": "Autonomous-vehicle testing research; one studied DNN",
+      "accessed_at": "2026-09-16",
+      "inspection_scope": "Downloaded and inspected the complete eight-page paper. Reviewed its transformed-image test setup, correlation result, stated threats to validity and conclusion about neuron-coverage adequacy.",
+      "regions": [
+        {
+          "id": "S-EVID-007-R1",
+          "locator": "PDF pp. 7-8, correlation and threats to validity",
+          "excerpt": "we do not know that the increase in neuron coverage is causing the increase",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_evidence/out/sources/nist-neuron-coverage-av-testing.pdf",
+          "snapshot_sha256": "550478c28be7c31bc0279e684500e33c764665e3869ea5ed3a31d207124fb220",
+          "context_path": "research/contributions/assurance_evidence/out/context/nist-neuron-coverage-av-testing.txt"
+        },
+        {
+          "id": "S-EVID-007-R2",
+          "locator": "PDF p. 8, conclusion",
+          "excerpt": "there is a need for further investigation to discover whether neuron coverage is a consistent indicator",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_evidence/out/sources/nist-neuron-coverage-av-testing.pdf",
+          "snapshot_sha256": "550478c28be7c31bc0279e684500e33c764665e3869ea5ed3a31d207124fb220",
+          "context_path": "research/contributions/assurance_evidence/out/context/nist-neuron-coverage-av-testing.txt"
+        }
+      ],
+      "limitations": "The experiment involved one DNN and steering-angle-deviation proxy, with no established failure threshold. It cannot validate a neuron-coverage score as safety evidence for a perception/planning stack or an aviation DAA system.",
+      "independence_group": "TOOHEY-NEURON-COVERAGE",
+      "refresh_days": 365
+    }
+  ]
+}

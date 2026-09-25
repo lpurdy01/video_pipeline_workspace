@@ -1,0 +1,26 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-002-cross_artifact-De2e73f74f78d",
+  "package_id": "P-C-CHAL-002-cross_artifact",
+  "input_digest": "e2e73f74f78dbea5a93759475b8dc20ad5a5e86486d452c737de0f7fb35dd72a",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Every supplied artifact use preserves the claim's scope and limitations. Across the assurance case, method crosswalk, challenge findings, and script materials, the UK MAA regulatory notice (MAA/RN/2025/04) is consistently cited as military-specific informative guidance requiring architectural mitigation and a system-safety-case approach, rather than being overextended into civil airworthiness approval or an assertion that no prescriptive methods exist in other jurisdictions.",
+  "evidence_locators": [
+    "S-CHAL-001-R3 (MAA_RN_2025_04.pdf pp. 3\u20134, paras 13\u201314)",
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_challenge/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "assurance/method_crosswalk.json"
+  ],
+  "limitations": [
+    "Review is bounded to the supplied project artifacts and the explicit text of UK MAA/RN/2025/04 paragraphs 13\u201314."
+  ],
+  "resolves": []
+}

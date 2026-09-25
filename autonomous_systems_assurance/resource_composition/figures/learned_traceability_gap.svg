@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="770" viewBox="0 0 1200 770" role="img" aria-label="A comparison of conventional requirement traceability with a learned implementation, followed by the proposed evidence bridge around a frozen model release.">
+  <style>
+    .f1title{font-family:Arial,sans-serif;font-size:29px;font-weight:700;fill:#103452}.f1label{font-family:Arial,sans-serif;font-size:18px;font-weight:700;fill:#103452}.f1text{font:16px Arial,sans-serif;fill:#152b3b}.f1small{font:14px Arial,sans-serif;fill:#40576a}.f1card{fill:#fffefa;stroke:#8aa4b8;stroke-width:2}.f1blue{fill:#e5f2fb;stroke:#2879ad;stroke-width:2}.f1gold{fill:#fff2d6;stroke:#c68519;stroke-width:2}.f1green{fill:#e7f4ed;stroke:#28734d;stroke-width:2}.f1line{stroke:#2879ad;stroke-width:3;fill:none}.f1dash{stroke:#c68519;stroke-width:3;stroke-dasharray:8 6;fill:none}.f1thin{stroke:#526c7d;stroke-width:2;fill:none}.f1note{font:italic 14px Arial,sans-serif;fill:#536b7b}
+  </style>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#2879ad"/></marker><marker id="amberArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#c68519"/></marker><marker id="greenArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#28734d"/></marker></defs>
+  <rect width="1200" height="770" fill="#f7fafc"/>
+  <text x="55" y="58" class="f1title">Why a learned implementation changes the assurance job</text>
+  <text x="55" y="86" class="f1small">Simplified FAA framing at left and center; proposed evidence response at right. This is not a certification workflow.</text>
+  <line x1="50" y1="110" x2="1150" y2="110" class="f1thin"/>
+
+  <text x="90" y="150" class="f1label">1. Designed implementation</text>
+  <text x="90" y="176" class="f1small">Each lower-level requirement can be explained</text><text x="90" y="194" class="f1small">in terms of the one above.</text>
+  <rect x="120" y="210" width="290" height="58" rx="8" class="f1blue"/><text x="145" y="245" class="f1text">Aircraft / vehicle requirement</text>
+  <rect x="120" y="310" width="290" height="58" rx="8" class="f1blue"/><text x="145" y="345" class="f1text">System requirement</text>
+  <rect x="120" y="410" width="290" height="58" rx="8" class="f1blue"/><text x="145" y="445" class="f1text">Item requirement</text>
+  <rect x="120" y="510" width="290" height="78" rx="8" class="f1card"/><text x="145" y="544" class="f1text">Designed implementation</text><text x="145" y="568" class="f1small">software, hardware, logic</text>
+  <path d="M265 268V310 M265 368V410 M265 468V510" class="f1line" marker-end="url(#arrow)"/>
+  <path d="M92 550 C45 470 45 310 92 232" class="f1dash" marker-end="url(#amberArrow)"/>
+  <text x="54" y="387" transform="rotate(-90 54 387)" class="f1note">rational explanation and traceability</text>
+
+  <line x1="485" y1="135" x2="485" y2="650" class="f1thin"/>
+  <text x="535" y="150" class="f1label">2. Learned implementation</text>
+  <text x="535" y="176" class="f1small">Weights are learned, not written as</text><text x="535" y="194" class="f1small">lower-level requirements.</text>
+  <rect x="565" y="210" width="285" height="58" rx="8" class="f1blue"/><text x="590" y="245" class="f1text">System / item requirement</text>
+  <rect x="565" y="320" width="285" height="78" rx="8" class="f1gold"/><text x="590" y="351" class="f1text">Role, data, labels and</text><text x="590" y="375" class="f1text">learning process</text>
+  <rect x="565" y="460" width="285" height="92" rx="8" class="f1gold"/><text x="590" y="495" class="f1text">Trained model release</text><text x="590" y="520" class="f1small">weights + preprocessing + config</text>
+  <path d="M707 268V320 M707 398V460" class="f1line" marker-end="url(#arrow)"/>
+  <path d="M856 245 C935 250 945 445 861 500" class="f1dash" marker-end="url(#amberArrow)"/>
+  <text x="890" y="341" class="f1note">No direct requirement-to-weight</text><text x="890" y="361" class="f1note">coverage argument</text>
+  <text x="570" y="590" class="f1small">Conventional assurance still applies to the software and hardware that implement the release.</text>
+
+  <line x1="940" y1="135" x2="940" y2="650" class="f1thin"/>
+  <text x="972" y="150" class="f1label">3. Build the bridge</text>
+  <text x="972" y="176" class="f1small">Proposed project response.</text>
+  <rect x="970" y="205" width="185" height="58" rx="8" class="f1green"/><text x="992" y="239" class="f1text">Hazard + operating</text><text x="992" y="258" class="f1text">domain</text>
+  <rect x="970" y="300" width="185" height="58" rx="8" class="f1green"/><text x="992" y="334" class="f1text">Release lineage</text><text x="992" y="353" class="f1small">data → model → install</text>
+  <rect x="970" y="395" width="185" height="58" rx="8" class="f1green"/><text x="992" y="429" class="f1text">Scenario evidence</text><text x="992" y="448" class="f1small">errors, delay, uncertainty</text>
+  <rect x="970" y="490" width="185" height="58" rx="8" class="f1green"/><text x="992" y="524" class="f1text">Recovery + change</text><text x="992" y="543" class="f1small">monitor, margin, updates</text>
+  <path d="M1062 263V300 M1062 358V395 M1062 453V490" stroke="#28734d" stroke-width="3" fill="none" marker-end="url(#greenArrow)"/>
+  <text x="970" y="592" class="f1note">The result is an evidence argument,</text><text x="970" y="612" class="f1note">not a claim that the weights are explained.</text>
+  <line x1="55" y1="687" x2="1145" y2="687" class="f1thin"/>
+  <text x="55" y="724" class="f1small">FAA source: Roadmap for Artificial Intelligence Safety Assurance, Version I, p. 14. Figure uses a simplified interpretation and adds the green project proposal.</text>
+</svg>

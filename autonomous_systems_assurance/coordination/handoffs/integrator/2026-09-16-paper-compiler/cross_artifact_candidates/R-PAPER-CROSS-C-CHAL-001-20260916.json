@@ -1,0 +1,25 @@
+{
+  "id": "R-PAPER-CROSS-C-CHAL-001-20260916",
+  "package_id": "P-C-CHAL-001-cross_artifact",
+  "input_digest": "86a0d8ac5eb5b858def8d9f6b26c6291b6aa202ebd21feb34f6ccf5df618b278",
+  "task": "cross_artifact",
+  "reviewer_id": "paper-compiler-review-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-cross-artifact-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The MAA notice is consistently described as current, applicant-specific UK military guidance. Its MCRI, defined-operating-domain, and fixed-supervised-model points are used to compare evidence structure, never as FAA/EASA civil approval, a public product case, or a generic authorization criterion. The road and air releases remain defined and blocked.",
+  "evidence_locators": [
+    "resource_composition/whitepaper.md:13, :134, and airborne-transfer discussion, scoped MAA comparison",
+    "assurance/architecture.md, AMLAS/MAA/EASA comparison and blocked release design",
+    "assurance/amlas_maa_easa_crosswalk.md:7-20, MAA status and obligation rows",
+    "assurance/method_crosswalk.json, M-MAA-001 scope and mappings",
+    "assurance/assurance_case.json, EA-AIR-001, O-007, O-AIR-001 and O-AIR-007 links"
+  ],
+  "limitations": [
+    "This does not re-evaluate the MAA source text or effective date.",
+    "The mapping is a project interpretation, not an MAA-approved compliance matrix."
+  ],
+  "resolves": []
+}

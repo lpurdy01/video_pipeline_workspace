@@ -1,0 +1,26 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-008-cross_artifact-D1d07dc89b070",
+  "package_id": "P-C-AUTH-008-cross_artifact",
+  "input_digest": "1d07dc89b070953fc4e1b5341bfedfcccf73dac5c8b9821302414069a14a5140",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact use of C-AUTH-008 consistently preserves its scope and limitations. The claim, which states that NHTSA's ADS 2.0 material is a voluntary framework and self-assessments are not subject to federal approval, is used to distinguish between voluntary guidance and federal approval, and to highlight the fragmented nature of the regulatory landscape. Artifacts explicitly state the 'voluntary' status and 'not federal approval' aspect, and use it to support the separation of different types of authorization (e.g., operating permits vs. model evidence). No artifact presents an inference as authority evidence or changes the status of the claim.",
+  "evidence_locators": [
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_authority/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "resource_composition/whitepaper.md",
+    "research/contributions/standards_authority/findings.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

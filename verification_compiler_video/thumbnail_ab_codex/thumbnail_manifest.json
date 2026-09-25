@@ -1,0 +1,40 @@
+{
+  "generated": [
+    "thumb_A_who_checks_it.png",
+    "thumb_B_chat_not_evidence.png",
+    "thumb_C_bottleneck_trust.png",
+    "thumb_D_compiler_for_trust.png"
+  ],
+  "contact_sheet": "thumbnail_contact_sheet.jpg",
+  "mobile_preview": "thumbnail_mobile_preview.jpg",
+  "cases": [
+    {
+      "key": "A",
+      "thumbnail": "thumb_A_who_checks_it.png",
+      "title": "AI Can Write The Code. Who Checks It?",
+      "angle": "Personal anxiety hook: the viewer has already accepted generated code and now has to confront that the checking seat is empty.",
+      "on_thumbnail_text": "WHO CHECKS / THE CODE?"
+    },
+    {
+      "key": "B",
+      "thumbnail": "thumb_B_chat_not_evidence.png",
+      "title": "A Chat Transcript Is Not Evidence",
+      "angle": "Contrarian trust hook: attacks the false comfort of asking a model to grade its own answer, and shows what a real record looks like instead.",
+      "on_thumbnail_text": "CHAT IS NOT / EVIDENCE"
+    },
+    {
+      "key": "C",
+      "thumbnail": "thumb_C_bottleneck_trust.png",
+      "title": "The Bottleneck Is Verification",
+      "angle": "Market-shift hook: the scarce thing is no longer producing artifacts but knowing which ones can be trusted.",
+      "on_thumbnail_text": "TRUST IS / THE BOTTLENECK"
+    },
+    {
+      "key": "D",
+      "thumbnail": "thumb_D_compiler_for_trust.png",
+      "title": "The Compiler For Trust",
+      "angle": "Concept-name hook: turns the video title into one legible pipeline, AI in, human-signed evidence out.",
+      "on_thumbnail_text": "COMPILER / FOR TRUST"
+    }
+  ]
+}

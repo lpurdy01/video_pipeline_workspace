@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-001-cross_artifact-D59037792fbb7",
+  "package_id": "P-C-EVID-001-cross_artifact",
+  "input_digest": "59037792fbb745aa64573df0422935e3641fb2d766f6fc28b16540975d1ffd53",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact use of C-EVID-001 accurately preserves the claim's scope and limitations. The claim states that NIST AI RMF 1.0 'calls for' specific documentation and processes. The evidence (S-EVID-001) supports this by citing relevant sections of the RMF. All artifact uses (assurance_case.json, findings.md, figures.md, method_crosswalk.json, whitepaper_outline.md, whitepaper.md) consistently refer to C-EVID-001 as guidance for what needs to be documented or considered in an assurance framework. Crucially, each artifact either explicitly states the voluntary, non-certification nature of the NIST RMF or frames its own content as 'planned,' 'hypothetical,' 'proposed,' or 'research,' thereby aligning with the claim's scope ('NIST voluntary, non-sector-specific AI risk-management guidance; not a safety certification criterion') and the challenge ('A documented process is not proof that a learned road or aircraft system is acceptably safe'). No omitted qualifications, changed status, or inferences presented as authority evidence were found.",
+  "evidence_locators": [
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_evidence/findings.md",
+    "resource_composition/figures.md",
+    "assurance/method_crosswalk.json",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

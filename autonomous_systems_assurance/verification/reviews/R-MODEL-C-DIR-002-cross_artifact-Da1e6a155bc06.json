@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-DIR-002-cross_artifact-Da1e6a155bc06",
+  "package_id": "P-C-DIR-002-cross_artifact",
+  "input_digest": "a1e6a155bc061cfb7f368d7638e7a6f2db23051ee97058b40fdf8be5825dd6ca",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts accurately cite the 2016 NHTSA rulemaking to illustrate the need for exposure denominators (VMT) and confounder controls in crash rate comparisons. They explicitly preserve the claim's limitation by stating the source is retained as a measurement warning and denominator limitation, not as a current all-crash EV risk metric.",
+  "evidence_locators": [
+    "research/contributions/direction_evidence/findings.md",
+    "research/integration_round5.md"
+  ],
+  "limitations": [
+    "Locate a current, exposure-normalized U.S. study with a defined powertrain population, vehicle miles, crash endpoint, and confounder controls before comparing present EV and ICE risk."
+  ],
+  "resolves": []
+}

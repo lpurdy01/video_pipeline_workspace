@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-007-source_support-D0109af74f086",
+  "package_id": "P-C-AUTH-007-source_support",
+  "input_digest": "0109af74f086e8357e0fef1581ee54ee9a48a773b8d57fd3852cfb9ca6f1cf6f",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim states that ANSI/UL 4600 Edition 3 is active, its public scope describes building and evaluating an autonomous-product safety argument, and it states that its requirements may be necessary but not sufficient. The evidence directly supports all three parts: S-AUTH-005-R1 confirms 'ACTIVE' and 'ANSI Approved: March 17, 2023'. S-AUTH-005-R2 confirms the public scope describes 'building and evaluating a safety argument for vehicles that can operate in an autonomous mode'. S-AUTH-005-R3 confirms the public scope states 'necessary, but possibly not sufficient, level of completeness and rigor'. The challenge regarding the 2026 CSDS proposal is noted in the source's limitations as a proposed revision, not affecting the current active Edition 3, and the full text was not acquired, which is consistent with the claim's focus on the *active* standard and its *public scope*. The challenge not to infer product evaluation is also respected by the claim and source limitations.",
+  "evidence_locators": [
+    "S-AUTH-005-R1",
+    "S-AUTH-005-R2",
+    "S-AUTH-005-R3"
+  ],
+  "limitations": [
+    "The licensed full standard and the full text of the August 2026 CSDS proposal were not acquired, so a clause-by-clause inspection of the licensed standard to determine the proposal's effect on relevant clauses was not performed. The assessment relies on the public scope summary and status information."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-STD-002-source_support-Dd411040de007",
+  "package_id": "P-C-STD-002-source_support",
+  "input_digest": "d411040de0070362b547d99512c5690e789974690a6f16e5de313e932b39e9fb",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "While the inspection scope and excerpt state that RMT.0742 / NPA 2025-07(B) is labelled 'awaiting responses to comments' and 'proposed', the provided captured_context is truncated and does not contain the actual table row for RMT.0742 or DS.AI. The full context is therefore absent and inadequate to independently verify the claim.",
+  "evidence_locators": [
+    "S-STD-002-R1",
+    "S-STD-002 captured_context"
+  ],
+  "limitations": [
+    "The captured context is truncated and omits the specific RMT.0742 row. A full, untruncated snapshot of the EASA CRT document-list page is required to verify the exact status and wording."
+  ],
+  "resolves": []
+}

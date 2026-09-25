@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-C-RISK-004-cross_artifact-FP1",
+  "package_id": "P-C-RISK-004-cross_artifact",
+  "input_digest": "cbbdeae01e57d1fcd37475b6c386c8eaa831726e7cb6440734a571542864b8f7",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts accurately reflect the claim that aggregate DAA risk ratios can hide specific encounter deficiencies and cannot stand alone as an assurance argument. They explicitly preserve the scope by noting CAP3127 is consultation/test-phase material rather than a universal AI criterion, and they directly address the challenge by listing the retrieval of CAP3015 and final approval material as an open research task before making definitive statements about UK acceptance criteria.",
+  "evidence_locators": [
+    "research/integration_round4.md (Risk and probability distinctions; Source-quality and conflict ledger)",
+    "research/contributions/risk_evidence/findings.md (Risk numbers need an argument around them; Open retrieval and research tasks)",
+    "resource_composition/whitepaper_outline.md (Coverage and language gates)"
+  ],
+  "limitations": [
+    "Must retrieve CAP3015 version 2 and accepted means of compliance/guidance material before describing UK DAA requirements as final.",
+    "A scenario-level ledger and risk metrics remain dependent on encounter definitions, operational restrictions, and the rest of the mitigation stack."
+  ],
+  "resolves": []
+}

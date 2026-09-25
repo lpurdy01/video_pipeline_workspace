@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-005-source_support-Ddc804a080fe7",
+  "package_id": "P-C-005-source_support",
+  "input_digest": "dc804a080fe7dc8475427a1bff4f68e9cc7b30d9c7166185a0bbdaee45a91ce3",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The source metadata and inspection scope confirm the September 4, 2026 NHTSA announcement of an Audit Query regarding Cybercab FMVSS self-certification. The artifacts correctly preserve the limitation that this is an open inquiry, not a final noncompliance finding.",
+  "evidence_locators": [
+    "S-006 metadata",
+    "S-006 inspection_scope"
+  ],
+  "limitations": [
+    "Investigation is not a final finding or an assessment of all driving-model behavior."
+  ],
+  "resolves": []
+}

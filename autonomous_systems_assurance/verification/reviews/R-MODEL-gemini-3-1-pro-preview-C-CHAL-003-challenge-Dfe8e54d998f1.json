@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-3-1-pro-preview-C-CHAL-003-challenge-Dfe8e54d998f1",
+  "package_id": "P-C-CHAL-003-challenge",
+  "input_digest": "fe8e54d998f12b177d65616176196a9117bcea14410d26cf71ee7a46a47a3cee",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The provided excerpts from EASA NPA 2025-07(B) explicitly confirm the proposed framework includes operational design domain definitions, continuous risk assessment, system development assurance, supervised-ML learning assurance, configuration/life-cycle data management, and in-service monitoring. The claim accurately bounds this as proposed material rather than a final approved lifecycle.",
+  "evidence_locators": [
+    "S-CHAL-002-R2",
+    "S-CHAL-002-R3",
+    "research/contributions/assurance_challenge/findings.md"
+  ],
+  "limitations": [
+    "The framework remains a Notice of Proposed Amendment (NPA), relies on unfinalized standards (e.g., ED-324/ARP6983), and explicitly excludes systems directly contributing to fatalities or multiple life-threatening injuries."
+  ],
+  "resolves": []
+}

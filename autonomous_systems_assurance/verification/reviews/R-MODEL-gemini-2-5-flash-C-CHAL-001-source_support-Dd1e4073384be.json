@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-001-source_support-Dd1e4073384be",
+  "package_id": "P-C-CHAL-001-source_support",
+  "input_digest": "d1e4073384beae6febf39d305a64657ca7fa6b1eed4327eb16c5f98521feaa2f",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The MAA Regulatory Notice MAA/RN/2025/04, effective 10 October 2025, explicitly states that for Certified Air Systems, the Applicant 'should raise a Military Certification Review Item (MCRI) for MAA agreement' (PDF p. 2, para 6). It also 'recommends that early applications of ML techniques for Air System PE use the most appropriate training methods (eg supervised learning using large, high-quality datasets) to generate models that then remain fixed for system integration and use within a defined operational design domain' (PDF p. 2, para 7). The notice is described as 'informative correspondence' and 'guidance' for the 'Defence Air Environment' (PDF p. 1, para 2), aligning with the claim's scope as UK military aviation guidance and not civil-airworthiness approval.",
+  "evidence_locators": [
+    "MAA/RN/2025/04 \u2014 Use of Artificial Intelligence within Systems and Equipment subject to MRP design assurance processes: PDF p. 1, paragraphs 2-4",
+    "MAA/RN/2025/04 \u2014 Use of Artificial Intelligence within Systems and Equipment subject to MRP design assurance processes: PDF p. 2, paragraphs 6-7",
+    "research/contributions/assurance_challenge/findings.md: The UK MAA has a current, effective AI guidance path for military safety-related aviation systems. It calls for applicant-specific MCRI agreement, a defined operating context and evidence proportionate to risk. It recommends frozen supervised models and traditional safety-monitor architecture for early applications. [C-CHAL-001]",
+    "assurance/method_crosswalk.json: M-MAA-001 mappings for O-001, O-003, O-007"
+  ],
+  "limitations": [],
+  "resolves": []
+}

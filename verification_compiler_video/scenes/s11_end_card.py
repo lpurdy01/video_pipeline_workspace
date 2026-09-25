@@ -176,8 +176,11 @@ class S11EndCard(BeatScene):
         asks = [
             ("tagging system?", style.GOLD),
             ("requirements and sub-requirements?", style.CYAN),
-            ("unique hyperlinkable IDs?", style.VIOLET),
+            ("unique IDs?", style.VIOLET),
         ]
+        tell = style.label_text("in the comments", color=style.MUTED)
+        stage.fit(tell, stage.CAPTION)
+        ctx.show(tell, tag="tell", run_time=0.35, nudge=False)
         rows = VGroup()
         for i, (text, colour) in enumerate(asks):
             row = style.label_text(text, color=colour)
@@ -187,9 +190,6 @@ class S11EndCard(BeatScene):
                      run_time=0.4, nudge=False)
             ctx.hold(2.4)
         self._own("asks", rows)
-        tell = style.label_text("in the comments", color=style.MUTED)
-        stage.fit(tell, stage.CAPTION)
-        ctx.show(tell, tag="tell", run_time=0.4, nudge=False)
 
     def b04_expand(self, ctx):
         """Eight seconds: one idea, taken up in several directions at once."""
@@ -198,6 +198,9 @@ class S11EndCard(BeatScene):
         # the legible minimum and reads as texture rather than a word.
         ctx.play(self._owned["paper"].animate.set_opacity(1.0)
                  .scale(0.75).move_to(stage.STAGE.center + UP * 0.75), run_time=0.5)
+        excited = style.label_text("see where it goes", color=style.GREEN)
+        stage.fit(excited, stage.CAPTION)
+        ctx.show(excited, tag="goes", run_time=0.35, nudge=False)
         rng = random.Random(5)
         branches = VGroup()
         spots = [np.array([x, y, 0.0]) for x, y in
@@ -220,9 +223,6 @@ class S11EndCard(BeatScene):
             for n, kind in zip(branches, kinds):
                 ctx.play(*style.highlight(n, style.NODE_KINDS[kind]["color"]),
                          run_time=0.16)
-        excited = style.label_text("see where it goes", color=style.GREEN)
-        stage.fit(excited, stage.CAPTION)
-        ctx.show(excited, tag="goes", run_time=0.4, nudge=False)
         ctx.hold(0.8)
 
     def b05_blueprint(self, ctx):

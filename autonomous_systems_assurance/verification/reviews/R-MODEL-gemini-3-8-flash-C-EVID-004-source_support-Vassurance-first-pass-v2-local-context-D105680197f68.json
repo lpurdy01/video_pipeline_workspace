@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-EVID-004-source_support-Vassurance-first-pass-v2-local-context-D105680197f68",
+  "package_id": "P-C-EVID-004-source_support",
+  "input_digest": "105680197f68b3bac37a05e62c956da651740a0dbc81a1911087b3693bb693c9",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The source explicitly demonstrates and states that modern neural networks evaluated in the study were poorly calibrated compared to older networks, and that temperature scaling empirically proved effective at calibrating predictions across the evaluated benchmark datasets.",
+  "evidence_locators": [
+    "PDF p. 1, Abstract and Section 1",
+    "PDF pp. 2-3, Sections 1 and 2, Figure 1"
+  ],
+  "limitations": [
+    "Evaluations in the source are restricted to specific supervised image and document classification benchmarks and architectures, and do not establish calibration retention under operational distribution shift or closed-loop system dynamics."
+  ],
+  "resolves": []
+}

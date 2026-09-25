@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-TRAIN-002-source_support-Vassurance-first-pass-v2-local-context-D97d6c010b172",
+  "package_id": "P-C-TRAIN-002-source_support",
+  "input_digest": "97d6c010b1725cbd60ee0a06aba860ed37cc67631178c83c29b8546ed8f97060",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The captured context from AMLAS v1.1 Model Learning (printed pp. 32\u201334) directly supports each element of the claim: Note 29 addresses overfitting to development data; Example 26 illustrates overfitting where simulator image artifacts serve as spurious noise/boundaries for hazardous classes; Activity 11 and footnote 5 explicitly warn against data leakage from internal test data during iterative model development; and Artefact [U] explicitly requires a model development log that documents and justifies all key decisions made during the learning process.",
+  "evidence_locators": [
+    "AMLAS v1.1, PDF pp. 33\u201335 (printed pp. 32\u201334), Model Learning Stage, Note 29, Example 26, Artefact [U], Activity 11, and Footnote 5"
+  ],
+  "limitations": [
+    "Inspection is restricted to the provided AMLAS v1.1 guidance text; AMLAS is research guidance rather than regulatory approval, and these examples illustrate risk mechanisms rather than diagnosing any specific operational deployment."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "R-PAPER-CROSS-C-CHAL-006-20260916",
+  "package_id": "P-C-CHAL-006-cross_artifact",
+  "input_digest": "21657fcee441a011c1688871bc0ff5c77cac1ccd531a71aebc76e106386080df",
+  "task": "cross_artifact",
+  "reviewer_id": "paper-compiler-review-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-cross-artifact-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "AMLAS is consistently presented as a six-stage, primarily offline-supervised ML-component baseline requiring complementary system and domain assurance. The conventional-software bridge and proposed assurance rule extend the project argument around, rather than replacing, AMLAS; the crosswalk explicitly leaves plant/controller, monitor, operations, and authorization outside the component method.",
+  "evidence_locators": [
+    "resource_composition/whitepaper.md:116-120, AMLAS scope and limits",
+    "resource_composition/whitepaper.md:106-112, conventional-software bridge",
+    "assurance/architecture.md, component-versus-system allocation",
+    "assurance/amlas_maa_easa_crosswalk.md:5-20, AMLAS coverage/outside-scope rows",
+    "assurance/method_crosswalk.json, M-AMLAS-001 scope and mappings"
+  ],
+  "limitations": [
+    "This does not verify AMLAS text or certify the project's crosswalk interpretation.",
+    "No artifact claims AMLAS alone is sufficient for the road or air release."
+  ],
+  "resolves": []
+}

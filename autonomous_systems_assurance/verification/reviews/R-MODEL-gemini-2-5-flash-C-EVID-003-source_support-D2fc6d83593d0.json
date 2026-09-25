@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-003-source_support-D2fc6d83593d0",
+  "package_id": "P-C-EVID-003-source_support",
+  "input_digest": "2fc6d83593d0b96e3ec1e8e7aa65f4ccfe6a72f9e9e0106f7e9a05fee27c15fb",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The O'Kelly et al. source (S-EVID-003) explicitly states that their rare-event simulation framework estimates the 'probability of an accident under a base distribution governing standard traffic behavior' (p. 1, abstract) and for a 'threshold \u03b3' (p. 2). It highlights the need for this approach due to the 'billions of miles' required for real-world testing to statistically validate performance claims (p. 1, abstract), directly supporting the contrast with 'proving unconditional safety from total test miles'. The source's stated limitations and the project's `findings.md` and video scripts consistently reinforce that the estimated probability is 'conditional on the base distribution, scenario abstraction, simulator and selected risk threshold' and 'not an unconditional property'. The scope 'O'Kelly et al. highway research case study using importance sampling; not a regulatory method' is also consistently maintained across the evidence.",
+  "evidence_locators": [
+    "S-EVID-003, PDF p. 1, abstract and introduction",
+    "S-EVID-003, PDF p. 2, base distribution and simulation inputs",
+    "research/contributions/assurance_evidence/findings.md",
+    "video/script.md (Section 5)",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md (Section 5)",
+    "video/nextgen_structure/treatment.md (Section 5)",
+    "resource_composition/whitepaper.md (Section 5)"
+  ],
+  "limitations": [],
+  "resolves": []
+}

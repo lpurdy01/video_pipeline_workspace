@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-EVID-002-source_support-Vassurance-first-pass-v2-local-context-Dff3b0532a52b",
+  "package_id": "P-C-EVID-002-source_support",
+  "input_digest": "ff3b0532a52b8a2620bf8f2e9d6269f0ddff2e773816a9d6cff469aec505501c",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The supplied NIST/Virginia Tech paper confirms that combinatorial coverage metrics expose unrepresented input combinations (e.g., area above the step-graph curve where model performance is unknown) and quantify coverage of chosen combinations, while noting that input coverage does not by itself determine model performance or guarantee safe operational probability.",
+  "evidence_locators": [
+    "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957175",
+    "S-EVID-002-R1 (PDF p. 3-4, Fig. 2 and Fig. 3 discussion)",
+    "S-EVID-002-R2 (PDF p. 5, discussion and references)"
+  ],
+  "limitations": [
+    "The source is an exploratory methods paper and does not define an operational standard, safety acceptance threshold, or formal certification process for autonomous systems."
+  ],
+  "resolves": []
+}

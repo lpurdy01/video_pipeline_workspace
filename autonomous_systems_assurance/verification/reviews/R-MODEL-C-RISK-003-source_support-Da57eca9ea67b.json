@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-RISK-003-source_support-Da57eca9ea67b",
+  "package_id": "P-C-RISK-003-source_support",
+  "input_digest": "a57eca9ea67b84c7387a7b7716fd926e47e31ddbdb877152d3c6bba82ffc5a14",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided excerpts from EASA NPA 2025-07 (B) directly support the claim. DS.AI.010(d) explicitly excludes AI systems contributing to fatalities, multiple life-threatening injuries, and certain online learning cases from its scope. Furthermore, the risk assessment in DS.AI.130 defines severity and likelihood categories, explicitly classifying H1 (potential for fatalities) as an 'unacceptable risk for an AI-based system operation at this point in time.' The claim accurately preserves the proposed, non-final status of the document.",
+  "evidence_locators": [
+    "S-RISK-003-R1 (PDF p. 4, DS.AI.010 Scope)",
+    "S-RISK-003-R2 (PDF pp. 17-20, DS.AI.130 risk assessment and Table 2)"
+  ],
+  "limitations": [
+    "NPA 2025-07(B) is proposed material, not a final EASA decision or approval. The final published framework must be verified before relying on these specific boundaries."
+  ],
+  "resolves": []
+}

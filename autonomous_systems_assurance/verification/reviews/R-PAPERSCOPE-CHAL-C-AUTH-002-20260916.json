@@ -1,0 +1,22 @@
+{
+  "id": "R-PAPERSCOPE-CHAL-C-AUTH-002-20260916",
+  "package_id": "P-C-AUTH-002-challenge",
+  "input_digest": "a53beeec0af675c48f7fa50286fcca3ea250c6cd2a3f1a2031ab7da51f617cac",
+  "task": "challenge",
+  "reviewer_id": "paper-scope-challenge-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-scope-digest-pinned-challenge-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-16",
+  "rationale": "The retained excerpt supports the updated-version portion of the roadmap claim, and the claim correctly says it is not a means of compliance. The challenge remains unresolved because the package has short-only source context and does not establish whether later FAA material modifies the 2024 Version I roadmap framing. It must not be expanded into detailed release-evidence requirements or an FAA acceptance path.",
+  "evidence_locators": [
+    "S-AUTH-001-R2, FAA Roadmap for Artificial Intelligence Safety Assurance Version I, PDF p. 10, learned-AI implementation and update discussion",
+    "https://www.faa.gov/aircraft/air_cert/step/roadmap_for_AI_safety_assurance"
+  ],
+  "limitations": [
+    "The claim is version-specific roadmap discussion, not binding policy, a model-specific approval, or a complete means of compliance.",
+    "The package retains short_excerpt_only context and does not contain a checked later FAA edition or policy update."
+  ],
+  "resolves": []
+}

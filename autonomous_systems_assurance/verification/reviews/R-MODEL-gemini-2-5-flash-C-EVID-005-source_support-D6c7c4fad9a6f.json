@@ -1,0 +1,18 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-EVID-005-source_support-D6c7c4fad9a6f",
+  "package_id": "P-C-EVID-005-source_support",
+  "input_digest": "6c7c4fad9a6f9c0015946198f058eb722a4f782c34f74cf0554f194c13db48a1",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The inspected NASA DASC 2024 presentation explicitly details the 'RTA rule in Plaidypvs' which establishes a system safety property for a black-box controller. The rule is presented with 'IF' conditions that directly correspond to the premises stated in the claim: 'the vehicle starts in a safe state' (safe-start), 'the monitored advanced system controller always ends in a state where the vehicle can recover' (monitor/timing and recovery-state), and 'repeated execution of the reversionary system controller leads to a safe state' (reversionary-controller and recovery-state). The source's own limitations also confirm the conditional nature of the guarantee.",
+  "evidence_locators": [
+    "PDF pp. 7-9, RTA rule in Plaidypvs"
+  ],
+  "limitations": [],
+  "resolves": []
+}

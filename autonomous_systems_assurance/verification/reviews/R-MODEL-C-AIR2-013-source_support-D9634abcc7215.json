@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-AIR2-013-source_support-D9634abcc7215",
+  "package_id": "P-C-AIR2-013-source_support",
+  "input_digest": "9634abcc721538be19459451129924bb63f000fa7686be1aaf6f482a0e97c76e",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided short excerpt and research findings exactly match the claim that the FAA BEYOND page notes a February 2023 Zipline DAA change submission without providing the full technical approval package. However, the source record explicitly states '[no full local context captured]' and 'short_excerpt_only'. Because the full context is absent, the verdict must be uncertain.",
+  "evidence_locators": [
+    "S-AIR2-012-R1",
+    "research/contributions/air_round2/findings.md"
+  ],
+  "limitations": [
+    "Full local context for the FAA BEYOND program status page (S-AIR2-012) is absent.",
+    "The underlying technical approval package and operating limitations from docket FAA-2020-0499 must be fully inspected to verify the actual assurance evidence."
+  ],
+  "resolves": []
+}

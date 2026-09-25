@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-RISK-001-source_support-FP1",
+  "package_id": "P-C-RISK-001-source_support",
+  "input_digest": "380b92d39d6730abb9985e30fa41d8f9b22fa7da270d41ac199992ca67e869cc",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided text from AC 25.1309-1A explicitly describes the 'logical and acceptable inverse relationship between the probability and the severity of each failure condition' and lists safety assessments, qualitative analyses, tests, and the selective use of quantitative analyses as supporting techniques. The claim accurately reflects this historical guidance and correctly scopes it as conventional system-safety context rather than a learned-model acceptance method.",
+  "evidence_locators": [
+    "AC 25.1309-1A PDF pp. 1-2 (Paragraphs 3, 4a, 4b)"
+  ],
+  "limitations": [
+    "The captured context for Region 2 is truncated and omits the specific excerpt regarding component failure rate precision, though the core claim text is fully supported by the visible text in Paragraph 4.",
+    "As noted in the claim scope and challenge, this historical guidance relies on conventional component-failure probability reasoning and cannot be directly transferred to distribution-dependent learned behavior."
+  ],
+  "resolves": []
+}

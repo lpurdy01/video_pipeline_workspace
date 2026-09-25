@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-15",
+  "sources": [
+    {
+      "id": "S-INTAKE-001",
+      "title": "FAA Exemption No. 19111B — Zipline International, Inc.",
+      "publisher": "Federal Aviation Administration",
+      "url": "https://www.regulations.gov/document/FAA-2020-0499-0033",
+      "published_at": "2023-09-18",
+      "source_type": "authority_exemption_decision",
+      "jurisdiction": "US civil UAS; Part 135 package delivery; historical decision",
+      "accessed_at": "2026-09-15",
+      "inspection_scope": "Inspected the complete 28-page FAA decision supplied from the public docket and independently confirmed its document page and attachment through a Chromium session.",
+      "regions": [
+        {
+          "id": "S-INTAKE-001-R1",
+          "locator": "PDF printed page 1, first substantive paragraph",
+          "excerpt": "allows the petitioner to conduct part 135 air carrier operations for commercial package delivery using an unmanned aircraft system (UAS).",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/book_intake/authority/faa-2020-0499-0033-zipline-exemption-19111b.pdf",
+          "snapshot_sha256": "099f0c9a7a155beb9742d17b2b6c59613826e1e40183d7ece8aa781e0c2416e9",
+          "context_path": "verification/out/sources/book_intake/text/faa-2020-0499-0033-zipline-exemption-19111b.txt"
+        },
+        {
+          "id": "S-INTAKE-001-R2",
+          "locator": "PDF printed page 10, FAA response to DAA safety-standard comments",
+          "excerpt": "The exemption does not authorize the system.",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/book_intake/authority/faa-2020-0499-0033-zipline-exemption-19111b.pdf",
+          "snapshot_sha256": "099f0c9a7a155beb9742d17b2b6c59613826e1e40183d7ece8aa781e0c2416e9",
+          "context_path": "verification/out/sources/book_intake/text/faa-2020-0499-0033-zipline-exemption-19111b.txt"
+        }
+      ],
+      "limitations": "This is an operation-specific 2023 decision. Its stated termination date was September 30, 2025, and a later amendment is recorded separately. It is not a general DAA-equipment authorization or an unrestricted safety finding.",
+      "independence_group": "FAA-ZIPLINE-2023-DECISION",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-INTAKE-002",
+      "title": "FAA Exemption No. 19111C — Zipline International, Inc.",
+      "publisher": "Federal Aviation Administration",
+      "url": "https://www.regulations.gov/document/FAA-2020-0499-0034",
+      "published_at": "2024-06-20",
+      "source_type": "authority_exemption_decision",
+      "jurisdiction": "US civil UAS; Part 135 package delivery; historical decision",
+      "accessed_at": "2026-09-15",
+      "inspection_scope": "Inspected the complete 19-page FAA decision supplied from the public docket and independently confirmed the docket page and attachment label through a Chromium session.",
+      "regions": [
+        {
+          "id": "S-INTAKE-002-R1",
+          "locator": "PDF printed page 7, Area of Operations plan requirements",
+          "excerpt": "Operator to provide their safety case for expansion comprised of an airspace analysis below 500 ft",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/book_intake/authority/faa-2020-0499-0034-zipline-exemption-19111c.pdf",
+          "snapshot_sha256": "f7d9c270fc191d3261310dbfb8e2cd8069654114dd381ec912921e498f0c8e55",
+          "context_path": "verification/out/sources/book_intake/text/faa-2020-0499-0034-zipline-exemption-19111c.txt"
+        },
+        {
+          "id": "S-INTAKE-002-R2",
+          "locator": "PDF printed page 19, effect of FAA decision",
+          "excerpt": "extends the termination date to October 31, 2026, unless sooner superseded or rescinded.",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/book_intake/authority/faa-2020-0499-0034-zipline-exemption-19111c.pdf",
+          "snapshot_sha256": "f7d9c270fc191d3261310dbfb8e2cd8069654114dd381ec912921e498f0c8e55",
+          "context_path": "verification/out/sources/book_intake/text/faa-2020-0499-0034-zipline-exemption-19111c.txt"
+        }
+      ],
+      "limitations": "The decision records conditions and a dated operating authorization. It does not publish all proprietary evidence, grant a general learned-perception approval, or establish permission after its stated termination date.",
+      "independence_group": "FAA-ZIPLINE-2024-DECISION",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-INTAKE-003",
+      "title": "TSO-C211a: Detect and Avoid (DAA) Systems",
+      "publisher": "Federal Aviation Administration",
+      "url": "https://www.faa.gov/aircraft/draft_docs/tso/tso_c211a",
+      "published_at": "2026-02-26",
+      "source_type": "authority_technical_standard",
+      "jurisdiction": "US civil aviation equipment approval",
+      "accessed_at": "2026-09-15",
+      "inspection_scope": "Inspected the complete 15-page FAA TSO supplied by the user, including purpose, applicability, performance basis, and installation-limitation language.",
+      "regions": [
+        {
+          "id": "S-INTAKE-003-R1",
+          "locator": "PDF printed page 1, sections 1–3",
+          "excerpt": "minimum performance standards (MPS) your DAA equipment must first meet for approval",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/book_intake/authority/faa-tso-c211a-detect-and-avoid-2026.pdf",
+          "snapshot_sha256": "f9cd209f7e69058504bd2a7904d47fd599d6dd004d86badd83f5e382c2e6435f",
+          "context_path": "verification/out/sources/book_intake/text/faa-tso-c211a-detect-and-avoid-2026.txt"
+        },
+        {
+          "id": "S-INTAKE-003-R2",
+          "locator": "PDF printed page 8, section 5.b.(3), installation limitations",
+          "excerpt": "Installation of this article requires separate approval.",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/book_intake/authority/faa-tso-c211a-detect-and-avoid-2026.pdf",
+          "snapshot_sha256": "f9cd209f7e69058504bd2a7904d47fd599d6dd004d86badd83f5e382c2e6435f",
+          "context_path": "verification/out/sources/book_intake/text/faa-tso-c211a-detect-and-avoid-2026.txt"
+        }
+      ],
+      "limitations": "A TSO defines equipment approval requirements; it is not a list of authorization holders and does not approve a particular aircraft installation, operational domain, or learned model.",
+      "independence_group": "FAA-TSO-C211A",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-INTAKE-004",
+      "title": "FAA Exemption No. 19031B — Amazon Prime Air",
+      "publisher": "Federal Aviation Administration",
+      "url": "https://www.regulations.gov/docket/FAA-2022-0269",
+      "published_at": "2023-09-12",
+      "source_type": "authority_exemption_decision",
+      "jurisdiction": "US civil UAS; Amazon Prime Air; historical decision",
+      "accessed_at": "2026-09-15",
+      "inspection_scope": "Inspected the complete six-page FAA decision supplied by the user, including its description of the requested DAA-related relief and the FAA's stated disposition.",
+      "regions": [
+        {
+          "id": "S-INTAKE-004-R1",
+          "locator": "PDF printed page 1, footnote and FAA decision section",
+          "excerpt": "This request is under review and will be addressed separately",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/book_intake/authority/faa-19031b-amazon-prime-air-2023.pdf",
+          "snapshot_sha256": "40d6bd6f8230abd971936e871b68122f5ee7578079a722fbc97dae4872ba3e81",
+          "context_path": "verification/out/sources/book_intake/text/faa-19031b-amazon-prime-air-2023.txt"
+        }
+      ],
+      "limitations": "This document does not resolve the separate requested relief to remove visual observers while using onboard DAA. Its stated termination date was January 31, 2026.",
+      "independence_group": "FAA-AMAZON-2023-DECISION",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-INTAKE-005",
+      "title": "Texas Motor Carrier Credentialing System — Tesla Robotaxi, LLC Automated Motor Vehicles",
+      "publisher": "Texas Department of Motor Vehicles",
+      "url": "https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
+      "published_at": null,
+      "source_type": "authority_live_lookup",
+      "jurisdiction": "Texas commercial automated-vehicle authorization",
+      "accessed_at": "2026-09-15",
+      "inspection_scope": "Used Chromium to search the public Truck Stop lookup by company name, opened the resulting Tesla Robotaxi, LLC record, and captured the first page of the live vehicle table.",
+      "regions": [
+        {
+          "id": "S-INTAKE-005-R1",
+          "locator": "Automated Motor Vehicles Details, authorization status and authorized date",
+          "excerpt": "Authorized Date: May 14, 2026",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/browser_20260915/txdmv_operator_detail.html",
+          "snapshot_sha256": "8ef57af44bbc81e30c96a913196ad8a1e3162dcbabd61fd1d161d25ca5c7c901",
+          "context_path": "verification/out/sources/browser_20260915/txdmv_operator_detail.txt"
+        },
+        {
+          "id": "S-INTAKE-005-R2",
+          "locator": "Vehicles table, first page, 2026 Tesla entries",
+          "excerpt": "2026 Tesla Cybercab",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/browser_20260915/txdmv_operator_detail.html",
+          "snapshot_sha256": "8ef57af44bbc81e30c96a913196ad8a1e3162dcbabd61fd1d161d25ca5c7c901",
+          "context_path": "verification/out/sources/browser_20260915/txdmv_operator_detail.txt"
+        }
+      ],
+      "limitations": "The record is a live operational authorization lookup and may change. It does not disclose the safety case, model architecture, evidence behind the authorization, federal FMVSS compliance, or a general certification of autonomous-driving safety.",
+      "independence_group": "TXDMV-AV-LOOKUP",
+      "refresh_days": 7
+    }
+  ]
+}

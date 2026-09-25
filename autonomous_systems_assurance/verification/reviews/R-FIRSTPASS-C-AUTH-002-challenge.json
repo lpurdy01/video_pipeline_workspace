@@ -1,0 +1,22 @@
+{
+  "id": "R-FIRSTPASS-C-AUTH-002-challenge",
+  "package_id": "P-C-AUTH-002-challenge",
+  "input_digest": "f36264372440d1a37768d6e0d121918754b5df83ce4b5c435ff1164fe496e77a",
+  "task": "challenge",
+  "reviewer_id": "first-pass-challenge-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-challenge-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The current FAA-hosted Version I PDF defines learned AI as static in operation, says it is subjected to design-time safety assurance before operational use, and states that each updated version is subjected to safety assurance. This supports the narrow lifecycle claim. The same text calls the roadmap living and promotes project-specific methods, which reinforces rather than defeats the claim's explicit non-compliance scope.",
+  "evidence_locators": [
+    "S-AUTH-001-R2, FAA Roadmap for Artificial Intelligence Safety Assurance Version I, PDF p. 10, 'Differentiate Between Learned AI and Learning AI'",
+    "FAA Roadmap Version I, PDF pp. 10-11, https://www.faa.gov/aircraft/air_cert/step/roadmap_for_AI_safety_assurance"
+  ],
+  "limitations": [
+    "The reviewed public material is Version I dated 2024-07-23; no later FAA roadmap edition was established in this review.",
+    "The local registry has short excerpt context for this source, and the roadmap is not a binding means of compliance or approval of a release."
+  ],
+  "resolves": []
+}

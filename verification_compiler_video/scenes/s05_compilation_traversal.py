@@ -185,7 +185,7 @@ class S05CompilationTraversal(BeatScene):
         ctx.play(self._owned["packet"].animate.set_stroke(style.CYAN, width=5), run_time=0.3)
 
     def b17_determinism(self, ctx):
-        tag = style.label_text("same graph → same package", color=style.CYAN)
+        tag = style.label_text("graph → package", color=style.CYAN)
         # Bottom + 0.35 is inside the row of nodes below; the reserved caption
         # lane is the one strip nothing else is allowed to occupy.
         stage.fit(tag, stage.CAPTION)
@@ -218,6 +218,6 @@ class S05CompilationTraversal(BeatScene):
                  self._owned["human"].animate.set_opacity(0.4), run_time=0.4)
 
     def b21_reproducible(self, ctx):
-        tag = style.label_text("reproducible", color=style.GREEN)
+        tag = style.label_text("repeatable", color=style.GREEN)
         stage.fit(tag, stage.CAPTION)
-        ctx.show(tag, tag="repro", run_time=0.45)
+        ctx.show(tag, tag="repro", run_time=0.15)

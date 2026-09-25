@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-C-006-cross_artifact-D25fdcd109cd1",
+  "package_id": "P-C-006-cross_artifact",
+  "input_digest": "25fdcd109cd16e57468e738c5396324fe7a7a7a084f3e84a0484a4a1bd69792a",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts accurately reflect the claim regarding California's three distinct permit categories. The research findings explicitly enforce the claim's challenge and limitations by stating 'Do not use those rules to explain Texas operations,' ensuring the scope remains strictly bounded to California.",
+  "evidence_locators": [
+    "research/initial_findings.md#cybercab-deployment-and-self-certification",
+    "video/narrative.md#sequence",
+    "video/storyboard.md#v-05"
+  ],
+  "limitations": [
+    "Primary Texas rules and Tesla authorization records",
+    "Current Waymo permits/ODDs and CPUC passenger-service permissions"
+  ],
+  "resolves": []
+}

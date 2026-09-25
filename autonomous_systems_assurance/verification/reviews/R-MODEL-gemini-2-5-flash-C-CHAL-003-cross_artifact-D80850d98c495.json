@@ -1,0 +1,31 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-003-cross_artifact-D80850d98c495",
+  "package_id": "P-C-CHAL-003-cross_artifact",
+  "input_digest": "80850d98c49578bfa9808fff21f696218affe000ecbcc663819e6cbe90399c7f",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact that references EASA's NPA 2025-07(B) consistently preserves the claim's scope and limitations. The claim states the EASA material is a 'Notice of Proposed Amendment; proposed material, not final AMC/GM or an approved application.' All artifact uses, including prose, JSON structures, and visual descriptions, explicitly qualify the EASA NPA as 'proposed,' 'not final,' or 'emerging civil framework,' and often reiterate its specific scope exclusions (e.g., Level 1/2 high-risk AI, excludes systems directly contributing to fatalities). No instance of omitted qualifications, changed status, or inference presented as authority evidence was found regarding the EASA NPA's status or scope.",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_challenge/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "resource_composition/figures.md",
+    "research/integration_round3.md",
+    "video/script.md",
+    "assurance/method_crosswalk.json",
+    "planning/learned_systems_assurance_next_steps.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

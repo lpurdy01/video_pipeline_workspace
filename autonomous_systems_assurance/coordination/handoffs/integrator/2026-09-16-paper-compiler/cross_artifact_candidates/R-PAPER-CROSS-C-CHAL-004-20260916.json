@@ -1,0 +1,25 @@
+{
+  "id": "R-PAPER-CROSS-C-CHAL-004-20260916",
+  "package_id": "P-C-CHAL-004-cross_artifact",
+  "input_digest": "ab808f781389ce6264dcec7792a5025bab74d834c54e200698c21933b23ac10c",
+  "task": "cross_artifact",
+  "reviewer_id": "paper-compiler-review-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-cross-artifact-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The high-consequence and online-learning scope limits are retained in the paper, architecture, integration finding, crosswalk, method map, and case graph. The airborne transfer consequently treats EASA material as a useful comparison but not as a route that closes collision avoidance. No use generalizes the excluded scope into proof that trained flight-critical control is impossible.",
+  "evidence_locators": [
+    "resource_composition/whitepaper.md:140-144 and :291-293, EASA boundary preserved in air transfer",
+    "assurance/architecture.md, EASA scope and open-obligation discussion",
+    "assurance/amlas_maa_easa_crosswalk.md:7-20, O-007 outside-scope label",
+    "assurance/method_crosswalk.json, M-EASA-DSAI-001 scope and O-007 mapping",
+    "research/integration_round3.md, final scoped-public-search conclusion"
+  ],
+  "limitations": [
+    "This is not a source-support review of exclusion language.",
+    "The project still needs an authority-specific analysis before making an operational flight claim."
+  ],
+  "resolves": []
+}

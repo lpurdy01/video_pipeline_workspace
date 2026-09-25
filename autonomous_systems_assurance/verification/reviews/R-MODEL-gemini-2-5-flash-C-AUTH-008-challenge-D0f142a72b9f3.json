@@ -1,0 +1,28 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-008-challenge-D0f142a72b9f3",
+  "package_id": "P-C-AUTH-008-challenge",
+  "input_digest": "0f142a72b9f3b4f5eabe9c1cadf75ed8405bf287085cbfff663fc9d04591d678",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The claim that NHTSA's ADS 2.0 material presents a voluntary road-ADS safety framework with ODD, object-and-event detection/response, fallback, and validation as safety elements, and that self-assessments are not subject to federal approval, is directly supported by the provided NHTSA page excerpts. However, the challenge successfully identified a critical current-status change: while the NHTSA page still describes ADS 2.0 as current operating guidance, a July 2026 announcement indicates that new guidance and federal AV performance standards are being developed. This creates a 'current-status tension' and positions ADS 2.0 as 'older public ADS guidance' in the context of evolving regulations. The challenge also clarifies that this voluntary self-assessment is distinct from other forms of federal oversight, such as manufacturer self-certification to Federal Motor Vehicle Safety Standards (FMVSS) or state operating permits, thereby limiting the scope of what 'not subject to federal approval' implies for overall vehicle safety or authorization.",
+  "evidence_locators": [
+    "S-AUTH-006-R1",
+    "S-AUTH-006-R2",
+    "S-AUTH-006-R3",
+    "research/contributions/assurance_authority/findings.md:Matrix",
+    "research/contributions/assurance_authority/findings.md:Direct findings",
+    "research/contributions/assurance_authority/findings.md:Current-status tension",
+    "research/contributions/standards_authority/findings.md:Audit of the proposed video deductions",
+    "research/contributions/standards_authority/findings.md:U.S. road vehicles: self-certification is narrower than it sounds"
+  ],
+  "limitations": [
+    "The claim's scope is limited to what the ADS 2.0 material *presents*, not its current comprehensive regulatory force or the full scope of federal oversight for ADS.",
+    "The status of the 'new guidance and first AV performance standards' mentioned in the July 2026 announcement is 'being developed' at the time of the research, and their final release or impact on ADS 2.0's status is not confirmed in the provided material."
+  ],
+  "resolves": []
+}

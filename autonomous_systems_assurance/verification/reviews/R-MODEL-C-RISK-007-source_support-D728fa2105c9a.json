@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-RISK-007-source_support-D728fa2105c9a",
+  "package_id": "P-C-RISK-007-source_support",
+  "input_digest": "728fa2105c9a90d032267af4abfec79ec4796b3a603d9e282530d62ba806689a",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided excerpt from EASA NPA 2025-07 (B) fully supports the first sentence of the claim: it defines the per-operational-hour likelihood bands (1E-3 to 1E-9), shows Table 2 classifying all H1 scenarios as 'Unacceptable risk', and describes mapping aggregated 'acceptable' or 'moderate' risks to AL/TQL. However, the excerpt truncates immediately after Table 2 and does not contain the text required to verify the claim's second sentence regarding quantitative tools supplementing qualitative engineering judgement.",
+  "evidence_locators": [
+    "S-RISK-003-R2"
+  ],
+  "limitations": [
+    "The provided source text is truncated at the notes for Table 2. The full text of the NPA (specifically the remainder of the DS.AI.130 section or related AMC/GM) is required to verify the claim about quantitative tools and qualitative judgement."
+  ],
+  "resolves": []
+}

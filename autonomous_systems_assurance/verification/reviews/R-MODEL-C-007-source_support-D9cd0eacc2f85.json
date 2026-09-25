@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-007-source_support-D9cd0eacc2f85",
+  "package_id": "P-C-007-source_support",
+  "input_digest": "9cd0eacc2f85bf938d949a440dcd38367f588f301ffbae495d4781ce1730a503",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided evidence contains only a short excerpt without full local context. Although the artifact notes and source limitations mention the distinction between pre-deployment learning and learning during operation, the absence of the original source text prevents independent verification of the claim's exact wording and technical context.",
+  "evidence_locators": [
+    "S-008-R1"
+  ],
+  "limitations": [
+    "Requires inspection of the complete technical sections of the FAA Roadmap for Artificial Intelligence Safety Assurance to verify the exact distinction and assurance requirements."
+  ],
+  "resolves": []
+}

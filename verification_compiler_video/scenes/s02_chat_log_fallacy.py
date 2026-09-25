@@ -99,6 +99,8 @@ class S02ChatLogFallacy(BeatScene):
                  run_time=0.5)
 
     def b_three_nos(self, ctx):
+        ctx.waive("outline_over_text",
+                  "the red lines are intentional strike-throughs on the missing evidence words")
         chips = VGroup(*[
             self._struck(text) for text in ("proof", "certification", "audit trail")
         ]).arrange(RIGHT, buff=0.5)
@@ -123,7 +125,7 @@ class S02ChatLogFallacy(BeatScene):
         ctx.play(self._owned["bubble"].animate.set_opacity(0.45), run_time=0.25)
 
     def b_fine(self, ctx):
-        ok = style.label_text("fine for a quick iteration", color=style.MUTED, size="tiny")
+        ok = style.label_text("quick iteration", color=style.MUTED, size="tiny")
         # Hang it off the transcript label, not off the stamp. The stamp is
         # placed relative to the bubble's centre, so "below the stamp" and
         # "below the bubble" resolve to the same strip of screen and the two

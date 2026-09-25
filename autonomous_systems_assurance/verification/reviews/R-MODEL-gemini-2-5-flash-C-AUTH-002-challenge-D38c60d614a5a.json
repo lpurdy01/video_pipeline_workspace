@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-002-challenge-D38c60d614a5a",
+  "package_id": "P-C-AUTH-002-challenge",
+  "input_digest": "38c60d614a5ae9c9d81c30e04dbbcf27661a0700e5e4386dab73e7460e498f8d",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The FAA's 'Roadmap for Artificial Intelligence Safety Assurance, Version I' explicitly defines 'Learned AI Implementation' as static, developed through offline training, and 'subjected to design time safety assurance processes prior to its use in an operational context.' It further states that 'each new version is subjected to safety assurance,' directly supporting both parts of the claim. The provided materials, including later research findings, consistently interpret this roadmap as establishing these principles for frozen learned AI, without presenting any counterevidence or alternative interpretations that would defeat the claim within its stated scope.",
+  "evidence_locators": [
+    "S-AUTH-001-R2 (PDF physical p. 11 / printed p. 10, 'Learned AI Implementation' definition and 'each new version is subjected to safety assurance' statement)",
+    "research/contributions/assurance_authority/findings.md (Direct findings section, 'FAA calls the former static in the operating environment and says each released update is subjected to safety assurance.')"
+  ],
+  "limitations": [
+    "This review is limited to the provided FAA Roadmap Version I and associated project materials; it does not constitute an exhaustive search for all subsequent or external FAA policy documents that might offer further detailed guidance or exceptions not present in the roadmap's high-level principles.",
+    "The roadmap itself is a direction-setting document and not a binding means of compliance or model-specific approval, as acknowledged in the claim's scope."
+  ],
+  "resolves": []
+}

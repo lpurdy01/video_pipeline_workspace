@@ -1,0 +1,16 @@
+{
+  "id": "R-PAPER-READER-SOURCE-C-EVID-004-20260916",
+  "package_id": "P-C-EVID-004-source_support",
+  "input_digest": "0a1c312c5b892f700f33350a3ebe318071f15a2bca12806f802a05466c08a9f4",
+  "task": "source_support",
+  "reviewer_id": "paper-reader-source-support-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "source-support-digest-pinned-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The inspected study reports that the modern networks evaluated were poorly calibrated and presents empirical temperature-scaling results across its evaluated architectures and datasets. The claim properly confines both observations to the paper's studied settings.",
+  "evidence_locators": ["S-EVID-004-R1 — PDF p. 1, abstract", "S-EVID-004-R2 — PDF pp. 2–3, calibration and temperature-scaling experiments"],
+  "limitations": ["The experiments concern selected classification datasets and architectures.", "Calibration on a held-out distribution does not show calibrated uncertainty under operational shift, correlated sensor faults or closed-loop control effects."],
+  "resolves": []
+}

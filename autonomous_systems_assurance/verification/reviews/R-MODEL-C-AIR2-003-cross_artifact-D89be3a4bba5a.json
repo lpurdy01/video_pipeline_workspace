@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-C-AIR2-003-cross_artifact-D89be3a4bba5a",
+  "package_id": "P-C-AIR2-003-cross_artifact",
+  "input_digest": "89be3a4bba5a4748dc0d04f2694993dc03aa19e4e8f17d74fb846f45f5bd7e73",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts accurately reflect the claim's boundary by stating that the inspected public materials do not establish a TSO authorization, while explicitly noting that this absence of evidence is not proof of non-issuance. The required qualifiers (e.g., \"The public sources inspected for this project...\") and warnings against inferring definitive approval status are strictly mandated in the narration map, findings, and visual inventory.",
+  "evidence_locators": [
+    "research/contributions/air_round2/findings.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md"
+  ],
+  "limitations": [
+    "Search FAA DRS for article-specific authorization letters to confirm actual TSO status; absence from inspected pages is not proof of non-issuance."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-004-source_support-Dbb4dfd274334",
+  "package_id": "P-C-004-source_support",
+  "input_digest": "bb4dfd274334a7a4a5aee86ac5736d794045941e29d2e939f380500b68410df3",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The FAA announcement from September 2023 explicitly confirms the authorization of Zipline BVLOS package delivery 'without visual observers' in Salt Lake City, matching the claim's text, date, and scope.",
+  "evidence_locators": [
+    "S-004",
+    "S-004-R1"
+  ],
+  "limitations": [
+    "Only the FAA announcement was inspected; the underlying approval letters and exact technical conditions of the authorization remain unverified."
+  ],
+  "resolves": []
+}

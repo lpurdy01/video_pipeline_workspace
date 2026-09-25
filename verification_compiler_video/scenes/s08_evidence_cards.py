@@ -56,7 +56,7 @@ class S08EvidenceCards(BeatScene):
 
     # ----------------------------------------------------------------- beats --
     def b00_bubble(self, ctx):
-        text = style.caption_text("“Looks good to me.”", color=style.MUTED)
+        text = style.caption_text("Looks good", color=style.MUTED)
         bub = RoundedRectangle(corner_radius=0.22, width=text.width + 0.8, height=1.15,
                                color=style.BLUE, stroke_width=2.4)
         bub.set_fill(style.PANEL, opacity=0.97)
@@ -164,7 +164,7 @@ class S08EvidenceCards(BeatScene):
         ctx.play(self._owned["card"].animate.set_stroke(style.MUTED, width=2), run_time=0.45)
 
     def b11_provenance(self, ctx):
-        tag = style.label_text("every record has provenance", color=style.GREEN)
-        tag.move_to(np.array([0.0, stage.STAGE.bottom + 0.5, 0.0]))
+        tag = style.label_text("provenance", color=style.GREEN)
+        stage.fit(tag, stage.CAPTION)
         ctx.show(tag, tag="prov", run_time=0.5)
         ctx.play(*style.highlight(self._owned["seal"], style.GOLD), run_time=0.4)

@@ -1,0 +1,26 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-003-cross_artifact-Vassurance-first-pass-v2-local-context-D53d12e9837ac",
+  "package_id": "P-C-CHAL-003-cross_artifact",
+  "input_digest": "53d12e9837ac1d99d9cb9418a8932d213e0e971e6c49de2dbd276e1472b30cc7",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all artifact occurrences (architecture, whitepaper, video scripts/outlines, planning notes, and crosswalk models), EASA NPA 2025-07(B) is consistently represented as proposed civil guidance rather than an adopted standard or final certification approval, correctly enumerating its candidate lifecycle areas (operational domain, risk assessment, development assurance, learning assurance, configuration/lifecycle data, and in-service monitoring).",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "assurance/method_crosswalk.json",
+    "research/contributions/assurance_challenge/findings.md",
+    "resource_composition/whitepaper.md",
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md"
+  ],
+  "limitations": [
+    "Review is restricted to the excerpted artifact uses and NPA 2025-07(B) in its proposed state prior to formal EASA decision or comment resolution."
+  ],
+  "resolves": []
+}

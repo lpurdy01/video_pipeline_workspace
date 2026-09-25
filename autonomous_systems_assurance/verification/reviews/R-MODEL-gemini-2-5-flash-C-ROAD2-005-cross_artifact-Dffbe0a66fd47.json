@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-ROAD2-005-cross_artifact-Dffbe0a66fd47",
+  "package_id": "P-C-ROAD2-005-cross_artifact",
+  "input_digest": "ffbe0a66fd47cc47ad078122f0a9c93496cc5aadc7d3ef6fe8a653bfa8d81579",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact use of claim C-ROAD2-005 accurately reflects the information recorded in the NHTSA AQ26002 opening resume, specifically the opening date, estimated population, and description of missing manual controls. All uses consistently include explicit qualifications, such as 'not a safety finding' or 'inquiry, not a finding that the product is unsafe or noncompliant,' which directly preserve the claim's scope and limitations by avoiding inferences about the eventual agency outcome or equating the estimated population with the Austin passenger fleet.",
+  "evidence_locators": [
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "research/contributions/road_round2/findings.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

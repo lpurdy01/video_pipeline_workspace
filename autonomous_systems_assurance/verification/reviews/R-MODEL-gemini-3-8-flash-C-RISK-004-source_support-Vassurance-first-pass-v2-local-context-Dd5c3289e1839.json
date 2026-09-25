@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-RISK-004-source_support-Vassurance-first-pass-v2-local-context-Dd5c3289e1839",
+  "package_id": "P-C-RISK-004-source_support",
+  "input_digest": "d5c3289e183931b4307bdda668471ed71b989170962f10093253abd377000980",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "In CAP3127 Sections 4.14, 4.15, 4.26, and 4.27, the UK CAA reviews feedback that risk ratios are dimensionless units relative to defined NMAC/DWC volumes and encounter sets, and explicitly accepts that RRs are averaging functions that may hide deficiencies in specific encounter cases (committing to require investigation of loss of DWC or NMAC events). It further notes multi-layer conflict management and progressive operational evidence rather than relying on a single metric alone. The claim accurately reflects this context within its stated consultation/policy-concept scope.",
+  "evidence_locators": [
+    "CAP3127 PDF pp. 15-16, Section 4.14-4.15",
+    "CAP3127 PDF p. 19, Section 4.26-4.27"
+  ],
+  "limitations": [
+    "CAP3127 is a consultation response summary for an uncrewed DAA policy concept and test phase, not a finalised acceptable means of compliance or universal certification standard for learned systems."
+  ],
+  "resolves": []
+}

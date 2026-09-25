@@ -1,0 +1,25 @@
+{
+  "id": "R-PAPER-CROSS-C-CHAL-002-20260916",
+  "package_id": "P-C-CHAL-002-cross_artifact",
+  "input_digest": "422663b19ba9a9ddc63a6ebd97b405a4f5c5f5a7b3537176255bf09bf678e62e",
+  "task": "cross_artifact",
+  "reviewer_id": "paper-compiler-review-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-cross-artifact-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "Across the case, crosswalk, method map, challenge findings, and paper, architectural mitigation is treated as a need to be argued with verification, trials, testing, analysis, and monitoring; it is not treated as a ready-made monitor solution. The revised assurance rule makes the missing observability/recovery proposition a release blocker, which is consistent with this bounded use.",
+  "evidence_locators": [
+    "resource_composition/whitepaper.md:136, mitigation is an architectural lesson and not civil approval",
+    "resource_composition/whitepaper.md:72-76, proposed assurance rule blocks/restricts authority when a proposition fails",
+    "assurance/amlas_maa_easa_crosswalk.md:12-20, mitigation and recovery rows",
+    "assurance/method_crosswalk.json, M-MAA-001 O-002/O-004/O-005/O-006/O-008 notes",
+    "assurance/assurance_case.json, O-002/O-006 and airborne analogues remain open"
+  ],
+  "limitations": [
+    "This does not verify the notice's exact wording or establish that mitigation is sufficient in any real architecture.",
+    "The paper's monitor analysis is a project proposal, not a result of the MAA notice."
+  ],
+  "resolves": []
+}

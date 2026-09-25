@@ -1,0 +1,29 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-EVID-005-cross_artifact-Vassurance-first-pass-v2-local-context-Dfdae71acbb98",
+  "package_id": "P-C-EVID-005-cross_artifact",
+  "input_digest": "fdae71acbb989b3bb4874c8180a277a00c960b3b52333a3bc7edc788d0ed709a",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all supplied artifact uses (assurance case, crosswalks, findings ledger, figure plans, video scripts/treatments, and whitepaper drafts), the citation of C-EVID-005 consistently preserves the claim's precise scope and conditional nature. Every occurrence accurately treats the NASA runtime-assurance framework as a formal research model establishing safety properties only under explicit safe-start, monitor observation/timing, dynamics, and recovery-controller premises, explicitly denying that it provides an unconditional wrapper, civil certification, or a solution to shared perception misses.",
+  "evidence_locators": [
+    "assurance/assurance_case.json",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "assurance/method_crosswalk.json",
+    "research/contributions/assurance_evidence/findings.md",
+    "resource_composition/figures.md",
+    "resource_composition/whitepaper.md",
+    "video/script.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md"
+  ],
+  "limitations": [
+    "Inspection is limited to the excerpts and full context provided in the review packet; full external text of truncated files was not independently inspected."
+  ],
+  "resolves": []
+}

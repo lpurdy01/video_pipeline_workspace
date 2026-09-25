@@ -1,0 +1,27 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-TRAIN-002-cross_artifact-Vassurance-first-pass-v2-local-context-Debbab1eb202d",
+  "package_id": "P-C-TRAIN-002-cross_artifact",
+  "input_digest": "ebbab1eb202dad6ef5617dde55495ae1d544f823172c37c2b0454cf088fa8dec",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all supplied artifacts (architecture, crosswalk, figure definitions, video script, whitepaper, findings, and SVG), claim C-TRAIN-002 is cited accurately within its defined scope. The artifacts preserve the distinctions between development data, internal test data, and independent verification data without claiming that simulator artifacts inevitably cause system failure or that AMLAS prescribes an authority-certified defense.",
+  "evidence_locators": [
+    "S-CHAL-004-R6 (PDF pp. 33\u201335, printed pp. 32\u201334, Notes 29\u201330, Artefact [U], Activity 11 and footnote 5)",
+    "assurance/architecture.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "resource_composition/figures.md",
+    "video/script.md",
+    "resource_composition/whitepaper.md",
+    "research/contributions/training_case/findings.md",
+    "resource_composition/figures/vision_training_contract.svg"
+  ],
+  "limitations": [
+    "Review is bounded to the excerpted artifact contexts and the AMLAS v1.1 guidance text provided in S-CHAL-004-R6."
+  ],
+  "resolves": []
+}

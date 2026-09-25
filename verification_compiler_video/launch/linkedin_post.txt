@@ -1,0 +1,25 @@
+Your agent wrote four thousand lines this week. How much of it did you read?
+
+AI made generating code, tests, and docs cheap. It did not make trusting them cheap. That asymmetry is where I think the next few years of software engineering actually happen.
+
+Here is the uncomfortable part. When we ask a model "does this look right?" and it says "looks good," we have produced a feeling, not a record. A chat transcript is not an audit trail. It carries no requirement ID, no artifact version, no reviewer, and no way to tell six months from now whether the thing it approved has changed underneath you.
+
+Safety-critical software worked out the shape of this problem decades ago. Avionics, medical devices, automotive — they carry traceability from requirement to evidence because they have to. My argument is that as generation gets cheaper, ordinary software starts to need the same shape, and that the tooling to produce it is finally buildable.
+
+So I wrote up a proposal I have been calling the Verification Compiler:
+
+→ turn the project into a graph of artifacts
+→ traverse it deterministically to assemble bounded review packages
+→ let models review those packages during development
+→ keep humans in authority where it matters
+→ preserve the result as evidence, not conversation
+
+I want to be straight about what this is: a whitepaper-level idea, not a product, and not a claim that an LLM can certify anything. Human sign-off does not move. But a signal of how much verification is still ahead of you is genuinely useful — and for teams who will never chase certification, it is a code quality signal richer than anything we have today.
+
+New video walks through the whole argument, with a companion repo: the whitepaper, the evidence trail from running the idea against its own paper, and an agent handoff so you can point your own coding agent at it and have it build a version.
+
+When generation is nearly free, what becomes scarce? My bet is evidence you can inspect. What is yours?
+
+Link in the comments.
+
+#AI #SoftwareEngineering #Verification #AIEngineering #SafetyCritical

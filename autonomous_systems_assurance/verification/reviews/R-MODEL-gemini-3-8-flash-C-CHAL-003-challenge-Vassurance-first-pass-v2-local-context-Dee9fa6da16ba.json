@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-003-challenge-Vassurance-first-pass-v2-local-context-Dee9fa6da16ba",
+  "package_id": "P-C-CHAL-003-challenge",
+  "input_digest": "ee9fa6da16bad7bb1ce5ec149dd9afefe6689d705255a2d59a8b377b99004a9e",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The claim is explicitly scoped to EASA's Notice of Proposed Amendment (NPA 2025-07(B)) as proposed candidate material rather than an adopted decision or operationalized DAA approval. The supplied NPA text directly substantiates each enumerated element: operational domain (GM1 AI.150), system development assurance (AMC1 AI.150), supervised learning assurance (AMC2 AI.150), configuration and life-cycle data (AMC1/AMC2 AI.150), and continuous risk assessment with in-service monitoring (DS.AI.160, AMC1 AI.160(a)). The challenge regarding final adoption and application-specific operationalization is properly preserved by the claim's provisional status and stated scope limits.",
+  "evidence_locators": [
+    "S-CHAL-002-R2 (NPA 2025-07 (B), PDF pp. 24\u201326, DS.AI.150, AMC1 AI.150, AMC2 AI.150)",
+    "S-CHAL-002-R3 (NPA 2025-07 (B), PDF pp. 31\u201333, GM1 AI.150, DS.AI.160, AMC1 AI.160(a))"
+  ],
+  "limitations": [
+    "Inspection is bounded to NPA 2025-07(B) proposed text; final EASA decision, comment-response document (CRD), and subsequent ED-324 adoption status remain to be tracked."
+  ],
+  "resolves": []
+}

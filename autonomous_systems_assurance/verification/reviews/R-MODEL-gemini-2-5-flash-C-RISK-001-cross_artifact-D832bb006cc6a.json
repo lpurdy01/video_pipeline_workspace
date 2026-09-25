@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-RISK-001-cross_artifact-D832bb006cc6a",
+  "package_id": "P-C-RISK-001-cross_artifact",
+  "input_digest": "832bb006cc6a3a09162d7def313a10bd7c9c9325eb1a849592202267fce55be4",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of claim C-RISK-001 explicitly preserves its scope and limitations. The claim, supported by AC 25.1309-1A, describes historical FAA guidance for conventional system safety. All uses consistently frame this guidance as 'historical context,' a 'useful shape for the question,' or a 'system-safety framework,' and explicitly state that it is 'not a learned-model acceptance method' or a 'ready-made calculation for a trained perception model.' This directly addresses the claim's stated scope and the challenge to avoid treating it as a learned-model acceptance method or a numerical acceptance rule for perception error.",
+  "evidence_locators": [
+    "resource_composition/figures.md (F-009 visual limit)",
+    "research/integration_round4.md (Risk and probability distinctions section)",
+    "resource_composition/whitepaper_outline.md (Section 3, Coverage and language gates)",
+    "research/contributions/risk_evidence/findings.md (The usable distinction section, Proposed paper/video use)"
+  ],
+  "limitations": [
+    "The FAA AC 25.1309-1A is historical 1988 guidance for conventional transport-category airplane systems and is not a direct learned-model acceptance method or a numerical acceptance rule for a model's perception error.",
+    "Conventional component-failure probability reasoning from AC 25.1309-1A cannot be transferred to distribution-dependent learned behavior without a justified model of scenarios, exposure, dependencies, and mitigations.",
+    "Current certification basis and FAA guidance for a particular aircraft/project would need to be verified, as this advisory circular is not a substitute for contemporary learned-model standards."
+  ],
+  "resolves": []
+}

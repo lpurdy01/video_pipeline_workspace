@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "status": "planned_allocation_not_active_lock_registry",
+  "path_base": "autonomous_systems_assurance/",
+  "coordinator": "integrator",
+  "lanes": [
+    {
+      "id": "road",
+      "role": "research",
+      "id_prefixes": {"source": "S-ROAD-", "claim": "C-ROAD-"},
+      "write_paths": ["research/contributions/road/", "coordination/handoffs/road/"],
+      "focus": "Road authorization scope, deployed autonomy and current investigations"
+    },
+    {
+      "id": "air",
+      "role": "research",
+      "id_prefixes": {"source": "S-AIR-", "claim": "C-AIR-"},
+      "write_paths": ["research/contributions/air/", "coordination/handoffs/air/"],
+      "focus": "DAA implementations, approval records and aviation AI guidance"
+    },
+    {
+      "id": "method",
+      "role": "research",
+      "id_prefixes": {"source": "S-METHOD-", "claim": "C-METHOD-"},
+      "write_paths": ["research/contributions/method/", "coordination/handoffs/method/"],
+      "focus": "Learning assurance, runtime assurance, interpretability and compact models"
+    },
+    {
+      "id": "assurance_authority",
+      "role": "research",
+      "id_prefixes": {"source": "S-AUTH-", "claim": "C-AUTH-"},
+      "write_paths": ["research/contributions/assurance_authority/", "coordination/handoffs/assurance_authority/"],
+      "focus": "Authority and standards map for frozen trained components; status, scope and clause-level evidence"
+    },
+    {
+      "id": "assurance_evidence",
+      "role": "research",
+      "id_prefixes": {"source": "S-EVID-", "claim": "C-EVID-"},
+      "write_paths": ["research/contributions/assurance_evidence/", "coordination/handoffs/assurance_evidence/"],
+      "focus": "Evidence methods for data, scenarios, statistics, uncertainty, formal analysis, runtime assurance and change control"
+    },
+    {
+      "id": "assurance_challenge",
+      "role": "research",
+      "id_prefixes": {"source": "S-CHAL-", "claim": "C-CHAL-"},
+      "write_paths": ["research/contributions/assurance_challenge/", "coordination/handoffs/assurance_challenge/"],
+      "focus": "Independent search for contrary public end-to-end methods, accepted means and evidence that defeats the planned gap finding"
+    },
+    {
+      "id": "paper",
+      "role": "composition",
+      "write_paths": ["resource_composition/", "coordination/handoffs/paper/"],
+      "focus": "Rigorous manuscript, claim uses, argument structure and figure specifications"
+    },
+    {
+      "id": "video",
+      "role": "production",
+      "write_paths": ["video/", "coordination/handoffs/video/"],
+      "focus": "Narrative, storyboard, visuals and project-scoped production pipeline"
+    }
+  ],
+  "integrator_only_paths": [
+    "research/sources.json",
+    "research/initial_findings.md",
+    "research/questions.md",
+    "verification/",
+    "wiki/",
+    "assurance/",
+    "planning/",
+    "publication/",
+    "coordination/tasks/",
+    "coordination/baselines/",
+    "coordination/lanes.json",
+    "AGENTS.md",
+    "PROJECT_BRIEF.md",
+    "README.md"
+  ],
+  "unlisted_paths": "read_only_until_coordinator_assigns_an_exclusive_owner",
+  "integration_rule": "Integrator writes a lane's inputs only after that lane hands off and pauses writes."
+}

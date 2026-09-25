@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-TRAIN-001-source_support-Vassurance-first-pass-v2-local-context-D16f2ee165010",
+  "package_id": "P-C-TRAIN-001-source_support",
+  "input_digest": "16f2ee165010bef3d84001b83d7c7f5a6f626b745b1776db39ec7ac28858ad86",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The captured text from AMLAS Version 1.1 (Artefact [L], Section 6, printed pp. 20\u201322 / PDF pp. 21\u201323) explicitly mandates that ML data requirements 'shall include consideration of the relevance, completeness, accuracy and balance of the data' and explicitly state assumptions regarding the operating environment. Furthermore, Examples 8, 10, and 12 directly illustrate installed sensor viewpoint/positioning, lighting variations, and label positioning for partially occluded pedestrians, respectively. Artifact uses adhere strictly to the guidance scope without implying regulatory approval or dataset compliance.",
+  "evidence_locators": [
+    "AMLAS Version 1.1, PDF pp. 21\u201323 (printed pp. 20\u201322), Artefact [L]: Data Requirements and Examples 8, 10, and 12"
+  ],
+  "limitations": [
+    "AMLAS v1.1 is guidance/academic methodology from the Assuring Autonomy International Programme, not a regulatory standard or certification baseline."
+  ],
+  "resolves": []
+}

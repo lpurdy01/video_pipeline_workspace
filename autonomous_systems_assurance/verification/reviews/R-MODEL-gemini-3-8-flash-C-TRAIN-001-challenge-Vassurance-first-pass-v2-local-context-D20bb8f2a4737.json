@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-TRAIN-001-challenge-Vassurance-first-pass-v2-local-context-D20bb8f2a4737",
+  "package_id": "P-C-TRAIN-001-challenge",
+  "input_digest": "20bb8f2a4737036226a56ea94cb34483d7cd21c6aaf96a8e5d107598b9c7b77f",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "AMLAS Version 1.1, Stage 2 Artefact [L] explicitly mandates that ML data requirements 'shall include consideration of the relevance, completeness, accuracy and balance of the data' and 'shall explicitly state the assumptions made with respect to the operating environment'. The specific items cited in the claim are accurately identified as illustrative examples rather than universal prescriptive configurations: Example 8 illustrates relevance via installed vehicle sensor viewpoint, Example 10 illustrates completeness via lighting variation (sunlight, cloud, headlights, street lighting), and Example 12 illustrates accuracy via labeling conventions for partially occluded pedestrians. The claim and its artifact uses maintain this distinction between normative data requirement categories and domain-specific examples.",
+  "evidence_locators": [
+    "AMLAS v1.1, Section 3, Stage 2 (Artefact [L]), PDF pp. 21\u201323 (printed pp. 20\u201322), Examples 8, 10, 12"
+  ],
+  "limitations": [
+    "AMLAS v1.1 is guidance from an academic research programme rather than an authoritative regulatory standard or means of compliance.",
+    "The examples in AMLAS do not define mandatory universal thresholds or fixed category bins for any operational deployment."
+  ],
+  "resolves": []
+}

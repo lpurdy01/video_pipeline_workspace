@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-AUTH-007-challenge-D7fc96f35ad65",
+  "package_id": "P-C-AUTH-007-challenge",
+  "input_digest": "7fc96f35ad65e3b7fefec2f92c1b5497b8b4eafa01dccd7c704ae06f90d66d27",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The challenge explicitly requires inspecting the licensed standard and determining whether the 2026 CSDS proposal affects the relevant clauses. The provided evidence explicitly states that 'The licensed full standard and proposal text were not acquired,' relying solely on the public product page and scope summary. Therefore, the review search is insufficient to satisfy the challenge.",
+  "evidence_locators": [
+    "S-AUTH-005 inspection_scope"
+  ],
+  "limitations": [
+    "The licensed full text of ANSI/UL 4600 Edition 3 and the August 2026 CSDS proposal must be acquired to verify whether the proposed changes affect the cited scope clauses."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-AIR2-002-cross_artifact-Dd8f164d7fb1e",
+  "package_id": "P-C-AIR2-002-cross_artifact",
+  "input_digest": "d8f164d7fb1eaacca20bd5b536f60eda4ac426ebf7c9ca2d321b121db717c3d7",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifact accurately incorporates the claim's details regarding the 2022 FAA/GA-ASI report's flight testing and sensor data comparison. It explicitly preserves the claim's limitations and challenge by stating that the report 'does not certify the complete system, aircraft installation or operation.'",
+  "evidence_locators": [
+    "research/contributions/air_round2/findings.md"
+  ],
+  "limitations": [
+    "The report references associated reports not inspected here",
+    "Context status is short_excerpt_only"
+  ],
+  "resolves": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-AUTH-002-cross_artifact-Vassurance-first-pass-v2-local-context-De4ac4b14fd32",
+  "package_id": "P-C-AUTH-002-cross_artifact",
+  "input_digest": "e4ac4b14fd327b9ca093f6e296956c98d957d7e104858155737be8a8f0d1ba13",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all supplied artifact uses (whitepaper, script outline, treatment, narration map, visual inventory, crosswalk, and assurance case), the claim is consistently cited within its defined scope: as FAA roadmap framing distinguishing static learned AI from online learning and noting that offline updates require design-time safety assurance. Artifacts repeatedly reinforce that this roadmap framing is non-binding direction-setting guidance rather than an established means of compliance or operational approval.",
+  "evidence_locators": [
+    "S-AUTH-001 physical p. 11 / printed p. 10",
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_authority/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [
+    "Review is restricted to the supplied artifact text excerpts within the review packet.",
+    "The 2024 FAA Roadmap is direction-setting agency material and does not constitute a formal means of compliance or certification standard."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-003-challenge-Dee9fa6da16ba",
+  "package_id": "P-C-CHAL-003-challenge",
+  "input_digest": "ee9fa6da16bad7bb1ce5ec149dd9afefe6689d705255a2d59a8b377b99004a9e",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The claim strictly bounds itself to EASA NPA 2025-07(B) as proposed material and a candidate lifecycle. Inspection of DS.AI.150, AMC1 AI.150, AMC2 AI.150, and DS.AI.160 confirms that the proposal spans operational domain/ODD, risk assessment, system development assurance, supervised learning assurance (recognising ED-324/ARP6983), lifecycle configuration data, and continuous in-service monitoring. No counterevidence contradicts this characterisation within its stated provisional and proposed scope.",
+  "evidence_locators": [
+    "S-CHAL-002, PDF pp. 24\u201326 (DS.AI.150, AMC1 AI.150, AMC2 AI.150)",
+    "S-CHAL-002, PDF pp. 31\u201333 (GM1 AI.150, DS.AI.160, AMC1 AI.160(a))",
+    "assurance/method_crosswalk.json (M-EASA-DSAI-001)"
+  ],
+  "limitations": [
+    "Review is bounded to the consultation draft NPA 2025-07(B); it does not establish final AMC/GM adoption or whether subsequent comment-response decisions will modify the proposed objectives.",
+    "Proposed reliance on EUROCAE ED-324 / SAE ARP6983 remains subject to the finalisation and publication status of that standard."
+  ],
+  "resolves": []
+}

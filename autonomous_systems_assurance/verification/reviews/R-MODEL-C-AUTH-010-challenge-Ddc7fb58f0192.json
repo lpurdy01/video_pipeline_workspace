@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-AUTH-010-challenge-Ddc7fb58f0192",
+  "package_id": "P-C-AUTH-010-challenge",
+  "input_digest": "dc7fb58f01924e72c1ee2d8f65b81b0f1f3a9d98c1b783751ec4c1c7d7ac5b0c",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim accurately reflects the FAA's specific framing that learned AI breaks direct lower-level requirement traceability to the learned algorithm. The claim's scope explicitly prevents the misinterpretation that all conventional hardware/software traceability or assurance methods disappear, which aligns with the source's statement that conventional methods still apply to the item hardware and software itself.",
+  "evidence_locators": [
+    "PDF p. 14"
+  ],
+  "limitations": [
+    "The claim is limited to the FAA's framing in the 2024 roadmap and does not establish a universal regulatory rule or that no alternative assurance methods exist."
+  ],
+  "resolves": []
+}

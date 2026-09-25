@@ -1,0 +1,22 @@
+{
+  "id": "R-FIRSTPASS-SOURCE-C-EVID-003-20260916",
+  "package_id": "P-C-EVID-003-source_support",
+  "input_digest": "ab6f9e201e5fbc0890ce4153aad76f21d00552c3719fe9b7886189ca49bdada3",
+  "task": "source_support",
+  "reviewer_id": "first-pass-source-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-source-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The paper estimates an accident probability under a base distribution of standard traffic behavior and identifies estimating that distribution as essential. This supports the conditional nature of the risk metric and the claim's rejection of unconditional safety inference from total miles. The stated simulator and threshold conditions remain necessary qualifications.",
+  "evidence_locators": [
+    "S-EVID-003-R1 \u2014 PDF p. 1, abstract and introduction",
+    "S-EVID-003-R2 \u2014 PDF p. 2, base distribution and simulation inputs"
+  ],
+  "limitations": [
+    "This is a highway research case study, not a regulator-approved safety case.",
+    "The source does not validate simulator fidelity, tail assumptions, or transfer to aircraft encounters."
+  ],
+  "resolves": []
+}

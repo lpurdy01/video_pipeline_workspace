@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-001-challenge-D5357f5b19bdc",
+  "package_id": "P-C-CHAL-001-challenge",
+  "input_digest": "5357f5b19bdc78363a25897f38f7d5a31573cc4fb494623812bd17bea8ccdaaa",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The claim accurately reflects the content of MAA/RN/2025/04, which outlines an applicant-specific MCRI path for certified military air systems and recommends fixed supervised models within a defined ODD for early ML applications. The challenge to inspect underlying MMAC/MCRI material could not be fulfilled as it is explicitly noted as non-public in the provided source's limitations. The claim's scope and the source's jurisdiction prevent transfer to civil approval, aligning with the challenge's instruction.",
+  "evidence_locators": [
+    "S-CHAL-001-R1: PDF pp. 1\u20132, paragraphs 2\u20134, Scope, Implementation and Background",
+    "S-CHAL-001-R2: PDF pp. 2\u20133, paragraphs 6\u20137, Certified Air Systems"
+  ],
+  "limitations": [
+    "The review could not inspect the MAA's underlying MMAC/MCRI material or a completed public MCRI, as this material was not provided and is noted as non-public. This prevents a full determination of what is strictly mandatory versus recommended in the broader regulatory context beyond the wording of the notice itself."
+  ],
+  "resolves": []
+}

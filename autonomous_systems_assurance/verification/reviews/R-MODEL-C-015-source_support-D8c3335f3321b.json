@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-015-source_support-D8c3335f3321b",
+  "package_id": "P-C-015-source_support",
+  "input_digest": "8c3335f3321b74b6c509cf2607901f606b0da1659b7053b0102d12ba82d06045",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The supplied evidence contains only short excerpts without full local context for both the FAA Roadmap and the NASA paper. This is inadequate to verify the background concepts (versioned change and fallback) that inform the proposed architecture.",
+  "evidence_locators": [
+    "S-008-R1",
+    "S-010-R1"
+  ],
+  "limitations": [
+    "Require full local context for S-008 and S-010 to verify the background concepts of versioned change and fallback."
+  ],
+  "resolves": []
+}

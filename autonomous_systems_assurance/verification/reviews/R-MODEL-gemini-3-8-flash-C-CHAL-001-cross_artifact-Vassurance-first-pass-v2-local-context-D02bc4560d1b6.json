@@ -1,0 +1,35 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-001-cross_artifact-Vassurance-first-pass-v2-local-context-D02bc4560d1b6",
+  "package_id": "P-C-CHAL-001-cross_artifact",
+  "input_digest": "02bc4560d1b6fa90072ce3e5029bdcbf4eba2f8b24030dce5b260a735d825144",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "All artifact uses across architecture, crosswalks, assurance case, planning notes, video script/visual materials, and whitepaper consistently maintain the claim's exact scope and limitations. Every occurrence explicitly identifies the UK MAA regulatory notice (MAA/RN/2025/04) as case-specific military aviation guidance requiring applicant-specific MCRI agreement, accurately characterizes the recommendation for fixed supervised models in a defined ODD for early safety-related ML applications, and explicitly notes that it does not constitute civil airworthiness approval or a public product safety case.",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "assurance/assurance_case.json",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "assurance/method_crosswalk.json",
+    "research/contributions/assurance_challenge/findings.md",
+    "research/integration_round3.md",
+    "resource_composition/figures.md",
+    "resource_composition/whitepaper.md",
+    "resource_composition/whitepaper_outline.md",
+    "video/script.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "MAA/RN/2025/04 (PDF pp. 1\u20133, paras 2\u20137)"
+  ],
+  "limitations": [
+    "UK military aviation guidance effective 10 October 2025; not civil-airworthiness approval or a product safety case",
+    "Underlying MCRI submissions, agreements, and specific air-system compliance evidence remain applicant-specific and non-public"
+  ],
+  "resolves": []
+}

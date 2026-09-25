@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-RISK-001-cross_artifact-D99f5a8a5b6c6",
+  "package_id": "P-C-RISK-001-cross_artifact",
+  "input_digest": "99f5a8a5b6c6ea27f8b928fd14404612fb6e66f0c438ab051dbce683355f88c6",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts consistently frame the FAA AC 25.1309-1A guidance as historical context for conventional system safety. They explicitly warn against using its probability/severity relationship as a direct numerical acceptance method, safety score, or component failure-rate arithmetic for learned models, perfectly preserving the claim's scope and limitations.",
+  "evidence_locators": [
+    "research/integration_round4.md (Risk and probability distinctions; Source-quality and conflict ledger)",
+    "research/contributions/risk_evidence/findings.md (The usable distinction; Proposed paper/video use)",
+    "resource_composition/figures.md (F-009)"
+  ],
+  "limitations": [
+    "The current certification basis and current FAA guidance for the particular aircraft/project must still be verified, as AC 25.1309-1A is historical guidance."
+  ],
+  "resolves": []
+}

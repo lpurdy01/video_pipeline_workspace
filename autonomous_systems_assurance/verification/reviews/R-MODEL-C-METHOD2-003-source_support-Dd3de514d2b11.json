@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-METHOD2-003-source_support-Dd3de514d2b11",
+  "package_id": "P-C-METHOD2-003-source_support",
+  "input_digest": "d3de514d2b11badbf9140ba0827fcb64ffc1b07db4c12e0a55fef7acda4f5aa3",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided abstract excerpts confirm that the monitor's sample rate (timely detection) is an explicit assumption for verifying a system with an untrusted black box component. However, the excerpts do not explicitly mention the 'trusted recovery controller' assumption. Because the full paper returned a 403 error and only short abstract excerpts were captured, the evidence is insufficient to fully verify all parts of the claim.",
+  "evidence_locators": [
+    "S-METHOD2-003-R1",
+    "S-METHOD2-003-R2"
+  ],
+  "limitations": [
+    "Full text of the NASA research paper is absent due to a 403 error on the NTRS page.",
+    "The captured short excerpts do not contain the text required to verify the 'trusted recovery controller' portion of the claim."
+  ],
+  "resolves": []
+}

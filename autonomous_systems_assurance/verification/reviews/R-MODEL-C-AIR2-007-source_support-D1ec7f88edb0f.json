@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-AIR2-007-source_support-D1ec7f88edb0f",
+  "package_id": "P-C-AIR2-007-source_support",
+  "input_digest": "1ec7f88edb0f80f347ff051cf88231d9048c3569eee8a1907cc1bc67bd0ec49f",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided evidence lacks the full local context necessary to verify the claim's specific definitions of 'learned AI' versus 'learning AI' and their respective assurance strategies. Only a short excerpt ('each new version is subjected to safety assurance') is available, which is insufficient to confirm the complete claim.",
+  "evidence_locators": [
+    "S-AIR2-007-R1"
+  ],
+  "limitations": [
+    "Full text of PDF pp. 10-11 is missing; require the complete context to verify the definitions and assurance strategies for learned vs. learning AI."
+  ],
+  "resolves": []
+}

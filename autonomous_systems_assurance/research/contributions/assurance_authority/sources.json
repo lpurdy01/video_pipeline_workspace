@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-16",
+  "sources": [
+    {
+      "id": "S-AUTH-001",
+      "title": "Roadmap for Artificial Intelligence Safety Assurance, Version I",
+      "publisher": "Federal Aviation Administration",
+      "url": "https://www.faa.gov/aircraft/air_cert/step/roadmap_for_AI_safety_assurance",
+      "published_at": "2024-07-23",
+      "source_type": "regulator_roadmap",
+      "jurisdiction": "US civil aviation",
+      "accessed_at": "2026-09-23",
+      "inspection_scope": "Inspected the complete 31-page FAA PDF, Version I. Relevant passages: foreword; pp. 3-5 (purpose, principles and stated industry-method gap); pp. 7-11 (existing ecosystem and learned-versus-learning distinction); pp. 12, 24-30 (consensus standards, research and project-specific path discussion).",
+      "regions": [
+        {
+          "id": "S-AUTH-001-R1",
+          "locator": "PDF physical p. 6 / printed p. 5, introduction",
+          "excerpt": "The industry lacks a method for the safety assurance of AI.",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/retrieval_check/faa_ai_roadmap.pdf",
+          "snapshot_sha256": "b8683625358a9f624aaf1567c0b083ad22235d3b518684f499b1e9c588fc4908",
+          "context_path": "research/contributions/assurance_authority/out/context/faa_ai_roadmap_printed_p5.txt"
+        },
+        {
+          "id": "S-AUTH-001-R2",
+          "locator": "PDF physical p. 11 / printed p. 10, learned AI implementation and update discussion",
+          "excerpt": "each new version is subjected to safety assurance",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/retrieval_check/faa_ai_roadmap.pdf",
+          "snapshot_sha256": "b8683625358a9f624aaf1567c0b083ad22235d3b518684f499b1e9c588fc4908",
+          "context_path": "research/contributions/assurance_authority/out/context/faa_ai_roadmap_p11.txt"
+        },
+        {
+          "id": "S-AUTH-001-R3",
+          "locator": "PDF physical p. 12 / printed p. 11, project-specific engagement",
+          "excerpt": "using project-specific issue papers that can be tailored to each project",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/retrieval_check/faa_ai_roadmap.pdf",
+          "snapshot_sha256": "b8683625358a9f624aaf1567c0b083ad22235d3b518684f499b1e9c588fc4908",
+          "context_path": "research/contributions/assurance_authority/out/context/faa_ai_roadmap_printed_p11.txt"
+        },
+        {
+          "id": "S-AUTH-001-R4",
+          "locator": "PDF p. 14, application of principles to aircraft certification safety assurance of learned AI implementations",
+          "excerpt": "The unique characteristic of AI is that the implementation is learned, rather than designed.",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/retrieval_check/faa_ai_roadmap.pdf",
+          "snapshot_sha256": "b8683625358a9f624aaf1567c0b083ad22235d3b518684f499b1e9c588fc4908",
+          "context_path": "research/contributions/assurance_authority/out/context/faa_ai_roadmap_pp14.txt"
+        }
+      ],
+      "limitations": "This 2024 roadmap is a living direction-setting document, not a binding means of compliance, type certificate, TSO authorization, or approval of a particular trained model. Its statement about the industry-method gap is date-bound and cannot establish that no qualifying method now exists.",
+      "independence_group": "FAA-AI-ROADMAP",
+      "refresh_days": 60
+    },
+    {
+      "id": "S-AUTH-002",
+      "title": "EASA Concept Paper: Guidance for Level 1 & 2 Machine Learning Applications, Issue 02",
+      "publisher": "European Union Aviation Safety Agency",
+      "url": "https://www.easa.europa.eu/en/document-library/general-publications/easa-artificial-intelligence-concept-paper-issue-2",
+      "published_at": "2024-03-06",
+      "source_type": "regulator_concept_guidance",
+      "jurisdiction": "EASA civil aviation",
+      "accessed_at": "2026-09-16",
+      "inspection_scope": "Inspected the complete 285-page Issue 02 PDF. Relevant passages: pp. 4-6 (purpose, non-definitive status and approval-use qualification); pp. 8-9 (AI assurance, explainability and residual-risk framing); p. 50 onward (learning assurance objectives, not independently reinterpreted here).",
+      "regions": [
+        {
+          "id": "S-AUTH-002-R1",
+          "locator": "PDF p. 4, foreword",
+          "excerpt": "does not constitute at this stage definitive or detailed guidance",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": "verification/out/sources/retrieval_check/easa_issue2.pdf",
+          "snapshot_sha256": "daa1525eb50fd31c3bad8928c012324a002cacffb9e4ac52591f7913e0b342ed"
+        },
+        {
+          "id": "S-AUTH-002-R2",
+          "locator": "PDF p. 5, use of guidance pending IRs or AMC",
+          "excerpt": "facilitating the preparation of the approval or certification",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": "verification/out/sources/retrieval_check/easa_issue2.pdf",
+          "snapshot_sha256": "daa1525eb50fd31c3bad8928c012324a002cacffb9e4ac52591f7913e0b342ed"
+        },
+        {
+          "id": "S-AUTH-002-R3",
+          "locator": "PDF p. 6, disclaimer",
+          "excerpt": "does not constitute in itself any warranty of fitness to obtain a final EASA approval",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": "verification/out/sources/retrieval_check/easa_issue2.pdf",
+          "snapshot_sha256": "daa1525eb50fd31c3bad8928c012324a002cacffb9e4ac52591f7913e0b342ed"
+        }
+      ],
+      "limitations": "Issue 02 is EASA concept guidance for Level 1 and Level 2 ML applications, not definitive detailed guidance, an AMC, or an approval decision. Its document status requires separate treatment from the later Proposed Issue 03 and from any completed RMT.0742 output.",
+      "independence_group": "EASA-AI-CONCEPT",
+      "refresh_days": 60
+    },
+    {
+      "id": "S-AUTH-003",
+      "title": "EASA Concept Paper: Guidance for Safety-Related Artificial Intelligence Applications — Proposed Issue 03",
+      "publisher": "European Union Aviation Safety Agency",
+      "url": "https://www.easa.europa.eu/en/document-library/general-publications/easa-artificial-intelligence-concept-paper-proposed-issue-3",
+      "published_at": "2026-06-03",
+      "source_type": "proposed_regulator_guidance",
+      "jurisdiction": "EASA civil aviation",
+      "accessed_at": "2026-09-16",
+      "inspection_scope": "Inspected the complete 239-page Proposed Issue 03 PDF and EASA publication metadata. Relevant passages: pp. 4-6 (status, scope, anticipated means of compliance and disclaimer); table of contents for coverage of AI assurance, advanced automation, risk mitigation and organisational provisions.",
+      "regions": [
+        {
+          "id": "S-AUTH-003-R1",
+          "locator": "PDF p. 5, foreword",
+          "excerpt": "does not constitute at this stage definitive or detailed guidance",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": "verification/out/sources/retrieval_check/easa_issue3.pdf",
+          "snapshot_sha256": "439655adb56e98d69c7501e66ced7eaaaa285bb29bd27e3dcea7aad590951a77"
+        },
+        {
+          "id": "S-AUTH-003-R2",
+          "locator": "PDF p. 6, anticipated means of compliance",
+          "excerpt": "not considered as either a complete or a binding set of means of compliance",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": "verification/out/sources/retrieval_check/easa_issue3.pdf",
+          "snapshot_sha256": "439655adb56e98d69c7501e66ced7eaaaa285bb29bd27e3dcea7aad590951a77"
+        },
+        {
+          "id": "S-AUTH-003-R3",
+          "locator": "PDF p. 6, disclaimer",
+          "excerpt": "does not constitute in itself any warranty of fitness to obtain a final EASA approval",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": "verification/out/sources/retrieval_check/easa_issue3.pdf",
+          "snapshot_sha256": "439655adb56e98d69c7501e66ced7eaaaa285bb29bd27e3dcea7aad590951a77"
+        }
+      ],
+      "limitations": "The title and text identify this as Proposed Issue 03. It supplies a rich set of candidate objectives and anticipated MOC but no final binding EASA AI certification basis. It cannot be presented as final rulemaking or proof that a given advanced-automation system satisfies approval requirements.",
+      "independence_group": "EASA-AI-CONCEPT",
+      "refresh_days": 30
+    },
+    {
+      "id": "S-AUTH-004",
+      "title": "ISO/PAS 8800:2024 — Road Vehicles — Safety and Artificial Intelligence",
+      "publisher": "International Organization for Standardization",
+      "url": "https://www.iso.org/standard/83303.html",
+      "published_at": "2024-12-13",
+      "source_type": "standards_publisher_scope",
+      "jurisdiction": "International; series-production road vehicles",
+      "accessed_at": "2026-09-16",
+      "inspection_scope": "Inspected ISO's public product page, public abstract, lifecycle and edition/status metadata. The 172-page licensed text was not acquired or inspected.",
+      "regions": [
+        {
+          "id": "S-AUTH-004-R1",
+          "locator": "ISO public page, status and edition metadata",
+          "excerpt": "Publicly Available Specification ... Published (Edition 1, 2024)",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        },
+        {
+          "id": "S-AUTH-004-R2",
+          "locator": "ISO public abstract, examples",
+          "excerpt": "Examples of AI elements within the vehicle include the trained AI model",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        },
+        {
+          "id": "S-AUTH-004-R3",
+          "locator": "ISO public abstract, safety-case statement",
+          "excerpt": "construct a convincing safety assurance claim for the absence of unreasonable risk",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "ISO/PAS 8800 is a published Publicly Available Specification for a stated road-vehicle scope, not an aviation regulation or a disclosed product-assurance result. The licensed text, clauses, conformity mechanism and any real operator's conformance evidence remain uninspected.",
+      "independence_group": "ISO-8800",
+      "refresh_days": 90
+    },
+    {
+      "id": "S-AUTH-005",
+      "title": "ANSI/UL 4600, Standard for Evaluation of Autonomous Products, Edition 3",
+      "publisher": "UL Standards & Engagement",
+      "url": "https://www.shopulstandards.com/ProductDetail.aspx?productId=UL4600_3_S_20230317",
+      "published_at": "2023-03-17",
+      "source_type": "consensus_standard_public_scope",
+      "jurisdiction": "ANSI/UL autonomous-product safety arguments; voluntary consensus standard",
+      "accessed_at": "2026-09-23",
+      "inspection_scope": "Captured and inspected UL’s public product page, Edition 3 status, ANSI approval date and public scope summary. The licensed full standard and proposal text were not acquired.",
+      "regions": [
+        {
+          "id": "S-AUTH-005-R1",
+          "locator": "UL public product page, status/date",
+          "excerpt": "ACTIVE ... ANSI Approved: March 17, 2023",
+          "context_status": "full_context",
+          "snapshot_path": "research/source_recovery/out/ul_4600/snapshot.html",
+          "snapshot_sha256": "7b181b07cada1b3f4f2df1f43239a50df9e83e1533559142d522f7c8a63c82ca",
+          "context_path": "research/contributions/assurance_authority/out/context/ul_4600_public_scope.txt"
+        },
+        {
+          "id": "S-AUTH-005-R2",
+          "locator": "UL public scope summary, 2.1.1",
+          "excerpt": "building and evaluating a safety argument for vehicles that can operate in an autonomous mode",
+          "context_status": "full_context",
+          "snapshot_path": "research/source_recovery/out/ul_4600/snapshot.html",
+          "snapshot_sha256": "7b181b07cada1b3f4f2df1f43239a50df9e83e1533559142d522f7c8a63c82ca",
+          "context_path": "research/contributions/assurance_authority/out/context/ul_4600_public_scope.txt"
+        },
+        {
+          "id": "S-AUTH-005-R3",
+          "locator": "UL public scope summary, 2.1.6",
+          "excerpt": "necessary, but possibly not sufficient, level of completeness and rigor",
+          "context_status": "full_context",
+          "snapshot_path": "research/source_recovery/out/ul_4600/snapshot.html",
+          "snapshot_sha256": "7b181b07cada1b3f4f2df1f43239a50df9e83e1533559142d522f7c8a63c82ca",
+          "context_path": "research/contributions/assurance_authority/out/context/ul_4600_public_scope.txt"
+        }
+      ],
+      "limitations": "The active consensus standard is not a government approval, does not prove a particular vehicle conforms, and its public scope explicitly leaves completeness/rigor conditional. A CSDS proposal dated August 2026 is a proposed revision, not evidence that Edition 3 has changed.",
+      "independence_group": "UL-4600",
+      "refresh_days": 90
+    },
+    {
+      "id": "S-AUTH-006",
+      "title": "Automated Driving Systems — NHTSA current operating guidance page",
+      "publisher": "National Highway Traffic Safety Administration",
+      "url": "https://www.nhtsa.gov/vehicle-manufacturers/automated-driving-systems",
+      "published_at": null,
+      "source_type": "authority_guidance_page",
+      "jurisdiction": "US federal motor-vehicle safety; ADS Levels 3-5 guidance",
+      "accessed_at": "2026-09-16",
+      "inspection_scope": "Inspected NHTSA's current Automated Driving Systems page and its ADS 2.0 discussion, including stated current-operating-guidance status, voluntary/no-approval boundaries and the twelve safety elements.",
+      "regions": [
+        {
+          "id": "S-AUTH-006-R1",
+          "locator": "NHTSA page, ADS 2.0 status explanation",
+          "excerpt": "no compliance requirement or enforcement mechanism",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        },
+        {
+          "id": "S-AUTH-006-R2",
+          "locator": "NHTSA page, current guidance and approval statement",
+          "excerpt": "assessments are not subject to Federal approval",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        },
+        {
+          "id": "S-AUTH-006-R3",
+          "locator": "NHTSA page, safety-element list",
+          "excerpt": "Operational Design Domain (ODD) ... Object and Event Detection and Response (OEDR) ... Fall Back",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "The page describes ADS 2.0 as NHTSA's current operating guidance, but it is a voluntary policy originating in 2017 and does not supply a frozen-model certification criterion. Later NHTSA activity must be checked separately rather than inferred from this page.",
+      "independence_group": "NHTSA-ADS-GUIDANCE",
+      "refresh_days": 30
+    },
+    {
+      "id": "S-AUTH-007",
+      "title": "Trump’s Transportation Department Cuts Red Tape to Safely Fast-Track Automated Vehicle Innovation",
+      "publisher": "National Highway Traffic Safety Administration",
+      "url": "https://www.nhtsa.gov/press-releases/cutting-red-tape-safely-fast-track-automated-vehicle",
+      "published_at": "2026-07-30",
+      "source_type": "authority_policy_announcement",
+      "jurisdiction": "US federal motor-vehicle safety and automated vehicles",
+      "accessed_at": "2026-09-16",
+      "inspection_scope": "Inspected the complete NHTSA announcement, including its stated temporary Zoox exemption, A2SCEND performance-standard-development initiative, planned updated guidance and Part 555 description.",
+      "regions": [
+        {
+          "id": "S-AUTH-007-R1",
+          "locator": "NHTSA announcement, lines 55-58",
+          "excerpt": "Accelerate development of first-ever AV performance standards",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        },
+        {
+          "id": "S-AUTH-007-R2",
+          "locator": "NHTSA announcement, lines 55-56",
+          "excerpt": "temporary exemption ... up to 2,500 vehicles annually for two years",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        },
+        {
+          "id": "S-AUTH-007-R3",
+          "locator": "NHTSA announcement, lines 63-64 and 72-73",
+          "excerpt": "updating its technical guidance for AVs for the first time since 2017",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "This is an authority announcement of initiatives and a limited exemption, not the future performance standards, updated technical guidance, a general vehicle approval, or disclosure of a learned model's evidence. It creates a time-sensitive tension with the older ADS 2.0 page, which an integrator must reconcile at publication time.",
+      "independence_group": "NHTSA-AV-POLICY-2026",
+      "refresh_days": 14
+    }
+  ]
+}

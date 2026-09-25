@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-007-challenge-D368a94d91eac",
+  "package_id": "P-C-007-challenge",
+  "input_digest": "368a94d91eac0dcbf9820384134756a3218099783e3fa668c3519ce7576dee4e",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided evidence explicitly confirms that the FAA roadmap distinguishes between pre-deployment learning and learning during operation, and states that new versions are subjected to safety assurance. The claim accurately reflects this distinction within its stated scope, and no counterevidence was found in the supplied materials.",
+  "evidence_locators": [
+    "S-008",
+    "S-008-R1",
+    "research/initial_findings.md"
+  ],
+  "limitations": [
+    "Only the executive summary and the learned/learning distinction were inspected; remaining technical sections of the FAA roadmap require detailed review to verify clause-level guidance."
+  ],
+  "resolves": []
+}

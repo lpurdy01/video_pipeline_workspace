@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-RISK-001-challenge-Daec97a95ce2e",
+  "package_id": "P-C-RISK-001-challenge",
+  "input_digest": "aec97a95ce2e36ad52d678249cbd4ba9163f4d61e904503c2dc1c8ebbc282752",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim accurately reflects the historical AC 25.1309-1A framework for conventional systems. The challenge's warning against applying conventional failure-rate arithmetic to learned models is explicitly respected by the claim's scope and the project's research findings, which strictly bound this as historical context rather than a modern ML acceptance method.",
+  "evidence_locators": [
+    "S-RISK-001-R1",
+    "S-RISK-001-R2",
+    "research/contributions/risk_evidence/findings.md"
+  ],
+  "limitations": [
+    "The current FAA certification-basis guidance for the actual target aircraft class must still be retrieved and inspected, as AC 25.1309-1A is only historical context."
+  ],
+  "resolves": []
+}

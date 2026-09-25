@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "C-EVID-001",
+      "text": "NIST AI RMF 1.0 calls for documenting intended context, knowledge limits, data/TEVV considerations and post-deployment change and recovery processes across an AI lifecycle.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NIST voluntary, non-sector-specific AI risk-management guidance; not a safety certification criterion",
+      "evidence": [{"region_id": "S-EVID-001-R1", "relation": "supports"}, {"region_id": "S-EVID-001-R2", "relation": "supports"}, {"region_id": "S-EVID-001-R3", "relation": "supports"}],
+      "challenge": "Check the revised AI RMF and any sector profile before treating these outcomes as current guidance. A documented process is not proof that a learned road or aircraft system is acceptably safe.",
+      "review_records": []
+    },
+    {
+      "id": "C-EVID-002",
+      "text": "Combinatorial input-space coverage can expose missing combinations and quantify a selected dataset's coverage, but it does not by itself establish learned-model performance or a probability of safe operation.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NIST/Virginia Tech autonomy-assurance methods paper; selected variables and interaction strength govern the measure",
+      "evidence": [{"region_id": "S-EVID-002-R1", "relation": "supports"}, {"region_id": "S-EVID-002-R2", "relation": "supports"}],
+      "challenge": "For the worked case, make the ODD factors, discretization, selected interaction strength and coverage gaps inspectable; find a counterexample where an unmodelled factor or dependence defeats the measure.",
+      "review_records": []
+    },
+    {
+      "id": "C-EVID-003",
+      "text": "Rare-event simulation can estimate a risk metric conditional on a modeled traffic distribution, simulator and safety threshold, rather than proving unconditional safety from total test miles.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "O'Kelly et al. highway research case study using importance sampling; not a regulatory method",
+      "evidence": [{"region_id": "S-EVID-003-R1", "relation": "supports"}, {"region_id": "S-EVID-003-R2", "relation": "supports"}],
+      "challenge": "Independently validate the scenario generator, base-distribution tails, perception rendering, threshold and importance-sampling estimator before using a numerical result in an assurance argument. Test a shifted weather, sensor or adversary distribution.",
+      "review_records": []
+    },
+    {
+      "id": "C-EVID-004",
+      "text": "The studied modern neural networks were often poorly calibrated, and temperature scaling improved calibration empirically on the paper's evaluated settings.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Guo et al. classification experiments; a calibrated confidence estimate is not a system-level safety bound",
+      "evidence": [{"region_id": "S-EVID-004-R1", "relation": "supports"}, {"region_id": "S-EVID-004-R2", "relation": "supports"}],
+      "challenge": "Evaluate calibration separately for the released model, each relevant ODD partition and OOD/shift condition. Show how a calibrated output changes monitor or authority behavior; do not accept confidence as an unexplained safety score.",
+      "review_records": []
+    },
+    {
+      "id": "C-EVID-005",
+      "text": "The NASA runtime-assurance formalization can establish a system safety property for a black-box advanced controller only under explicit safe-start, monitor/timing, recovery-state and reversionary-controller premises.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NASA DASC 2024 formal runtime-assurance framework; formal model, not civil approval or an implementation assurance case",
+      "evidence": [{"region_id": "S-EVID-005-R1", "relation": "supports"}, {"region_id": "S-EVID-005-R2", "relation": "supports"}],
+      "challenge": "For the occluded-conflict case, prove or test each premise: available sensing, monitor detection latency, switch timing, dynamics bounds, recovery authority and correlated-failure behavior. A perception miss that the monitor cannot observe defeats the claimed rescue path.",
+      "review_records": []
+    },
+    {
+      "id": "C-EVID-006",
+      "text": "Some saliency methods evaluated by Adebayo et al. were insensitive to model parameters or training-label structure, so visually plausible saliency output alone is not evidence of a faithful model explanation.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Selected saliency methods and visual-classification experiments; not a verdict on all interpretability methods",
+      "evidence": [{"region_id": "S-EVID-006-R1", "relation": "supports"}, {"region_id": "S-EVID-006-R2", "relation": "supports"}],
+      "challenge": "Require method- and task-specific intervention/randomization checks, plus an explicit link from the explanation to a safety decision. Treat an explanation that cannot survive those checks as a diagnostic artifact, not assurance evidence.",
+      "review_records": []
+    },
+    {
+      "id": "C-EVID-007",
+      "text": "The inspected autonomous-vehicle neuron-coverage study reports a small positive association with steering-angle deviation but explicitly does not establish causation or a consistent test-adequacy indicator.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "One DNN and transformed-image test study; no demonstrated safety-failure threshold",
+      "evidence": [{"region_id": "S-EVID-007-R1", "relation": "supports"}, {"region_id": "S-EVID-007-R2", "relation": "supports"}],
+      "challenge": "Do not use neuron coverage, representation activation or any derived scalar as the project's composite safety score. Demonstrate predictive value against independently defined hazard outcomes across releases and ODD partitions before admitting it as supporting evidence.",
+      "review_records": []
+    }
+  ]
+}

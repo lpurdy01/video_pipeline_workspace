@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "C-ROAD-AIR-001",
+      "text": "Texas's commercial automated-vehicle authorization application requires the applicant to acknowledge applicable federal-law compliance of the automated driving system.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Texas program explanation inspected September 8, 2026; application acknowledgment, not a vehicle-specific compliance finding",
+      "evidence": [{"region_id": "S-ROAD-AIR-001-R1", "relation": "supports"}],
+      "challenge": "Read the enacted statute and final rules. An acknowledgment requirement does not establish how compliance was evaluated or whether a specific vehicle complies.",
+      "review_records": []
+    },
+    {
+      "id": "C-ROAD-AIR-002",
+      "text": "TxDMV states that commercial automated-vehicle authorization requirements became enforceable May 28, 2026.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Texas commercial driverless operation; dated program requirement",
+      "evidence": [{"region_id": "S-ROAD-AIR-001-R2", "relation": "supports"}],
+      "challenge": "Distinguish bill effective date from enforcement date; do not generalize this commercial authorization requirement to privately owned personal-use vehicles.",
+      "review_records": []
+    },
+    {
+      "id": "C-ROAD-AIR-003",
+      "text": "Texas DPS's first-responder interaction-plan page lists Tesla Cybercab Robotaxi as of September 8, 2026.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Texas DPS listing only",
+      "evidence": [{"region_id": "S-ROAD-AIR-002-R1", "relation": "supports"}],
+      "challenge": "The linked plan was not inspected, and this listing must not be treated as proof of operator authorization or federal compliance.",
+      "review_records": []
+    }
+  ]
+}

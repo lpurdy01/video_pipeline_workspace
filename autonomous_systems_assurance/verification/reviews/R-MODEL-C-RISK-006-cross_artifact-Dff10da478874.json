@@ -1,0 +1,24 @@
+{
+  "id": "R-MODEL-C-RISK-006-cross_artifact-Dff10da478874",
+  "package_id": "P-C-RISK-006-cross_artifact",
+  "input_digest": "ff10da4788743aa91f7e0e698274e27cbcf7b2c985942c570f846cf4ecb37129",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts consistently and accurately apply the claim, explicitly noting that EASA's Level 3B is 'reserved' with no assigned authority or responsibility, rather than an approved no-human category. They also correctly scope the material as proposed guidance (NPA 2025-07(B)) and explicitly warn against treating it as a final rule or a general road-automation taxonomy.",
+  "evidence_locators": [
+    "research/contributions/direction_evidence/findings.md",
+    "resource_composition/figures.md",
+    "research/integration_round5.md",
+    "video/script.md",
+    "video/nextgen_structure/visual_inventory.md"
+  ],
+  "limitations": [
+    "Check successor material (final EASA decision/CRD) before publication to ensure the proposed taxonomy remains unchanged."
+  ],
+  "resolves": []
+}

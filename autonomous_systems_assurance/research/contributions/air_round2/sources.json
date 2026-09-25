@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-08",
+  "sources": [
+    {
+      "id": "S-AIR2-001",
+      "title": "Detect and Avoid System",
+      "publisher": "General Atomics Aeronautical Systems, Inc.",
+      "url": "https://www.ga-asi.com/detect-and-avoid-system",
+      "published_at": null,
+      "source_type": "vendor_description",
+      "jurisdiction": "Vendor account; US and international UAS context",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected full public page, including historical DAA/ATAR description, claimed 2025 TSO target, sensor architecture and ACAS Xu discussion.",
+      "regions": [
+        {"id":"S-AIR2-001-R1","locator":"Lines 7-14, DAA standardization and proposed certification","excerpt":"TSO-C211 for DAA, and TSO-C212 for ATAR systems","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null},
+        {"id":"S-AIR2-001-R2","locator":"Lines 19-23, Due Regard Radar architecture","excerpt":"The DAA system must detect and avoid cooperative ... and non-cooperative ... aircraft","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null}
+      ],
+      "limitations":"Vendor marketing and product description. It does not establish that a TSO authorization was actually issued, that the system is installed on a civil aircraft, or that operations are unrestricted. The page contains historical/forward-looking statements.",
+      "independence_group":"GA-ASI-DAA",
+      "refresh_days":30
+    },
+    {
+      "id": "S-AIR2-002",
+      "title": "FAA/GA-ASI DAA Sensor Model Validation Final Report ASI-23126 Rev A",
+      "publisher": "Federal Aviation Administration and GA-ASI",
+      "url": "https://www.faa.gov/uas/programs_partnerships/GA-ASI",
+      "published_at":"2022-04-20",
+      "source_type":"authority_research_report",
+      "jurisdiction":"US civil UAS research",
+      "accessed_at":"2026-09-08",
+      "inspection_scope":"Inspected pages 5-7 of the 22-page PDF: purpose, flight test, TSO-C211 context, sensor types and model-validation scope.",
+      "regions":[
+        {"id":"S-AIR2-002-R1","locator":"PDF pp. 5-6, executive summary and introduction","excerpt":"The team collected sensor data (ATAR, ADS-B, and Active Surveillance)","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null},
+        {"id":"S-AIR2-002-R2","locator":"PDF p. 6, civil-approval and operational-scope discussion","excerpt":"its application in the National Airspace System (NAS) is still in its infancy","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null}
+      ],
+      "limitations":"A 2022 research deliverable and not a current product approval, installation approval, aircraft type certificate or operational authorization. The report references associated reports not inspected here.",
+      "independence_group":"FAA-GAASI-2022",
+      "refresh_days":365
+    },
+    {
+      "id":"S-AIR2-003",
+      "title":"Technical Standard Orders (TSO)",
+      "publisher":"Federal Aviation Administration",
+      "url":"https://www.faa.gov/aircraft/air_cert/design_approvals/tso",
+      "published_at":null,
+      "source_type":"authority_explanation",
+      "jurisdiction":"US civil aviation certification",
+      "accessed_at":"2026-09-08",
+      "inspection_scope":"Inspected FAA explanation of TSO minimum-performance scope, TSOA, installation approval and withdrawn/cancelled TSO distinctions.",
+      "regions":[
+        {"id":"S-AIR2-003-R1","locator":"TSO definition and installation paragraphs","excerpt":"Receiving a TSO Authorization is not an approval to install and use the article in the aircraft","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null}
+      ],
+      "limitations":"General explanatory page, not a specific article authorization or aircraft installation record.",
+      "independence_group":"FAA-TSO-PROCESS",
+      "refresh_days":180
+    },
+    {
+      "id":"S-AIR2-004",
+      "title":"FAA Order 8100.18A, Appendix C",
+      "publisher":"Federal Aviation Administration",
+      "url":"https://www.faa.gov/documentLibrary/media/Order/8100.18A.pdf",
+      "published_at":"2023-09-29",
+      "source_type":"authority_order",
+      "jurisdiction":"US civil aviation certification administration",
+      "accessed_at":"2026-09-08",
+      "inspection_scope":"Inspected Appendix C listing of TSO titles.",
+      "regions":[
+        {"id":"S-AIR2-004-R1","locator":"PDF p. 47, Appendix C TSO table","excerpt":"TSO-C211 Detect and Avoid (DAA) Systems; TSO-C212 Air-To-Air Radar (ATAR) For Traffic Surveillance","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null}
+      ],
+      "limitations":"A listing of TSO titles does not identify authorization holders, models, current authorization status or installations.",
+      "independence_group":"FAA-TSO-LIST",
+      "refresh_days":365
+    },
+    {
+      "id":"S-AIR2-005",
+      "title":"Draft TSO-C211a, Detect and Avoid (DAA) Systems",
+      "publisher":"Federal Aviation Administration",
+      "url":"https://www.faa.gov/aircraft/draft_docs/tso/tso_c211a",
+      "published_at":null,
+      "source_type":"draft_authority_standard",
+      "jurisdiction":"US civil aviation; draft certification standard",
+      "accessed_at":"2026-09-08",
+      "inspection_scope":"Inspected FAA search extract for applicability, draft effective-date placeholder, DO-365C Change 1 dependency, and functional classes including ACAS Xu.",
+      "regions":[
+        {"id":"S-AIR2-005-R1","locator":"Draft TSO-C211a sections 1-3 and table 1","excerpt":"This TSO is for manufacturers applying for a TSO authorization (TSOA) or letter of design approval (LODA)","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null}
+      ],
+      "limitations":"The retrieved document visibly contains an mm/dd/25 effective-date placeholder and bracketed transition date. Treat as draft/proposed material, not as evidence that the revision is effective or that any article is approved.",
+      "independence_group":"FAA-TSO-C211A-DRAFT",
+      "refresh_days":30
+    },
+    {
+      "id":"S-AIR2-006",
+      "title":"Draft TSO-C212a, Air-to-Air Radar (ATAR) for Traffic Surveillance",
+      "publisher":"Federal Aviation Administration",
+      "url":"https://www.faa.gov/aircraft/draft_docs/tso/tso_c212a",
+      "published_at":null,
+      "source_type":"draft_authority_standard",
+      "jurisdiction":"US civil aviation; draft certification standard",
+      "accessed_at":"2026-09-08",
+      "inspection_scope":"Inspected PDF pp. 1-8: draft status, radar classes, cooperative/non-cooperative detection, failure classifications, DO-178C/DO-254 data and separate installation approval.",
+      "regions":[
+        {"id":"S-AIR2-006-R1","locator":"PDF pp. 1-3, radar functions and failure classifications","excerpt":"The on-board radar complements other on-board airborne surveillance sensors by providing detection of non-cooperative traffic","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null},
+        {"id":"S-AIR2-006-R2","locator":"PDF p. 4, installation note","excerpt":"Installation of this article requires separate approval.","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null}
+      ],
+      "limitations":"Draft document with placeholder effective date. Its requirements are not evidence of authorization, installation or operational approval. RTCA documents referenced by the draft were not redistributed or inspected.",
+      "independence_group":"FAA-TSO-C212A-DRAFT",
+      "refresh_days":30
+    },
+    {
+      "id":"S-AIR2-007",
+      "title":"FAA Roadmap for Artificial Intelligence Safety Assurance, Version I",
+      "publisher":"Federal Aviation Administration",
+      "url":"https://www.faa.gov/aircraft/air_cert/step/roadmap_for_AI_safety_assurance",
+      "published_at":"2024-07-23",
+      "source_type":"authority_roadmap",
+      "jurisdiction":"US civil aviation",
+      "accessed_at":"2026-09-08",
+      "inspection_scope":"Inspected executive summary and PDF pp. 8-11, 24-30 covering learned versus learning AI, incremental assurance, RTA, formal/numerical methods, black-box validation and planned policy work.",
+      "regions":[
+        {"id":"S-AIR2-007-R1","locator":"PDF pp. 10-11, learned versus learning AI","excerpt":"each new version is subjected to safety assurance","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null},
+        {"id":"S-AIR2-007-R2","locator":"PDF pp. 24-25, research topics","excerpt":"Software Runtime Assurance in AI","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null},
+        {"id":"S-AIR2-007-R3","locator":"PDF pp. 27-30, milestones and research","excerpt":"Policy statement to inform applicants that plan to use AI in their systems ... discuss a certification path with the FAA early","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null}
+      ],
+      "limitations":"A roadmap and research/policy plan, not a certification standard or authorization. Dates and planned outputs are subject to change; detailed technical methods remain under development.",
+      "independence_group":"FAA-AI-ROADMAP",
+      "refresh_days":90
+    },
+    {
+      "id":"S-AIR2-008",
+      "title":"EASA Artificial Intelligence Concept Paper Issue 2",
+      "publisher":"European Union Aviation Safety Agency",
+      "url":"https://www.easa.europa.eu/en/document-library/general-publications/easa-artificial-intelligence-concept-paper-issue-2",
+      "published_at":"2024-03-06",
+      "source_type":"authority_concept_paper",
+      "jurisdiction":"European civil aviation",
+      "accessed_at":"2026-09-08",
+      "inspection_scope":"Inspected EASA landing page summary and publication metadata; linked PDF retrieval was rate-limited and its full text was not inspected.",
+      "regions":[
+        {"id":"S-AIR2-008-R1","locator":"Landing-page summary, paragraphs 1-2","excerpt":"deepens the exploration of 'learning assurance', 'AI explainability' and 'ethics-based assessment'","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null}
+      ],
+      "limitations":"Landing-page summary only. Do not attribute detailed requirements, approval status or Level 2 boundaries beyond the summary until the PDF is captured and reviewed.",
+      "independence_group":"EASA-AI",
+      "refresh_days":90
+    },
+    {
+      "id":"S-AIR2-009",
+      "title":"EASA Artificial Intelligence Concept Paper Proposed Issue 3",
+      "publisher":"European Union Aviation Safety Agency",
+      "url":"https://www.easa.europa.eu/en/document-library/general-publications/easa-artificial-intelligence-concept-paper-proposed-issue-3",
+      "published_at":"2026-06-03",
+      "source_type":"proposed_authority_guidance",
+      "jurisdiction":"European civil aviation",
+      "accessed_at":"2026-09-08",
+      "inspection_scope":"Inspected EASA landing page title, date and download listing; PDF and comment-response spreadsheet were not retrieved due HTTP 429.",
+      "regions":[
+        {"id":"S-AIR2-009-R1","locator":"Landing page title/date/download section","excerpt":"EASA Artificial Intelligence Concept Paper — Proposed Issue 3","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null}
+      ],
+      "limitations":"Proposed document status and existence only. It is not a final guidance publication and no technical proposition from the PDF is supported here.",
+      "independence_group":"EASA-AI",
+      "refresh_days":30
+    },
+    {
+      "id":"S-AIR2-010",
+      "title":"Detect and Avoid Policy Concept Consultation Response Summary CAP3127",
+      "publisher":"UK Civil Aviation Authority",
+      "url":"https://www.caa.co.uk/publication/download/25286",
+      "published_at":"2025-06-19",
+      "source_type":"authority_consultation_response",
+      "jurisdiction":"UK civil aviation BVLOS UAS",
+      "accessed_at":"2026-09-08",
+      "inspection_scope":"Inspected full 26-page PDF, especially pp. 3-5, 12-16 and next-steps discussion, covering equipment reliance, metrics, encounter sets and policy test phase.",
+      "regions":[
+        {"id":"S-AIR2-010-R1","locator":"PDF pp. 12-13, equipment reliance and assurance","excerpt":"The DAA policy and assurance process is founded on established principles from the Airborne Collision Avoidance System (ACAS)","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null},
+        {"id":"S-AIR2-010-R2","locator":"PDF pp. 15-16, DAA metrics","excerpt":"NMAC is used instead as a proxy for MAC","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null},
+        {"id":"S-AIR2-010-R3","locator":"PDF pp. 3-5 and 20-21, policy status","excerpt":"status of the DAA Policy Concept and next steps","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null}
+      ],
+      "limitations":"Consultation response and policy-development document, not a final operational approval. It records stakeholder feedback and initial CAA responses; planned policy remains subject to later publication and testing.",
+      "independence_group":"UK-CAA-DAA",
+      "refresh_days":90
+    },
+    {
+      "id":"S-AIR2-011",
+      "title":"FAA authorizes Zipline commercial BVLOS delivery",
+      "publisher":"Federal Aviation Administration",
+      "url":"https://www.faa.gov/newsroom/faa-authorizes-zipline-deliver-commercial-packages-beyond-line-sight",
+      "published_at":"2023-09-18",
+      "source_type":"authority_announcement",
+      "jurisdiction":"US civil UAS; Salt Lake City operations",
+      "accessed_at":"2026-09-08",
+      "inspection_scope":"Inspected FAA announcement and its linked approval-letter targets; regulations.gov pages returned 403. The announcement states scope and directs readers to the letters.",
+      "regions":[
+        {"id":"S-AIR2-011-R1","locator":"Opening paragraph","excerpt":"without visual observers","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null}
+      ],
+      "limitations":"Announcement establishes FAA public description of a scoped authorization. Linked letters and conditions must be obtained before asserting exact DAA architecture, aircraft configuration, current validity or all-airspace operation.",
+      "independence_group":"FAA-ZIPLINE-2023",
+      "refresh_days":180
+    },
+    {
+      "id":"S-AIR2-012",
+      "title":"FAA BEYOND program status page",
+      "publisher":"Federal Aviation Administration",
+      "url":"https://www.faa.gov/uas/programs_partnerships/beyond",
+      "published_at":null,
+      "source_type":"authority_program_page",
+      "jurisdiction":"US civil UAS",
+      "accessed_at":"2026-09-08",
+      "inspection_scope":"Inspected Zipline entries describing June 2022 Part 135 certification and February 2023 approval to enable DAA software within mode C veil.",
+      "regions":[
+        {"id":"S-AIR2-012-R1","locator":"North Carolina Department of Transportation section","excerpt":"In February 2023, the FAA approved Zipline’s change submission to enable the DAA software within the mode-c veil","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null}
+      ],
+      "limitations":"Program summary lacks the underlying approval package and does not establish the technical performance or exact operating conditions of the DAA software.",
+      "independence_group":"FAA-BEYOND",
+      "refresh_days":90
+    },
+    {
+      "id":"S-AIR2-013",
+      "title":"Protector programme and certification statements",
+      "publisher":"UK Ministry of Defence",
+      "url":"https://www.gov.uk/government/news/new-global-surveillance-aircraft-begins-uk-trials",
+      "published_at":"2023-10-23",
+      "source_type":"government_announcement",
+      "jurisdiction":"UK military aviation",
+      "accessed_at":"2026-09-08",
+      "inspection_scope":"Inspected government announcement describing trials, remote piloting and intended NATO safety/certification status; no certificate instrument inspected.",
+      "regions":[
+        {"id":"S-AIR2-013-R1","locator":"Certification paragraph","excerpt":"Protector will be certified to stringent NATO safety and certification standards allowing it to operate in the UK and European civilian airspace","context_status":"short_excerpt_only","snapshot_path":null,"snapshot_sha256":null}
+      ],
+      "limitations":"Government programme statement, not the Military Type Certificate or civil operational authorization. The wording is prospective as of 2023 and should not be used to claim a current unrestricted civil approval.",
+      "independence_group":"UK-MOD-PROTECTOR",
+      "refresh_days":180
+    }
+  ]
+}

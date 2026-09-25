@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-CHAL-002-source_support-D26f6b0e31684",
+  "package_id": "P-C-CHAL-002-source_support",
+  "input_digest": "26f6b0e3168494ee7026534b383f90b80c1f96eb99df5623decd7f610d94a98a",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The claim accurately reflects the provided source material. The excerpt explicitly states that resolving AI issues prescriptively without architectural mitigation is not currently possible, and paragraph 13 confirms the retention of a system-safety-case approach involving verification, trials, testing, analysis, and continuing performance monitoring when AI standards are lacking or behaviour is unpredictable.",
+  "evidence_locators": [
+    "S-CHAL-001-R3",
+    "PDF pp. 3-4, paragraph 13, Non-Compliances"
+  ],
+  "limitations": [
+    "The source is UK military aviation guidance requiring applicant-specific agreement, not a finalized or prescriptive civil aviation certification standard."
+  ],
+  "resolves": []
+}

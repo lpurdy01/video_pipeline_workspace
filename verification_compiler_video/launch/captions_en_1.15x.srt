@@ -1,0 +1,1077 @@
+1
+00:00:00,000 --> 00:00:02,777
+Your agent wrote four
+thousand lines this week.
+
+2
+00:00:02,777 --> 00:00:04,904
+Code, tests, docs, a migration plan.
+
+3
+00:00:05,374 --> 00:00:06,563
+How much of it did you read?
+
+4
+00:00:06,563 --> 00:00:09,861
+There is a whole category of software
+that AI is not allowed to write.
+
+5
+00:00:10,174 --> 00:00:13,496
+Aircraft. Medical devices. Not
+because the models are bad at it.
+
+6
+00:00:13,635 --> 00:00:16,435
+Because nobody can check the work fast
+enough to keep the standards intact.
+
+7
+00:00:17,235 --> 00:00:20,696
+AI made writing code cheap. It
+did not make trusting code cheap.
+
+8
+00:00:21,130 --> 00:00:24,383
+And that is a verification problem,
+which means I think it is solvable.
+
+9
+00:00:25,183 --> 00:00:27,906
+This is not a thought experiment,
+either. Across the industry,
+
+10
+00:00:27,906 --> 00:00:30,278
+more and more of the work
+already happens agentically.
+
+11
+00:00:30,565 --> 00:00:33,287
+Pull requests arrive faster than
+any team can actually read them.
+
+12
+00:00:33,791 --> 00:00:35,375
+The pace becomes the
+product, and review is
+
+13
+00:00:35,375 --> 00:00:36,922
+the thing that gets crushed underneath it.
+
+14
+00:00:37,130 --> 00:00:39,200
+Because serious software is
+not just software that runs.
+
+15
+00:00:39,478 --> 00:00:43,079
+Serious software is software where
+someone can explain what it is supposed to
+
+16
+00:00:43,079 --> 00:00:46,773
+do, what requirement it satisfies, what
+test verified it, what version the test
+
+17
+00:00:46,773 --> 00:00:50,000
+ran against, what evidence was
+produced, and who accepted the result.
+
+18
+00:00:50,887 --> 00:00:52,755
+Let me be concrete about
+what I mean, because
+
+19
+00:00:52,755 --> 00:00:54,539
+there are really two
+different worlds here.
+
+20
+00:00:54,904 --> 00:00:56,870
+In one of them, quality
+is a business problem.
+
+21
+00:00:57,183 --> 00:01:00,191
+A web application has to be reliable
+enough that customers do not leave.
+
+22
+00:01:01,061 --> 00:01:04,522
+If something breaks on Monday, you ship
+a fix on Tuesday, and life goes on.
+
+23
+00:01:04,991 --> 00:01:06,817
+In the other one, software flies aircraft.
+
+24
+00:01:07,374 --> 00:01:08,957
+It keeps satellites talking to the ground.
+
+25
+00:01:09,252 --> 00:01:12,139
+It decides how hard your car brakes
+when a child steps into the road.
+
+26
+00:01:12,661 --> 00:01:16,191
+That software is certified before it is
+allowed to run, and somebody has to be
+
+27
+00:01:16,191 --> 00:01:19,496
+accountable for it — an organization,
+a process, a regulator signing off.
+
+28
+00:01:20,470 --> 00:01:21,965
+AI has made generation faster.
+
+29
+00:01:22,365 --> 00:01:25,965
+It has not automatically made verification
+faster. So the bottleneck moves.
+
+30
+00:01:26,383 --> 00:01:28,974
+Not to the editor. Not
+to the model. To trust.
+
+31
+00:01:29,635 --> 00:01:31,166
+And that is why I have been thinking about
+
+32
+00:01:31,166 --> 00:01:32,661
+something I call a Verification Compiler.
+
+33
+00:01:33,357 --> 00:01:36,609
+The goal is not to bring AI into
+safety-critical work for the sake of it.
+
+34
+00:01:37,183 --> 00:01:39,963
+The goal is to automate the
+verification scaffolding during
+
+35
+00:01:39,963 --> 00:01:42,697
+development, so that the
+standards that keep that software
+
+36
+00:01:42,697 --> 00:01:44,817
+safe stay fully intact
+while you move faster.
+
+37
+00:01:45,930 --> 00:01:49,983
+It is a process, not a shortcut. Or,
+less formally: a compiler for trust.
+
+38
+00:01:50,377 --> 00:01:53,455
+Here is the trap. You ask
+a model to write some code.
+
+39
+00:01:53,872 --> 00:01:56,638
+Then you ask the same model whether
+the code satisfies the requirement.
+
+40
+00:01:57,525 --> 00:02:01,264
+It says yes, with a calm and often
+genuinely useful explanation.
+
+41
+00:02:01,820 --> 00:02:06,794
+But what do you actually have? No
+proof. No certification. No audit trail.
+
+42
+00:02:07,681 --> 00:02:11,229
+You have a chat transcript. And a
+chat transcript is not evidence.
+
+43
+00:02:11,525 --> 00:02:13,055
+For a quick iteration, that may be fine.
+
+44
+00:02:13,559 --> 00:02:15,612
+Where failure actually
+matters, the question is
+
+45
+00:02:15,612 --> 00:02:17,403
+not whether the answer sounds reasonable.
+
+46
+00:02:17,768 --> 00:02:21,038
+The question is: which requirement
+is being checked? Which code version?
+
+47
+00:02:21,299 --> 00:02:24,203
+Which test result? Which source
+document? Which review rule?
+
+48
+00:02:25,177 --> 00:02:28,933
+Which human accepted it? And can we
+reproduce what was reviewed later?
+
+49
+00:02:29,455 --> 00:02:31,716
+That is the gap. The model
+can generate an answer.
+
+50
+00:02:32,012 --> 00:02:33,977
+But the answer still has
+to be turned into evidence.
+
+51
+00:02:35,136 --> 00:02:37,693
+High-assurance software has been dealing
+with this kind of problem for decades.
+
+52
+00:02:38,041 --> 00:02:40,701
+And I think most developers
+have no idea this world exists.
+
+53
+00:02:41,188 --> 00:02:44,388
+There are entire standards governing how
+this software is allowed to be built.
+
+54
+00:02:45,362 --> 00:02:50,093
+DO-178C in aerospace. ISO 26262,
+and ASIL levels, in automotive.
+
+55
+00:02:50,562 --> 00:02:52,232
+There are more, industry by industry.
+
+56
+00:02:52,649 --> 00:02:54,507
+The details vary, and
+the standards themselves
+
+57
+00:02:54,507 --> 00:02:56,284
+are careful legal and
+engineering documents.
+
+58
+00:02:56,614 --> 00:02:58,423
+But the broad pattern
+is simple enough to see.
+
+59
+00:02:59,258 --> 00:03:02,962
+You do not just write code and
+hope. You maintain traceability.
+
+60
+00:03:03,467 --> 00:03:08,267
+A requirement traces to design. Design
+traces to code. Code traces to tests.
+
+61
+00:03:08,788 --> 00:03:12,406
+Tests trace to results. Results
+trace to review records.
+
+62
+00:03:12,875 --> 00:03:16,510
+And all of that has to stay tied to the
+version of the system being evaluated.
+
+63
+00:03:17,241 --> 00:03:19,693
+That can sound like
+bureaucracy from the outside.
+
+64
+00:03:20,180 --> 00:03:22,788
+And I want to be honest about
+it: it is a lot of overhead work.
+
+65
+00:03:22,788 --> 00:03:25,741
+It is part of why the same
+function can cost a hundred
+
+66
+00:03:25,741 --> 00:03:28,475
+times more to ship on an
+aircraft than on a drone.
+
+67
+00:03:28,841 --> 00:03:31,849
+But the deeper idea is not
+bureaucracy. It is coordination.
+
+68
+00:03:33,136 --> 00:03:35,701
+It is a way for a large
+group of limited humans
+
+69
+00:03:35,701 --> 00:03:37,884
+to make a complicated system reviewable.
+
+70
+00:03:38,214 --> 00:03:39,936
+And reviewable is the word that matters.
+
+71
+00:03:40,319 --> 00:03:43,606
+Nobody can look at a whole system
+at once and pronounce it good.
+
+72
+00:03:44,110 --> 00:03:47,171
+It is too big. That is true
+of every engineer on the team.
+
+73
+00:03:47,171 --> 00:03:50,597
+It is just as true of an AI
+model asked to do the same thing.
+
+74
+00:03:50,893 --> 00:03:53,780
+So you break it apart. You
+verify the small units first.
+
+75
+00:03:54,754 --> 00:03:58,684
+Unit tests. Integration tests.
+System tests. Verification tests.
+
+76
+00:03:59,101 --> 00:04:01,575
+And the requirements stack
+the same way, sub-requirements
+
+77
+00:04:01,575 --> 00:04:03,919
+rolling up into the requirements
+that actually matter.
+
+78
+00:04:04,354 --> 00:04:07,060
+You climb that ladder until
+the system is as true as you
+
+79
+00:04:07,060 --> 00:04:09,380
+can make it, before
+anyone's life depends on it.
+
+80
+00:04:10,214 --> 00:04:12,458
+And that is the clue for
+AI-assisted software.
+
+81
+00:04:12,458 --> 00:04:16,530
+If models are going to generate more
+artifacts, faster, then the project
+
+82
+00:04:16,530 --> 00:04:20,545
+needs an even stronger structure for
+knowing what those artifacts mean.
+
+83
+00:04:20,928 --> 00:04:24,667
+The first move is to stop thinking of
+a project as a folder full of files.
+
+84
+00:04:25,049 --> 00:04:28,928
+For verification, a project is a graph.
+Every important thing becomes a node.
+
+85
+00:04:29,414 --> 00:04:33,571
+Requirements. Source code units. Tests.
+Test results. Static analysis results.
+
+86
+00:04:33,762 --> 00:04:36,771
+Datasheets. Interface control
+documents. Physical test records.
+
+87
+00:04:37,223 --> 00:04:39,136
+Model review outputs.
+Human review outputs.
+
+88
+00:04:40,162 --> 00:04:43,650
+Even specific sections of source
+documents become nodes, because a
+
+89
+00:04:43,650 --> 00:04:47,084
+citation that only says "see the
+standard" is not precise enough.
+
+90
+00:04:47,780 --> 00:04:51,745
+Then the relationships become edges.
+This requirement traces to that code.
+
+91
+00:04:52,041 --> 00:04:56,371
+This test verifies that behavior. This
+result was produced against this version.
+
+92
+00:04:57,206 --> 00:05:01,171
+This source region supports this
+claim. Now the project has a shape.
+
+93
+00:05:01,536 --> 00:05:04,023
+And once it has a shape, you
+can ask structural questions.
+
+94
+00:05:04,893 --> 00:05:06,962
+Is there code with no requirement?
+
+95
+00:05:07,275 --> 00:05:09,206
+Is there a requirement
+with no implementation?
+
+96
+00:05:09,780 --> 00:05:11,780
+Is there a test result
+tied to an old version?
+
+97
+00:05:12,632 --> 00:05:15,484
+Is there a model review that
+disagrees with a human review?
+
+98
+00:05:16,058 --> 00:05:19,380
+Those are not philosophical questions
+anymore. They are graph questions.
+
+99
+00:05:20,101 --> 00:05:22,832
+This is where the compiler
+analogy starts to matter.
+
+100
+00:05:23,301 --> 00:05:26,151
+A normal compiler takes source
+code, walks a structured
+
+101
+00:05:26,151 --> 00:05:28,275
+representation, and emits something else.
+
+102
+00:05:28,971 --> 00:05:31,805
+It turns one representation
+into another representation
+
+103
+00:05:31,805 --> 00:05:33,145
+through a defined process.
+
+104
+00:05:34,397 --> 00:05:37,510
+A Verification Compiler would
+not compile code into a binary.
+
+105
+00:05:38,049 --> 00:05:40,867
+It would compile an artifact
+graph into verification work.
+
+106
+00:05:41,301 --> 00:05:43,736
+Start with a top-level
+requirement. Traverse the graph.
+
+107
+00:05:44,084 --> 00:05:46,936
+Collect the code units that matter.
+Collect the linked requirements.
+
+108
+00:05:47,249 --> 00:05:50,258
+Collect the tests. Collect the results.
+Collect the relevant source text.
+
+109
+00:05:51,006 --> 00:05:52,849
+Collect the static analysis output.
+
+110
+00:05:53,423 --> 00:05:56,797
+Then assemble that into a bounded
+review package. Same graph state.
+
+111
+00:05:57,110 --> 00:06:01,197
+Same traversal rule. Same package. That
+deterministic assembly is the point.
+
+112
+00:06:01,719 --> 00:06:04,588
+The model might be probabilistic.
+The human might be inconsistent.
+
+113
+00:06:05,075 --> 00:06:07,336
+But the package they receive
+should not be a vibe.
+
+114
+00:06:07,719 --> 00:06:09,180
+It should be a reproducible artifact.
+
+115
+00:06:09,667 --> 00:06:13,736
+I have been calling that artifact a
+Verification Query Package. A VQP.
+
+116
+00:06:14,328 --> 00:06:16,154
+The name is clunky,
+but the idea is useful.
+
+117
+00:06:16,675 --> 00:06:19,045
+A Verification Query
+Package is the smallest unit
+
+118
+00:06:19,045 --> 00:06:21,319
+of verification work that
+can stand on its own.
+
+119
+00:06:21,823 --> 00:06:23,128
+It includes the code under review.
+
+120
+00:06:23,475 --> 00:06:25,806
+It includes the requirements
+that code is supposed to satisfy.
+
+121
+00:06:26,328 --> 00:06:28,745
+It includes the tests and results
+attached to the same version.
+
+122
+00:06:29,145 --> 00:06:32,067
+It includes the source-region text
+that supports the claim being checked.
+
+123
+00:06:32,067 --> 00:06:35,145
+It includes the review
+instructions. And it is bounded.
+
+124
+00:06:35,997 --> 00:06:39,545
+Small enough for a model to analyze.
+Small enough for a human to inspect.
+
+125
+00:06:39,945 --> 00:06:43,110
+But complete enough that the reviewer
+is not guessing what context matters.
+
+126
+00:06:43,858 --> 00:06:45,754
+And a package does not have to be text.
+
+127
+00:06:46,362 --> 00:06:49,880
+A rendered screen, a captured output,
+a physical test trace — if it is
+
+128
+00:06:49,880 --> 00:06:53,197
+evidence about the thing being
+checked, it belongs in the package.
+
+129
+00:06:54,119 --> 00:06:57,142
+That matters well beyond aerospace,
+though aerospace is where the
+
+130
+00:06:57,142 --> 00:07:00,119
+standards are strictest, and that
+is the case this is built for.
+
+131
+00:07:00,867 --> 00:07:02,728
+This is one of the important shifts.
+
+132
+00:07:03,267 --> 00:07:07,003
+Instead of asking a model to review an
+entire project, or asking a human to search
+
+133
+00:07:07,003 --> 00:07:10,101
+through a pile of artifacts, the
+graph assembles the relevant slice.
+
+134
+00:07:10,867 --> 00:07:13,354
+The huge problem becomes
+many smaller review packages.
+
+135
+00:07:13,788 --> 00:07:16,084
+And each package can leave
+behind a structured result.
+
+136
+00:07:16,406 --> 00:07:19,258
+This also gives us a cleaner
+way to talk about AI review.
+
+137
+00:07:19,797 --> 00:07:22,771
+The same package can go to a model.
+The same package can go to a human.
+
+138
+00:07:23,188 --> 00:07:26,214
+The input structure is the same.
+The output schema is the same.
+
+139
+00:07:26,336 --> 00:07:27,814
+But the authority is not the same.
+
+140
+00:07:28,214 --> 00:07:30,249
+In development, a model can
+review packages quickly.
+
+141
+00:07:30,510 --> 00:07:32,893
+It can flag missing evidence.
+It can notice mismatches.
+
+142
+00:07:33,136 --> 00:07:36,267
+It can say: this requirement looks only
+partially covered. That is valuable.
+
+143
+00:07:36,649 --> 00:07:37,971
+But it is developmental review.
+
+144
+00:07:38,719 --> 00:07:42,015
+For certification-facing decisions,
+a human reviewer can inspect the
+
+145
+00:07:42,015 --> 00:07:45,457
+same package — rendered into something
+actually readable, a page rather
+
+146
+00:07:45,457 --> 00:07:48,075
+than a blob of JSON — and
+produce the accepted result.
+
+147
+00:07:48,823 --> 00:07:51,849
+If the model and the human disagree,
+the disagreement is not swept away.
+
+148
+00:07:52,232 --> 00:07:53,641
+It becomes part of the evidence history.
+
+149
+00:07:54,075 --> 00:07:56,354
+It can update the model's
+suitability for that kind of task.
+
+150
+00:07:56,701 --> 00:07:59,484
+The system is not trying to pretend
+the model is a perfect certifier.
+
+151
+00:07:59,762 --> 00:08:02,482
+It is trying to make model
+assistance fit inside
+
+152
+00:08:02,482 --> 00:08:04,806
+a review structure that humans can audit.
+
+153
+00:08:05,174 --> 00:08:08,270
+The output should not be a chat bubble.
+It should be an evidence record.
+
+154
+00:08:08,617 --> 00:08:09,835
+And a record has fields.
+
+155
+00:08:10,896 --> 00:08:14,496
+Every one of those fields answers
+a question you would otherwise have
+
+156
+00:08:14,496 --> 00:08:17,991
+to walk over and ask somebody: what
+was decided, why, what supports
+
+157
+00:08:17,991 --> 00:08:20,861
+it, who decided, and against
+which version of the code.
+
+158
+00:08:21,330 --> 00:08:24,003
+And once that record exists, it
+should not be edited in place.
+
+159
+00:08:24,287 --> 00:08:27,661
+If the code changes, the old evidence
+does not disappear. It becomes stale.
+
+160
+00:08:28,096 --> 00:08:30,312
+If the source document
+changes, links depending
+
+161
+00:08:30,312 --> 00:08:32,339
+on that source region
+need to be rechecked.
+
+162
+00:08:33,191 --> 00:08:36,270
+If a human overrides a model
+result, both records stay visible.
+
+163
+00:08:36,791 --> 00:08:39,678
+This is how you get an audit trail
+instead of a pile of confident text.
+
+164
+00:08:40,287 --> 00:08:42,270
+The point is not that every
+record is true forever.
+
+165
+00:08:42,600 --> 00:08:44,583
+The point is that every
+record has provenance.
+
+166
+00:08:45,014 --> 00:08:48,197
+Once the project is a graph and the
+reviews are structured, you can zoom out.
+
+167
+00:08:48,510 --> 00:08:50,528
+You can ask: how much of
+the graph has been reviewed?
+
+168
+00:08:50,788 --> 00:08:53,484
+Which requirements have current
+evidence? Which evidence is stale?
+
+169
+00:08:53,693 --> 00:08:54,910
+Which parts are missing tests?
+
+170
+00:08:55,101 --> 00:08:58,058
+Which model results are below the
+suitability threshold for this task?
+
+171
+00:08:58,441 --> 00:08:59,919
+Which areas still need human attention?
+
+172
+00:09:00,406 --> 00:09:02,858
+That gives you something like a
+Verification Readiness Metric.
+
+173
+00:09:03,797 --> 00:09:06,388
+But this is important: it
+is not a magic safety score.
+
+174
+00:09:06,754 --> 00:09:09,119
+It does not say the system is
+safe because the number is high.
+
+175
+00:09:09,119 --> 00:09:11,764
+It says the evidence surface
+is more or less complete,
+
+176
+00:09:11,764 --> 00:09:13,919
+more or less current,
+more or less reviewed.
+
+177
+00:09:14,597 --> 00:09:16,058
+It makes the gaps visible.
+
+178
+00:09:17,188 --> 00:09:20,736
+That is what readiness means
+here. Not certainty. Visibility.
+
+179
+00:09:21,258 --> 00:09:23,768
+And one more distinction,
+because the two words get used
+
+180
+00:09:23,768 --> 00:09:25,919
+interchangeably and they
+are not the same thing.
+
+181
+00:09:26,910 --> 00:09:29,954
+Verification is checking that you
+built the thing you meant to build.
+
+182
+00:09:30,649 --> 00:09:33,699
+Validation is checking that the
+thing you built is the thing you
+
+183
+00:09:33,699 --> 00:09:36,701
+should have built — that it
+actually holds up out in the world.
+
+184
+00:09:37,519 --> 00:09:38,945
+Those are two separate processes.
+
+185
+00:09:39,501 --> 00:09:42,162
+The Verification Compiler is
+aimed squarely at the first one.
+
+186
+00:09:42,597 --> 00:09:44,441
+It will not tell you that you
+designed the right system.
+
+187
+00:09:44,788 --> 00:09:47,380
+It tells you whether you can show that
+you built the system you specified.
+
+188
+00:09:47,884 --> 00:09:49,675
+I think this is where
+AI software is going.
+
+189
+00:09:50,110 --> 00:09:53,136
+Not because models will magically
+replace verification. They will not.
+
+190
+00:09:53,467 --> 00:09:56,175
+But because generation is
+getting cheaper, and every cheap
+
+191
+00:09:56,175 --> 00:09:58,510
+generation step creates a
+verification obligation.
+
+192
+00:09:59,032 --> 00:10:01,797
+Another function. Another test.
+Another design note. Another claim.
+
+193
+00:10:02,058 --> 00:10:03,275
+Another assumption.
+
+194
+00:10:03,762 --> 00:10:07,223
+The bottleneck becomes: what can we trust
+enough to connect back into the world?
+
+195
+00:10:07,675 --> 00:10:10,284
+The Verification Compiler is
+one answer to that bottleneck.
+
+196
+00:10:10,667 --> 00:10:13,484
+Turn the project into a graph.
+Traverse the graph deterministically.
+
+197
+00:10:14,441 --> 00:10:18,145
+Assemble bounded review packages.
+Let models help during development.
+
+198
+00:10:18,475 --> 00:10:20,110
+Let humans retain
+authority where it matters.
+
+199
+00:10:20,528 --> 00:10:23,206
+And preserve the result as
+evidence. Not "trust the AI."
+
+200
+00:10:23,728 --> 00:10:24,945
+Trust the evidence surface.
+
+201
+00:10:25,223 --> 00:10:27,641
+Because the future of AI software
+is not just generating code.
+
+202
+00:10:28,110 --> 00:10:30,058
+It is generating evidence
+we can actually inspect.
+
+203
+00:10:30,449 --> 00:10:31,910
+Thank you for sitting
+through my thinking on this.
+
+204
+00:10:32,258 --> 00:10:34,761
+The full whitepaper that goes with
+this video is in the description,
+
+205
+00:10:34,761 --> 00:10:36,675
+along with the references
+behind the follow-on work.
+
+206
+00:10:37,267 --> 00:10:39,914
+And if you are an agentic developer,
+use those resources to have
+
+207
+00:10:39,914 --> 00:10:42,396
+your agent build its own version
+of a Verification Compiler.
+
+208
+00:10:42,396 --> 00:10:44,588
+Then tell me in the comments
+how the experiment went.
+
+209
+00:10:45,545 --> 00:10:48,566
+What tagging system did you use?
+How did you specify requirements
+
+210
+00:10:48,566 --> 00:10:51,540
+and sub-requirements? What did
+you use for unique, hyperlinkable
+
+211
+00:10:51,540 --> 00:10:53,632
+IDs — if you even found
+that you needed them?
+
+212
+00:10:54,328 --> 00:10:57,593
+I wanted to publish this idea so that
+other people could start expanding on
+
+213
+00:10:57,593 --> 00:11:00,641
+what is possible with it. I am
+genuinely excited to see where it goes.
+
+214
+00:11:01,232 --> 00:11:04,532
+I want to be straight about what this
+is, though. It is a whitepaper-level
+
+215
+00:11:04,532 --> 00:11:06,762
+idea. It is not a product,
+and it is not finished.
+
+216
+00:11:07,493 --> 00:11:11,589
+So the next thing I am going to do is
+build it. I want to practise implementing
+
+217
+00:11:11,589 --> 00:11:15,581
+this, refine it, and find the rough
+edges — because the rough edges are where
+
+218
+00:11:15,581 --> 00:11:18,536
+an idea like this either holds
+up or quietly falls apart.
+
+219
+00:11:18,536 --> 00:11:21,858
+If you want to know when that
+lands, like the video and subscribe.
+
+220
+00:11:22,519 --> 00:11:25,791
+And if you know someone working
+on this problem — someone who
+
+221
+00:11:25,791 --> 00:11:29,064
+has to get software through a
+certification process — send it
+
+222
+00:11:29,064 --> 00:11:32,014
+to them. That is the conversation
+I am hoping to start.

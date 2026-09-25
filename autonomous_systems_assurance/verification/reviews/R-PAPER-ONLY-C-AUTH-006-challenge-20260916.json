@@ -1,0 +1,24 @@
+{
+  "id": "R-PAPER-ONLY-C-AUTH-006-challenge-20260916",
+  "package_id": "P-C-AUTH-006-challenge",
+  "input_digest": "630f5dd0434691160f5926e9b29fd2ad63044f9baee5550f122157eba3746611",
+  "task": "challenge",
+  "reviewer_id": "paper-compiler-review-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-only-review-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The strongest challenge is that a public product page cannot establish clause-level duties, aviation relevance, a vehicle's conformance, or a safety conclusion. The registered claim and its paper uses already say exactly that: it is a published road-vehicle public-scope indication and not an aviation or product-conformance result. The limitation survives the challenge, subject to the separate source-context uncertainty.",
+  "evidence_locators": [
+    "C-AUTH-006 challenge field, licensed-text and aviation-scope challenge",
+    "S-AUTH-004 limitations, public-scope-only boundary",
+    "research/contributions/assurance_authority/findings.md:20, portfolio of scoped methods",
+    "resource_composition/whitepaper.md:146, no product approval or proprietary-evidence inference"
+  ],
+  "limitations": [
+    "A passing challenge review does not cure the missing full source context.",
+    "Freshness and any later ISO edition/status change need a separate check."
+  ],
+  "resolves": []
+}

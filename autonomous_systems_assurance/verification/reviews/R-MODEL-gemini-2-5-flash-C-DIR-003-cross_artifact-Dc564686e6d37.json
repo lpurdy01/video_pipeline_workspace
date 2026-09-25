@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-DIR-003-cross_artifact-Dc564686e6d37",
+  "package_id": "P-C-DIR-003-cross_artifact",
+  "input_digest": "c564686e6d378b1d30e6f01324ffa770b70e77b563ea725f766ce3c4424a52be",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of claim C-DIR-003 accurately preserves its scope and limitations. The artifacts consistently reiterate the warnings from the NHTSA Standing General Order 2021-01 data dictionary regarding reporting access, data completeness, verification, potential duplication, and lack of normalization. They correctly conclude that the public incident log cannot by itself provide a comparative crash rate or a learned-system safety conclusion. Visual representations and their detailed specifications explicitly incorporate these qualifications, preventing misinterpretation.",
+  "evidence_locators": [
+    "research/contributions/direction_evidence/findings.md",
+    "resource_composition/figures.md",
+    "research/integration_round5.md",
+    "video/nextgen_structure/visual_inventory.md"
+  ],
+  "limitations": [
+    "The full content of the whitepaper and video script, beyond the provided excerpts, was not available for a complete review of all potential uses. However, the explicit instructions for the figure that will be used in these artifacts are clear about preserving the claim's limitations."
+  ],
+  "resolves": []
+}

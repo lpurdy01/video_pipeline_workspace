@@ -1,0 +1,18 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-RISK-004-source_support-D66160f623543",
+  "package_id": "P-C-RISK-004-source_support",
+  "input_digest": "66160f623543d1d61bbc01bb0a0844334f70fbc32a9468d92901b1acbf414584",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The UK CAA's CAP3127 consultation response explicitly states that 'RRs are essentially dimensionless units, which only illustrate DAA performance relative to defined NMAC / DWC volumes and the chosen encounter sets.' It also emphasizes that 'RRs are essentially averaging functions and may hide deficiencies in certain encounter cases.' The CAA accepts this point and commits to ensuring that 'loss of DWC or NMAC events in the mitigated encounter are investigated to understand any deficiencies,' which directly supports the claim that a single aggregate performance score cannot stand alone as the assurance argument.",
+  "evidence_locators": [
+    "PDF pp. 15-16, Section 4.15 DAA metrics consultation response"
+  ],
+  "limitations": [],
+  "resolves": []
+}

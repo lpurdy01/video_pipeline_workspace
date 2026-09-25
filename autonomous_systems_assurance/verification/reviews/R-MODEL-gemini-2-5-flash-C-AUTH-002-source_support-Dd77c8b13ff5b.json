@@ -1,0 +1,19 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-AUTH-002-source_support-Dd77c8b13ff5b",
+  "package_id": "P-C-AUTH-002-source_support",
+  "input_digest": "d77c8b13ff5b5daffb9e07ae93b8294f3d1fcd6277790413cec189e7046ef6bb",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The FAA's 'Roadmap for Artificial Intelligence Safety Assurance, Version I' (S-AUTH-001) on page 10 states that 'each new version is subjected to safety assurance.' This directly supports the claim that each updated version requires new safety-assurance treatment. The roadmap also distinguishes 'static learned AI' (frozen implementation) from systems that learn in operation, implying that the assurance for a 'version' applies to a frozen implementation, which is a design-time activity. This interpretation is explicitly confirmed in the project's internal findings (research/contributions/assurance_authority/findings.md) which states: 'FAA calls the former static in the operating environment and says each released update is subjected to safety assurance.' The claim's scope and the source's limitations (direction-setting, not binding means of compliance) are consistent.",
+  "evidence_locators": [
+    "S-AUTH-001, PDF p. 10",
+    "research/contributions/assurance_authority/findings.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

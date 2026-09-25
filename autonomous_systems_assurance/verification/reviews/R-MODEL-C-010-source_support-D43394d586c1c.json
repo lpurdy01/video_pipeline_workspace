@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-010-source_support-D43394d586c1c",
+  "package_id": "P-C-010-source_support",
+  "input_digest": "43394d586c1c79b8ea0c785545be1be655b4c0512264c1dc286fc0f26c80e857",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided short excerpt confirms Tesla describes outputting 'road layout, static infrastructure and 3D objects', but the full local context is absent. Without the surrounding text, it cannot be definitively verified that these representations are explicitly 'camera-derived' and 'used for planning' as specified in the claim.",
+  "evidence_locators": [
+    "S-011-R1",
+    "Neural Networks and Autonomy Algorithms headings"
+  ],
+  "limitations": [
+    "Full local context is absent (short_excerpt_only)",
+    "Requires verification of the connection between the outputs, camera derivation, and planning use in the original source"
+  ],
+  "resolves": []
+}

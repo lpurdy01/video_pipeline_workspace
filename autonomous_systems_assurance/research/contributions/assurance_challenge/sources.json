@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-16",
+  "sources": [
+    {
+      "id": "S-CHAL-001",
+      "title": "MAA/RN/2025/04 — Use of Artificial Intelligence within Systems and Equipment subject to MRP design assurance processes",
+      "publisher": "UK Ministry of Defence, Military Aviation Authority",
+      "url": "https://assets.publishing.service.gov.uk/media/68f0b97c1c9076042263ef2a/MAA_RN_2025_04.pdf",
+      "published_at": "2025-10-10",
+      "source_type": "current_military_aviation_authority_guidance",
+      "jurisdiction": "UK military aviation; systems and equipment subject to MAA Regulatory Publications design-assurance processes",
+      "accessed_at": "2026-09-16",
+      "inspection_scope": "Downloaded and inspected all five pages of Version 5.0. The inspection covers scope, effective status, certified-air-system process, frozen-model/ODD recommendation, architectural mitigation, non-compliances and summary. This is an authority notice, but it describes itself as informative guidance and requires applicant-specific MAA agreement.",
+      "regions": [
+        {
+          "id": "S-CHAL-001-R1",
+          "locator": "PDF pp. 1–2, paragraphs 2–4, Scope, Implementation and Background",
+          "excerpt": "This guidance is effective immediately and represents the MAA’s current position with respect to AI technologies.",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_challenge/out/maa-rn-2025-04.pdf",
+          "snapshot_sha256": "203733969cf4e24d87bf4ed4d734c309fb63db15fbfbc42aa67ce6ea096eb497",
+          "context_path": "research/contributions/assurance_challenge/out/maa-rn-2025-04.txt"
+        },
+        {
+          "id": "S-CHAL-001-R2",
+          "locator": "PDF pp. 2–3, paragraphs 5–8, Certified Air Systems",
+          "excerpt": "For Certified Air Systems, the Applicant should raise a Military Certification Review Item (MCRI) for MAA agreement.",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_challenge/out/maa-rn-2025-04.pdf",
+          "snapshot_sha256": "203733969cf4e24d87bf4ed4d734c309fb63db15fbfbc42aa67ce6ea096eb497",
+          "context_path": "research/contributions/assurance_challenge/out/maa-rn-2025-04.txt"
+        },
+        {
+          "id": "S-CHAL-001-R3",
+          "locator": "PDF pp. 3–4, paragraphs 13–14, Non-Compliances and Summary",
+          "excerpt": "It is not currently possible to be prescriptive on resolving these issues without architectural mitigation.",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_challenge/out/maa-rn-2025-04.pdf",
+          "snapshot_sha256": "203733969cf4e24d87bf4ed4d734c309fb63db15fbfbc42aa67ce6ea096eb497",
+          "context_path": "research/contributions/assurance_challenge/out/maa-rn-2025-04.txt"
+        }
+      ],
+      "limitations": "A current MAA position for the UK Defence Air Environment is neither a civil-airworthiness approval nor a published product safety case. The notice is guidance/informative correspondence; MCRI/ATM-ARI agreement and the underlying evidence remain applicant-specific and non-public here.",
+      "independence_group": "UK-MAA-AI-RN-2025-04",
+      "refresh_days": 90
+    },
+    {
+      "id": "S-CHAL-002",
+      "title": "NPA 2025-07 (B) — Proposed detailed specifications and associated acceptable means of compliance and guidance material for AI trustworthiness (DS.AI)",
+      "publisher": "European Union Aviation Safety Agency",
+      "url": "https://www.easa.europa.eu/en/downloads/142701/en",
+      "published_at": "2025",
+      "source_type": "proposed_authority_regulatory_material",
+      "jurisdiction": "European aviation domains within the EU AI Act aviation framework; proposed DS.AI material",
+      "accessed_at": "2026-09-16",
+      "inspection_scope": "Downloaded and inspected the full 43-page Notice of Proposed Amendment. Inspected the title/status, scope, operational-domain and risk material, system-development assurance, supervised-ML learning assurance, continuous risk assessment and monitoring provisions.",
+      "regions": [
+        {
+          "id": "S-CHAL-002-R1",
+          "locator": "PDF p. 4, DS.AI.010 Scope",
+          "excerpt": "The following cases are excluded from the scope of DS.AI: (1) AI-based systems presenting a risk directly contributing to the potential for fatalities or multiple life-threatening injuries",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_challenge/out/easa-npa-2025-07b.pdf",
+          "snapshot_sha256": "a42ac47d3eb3129667bdefe104da634960260788f0d3a8f8400f2d943d22fb1f",
+          "context_path": "research/contributions/assurance_challenge/out/easa-npa-2025-07b.txt"
+        },
+        {
+          "id": "S-CHAL-002-R2",
+          "locator": "PDF pp. 24–26, DS.AI.150 and AMC1/AMC2 AI.150",
+          "excerpt": "A system development assurance process should be planned and implemented",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_challenge/out/easa-npa-2025-07b.pdf",
+          "snapshot_sha256": "a42ac47d3eb3129667bdefe104da634960260788f0d3a8f8400f2d943d22fb1f",
+          "context_path": "research/contributions/assurance_challenge/out/easa-npa-2025-07b.txt"
+        },
+        {
+          "id": "S-CHAL-002-R3",
+          "locator": "PDF pp. 31–33, DS.AI.160 and AMC1 AI.160(a)",
+          "excerpt": "The AI-based system should be designed with means for in-service monitoring and recording to support the continuous risk assessment",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_challenge/out/easa-npa-2025-07b.pdf",
+          "snapshot_sha256": "a42ac47d3eb3129667bdefe104da634960260788f0d3a8f8400f2d943d22fb1f",
+          "context_path": "research/contributions/assurance_challenge/out/easa-npa-2025-07b.txt"
+        }
+      ],
+      "limitations": "The document is explicitly a Notice of Proposed Amendment and labels its material ‘Proposed DS.AI’; it is not a final EASA decision. Its scope is Level 1/2 high-risk AI and expressly excludes systems directly contributing to fatalities/multiple life-threatening injuries, as well as certain online-learning and logic/knowledge-based systems. The proposed recognition of ED-324/ARP6983 must be checked against the standard's publication status.",
+      "independence_group": "EASA-NPA-2025-07",
+      "refresh_days": 30
+    },
+    {
+      "id": "S-CHAL-003",
+      "title": "WG-114 — Artificial Intelligence",
+      "publisher": "EUROCAE",
+      "url": "https://www.eurocae.net/working-group/wg-114/",
+      "published_at": null,
+      "source_type": "standards_body_work_program_status",
+      "jurisdiction": "International aeronautical standards development",
+      "accessed_at": "2026-09-16",
+      "inspection_scope": "Downloaded and inspected the current WG-114 page and its deliverables table. The page identifies ED-324 as Draft and provides a target publication date. It is a work-program status page, not the draft standard itself or an authority recognition decision.",
+      "regions": [
+        {
+          "id": "S-CHAL-003-R1",
+          "locator": "WG-114 deliverables table, ED-324 row",
+          "excerpt": "ED-324 | Development and Assurance considerations for Aeronautical Systems and Equipment implemented with Machine Learning | Draft | Target Publication Date: 31/12/2026",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_challenge/out/eurocae-wg114.html",
+          "snapshot_sha256": "6ec9597e8643771f0342866aa507012c05c29eca07aae2695af16feae272d67b",
+          "context_path": "research/contributions/assurance_challenge/out/eurocae-wg114.html"
+        }
+      ],
+      "limitations": "A standards-body page establishes only the displayed status at inspection time. It does not disclose ED-324's technical content, prove final publication or establish use as an accepted means of compliance. Check the publisher and relevant authority again before release.",
+      "independence_group": "EUROCAE-WG114",
+      "refresh_days": 30
+    },
+    {
+      "id": "S-CHAL-004",
+      "title": "Guidance on the Assurance of Machine Learning in Autonomous Systems (AMLAS), Version 1.1",
+      "publisher": "University of York, Assuring Autonomy International Programme",
+      "url": "https://www.york.ac.uk/media/assuring-autonomy/documents/AMLASv1.1.pdf",
+      "published_at": "2021-03",
+      "source_type": "academic_safety_assurance_methodology",
+      "jurisdiction": "Cross-domain research guidance; not an authority approval",
+      "accessed_at": "2026-09-16",
+      "inspection_scope": "Downloaded and inspected the 54-page Version 1.1 guidance, including introduction, six-stage process, scoping inputs/outputs, safety-requirements allocation, stated scope and offline-supervised-learning focus. Follow-up inspection covered the data requirements, model-learning overfitting and leakage examples, and independent verification guidance on PDF pp. 21–26, 33–35, and 40–41.",
+      "regions": [
+        {
+          "id": "S-CHAL-004-R1",
+          "locator": "PDF pp. 2–3, Introduction and Overview of AMLAS",
+          "excerpt": "AMLAS scope covers the following ML lifecycle stages: ML safety assurance scoping, safety requirements elicitation, data management, model learning, model verification and model deployment.",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_challenge/out/amlas-v1.1.pdf",
+          "snapshot_sha256": "18eab2179ccd2c8d6aeb651099c72536d192dddb58094bf2b440de5885322429",
+          "context_path": "research/contributions/assurance_challenge/out/amlas-v1.1.txt"
+        },
+        {
+          "id": "S-CHAL-004-R2",
+          "locator": "PDF p. 3, Using this Document",
+          "excerpt": "The scope of AMLAS is limited to the ML component. As such, this document should not be used in isolation from other standards and guidelines",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_challenge/out/amlas-v1.1.pdf",
+          "snapshot_sha256": "18eab2179ccd2c8d6aeb651099c72536d192dddb58094bf2b440de5885322429",
+          "context_path": "research/contributions/assurance_challenge/out/amlas-v1.1.txt"
+        },
+        {
+          "id": "S-CHAL-004-R3",
+          "locator": "PDF p. 3, Using this Document",
+          "excerpt": "AMLAS has a primary focus on off-line supervised learning.",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_challenge/out/amlas-v1.1.pdf",
+          "snapshot_sha256": "18eab2179ccd2c8d6aeb651099c72536d192dddb58094bf2b440de5885322429",
+          "context_path": "research/contributions/assurance_challenge/out/amlas-v1.1.txt"
+        },
+        {
+          "id": "S-CHAL-004-R4",
+          "locator": "PDF pp. 21–23 (printed pp. 20–22), Data Requirements and Examples 8–12",
+          "excerpt": "ML data requirements shall include consideration of the relevance, completeness, accuracy and balance of the data.",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_challenge/out/amlas-v1.1.pdf",
+          "snapshot_sha256": "18eab2179ccd2c8d6aeb651099c72536d192dddb58094bf2b440de5885322429",
+          "context_path": "research/contributions/assurance_challenge/out/amlas-v1.1.txt"
+        },
+        {
+          "id": "S-CHAL-004-R5",
+          "locator": "PDF p. 26 (printed p. 25), verification-data challenge and Note 21",
+          "excerpt": "Verification data is gathered with the aim of testing the models to breaking point.",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_challenge/out/amlas-v1.1.pdf",
+          "snapshot_sha256": "18eab2179ccd2c8d6aeb651099c72536d192dddb58094bf2b440de5885322429",
+          "context_path": "research/contributions/assurance_challenge/out/amlas-v1.1.txt"
+        },
+        {
+          "id": "S-CHAL-004-R6",
+          "locator": "PDF pp. 33–35 (printed pp. 32–34), Model Learning, Notes 29–30, Activities 10–11 and Note 5",
+          "excerpt": "A common problem that is encountered when creating a model is overfitting to training data.",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_challenge/out/amlas-v1.1.pdf",
+          "snapshot_sha256": "18eab2179ccd2c8d6aeb651099c72536d192dddb58094bf2b440de5885322429",
+          "context_path": "research/contributions/assurance_challenge/out/amlas-v1.1.txt"
+        },
+        {
+          "id": "S-CHAL-004-R7",
+          "locator": "PDF pp. 40–41 (printed pp. 39–40), Activity 13 and Notes 31–33",
+          "excerpt": "All verification activities shall be sufficiently independent from the development activities.",
+          "context_status": "full_context",
+          "snapshot_path": "research/contributions/assurance_challenge/out/amlas-v1.1.pdf",
+          "snapshot_sha256": "18eab2179ccd2c8d6aeb651099c72536d192dddb58094bf2b440de5885322429",
+          "context_path": "research/contributions/assurance_challenge/out/amlas-v1.1.txt"
+        }
+      ],
+      "limitations": "AMLAS is public research guidance, not a regulator-issued means of compliance or product authorization. It explicitly limits itself to the ML component and expects system/domain assurance inputs; it does not settle a safety threshold, regulator acceptance or a complete aircraft/vehicle approval case.",
+      "independence_group": "YORK-AMLAS-V1-1",
+      "refresh_days": 365
+    }
+  ]
+}

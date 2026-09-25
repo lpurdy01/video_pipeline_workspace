@@ -1,0 +1,19 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-006-source_support-Db57475a7acf2",
+  "package_id": "P-C-CHAL-006-source_support",
+  "input_digest": "b57475a7acf2aed27d178134216cdec74cab6df532da5c0ca5e23b2f9db9ac52",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The provided excerpts from the AMLAS Version 1.1 guidance directly support all components of the claim. Specifically, AMLAS is introduced as a six-stage methodology for ML components (S-CHAL-004-R1), explicitly links system-level hazard/risk analysis to ML safety requirements across its stages (S-CHAL-004-R1), states its scope is limited to the ML component (S-CHAL-004-R2), advises against its use in isolation (S-CHAL-004-R2), and confirms a primary focus on off-line supervised learning (S-CHAL-004-R3). The source's publication date (2021-03) and status as research guidance are consistent with the claim's scope and date.",
+  "evidence_locators": [
+    "PDF pp. 2\u20133, Introduction and Overview of AMLAS",
+    "PDF p. 3, Using this Document"
+  ],
+  "limitations": [],
+  "resolves": []
+}

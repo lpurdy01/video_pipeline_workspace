@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-C-INTAKE-001-source_support-D2b023e94a0e6",
+  "package_id": "P-C-INTAKE-001-source_support",
+  "input_digest": "2b023e94a0e60b789dcdf8284564044faed615b512536920b9260977c6fe4d10",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The supplied context is truncated at page 4 and does not include the cited PDF page 10 or the excerpt 'The exemption does not authorize the system.' Therefore, the provided material is inadequate to verify the claim.",
+  "evidence_locators": [
+    "S-INTAKE-001-R2",
+    "PDF printed page 10"
+  ],
+  "limitations": [
+    "The captured context is truncated before reaching the relevant FAA response to DAA safety-standard comments on page 10."
+  ],
+  "resolves": []
+}

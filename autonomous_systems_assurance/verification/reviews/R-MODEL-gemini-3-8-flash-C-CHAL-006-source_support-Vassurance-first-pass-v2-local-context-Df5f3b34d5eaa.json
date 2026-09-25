@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-006-source_support-Vassurance-first-pass-v2-local-context-Df5f3b34d5eaa",
+  "package_id": "P-C-CHAL-006-source_support",
+  "input_digest": "f5f3b34d5eaab3b8a0423bba79c69f87d621a03491b3e723f863ca9f4203f097",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The original context from AMLAS v1.1 directly supports every element of the claim text: it defines a six-stage safety assurance methodology for ML components linking system safety requirements to data management, model learning, verification, and deployment; it explicitly states that its scope is limited to the ML component and should not be used in isolation from other standards/guidelines; and it specifies a primary focus on off-line supervised learning.",
+  "evidence_locators": [
+    "S-CHAL-004-R1 (PDF pp. 2\u20133, Introduction and Overview of AMLAS)",
+    "S-CHAL-004-R2 (PDF p. 3, Using this Document)",
+    "S-CHAL-004-R3 (PDF p. 3, Using this Document)"
+  ],
+  "limitations": [
+    "AMLAS v1.1 is public research guidance from the University of York, not an authority-issued means of compliance or formal regulatory approval."
+  ],
+  "resolves": []
+}

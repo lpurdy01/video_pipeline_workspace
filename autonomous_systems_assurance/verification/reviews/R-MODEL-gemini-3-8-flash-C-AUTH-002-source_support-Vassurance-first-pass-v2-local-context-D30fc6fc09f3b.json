@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-AUTH-002-source_support-Vassurance-first-pass-v2-local-context-D30fc6fc09f3b",
+  "package_id": "P-C-AUTH-002-source_support",
+  "input_digest": "30fc6fc09f3b1b71a01a9128112f1be812674634c5f35a3a20dccda1082596e0",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v2-local-context",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The captured context from the FAA roadmap directly defines a 'Learned AI Implementation' as static in the operating environment and 'subjected to design time safety assurance processes prior to its use in an operational context', further stating that when deploying an updated version, 'each new version is subjected to safety assurance'. Artifact usages maintain this bounded scope as roadmap framing rather than an established means of compliance.",
+  "evidence_locators": [
+    "S-AUTH-001-R2 (PDF physical p. 11 / printed p. 10, section 'Differentiate Between Learned AI and Learning AI')"
+  ],
+  "limitations": [
+    "The FAA Roadmap is a direction-setting document and living strategy, not an active means of compliance, technical standard, or formal approval of any specific trained model."
+  ],
+  "resolves": []
+}

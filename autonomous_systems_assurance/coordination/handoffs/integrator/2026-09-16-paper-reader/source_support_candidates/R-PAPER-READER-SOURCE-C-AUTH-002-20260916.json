@@ -1,0 +1,16 @@
+{
+  "id": "R-PAPER-READER-SOURCE-C-AUTH-002-20260916",
+  "package_id": "P-C-AUTH-002-source_support",
+  "input_digest": "1a653ea9b3c9fab7f3c66b7d4a302f75030236d6d3c043956e2dc218eefe2794",
+  "task": "source_support",
+  "reviewer_id": "paper-reader-source-support-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "source-support-digest-pinned-v2",
+  "verdict": "uncertain",
+  "created_at": "2026-09-16",
+  "rationale": "The extracted phrase supports renewed assurance for an updated version. The package has no captured full context for the surrounding learned-versus-learning discussion, however, so it cannot verify the claim's frozen-model and design-time wording without expanding a direction-setting roadmap into a compliance method.",
+  "evidence_locators": ["S-AUTH-001-R2 — PDF p. 10, learned AI implementation and update discussion"],
+  "limitations": ["S-AUTH-001-R2 is short_excerpt_only and has no captured context text, despite a PDF snapshot path.", "The FAA roadmap is direction-setting material, not a model-specific approval or complete means of compliance."],
+  "resolves": []
+}

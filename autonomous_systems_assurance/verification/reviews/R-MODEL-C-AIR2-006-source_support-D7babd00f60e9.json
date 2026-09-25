@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-AIR2-006-source_support-D7babd00f60e9",
+  "package_id": "P-C-AIR2-006-source_support",
+  "input_digest": "7babd00f60e9799795c8b408d5e35f69aef32e55013c95c7b0bb0d9fd490fcee",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided short excerpts confirm that the draft TSO-C212a covers the detection of non-cooperative traffic and explicitly states that installation requires separate approval. However, the excerpts do not mention the generation of tracks, and the full context is absent, making it impossible to fully verify the claim.",
+  "evidence_locators": [
+    "S-AIR2-006-R1",
+    "S-AIR2-006-R2"
+  ],
+  "limitations": [
+    "Full text of Draft TSO-C212a is required to verify the 'generate tracks' function.",
+    "Context status is limited to short excerpts only."
+  ],
+  "resolves": []
+}

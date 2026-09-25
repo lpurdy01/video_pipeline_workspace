@@ -1,0 +1,30 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-004-cross_artifact-D7c2272521da0",
+  "package_id": "P-C-CHAL-004-cross_artifact",
+  "input_digest": "7c2272521da0663b14e71e5e536c804a95557a13310ba09828c410488865a89c",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use of claim C-CHAL-004 consistently preserves its scope and limitations. The artifacts explicitly state that EASA NPA 2025-07(B) is 'proposed, not final material' and highlight its exclusion of AI-based systems directly contributing to fatalities or multiple life-threatening injuries, aligning with the claim's wording and the supporting evidence from NPA 2025-07(B) DS.AI.010 Scope. Visual and narrative guidance in the video-related artifacts also reinforces these qualifications, preventing overstatement or misrepresentation of the proposed material's status or applicability to the project's most demanding flight-critical autonomy case.",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_challenge/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "resource_composition/figures.md",
+    "research/integration_round3.md",
+    "video/script.md",
+    "assurance/method_crosswalk.json",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "resource_composition/whitepaper.md",
+    "S-CHAL-002-R1"
+  ],
+  "limitations": [],
+  "resolves": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-003-cross_artifact-Dfc6178b2e3e3",
+  "package_id": "P-C-CHAL-003-cross_artifact",
+  "input_digest": "fc6178b2e3e3e5c708e54991c0954747a79ef4d1c4fc8992aaaf2790f6814706",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact use of claim C-CHAL-003 consistently preserves its scope and limitations. The 'proposed' status of EASA's NPA 2025-07(B) is explicitly stated and reiterated across all artifacts, including prose, tables, and JSON structures. The artifacts also consistently highlight that the material is 'not final AMC/GM or an approved application' and often mention its exclusion of the highest-consequence systems, aligning with the claim's stated scope and the source's limitations. No instances of omitted qualifications, changed status, or inferences presented as authority evidence were found.",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_challenge/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "resource_composition/figures.md",
+    "research/integration_round3.md",
+    "video/script.md",
+    "assurance/method_crosswalk.json",
+    "planning/learned_systems_assurance_next_steps.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [],
+  "resolves": []
+}

@@ -1,0 +1,677 @@
+{
+  "schema_version": 1,
+  "case_id": "CASE-ROAD-TO-AIR-001",
+  "status": "worked-example-planning",
+  "limitations": "This is a hypothetical worked case for research and compiler demonstration. It does not describe, test, certify or authorize a real vehicle, model or operation.",
+  "system_releases": [
+    {
+      "id": "REL-ROAD-001",
+      "label": "Hypothetical frozen road vision-cue perception release for an occluded conflict",
+      "release_version": "road-occlusion-r0",
+      "learning_mode": "frozen_trained",
+      "release_status": "defined"
+    },
+    {
+      "id": "REL-AIR-001",
+      "label": "Hypothetical frozen airborne vision-cue detect-and-avoid perception release",
+      "release_version": "air-daa-occlusion-r0",
+      "learning_mode": "frozen_trained",
+      "release_status": "defined"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "AS-ROAD-001",
+      "text": "The road encounter is inside the stated ODD, including speed, roadway geometry, weather, illumination and sensor-health limits.",
+      "status": "open",
+      "release_ids": [
+        "REL-ROAD-001"
+      ]
+    },
+    {
+      "id": "AS-AIR-001",
+      "text": "The aircraft encounter is inside a stated airspace, traffic, weather, sensing-range and operating-rule envelope.",
+      "status": "open",
+      "release_ids": [
+        "REL-AIR-001"
+      ]
+    },
+    {
+      "id": "AS-AIR-002",
+      "text": "The airborne sensor, fusion and preprocessing configuration matches the configuration represented by the training and evaluation evidence.",
+      "status": "open",
+      "release_ids": [
+        "REL-AIR-001"
+      ]
+    },
+    {
+      "id": "AS-AIR-003",
+      "text": "After a late track or detection result, the aircraft has enough remaining separation, maneuver authority and dynamic margin to reach a safe state.",
+      "status": "open",
+      "release_ids": [
+        "REL-AIR-001"
+      ]
+    },
+    {
+      "id": "AS-AIR-004",
+      "text": "A monitor has an evidence-backed, adequately independent traffic-and-clearance observation path, or an operational restriction that prevents a shared missed-aircraft failure or unsafe escape maneuver from becoming unrecoverable.",
+      "status": "open",
+      "release_ids": [
+        "REL-AIR-001"
+      ]
+    },
+    {
+      "id": "AS-AIR-005",
+      "text": "Changes to learned weights, sensor configuration, fusion, alerting, maneuver logic or operational domain trigger a new release and impact assessment.",
+      "status": "open",
+      "release_ids": [
+        "REL-AIR-001"
+      ]
+    },
+    {
+      "id": "AS-ROAD-002",
+      "text": "The sensor and preprocessing configuration matches the configuration represented by the training and evaluation evidence.",
+      "status": "open",
+      "release_ids": [
+        "REL-ROAD-001"
+      ]
+    },
+    {
+      "id": "AS-ROAD-003",
+      "text": "The vehicle retains enough maneuver authority and time after a late perception result to reach a safe state under the stated dynamics bounds.",
+      "status": "open",
+      "release_ids": [
+        "REL-ROAD-001"
+      ]
+    },
+    {
+      "id": "AS-ROAD-004",
+      "text": "A monitor observes a signal that distinguishes a missed hazard from an empty scene early enough to intervene, or operation is restricted so that this distinction is not required.",
+      "status": "open",
+      "release_ids": [
+        "REL-ROAD-001"
+      ]
+    },
+    {
+      "id": "AS-ROAD-005",
+      "text": "No change to data, labels, model weights, preprocessing, sensor hardware, planner, monitor or ODD is made without a new release and impact assessment.",
+      "status": "open",
+      "release_ids": [
+        "REL-ROAD-001"
+      ]
+    }
+  ],
+  "hazards": [
+    {
+      "id": "H-ROAD-001",
+      "title": "An occluded road actor is missed or detected too late, leaving the vehicle without a safe avoidance maneuver.",
+      "release_id": "REL-ROAD-001",
+      "assumption_ids": [
+        "AS-ROAD-001",
+        "AS-ROAD-002",
+        "AS-ROAD-003",
+        "AS-ROAD-004",
+        "AS-ROAD-005"
+      ],
+      "obligation_ids": [
+        "O-001",
+        "O-002",
+        "O-003",
+        "O-004",
+        "O-005",
+        "O-006",
+        "O-007",
+        "O-008"
+      ]
+    },
+    {
+      "id": "H-AIR-001",
+      "title": "An approaching aircraft is missed or tracked too late, leaving insufficient separation or maneuver margin to avoid a collision.",
+      "release_id": "REL-AIR-001",
+      "assumption_ids": [
+        "AS-AIR-001",
+        "AS-AIR-002",
+        "AS-AIR-003",
+        "AS-AIR-004",
+        "AS-AIR-005"
+      ],
+      "obligation_ids": [
+        "O-AIR-001",
+        "O-AIR-002",
+        "O-AIR-003",
+        "O-AIR-004",
+        "O-AIR-005",
+        "O-AIR-006",
+        "O-AIR-007",
+        "O-AIR-008"
+      ]
+    }
+  ],
+  "evidence_artifacts": [
+    {
+      "id": "EA-ROAD-001",
+      "title": "ODD, hazard and delegated-authority statement",
+      "kind": "hazard_analysis",
+      "status": "planned",
+      "release_id": "REL-ROAD-001",
+      "claim_ids": [
+        "C-CHAL-006",
+        "C-EVID-001"
+      ]
+    },
+    {
+      "id": "EA-ROAD-002",
+      "title": "Data, label, training and deployment-lineage manifest",
+      "kind": "model_release_record",
+      "status": "planned",
+      "release_id": "REL-ROAD-001",
+      "claim_ids": [
+        "C-CHAL-006",
+        "C-EVID-001",
+        "C-EVID-002",
+        "C-TRAIN-001",
+        "C-TRAIN-002",
+        "C-TRAIN-004"
+      ]
+    },
+    {
+      "id": "EA-ROAD-003",
+      "title": "Scenario taxonomy, held-out results and conditional rare-event analysis",
+      "kind": "test_evidence",
+      "status": "planned",
+      "release_id": "REL-ROAD-001",
+      "claim_ids": [
+        "C-EVID-002",
+        "C-EVID-003",
+        "C-EVID-004",
+        "C-EVID-007",
+        "C-TRAIN-003"
+      ]
+    },
+    {
+      "id": "EA-ROAD-004",
+      "title": "Closed-loop monitor, switching-delay and recovery-envelope evidence",
+      "kind": "runtime_assurance_evidence",
+      "status": "planned",
+      "release_id": "REL-ROAD-001",
+      "claim_ids": [
+        "C-EVID-005",
+        "C-CHAL-002"
+      ]
+    },
+    {
+      "id": "EA-ROAD-005",
+      "title": "Change-impact and operational-monitoring record",
+      "kind": "change_control_record",
+      "status": "planned",
+      "release_id": "REL-ROAD-001",
+      "claim_ids": [
+        "C-AUTH-002",
+        "C-CHAL-003"
+      ]
+    },
+    {
+      "id": "EA-AIR-001",
+      "title": "Airspace/ODD, collision hazard and delegated-authority statement",
+      "kind": "hazard_analysis",
+      "status": "planned",
+      "release_id": "REL-AIR-001",
+      "claim_ids": [
+        "C-CHAL-001",
+        "C-CHAL-004",
+        "C-CHAL-006"
+      ]
+    },
+    {
+      "id": "EA-AIR-002",
+      "title": "Airborne sensor, fusion, training and deployment-lineage manifest",
+      "kind": "model_release_record",
+      "status": "planned",
+      "release_id": "REL-AIR-001",
+      "claim_ids": [
+        "C-CHAL-006",
+        "C-EVID-001",
+        "C-EVID-002",
+        "C-TRAIN-001",
+        "C-TRAIN-002",
+        "C-TRAIN-004"
+      ]
+    },
+    {
+      "id": "EA-AIR-003",
+      "title": "Encounter taxonomy, shifted-condition tests and conditional collision-risk analysis",
+      "kind": "test_evidence",
+      "status": "planned",
+      "release_id": "REL-AIR-001",
+      "claim_ids": [
+        "C-EVID-002",
+        "C-EVID-003",
+        "C-EVID-004",
+        "C-TRAIN-003"
+      ]
+    },
+    {
+      "id": "EA-AIR-004",
+      "title": "Independent airborne monitor, traffic-clearance, alerting-delay, maneuver and recovery-envelope evidence",
+      "kind": "runtime_assurance_evidence",
+      "status": "planned",
+      "release_id": "REL-AIR-001",
+      "claim_ids": [
+        "C-EVID-005",
+        "C-CHAL-002"
+      ]
+    },
+    {
+      "id": "EA-AIR-005",
+      "title": "Airborne release change, continuing-monitoring and operational-control record",
+      "kind": "change_control_record",
+      "status": "planned",
+      "release_id": "REL-AIR-001",
+      "claim_ids": [
+        "C-AUTH-002",
+        "C-CHAL-003"
+      ]
+    }
+  ],
+  "risk_contexts": [
+    {
+      "id": "RC-ROAD-001",
+      "title": "Road encounter risk context",
+      "release_id": "REL-ROAD-001",
+      "hazard_id": "H-ROAD-001",
+      "status": "open",
+      "assumption_ids": [
+        "AS-ROAD-001",
+        "AS-ROAD-002",
+        "AS-ROAD-003",
+        "AS-ROAD-004"
+      ],
+      "evidence_artifact_ids": [
+        "EA-ROAD-001",
+        "EA-ROAD-003",
+        "EA-ROAD-004"
+      ],
+      "claim_ids": [
+        "C-RISK-001",
+        "C-RISK-002",
+        "C-RISK-004",
+        "C-RISK-005"
+      ],
+      "risk_statement": "The residual risk of a missed or late-detected road actor cannot be judged from an aggregate detection metric alone; it depends on encounter exposure, severity, sensing, delay, action authority and recovery assumptions.",
+      "metric_limit": "A held-out or simulated metric is conditional on its scenario distribution, threshold and system model. It is evidence for this context, not a safety score or component failure rate."
+    },
+    {
+      "id": "RC-AIR-001",
+      "title": "Airborne encounter risk context",
+      "release_id": "REL-AIR-001",
+      "hazard_id": "H-AIR-001",
+      "status": "open",
+      "assumption_ids": [
+        "AS-AIR-001",
+        "AS-AIR-002",
+        "AS-AIR-003",
+        "AS-AIR-004"
+      ],
+      "evidence_artifact_ids": [
+        "EA-AIR-001",
+        "EA-AIR-003",
+        "EA-AIR-004"
+      ],
+      "claim_ids": [
+        "C-RISK-001",
+        "C-RISK-002",
+        "C-RISK-003",
+        "C-RISK-004"
+      ],
+      "risk_statement": "The residual collision risk of a missed or late track requires an encounter-specific argument linking severity, airspace/traffic exposure, sensing, alerting delay, maneuver margin, recovery and operating restrictions.",
+      "metric_limit": "A risk ratio or aggregate encounter result can conceal a harmful encounter class; it must retain its event definitions, encounter distribution, mitigations and stated scope."
+    }
+  ],
+  "obligations": [
+    {
+      "id": "O-001",
+      "title": "Bound operating scope and authority",
+      "description": "Define the encounter, ODD, hazardous outcome, decision authority and time/maneuver margin for this release.",
+      "status": "open",
+      "hazard_ids": [
+        "H-ROAD-001"
+      ],
+      "assumption_ids": [
+        "AS-ROAD-001",
+        "AS-ROAD-003"
+      ],
+      "evidence_artifact_ids": [
+        "EA-ROAD-001"
+      ],
+      "claim_ids": [
+        "C-CHAL-006",
+        "C-EVID-001"
+      ]
+    },
+    {
+      "id": "O-002",
+      "title": "Sensor and input observability",
+      "description": "Establish observable conditions, sensing limits, latency, calibration and common-cause failures for the release configuration.",
+      "status": "open",
+      "hazard_ids": [
+        "H-ROAD-001"
+      ],
+      "assumption_ids": [
+        "AS-ROAD-001",
+        "AS-ROAD-002",
+        "AS-ROAD-004"
+      ],
+      "evidence_artifact_ids": [
+        "EA-ROAD-002",
+        "EA-ROAD-003"
+      ],
+      "claim_ids": [
+        "C-EVID-002",
+        "C-EVID-004",
+        "C-TRAIN-001"
+      ]
+    },
+    {
+      "id": "O-003",
+      "title": "Learning and release lineage",
+      "description": "Trace data, labels, splits, learning configuration, frozen weights and deployment transformations to this release. Record label policy, capture-group splits, candidate selection, underfit/overfit checks and access to held-out verification data for the vision-cue role.",
+      "status": "open",
+      "hazard_ids": [
+        "H-ROAD-001"
+      ],
+      "assumption_ids": [
+        "AS-ROAD-002",
+        "AS-ROAD-005"
+      ],
+      "evidence_artifact_ids": [
+        "EA-ROAD-002",
+        "EA-ROAD-005"
+      ],
+      "claim_ids": [
+        "C-CHAL-006",
+        "C-EVID-001",
+        "C-TRAIN-001",
+        "C-TRAIN-002",
+        "C-TRAIN-004"
+      ]
+    },
+    {
+      "id": "O-004",
+      "title": "Hazard-relevant performance and uncertainty",
+      "description": "Evaluate false negatives, delay and uncertainty by stated scenario partitions, including shifted conditions and the action when uncertainty exceeds authority limits. Distinguish the image cue from a usable motion/clearance estimate and preserve performance by independently held-out encounter class.",
+      "status": "open",
+      "hazard_ids": [
+        "H-ROAD-001"
+      ],
+      "assumption_ids": [
+        "AS-ROAD-001",
+        "AS-ROAD-002"
+      ],
+      "evidence_artifact_ids": [
+        "EA-ROAD-003"
+      ],
+      "claim_ids": [
+        "C-EVID-003",
+        "C-EVID-004",
+        "C-EVID-007",
+        "C-TRAIN-003"
+      ]
+    },
+    {
+      "id": "O-005",
+      "title": "Closed-loop planner and controller behavior",
+      "description": "Show how perception error reaches planning, actuation and vehicle dynamics, including the last recoverable state.",
+      "status": "open",
+      "hazard_ids": [
+        "H-ROAD-001"
+      ],
+      "assumption_ids": [
+        "AS-ROAD-003"
+      ],
+      "evidence_artifact_ids": [
+        "EA-ROAD-003",
+        "EA-ROAD-004"
+      ],
+      "claim_ids": [
+        "C-CHAL-006",
+        "C-EVID-005"
+      ]
+    },
+    {
+      "id": "O-006",
+      "title": "Useful intervention and recovery",
+      "description": "Demonstrate monitor observability, switching delay, recovery authority and the safe envelope; leave a blocker if the monitor shares the missed perception path.",
+      "status": "open",
+      "hazard_ids": [
+        "H-ROAD-001"
+      ],
+      "assumption_ids": [
+        "AS-ROAD-003",
+        "AS-ROAD-004"
+      ],
+      "evidence_artifact_ids": [
+        "EA-ROAD-004"
+      ],
+      "claim_ids": [
+        "C-EVID-005",
+        "C-CHAL-002"
+      ]
+    },
+    {
+      "id": "O-007",
+      "title": "System and operational composition",
+      "description": "Validate failure propagation, sensor disagreement, other actors, safety conflicts and the boundary between model evidence and operating authorization.",
+      "status": "open",
+      "hazard_ids": [
+        "H-ROAD-001"
+      ],
+      "assumption_ids": [
+        "AS-ROAD-001",
+        "AS-ROAD-004"
+      ],
+      "evidence_artifact_ids": [
+        "EA-ROAD-001",
+        "EA-ROAD-003",
+        "EA-ROAD-004"
+      ],
+      "claim_ids": [
+        "C-CHAL-001",
+        "C-CHAL-002",
+        "C-AUTH-008"
+      ]
+    },
+    {
+      "id": "O-008",
+      "title": "Release change and in-service control",
+      "description": "Bind retraining, data, sensor, model, planner, monitor and ODD changes to impact analysis, renewed evidence and a new release identity.",
+      "status": "open",
+      "hazard_ids": [
+        "H-ROAD-001"
+      ],
+      "assumption_ids": [
+        "AS-ROAD-005"
+      ],
+      "evidence_artifact_ids": [
+        "EA-ROAD-005"
+      ],
+      "claim_ids": [
+        "C-AUTH-002",
+        "C-CHAL-003",
+        "C-EVID-001"
+      ]
+    },
+    {
+      "id": "O-AIR-001",
+      "title": "Bound airborne operating scope and authority",
+      "description": "Define airspace/traffic assumptions, collision hazard, authority, alerting threshold and maneuver/separation margin for this release.",
+      "status": "open",
+      "hazard_ids": [
+        "H-AIR-001"
+      ],
+      "assumption_ids": [
+        "AS-AIR-001",
+        "AS-AIR-003"
+      ],
+      "evidence_artifact_ids": [
+        "EA-AIR-001"
+      ],
+      "claim_ids": [
+        "C-CHAL-001",
+        "C-CHAL-004",
+        "C-CHAL-006"
+      ]
+    },
+    {
+      "id": "O-AIR-002",
+      "title": "Airborne sensor and fusion observability",
+      "description": "Establish sensing range, latency, fusion disagreement, weather/background limits and common-cause failures for the airborne release.",
+      "status": "open",
+      "hazard_ids": [
+        "H-AIR-001"
+      ],
+      "assumption_ids": [
+        "AS-AIR-001",
+        "AS-AIR-002",
+        "AS-AIR-004"
+      ],
+      "evidence_artifact_ids": [
+        "EA-AIR-002",
+        "EA-AIR-003"
+      ],
+      "claim_ids": [
+        "C-EVID-002",
+        "C-EVID-004",
+        "C-EVID-005",
+        "C-TRAIN-001"
+      ]
+    },
+    {
+      "id": "O-AIR-003",
+      "title": "Airborne learning and release lineage",
+      "description": "Trace data, labels, training configuration, frozen weights, fusion configuration and deployment transformation to this release. Record label policy, capture-group splits, candidate selection, underfit/overfit checks and access to held-out verification data for the vision-cue role.",
+      "status": "open",
+      "hazard_ids": [
+        "H-AIR-001"
+      ],
+      "assumption_ids": [
+        "AS-AIR-002",
+        "AS-AIR-005"
+      ],
+      "evidence_artifact_ids": [
+        "EA-AIR-002",
+        "EA-AIR-005"
+      ],
+      "claim_ids": [
+        "C-CHAL-006",
+        "C-EVID-001",
+        "C-TRAIN-001",
+        "C-TRAIN-002",
+        "C-TRAIN-004"
+      ]
+    },
+    {
+      "id": "O-AIR-004",
+      "title": "Encounter performance and uncertainty",
+      "description": "Evaluate missed/late tracks, uncertainty and alerting performance by encounter partition and shifted sensing condition. Distinguish the image cue from a usable motion/clearance estimate and preserve performance by independently held-out encounter class.",
+      "status": "open",
+      "hazard_ids": [
+        "H-AIR-001"
+      ],
+      "assumption_ids": [
+        "AS-AIR-001",
+        "AS-AIR-002"
+      ],
+      "evidence_artifact_ids": [
+        "EA-AIR-003"
+      ],
+      "claim_ids": [
+        "C-EVID-003",
+        "C-EVID-004",
+        "C-TRAIN-003"
+      ]
+    },
+    {
+      "id": "O-AIR-005",
+      "title": "Airborne closed-loop maneuver behavior",
+      "description": "Show how perception/fusion error propagates through alerting, avoidance planning, aircraft dynamics and separation outcome.",
+      "status": "open",
+      "hazard_ids": [
+        "H-AIR-001"
+      ],
+      "assumption_ids": [
+        "AS-AIR-003"
+      ],
+      "evidence_artifact_ids": [
+        "EA-AIR-003",
+        "EA-AIR-004"
+      ],
+      "claim_ids": [
+        "C-EVID-005",
+        "C-CHAL-002"
+      ]
+    },
+    {
+      "id": "O-AIR-006",
+      "title": "Useful airborne intervention and recovery",
+      "description": "Demonstrate monitor observability, an evidence-backed independent traffic-and-clearance path for an active escape maneuver, alert/switching delay, recovery maneuver authority and the last safe intervention state. A later landing or diversion plan does not satisfy this immediate collision-avoidance obligation.",
+      "status": "open",
+      "hazard_ids": [
+        "H-AIR-001"
+      ],
+      "assumption_ids": [
+        "AS-AIR-003",
+        "AS-AIR-004"
+      ],
+      "evidence_artifact_ids": [
+        "EA-AIR-004"
+      ],
+      "claim_ids": [
+        "C-EVID-005",
+        "C-CHAL-002"
+      ]
+    },
+    {
+      "id": "O-AIR-007",
+      "title": "Airborne system and operational composition",
+      "description": "Validate sensor disagreement, other traffic, aircraft/system failure propagation and the distinct equipment, installation, aircraft and operational approval edges.",
+      "status": "open",
+      "hazard_ids": [
+        "H-AIR-001"
+      ],
+      "assumption_ids": [
+        "AS-AIR-001",
+        "AS-AIR-004"
+      ],
+      "evidence_artifact_ids": [
+        "EA-AIR-001",
+        "EA-AIR-003",
+        "EA-AIR-004"
+      ],
+      "claim_ids": [
+        "C-002",
+        "C-CHAL-001",
+        "C-CHAL-004"
+      ]
+    },
+    {
+      "id": "O-AIR-008",
+      "title": "Airborne release change and in-service control",
+      "description": "Bind changes to models, sensors, fusion, alerting, avoidance logic and operating domain to renewed evidence and release identity.",
+      "status": "open",
+      "hazard_ids": [
+        "H-AIR-001"
+      ],
+      "assumption_ids": [
+        "AS-AIR-005"
+      ],
+      "evidence_artifact_ids": [
+        "EA-AIR-005"
+      ],
+      "claim_ids": [
+        "C-AUTH-002",
+        "C-CHAL-003",
+        "C-EVID-001"
+      ]
+    }
+  ]
+}

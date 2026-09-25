@@ -1,0 +1,27 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-CHAL-003-cross_artifact-D53d12e9837ac",
+  "package_id": "P-C-CHAL-003-cross_artifact",
+  "input_digest": "53d12e9837ac1d99d9cb9418a8932d213e0e971e6c49de2dbd276e1472b30cc7",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "Across all citing artifacts (whitepaper, script outline, video treatment, crosswalk documents, architecture notes, and challenge findings), EASA NPA 2025-07(B) is consistently represented according to its stated scope as proposed civil material and a candidate lifecycle, rather than an adopted AMC/GM, final rule, or approval path. The six listed lifecycle areas are directly aligned with the proposed DS.AI provisions without scope drift or omitted qualifications.",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "assurance/method_crosswalk.json:M-EASA-DSAI-001",
+    "research/contributions/assurance_challenge/findings.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [
+    "Review is bounded to the supplied project artifact uses and does not verify whether EASA has subsequently issued an ED Decision or final AMC/GM post-NPA."
+  ],
+  "resolves": []
+}

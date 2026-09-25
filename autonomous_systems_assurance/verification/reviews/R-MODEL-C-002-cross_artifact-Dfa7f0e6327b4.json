@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-002-cross_artifact-Dfa7f0e6327b4",
+  "package_id": "P-C-002-cross_artifact",
+  "input_digest": "fa7f0e6327b4e29db28c3fab065bd1f747ecbbd7a6619ade6899ae6a1c1f1068",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The artifacts correctly apply the claim to distinguish TSO equipment authorization from installation and operational approvals, adhering to the FAA source and avoiding the conflation of specific product grants.",
+  "evidence_locators": [
+    "research/initial_findings.md",
+    "wiki/concepts/assurance_vocabulary.md",
+    "video/narrative.md"
+  ],
+  "limitations": [
+    "Specific product claims still require verification of their exact approval grants."
+  ],
+  "resolves": []
+}

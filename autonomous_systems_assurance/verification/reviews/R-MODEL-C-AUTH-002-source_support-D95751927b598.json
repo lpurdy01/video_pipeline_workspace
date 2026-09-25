@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-AUTH-002-source_support-D95751927b598",
+  "package_id": "P-C-AUTH-002-source_support",
+  "input_digest": "95751927b5985deeee3aa90c10630573f4ed7c9e36426eb84013ce9419d1d8f0",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided source region contains only a short excerpt and explicitly lacks the full local context needed to verify the claim's specific statements about frozen learned AI implementations and design-time safety assurance.",
+  "evidence_locators": [
+    "S-AUTH-001-R2"
+  ],
+  "limitations": [
+    "Require the full text of PDF p. 10 to verify the distinction between static/frozen learned AI and the requirement for design-time safety assurance."
+  ],
+  "resolves": []
+}

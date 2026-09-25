@@ -1,0 +1,25 @@
+{
+  "id": "R-PAPER-CROSS-C-002-20260916",
+  "package_id": "P-C-002-cross_artifact",
+  "input_digest": "77e5011d74255a5ab0c5d7f7142e479e053261c0664feb9dc2324f82b212c64e",
+  "task": "cross_artifact",
+  "reviewer_id": "paper-compiler-review-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-cross-artifact-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The current figure plan, narrative seed, whitepaper outline, vocabulary page, and initial finding keep the authorization object distinct: no use turns a TSO article authorization into installation, aircraft, or operational approval. The flight-transfer material asks for precise approval scope rather than claiming that a named DAA system has been authorized for a particular operation.",
+  "evidence_locators": [
+    "research/initial_findings.md:13, explicit TSO/article versus installation/use distinction",
+    "wiki/concepts/assurance_vocabulary.md:14, approval-object scope vocabulary",
+    "resource_composition/whitepaper_outline.md:12, road-to-air section preserves matched approval distinctions",
+    "resource_composition/figures.md:12, F-006 visual overclaim warning",
+    "video/narrative.md:22, instruction to use GA-ASI/Zipline with precise approval scope"
+  ],
+  "limitations": [
+    "This cross-artifact review does not resolve the current source-support uncertainty for C-002.",
+    "It does not verify the scope of any named GA-ASI or Zipline approval."
+  ],
+  "resolves": []
+}

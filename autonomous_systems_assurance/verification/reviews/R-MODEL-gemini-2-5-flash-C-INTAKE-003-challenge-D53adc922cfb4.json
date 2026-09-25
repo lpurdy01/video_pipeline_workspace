@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-INTAKE-003-challenge-D53adc922cfb4",
+  "package_id": "P-C-INTAKE-003-challenge",
+  "input_digest": "53adc922cfb425183781eeef9442817579baf361f7bbd1aae5dd76583528096d",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "The claim accurately reflects explicit statements within TSO-C211a. Section 1 clearly states the TSO sets \"minimum performance standards (MPS)\" for DAA equipment manufacturer applications for approval. Section 5.b.(3) explicitly states, \"Installation of this article requires separate approval.\" No alternative interpretation, primary counterevidence, or scope limit within the provided material defeats these direct statements from the TSO.",
+  "evidence_locators": [
+    "PDF printed page 1, sections 1\u20133",
+    "PDF printed page 8, section 5.b.(3)"
+  ],
+  "limitations": [
+    "Review limited to the provided TSO-C211a document and its direct content; no broader search for other FAA regulations or policies was conducted."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-004-cross_artifact-D0ea5c3b35dfc",
+  "package_id": "P-C-CHAL-004-cross_artifact",
+  "input_digest": "0ea5c3b35dfc2cd1b97579c9209750291b1ab8acab5c15d31f84a625dd2fae13",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every supplied artifact use preserves the claim's scope and limitations. The claim states that EASA's proposed DS.AI does not cover AI systems directly contributing to fatalities or multiple life-threatening injuries, excludes certain online-learning systems, and therefore cannot be presented as a complete path for the most demanding flight-critical autonomy case. The supporting evidence (S-CHAL-002-R1) explicitly confirms these exclusions and the 'proposed' status of DS.AI. All artifacts consistently refer to EASA NPA 2025-07(B) as 'proposed' or 'not final material' and highlight its specific scope limitations regarding high-consequence systems and online learning, aligning with the claim's conclusion that it cannot serve as a complete path for the hardest cases. Artifacts also acknowledge the need for specific function allocation to apply these boundaries, addressing the challenge.",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_challenge/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "resource_composition/figures.md",
+    "research/integration_round3.md",
+    "video/script.md",
+    "assurance/method_crosswalk.json",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "resource_composition/whitepaper.md"
+  ],
+  "limitations": [
+    "The document is explicitly a Notice of Proposed Amendment and labels its material \u2018Proposed DS.AI\u2019; it is not a final EASA decision.",
+    "Its scope is Level 1/2 high-risk AI and expressly excludes systems directly contributing to fatalities/multiple life-threatening injuries, as well as certain online-learning and logic/knowledge-based systems."
+  ],
+  "resolves": []
+}

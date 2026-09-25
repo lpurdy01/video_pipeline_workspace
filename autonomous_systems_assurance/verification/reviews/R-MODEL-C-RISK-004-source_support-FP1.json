@@ -1,0 +1,23 @@
+{
+  "id": "R-MODEL-C-RISK-004-source_support-FP1",
+  "package_id": "P-C-RISK-004-source_support",
+  "input_digest": "455b86f14ac91bcf2fe4d9c8dde3157061e31d918e5ad3fd2fd6d68957977439",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The captured source text is truncated at page 6 and does not contain the cited pages (25-27 and 33-35). Without the full context, it is impossible to verify the exact statements regarding NMAC/DWC definitions, encounter sets, and the limitations of risk ratios.",
+  "evidence_locators": [
+    "S-RISK-004-R1",
+    "S-RISK-004-R2",
+    "PDF pp. 25-27",
+    "PDF pp. 33-35"
+  ],
+  "limitations": [
+    "The full text of CAP3127 pages 25-35 must be retrieved to verify the CAA's exact wording on DAA metrics, risk ratios, and assurance arguments."
+  ],
+  "resolves": []
+}

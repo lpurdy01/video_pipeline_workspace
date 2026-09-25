@@ -1,0 +1,510 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-08",
+  "sources": [
+    {
+      "id": "S-001",
+      "title": "GA-ASI Detect and Avoid System",
+      "publisher": "GA-ASI",
+      "url": "https://www.ga-asi.com/detect-and-avoid-system",
+      "published_at": null,
+      "source_type": "vendor_description",
+      "jurisdiction": "US civil equipment; vendor account",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected DAA and Due Regard Radar paragraphs; page contains historical forward-looking dates.",
+      "regions": [
+        {
+          "id": "S-001-R1",
+          "locator": "DAA program paragraph beginning 'The Baseline DAA program'",
+          "excerpt": "expected to reach completion with a TSO-C211 and TSO-C212 authorization in 2025.",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "Page describes expected authorization, not evidence it was issued. Do not assert a world's-only certified system or identify the design as a neural network.",
+      "independence_group": "GA-ASI",
+      "refresh_days": 30
+    },
+    {
+      "id": "S-002",
+      "title": "Technical Standard Orders (TSO)",
+      "publisher": "FAA",
+      "url": "https://www.faa.gov/aircraft/air_cert/design_approvals/tso",
+      "published_at": null,
+      "source_type": "authority_explanation",
+      "jurisdiction": "US civil aviation",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected public explanation; not a search of every authorization record.",
+      "regions": [
+        {
+          "id": "S-002-R1",
+          "locator": "TSO authorization versus installation approval",
+          "excerpt": "Receiving a TSO authorization is not an approval to install and use the article in the aircraft.",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "Use to distinguish equipment minimum performance from installation/use approval; obtain specific grants for product claims.",
+      "independence_group": "FAA-TSO",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-003",
+      "title": "Desider issue 199, June 2025: Protector enters service",
+      "publisher": "UK MOD / DE&S",
+      "url": "https://assets.publishing.service.gov.uk/media/685bf0de0433072fce0e1001/desider_-_issue_199__June_2025.pdf",
+      "published_at": "2025-06",
+      "source_type": "government_publication",
+      "jurisdiction": "UK military aviation",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected Protector item on printed page 8; not the underlying certificate.",
+      "regions": [
+        {
+          "id": "S-003-R1",
+          "locator": "Printed page 8, Protector news item",
+          "excerpt": "having been awarded a Military Type Certificate (MTC)",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "Government account supports military certificate. Does not establish civil DAA TSO authorization, all-airspace permission, or learned perception certification.",
+      "independence_group": "UK-MOD",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-004",
+      "title": "FAA authorizes Zipline BVLOS package delivery",
+      "publisher": "FAA",
+      "url": "https://www.faa.gov/newsroom/faa-authorizes-zipline-deliver-commercial-packages-beyond-line-sight",
+      "published_at": "2023-09-18",
+      "source_type": "authority_announcement",
+      "jurisdiction": "US; Salt Lake City delivery operations",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected announcement; linked approval letters still to inspect.",
+      "regions": [
+        {
+          "id": "S-004-R1",
+          "locator": "Opening paragraph",
+          "excerpt": "without visual observers",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "Historical operational authorization; do not generalize beyond the scope of the grant or infer a DAA equipment certificate.",
+      "independence_group": "FAA-ZIPLINE-2023",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-005",
+      "title": "Zipline Makes U.S. Aviation History",
+      "publisher": "Zipline",
+      "url": "https://www.zipline.com/newsroom/zipline-achieves-first-u-s-bvlos-flight",
+      "published_at": "2023-11-17",
+      "source_type": "vendor_announcement",
+      "jurisdiction": "US; Utah Platform 1 operations",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected dated account of onboard perception and flight; acoustic/ML specifics need separate technical source.",
+      "regions": [
+        {
+          "id": "S-005-R1",
+          "locator": "Paragraph beginning 'Zipline’s onboard perception system'",
+          "excerpt": "using this perception system",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "Company account supplements FAA announcement. September authorization and November operational event need underlying letters before their sequence is explained.",
+      "independence_group": "ZIPLINE",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-006",
+      "title": "Cybercab self-certification Audit Query",
+      "publisher": "NHTSA",
+      "url": "https://www.nhtsa.gov/press-releases/investigation-tesla-cybercab-self-certification",
+      "published_at": "2026-09-04",
+      "source_type": "authority_announcement",
+      "jurisdiction": "US federal vehicle compliance; Austin deployment",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected full announcement; Audit Query link resolves to NHTSA landing page with AQ26002 parameter.",
+      "regions": [
+        {
+          "id": "S-006-R1",
+          "locator": "Additional Information, final paragraph",
+          "excerpt": "inapplicable to its automated vehicles",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "Audit concerns self-certification and applicability of FMVSS to missing human controls. Investigation is not a final finding or an assessment of all driving-model behavior.",
+      "independence_group": "NHTSA-AQ26002",
+      "refresh_days": 7
+    },
+    {
+      "id": "S-007",
+      "title": "Autonomous Vehicles",
+      "publisher": "California DMV",
+      "url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/",
+      "published_at": null,
+      "source_type": "authority_explanation",
+      "jurisdiction": "California road-vehicle permits",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected permit categories; individual live permits/ODDs not yet audited.",
+      "regions": [
+        {
+          "id": "S-007-R1",
+          "locator": "Testing Permit Holders",
+          "excerpt": "testing with a safety driver, driverless testing, and deployment",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "Categories have approved locations, operating conditions and speed limits. California rules are not evidence for Texas permission.",
+      "independence_group": "CA-DMV",
+      "refresh_days": 30
+    },
+    {
+      "id": "S-008",
+      "title": "FAA Roadmap for Artificial Intelligence Safety Assurance, Version I",
+      "publisher": "FAA",
+      "url": "https://www.faa.gov/aircraft/air_cert/step/roadmap_for_AI_safety_assurance",
+      "published_at": "2024-07-23",
+      "source_type": "roadmap",
+      "jurisdiction": "US civil aviation",
+      "accessed_at": "2026-09-23",
+      "inspection_scope": "Retained the complete 31-page FAA PDF and inspected the learned-versus-learning discussion on physical PDF p. 11 (printed p. 10).",
+      "regions": [
+        {
+          "id": "S-008-R1",
+          "locator": "PDF physical p. 11 / printed p. 10, learned versus learning AI discussion",
+          "excerpt": "each new version is subjected to safety assurance",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/retrieval_check/faa_ai_roadmap.pdf",
+          "snapshot_sha256": "b8683625358a9f624aaf1567c0b083ad22235d3b518684f499b1e9c588fc4908",
+          "context_path": "research/contributions/assurance_authority/out/context/faa_ai_roadmap_p11.txt"
+        }
+      ],
+      "limitations": "Roadmap proposes an assurance direction; not a blanket product approval. Distinguishes predeployment learning from learning during operation.",
+      "independence_group": "FAA-AI-ROADMAP",
+      "refresh_days": 90
+    },
+    {
+      "id": "S-009",
+      "title": "EASA AI Concept Paper — Proposed Issue 3",
+      "publisher": "EASA",
+      "url": "https://www.easa.europa.eu/en/document-library/general-publications/easa-artificial-intelligence-concept-paper-proposed-issue-3",
+      "published_at": "2026-06-03",
+      "source_type": "proposed_guidance",
+      "jurisdiction": "European civil aviation",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Landing page inspected. Linked PDF retrieval failed; contents not reviewed.",
+      "regions": [
+        {
+          "id": "S-009-R1",
+          "locator": "Page title and publication date",
+          "excerpt": "Proposed Issue 3",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "Only existence/date/proposed status established here. Do not claim detailed Issue 3 requirements from this landing page.",
+      "independence_group": "EASA-AI",
+      "refresh_days": 30
+    },
+    {
+      "id": "S-010",
+      "title": "A Verification Framework for Runtime Assurance of Autonomous UAS",
+      "publisher": "Slagel, White, Dutle, Muñoz and Crespo / NASA",
+      "url": "https://shemesh.larc.nasa.gov/fm/papers/DASC2024-SWDMC-draft.pdf",
+      "published_at": "2024",
+      "source_type": "research_paper",
+      "jurisdiction": "Formal UAS examples; not a certification decision",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected abstract, introduction and scope limitation; full proof audit pending.",
+      "regions": [
+        {
+          "id": "S-010-R1",
+          "locator": "PDF page 1, Introduction; page 2, scope",
+          "excerpt": "with enough time for the RC to correct the impending problem",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "Conditional architecture requires monitor timing and trusted fallback. Paper explicitly sets industrial deployment difficulties outside its focus.",
+      "independence_group": "NASA-RTA-2024",
+      "refresh_days": 365
+    },
+    {
+      "id": "S-011",
+      "title": "AI & Robotics",
+      "publisher": "Tesla",
+      "url": "https://www.tesla.com/AI",
+      "published_at": null,
+      "source_type": "vendor_description",
+      "jurisdiction": "Vendor architecture overview; unspecified deployed version",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected Neural Networks and Autonomy Algorithms; exact remembered video not identified.",
+      "regions": [
+        {
+          "id": "S-011-R1",
+          "locator": "Neural Networks and Autonomy Algorithms headings",
+          "excerpt": "output the road layout, static infrastructure and 3D objects directly in the top-down view.",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "Supports a description of public representations; not an audit of current Cybercab internals or proof of causal interpretability.",
+      "independence_group": "TESLA-AI",
+      "refresh_days": 90
+    },
+    {
+      "id": "S-012",
+      "title": "Discovering governing equations from data: sparse identification of nonlinear dynamical systems",
+      "publisher": "Brunton, Proctor and Kutz",
+      "url": "https://arxiv.org/abs/1509.03580",
+      "published_at": "2015-09",
+      "source_type": "research_paper",
+      "jurisdiction": "Sparse system identification",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected abstract and examples/discussion; 2016 PNAS publication DOI 10.1073/pnas.1517384113.",
+      "regions": [
+        {
+          "id": "S-012-R1",
+          "locator": "Abstract and discussion of coordinates/function basis",
+          "excerpt": "there are only a few important terms that govern the dynamics",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "SINDy depends on sparse representation, coordinates, candidate functions and data. Not evidence arbitrary vision networks compress into physics equations.",
+      "independence_group": "SINDY-ORIGINAL",
+      "refresh_days": 365
+    },
+    {
+      "id": "S-013",
+      "title": "Mechanistic Interpretability for Learning Assurance of a Vision-Based Landing System",
+      "publisher": "Valentin, Bruvik, Schlichting and Kochenderfer",
+      "url": "https://arxiv.org/abs/2605.20607",
+      "published_at": "2026-05-20",
+      "source_type": "preprint",
+      "jurisdiction": "Runway-keypoint research model",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected abstract; browser-accessible paper located, full methods/limitations review pending.",
+      "regions": [
+        {
+          "id": "S-013-R1",
+          "locator": "Abstract",
+          "excerpt": "we propose that a minimally assurable model",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "Case study links representation analysis and monitoring. Authors' assurance claims need separate review; no aircraft certification shown.",
+      "independence_group": "LANDING-INTERPRETABILITY-2026",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-014",
+      "title": "ISO/PAS 8800:2024 — Road vehicles — Safety and artificial intelligence",
+      "publisher": "ISO",
+      "url": "https://www.iso.org/standard/83303.html?browse=tc",
+      "published_at": "2024-12",
+      "source_type": "standard_public_scope",
+      "jurisdiction": "Road vehicles",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected public abstract/scope; licensed clauses not accessed.",
+      "regions": [
+        {
+          "id": "S-014-R1",
+          "locator": "Abstract, opening scope paragraph",
+          "excerpt": "output insufficiencies, systematic errors and random hardware errors",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "Published PAS scope establishes an automotive AI safety framework. Metadata does not establish compliance of any vendor.",
+      "independence_group": "ISO-8800",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-015",
+      "title": "WG-114 SG-1 deliverables",
+      "publisher": "EUROCAE",
+      "url": "https://www.eurocae.net/working-group/wg-114-sg-1/",
+      "published_at": null,
+      "source_type": "working_group_status",
+      "jurisdiction": "Aviation AI standardization",
+      "accessed_at": "2026-09-08",
+      "inspection_scope": "Inspected deliverables table; target dates may be stale.",
+      "regions": [
+        {
+          "id": "S-015-R1",
+          "locator": "Deliverables table, ED-324 row",
+          "excerpt": "Draft",
+          "context_status": "short_excerpt_only",
+          "snapshot_path": null,
+          "snapshot_sha256": null
+        }
+      ],
+      "limitations": "Page shows a draft/target date. Publication status of ED-324/ARP6983 remains unresolved; planned dates are not publication evidence.",
+      "independence_group": "EUROCAE-WG114",
+      "refresh_days": 30
+    },
+    {
+      "id": "S-016",
+      "title": "Engineering a Safer World: Systems Thinking Applied to Safety",
+      "publisher": "Nancy G. Leveson / MIT Press",
+      "url": "https://mitpress.mit.edu/9780262016629/engineering-a-safer-world/",
+      "published_at": "2012-01-13",
+      "source_type": "book_open_access",
+      "jurisdiction": "Systems safety engineering; background method",
+      "accessed_at": "2026-09-09",
+      "inspection_scope": "Inspected local PDF metadata, title page, contents, and extracted full text; compared title/author/official open-access provenance with MIT Press metadata.",
+      "regions": [
+        {
+          "id": "S-016-R1",
+          "locator": "Contents, Chapter 4 and Chapter 10 entries",
+          "excerpt": "Safety Constraints; Integrating Safety into System Engineering",
+          "context_status": "full_context",
+          "snapshot_path": "out/sources/books/engineering_a_safer_world.pdf",
+          "snapshot_sha256": "df4264b58711387dfa9336f37a14830ac48c9c68a77453d85fd1fad6b332ae78",
+          "context_path": "out/sources/books/text/engineering_a_safer_world.txt"
+        }
+      ],
+      "limitations": "Background and method source, not evidence that a particular autonomous system is safe or certified. Local PDF metadata matches the MIT Press edition; a direct publisher endpoint returned an HTML access page during hash comparison, so canonical byte identity is not claimed.",
+      "independence_group": "MIT-LEVESON-2012",
+      "refresh_days": 3650
+    },
+    {
+      "id": "S-017",
+      "title": "Autonomous Driving: Technical, Legal and Social Aspects",
+      "publisher": "Markus Maurer, J. Christian Gerdes, Barbara Lenz and Hermann Winner / Springer",
+      "url": "https://link.springer.com/book/10.1007/978-3-662-48847-8",
+      "published_at": "2016-05-21",
+      "source_type": "book_open_access",
+      "jurisdiction": "Automated road vehicles; technical, legal and social background",
+      "accessed_at": "2026-09-09",
+      "inspection_scope": "Inspected local PDF metadata, contents and extracted full text; downloaded Springer’s canonical open-access PDF and compared SHA-256 hashes.",
+      "regions": [
+        {
+          "id": "S-017-R1",
+          "locator": "Contents, Part IV, Chapters 20–23",
+          "excerpt": "Predicting of Machine Perception; Safety Concept for Autonomous Vehicles",
+          "context_status": "full_context",
+          "snapshot_path": "out/sources/books/autonomous_driving.pdf",
+          "snapshot_sha256": "c8c67543f88fcd81f42309880969f5528f3afb6e156e20bfc345c05b1ebe9457",
+          "context_path": "out/sources/books/text/autonomous_driving.txt"
+        }
+      ],
+      "limitations": "A 2016 edited reference, not current evidence about present permits, products, or regulatory status. Publisher metadata lists XV + 706 pages while the PDF container reports 698 pages; this is recorded as a pagination distinction, not a content mismatch.",
+      "independence_group": "SPRINGER-AUTONOMOUS-DRIVING-2016",
+      "refresh_days": 3650
+    },
+    {
+      "id": "S-018",
+      "title": "Verifiable Autonomous Systems: Using Rational Agents to Provide Assurance about Decisions Made by Machines",
+      "publisher": "Louise A. Dennis and Michael Fisher / Cambridge University Press",
+      "url": "https://www.cambridge.org/core/books/verifiable-autonomous-systems/185C36761EBE7BEC9610543B186BA21A",
+      "published_at": "2023-05-25",
+      "source_type": "book",
+      "jurisdiction": "Formal verification of modeled autonomous systems; background method",
+      "accessed_at": "2026-09-09",
+      "inspection_scope": "Inspected local PDF title page, catalog data, contents and extracted full text; two local copies were byte-identical and one was retained for processing.",
+      "regions": [
+        {
+          "id": "S-018-R1",
+          "locator": "Contents, Chapters 5, 9, 11 and 12",
+          "excerpt": "Verifying Autonomous Systems; Certification of Unmanned Air Systems",
+          "context_status": "full_context",
+          "snapshot_path": "out/sources/books/verifiable_autonomous_systems.pdf",
+          "snapshot_sha256": "496ff49e8d9bd7be19026f8bf64b46ca21c9b9bc20a09ff258c741ea3e00d26e",
+          "context_path": "out/sources/books/text/verifiable_autonomous_systems.txt"
+        }
+      ],
+      "limitations": "Formal-agent approach is not a proof method for arbitrary learned perception. Local copy’s rights status was not established; keep the full text ignored and use page-located notes rather than redistribution.",
+      "independence_group": "CAMBRIDGE-DENNIS-FISHER-2023",
+      "refresh_days": 3650
+    },
+    {
+      "id": "S-019",
+      "title": "Probabilistic Robotics — local early draft",
+      "publisher": "Sebastian Thrun, Wolfram Burgard and Dieter Fox / MIT Press",
+      "url": "https://mitpress.mit.edu/9780262303804/probabilistic-robotics/",
+      "published_at": "2005-08-19",
+      "source_type": "book_early_draft",
+      "jurisdiction": "Probabilistic robotics; uncertainty and sensing background",
+      "accessed_at": "2026-09-09",
+      "inspection_scope": "Inspected local PDF title page, contents and extracted full text; compared the local artifact with MIT Press’s published-edition metadata.",
+      "regions": [
+        {
+          "id": "S-019-R1",
+          "locator": "Local PDF opening page and Contents, Chapters 8–10 and 15–16",
+          "excerpt": "EARLY DRAFT—NOT FOR DISTRIBUTION",
+          "context_status": "full_context",
+          "snapshot_path": "out/sources/books/probabilistic_robotics_draft.pdf",
+          "snapshot_sha256": "f1163d23db38cc3c3eef5d7177079eb55cc002164f47ba4a84524eb2969df73c",
+          "context_path": "out/sources/books/text/probabilistic_robotics_draft.txt"
+        }
+      ],
+      "limitations": "The local artifact is explicitly an early draft and not the published MIT Press edition. Use for provisional terminology and technical orientation only; obtain a legitimate published edition before using exact page citations or attributing final claims to the book.",
+      "independence_group": "THRUN-BURGARD-FOX-ROBOTICS-DRAFT",
+      "refresh_days": 3650
+    },
+    {
+      "id": "S-020",
+      "title": "Deep Learning — online textbook",
+      "publisher": "Ian Goodfellow, Yoshua Bengio and Aaron Courville / MIT Press",
+      "url": "https://www.deeplearningbook.org/",
+      "published_at": "2016",
+      "source_type": "author_publisher_online_textbook",
+      "jurisdiction": "Deep learning background; not safety evidence",
+      "accessed_at": "2026-09-09",
+      "inspection_scope": "Downloaded the 28 HTML pages linked by the official landing page, preserved raw HTML and hashes, and generated structure-aware plain-text files from the pdf2htmlEX page blocks. Follow-up inspection included official HTML Chapter 5, Section 5.2 and Figure 5.3 on capacity, underfitting and overfitting.",
+      "regions": [
+        {
+          "id": "S-020-R1",
+          "locator": "Official landing page, availability and PDF FAQ",
+          "excerpt": "online version of the book is now complete",
+          "context_status": "full_context",
+          "snapshot_path": "out/sources/deep_learning_book/site/index.html",
+          "snapshot_sha256": "913a461983b8872994a9d2512f2d72dd31aa232940982acd79fe92e9647f83d2",
+          "context_path": "out/sources/deep_learning_book/clean_text/index.txt"
+        },
+        {
+          "id": "S-020-R2",
+          "locator": "Official HTML table of contents, Chapters 5, 7, 9, 11 and 12",
+          "excerpt": "Machine Learning Basics; Regularization; Convolutional Networks",
+          "context_status": "full_context",
+          "snapshot_path": "out/sources/deep_learning_book/site/contents/TOC.html",
+          "snapshot_sha256": "e5465d07ff65b52bb7598ee218215ff1912d102d524614bf7c9db9e23a453ada",
+          "context_path": "out/sources/deep_learning_book/clean_text/contents/TOC.txt"
+        },
+        {
+          "id": "S-020-R3",
+          "locator": "Official HTML Chapter 5, Section 5.2 Capacity, Overfitting and Underfitting, Figure 5.3 (book printed pp. 112–113)",
+          "excerpt": "At the left end of the graph, training error and generalization error are both high. This is the underfitting regime.",
+          "context_status": "full_context",
+          "snapshot_path": "out/sources/deep_learning_book/site/contents/ml.html",
+          "snapshot_sha256": "68fc979f3d654eee97117bf3754ba3462d3e66fd2a9b31ccadc5f70422bc0968",
+          "context_path": "out/sources/deep_learning_book/clean_text/contents/ml.txt"
+        }
+      ],
+      "limitations": "The public site is a background textbook, not evidence about a deployed model or assurance case. The site explicitly declines to distribute a PDF; retain the scraped HTML/text only in ignored research output and cite the public chapter URLs.",
+      "independence_group": "GOODFELLOW-BENGIO-COURVILLE-ONLINE",
+      "refresh_days": 365
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "R-FIRST-CROSS-C-CHAL-004",
+  "package_id": "P-C-CHAL-004-cross_artifact",
+  "input_digest": "39b3ba3ed7dc51a05b95a9a36cb9215ce83907213695fb868bda77bb34afc1c0",
+  "task": "cross_artifact",
+  "reviewer_id": "first-pass-cross-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-cross-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The claim's high-consequence and online-learning limitation is preserved in all uses. The architecture says the material cannot be a final civil path for the hardest flight-critical case, and the method map assigns O-AIR-007 outside scope rather than claiming closure.",
+  "evidence_locators": [
+    "assurance/architecture.md, tagged use [C-CHAL-004], final-civil-path limitation",
+    "assurance/assurance_case.json, tagged use [C-CHAL-004], EA-AIR-001 and O-AIR-001/O-AIR-007 links",
+    "research/contributions/assurance_challenge/findings.md, tagged use [C-CHAL-004], EASA scope-limit finding",
+    "assurance/amlas_maa_easa_crosswalk.md, tagged use [C-CHAL-004], high-consequence limit and O-007 row",
+    "research/integration_round3.md, tagged use [C-CHAL-004], highest-consequence limitation",
+    "assurance/method_crosswalk.json, tagged use [C-CHAL-004], M-EASA-DSAI-001 scope and outside-scope mapping",
+    "assurance_case_links: EA-AIR-001, O-AIR-001, O-AIR-007"
+  ],
+  "limitations": [
+    "This review does not independently interpret EASA severity terminology.",
+    "It does not establish that the hypothetical airborne hazard has been classified under an EASA process."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "R-FIRST-CROSS-C-CHAL-001",
+  "package_id": "P-C-CHAL-001-cross_artifact",
+  "input_digest": "56f6922b65f294bc9e81f5214741eee49b51d5944ed35abc6118826d37bdf736",
+  "task": "cross_artifact",
+  "reviewer_id": "first-pass-cross-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "first-pass-cross-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The reviewed uses consistently describe MAA/RN/2025/04 as current, applicant-specific UK military guidance and retain the defined-ODD/fixed-supervised-model framing. None turns it into civil approval, a public product safety case, or a general certification criterion.",
+  "evidence_locators": [
+    "assurance/architecture.md, tagged use [C-CHAL-001], AMLAS/MAA/EASA comparison paragraph",
+    "assurance/assurance_case.json, tagged use [C-CHAL-001], EA-AIR-001 and O-007/O-AIR-001/O-AIR-007 links",
+    "research/contributions/assurance_challenge/findings.md, tagged use [C-CHAL-001], MAA finding",
+    "assurance/amlas_maa_easa_crosswalk.md, tagged use [C-CHAL-001], MAA status and O-001/O-003/O-007 rows",
+    "research/integration_round3.md, tagged use [C-CHAL-001], scoped-method conclusion",
+    "assurance/method_crosswalk.json, tagged use [C-CHAL-001], M-MAA-001 scope and mappings",
+    "planning/learned_systems_assurance_next_steps.md, tagged use [C-CHAL-001], state-of-art and comparison language",
+    "assurance_case_links: EA-AIR-001, O-007, O-AIR-001, O-AIR-007"
+  ],
+  "limitations": [
+    "This model review does not verify the MAA notice's effective date or exact source language.",
+    "The unrendered graph and prose remain provisional and require human disposition."
+  ],
+  "resolves": []
+}

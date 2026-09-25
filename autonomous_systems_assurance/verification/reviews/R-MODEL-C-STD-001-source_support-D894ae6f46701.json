@@ -1,0 +1,20 @@
+{
+  "id": "R-MODEL-C-STD-001-source_support-D894ae6f46701",
+  "package_id": "P-C-STD-001-source_support",
+  "input_digest": "894ae6f46701c0ccc8ce3696d21a499fdd569de3e3be55d87cea6a085ceaeac5",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The provided captured context is truncated after the website's navigation menu and omits the main body text of the page. While the region excerpt confirms the list of collaborating entities, the supplied material lacks the text needed to verify that the collaboration is specifically 'to advance understanding of AI algorithms, data and model performance in the aviation certification context.'",
+  "evidence_locators": [
+    "S-STD-001 captured_context"
+  ],
+  "limitations": [
+    "The captured context is truncated ('[truncated]') before the main content begins. A complete capture of the page's body text is required to verify the full claim."
+  ],
+  "resolves": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-AUTH-004-source_support-De3246b8e0e6b",
+  "package_id": "P-C-AUTH-004-source_support",
+  "input_digest": "e3246b8e0e6b8cfe35f6616bea3125bcb6dde9969cb734eff6dce23a99788eff",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "uncertain",
+  "created_at": "2026-09-22",
+  "rationale": "The short excerpts align perfectly with the claim that EASA Issue 02 provides objectives but is not definitive guidance and does not warrant final approval. However, the full local context is explicitly absent from the evidence packet, making it impossible to confirm the absence of surrounding caveats or conditions.",
+  "evidence_locators": [
+    "S-AUTH-002-R1",
+    "S-AUTH-002-R3",
+    "S-AUTH-002 inspection_scope"
+  ],
+  "limitations": [
+    "Full local context is absent for the excerpts, requiring retrieval of the original PDF pages 4-6 to confirm the exact application of the disclaimers."
+  ],
+  "resolves": []
+}

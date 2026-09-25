@@ -1,0 +1,22 @@
+{
+  "id": "R-MODEL-C-001-source_support-Da16a6932a688",
+  "package_id": "P-C-001-source_support",
+  "input_digest": "a16a6932a688a52be3eca8cfcc510efe5228982e25c0699b3d104eb71fc29b56",
+  "task": "source_support",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "The provided excerpt explicitly states the program is 'expected to reach completion with a TSO-C211 and TSO-C212 authorization in 2025', which directly supports the claim that the page forecasts rather than proves issuance. The source limitations confirm the page does not establish actual issuance or exclusivity.",
+  "evidence_locators": [
+    "S-001-R1",
+    "DAA program paragraph beginning 'The Baseline DAA program'"
+  ],
+  "limitations": [
+    "Only a short excerpt was captured; full local context is absent.",
+    "Actual authorization status, holder, model, and date remain unverified and require primary FAA/regulatory records."
+  ],
+  "resolves": []
+}

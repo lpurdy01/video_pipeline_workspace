@@ -1,0 +1,32 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-001-cross_artifact-D097a41f01c85",
+  "package_id": "P-C-CHAL-001-cross_artifact",
+  "input_digest": "097a41f01c8531bae77e9e231ece7ea53377de862219a931a9a02aab6cca6238",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-23",
+  "rationale": "Every artifact use of claim C-CHAL-001 accurately preserves its scope and limitations. The claim, which describes the UK MAA's current AI notice as providing an applicant-specific assurance path for certified military air systems, recommending fixed supervised models within a defined ODD, and explicitly stating it is not for civil-airworthiness approval, is consistently reflected. Artifacts either directly quote or paraphrase the claim's content and explicitly reiterate its military-specific and non-civil approval scope. Directives for figures and narration also ensure these limitations are visually and verbally maintained.",
+  "evidence_locators": [
+    "assurance/architecture.md",
+    "assurance/assurance_case.json",
+    "research/contributions/assurance_challenge/findings.md",
+    "assurance/amlas_maa_easa_crosswalk.md",
+    "resource_composition/figures.md",
+    "research/integration_round3.md",
+    "video/script.md",
+    "planning/learned_systems_assurance_next_steps.md",
+    "video/nextgen_structure/narration_evidence_map.md",
+    "video/nextgen_structure/script_outline.md",
+    "video/nextgen_structure/treatment.md",
+    "video/nextgen_structure/visual_inventory.md",
+    "resource_composition/whitepaper_outline.md",
+    "resource_composition/whitepaper.md",
+    "assurance/method_crosswalk.json"
+  ],
+  "limitations": [],
+  "resolves": []
+}

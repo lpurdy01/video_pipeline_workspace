@@ -1,0 +1,16 @@
+{
+  "id": "R-PAPER-READER-SOURCE-C-EVID-005-20260916",
+  "package_id": "P-C-EVID-005-source_support",
+  "input_digest": "181b90bd3f7475dd7f91df5be6786cf31f969c17ff9120385c29328542d2f88d",
+  "task": "source_support",
+  "reviewer_id": "paper-reader-source-support-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "source-support-digest-pinned-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The NASA formalization describes a black-box advanced controller, timed monitor, safe-start/carry-over condition, recoverable-state premise and reversionary controller leading to a safe state. It supports a conditional formal safety property, exactly as the claim says, rather than an unconditional implementation result.",
+  "evidence_locators": ["S-EVID-005-R1 — PDF pp. 5–8, Simplex architecture and Plaidypvs rule", "S-EVID-005-R2 — PDF pp. 8–12, RTA premises and productive-conflict-avoidance example"],
+  "limitations": ["This is a NASA research formalization, not civil approval or implementation evidence.", "The guarantee depends on monitor observability and timing, dynamics, switching and recovery-controller premises; it does not show a perception miss is observable early enough."],
+  "resolves": []
+}

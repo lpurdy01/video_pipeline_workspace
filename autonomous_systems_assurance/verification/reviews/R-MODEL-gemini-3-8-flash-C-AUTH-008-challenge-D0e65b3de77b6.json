@@ -1,0 +1,25 @@
+{
+  "id": "R-MODEL-gemini-3-8-flash-C-AUTH-008-challenge-D0e65b3de77b6",
+  "package_id": "P-C-AUTH-008-challenge",
+  "input_digest": "0e65b3de77b6a8d7b806206dd25b14e9c8393881e5541e4462f26ee1fda4a99b",
+  "task": "challenge",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.8-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-25",
+  "rationale": "The claim text strictly characterizes NHTSA ADS 2.0 as a voluntary safety framework whose self-assessments are not subject to federal approval, citing specific safety elements (ODD, OEDR, fallback, validation). The challenge notes that voluntary self-assessments are not model certifications or proof of deployment safety; this does not defeat the claim, but rather reinforces its explicit boundary and intended use across the project artifacts (which separate voluntary guidance, FMVSS self-certification, state permits, and model assurance onto distinct evidence graph edges).",
+  "evidence_locators": [
+    "https://www.nhtsa.gov/vehicle-manufacturers/automated-driving-systems",
+    "S-AUTH-006-R1",
+    "S-AUTH-006-R2",
+    "S-AUTH-006-R3",
+    "research/contributions/assurance_authority/findings.md",
+    "research/contributions/standards_authority/findings.md"
+  ],
+  "limitations": [
+    "Inspection is limited to NHTSA's public ADS operating guidance page and excerpts; subsequent federal rulemaking, enforcement actions, or exemption grants (such as announced 2026 initiatives) represent separate regulatory tracks and must not be inferred from the ADS 2.0 document itself."
+  ],
+  "resolves": []
+}

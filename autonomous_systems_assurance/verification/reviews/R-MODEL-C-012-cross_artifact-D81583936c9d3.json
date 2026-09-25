@@ -1,0 +1,24 @@
+{
+  "id": "R-MODEL-C-012-cross_artifact-D81583936c9d3",
+  "package_id": "P-C-012-cross_artifact",
+  "input_digest": "81583936c9d3738bb4f91b1cf1f1591a0a30e473b6e47d4df419aab0d2048106",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-3.1-pro-preview",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-22",
+  "rationale": "All artifact uses accurately reflect the claim's scope as a 2026 preprint and case study. The artifacts explicitly preserve the limitations by noting that methods and external validation require further review, warning against 'solved the black box' claims, and clarifying that interpretability does not substitute for full assurance obligations.",
+  "evidence_locators": [
+    "research/initial_findings.md",
+    "assurance/architecture.md",
+    "video/storyboard.md",
+    "wiki/concepts/open_tensions.md"
+  ],
+  "limitations": [
+    "Full methods/limitations audit and reproduction pending",
+    "Authors' assurance claims need separate review"
+  ],
+  "resolves": []
+}

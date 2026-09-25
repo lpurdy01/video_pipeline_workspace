@@ -1,0 +1,16 @@
+{
+  "id": "R-PAPERSCOPE-CHAL-C-EVID-007-20260916",
+  "package_id": "P-C-EVID-007-challenge",
+  "input_digest": "9a57349f847d8686ee1d36384b54b95ba69df4534fc2b4510f6d68f33381cc5d",
+  "task": "challenge",
+  "reviewer_id": "paper-scope-challenge-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "paper-scope-digest-pinned-challenge-v1",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The inspected study reports a small positive association between its neuron-coverage measure and steering-angle deviation, declines to claim causation, and calls for more work on whether coverage is a consistent indicator. The claim is narrower than a safety conclusion and blocks use of activation coverage as a composite safety score.",
+  "evidence_locators": ["S-EVID-007-R1, Toohey, Raunak and Binkley, correlation and threats-to-validity discussion, PDF pp. 7-8", "S-EVID-007-R2, Toohey, Raunak and Binkley, conclusion, PDF p. 8", "https://doi.org/10.1109/MC.2021.3079921"],
+  "limitations": ["The study used one DNN, transformed images, and a steering-angle-deviation proxy, without a safety-failure threshold.", "It shows no predictive value across releases, ODD partitions, sensing modalities, or airborne DAA hazards."],
+  "resolves": []
+}

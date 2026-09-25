@@ -1,0 +1,16 @@
+{
+  "id": "R-PAPER-READER-SOURCE-C-EVID-001-20260916",
+  "package_id": "P-C-EVID-001-source_support",
+  "input_digest": "598a27decd7f5051a022f5b769f30e87679f83fc4742df5be3583a30a3d8eb47",
+  "task": "source_support",
+  "reviewer_id": "paper-reader-source-support-agent",
+  "reviewer_kind": "model",
+  "model_id": "gpt-5.6-luna",
+  "prompt_version": "source-support-digest-pinned-v2",
+  "verdict": "pass",
+  "created_at": "2026-09-16",
+  "rationale": "The full NIST AI RMF describes lifecycle documentation of intended context and knowledge limits, TEVV considerations and records, and management actions including recovery and superseding, disengaging or deactivating systems. The claim accurately presents these as lifecycle process expectations rather than a transport safety criterion.",
+  "evidence_locators": ["S-EVID-001-R1 — PDF pp. 26–27, MAP 1–3 outcomes", "S-EVID-001-R2 — PDF p. 28, MEASURE introductory text", "S-EVID-001-R3 — PDF pp. 31–32, MANAGE 2 and 4 outcomes"],
+  "limitations": ["AI RMF 1.0 is voluntary, non-sector-specific guidance, not a transportation certification basis or acceptance threshold.", "The source record notes the framework is under revision and must be refreshed before publication."],
+  "resolves": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "R-MODEL-gemini-2-5-flash-C-CHAL-006-cross_artifact-Db442d575e85c",
+  "package_id": "P-C-CHAL-006-cross_artifact",
+  "input_digest": "b442d575e85c795717edf28dc11e439d9fe73e94baef0d3d6748f13ce520a015",
+  "task": "cross_artifact",
+  "reviewer_id": "gemini-first-pass",
+  "reviewer_kind": "model",
+  "model_id": "gemini-2.5-flash",
+  "prompt_version": "assurance-first-pass-v1",
+  "verdict": "fail",
+  "created_at": "2026-09-23",
+  "rationale": "The claim C-CHAL-006 accurately describes AMLAS as a six-stage ML component assurance methodology with specific limitations (ML component only, not to be used alone, primarily offline supervised learning). While most artifact uses preserve this scope, two artifacts incorrectly link C-CHAL-006 to the discussion of AMLAS's clinical ROC and confusion matrix example as a reason to reject a composite safety score. This is an inference presented as authority evidence for the claim, as C-CHAL-006 defines AMLAS's structural characteristics and limitations, not the specific illustrative examples it contains or the general conclusions about metrics that can be drawn from them. The claim C-RISK-005 is the appropriate reference for the ROC curve example.",
+  "evidence_locators": [
+    "research/integration_round4.md",
+    "resource_composition/whitepaper_outline.md"
+  ],
+  "limitations": [
+    "The review focused on the use of C-CHAL-006 across artifacts and did not re-verify the content or appropriate linking of other claims."
+  ],
+  "resolves": []
+}

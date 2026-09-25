@@ -171,9 +171,10 @@ class S10EvidenceSurface(BeatScene):
                    run_time=0.6)
         ctx.play(self._owned["evid"].animate.move_to(stage.STAGE.center + UP * 0.3),
                  run_time=0.6)
-
-    def b21_final(self, ctx):
         line = style.title_text("evidence we can inspect")
         line.move_to(stage.STAGE.center + DOWN * 1.35)
-        ctx.show(line, tag="final", anim=lambda m_: FadeIn(m_, scale=0.93), run_time=0.6)
+        ctx.show(line, tag="final", anim=lambda m_: FadeIn(m_, scale=0.93), run_time=0.35)
+
+    def b21_final(self, ctx):
+        ctx.play(self._owned["final"].animate.scale(1.04), run_time=0.35)
         ctx.play(*style.highlight(self._owned["evid"], style.GREEN), run_time=0.4)
