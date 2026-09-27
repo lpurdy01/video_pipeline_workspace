@@ -201,7 +201,9 @@ class RequestPacer:
 
 def review_packet(packet: dict, api_key: str, model: str, pacer: RequestPacer) -> dict:
     pacer.wait()
-    client = genai.Client(api_key=api_key)
+    # A hung request would otherwise block its worker indefinitely; a timeout is
+    # recorded in errors.json (never as a verdict) and the package is retried next run.
+    client = genai.Client(api_key=api_key, http_options=types.HttpOptions(timeout=300_000))
     prompt = prompt_for(packet)
     # The primary Pro reviewer supports explicit high reasoning; the stable Flash
     # fallback rejects that option. Both retain the same conservative prompt.

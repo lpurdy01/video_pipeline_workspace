@@ -9,7 +9,7 @@
 - [Machine-readable method crosswalk](../assurance/method_crosswalk.json): typed method-to-obligation mappings and stated coverage limits.
 - [Figure plan](../resource_composition/figures.md): rendered and planned figures, their claim links, and their visual limits.
 - [Whitepaper reader contract](../resource_composition/reader_contract.md): section-level audience acceptance map, separate from claim verification.
-- [Technical reference](../resource_composition/technical_reference.md): detailed companion preserving the full methods, case, compiler and source-card argument.
+- [Technical reference](../resource_composition/technical_reference.md): detailed companion to the main paper, rebuilt 2026-09-25 from the committed Markdown: eight contracts, full road case, methods, risk and the compiler appendix.
 - [Long-form project flow](../planning/longform_project_flow.md): evidence gates, 14-part reader journey and 30+ minute video/paper targets.
 - [Editorial audience gate](../planning/editorial_audience_gate.md): artifact-level reader contract and advisory audience audit, kept separate from claim verification coverage.
 - [Long-form video proposal](../video/nextgen_structure/README.md): isolated 34-minute treatment, visual inventory and claim map pending formal review.
@@ -17,6 +17,10 @@
 - [Recording-feedback script](../video/script.md): claim-tagged long-form narration draft with local feedback pauses.
 - [Verification dashboard](../verification/dashboard.md): local static reader for current source, claim, paper, script and review status.
 - [Worked assurance-case graph](../assurance/assurance_case.json): machine-readable hypothetical road release, hazards, assumptions, obligations and planned evidence.
+- [Three-part video series](../video/series_structure/treatment.md): D-023 series treatment and the three standalone episode scripts.
+- [Cases research](../research/contributions/cases/findings.md): NTSB Tempe trace, ACAS Xu open- versus closed-loop verification, end-to-end architecture statement.
+- [Standards status research](../research/contributions/standards_status/findings.md): ED-324/ARP6983 draft scope and schedule, EASA NPA context, DO-178B/C history, UN R157.
+- [Practice baseline research](../research/contributions/practice_baseline/findings.md): ASTM F3269-21 run-time assurance, FAA hardware and multi-core ACs, NASA-STD-7009B, STPA, EU R157 catalog record.
 - [Log](log.md): chronological research and decision history.
 
 Canonical records outside the wiki: [source register](../research/sources.json), [claims](../verification/claims.json), [initial findings](../research/initial_findings.md), [worked architecture](../assurance/architecture.md), [verification architecture](../verification/ARCHITECTURE.md).

@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "C-CASE-001",
+      "text": "NTSB reports that the Uber ATG developmental ADS in the 2018 Tempe crash first detected the pedestrian 5.6 seconds before impact, classified her at different times as a vehicle, an unknown object and a bicyclist, never accurately classified her as a pedestrian, and did not correctly predict her path.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NTSB HAR-19/03 findings for one 2018 developmental-testing crash; not a statement about other systems",
+      "evidence": [
+        {
+          "region_id": "S-CASE-001-R1",
+          "relation": "supports"
+        },
+        {
+          "region_id": "S-CASE-001-R2",
+          "relation": "supports"
+        },
+        {
+          "region_id": "S-CASE-001-R5",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Keep NTSB's probable cause (operator distraction) and contributing factors alongside the ADS facts; do not present the crash as a pure perception failure or as evidence about any current system.",
+      "review_records": []
+    },
+    {
+      "id": "C-CASE-002",
+      "text": "NTSB reports that when the Uber ATG ADS changed an object's classification it no longer used that object's tracking history to predict its path, and objects classified as 'other' were not assigned goals; the timeline shows the classification alternating and tracking history becoming unavailable at each change.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NTSB HAR-19/03 section 1.5.5.2 and timeline table; design of the 2018 ATG system",
+      "evidence": [
+        {
+          "region_id": "S-CASE-001-R3",
+          "relation": "supports"
+        },
+        {
+          "region_id": "S-CASE-001-R5",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Do not generalize to other trackers; the point is the interaction between classification, tracking history and prediction in this documented system.",
+      "review_records": []
+    },
+    {
+      "id": "C-CASE-003",
+      "text": "NTSB reports that the Uber ATG ADS design suppressed braking for 1 second after detecting an emergency, without alerting the operator, because of false-alarm concerns, and precluded emergency braking solely for crash mitigation, relying on the operator to intervene.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NTSB HAR-19/03 executive summary and section 1.5.5.3; 2018 ATG design",
+      "evidence": [
+        {
+          "region_id": "S-CASE-001-R1",
+          "relation": "supports"
+        },
+        {
+          "region_id": "S-CASE-001-R4",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "State that this was a developmental test configuration with a human operator expected to intervene; do not imply production-vehicle practice.",
+      "review_records": []
+    },
+    {
+      "id": "C-CASE-004",
+      "text": "NTSB determined that the probable cause of the Tempe crash was the vehicle operator's failure to monitor the driving environment and the ADS because she was visually distracted by her cell phone; contributing factors included Uber ATG's inadequate safety risk assessment procedures, ineffective oversight of vehicle operators and lack of adequate mechanisms for addressing automation complacency, all a consequence of its inadequate safety culture.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NTSB HAR-19/03 probable cause statement",
+      "evidence": [
+        {
+          "region_id": "S-CASE-001-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Any use of the ADS details must retain this probable cause; the teaching point is system composition and authority allocation, not blame transfer.",
+      "review_records": []
+    },
+    {
+      "id": "C-CASE-005",
+      "text": "NTSB reports that after the crash Uber ATG kept the vehicle's own collision-mitigation braking active during ADS operation, removed action suppression so the ADS brakes even only to mitigate a crash, and changed path prediction to use an object's previous locations even when its classification changes.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NTSB HAR-19/03 section 1.9.1; ATG-reported post-crash changes",
+      "evidence": [
+        {
+          "region_id": "S-CASE-001-R6",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "These are ATG-reported changes described by NTSB, not an NTSB validation that the changes are sufficient.",
+      "review_records": []
+    },
+    {
+      "id": "C-CASE-006",
+      "text": "Katz et al. used the Reluplex solver to prove properties of prototype deep neural networks for the ACAS Xu unmanned-aircraft collision-avoidance system, reporting verification of networks an order of magnitude larger than previous methods could handle.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Reluplex research paper (CAV 2017); open-loop network properties of a prototype",
+      "evidence": [
+        {
+          "region_id": "S-CASE-002-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Do not describe these proofs as closed-loop collision safety or as certification of ACAS X.",
+      "review_records": []
+    },
+    {
+      "id": "C-CASE-007",
+      "text": "Bak and Tran report that the early ACAS Xu prototype compressed its large rule table by a factor of about 1000 into neural networks, that most verification work had addressed open-loop network properties, and that their closed-loop analysis, even under favorable assumptions (perfect sensor information, instant advisory following, ideal maneuvers and a straight-flying intruder), found counterexamples in which the original system has collisions.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Research analysis of an early ACAS Xu neural-network prototype under stated assumptions (NFM 2022)",
+      "evidence": [
+        {
+          "region_id": "S-CASE-003-R1",
+          "relation": "supports"
+        },
+        {
+          "region_id": "S-CASE-003-R2",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Keep 'early prototype' and the idealized assumptions; this is not a finding about a certified or fielded ACAS X system.",
+      "review_records": []
+    },
+    {
+      "id": "C-CASE-008",
+      "text": "Wayve publicly describes its approach as replacing the modular 'sense-plan-act' driving architecture with a single neural network trained to convert raw sensor inputs into driving outputs.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Vendor self-description of architecture",
+      "evidence": [
+        {
+          "region_id": "S-CASE-004-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Treat as one developer's statement of an industry direction; do not infer its safety evidence, performance or regulatory status.",
+      "review_records": []
+    }
+  ]
+}

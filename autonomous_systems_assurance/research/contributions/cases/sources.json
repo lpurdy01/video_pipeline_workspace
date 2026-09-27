@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-25",
+  "sources": [
+    {
+      "id": "S-CASE-001",
+      "title": "Collision Between Vehicle Controlled by Developmental Automated Driving System and Pedestrian, Tempe, Arizona, March 18, 2018 (Highway Accident Report NTSB/HAR-19/03)",
+      "publisher": "National Transportation Safety Board",
+      "url": "https://www.ntsb.gov/investigations/AccidentReports/Reports/HAR1903.pdf",
+      "published_at": "2019-11-19",
+      "source_type": "accident_investigation_final_report",
+      "jurisdiction": "US road automated-driving-system testing, Tempe, Arizona",
+      "accessed_at": "2026-09-25",
+      "inspection_scope": "Retained the complete 78-page public NTSB board report and inspected the executive summary and probable cause (printed pp. v-vi), the crash synopsis (pp. 1-2), ADS detection/classification/path-prediction and emergency-braking design (section 1.5.5, pp. 12-13), the ADS timeline table (pp. 15-16) and post-crash system changes (section 1.9.1, pp. 29-30).",
+      "regions": [
+        {
+          "id": "S-CASE-001-R1",
+          "locator": "Executive summary and probable cause, printed pp. v-vi",
+          "excerpt": "The ADS detected the pedestrian 5.6 seconds before impact. Although the ADS continued to track the pedestrian until the crash, it never accurately classified her as a pedestrian or predicted her path.",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/ntsb_har1903.pdf",
+          "snapshot_sha256": "1a0bb130efd50b994a4a20c00d3e35855cb885b37a5c972b365b21a485c43857",
+          "context_path": "research/contributions/cases/out/context/ntsb_exec_summary_probable_cause.txt"
+        },
+        {
+          "id": "S-CASE-001-R2",
+          "locator": "Section 1.1 crash synopsis, printed p. 1",
+          "excerpt": "It initially classified the pedestrian as a vehicle, and subsequently also as an unknown object and a bicyclist.",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/ntsb_har1903.pdf",
+          "snapshot_sha256": "1a0bb130efd50b994a4a20c00d3e35855cb885b37a5c972b365b21a485c43857",
+          "context_path": "research/contributions/cases/out/context/ntsb_synopsis.txt"
+        },
+        {
+          "id": "S-CASE-001-R3",
+          "locator": "Section 1.5.5.2 Path Prediction, printed pp. 12-13",
+          "excerpt": "If the perception process changed the classification of a detected object, it no longer considered the tracking history of that object when generating a new trajectory.",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/ntsb_har1903.pdf",
+          "snapshot_sha256": "1a0bb130efd50b994a4a20c00d3e35855cb885b37a5c972b365b21a485c43857",
+          "context_path": "research/contributions/cases/out/context/ntsb_path_prediction.txt"
+        },
+        {
+          "id": "S-CASE-001-R4",
+          "locator": "Section 1.5.5.3 Hazard Avoidance and Emergency Braking, printed p. 13",
+          "excerpt": "When the system detected an emergency situation, it initiated action suppression. That was a 1-second period during which the ADS would suppress braking",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/ntsb_har1903.pdf",
+          "snapshot_sha256": "1a0bb130efd50b994a4a20c00d3e35855cb885b37a5c972b365b21a485c43857",
+          "context_path": "research/contributions/cases/out/context/ntsb_action_suppression.txt"
+        },
+        {
+          "id": "S-CASE-001-R5",
+          "locator": "ADS timeline table, printed pp. 15-16",
+          "excerpt": "Object's classification alternates several times between vehicle and other. At each change, tracking history is unavailable",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/ntsb_har1903.pdf",
+          "snapshot_sha256": "1a0bb130efd50b994a4a20c00d3e35855cb885b37a5c972b365b21a485c43857",
+          "context_path": "research/contributions/cases/out/context/ntsb_timeline_table.txt"
+        },
+        {
+          "id": "S-CASE-001-R6",
+          "locator": "Section 1.9.1 post-crash changes, printed pp. 29-30",
+          "excerpt": "the system incorporates previous locations of a tracked object when generating possible trajectories, even when the object's classification changes.",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/ntsb_har1903.pdf",
+          "snapshot_sha256": "1a0bb130efd50b994a4a20c00d3e35855cb885b37a5c972b365b21a485c43857",
+          "context_path": "research/contributions/cases/out/context/ntsb_postcrash_changes.txt"
+        }
+      ],
+      "limitations": "The report concerns one 2018 developmental-testing crash and Uber ATG's system and organization at that time. NTSB's probable cause is the operator's failure to monitor while distracted; the ADS design and Uber ATG's safety culture are contributing factors. It supports no conclusion about any other vehicle, company, current system, or crash rate.",
+      "independence_group": "NTSB-HWY18MH010",
+      "refresh_days": 365
+    },
+    {
+      "id": "S-CASE-002",
+      "title": "Reluplex: An Efficient SMT Solver for Verifying Deep Neural Networks (arXiv 1702.01135; CAV 2017)",
+      "publisher": "Katz, Barrett, Dill, Julian, Kochenderfer (arXiv)",
+      "url": "https://arxiv.org/abs/1702.01135",
+      "published_at": "2017-02-03",
+      "source_type": "peer_reviewed_research_preprint",
+      "jurisdiction": "Neural-network verification research",
+      "accessed_at": "2026-09-25",
+      "inspection_scope": "Retained the public arXiv PDF and inspected the abstract and introduction describing verification of the prototype ACAS Xu deep neural networks.",
+      "regions": [
+        {
+          "id": "S-CASE-002-R1",
+          "locator": "Abstract and section 1 introduction, pp. 1-3",
+          "excerpt": "Results show that our technique can successfully prove properties of networks that are an order of magnitude larger than the largest networks verified using existing methods.",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/katz_reluplex_1702.01135.pdf",
+          "snapshot_sha256": "27e596f4fc5f433369d959a2eac39a5212daaa0d9ef20ee3925620f645bcfe6d",
+          "context_path": "research/contributions/cases/out/context/katz_reluplex_intro.txt"
+        }
+      ],
+      "limitations": "Research verification of properties of a prototype ACAS Xu network representation; it is not a certification result, a closed-loop collision-safety proof, or a statement about any fielded ACAS X implementation.",
+      "independence_group": "KATZ-RELUPLEX-2017",
+      "refresh_days": 730
+    },
+    {
+      "id": "S-CASE-003",
+      "title": "Neural Network Compression of ACAS Xu Early Prototype is Unsafe: Closed-Loop Verification through Quantized State Backreachability (arXiv 2201.06626; NFM 2022)",
+      "publisher": "Bak and Tran (arXiv)",
+      "url": "https://arxiv.org/abs/2201.06626",
+      "published_at": "2022-01-17",
+      "source_type": "peer_reviewed_research_preprint",
+      "jurisdiction": "Neural-network control-system verification research",
+      "accessed_at": "2026-09-25",
+      "inspection_scope": "Retained the public arXiv PDF and inspected the abstract and introduction on open-loop versus closed-loop verification of the ACAS Xu neural-network compression.",
+      "regions": [
+        {
+          "id": "S-CASE-003-R1",
+          "locator": "Abstract, p. 1",
+          "excerpt": "most work focuses on open-loop properties of the networks, rather than the main point of the system—collision avoidance—which requires closed-loop analysis.",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/bak_tran_acasxu_2201.06626.pdf",
+          "snapshot_sha256": "2ee7e113ade096e0b3f4001ce81d7eb9e6eaee5104576e59789f8b6308ecae6b",
+          "context_path": "research/contributions/cases/out/context/bak_tran_abstract.txt"
+        },
+        {
+          "id": "S-CASE-003-R2",
+          "locator": "Section 1 introduction, pp. 1-2",
+          "excerpt": "the large rule table was compressed by a factor of 1000 using a set of neural networks",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/bak_tran_acasxu_2201.06626.pdf",
+          "snapshot_sha256": "2ee7e113ade096e0b3f4001ce81d7eb9e6eaee5104576e59789f8b6308ecae6b",
+          "context_path": "research/contributions/cases/out/context/bak_tran_intro.txt"
+        }
+      ],
+      "limitations": "Concerns an early research prototype of the ACAS Xu neural-network compression under stated favorable assumptions; it is not a finding about any certified or fielded collision-avoidance system, and the authors' idealized assumptions bound the result.",
+      "independence_group": "BAK-TRAN-ACASXU-2022",
+      "refresh_days": 730
+    },
+    {
+      "id": "S-CASE-004",
+      "title": "Wayve technology page: end-to-end AI driving model",
+      "publisher": "Wayve",
+      "url": "https://wayve.ai/technology/",
+      "published_at": null,
+      "source_type": "vendor_statement",
+      "jurisdiction": "Road automated driving; vendor self-description",
+      "accessed_at": "2026-09-25",
+      "inspection_scope": "Retained the public HTML page and inspected its description of the company's architectural approach.",
+      "regions": [
+        {
+          "id": "S-CASE-004-R1",
+          "locator": "Technology page, 'Pioneering the end-to-end AI Driving Model' section",
+          "excerpt": "Our innovative approach replaces the modular 'sense-plan-act' architecture of the traditional AV1.0 approach with a single neural network trained on diverse data to convert raw sensor inputs into safe driving outputs.",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/wayve_embodied_ai.html",
+          "snapshot_sha256": "1f617bf2d829bd210a97e1ea354d2b030dcae3f425c65a8844d802e756417a3c",
+          "context_path": "research/contributions/cases/out/context/wayve_technology.txt"
+        }
+      ],
+      "limitations": "A vendor's description of its own architecture. It does not establish performance, safety, deployment status, regulatory approval, or that any other developer uses the same approach.",
+      "independence_group": "WAYVE-SITE",
+      "refresh_days": 180
+    }
+  ]
+}

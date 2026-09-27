@@ -9,7 +9,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 OUT = Path(__file__).with_name("assurance_coverage_map.png")
-W, H = 1800, 1260
+W, H = 1800, 1490
 BG, PANEL, GRID = "#071322", "#0d2034", "#42617e"
 TEXT, MUTED, GREEN, BLUE, PURPLE, RED, GREY, GOLD = "#eef7ff", "#b6cbdd", "#39c79a", "#4987cc", "#9c7ae5", "#f07678", "#3d5368", "#f5cb72"
 
@@ -64,9 +64,19 @@ def main():
             txt(d,(left+c*cw+cw//2,yy+rh//2-2),cell,14,BG,True,"mm")
     txt(d,(82,835),"Green/purple are proposed classifications, not product evidence or safety outcomes. Quantitative tools supplement qualitative judgment.",17,GOLD)
 
-    rounded(d, (50, 890, 1750, 1200), PANEL, GRID, 18)
+    rounded(d, (50, 890, 1750, 1425), PANEL, GRID, 18)
     txt(d, (82, 918), "3. Document roles and open space", 23, MUTED, True)
-    bands = [("AMLAS", "ML-component lifecycle: data, model, verification, deployment", 600, BLUE, "not whole system / approval [C-CHAL-006]"), ("UK MAA", "applicant-specific military path; fixed supervised model / defined domain", 760, BLUE, "not civil approval [C-CHAL-001]"), ("FAA roadmap", "learned-implementation problem framing and research direction", 510, GREY, "not a complete means of compliance [C-AUTH-010]"), ("NHTSA SGO", "incident reporting and oversight data", 400, GREY, "not normalized safety-rate evidence [C-DIR-003]")]
+    TEAL = "#2f8f86"
+    bands = [
+        ("Conventional", "airborne software / system assurance (DO-178C, ARP4754A)", 560, GREY, "not adequate alone for learned AI [C-RISK-002]"),
+        ("Road stack", "ISO 26262 faults · ISO 21448 insufficiencies · PAS 8800 AI · UL 4600", 700, BLUE, "public scope only [C-BASE-004] [C-AUTH-006]"),
+        ("AMLAS", "ML-component lifecycle: data, model, verification, deployment", 600, BLUE, "not whole system / approval [C-CHAL-006]"),
+        ("UK MAA", "applicant-specific military path; fixed supervised model / defined domain", 760, BLUE, "not civil approval [C-CHAL-001]"),
+        ("ED-324 draft", "aviation ML process standard; issue 1: non-adaptive supervised ML to DAL C", 760, BLUE, "draft; not above DAL C [C-STAT-002]"),
+        ("FAA roadmap", "learned-implementation problem framing and research direction", 510, GREY, "not a complete means of compliance [C-AUTH-010]"),
+        ("UN R157", "international type approval for automated lane keeping", 490, TEAL, "one bounded road function [C-STAT-008] [C-PRAC-006]"),
+        ("NHTSA SGO", "incident reporting and oversight data", 400, GREY, "not normalized safety-rate evidence [C-DIR-003]"),
+    ]
     yy=970
     for name, text, length, color, limit in bands:
         txt(d,(92,yy+17),name,19,TEXT,True,"lm")
@@ -74,11 +84,11 @@ def main():
         txt(d,(286,yy+17),text,15,TEXT,False,"lm")
         txt(d,(1048,yy+17),limit,14,MUTED,False,"lm")
         yy+=53
-    rounded(d,(1430,950,1715,1140),PURPLE,None,12,0)
-    txt(d,(1452,978),"PROJECT PROPOSAL",18,TEXT,True)
+    rounded(d,(1430,1060,1715,1250),PURPLE,None,12,0)
+    txt(d,(1452,1088),"PROJECT PROPOSAL",18,TEXT,True)
     for i,line in enumerate(("connect domain, sensing,", "release, scenario evidence,", "recovery, and change.", "Names missing evidence;", "does not grant approval.")):
-        txt(d,(1452,1014+i*24),line,15,TEXT)
-    txt(d,(60,1230),"Red = unacceptable only in EASA’s proposed matrix. Blue/grey = source role. Nothing in this figure is a composite safety score.",16,MUTED)
+        txt(d,(1452,1124+i*24),line,15,TEXT)
+    txt(d,(60,1455),"Red = unacceptable only in EASA’s proposed matrix. Blue/grey/teal = source role (teal: road type approval). ED-324 is a draft (August 2025 scope). Nothing here is a safety score.",16,MUTED)
     im.save(OUT, optimize=True)
     print(f"Wrote {OUT}")
 

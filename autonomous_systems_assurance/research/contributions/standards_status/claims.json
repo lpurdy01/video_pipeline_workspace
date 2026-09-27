@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "C-STAT-001",
+      "text": "An August 2025 SAE G-34/EUROCAE WG-114 presentation at the FAA AI/ML Technical Exchange says the joint committee was created in 2019, published a statement of concerns (ER-022/AIR6988) on 30 April 2021 and a taxonomy (ER-027/AIR6987) on 12 December 2024, and at that time targeted June 2026 for publication of ED-324/ARP6983.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Committee presentation of a draft standard, August 2025; schedule stated as subject to change",
+      "evidence": [
+        {
+          "region_id": "S-STAT-001-R1",
+          "relation": "supports"
+        },
+        {
+          "region_id": "S-STAT-001-R4",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Pair with C-CHAL-005: EUROCAE's 2026-09-16 status page lists a later target (31 December 2026). Do not treat either target as publication.",
+      "review_records": []
+    },
+    {
+      "id": "C-STAT-002",
+      "text": "The same presentation, based on ED-324/ARP6983 Draft 7, describes issue 1 as a development-assurance process focused on learning assurance for airborne and ATM/ANS domains, limited to non-adaptive machine learning in supervised mode up to DAL C / AL 3 / SWAL 2, with information security and human factors out of scope, and says the ARP cannot be used if the safety assessment outcome is higher than IDAL C/AL3/SWAL2.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Draft-7 scope as presented in August 2025; subject to change before publication",
+      "evidence": [
+        {
+          "region_id": "S-STAT-001-R2",
+          "relation": "supports"
+        },
+        {
+          "region_id": "S-STAT-001-R3",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Recheck the published issue before stating its final scope; do not assert which DAL a particular DAA function would receive.",
+      "review_records": []
+    },
+    {
+      "id": "C-STAT-003",
+      "text": "The presentation says a deployed ML model is treated as software that is either correct and qualified or incorrect and not qualified, that hardware supporting the ML constituent (such as sensors and graphics processors) is treated as random hardware, that the draft had drawn about 1800 SAE ballot comments, and that a later issue 2 is to cover more ML techniques such as reinforcement learning.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Committee presentation of a draft; August 2025",
+      "evidence": [
+        {
+          "region_id": "S-STAT-001-R3",
+          "relation": "supports"
+        },
+        {
+          "region_id": "S-STAT-001-R4",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Do not convert the 'random hardware' treatment into a claim about how any authority will certify GPUs.",
+      "review_records": []
+    },
+    {
+      "id": "C-STAT-004",
+      "text": "EUROCAE announced on 1 August 2025 a public consultation on the draft ED-324, 'Process Standard for Development and Certification Approval of Aeronautical Products Implementing AI', prepared by WG-114.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "EUROCAE announcement; draft consultation, not publication",
+      "evidence": [
+        {
+          "region_id": "S-STAT-002-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Titles of the draft vary across EUROCAE and SAE pages; cite the title as announced.",
+      "review_records": []
+    },
+    {
+      "id": "C-STAT-005",
+      "text": "EASA's NPA 2025-07 page, dated 10 November 2025 with a comment deadline extended to 10 March 2026, says the NPA proposes detailed specifications on AI trustworthiness in aviation in response to the EU Artificial Intelligence Act, Regulation (EU) 2024/1689.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "EASA rulemaking landing page; proposed material",
+      "evidence": [
+        {
+          "region_id": "S-STAT-003-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Keep 'proposed'; combine with C-STD-002 for current rulemaking status.",
+      "review_records": []
+    },
+    {
+      "id": "C-STAT-006",
+      "text": "NASA's public account of DO-178C says DO-178B was released in December 1992, derived from DO-178 and DO-178A, and that RTCA's SC-205 spent seven years producing DO-178C, released in December 2011.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NASA NTRS explanatory paper; history of the airborne software guidance series",
+      "evidence": [
+        {
+          "region_id": "S-STAT-004-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Dates only; do not infer clause content of the licensed documents.",
+      "review_records": []
+    },
+    {
+      "id": "C-STAT-007",
+      "text": "NASA's public account of DO-178C describes software levels A through E, with level A the most critical; extensive requirements-based and structural coverage verification for levels A and B; a philosophy of demonstrating development-process quality because testing cannot prove the absence of software errors; and five tool-qualification levels for tools that generate or verify software, referring to DO-330.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NASA NTRS explanatory paper; manager-level characterization, not clause text",
+      "evidence": [
+        {
+          "region_id": "S-STAT-004-R2",
+          "relation": "supports"
+        },
+        {
+          "region_id": "S-STAT-004-R3",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Attribute every detail to NASA's account; MC/DC specifics are not claimed here.",
+      "review_records": []
+    },
+    {
+      "id": "C-STAT-008",
+      "text": "The UK Department for Transport decided to mandate compliance with UNECE Regulation 157 on automated lane keeping systems (ALKS) within GB vehicle type approval, noting that as a contracting party it is obliged to accept R157 approvals; the UK Vehicle Certification Agency reviews R157-approved vehicles for listing as self-driving.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "UK government decision and agency guidance on UN R157; GB scope",
+      "evidence": [
+        {
+          "region_id": "S-STAT-005-R1",
+          "relation": "supports"
+        },
+        {
+          "region_id": "S-STAT-006-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Use as evidence that an international pre-market type-approval route exists for one bounded automated function; do not generalize to all ADS or to EU/US practice.",
+      "review_records": []
+    }
+  ]
+}

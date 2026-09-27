@@ -145,3 +145,23 @@ A single Gemini 3.8 Flash audience audit was run as advisory editorial feedback 
 ## [2026-09-25] compose | Two-layer paper structure
 
 The reader-first rewrite was too destructive for the project’s dual purpose. Recovered the preserved 8,731-word pre-rewrite review edition from the local PDF/HTML pipeline and converted it into the manifested `resource_composition/technical_reference.md`. The concise `whitepaper.md` is now the recommended first-read path and links directly to this detailed companion for the full evidence graph, methods, road case, aviation comparison, compiler discussion, source cards and review material. The companion is maintained, not archival; its historical count/status statements are explicitly marked for reconciliation before release.
+
+## [2026-09-25] integrate | Direction review round 2: purpose-led paper, public-source baseline, three-part series
+
+Levi set the controlling purpose (D-021), the paywall rule (D-022) and a three-part video series (D-023). Two new research lanes add full-context public sources:
+- `cases`: NTSB HAR-19/03 Tempe findings, Reluplex and Bak & Tran on ACAS Xu, Wayve's end-to-end statement.
+- `standards_status`: ED-324/ARP6983 committee presentation giving the issue 1 scope (non-adaptive supervised ML up to DAL C) and the June 2026 target, EUROCAE consultation, EASA NPA 2025-07 and the AI Act link, NASA's DO-178B/C history and characterization, UK pages on UN R157.
+
+The main paper was rebuilt around the five purpose elements. It now names the conventional standards through public sources, adds the full Tempe trace, a road-regime contrast, a dated open-items register, the end-to-end architecture tension and the ACAS Xu closed-loop lesson. The technical reference was rebuilt from the committed Markdown rather than the HTML render. Three figures had text-overflow fixes, and the coverage map gained conventional, road-stack, ED-324 and UN R157 rows. EU 2022/1426 and the R157 130 km/h amendment are not claimed because automated retrieval was blocked. All prior digest-pinned reviews are stale after these changes; this is expected, not a regression.
+
+## [2026-09-25] integrate | Round 3: practice baseline, worked artifacts, release and cross-link plan
+
+New lane `practice_baseline` (S-PRAC/C-PRAC, full-context snapshots). ASTM F3269-21 run-time assurance practice is active, which defeats the earlier "withdrawn" lead. Also captured: FAA AC 20-152A (DO-254) and AC 20-193 (multi-core, with a co-processor/graphics-processor exception), NASA-STD-7009B simulation credibility, the STPA Handbook, and the EU catalog record of UN R157 (2021/389).
+
+Integrated into the paper's monitor, SOTIF/STPA, lifecycle, road-regime, hardware-register and methods sections. Per D-026, a 30 mph timing budget and a release manifest were added to the paper (illustrative arithmetic), and a label policy, evaluation template and change-impact record were added to the technical reference. Episode 3 gained the timing-budget beat and an ASTM F3269 line.
+
+The coverage-map SVG now matches the PNG, with label-alignment fixes. Decisions D-025..D-028 recorded. A paced per-claim model review of everything that ships followed.
+
+## [2026-09-25] verify | Round-3 model review halted by depleted credits; context-builder bug fixed
+
+The paced Gemini review stopped at 113 of 231 packages (402: prepaid credits depleted). Results: 99 pass, 13 uncertain, 1 fail. The fail (episode 1 teaser omitted the Tempe probable cause) is fixed. An uncertain verdict exposed a line-offset bug in the round-2/3 context builder, so all 27 affected regions were rebuilt and verified. C-BASE-001/002/003 were upgraded to full context. These fixes correctly invalidated all candidates; all 231 shipped-artifact packages await review after the credits are topped up (resume command in the round-3 handoff).

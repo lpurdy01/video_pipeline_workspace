@@ -11,23 +11,25 @@
       "source_type": "regulator_advisory_circular",
       "jurisdiction": "US civil aviation",
       "accessed_at": "2026-09-25",
-      "inspection_scope": "Inspected the public FAA advisory circular through its retained public extraction. It describes an acceptable means, rather than a regulation or the only means, for software aspects of type certification or TSO authorization; it names ED-12C/DO-178C and ED-215/DO-330.",
+      "inspection_scope": "Inspected the public FAA advisory circular through its retained public extraction. It describes an acceptable means, rather than a regulation or the only means, for software aspects of type certification or TSO authorization; it names ED-12C/DO-178C and ED-215/DO-330. Full public PDF retained and region context captured 2026-09-25 (round 3).",
       "regions": [
         {
           "id": "S-BASE-001-R1",
           "locator": "PDF p. 1, Purpose; retained extraction lines 13–39",
           "excerpt": "This AC describes an acceptable means, but not the only means, for showing compliance",
-          "context_status": "short_excerpt_only",
-          "snapshot_path": null,
-          "snapshot_sha256": null
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/faa_ac_20_115d.pdf",
+          "snapshot_sha256": "5597a1af49c872a1a843c05601742ddcc8e8a190642f31e3cb9ce8e0dc63d91e",
+          "context_path": "research/contributions/direction_remediation/out/context/ac20115d_purpose.txt"
         },
         {
           "id": "S-BASE-001-R2",
           "locator": "PDF p. 2, document set; retained extraction lines 22–39",
           "excerpt": "RTCA DO-330, Software Tool Qualification Considerations",
-          "context_status": "short_excerpt_only",
-          "snapshot_path": null,
-          "snapshot_sha256": null
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/faa_ac_20_115d.pdf",
+          "snapshot_sha256": "5597a1af49c872a1a843c05601742ddcc8e8a190642f31e3cb9ce8e0dc63d91e",
+          "context_path": "research/contributions/direction_remediation/out/context/ac20115d_documents.txt"
         }
       ],
       "limitations": "This public AC recognizes a method as an acceptable means for stated FAA purposes. It is not the licensed DO-178C/DO-330 text and does not establish an ML assurance method, a project certification basis, or an approval.",
@@ -43,23 +45,25 @@
       "source_type": "government_technical_paper",
       "jurisdiction": "Public explanation of airborne software assurance",
       "accessed_at": "2026-09-25",
-      "inspection_scope": "Inspected the retained public NASA text. The paper explains requirements-based and structural coverage, bidirectional traceability, lifecycle/configuration processes, and tool qualification as its account of the DO-178C approach.",
+      "inspection_scope": "Inspected the retained public NASA text. The paper explains requirements-based and structural coverage, bidirectional traceability, lifecycle/configuration processes, and tool qualification as its account of the DO-178C approach. Full public PDF retained and region context captured 2026-09-25 (round 3).",
       "regions": [
         {
           "id": "S-BASE-002-R1",
           "locator": "pp. 4–6, verification philosophy; retained extraction lines 140–154",
           "excerpt": "requirements-based coverage and structural coverage",
-          "context_status": "short_excerpt_only",
-          "snapshot_path": null,
-          "snapshot_sha256": null
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/nasa_ntrs_20120016835_jacklin_do178c.pdf",
+          "snapshot_sha256": "466035d3e47ebdd9dd87eae4541ad1cb04113769f8160d3b8541a7fc55f0e8e5",
+          "context_path": "research/contributions/direction_remediation/out/context/jacklin_coverage.txt"
         },
         {
           "id": "S-BASE-002-R2",
-          "locator": "pp. 6–9, traceability, lifecycle and tools; retained extraction lines 192–215 and 278–284",
+          "locator": "pp. 5-7, software development process, bi-directional traceability (III.C) and tool qualification; NASA text lines 185-215, 250-270, 275-290",
           "excerpt": "two-way or bi-directional traceability",
-          "context_status": "short_excerpt_only",
-          "snapshot_path": null,
-          "snapshot_sha256": null
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/nasa_ntrs_20120016835_jacklin_do178c.pdf",
+          "snapshot_sha256": "466035d3e47ebdd9dd87eae4541ad1cb04113769f8160d3b8541a7fc55f0e8e5",
+          "context_path": "research/contributions/direction_remediation/out/context/jacklin_traceability_tools.txt"
         }
       ],
       "limitations": "This is NASA's public explanatory paper, not the licensed standard. It supports a manager-level characterization only; readers must not treat it as clause-level text or a current FAA approval for an ML component.",
@@ -75,15 +79,16 @@
       "source_type": "regulator_advisory_circular",
       "jurisdiction": "US civil aviation",
       "accessed_at": "2026-09-25",
-      "inspection_scope": "Inspected the official public FAA page and document description. It says AC 20-174 recognizes ARP4754A as an acceptable method for establishing a development-assurance process, including requirements validation and design-implementation verification.",
+      "inspection_scope": "Inspected the official public FAA page and document description. It says AC 20-174 recognizes ARP4754A as an acceptable method for establishing a development-assurance process, including requirements validation and design-implementation verification. Full public PDF retained and region context captured 2026-09-25 (round 3).",
       "regions": [
         {
           "id": "S-BASE-003-R1",
           "locator": "PDF p. 1, Purpose",
           "excerpt": "recognizes ... ARP 4754A ... as an acceptable method for establishing a development assurance process",
-          "context_status": "short_excerpt_only",
-          "snapshot_path": null,
-          "snapshot_sha256": null
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/faa_ac_20_174.pdf",
+          "snapshot_sha256": "ded7fb7c8b9404b791dba76ce96feaefc6abd5343c760abc7d239d0c14bac53c",
+          "context_path": "research/contributions/direction_remediation/out/context/ac20174_purpose.txt"
         }
       ],
       "limitations": "The source recognizes ARP4754A, not ARP4754B, and does not provide the licensed standard's contents. It is used only to describe the public FAA system-development-assurance framing.",

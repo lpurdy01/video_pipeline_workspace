@@ -1,5 +1,8 @@
 # Can We Build a Safety Case for a Machine That Learned?
 
+> **Superseded 2026-09-25.** Levi chose a three-part series. The current scripts are in [`series_structure/`](series_structure/treatment.md). This single-film draft is kept as history and should not be recorded.
+
+
 **Status:** recording-feedback draft, 25 September 2026.  This is a narrated research proposal, not an assessment of a real vehicle, aircraft, product, operator, or model.
 
 **Target:** about 31–33 minutes with visual holds at roughly 125–135 spoken words per minute.  Bracketed directions are not spoken. Every factual narration line carries a source claim tag. Lines marked **Project proposal** are the authors' proposed architecture and must not be read as authority guidance.

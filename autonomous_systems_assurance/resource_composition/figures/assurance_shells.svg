@@ -26,12 +26,12 @@
   <text x="244" y="455" class="f8head">Learned release</text>
   <text x="244" y="478" class="f8small">data + labels +</text><text x="244" y="497" class="f8small">model + configuration</text>
 
-  <rect x="470" y="400" width="165" height="136" rx="18" class="f8action"/>
-  <text x="491" y="435" class="f8head">Action envelope</text>
-  <text x="491" y="458" class="f8small">deterministic</text><text x="491" y="477" class="f8small">constraints and</text><text x="491" y="496" class="f8small">recovery policy</text>
-  <path d="M425 468 H470" class="f8line" marker-end="url(#f8arrow)"/>
-  <path d="M635 468 H690" class="f8line" marker-end="url(#f8green)"/>
-  <text x="650" y="458" class="f8small">allowed</text><text x="650" y="477" class="f8small">action</text>
+  <rect x="455" y="400" width="190" height="136" rx="18" class="f8action"/>
+  <text x="476" y="435" class="f8head">Action envelope</text>
+  <text x="476" y="458" class="f8small">deterministic</text><text x="476" y="477" class="f8small">constraints and</text><text x="476" y="496" class="f8small">recovery policy</text>
+  <path d="M425 468 H455" class="f8line" marker-end="url(#f8arrow)"/>
+  <path d="M645 468 H700" class="f8line" marker-end="url(#f8green)"/>
+  <text x="651" y="494" class="f8small">allowed</text><text x="651" y="510" class="f8small">action</text>
 
   <rect x="830" y="150" width="310" height="150" rx="16" class="f8note"/>
   <text x="857" y="186" class="f8head">The wrapper is conditional</text>
@@ -42,11 +42,11 @@
   <text x="857" y="386" class="f8head">Shared blind spot test</text>
   <text x="857" y="412" class="f8text">If the learned component and</text><text x="857" y="434" class="f8text">monitor receive the same missing</text><text x="857" y="456" class="f8text">world information, the monitor may</text><text x="857" y="478" class="f8text">repeat the same mistake.</text>
   <text x="857" y="500" class="f8small">Independence is an evidence question.</text>
-  <path d="M830 431 C737 431 705 452 637 458" class="f8dash" marker-end="url(#f8arrow)"/>
+  <path d="M830 431 C760 431 720 440 648 452" class="f8dash" marker-end="url(#f8arrow)"/>
 
-  <rect x="830" y="565" width="310" height="80" rx="16" class="f8note"/>
-  <text x="857" y="598" class="f8head">What the assurance case traces</text>
-  <text x="857" y="622" class="f8small">hazard → evidence → bounded authority → release/change impact</text>
+  <rect x="830" y="560" width="310" height="96" rx="16" class="f8note"/>
+  <text x="857" y="598" class="f8head">What the case traces</text>
+  <text x="857" y="622" class="f8small">hazard → evidence → bounded authority</text><text x="857" y="640" class="f8small">→ release and change impact</text>
   <line x1="70" y1="704" x2="1140" y2="704" stroke="#526c7d" stroke-width="2"/>
   <text x="70" y="734" class="f8small">Project proposal. The nested shapes show responsibility and evidence boundaries, not a hierarchy of guaranteed protection.</text>
 </svg>

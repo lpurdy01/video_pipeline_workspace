@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-25",
+  "sources": [
+    {
+      "id": "S-STAT-001",
+      "title": "ARP6983 / ED-324 – Development and Assurance guidelines for Aeronautical Systems and Equipment Implemented with Machine Learning (FAA AI/ML Technical Exchange Meeting presentation, August 2025)",
+      "publisher": "SAE G-34 / EUROCAE WG-114 (presented at FAA AI/ML Technical Exchange)",
+      "url": "https://na.eventscloud.com/file_uploads/115fca49330a77ce92d7fe04e9874faf_Day1-Jahn-202508ED-324ARP6983presFAAAI-MLTechExchangeMeeting_8-5-25-Read-Only.pdf",
+      "published_at": "2025-08-05",
+      "source_type": "standards_committee_presentation",
+      "jurisdiction": "International aviation ML process standard (draft)",
+      "accessed_at": "2026-09-25",
+      "inspection_scope": "Retained the public 16-slide read-only presentation. Inspected committee history, the statement-of-concerns gap slide, issue 1 scope, system-level safety approach and schedule. The deck states it is based on Draft 7 (work in progress) and is subject to change; SAE copyright prohibits redistribution, so only short quotations are recorded.",
+      "regions": [
+        {
+          "id": "S-STAT-001-R1",
+          "locator": "Slide 2, joint committee picture",
+          "excerpt": "Created in 2019 ... ER-022 / AIR6988 (Statement of concerns) Published on 30 April 2021 ... ED-324 / ARP6983 ... Publication targeted for June 2026",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/faa_techexchange_ed324_2025.pdf",
+          "snapshot_sha256": "0b320d6ff771c8d3d68969988fb065185c9af713c640ffc4362da528950b91f2",
+          "context_path": "research/contributions/standards_status/out/context/ed324_committee.txt"
+        },
+        {
+          "id": "S-STAT-001-R2",
+          "locator": "Slide 4, ED-324/ARP6983 scope issue 1",
+          "excerpt": "Issue 1 limited to a subset of ML technologies ... Non-adaptive ML in supervised mode, and up to DAL C / AL 3 / SWAL 2",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/faa_techexchange_ed324_2025.pdf",
+          "snapshot_sha256": "0b320d6ff771c8d3d68969988fb065185c9af713c640ffc4362da528950b91f2",
+          "context_path": "research/contributions/standards_status/out/context/ed324_scope.txt"
+        },
+        {
+          "id": "S-STAT-001-R3",
+          "locator": "Slides 11-12, how the ARP addresses safety at the system level",
+          "excerpt": "the ARP cannot be used if the outcome is higher than IDAL C/AL3/SWAL2",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/faa_techexchange_ed324_2025.pdf",
+          "snapshot_sha256": "0b320d6ff771c8d3d68969988fb065185c9af713c640ffc4362da528950b91f2",
+          "context_path": "research/contributions/standards_status/out/context/ed324_system_level.txt"
+        },
+        {
+          "id": "S-STAT-001-R4",
+          "locator": "Slide 16, ED-324/ARP6983 schedule",
+          "excerpt": "SAE Ballot 1 ended on April 7th, ≈1800 comments are being addressed ... Issue 2 will follow, covering more ML techniques (such as Reinforcement Learning)",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/faa_techexchange_ed324_2025.pdf",
+          "snapshot_sha256": "0b320d6ff771c8d3d68969988fb065185c9af713c640ffc4362da528950b91f2",
+          "context_path": "research/contributions/standards_status/out/context/ed324_schedule.txt"
+        }
+      ],
+      "limitations": "A committee presentation of a draft (Draft 7, WIP), not the standard. Scope and schedule were stated as subject to change; the EUROCAE status page captured 2026-09-16 (C-CHAL-005) shows a later target date. Copyrighted by SAE; not redistributed.",
+      "independence_group": "SAE-G34-EUROCAE-WG114",
+      "refresh_days": 90
+    },
+    {
+      "id": "S-STAT-002",
+      "title": "Open Consultation for ED-324 (EUROCAE news, 1 August 2025)",
+      "publisher": "EUROCAE",
+      "url": "https://www.eurocae.net/open-consultation-for-ed-324/",
+      "published_at": "2025-08-01",
+      "source_type": "standards_body_announcement",
+      "jurisdiction": "European aviation standards body",
+      "accessed_at": "2026-09-25",
+      "inspection_scope": "Retained the public news page and inspected the consultation announcement.",
+      "regions": [
+        {
+          "id": "S-STAT-002-R1",
+          "locator": "News item, 1 August 2025",
+          "excerpt": "ED-324: Process Standard for Development and Certification Approval of Aeronautical Products Implementing AI.",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/eurocae_ed324_consultation.html",
+          "snapshot_sha256": "c5b45a777f6e0f6687f96ba46eed9ffc7ebe33c28e2e588146584fd77d8a76cd",
+          "context_path": "research/contributions/standards_status/out/context/eurocae_consultation.txt"
+        }
+      ],
+      "limitations": "Announces a draft's public consultation; it does not disclose contents, final publication or authority recognition.",
+      "independence_group": "SAE-G34-EUROCAE-WG114",
+      "refresh_days": 90
+    },
+    {
+      "id": "S-STAT-003",
+      "title": "NPA 2025-07 — Detailed specifications and associated AMC and GM, Artificial intelligence trustworthiness (landing page)",
+      "publisher": "European Union Aviation Safety Agency",
+      "url": "https://www.easa.europa.eu/en/document-library/notices-of-proposed-amendment/npa-2025-07",
+      "published_at": "2025-11-10",
+      "source_type": "authority_rulemaking_page",
+      "jurisdiction": "EU aviation",
+      "accessed_at": "2026-09-25",
+      "inspection_scope": "Retained the public EASA landing page and inspected its dates and summary.",
+      "regions": [
+        {
+          "id": "S-STAT-003-R1",
+          "locator": "NPA 2025-07 landing page summary and dates",
+          "excerpt": "proposes a new set of detailed specifications on artificial intelligence (AI) trustworthiness for the safe use of AI in aviation in response to Regulation (EU) 2024/1689 (the Artificial Intelligence Act)",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/easa_npa_2025_07.html",
+          "snapshot_sha256": "16bfe75c808b493b457dbb4d1b4311f5e1f2da63da28796882a085f038a8bc5f",
+          "context_path": "research/contributions/standards_status/out/context/easa_npa_page.txt"
+        }
+      ],
+      "limitations": "A rulemaking landing page for proposed material; it does not establish adoption. See C-STD-002 for the captured comment-response status.",
+      "independence_group": "EASA-RMT0742",
+      "refresh_days": 90
+    },
+    {
+      "id": "S-STAT-004",
+      "title": "Certification of Safety-Critical Software Under DO-178C and DO-278A (history and verification regions)",
+      "publisher": "NASA / NASA Technical Reports Server (Jacklin)",
+      "url": "https://ntrs.nasa.gov/citations/20120016835",
+      "published_at": "2012-06-01",
+      "source_type": "government_technical_paper",
+      "jurisdiction": "Public explanation of airborne software assurance",
+      "accessed_at": "2026-09-25",
+      "inspection_scope": "Retained public NASA PDF (sister-project capture) and inspected the introduction/history, software levels and coverage, and tool-qualification sections. Same originating document as S-BASE-002; recorded separately for the history and level/tool regions.",
+      "regions": [
+        {
+          "id": "S-STAT-004-R1",
+          "locator": "Section I introduction and history, pp. 1-2",
+          "excerpt": "DO-178B was a derivative product of DO-178A, DO-178, and other documents and was released in December 1992.",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/nasa_ntrs_20120016835_jacklin_do178c.pdf",
+          "snapshot_sha256": "466035d3e47ebdd9dd87eae4541ad1cb04113769f8160d3b8541a7fc55f0e8e5",
+          "context_path": "research/contributions/standards_status/out/context/jacklin_history.txt"
+        },
+        {
+          "id": "S-STAT-004-R2",
+          "locator": "Section III.A Software Levels and Coverage, p. 3",
+          "excerpt": "Since testing can never prove the absence of software errors, the primary DO-178C philosophy is to demonstrate the quality of the software development process",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/nasa_ntrs_20120016835_jacklin_do178c.pdf",
+          "snapshot_sha256": "466035d3e47ebdd9dd87eae4541ad1cb04113769f8160d3b8541a7fc55f0e8e5",
+          "context_path": "research/contributions/standards_status/out/context/jacklin_levels_coverage.txt"
+        },
+        {
+          "id": "S-STAT-004-R3",
+          "locator": "Tool qualification section, pp. 6-7",
+          "excerpt": "DO-178C sets forth five tool qualification levels (TQL-1 – TQL-5) based on the software level",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/nasa_ntrs_20120016835_jacklin_do178c.pdf",
+          "snapshot_sha256": "466035d3e47ebdd9dd87eae4541ad1cb04113769f8160d3b8541a7fc55f0e8e5",
+          "context_path": "research/contributions/standards_status/out/context/jacklin_tool_qualification.txt"
+        }
+      ],
+      "limitations": "NASA's public explanatory paper, not the licensed standard; it supports manager-level characterization and dates only.",
+      "independence_group": "NASA-NTRS-20120016835",
+      "refresh_days": 365
+    },
+    {
+      "id": "S-STAT-005",
+      "title": "Incorporating international rules into GB type approval for road vehicles – outcome",
+      "publisher": "UK Department for Transport (GOV.UK)",
+      "url": "https://www.gov.uk/government/consultations/incorporating-international-rules-into-gb-type-approval-for-road-vehicles/outcome/incorporating-international-rules-into-gb-type-approval-for-road-vehicles-outcome",
+      "published_at": null,
+      "source_type": "government_consultation_outcome",
+      "jurisdiction": "Great Britain road-vehicle type approval",
+      "accessed_at": "2026-09-25",
+      "inspection_scope": "Retained the public GOV.UK outcome page and inspected the UN Regulation 157 (ALKS) question, response summary and government decision.",
+      "regions": [
+        {
+          "id": "S-STAT-005-R1",
+          "locator": "Outcome page, UN Regulation 157 question and decision",
+          "excerpt": "mandating compliance with the requirements of UNECE Regulation 157 on ALKS ... As contracting parties to UN Regulation 157, there is an obligation on the UK to accept approvals.",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/ukgov_type_approval_outcome.html",
+          "snapshot_sha256": "16e41beb01a8b376b24766283685470d5fef2ae15c78a3c9d1db687463ef235b",
+          "context_path": "research/contributions/standards_status/out/context/ukdft_r157_outcome.txt"
+        }
+      ],
+      "limitations": "A UK government decision about GB type approval; it describes UN Regulation 157 as an international type-approval regulation but is not the regulation text and does not establish EU or US practice.",
+      "independence_group": "UK-DFT-GB-TYPE-APPROVAL",
+      "refresh_days": 180
+    },
+    {
+      "id": "S-STAT-006",
+      "title": "Automated Lane Keeping Systems (ALKS) and Listing of Self-Driving Vehicles",
+      "publisher": "UK Vehicle Certification Agency",
+      "url": "https://www.vehicle-certification-agency.gov.uk/connected-and-automated-vehicles/automated-lane-keeping-systems-alks-and-listing-of-self-driving-vehicles/",
+      "published_at": null,
+      "source_type": "government_agency_guidance",
+      "jurisdiction": "Great Britain automated-vehicle listing",
+      "accessed_at": "2026-09-25",
+      "inspection_scope": "Retained the public VCA page and inspected its ALKS description and R157 listing-review process.",
+      "regions": [
+        {
+          "id": "S-STAT-006-R1",
+          "locator": "ALKS description and R157 listing review",
+          "excerpt": "Vehicles which are approved to UNECE R157 and include the United Kingdom within their Operational Design Domain (ODD) should meet the threshold of self-driving",
+          "context_status": "full_context",
+          "snapshot_path": "verification/out/sources/direction_round2/uk_vca_alks.html",
+          "snapshot_sha256": "69d8daf560057f64d5e400ba7fb9bc0c29caa3467eca631db17a66eaad593c00",
+          "context_path": "research/contributions/standards_status/out/context/ukvca_alks.txt"
+        }
+      ],
+      "limitations": "UK agency guidance for listing; not the R157 text, not an EU/UNECE-wide statement, and not a safety finding about any vehicle.",
+      "independence_group": "UK-VCA",
+      "refresh_days": 180
+    }
+  ]
+}

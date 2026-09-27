@@ -13,6 +13,8 @@
 
 ## Direction-review release decision
 
-The 2026-09-25 direction review is being remediated before new tooling. Its safe, completed content work is recorded in the integrator handoff. The following decisions are intentionally held for Levi: whether to commit the untracked project snapshot; whether to build the toy demonstration; whether the video becomes an episodic series or a 12–15-minute flagship and supersedes the 31–34 minute plan; whether EU/UNECE material enters road scope; and whether publication is timed to ED-324 or uses a dated update plan. Until resolved, the paper labels ED-324 and EASA material with capture dates and treats neither as final.
+Updated 2026-09-25 (round 3). Decided: commit before restructuring (done); purpose (D-021); paywall rule (D-022); three-part series (D-023); UN R157 as a comparison (D-025); worked artifacts instead of a simulation (D-026); release all three episodes together when done, rechecking dated status statements the week before (D-027); interlink with other channel videos (D-028). ED-324/ARP6983 targets 31 December 2026. If it publishes before release, update the paper's §4–5 and episode 2 from the published issue.
 
 Next research priorities: GA-ASI authorization records and scope; Zipline approval letters and acoustic architecture; EASA concept-paper text/current issue; FAA learning-assurance detail; runtime-monitor observability; ISO 21448/8800 and UL 4600 roles; interpretability evidence limits; DAA encounter/scenario standards and data provenance.
+
+Added 2026-09-25: capture EU Implementing Regulation 2022/1426 and the UN R157 text through a browser (automated retrieval was blocked); recheck the published ED-324/ARP6983 scope when released; recapture EASA RMT.0742 status before release.

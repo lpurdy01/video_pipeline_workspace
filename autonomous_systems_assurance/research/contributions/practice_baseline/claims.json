@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "C-PRAC-001",
+      "text": "ASTM F3269-21, an active ASTM standard practice last updated on 19 November 2021, provides an architectural framework for a run-time assurance (RTA) system as an alternative to design-time assurance for meeting safety requirements of an unassured or complex function in aircraft systems; its scope includes RTA components and determining safe boundaries and RTA coverage.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "ASTM public product page for a paywalled standard practice",
+      "evidence": [
+        {
+          "region_id": "S-PRAC-001-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Do not imply regulator acceptance for a specific product, or that an RTA framework resolves a monitor that cannot observe the relevant perception failure.",
+      "review_records": []
+    },
+    {
+      "id": "C-PRAC-002",
+      "text": "FAA AC 20-152A (October 2022) describes an acceptable, non-exclusive means of compliance for the electronic-hardware aspects of airborne systems and recognizes ED-80/DO-254.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "FAA public advisory circular; not DO-254 text",
+      "evidence": [
+        {
+          "region_id": "S-PRAC-002-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Not ML-specific; do not infer how an authority treats a GPU running a neural network.",
+      "review_records": []
+    },
+    {
+      "id": "C-PRAC-003",
+      "text": "FAA AC 20-193 (January 2024) gives an acceptable means of compliance for multi-core processors in airborne systems, warning that interference between applications on a multi-core processor could make safety-critical software behave non-deterministically or unsafely or miss its execution time; its objectives do not apply where cores act only as co-processors or graphics processors under the control of another core and linked only by conventional avionics databuses.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "FAA public advisory circular on multi-core processors",
+      "evidence": [
+        {
+          "region_id": "S-PRAC-003-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "State the exception precisely; it depends on configuration and is not a general exemption for GPUs.",
+      "review_records": []
+    },
+    {
+      "id": "C-PRAC-004",
+      "text": "NASA-STD-7009B, approved 5 March 2024, sets requirements and recommendations for developing and using models and simulations, aiming to reduce the risks of simulation-influenced decisions through a life-cycle process with formal credibility assessments; it states what must be accomplished and communicated, not how.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "NASA public technical standard",
+      "evidence": [
+        {
+          "region_id": "S-PRAC-004-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "A NASA standard; use it as a public example of simulation-credibility practice, not as a road or aviation requirement.",
+      "review_records": []
+    },
+    {
+      "id": "C-PRAC-005",
+      "text": "The STPA Handbook (Leveson and Thomas, 2018) describes STPA as a hazard analysis technique that, in addition to component failures, treats accidents as possibly caused by unsafe interactions among components that have not failed and may satisfy their requirements.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Method handbook, public",
+      "evidence": [
+        {
+          "region_id": "S-PRAC-005-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "A method description; its use in a specific regulatory regime needs separate sourcing.",
+      "review_records": []
+    },
+    {
+      "id": "C-PRAC-006",
+      "text": "The EU Publications Office catalogs UN Regulation No 157, uniform provisions concerning the approval of vehicles with regard to automated lane keeping systems, as EU publication 2021/389.",
+      "kind": "fact",
+      "status": "provisional",
+      "scope": "Bibliographic record only",
+      "evidence": [
+        {
+          "region_id": "S-PRAC-006-R1",
+          "relation": "supports"
+        }
+      ],
+      "challenge": "Title-level evidence; do not infer content, amendments or speed limits from it.",
+      "review_records": []
+    }
+  ]
+}

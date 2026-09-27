@@ -223,7 +223,10 @@
       "path": "resource_composition/whitepaper.md",
       "kind": "whitepaper",
       "depends_on": [
-        "A-ARCH"
+        "A-ARCH",
+        "A-CASE-FINDINGS",
+        "A-PRAC-FINDINGS",
+        "A-STAT-FINDINGS"
       ]
     },
     {
@@ -315,6 +318,59 @@
       "depends_on": [
         "A-FIGURES"
       ]
+    },
+    {
+      "id": "A-CASE-FINDINGS",
+      "path": "research/contributions/cases/findings.md",
+      "kind": "research",
+      "depends_on": []
+    },
+    {
+      "id": "A-STAT-FINDINGS",
+      "path": "research/contributions/standards_status/findings.md",
+      "kind": "research",
+      "depends_on": []
+    },
+    {
+      "id": "A-SERIES-TREATMENT",
+      "path": "video/series_structure/treatment.md",
+      "kind": "video_treatment",
+      "depends_on": [
+        "A-PAPER"
+      ]
+    },
+    {
+      "id": "A-EP1-SCRIPT",
+      "path": "video/series_structure/ep1_script.md",
+      "kind": "narration_recording_draft",
+      "depends_on": [
+        "A-SERIES-TREATMENT",
+        "A-PAPER"
+      ]
+    },
+    {
+      "id": "A-EP2-SCRIPT",
+      "path": "video/series_structure/ep2_script.md",
+      "kind": "narration_recording_draft",
+      "depends_on": [
+        "A-SERIES-TREATMENT",
+        "A-PAPER"
+      ]
+    },
+    {
+      "id": "A-EP3-SCRIPT",
+      "path": "video/series_structure/ep3_script.md",
+      "kind": "narration_recording_draft",
+      "depends_on": [
+        "A-SERIES-TREATMENT",
+        "A-PAPER"
+      ]
+    },
+    {
+      "id": "A-PRAC-FINDINGS",
+      "path": "research/contributions/practice_baseline/findings.md",
+      "kind": "research",
+      "depends_on": []
     }
   ]
 }
