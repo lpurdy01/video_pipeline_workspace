@@ -1,0 +1,662 @@
+{
+  "sources": [
+    {
+      "id": "EI-SRC-AVOIDDS",
+      "title": "AVOIDDS: Aircraft Vision-based Intruder Detection Dataset and Simulator",
+      "url": "https://arxiv.org/pdf/2306.11203",
+      "status": "author preprint, v2, 2023-12-27",
+      "scope": "Synthetic aircraft images, YOLOv8s test slices and closed-loop simulation; not flight certification",
+      "inspected_on": "2026-09-28",
+      "jurisdiction": "US aviation research context; study-specific evaluation",
+      "uncertainty": "Published result or vendor statement; transfer to another task or deployment unmeasured"
+    },
+    {
+      "id": "EI-SRC-AIRTRACK",
+      "title": "AirTrack: Onboard Deep Learning Framework for Long-Range Aircraft Detection and Tracking",
+      "url": "https://arxiv.org/pdf/2209.12849",
+      "status": "author preprint, 2022",
+      "scope": "AOT evaluation and reported flight tests; authors' ASTM interpretation is not an authority approval",
+      "inspected_on": "2026-09-28",
+      "jurisdiction": "US aviation research context; study-specific evaluation",
+      "uncertainty": "Published result or vendor statement; transfer to another task or deployment unmeasured"
+    },
+    {
+      "id": "EI-SRC-NASA-RANGE",
+      "title": "Monocular Ranging for Small Unmanned Aerial Systems in the Far-Field",
+      "url": "https://ntrs.nasa.gov/citations/20205011011",
+      "status": "NASA-hosted conference paper, 2021",
+      "scope": "One 4K, 41-degree optical configuration and six flight-test sorties; geometry and conditions limit transfer",
+      "inspected_on": "2026-09-28",
+      "jurisdiction": "US aviation research context; study-specific evaluation",
+      "uncertainty": "Published result or vendor statement; transfer to another task or deployment unmeasured"
+    },
+    {
+      "id": "EI-SRC-MOBILEFACE",
+      "title": "MobileFaceNets: Efficient CNNs for Accurate Real-Time Face Verification on Mobile Devices",
+      "url": "https://arxiv.org/pdf/1804.07573",
+      "status": "author paper, 2018",
+      "scope": "LFW and MegaFace verification protocols; not operational false-match performance",
+      "inspected_on": "2026-09-28",
+      "jurisdiction": "benchmark or vendor specification; no regulatory jurisdiction implied",
+      "uncertainty": "Published result or vendor statement; transfer to another task or deployment unmeasured"
+    },
+    {
+      "id": "EI-SRC-TESLA-2019",
+      "title": "Tesla Autonomy Day 2019 technical presentation",
+      "url": "https://www.youtube.com/watch?v=Ucp0TTmvqOE",
+      "status": "Tesla vendor presentation, 2019-04-22",
+      "scope": "HW3 architecture and vendor throughput claims, not measured FSD fitness",
+      "inspected_on": "2026-09-28",
+      "jurisdiction": "US issuer disclosure; global product claims",
+      "uncertainty": "Published result or vendor statement; transfer to another task or deployment unmeasured"
+    },
+    {
+      "id": "EI-SRC-TESLA-Q4",
+      "title": "Tesla Q4 and FY 2025 Update",
+      "url": "https://ir.tesla.com/_flysystem/s3/sec/000162828026003837/tsla-20260128-gen.pdf",
+      "status": "Tesla investor update, 2026-01-28",
+      "scope": "AI5 forward-looking targets relative to AI4; no absolute AI4 TOPS disclosed",
+      "inspected_on": "2026-09-28",
+      "jurisdiction": "US issuer disclosure; global product claims",
+      "uncertainty": "Published result or vendor statement; transfer to another task or deployment unmeasured"
+    },
+    {
+      "id": "EI-SRC-TESLA-SUPPORT",
+      "title": "Tesla AI computer support",
+      "url": "https://www.tesla.com/support/ai-computer",
+      "status": "Tesla support page, inspected 2026-09-27",
+      "scope": "FSD (Supervised) requires active driver supervision",
+      "inspected_on": "2026-09-28",
+      "jurisdiction": "US issuer disclosure; global product claims",
+      "uncertainty": "Published result or vendor statement; transfer to another task or deployment unmeasured"
+    },
+    {
+      "id": "EI-SRC-ORIN",
+      "title": "Jetson AGX Orin Series Technical Brief v1.2",
+      "url": "https://www.nvidia.com/content/dam/en-zz/Solutions/gtcf21/jetson-orin/nvidia-jetson-agx-orin-technical-brief.pdf",
+      "status": "NVIDIA vendor technical brief, 2022",
+      "scope": "Module peak specifications, including sparse INT8; not application throughput",
+      "inspected_on": "2026-09-28",
+      "jurisdiction": "benchmark or vendor specification; no regulatory jurisdiction implied",
+      "uncertainty": "Published result or vendor statement; transfer to another task or deployment unmeasured"
+    },
+    {
+      "id": "EI-SRC-DRIVE",
+      "title": "NVIDIA DRIVE AGX platform specifications",
+      "url": "https://developer.nvidia.com/drive/agx",
+      "status": "NVIDIA vendor specifications, inspected 2026-09-27",
+      "scope": "DRIVE Orin peak specifications, not measured pipeline latency",
+      "inspected_on": "2026-09-28",
+      "jurisdiction": "benchmark or vendor specification; no regulatory jurisdiction implied",
+      "uncertainty": "Published result or vendor statement; transfer to another task or deployment unmeasured"
+    },
+    {
+      "id": "EI-SRC-DEEPFACE",
+      "title": "DeepFace: Closing the Gap to Human-Level Performance in Face Verification",
+      "url": "https://openaccess.thecvf.com/content_cvpr_2014/html/Taigman_DeepFace_Closing_the_2014_CVPR_paper.html",
+      "status": "CVPR original paper, 2014",
+      "scope": "LFW benchmark, not operational false-match performance",
+      "inspected_on": "2026-09-28",
+      "jurisdiction": "benchmark or vendor specification; no regulatory jurisdiction implied",
+      "uncertainty": "Published result or vendor statement; transfer to another task or deployment unmeasured"
+    },
+    {
+      "id": "EI-SRC-FACENET",
+      "title": "FaceNet: A Unified Embedding for Face Recognition and Clustering",
+      "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Schroff_FaceNet_A_Unified_2015_CVPR_paper.pdf",
+      "status": "CVPR original paper, 2015",
+      "scope": "LFW benchmark, not an edge hardware measurement",
+      "inspected_on": "2026-09-28",
+      "jurisdiction": "benchmark or vendor specification; no regulatory jurisdiction implied",
+      "uncertainty": "Published result or vendor statement; transfer to another task or deployment unmeasured"
+    },
+    {
+      "id": "EI-SRC-ARCFACE",
+      "title": "ArcFace: Additive Angular Margin Loss for Deep Face Recognition",
+      "url": "https://openaccess.thecvf.com/content_CVPR_2019/papers/Deng_ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition_CVPR_2019_paper.pdf",
+      "status": "CVPR original paper, 2019",
+      "scope": "LFW result for a specified backbone/training setting",
+      "inspected_on": "2026-09-28",
+      "jurisdiction": "benchmark or vendor specification; no regulatory jurisdiction implied",
+      "uncertainty": "Published result or vendor statement; transfer to another task or deployment unmeasured"
+    },
+    {
+      "id": "EI-SRC-TESLA-Q1",
+      "title": "Tesla Q1 2026 Update",
+      "url": "https://ir.tesla.com/_flysystem/s3/sec/000162828026026551/tsla-20260422-gen.pdf",
+      "status": "Tesla investor update, 2026-04-22",
+      "scope": "p. 8: AI5 final chip design claim and up-to-20% runtime latency claim; vendor statements, not measured benchmark",
+      "inspected_on": "2026-09-28",
+      "jurisdiction": "US issuer disclosure; global product claims",
+      "uncertainty": "Published result or vendor statement; transfer to another task or deployment unmeasured"
+    },
+    {
+      "id": "EI-SRC-TESLA-Q2",
+      "title": "Tesla Q2 2026 Update",
+      "url": "https://ir.tesla.com/_flysystem/s3/sec/000162828026049213/tsla-20260722-gen.pdf",
+      "status": "Tesla investor update, 2026-07-22",
+      "scope": "p. 8: FSD v14 lite AI3 distillation statement; qualitative software/hardware compatibility, not throughput benchmark",
+      "inspected_on": "2026-09-28",
+      "jurisdiction": "US issuer disclosure; global product claims",
+      "uncertainty": "Published result or vendor statement; transfer to another task or deployment unmeasured"
+    },
+    {
+      "id": "EI-SRC-UAV-DEPTH",
+      "title": "Ensuring UAV Safety: A Vision-only and Real-time Framework for Collision Avoidance Through Object Detection, Tracking, and Distance Estimation",
+      "url": "https://arxiv.org/pdf/2405.06749",
+      "status": "author preprint, 2024",
+      "scope": "Abstract, §III and experimental setup inspected; pipeline architecture lead, not a matched parameter/latency data point",
+      "inspected_on": "2026-09-28",
+      "jurisdiction": "US aviation research context; study-specific evaluation",
+      "uncertainty": "Published result or vendor statement; transfer to another task or deployment unmeasured"
+    }
+  ],
+  "avoidds": [
+    {
+      "group": "Overall",
+      "slice": "All",
+      "baseline_map": 0.866,
+      "alternative_map": 0.764,
+      "baseline_nmac": 0.143,
+      "alternative_nmac": 0.165,
+      "encounters": 8640,
+      "id": "EI-AVOIDDS-001",
+      "baseline_id": "EI-AVOIDDS-001-B",
+      "alternative_id": "EI-AVOIDDS-001-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Overall: All",
+      "nmac_source_locator": "Appendix C Table 5, Overall: All"
+    },
+    {
+      "group": "Clouds",
+      "slice": "Clear",
+      "baseline_map": 0.856,
+      "alternative_map": 0.687,
+      "baseline_nmac": 0.158,
+      "alternative_nmac": 0.188,
+      "id": "EI-AVOIDDS-002",
+      "baseline_id": "EI-AVOIDDS-002-B",
+      "alternative_id": "EI-AVOIDDS-002-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Clouds: Clear",
+      "nmac_source_locator": "Appendix C Table 5, Clouds: Clear"
+    },
+    {
+      "group": "Clouds",
+      "slice": "High cirrus",
+      "baseline_map": 0.9,
+      "alternative_map": 0.827,
+      "baseline_nmac": 0.134,
+      "alternative_nmac": 0.153,
+      "id": "EI-AVOIDDS-003",
+      "baseline_id": "EI-AVOIDDS-003-B",
+      "alternative_id": "EI-AVOIDDS-003-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Clouds: High cirrus",
+      "nmac_source_locator": "Appendix C Table 5, Clouds: High cirrus"
+    },
+    {
+      "group": "Clouds",
+      "slice": "Scattered",
+      "baseline_map": 0.887,
+      "alternative_map": 0.841,
+      "baseline_nmac": 0.142,
+      "alternative_nmac": 0.157,
+      "id": "EI-AVOIDDS-004",
+      "baseline_id": "EI-AVOIDDS-004-B",
+      "alternative_id": "EI-AVOIDDS-004-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Clouds: Scattered",
+      "nmac_source_locator": "Appendix C Table 5, Clouds: Scattered"
+    },
+    {
+      "group": "Clouds",
+      "slice": "Broken",
+      "baseline_map": 0.888,
+      "alternative_map": 0.826,
+      "baseline_nmac": 0.146,
+      "alternative_nmac": 0.156,
+      "id": "EI-AVOIDDS-005",
+      "baseline_id": "EI-AVOIDDS-005-B",
+      "alternative_id": "EI-AVOIDDS-005-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Clouds: Broken",
+      "nmac_source_locator": "Appendix C Table 5, Clouds: Broken"
+    },
+    {
+      "group": "Clouds",
+      "slice": "Overcast",
+      "baseline_map": 0.882,
+      "alternative_map": 0.747,
+      "baseline_nmac": 0.138,
+      "alternative_nmac": 0.163,
+      "id": "EI-AVOIDDS-006",
+      "baseline_id": "EI-AVOIDDS-006-B",
+      "alternative_id": "EI-AVOIDDS-006-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Clouds: Overcast",
+      "nmac_source_locator": "Appendix C Table 5, Clouds: Overcast"
+    },
+    {
+      "group": "Clouds",
+      "slice": "Stratus",
+      "baseline_map": 0.783,
+      "alternative_map": 0.684,
+      "baseline_nmac": 0.142,
+      "alternative_nmac": 0.174,
+      "id": "EI-AVOIDDS-007",
+      "baseline_id": "EI-AVOIDDS-007-B",
+      "alternative_id": "EI-AVOIDDS-007-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Clouds: Stratus",
+      "nmac_source_locator": "Appendix C Table 5, Clouds: Stratus"
+    },
+    {
+      "group": "Region",
+      "slice": "Palo Alto",
+      "baseline_map": 0.9,
+      "alternative_map": 0.865,
+      "baseline_nmac": 0.144,
+      "alternative_nmac": 0.16,
+      "id": "EI-AVOIDDS-008",
+      "baseline_id": "EI-AVOIDDS-008-B",
+      "alternative_id": "EI-AVOIDDS-008-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Region: Palo Alto",
+      "nmac_source_locator": "Appendix C Table 5, Region: Palo Alto"
+    },
+    {
+      "group": "Region",
+      "slice": "Boston",
+      "baseline_map": 0.885,
+      "alternative_map": 0.722,
+      "baseline_nmac": 0.147,
+      "alternative_nmac": 0.163,
+      "id": "EI-AVOIDDS-009",
+      "baseline_id": "EI-AVOIDDS-009-B",
+      "alternative_id": "EI-AVOIDDS-009-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Region: Boston",
+      "nmac_source_locator": "Appendix C Table 5, Region: Boston"
+    },
+    {
+      "group": "Region",
+      "slice": "Oshkosh",
+      "baseline_map": 0.813,
+      "alternative_map": 0.772,
+      "baseline_nmac": 0.14,
+      "alternative_nmac": 0.157,
+      "id": "EI-AVOIDDS-010",
+      "baseline_id": "EI-AVOIDDS-010-B",
+      "alternative_id": "EI-AVOIDDS-010-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Region: Oshkosh",
+      "nmac_source_locator": "Appendix C Table 5, Region: Oshkosh"
+    },
+    {
+      "group": "Region",
+      "slice": "Reno",
+      "baseline_map": 0.865,
+      "alternative_map": 0.719,
+      "baseline_nmac": 0.141,
+      "alternative_nmac": 0.18,
+      "id": "EI-AVOIDDS-011",
+      "baseline_id": "EI-AVOIDDS-011-B",
+      "alternative_id": "EI-AVOIDDS-011-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Region: Reno",
+      "nmac_source_locator": "Appendix C Table 5, Region: Reno"
+    },
+    {
+      "group": "Aircraft",
+      "slice": "Cessna Skyhawk",
+      "baseline_map": 0.75,
+      "alternative_map": 0.643,
+      "baseline_nmac": 0.157,
+      "alternative_nmac": 0.179,
+      "id": "EI-AVOIDDS-012",
+      "baseline_id": "EI-AVOIDDS-012-B",
+      "alternative_id": "EI-AVOIDDS-012-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Aircraft: Cessna Skyhawk",
+      "nmac_source_locator": "Appendix C Table 5, Aircraft: Cessna Skyhawk"
+    },
+    {
+      "group": "Aircraft",
+      "slice": "Boeing 737-800",
+      "baseline_map": 0.983,
+      "alternative_map": 0.891,
+      "baseline_nmac": 0.141,
+      "alternative_nmac": 0.152,
+      "id": "EI-AVOIDDS-013",
+      "baseline_id": "EI-AVOIDDS-013-B",
+      "alternative_id": "EI-AVOIDDS-013-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Aircraft: Boeing 737-800",
+      "nmac_source_locator": "Appendix C Table 5, Aircraft: Boeing 737-800"
+    },
+    {
+      "group": "Aircraft",
+      "slice": "King Air C90",
+      "baseline_map": 0.852,
+      "alternative_map": 0.761,
+      "baseline_nmac": 0.132,
+      "alternative_nmac": 0.164,
+      "id": "EI-AVOIDDS-014",
+      "baseline_id": "EI-AVOIDDS-014-B",
+      "alternative_id": "EI-AVOIDDS-014-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Aircraft: King Air C90",
+      "nmac_source_locator": "Appendix C Table 5, Aircraft: King Air C90"
+    },
+    {
+      "group": "Range",
+      "slice": "0–150 m",
+      "baseline_map": 0.979,
+      "alternative_map": 0.909,
+      "id": "EI-AVOIDDS-015",
+      "baseline_id": "EI-AVOIDDS-015-B",
+      "alternative_id": "EI-AVOIDDS-015-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Range: 0–150 m"
+    },
+    {
+      "group": "Range",
+      "slice": "150–500 m",
+      "baseline_map": 0.942,
+      "alternative_map": 0.843,
+      "id": "EI-AVOIDDS-016",
+      "baseline_id": "EI-AVOIDDS-016-B",
+      "alternative_id": "EI-AVOIDDS-016-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Range: 150–500 m"
+    },
+    {
+      "group": "Range",
+      "slice": ">500 m",
+      "baseline_map": 0.714,
+      "alternative_map": 0.621,
+      "id": "EI-AVOIDDS-017",
+      "baseline_id": "EI-AVOIDDS-017-B",
+      "alternative_id": "EI-AVOIDDS-017-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Range: >500 m"
+    },
+    {
+      "group": "Relative altitude",
+      "slice": "Below",
+      "baseline_map": 0.847,
+      "alternative_map": 0.764,
+      "id": "EI-AVOIDDS-018",
+      "baseline_id": "EI-AVOIDDS-018-B",
+      "alternative_id": "EI-AVOIDDS-018-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Relative altitude: Below"
+    },
+    {
+      "group": "Relative altitude",
+      "slice": "Above",
+      "baseline_map": 0.884,
+      "alternative_map": 0.763,
+      "id": "EI-AVOIDDS-019",
+      "baseline_id": "EI-AVOIDDS-019-B",
+      "alternative_id": "EI-AVOIDDS-019-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Relative altitude: Above"
+    },
+    {
+      "group": "Time of day",
+      "slice": "Morning",
+      "baseline_map": 0.872,
+      "alternative_map": 0.785,
+      "baseline_nmac": 0.14,
+      "alternative_nmac": 0.178,
+      "id": "EI-AVOIDDS-020",
+      "baseline_id": "EI-AVOIDDS-020-B",
+      "alternative_id": "EI-AVOIDDS-020-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Time of day: Morning",
+      "nmac_source_locator": "Appendix C Table 5, Time of day: Morning"
+    },
+    {
+      "group": "Time of day",
+      "slice": "Midday",
+      "baseline_map": 0.866,
+      "alternative_map": 0.799,
+      "baseline_nmac": 0.14,
+      "alternative_nmac": 0.148,
+      "id": "EI-AVOIDDS-021",
+      "baseline_id": "EI-AVOIDDS-021-B",
+      "alternative_id": "EI-AVOIDDS-021-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Time of day: Midday",
+      "nmac_source_locator": "Appendix C Table 5, Time of day: Midday"
+    },
+    {
+      "group": "Time of day",
+      "slice": "Afternoon",
+      "baseline_map": 0.878,
+      "alternative_map": 0.831,
+      "baseline_nmac": 0.144,
+      "alternative_nmac": 0.153,
+      "id": "EI-AVOIDDS-022",
+      "baseline_id": "EI-AVOIDDS-022-B",
+      "alternative_id": "EI-AVOIDDS-022-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Time of day: Afternoon",
+      "nmac_source_locator": "Appendix C Table 5, Time of day: Afternoon"
+    },
+    {
+      "group": "Time of day",
+      "slice": "Late afternoon",
+      "baseline_map": 0.846,
+      "alternative_map": 0.657,
+      "baseline_nmac": 0.149,
+      "alternative_nmac": 0.181,
+      "id": "EI-AVOIDDS-023",
+      "baseline_id": "EI-AVOIDDS-023-B",
+      "alternative_id": "EI-AVOIDDS-023-A",
+      "source_id": "EI-SRC-AVOIDDS",
+      "source_locator": "Appendix C Table 4, Time of day: Late afternoon",
+      "nmac_source_locator": "Appendix C Table 5, Time of day: Late afternoon"
+    }
+  ],
+  "nasa_sorties": [
+    {
+      "id": "EI-NASA-01",
+      "target": "small UAS",
+      "sortie": "1",
+      "range_km": 0.861,
+      "fit_error_km": 0.148,
+      "source_id": "EI-SRC-NASA-RANGE",
+      "source_locator": "Table 3, small UAS, sortie 1"
+    },
+    {
+      "id": "EI-NASA-02",
+      "target": "small UAS",
+      "sortie": "2",
+      "range_km": 0.889,
+      "fit_error_km": 0.144,
+      "source_id": "EI-SRC-NASA-RANGE",
+      "source_locator": "Table 3, small UAS, sortie 2"
+    },
+    {
+      "id": "EI-NASA-03",
+      "target": "small UAS",
+      "sortie": "3",
+      "range_km": 0.891,
+      "fit_error_km": 0.076,
+      "source_id": "EI-SRC-NASA-RANGE",
+      "source_locator": "Table 3, small UAS, sortie 3"
+    },
+    {
+      "id": "EI-NASA-04",
+      "target": "general aviation SR22",
+      "sortie": "4",
+      "range_km": 3.23,
+      "fit_error_km": 0.068,
+      "source_id": "EI-SRC-NASA-RANGE",
+      "source_locator": "Table 3, general aviation SR22, sortie 4"
+    },
+    {
+      "id": "EI-NASA-05",
+      "target": "general aviation SR22",
+      "sortie": "5",
+      "range_km": 2.17,
+      "fit_error_km": 0.05,
+      "source_id": "EI-SRC-NASA-RANGE",
+      "source_locator": "Table 3, general aviation SR22, sortie 5"
+    },
+    {
+      "id": "EI-NASA-06",
+      "target": "general aviation SR22",
+      "sortie": "6",
+      "range_km": 2.92,
+      "fit_error_km": 0.105,
+      "source_id": "EI-SRC-NASA-RANGE",
+      "source_locator": "Table 3, general aviation SR22, sortie 6"
+    }
+  ],
+  "hardware_cases": [
+    {
+      "id": "EI-HW-TESLA3",
+      "name": "Tesla HW3 FSD computer",
+      "metric": "vendor_peak_ops_per_second",
+      "per_chip_tops": 72,
+      "two_chip_aggregate_tops": 144,
+      "source_id": "EI-SRC-TESLA-2019",
+      "source_locator": "Tesla Autonomy Day video 01:18:38 (independent chips), 01:22:49 (72 TOPS/chip), 01:32:58 (144 TOPS board); auto-caption checked",
+      "status": "vendor disclosure"
+    },
+    {
+      "id": "EI-HW-TESLA4",
+      "name": "Tesla AI4 / HW4",
+      "metric": "absolute_peak_compute",
+      "value": null,
+      "source_id": "EI-SRC-TESLA-Q4",
+      "source_locator": "page 10, AI5 relative to AI4; no AI4 absolute value",
+      "status": "production generation; absolute quantitative baseline missing"
+    },
+    {
+      "id": "EI-HW-TESLA5",
+      "name": "Tesla AI5 / proposed HW5",
+      "metric": "relative_to_AI4_target",
+      "raw_compute_multiplier": 10,
+      "memory_capacity_multiplier": 9,
+      "hardened_operation_multiplier": 5,
+      "total_performance_claim_multiplier": 50,
+      "source_id": "EI-SRC-TESLA-Q4",
+      "source_locator": "page 10, AI Inference Compute",
+      "status": "forward-looking vendor target, January 2026"
+    },
+    {
+      "id": "EI-HW-XAVIER",
+      "name": "NVIDIA Jetson AGX Xavier",
+      "metric": "vendor_peak_INT8_TOPS",
+      "value": 32,
+      "source_id": "EI-SRC-ORIN",
+      "source_locator": "technical brief v1.2, comparative specifications table",
+      "status": "vendor peak"
+    },
+    {
+      "id": "EI-HW-ORIN",
+      "name": "NVIDIA Jetson AGX Orin 64GB",
+      "metric": "vendor_peak_sparse_INT8_TOPS",
+      "value": 275,
+      "memory_bandwidth_GBs": 204,
+      "source_id": "EI-SRC-ORIN",
+      "source_locator": "technical brief v1.2, specifications table",
+      "status": "vendor sparse peak"
+    },
+    {
+      "id": "EI-HW-DRIVE-ORIN",
+      "name": "NVIDIA DRIVE AGX Orin, single SoC",
+      "metric": "vendor_peak_INT8_TOPS",
+      "value": 254,
+      "memory_bandwidth_GBs": 200,
+      "source_id": "EI-SRC-DRIVE",
+      "source_locator": "Single AGX Orin SoC specifications table",
+      "status": "vendor peak"
+    },
+    {
+      "id": "EI-SW-TESLA-AI3-LITE",
+      "name": "Tesla FSD v14 lite on AI3",
+      "metric": "qualitative_distillation",
+      "value": "AI4 v14 driving behavior distilled into AI3 camera/compute configuration",
+      "source_id": "EI-SRC-TESLA-Q2",
+      "source_locator": "p. 8, AI Software",
+      "status": "vendor software claim, July 2026"
+    }
+  ],
+  "face_cases": [
+    {
+      "id": "EI-FACE-DEEPFACE",
+      "name": "DeepFace",
+      "lfw_accuracy_percent": 97.35,
+      "source_id": "EI-SRC-DEEPFACE",
+      "source_locator": "abstract",
+      "status": "paper-reported"
+    },
+    {
+      "id": "EI-FACE-FACENET",
+      "name": "FaceNet",
+      "lfw_accuracy_percent": 99.63,
+      "source_id": "EI-SRC-FACENET",
+      "source_locator": "abstract",
+      "status": "paper-reported"
+    },
+    {
+      "id": "EI-FACE-MOBILEFACE",
+      "name": "MobileFaceNet",
+      "lfw_accuracy_percent": 99.55,
+      "params_m": 0.99,
+      "madds_m": 221,
+      "megaface_tar_at_far_1e6_percent": 92.59,
+      "source_id": "EI-SRC-MOBILEFACE",
+      "source_locator": "abstract, §4, Tables 3–4",
+      "status": "paper-reported"
+    },
+    {
+      "id": "EI-FACE-ARCFACE",
+      "name": "ArcFace",
+      "lfw_accuracy_percent": 99.83,
+      "source_id": "EI-SRC-ARCFACE",
+      "source_locator": "LFW evaluation figure/table",
+      "status": "paper-reported"
+    }
+  ],
+  "daa_pipeline_cases": [
+    {
+      "id": "EI-DAA-NASA-RANGE",
+      "name": "NASA monocular ranging",
+      "source_id": "EI-SRC-NASA-RANGE",
+      "architecture": "4K/41° camera, image-based target detection and range characterization",
+      "limiting_axis": "optics/target geometry",
+      "measured": "six sortie detection distances"
+    },
+    {
+      "id": "EI-DAA-AIRTRACK",
+      "name": "AirTrack",
+      "source_id": "EI-SRC-AIRTRACK",
+      "architecture": "frame alignment + cascaded detection + classifier + Kalman track",
+      "limiting_axis": "small-target visibility and optimized edge throughput",
+      "measured": "track probability by range, Xavier FPS"
+    },
+    {
+      "id": "EI-DAA-AVOIDDS",
+      "name": "AVOIDDS baseline",
+      "source_id": "EI-SRC-AVOIDDS",
+      "architecture": "YOLOv8s detector + track/state estimate + closed-loop advisory simulator",
+      "limiting_axis": "training distribution and downstream risk",
+      "measured": "mAP slices and simulated NMAC frequency"
+    },
+    {
+      "id": "EI-DAA-UAV-DEPTH",
+      "name": "Karampinis et al. vision-only pipeline",
+      "source_id": "EI-SRC-UAV-DEPTH",
+      "architecture": "detector + appearance/Kalman tracking + encoder-decoder depth estimate",
+      "limiting_axis": "separate depth representation and pipeline composition",
+      "measured": "No matched parameter/throughput datum adopted for atlas"
+    }
+  ]
+}

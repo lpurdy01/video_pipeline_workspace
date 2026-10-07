@@ -1,0 +1,240 @@
+---
+const title = 'Engineering intelligence · hypothesis explorer';
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#09121b" />
+  <title>{title}</title>
+  <style is:global>
+    :root{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#e8f1f4;background:#09121b;font-synthesis:none;--panel:#101d29;--border:#294251;--muted:#a5b9c3;--cyan:#5de0d4;--amber:#ffc878;--rose:#ff8295;--blue:#9ab7ff}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse 70% 40% at 65% -10%,#194251 0%,transparent 75%),#09121b}a{color:#76dfd7}a:hover{color:#b5fff4}button,input,select{font:inherit}button{cursor:pointer}.mono,output,.eyebrow,.metric-value,.plot-label{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+    .shell{max-width:1530px;margin:auto;padding:28px clamp(18px,3vw,48px) 80px}.topline{display:flex;align-items:center;justify-content:space-between;gap:20px;color:var(--muted);font:12px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.13em;text-transform:uppercase}.topline .tag{border:1px solid #40606a;border-radius:100px;padding:7px 12px;color:var(--cyan)}h1{font-size:clamp(40px,5.6vw,86px);letter-spacing:-.065em;line-height:.98;margin:47px 0 20px;font-weight:700;max-width:1080px}h1 em{color:var(--cyan);font-style:normal}.lede{color:#b5cbd3;max-width:800px;font-size:clamp(16px,1.5vw,20px);line-height:1.55;margin:0 0 38px}.warning{background:linear-gradient(100deg,#25352f,#172a32);border:1px solid #547b66;padding:14px 19px;border-radius:10px;color:#dce9da;font-size:14px;line-height:1.45;margin-bottom:25px}.warning strong{color:#bfffcb}.workspace{display:grid;grid-template-columns:minmax(300px,355px) minmax(0,1fr);gap:20px;align-items:start}.controls{background:#10202b;border:1px solid var(--border);border-radius:14px;padding:22px;max-height:calc(100vh - 30px);overflow:auto;position:sticky;top:15px;scrollbar-color:#42606b transparent}.controls h2,.results h2{font-size:16px;letter-spacing:.02em;margin:0 0 13px}.controls section{border-top:1px solid #304852;margin-top:18px;padding-top:17px}.controls h3{font-size:12px;color:var(--cyan);text-transform:uppercase;letter-spacing:.14em;margin:0 0 13px}.field{display:grid;grid-template-columns:minmax(0,1fr) 104px;gap:10px;align-items:center;margin:10px 0}.field label{font-size:13px;line-height:1.2;color:#d4e2e6}.field small{display:block;color:#91a9b3;font-size:11px;margin-top:2px}.field input,.controls select{width:100%;border:1px solid #3b5864;background:#0b1822;color:#e6f3f4;border-radius:6px;padding:7px 8px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px}.field input:focus,.controls select:focus{outline:2px solid var(--cyan);outline-offset:1px}.controls select{margin:6px 0 0;padding:9px}.hint{color:#91a9b3;font-size:12px;line-height:1.45;margin:10px 0 0}.results{min-width:0}.result-top{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}.metric{border:1px solid var(--border);border-radius:12px;background:var(--panel);padding:16px 17px;min-height:116px}.metric-label{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);line-height:1.3}.metric-value{display:block;font-size:clamp(20px,2vw,28px);margin:14px 0 3px;line-height:1;color:#e9f9fa}.metric-sub{font-size:11px;color:#9eb9c0;line-height:1.35}.status{margin:12px 0 18px;padding:13px 16px;border-radius:10px;border:1px solid #536c65;background:#20312f;font-size:14px;line-height:1.45}.status.bad{border-color:#8c5a66;background:#30232a}.status.neutral{border-color:#5c6272;background:#252933}.status strong{color:#fff}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.panel{min-width:0;border:1px solid var(--border);border-radius:12px;background:var(--panel);padding:17px;margin-bottom:14px}.panel.wide{grid-column:1/-1}.panel h2{display:flex;align-items:baseline;gap:10px;margin-bottom:4px}.panel h2 span{color:var(--cyan);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px}.panel p{color:#9eb3bd;font-size:12px;line-height:1.5;margin:0 0 11px}.plot{width:100%;min-height:240px;overflow:hidden}.plot svg{display:block;width:100%;height:auto}.legend{display:flex;gap:15px;flex-wrap:wrap;color:#abc0c6;font-size:11px;margin:4px 0 0}.key{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:6px}.details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 18px;margin-top:5px}.detail{border-bottom:1px solid #2b424d;padding:8px 0;display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#b6c9d0}.detail strong{color:#e6f1f2;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-weight:400;text-align:right}.theory{border-top:1px solid #35515d;margin-top:38px;padding-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:25px}.theory h2{font-size:24px;letter-spacing:-.03em;margin:0 0 8px}.theory p,.theory li{color:#b7c9d0;line-height:1.6;font-size:14px}.theory ul{padding-left:20px}.theory code{color:#e6d89d;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}.small{font-size:12px;color:#91a9b3;line-height:1.5}.source-list{display:grid;gap:7px}.source-list a{font-size:13px}.patch-table{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:8px}.patch-item{border:1px solid #304955;border-radius:6px;padding:6px;font:10px ui-monospace,SFMono-Regular,Consolas,monospace;color:#9eb9c0}.patch-item strong{display:block;color:#e7f5f6;font-size:11px;margin-bottom:2px}.patch-item.active{border-color:var(--cyan);background:#18343b}@media(max-width:1200px){.patch-table{grid-template-columns:repeat(2,1fr)}}.footer{margin-top:25px;color:#839ca7;font:11px ui-monospace,SFMono-Regular,Consolas,monospace}.axis{fill:#88a5ae;font:11px ui-monospace,SFMono-Regular,Consolas,monospace}.gridline{stroke:#2b4350;stroke-width:1}.targetline{stroke:#728593;stroke-width:1;stroke-dasharray:4 4}.marker{stroke:#fff;stroke-width:1.5}.no-fit{color:var(--rose)}
+    @media(max-width:1100px){.result-top{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.panel.wide{grid-column:auto}.workspace{grid-template-columns:310px minmax(0,1fr)}}
+    @media(max-width:760px){.workspace{display:block}.controls{position:static;max-height:none;margin-bottom:16px}.theory{grid-template-columns:1fr}.shell{padding-top:20px}h1{margin-top:32px}.topline{font-size:10px}.result-top{gap:8px}}
+    .site-nav{display:flex;gap:8px;flex-wrap:wrap;margin:19px 0 0}.site-nav a{border:1px solid #355260;background:#0f202b;border-radius:100px;padding:9px 15px;color:#cce1e6;text-decoration:none;font-size:13px}.site-nav a[aria-current=page]{border-color:var(--cyan);background:#17404a;color:#fff}.next-links{display:flex;flex-wrap:wrap;gap:10px;margin:-15px 0 30px}.next-links a{border:1px solid #416873;border-radius:8px;padding:10px 14px;background:#14303a;text-decoration:none;font-size:13px}
+  </style>
+</head>
+<body>
+<main class="shell">
+  <div class="topline"><span>Research instrument / 01</span><span class="tag">Hypothesis · uncalibrated</span></div>
+  <nav class="site-nav" aria-label="Research sections"><a href="/" aria-current="page">Hypothesis explorer</a><a href="/atlas">Benchmark atlas</a><a href="/cases">Road · air · face</a><a href="/method">Variables &amp; method</a></nav>
+  <h1>How much structure must a model <em>learn?</em></h1>
+  <p class="lede">Explore a proposed relationship between sensor tokens, reusable task structure, training exposure, model capacity and real-time hardware. Every curve is conditional on the assumptions below.</p>
+  <div class="next-links"><a href="/atlas">Explore 139 published model configurations ↗</a><a href="/cases">Compare DAA, Tesla and face cases ↗</a><a href="/method">Learn how to estimate each input ↗</a></div>
+  <div class="warning"><strong>Interpretation:</strong> The starting anchor and response curves are synthetic thought experiments. “Coverage” means the fraction of a stated task slice solved under this hypothetical model; it is not a measured safety probability or a universal model-size law.</div>
+  <div class="workspace">
+    <form class="controls" id="controls">
+      <h2>Experiment setup</h2>
+      <label for="preset" class="small">Starting scenario</label>
+      <select id="preset"><option value="road">Visual avoidance</option><option value="compact">Compact structured task</option><option value="dense">Dense visual scene</option></select>
+      <p class="hint">Presets change assumptions only. Their anchors are illustrative.</p>
+      <section><h3>01 / Observation &amp; tokens</h3>
+        <div class="field"><label for="width">Image width <small>pixels per frame</small></label><input id="width" type="number" min="16" max="4096" step="1"></div>
+        <div class="field"><label for="height">Image height <small>pixels per frame</small></label><input id="height" type="number" min="16" max="4096" step="1"></div>
+        <div class="field"><label for="frames">Frame history <small>frames per decision</small></label><input id="frames" type="number" min="1" max="64" step="1"></div>
+        <div class="field"><label for="patch">Patch side <small>pixels per token</small></label><input id="patch" type="number" min="2" max="128" step="1"></div>
+        <div class="field"><label for="feature">Critical feature span <small>heuristic, pixels</small></label><input id="feature" type="number" min="1" max="128" step="1"></div>
+        <div class="field"><label for="context">Context capacity <small>input tokens</small></label><input id="context" type="number" min="16" max="262144" step="1"></div>
+        <p class="hint">The detail ceiling assumes lossy patch pooling. A learned embedding may retain finer information; this ceiling must be measured for a real tokenizer.</p>
+      </section>
+      <section><h3>02 / Task assembly proxy</h3>
+        <div class="field"><label for="factors">Task factors Y <small>independent variables proxy</small></label><input id="factors" type="number" min="1" max="10000" step="1"></div>
+        <div class="field"><label for="depth">Composition depth <small>reusable rule levels</small></label><input id="depth" type="number" min="1" max="30" step="1"></div>
+        <div class="field"><label for="reuse">Motif reuse <small>copies per useful motif</small></label><input id="reuse" type="number" min="1" max="10000" step="1"></div>
+        <div class="field"><label for="novelty">Tail novelty <small>percent</small></label><input id="novelty" type="number" min="0" max="95" step="1"></div>
+        <div class="field"><label for="novelExamples">Novel training cases <small>independent examples</small></label><input id="novelExamples" type="number" min="1" max="100000000" step="100"></div>
+        <div class="field"><label for="tailExamples">Tail training cases <small>independent examples</small></label><input id="tailExamples" type="number" min="1" max="10000000" step="10"></div>
+        <p class="hint">These are task-relative descriptors, not measured assembly indices. Reuse alone cannot identify the correct action.</p>
+      </section>
+      <section><h3>03 / Calibration &amp; target</h3>
+        <div class="field"><label for="anchorM">Anchor model <small>million parameters</small></label><input id="anchorM" type="number" min="0.001" max="1000000" step="1"></div>
+        <div class="field"><label for="anchorOrd">Anchor ordinary <small>coverage, percent</small></label><input id="anchorOrd" type="number" min="1" max="95" step="1"></div>
+        <div class="field"><label for="anchorTail">Anchor tail <small>coverage, percent</small></label><input id="anchorTail" type="number" min="1" max="90" step="1"></div>
+        <div class="field"><label for="targetOrd">Target ordinary <small>coverage, percent</small></label><input id="targetOrd" type="number" min="1" max="99.9" step="1"></div>
+        <div class="field"><label for="targetTail">Target tail <small>coverage, percent</small></label><input id="targetTail" type="number" min="1" max="99.9" step="1"></div>
+        <div class="field"><label for="uncertainty">Sensitivity band <small>factor around estimate</small></label><input id="uncertainty" type="number" min="1" max="100" step="1"></div>
+        <div class="field"><label for="taskBits">Toy task-class bits <small>log₂ of distinct target rules; 0 if unknown</small></label><input id="taskBits" type="number" min="0" max="1000000000000" step="1"></div>
+        <p class="hint">The anchor describes the fixed reference scenario (640×360, 2 frames, 16px patches, Y=32). Replace it with measured pilots from that setup before treating forecasts as estimates. The band is a sensitivity assumption, not a statistical interval.</p>
+      </section>
+      <section><h3>04 / Deployment envelope</h3>
+        <div class="field"><label for="selectedM">Inspect model <small>million parameters</small></label><input id="selectedM" type="number" min="0.001" max="1000000" step="1"></div>
+        <div class="field"><label for="output">Output steps Z <small>per decision</small></label><input id="output" type="number" min="1" max="4096" step="1"></div>
+        <div class="field"><label for="bits">Weight precision <small>bits per parameter</small></label><input id="bits" type="number" min="1" max="64" step="1"></div>
+        <div class="field"><label for="kvKB">KV state <small>kB per input token</small></label><input id="kvKB" type="number" min="0" max="1024" step="1"></div>
+        <div class="field"><label for="memoryGB">Memory capacity <small>decimal GB</small></label><input id="memoryGB" type="number" min="0.1" max="10000" step="0.1"></div>
+        <div class="field"><label for="tflops">Effective compute <small>TFLOP/s</small></label><input id="tflops" type="number" min="0.01" max="100000" step="1"></div>
+        <div class="field"><label for="bandwidthGBs">Effective bandwidth <small>GB/s</small></label><input id="bandwidthGBs" type="number" min="0.01" max="100000" step="1"></div>
+        <div class="field"><label for="deadlineMs">Deadline L <small>milliseconds</small></label><input id="deadlineMs" type="number" min="0.01" max="100000" step="1"></div>
+      </section>
+    </form>
+    <div class="results">
+      <div class="result-top">
+        <div class="metric"><span class="metric-label">Input tokens</span><output class="metric-value" id="tokenValue">—</output><span class="metric-sub" id="tokenSub">—</span></div>
+        <div class="metric"><span class="metric-label">Hypothetical model need</span><output class="metric-value" id="needValue">—</output><span class="metric-sub" id="needSub">—</span></div>
+        <div class="metric"><span class="metric-label">Hardware model cap</span><output class="metric-value" id="capValue">—</output><span class="metric-sub" id="capSub">—</span></div>
+        <div class="metric"><span class="metric-label">Selected model / roofline</span><output class="metric-value" id="timeValue">—</output><span class="metric-sub" id="timeSub">—</span></div>
+      </div>
+      <div id="status" class="status" role="status"></div>
+      <div class="grid">
+        <div class="panel wide"><h2><span>01 /</span> Conditional coverage frontier</h2><p>Ordinary and tail task slices at a fixed tokenizer and data setup. The dotted line marks the requested slice target; the vertical markers show the inspected model and resource cap.</p><div class="plot" id="coveragePlot"></div><div class="legend"><span><i class="key" style="background:var(--cyan)"></i>Ordinary</span><span><i class="key" style="background:var(--rose)"></i>Tail</span><span>│ selected model</span><span>┆ hardware cap</span></div></div>
+        <div class="panel"><h2><span>02 /</span> Token unit sweep</h2><p>Patch size changes token load. Tail-slice coverage also changes under the explicitly lossy-pooling assumption.</p><div class="plot" id="patchPlot"></div><div class="patch-table" id="patchStats"></div></div>
+        <div class="panel"><h2><span>03 /</span> Resource envelope</h2><p>Optimistic roofline time versus model size for a dense-transformer work and memory-traffic scenario.</p><div class="plot" id="resourcePlot"></div></div>
+        <div class="panel wide"><h2><span>04 /</span> Inspect the boundary</h2><div class="details" id="details"></div></div>
+        <div class="panel wide"><h2><span>05 /</span> A formal toy limit</h2><p>If a task is uniformly chosen from 2<sup>K</sup> distinguishable target rules, and all task-specific information must be stored in b-bit weights with no external memory, exact identification requires at least K/b parameters by counting. Enter K as “toy task-class bits” above. For real vision or language tasks K and the assumption set are unknown, so this is usually only a weak teaching bound.</p><div class="details"><div class="detail"><span>Chosen K</span><strong id="toyBits">unknown</strong></div><div class="detail"><span>Counting floor K/b</span><strong id="toyFloor">unknown</strong></div></div></div>
+        <div class="panel wide"><h2><span>06 /</span> Published anchor, different task</h2><p>Measured 5-shot MMLU accuracy from Hoffmann et al. (2022). Chinchilla used more training tokens and fewer parameters than Gopher, so these points must not be fitted as a parameter-only curve. They are separate from the visual-avoidance hypothesis above.</p>
+          <div class="plot"><svg viewBox="0 0 720 278" role="img" aria-label="Published MMLU comparison: Gopher 280 billion parameters trained on 300 billion tokens scored 60 percent, Chinchilla 70 billion parameters trained on 1.4 trillion tokens scored 67.6 percent">
+            <line class="gridline" x1="64" x2="690" y1="239" y2="239"/><line class="gridline" x1="64" x2="690" y1="169" y2="169"/><line class="gridline" x1="64" x2="690" y1="99" y2="99"/><line class="gridline" x1="64" x2="690" y1="29" y2="29"/>
+            <text class="axis" x="55" y="243" text-anchor="end">25%</text><text class="axis" x="55" y="173" text-anchor="end">50%</text><text class="axis" x="55" y="103" text-anchor="end">75%</text><text class="axis" x="55" y="33" text-anchor="end">100%</text>
+            <circle cx="165" cy="120" r="8" fill="#5de0d4" class="marker"/><circle cx="570" cy="141" r="8" fill="#ffc878" class="marker"/>
+            <text class="axis" x="165" y="105" text-anchor="middle">67.6%</text><text class="axis" x="570" y="126" text-anchor="middle">60.0%</text>
+            <text class="axis" x="165" y="261" text-anchor="middle">70B params</text><text class="axis" x="570" y="261" text-anchor="middle">280B params</text>
+            <text class="axis" x="165" y="221" text-anchor="middle">Chinchilla · 1.4T train tokens</text><text class="axis" x="570" y="221" text-anchor="middle">Gopher · 300B train tokens</text>
+          </svg></div><p>The 100% line is only the arithmetic maximum for this benchmark; it is not a known achievable or information-theoretic limit. <a href="https://arxiv.org/html/2203.15556v1" target="_blank" rel="noopener">Original study, Tables 1 and 6 ↗</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="theory">
+    <div><h2>The conjecture</h2><p>A useful predictor of the resource frontier may combine the shortest <em>task-conditional</em> reusable description, motif frequency, data geometry and optimization response across primitive scales. Assembly theory motivates reusable pathways and copy counts; skill-quanta research motivates frequency-weighted learning. Pilot model sweeps must calibrate their relationship to weights and compute.</p><p><code>task grammar + residuals → empirical scaling parameters → hardware fit</code></p><p>The first falsifier: keep the same images and change only the label rule. Raw image assembly stays the same. A task-aware predictor must respond.</p></div>
+    <div><h2>What is established?</h2><div class="source-list"><a href="https://www.nature.com/articles/s41586-023-06600-9" target="_blank" rel="noopener">Assembly index and copy number · Sharma et al. (2023) ↗</a><a href="https://arxiv.org/html/2608.19228v1" target="_blank" rel="noopener">String assembly and smallest grammar · Bieniawski (2026 preprint) ↗</a><a href="https://www.nature.com/articles/s44260-026-00088-w" target="_blank" rel="noopener">Compression critique · Ozelim et al. (2026) ↗</a><a href="https://arxiv.org/html/2303.13506v3" target="_blank" rel="noopener">Skill frequency and neural scaling · Michaud et al. (2023) ↗</a><a href="https://arxiv.org/abs/2004.10802" target="_blank" rel="noopener">Data-manifold dimension · Sharma &amp; Kaplan (2020) ↗</a><a href="https://arxiv.org/html/2203.15556v1" target="_blank" rel="noopener">Within-family empirical scaling · Hoffmann et al. (2022) ↗</a><a href="https://arxiv.org/abs/2402.18376" target="_blank" rel="noopener">Tokenization is more than compression · Schmidt et al. (2024) ↗</a><a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-134.pdf" target="_blank" rel="noopener">Roofline hardware model · Williams et al. (2008) ↗</a></div><p class="small">These sources support individual ingredients. None validates the combined curves in this explorer.</p></div>
+  </section>
+  <div class="footer">Standalone research prototype · no external data is sent from this page · 27 Sep 2026</div>
+</main>
+<script>
+  import { defaults, presets, derive } from '../lib/model.mjs';
+
+  const form = document.querySelector('#controls');
+  const pct = new Set(['novelty', 'anchorOrd', 'anchorTail', 'targetOrd', 'targetTail']);
+  const number = (x, digits=0) => Number(x).toLocaleString('en-US', {maximumFractionDigits:digits});
+  const pars = p => p >= 1e12 ? `${number(p/1e12,1)}T` : p >= 1e9 ? `${number(p/1e9,2)}B` : p >= 1e6 ? `${number(p/1e6,1)}M` : p >= 1e3 ? `${number(p/1e3,1)}K` : number(p);
+  const gb = bytes => `${number(bytes/1e9,2)} GB`;
+  const ms = x => `${number(x, x < 10 ? 2 : 1)} ms`;
+  const el = id => document.getElementById(id);
+  const set = (id, content) => { el(id).textContent = content; };
+  const esc = s => String(s).replaceAll('&','&amp;').replaceAll('<','&lt;');
+  function fill(s) {
+    for (const [key,val] of Object.entries(s)) {
+      const field = el(key);
+      if (field) field.value = pct.has(key) ? Math.round(val*100) : val;
+    }
+  }
+  function read() {
+    const s = {};
+    for (const key of Object.keys(defaults)) {
+      const field = el(key);
+      const raw = Number(field.value);
+      const min = Number(field.min || 0);
+      const max = Number(field.max || Infinity);
+      const safe = Number.isFinite(raw) ? Math.min(max, Math.max(min, raw)) : defaults[key];
+      s[key] = pct.has(key) ? safe / 100 : safe;
+    }
+    return s;
+  }
+  const axes = (W,H,l,b,r,t,xTicks,yTicks,xLabel,yFormat) => {
+    let out = '';
+    for (const [v,label] of yTicks) {
+      const y = H-b-v*(H-t-b);
+      out += `<line class="gridline" x1="${l}" x2="${W-r}" y1="${y}" y2="${y}"/><text class="axis" x="${l-7}" y="${y+4}" text-anchor="end">${label}</text>`;
+    }
+    for (const [v,label] of xTicks) {
+      const x = l+v*(W-l-r);
+      out += `<text class="axis" x="${x}" y="${H-8}" text-anchor="middle">${esc(label)}</text>`;
+    }
+    return out;
+  };
+  const svg = (body,W=720,H=285) => `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Interactive hypothesis curve">${body}</svg>`;
+  const path = points => points.map(([x,y],i)=>`${i?'L':'M'}${x.toFixed(2)},${y.toFixed(2)}`).join(' ');
+  function coveragePlot(d) {
+    const W=720,H=300,l=48,r=24,t=20,b=42;
+    const related=[d.selected,d.required,d.pMax].filter(x=>x && Number.isFinite(x) && x>0);
+    const lo=Math.floor(Math.log10(Math.max(1e3,Math.min(1e6,...related)/10)));
+    const hi=Math.ceil(Math.log10(Math.max(1e9,...related)*10));
+    const xp=p=>l+(Math.log10(p)-lo)/(hi-lo)*(W-l-r);
+    const yp=v=>H-b-v*(H-t-b);
+    const points=(fn)=>Array.from({length:100},(_,i)=>{const log=lo+(hi-lo)*i/99;return [xp(10**log),yp(fn(10**log))]});
+    let body=axes(W,H,l,b,r,t,[[0,`10^${lo}`],[.5,`10^${number((lo+hi)/2,1)}`],[1,`10^${hi}`]],[[0,'0%'],[.25,'25%'],[.5,'50%'],[.75,'75%'],[1,'100%']],'parameters');
+    body+=`<line class="targetline" x1="${l}" x2="${W-r}" y1="${yp(d.s.targetTail)}" y2="${yp(d.s.targetTail)}"/>`;
+    body+=`<path d="${path(points(d.ordinaryAt))}" fill="none" stroke="#5de0d4" stroke-width="3"/><path d="${path(points(d.tailAt))}" fill="none" stroke="#ff8295" stroke-width="3"/>`;
+    for (const [p,color,dash] of [[d.selected,'#fff',''],[d.pMax,'#ffc878','5 5']]) {
+      if (p>0 && Math.log10(p)>=lo && Math.log10(p)<=hi) body+=`<line x1="${xp(p)}" x2="${xp(p)}" y1="${t}" y2="${H-b}" stroke="${color}" stroke-width="1.4" stroke-dasharray="${dash}"/>`;
+    }
+    if(d.required && Math.log10(d.required)<=hi)body+=`<circle cx="${xp(d.required)}" cy="${yp(d.tailAt(d.required))}" r="5" fill="#ff8295" class="marker"/>`;
+    el('coveragePlot').innerHTML=svg(body,W,H);
+  }
+  function patchPlot(d) {
+    const W=560,H=280,l=47,r=25,t=20,b=42;
+    const sizes=[4,8,12,16,24,32,48,64];
+    const rows=sizes.map(p=>({p,...derive({...d.s,patch:p})}));
+    const xp=(i)=>l+i/(sizes.length-1)*(W-l-r);
+    const yp=v=>H-b-v*(H-t-b);
+    let body=axes(W,H,l,b,r,t,sizes.map((p,i)=>[i/(sizes.length-1),String(p)]),[[0,'0%'],[.25,'25%'],[.5,'50%'],[.75,'75%'],[1,'100%']],'patch px');
+    body+=`<line class="targetline" x1="${l}" x2="${W-r}" y1="${yp(d.s.targetTail)}" y2="${yp(d.s.targetTail)}"/>`;
+    body+=`<path d="${path(rows.map((r,i)=>[xp(i),yp(r.tailAt(d.selected))]))}" fill="none" stroke="#ff8295" stroke-width="3"/>`;
+    rows.forEach((r,i)=>{body+=`<circle cx="${xp(i)}" cy="${yp(r.tailAt(d.selected))}" r="${r.p===d.s.patch?6:3}" fill="#ff8295"/>`;});
+    const row=rows.find(r=>r.p===d.s.patch);
+    if(row)body+=`<text class="axis" x="${Math.min(W-145,xp(sizes.indexOf(d.s.patch))+8)}" y="${Math.max(17,yp(row.tailAt(d.selected))-13)}">${number(row.tokens)} tokens</text>`;
+    el('patchPlot').innerHTML=svg(body,W,H);
+    el('patchStats').innerHTML=rows.map(r=>`<div class="patch-item ${r.p===d.s.patch?'active':''}"><strong>${r.p}px · ${number(r.tailAt(d.selected)*100,1)}%</strong>${number(r.tokens)} tokens</div>`).join('');
+  }
+  function resourcePlot(d) {
+    const W=560,H=280,l=49,r=25,t=20,b=42;
+    const related=[d.selected,d.required,d.pMax].filter(x=>x&&Number.isFinite(x)&&x>0);
+    const lo=Math.floor(Math.log10(Math.max(1e3,Math.min(1e6,...related)/10)));
+    const hi=Math.ceil(Math.log10(Math.max(1e9,...related)*10));
+    const yMin=0.1, yMax=Math.max(10,d.latencyAt(10**hi)*1.2);
+    const logLo=Math.log10(yMin),logHi=Math.log10(yMax);
+    const xp=p=>l+(Math.log10(p)-lo)/(hi-lo)*(W-l-r);
+    const yp=v=>H-b-(Math.log10(Math.max(yMin,v))-logLo)/(logHi-logLo)*(H-t-b);
+    const yTicks=[];
+    for(let power=Math.ceil(logLo);power<=Math.floor(logHi);power++)yTicks.push([(power-logLo)/(logHi-logLo),ms(10**power)]);
+    const f=p=>d.latencyAt(p);
+    let body=axes(W,H,l,b,r,t,[[0,`10^${lo}`],[.5,`10^${number((lo+hi)/2,1)}`],[1,`10^${hi}`]],yTicks,'parameters');
+    body+=`<line x1="${l}" x2="${W-r}" y1="${yp(d.s.deadlineMs)}" y2="${yp(d.s.deadlineMs)}" stroke="#ffc878" stroke-width="1.5" stroke-dasharray="5 5"/>`;
+    body+=`<path d="${path(Array.from({length:100},(_,i)=>{const p=10**(lo+(hi-lo)*i/99);return [xp(p),yp(f(p))]}))}" fill="none" stroke="#9ab7ff" stroke-width="3"/>`;
+    if(Math.log10(d.selected)>=lo && Math.log10(d.selected)<=hi)body+=`<circle cx="${xp(d.selected)}" cy="${yp(f(d.selected))}" r="5" fill="#9ab7ff" class="marker"/>`;
+    el('resourcePlot').innerHTML=svg(body,W,H);
+  }
+  function render() {
+    const d=derive(read());
+    set('tokenValue',number(d.tokens));
+    set('tokenSub', `${number(d.processed)} processed · ${number(d.detail*100)}% detail proxy`);
+    set('needValue', d.required===null ? 'Unreachable' : pars(d.required));
+    set('needSub',d.required===null ? 'Target exceeds an assumed coverage ceiling' : `${pars(d.uncertaintyLow)}–${pars(d.uncertaintyHigh)} sensitivity band`);
+    set('capValue', pars(d.pMax));
+    set('capSub',`${d.limitingResource} limit in entered scenario`);
+    set('timeValue',ms(d.latencyAt(d.selected)));
+    set('timeSub', `${gb(d.memoryAt(d.selected))} estimated stored weights + KV`);
+    let status,kind;
+    if(d.required===null){status='The requested target exceeds the assumed observation or data ceiling. Change sensing, tokenizer, history, or independent training coverage before interpreting a model-size estimate.';kind='bad';}
+    else if(d.uncertaintyLow>d.pMax){status='Under these assumptions, even the low end of the sensitivity range exceeds the entered hardware envelope. This is a conditional fit result, not an impossibility proof.';kind='bad';}
+    else if(d.required>d.pMax){status='The nominal resource need exceeds the hardware cap, while the sensitivity range overlaps it. A measured pilot and hardware benchmark could change the conclusion.';kind='neutral';}
+    else{status='The nominal curve fits the entered memory and deadline envelope. This says nothing about unmeasured tail hazards, closed-loop outcomes, or assurance.';kind='';}
+    el('status').className=`status ${kind}`;el('status').innerHTML=`<strong>Fit reading:</strong> ${status}`;
+    const detailRows=[
+      ['Pixels per decision',number(d.s.width*d.s.height*d.s.frames)],
+      ['Tokens requested / context',`${number(d.tokens)} / ${number(d.s.context)}`],
+      ['Observation ceiling proxy',`${number(d.observation*100,1)}%`],
+      ['Ordinary / tail data ceiling',`${number(d.ordinary*100,1)}% / ${number(d.tail*100,1)}%`],
+      ['Selected ordinary / tail coverage',`${number(d.ordinaryAt(d.selected)*100,1)}% / ${number(d.tailAt(d.selected)*100,1)}%`],
+      ['Target ordinary / tail',`${number(d.s.targetOrd*100,1)}% / ${number(d.s.targetTail*100,1)}%`],
+      ['Parameters for ordinary / tail',`${d.reqOrd?pars(d.reqOrd):'unreachable'} / ${d.reqTail?pars(d.reqTail):'unreachable'}`],
+      ['Weight storage at selected P',gb(d.selected*d.s.bits/8)],
+      ['KV assumption at selected T',gb(d.s.kvKB*1024*d.processed)],
+      ['Compute work estimate',`${number(d.flopsAt(d.selected)/1e9,1)} GFLOP`],
+      ['Compute / bandwidth time',`${ms(d.computeMsAt(d.selected))} / ${ms(d.bandwidthMsAt(d.selected))}`],
+      ['Memory / compute / bandwidth P cap',`${pars(d.pMaxMemory)} / ${pars(d.pMaxCompute)} / ${pars(d.pMaxBandwidth)}`],
+    ];
+    el('details').innerHTML=detailRows.map(([label,value])=>`<div class="detail"><span>${esc(label)}</span><strong>${esc(value)}</strong></div>`).join('');
+    set('toyBits', d.s.taskBits ? number(d.s.taskBits) : 'unknown');
+    set('toyFloor', d.s.taskBits ? pars(d.countingFloor) : 'unknown');
+    coveragePlot(d);patchPlot(d);resourcePlot(d);
+  }
+  fill(defaults);render();
+  form.addEventListener('input',render);
+  el('preset').addEventListener('change',event=>{fill(presets[event.target.value]);render();});
+</script>
+</body>
+</html>

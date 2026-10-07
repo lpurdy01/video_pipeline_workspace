@@ -1,0 +1,106 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import data from '../data/reference_ladder.json';
+import notes from '../data/reference_ladder_notes.json';
+
+const tasks = data.tasks;
+const byId = new Map(tasks.map(t => [t.id, t]));
+const main = ['pid', 'pid_sat', 'pend_k1', 'pend_feat', 'cartpole', 'dpend_k1', 'camera_pend'].map(id => byId.get(id)).filter(Boolean);
+const colors = { pid: '#9ab7ff', pid_sat: '#b99bff', pend_k1: '#5de0d4', pend_feat: '#8ff0c0', cartpole: '#ffc878', dpend_k1: '#ff8295', camera_pend: '#ffffff' };
+const fmtP = p => p === null || p === undefined ? '—' : p >= 1e6 ? (p / 1e6).toFixed(1) + 'M' : p >= 1e3 ? (p / 1e3).toFixed(1) + 'k' : Math.round(p).toString();
+const maxP = Math.max(...tasks.flatMap(t => t.capacity.map(c => c.params)));
+const maxStateP = Math.max(...tasks.filter(t => /^d?pend_k/.test(t.id)).flatMap(t => t.capacity.map(c => c.params)));
+
+// ---- Chart 1: capacity frontier (log NRMSE vs log params)
+const W = 1000, H = 420, L = 70, R = 250, T = 20, B = 46;
+const xMin = 10, xMax = 1e6, yMin = 2e-4, yMax = 1.5;
+const X = p => L + (Math.log10(p) - Math.log10(xMin)) / (Math.log10(xMax) - Math.log10(xMin)) * (W - L - R);
+const Y = e => T + (Math.log10(yMax) - Math.log10(Math.max(e, yMin))) / (Math.log10(yMax) - Math.log10(yMin)) * (H - T - B);
+const path = (pts, kx) => pts.map((p, i) => `${i ? 'L' : 'M'} ${X(p[kx]).toFixed(1)} ${Y(p.nrmse).toFixed(1)}`).join(' ');
+
+// ---- Chart 2: chaos horizon
+const horizons = [1, 2, 4, 8, 16];
+const eps = String(notes.chaos_threshold);
+const CW = 620, CH = 380, CL = 70, CR = 20, CT = 20, CB = 50;
+const cx = k => CL + Math.log2(k) / 4 * (CW - CL - CR);
+const cyMin = 10, cyMax = 1e6;
+const cy = p => CT + (Math.log10(cyMax) - Math.log10(p)) / (Math.log10(cyMax) - Math.log10(cyMin)) * (CH - CT - CB);
+const chaosSeries = [['pend', 'Pendulum (regular)', '#5de0d4'], ['dpend', 'Double pendulum (chaotic)', '#ff8295']].map(([pre, label, color]) => ({
+  label, color, pts: horizons.map(k => ({ k, t: byId.get(`${pre}_k${k}`) })).filter(p => p.t).map(p => ({ k: p.k, p: p.t.p_min[eps], front: p.t.capacity })),
+}));
+
+// ---- Chart 3: data frontier
+const DX = n => L + (Math.log10(n) - 2) / (Math.log10(5e4) - 2) * (W - L - R);
+const dpath = pts => pts.map((p, i) => `${i ? 'L' : 'M'} ${DX(p.n).toFixed(1)} ${Y(p.nrmse).toFixed(1)}`).join(' ');
+const thr = [0.1, 0.03, 0.01, 0.003];
+---
+<SiteLayout title="Reference-function ladder">
+  <h1>How big a network does <span style="color:var(--cyan)">a function</span> need?</h1>
+  <p class="lede">A PID law, a pendulum, a cart-pole, a chaotic double pendulum, and the same pendulum seen only through a camera are all functions. For each, we trained the same small neural network recipe at many sizes and many training-set sizes. We recorded the smallest size, and the least data, that fits each function to a stated accuracy.</p>
+  <div class="note"><strong>Method:</strong> 2-hidden-layer SiLU MLPs, width 2–256 ({fmtP(10)}–{fmtP(maxP)} parameters); Adam, {data.steps} steps, cosine schedule; early stopping on an independent validation set. The minimum size uses the <em>best of three seeds at or below each size</em> (the at-most-P frontier). Fit = test NRMSE, RMS error ÷ target spread, averaged over outputs. Total compute {Math.round(data.cpu_seconds / 60)} CPU-minutes ({Math.round(data.wall_seconds / 60)} min wall) on a 16-core laptop CPU. Each minimum is an <strong>attained upper bound</strong> for this recipe: a better optimizer or architecture could need less. Generated {data.generated}.</div>
+
+  <section class="card">
+    <div class="kicker">Capacity · attained frontier</div>
+    <h2>Fit error against network size</h2>
+    <svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Test NRMSE versus parameters for each reference function">
+      {[10, 100, 1e3, 1e4, 1e5, 1e6].map(p => <g><line class="gridline" x1={X(p)} x2={X(p)} y1={T} y2={H - B} /><text x={X(p)} y={H - B + 18} text-anchor="middle">{fmtP(p)}</text></g>)}
+      {[1, 0.1, 0.01, 0.001].map(e => <g><line class="gridline" x1={L} x2={W - R} y1={Y(e)} y2={Y(e)} /><text x={L - 8} y={Y(e) + 4} text-anchor="end">{+(e * 100).toFixed(1)}%</text></g>)}
+      <line x1={L} x2={W - R} y1={Y(0.01)} y2={Y(0.01)} stroke="#ffc878" stroke-dasharray="5 4" /><text x={W - R + 6} y={Y(0.01) + 4} style="fill:#ffc878">1% threshold</text>
+      {main.map((t, i) => <g><path d={path(t.capacity, 'params')} stroke={colors[t.id]} stroke-width="2.4" fill="none" />
+        {t.capacity.map(c => <circle cx={X(c.params)} cy={Y(c.nrmse)} r="3.5" fill={colors[t.id]}><title>{`${t.label}\n${fmtP(c.params)} params → ${(c.nrmse * 100).toFixed(2)}%`}</title></circle>)}
+        <text x={W - R + 6} y={T + 16 + i * 18} style={`fill:${colors[t.id]};font-size:11px`}>{t.label}</text></g>)}
+      <text x={(W + L - R) / 2} y={H - 6} text-anchor="middle">parameters (log)</text><text x={L} y={T - 6}>test NRMSE (log)</text>
+    </svg>
+    <p class="source">{notes.capacity_caption}</p>
+  </section>
+
+  <section class="card">
+    <div class="kicker">The law versus the learned description</div>
+    <h2>Constants in the formula versus parameters and bits the network needed</h2>
+    <div class="tablewrap"><table class="data-table"><thead><tr><th>Reference function</th><th>Inputs → outputs</th><th>Constants in the law</th><th>Params for 10%</th><th>Params for 1%</th><th>Params for 0.3%</th><th>Weight bits kept</th><th>Bits for 1% (≈ K)</th><th>Examples for 1%</th></tr></thead><tbody>
+      {main.map(t => <tr><td style={`color:${colors[t.id]}`}>{t.label}</td><td>{t.d_in} → {t.d_out}</td><td>{t.reference_constants}</td><td>{fmtP(t.p_min['0.1'])}</td><td>{fmtP(t.p_min['0.01'])}</td><td>{fmtP(t.p_min['0.003'])}</td><td>{t.quant.b_min ?? '—'}</td><td>{t.p_min['0.01'] && t.quant.b_min ? fmtP(t.p_min['0.01'] * t.quant.b_min) : '—'}</td><td>{fmtP(t.d_min['0.01'])}</td></tr>)}
+    </tbody></table></div>
+    <p class="source">{notes.table_caption}</p>
+  </section>
+
+  <section class="card">
+      <div class="kicker">Chaos multiplies model size</div>
+      <h2>Parameters to fit the flow map at {Number(eps) * 100}% versus horizon</h2>
+      <svg class="chart" style="max-width:820px" viewBox={`0 0 ${CW} ${CH}`} role="img" aria-label="Minimum parameters versus prediction horizon for regular and chaotic systems">
+        {horizons.map(k => <g><line class="gridline" x1={cx(k)} x2={cx(k)} y1={CT} y2={CH - CB} /><text x={cx(k)} y={CH - CB + 18} text-anchor="middle">{k * 50} ms</text></g>)}
+        {[10, 100, 1e3, 1e4, 1e5, 1e6].map(p => <g><line class="gridline" x1={CL} x2={CW - CR} y1={cy(p)} y2={cy(p)} /><text x={CL - 8} y={cy(p) + 4} text-anchor="end">{fmtP(p)}</text></g>)}
+        <line x1={CL} x2={CW - CR} y1={cy(maxStateP)} y2={cy(maxStateP)} stroke="#9db6bf" stroke-dasharray="3 4" /><text x={CW - CR} y={cy(maxStateP) - 6} text-anchor="end" style="font-size:10px">largest network tested ({fmtP(maxStateP)})</text>
+        {chaosSeries.map(s => <g>
+          <path d={s.pts.filter(p => p.p).map((p, i) => `${i ? 'L' : 'M'} ${cx(p.k)} ${cy(p.p)}`).join(' ')} stroke={s.color} stroke-width="2.6" fill="none" />
+          {s.pts.map(p => p.p ? <circle cx={cx(p.k)} cy={cy(p.p)} r="5" fill={s.color}><title>{`${s.label}, ${p.k * 50} ms: ${fmtP(p.p)} params`}</title></circle>
+            : <g><path d={`M ${cx(p.k) - 7} ${cy(maxStateP) - 4} L ${cx(p.k)} ${cy(maxStateP) - 18} L ${cx(p.k) + 7} ${cy(maxStateP) - 4}`} fill={s.color} /><title>{`${s.label}, ${p.k * 50} ms: not reached within ${fmtP(maxStateP)} params`}</title></g>)}
+        </g>)}
+        {chaosSeries.map((s, i) => <text x={CL + 10} y={cy(3000) + i * 18} style={`fill:${s.color};font-size:12px`}>{s.label}</text>)}
+        <text x={(CW + CL) / 2} y={CH - 8} text-anchor="middle">prediction horizon</text>
+      </svg>
+      <p class="source">{notes.chaos_caption}</p>
+    </section>
+    <section class="card">
+      <div class="kicker">Data · attained frontier at width 128</div>
+      <h2>Fit error against training examples</h2>
+      <svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Test NRMSE versus training examples">
+        {[100, 1e3, 1e4].map(n => <g><line class="gridline" x1={DX(n)} x2={DX(n)} y1={T} y2={H - B} /><text x={DX(n)} y={H - B + 18} text-anchor="middle">{fmtP(n)}</text></g>)}
+        {[1, 0.1, 0.01, 0.001].map(e => <g><line class="gridline" x1={L} x2={W - R} y1={Y(e)} y2={Y(e)} /><text x={L - 8} y={Y(e) + 4} text-anchor="end">{e * 100}%</text></g>)}
+        <line x1={L} x2={W - R} y1={Y(0.01)} y2={Y(0.01)} stroke="#ffc878" stroke-dasharray="5 4" />
+        {main.map((t, i) => <g><path d={dpath(t.data)} stroke={colors[t.id]} stroke-width="2.4" fill="none" /><text x={W - R + 6} y={T + 16 + i * 18} style={`fill:${colors[t.id]};font-size:11px`}>{t.label}</text></g>)}
+        <text x={(W + L - R) / 2} y={H - 6} text-anchor="middle">training examples (log)</text>
+      </svg>
+      <p class="source">{notes.data_caption}</p>
+    </section>
+
+  <section class="card">
+    <div class="kicker">What this shows, and what it does not</div>
+    <h2>Reading the ladder</h2>
+    <ul>{notes.findings.map(f => <li set:html={f} />)}</ul>
+    <p class="source">{notes.limits}</p>
+  </section>
+
+  <details class="card"><summary><strong>All tasks: minimum parameters and examples at each threshold</strong></summary><div class="tablewrap"><table class="data-table"><thead><tr><th>Task</th>{thr.map(e => <th>P at {e * 100}%</th>)}{thr.map(e => <th>D at {e * 100}%</th>)}<th>Bits kept</th></tr></thead><tbody>
+    {tasks.map(t => <tr><td>{t.label}</td>{thr.map(e => <td>{fmtP(t.p_min[String(e)])}</td>)}{thr.map(e => <td>{fmtP(t.d_min[String(e)])}</td>)}<td>{t.quant.b_min ?? '—'}</td></tr>)}
+  </tbody></table></div><p class="source">— = threshold not reached within the tested range. Script: <code>research/engineering_intelligence/experiments/reference_ladder.py</code>; summary JSON beside it.</p></details>
+</SiteLayout>

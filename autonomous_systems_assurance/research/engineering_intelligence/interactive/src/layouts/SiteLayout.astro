@@ -1,0 +1,25 @@
+---
+const { title, eyebrow = 'Engineering intelligence / research instrument' } = Astro.props;
+const currentPath=Astro.url.pathname.replace(/\/$/, '') || '/';
+const nav = [
+  {href:'/budget', label:'Intelligence budget'},
+  {href:'/ladder', label:'Function ladder'},
+  {href:'/', label:'Hypothesis explorer'},
+  {href:'/atlas', label:'Benchmark atlas'},
+  {href:'/cases', label:'Road · air · face'},
+  {href:'/method', label:'Variables & method'},
+];
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#09121b" />
+  <title>{title} · Engineering intelligence</title>
+  <style is:global>
+    :root{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#e8f1f4;background:#09121b;--panel:#10202b;--border:#294251;--muted:#a5b9c3;--cyan:#5de0d4;--amber:#ffc878;--rose:#ff8295;--blue:#9ab7ff}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse 70% 38% at 70% -10%,#194251 0%,transparent 75%),#09121b}a{color:#76dfd7}a:hover{color:#b5fff4}button,input,select{font:inherit}.shell{max-width:1420px;margin:auto;padding:26px clamp(18px,3vw,48px) 80px}.eyebrow{color:var(--cyan);font:12px ui-monospace,monospace;letter-spacing:.13em;text-transform:uppercase}.nav{display:flex;gap:8px;flex-wrap:wrap;margin:19px 0 38px}.nav a{border:1px solid #355260;background:#0f202b;border-radius:100px;padding:9px 15px;color:#cce1e6;text-decoration:none;font-size:13px}.nav a[aria-current=page]{border-color:var(--cyan);background:#17404a;color:#fff}h1{font-size:clamp(38px,5vw,72px);line-height:1.02;letter-spacing:-.055em;margin:0 0 18px;max-width:1120px}h2{letter-spacing:-.025em}h3{letter-spacing:-.01em}.lede{color:#b9cdd5;max-width:930px;font-size:clamp(16px,1.5vw,20px);line-height:1.55;margin:0 0 24px}.note{border:1px solid #526d69;background:#182e32;border-radius:10px;padding:14px 18px;color:#d7e5df;line-height:1.5;margin:20px 0}.note.warn{border-color:#806a55;background:#302923}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:21px;margin:16px 0}.card h2,.card h3{margin-top:0}.card p,.card li{color:#b9cbd2;line-height:1.55}.card small,.muted{color:#92aeb7}.stat{font:600 clamp(26px,3vw,40px) ui-monospace,monospace;color:#eaf9f7}.kicker{color:var(--cyan);font:12px ui-monospace,monospace;text-transform:uppercase;letter-spacing:.1em}.tablewrap{overflow:auto}.data-table{width:100%;border-collapse:collapse;font-size:13px}.data-table th,.data-table td{text-align:left;vertical-align:top;padding:11px 12px;border-bottom:1px solid #2b4653}.data-table th{color:var(--cyan);font-size:11px;letter-spacing:.08em;text-transform:uppercase}.data-table td{color:#d2e3e7}.data-table tr:hover td{background:#18313d}.pill{display:inline-block;border:1px solid #446471;border-radius:100px;padding:4px 9px;font-size:11px;color:#cce5ea}.source{font-size:12px;color:#9cbdc5}.source a{color:#8ce4df}.chart{width:100%;height:auto;display:block}.chart text{fill:#9db6bf;font:12px ui-monospace,monospace}.chart .gridline{stroke:#2b4653;stroke-width:1}.chart a:hover circle{stroke:#fff;stroke-width:3}.controls-row{display:flex;gap:15px;flex-wrap:wrap;align-items:end;margin:17px 0}.controls-row label{font-size:13px;color:#c8dee3}.controls-row input,.controls-row select{display:block;margin-top:5px;background:#0b1822;border:1px solid #3b5864;color:#f2fbfc;border-radius:6px;padding:8px 10px;min-width:130px}.controls-row label{max-width:100%;min-width:0}.controls-row select{max-width:100%}.bigreadout{background:#142d37;border:1px solid #3d6370;border-radius:10px;padding:14px 18px;color:#e6f5f6}.bigreadout strong{color:var(--cyan)}.footer{margin-top:30px;border-top:1px solid #294251;padding-top:19px;color:#849da6;font-size:12px}@media(max-width:780px){.grid{grid-template-columns:1fr}.shell{padding-top:20px}.nav{margin-bottom:29px}}
+  </style>
+</head>
+<body><main class="shell"><div class="eyebrow">{eyebrow}</div><nav class="nav" aria-label="Research sections">{nav.map(item=><a href={item.href} aria-current={currentPath===item.href?'page':undefined}>{item.label}</a>)}</nav><slot /><footer class="footer">Draft research instrument · published measurements, vendor targets and conjecture are identified separately · 2026-09-27</footer></main></body>
+</html>

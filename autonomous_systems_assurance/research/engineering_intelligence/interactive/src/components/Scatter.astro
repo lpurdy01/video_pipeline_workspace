@@ -1,0 +1,22 @@
+---
+const { rows, title, description, metricLabel, yMin = 0, yMax = 100 } = Astro.props;
+const W=760,H=360,L=64,R=24,T=24,B=50;
+const xs=rows.map(r=>r.gflops).filter(x=>x>0);
+const minX=Math.pow(10,Math.floor(Math.log10(Math.min(...xs))));
+const maxX=Math.pow(10,Math.ceil(Math.log10(Math.max(...xs))));
+const X=x=>L+(Math.log10(x)-Math.log10(minX))/(Math.log10(maxX)-Math.log10(minX))*(W-L-R);
+const Y=y=>H-B-(y-yMin)/(yMax-yMin)*(H-T-B);
+const ticks=[];for(let x=minX;x<=maxX*1.001;x*=10)ticks.push(x);
+---
+<section class="card">
+  <div class="kicker">{rows.length} published weight configurations</div>
+  <h2>{title}</h2><p>{description}</p>
+  <svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`${title}: ${rows.length} points, GFLOPs on log horizontal axis and ${metricLabel} on vertical axis`}>
+    {[0,.25,.5,.75,1].map(f=><g><line class="gridline" x1={L} x2={W-R} y1={Y(yMin+f*(yMax-yMin))} y2={Y(yMin+f*(yMax-yMin))}/><text x={L-8} y={Y(yMin+f*(yMax-yMin))+4} text-anchor="end">{Math.round(yMin+f*(yMax-yMin))}</text></g>)}
+    {ticks.map(t=><g><line class="gridline" x1={X(t)} x2={X(t)} y1={T} y2={H-B}/><text x={X(t)} y={H-18} text-anchor="middle">{t}</text></g>)}
+    {rows.map(r=><a href={r.source_url} target="_blank" rel="noopener" aria-label={`${r.weight}: ${r.value} ${metricLabel}, ${r.gflops} GFLOPs, ${r.params_m} million parameters; open source`}><circle data-point-id={r.id} cx={X(r.gflops)} cy={Y(r.value)} r={r.highlight?5.1:3.3} fill={r.highlight?'#ffc878':'#5de0d4'} fill-opacity={r.highlight?'.96':'.59'} stroke={r.highlight?'#f5ddb5':'none'}><title>{`${r.weight}\n${r.value} ${metricLabel}\n${r.gflops} GFLOPs · ${r.params_m}M parameters\n${r.source_locator}`}</title></circle></a>)}
+    <text x={W/2} y={H-2} text-anchor="middle">GFLOPs per documented evaluation input · log scale</text>
+    <text x={L} y={15}>{metricLabel}</text>
+  </svg>
+  <p class="source">Source: <a href="https://docs.pytorch.org/vision/0.17/models.html" target="_blank" rel="noopener">TorchVision 0.17 model tables</a>. Each circle links to its weight documentation. Amber marks recognizable models; weights and recipes may differ.</p>
+</section>

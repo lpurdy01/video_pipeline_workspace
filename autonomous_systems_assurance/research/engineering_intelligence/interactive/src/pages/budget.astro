@@ -1,0 +1,302 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import ladder from '../data/budget_ladder.json';
+import { presets } from '../lib/budget.mjs';
+
+const rows = ladder.rows;
+const verifiedCount = rows.filter(r => r.status === 'verified' || r.status === 'atlas-verified').length;
+const recognizable = rows.filter(r => r.recognizable).length;
+
+// ---------- Ladder strip chart (server-rendered)
+const forms = {
+  'formula': '#9ab7ff', 'learned subspace': '#5de0d4', 'lookup table': '#ff8295', 'decision tree': '#ff8295',
+  'network': '#ffc878', 'compressed network': '#c9f27a', 'hand-written code': '#d7a6ff', 'capacity estimate': '#ffffff',
+};
+const lanes = ['control', 'estimation', 'aviation', 'driving', 'vision', 'face', 'speech', 'language', 'robotics', 'science', 'vehicle'];
+const LW = 1000, LH = 40 + lanes.length * 40 + 50, LL = 96, LR = 18;
+const lx = b => LL + (Math.log10(b) - 1) / (13 - 1) * (LW - LL - LR);
+const ly = d => 40 + lanes.indexOf(d) * 40 + 20;
+const labels = [
+  ['L-PID', -8, -10, 'end', 'PID loop'], ['D-PEND', 10, 18, 'start', 'Inverted pendulum (4 dims)'], ['N-ALVINN', 0, -12, 'middle', 'ALVINN 1989'],
+  ['H-AGC', -10, -10, 'end', 'Apollo Guidance Computer'], ['A-NET', 6, 22, 'start', 'ACAS Xu networks'], ['A-DOWN', 0, -12, 'middle', 'ACAS Xu table'],
+  ['D-MNIST-SHUF', -4, 22, 'end', 'MNIST, random labels'], ['T-R50V1', 0, -14, 'middle', 'ResNet-50'], ['W-LARGE', 0, -12, 'middle', 'Whisper large'],
+  ['K-7B', -10, 20, 'end', '7B model holds 14 Gbit'], ['G-GPT3', 0, -14, 'middle', 'GPT-3'], ['G-DSV3', 0, 24, 'middle', 'DeepSeek-V3'],
+  ['H-F35', 8, -10, 'start', 'F-35 software'], ['N-PILOTNET', 8, 16, 'start', 'PilotNet'],
+];
+const refLines = [
+  { bits: 64 * 8 * 2 ** 20, label: 'HW3 NNA SRAM (2×32 MB)' },
+  { bits: 8e9 * 8, label: '8 GB DRAM' },
+  { bits: 80e9 * 8, label: '80 GB HBM' },
+];
+
+// ---------- Same-task series (description shrinking toward an unknown floor)
+const seriesDefs = [
+  { key: 'acas', title: 'ACAS Xu advisories', ids: ['A-TABLE', 'A-DOWN', 'A-TREE', 'A-NET'] },
+  { key: 'alexnet', title: 'AlexNet-level ImageNet', ids: ['C-ALEX', 'C-ALEX-DC', 'C-SQZ'] },
+  { key: 'vgg', title: 'VGG-16 ImageNet', ids: ['C-VGG', 'C-VGG-DC'] },
+  { key: 'mnist', title: 'MNIST (90% of baseline)', ids: ['D-MNIST-FC', 'D-MNIST-LENET'] },
+];
+const byId = new Map(rows.map(r => [r.id, r]));
+const SW = 1000, SH = 60 + seriesDefs.length * 70, SL = 200, SR = 60;
+const sx = b => SL + (Math.log10(b) - 3) / (13 - 3) * (SW - SL - SR);
+
+// ---------- Intrinsic dimension ladder (Li et al. 2018)
+const dims = rows.filter(r => r.series === 'intrinsic').sort((a, b) => a.params - b.params);
+const DW = 1000, DH = 44 + dims.length * 30, DL = 250, DR = 70;
+const dx = d => DL + Math.log10(d) / 6 * (DW - DL - DR);
+
+// ---------- Exponent regime test
+const EW = 520, EH = 360, EL = 56, ER = 20, ET = 20, EB = 46;
+const ex = a => EL + (a - 0.2) / (0.3) * (EW - EL - ER);
+const ey = b => EH - EB - (b - 0.1) / (0.4) * (EH - ET - EB);
+let predPath = ''; for (let a = 0.2; a <= 0.5001; a += 0.01) predPath += (predPath ? ' L ' : 'M ') + ex(a) + ' ' + ey(a / (1 + a));
+let eqPath = `M ${ex(0.2)} ${ey(0.2)} L ${ex(0.5)} ${ey(0.5)}`;
+const fits = [
+  { label: 'Hoffmann et al. 2022 (published fit)', a: 0.3392, b: 0.2849, url: 'https://arxiv.org/abs/2203.15556' },
+  { label: 'Besiroglu et al. 2024 (replication refit)', a: 0.3478, b: 0.3658, url: 'https://arxiv.org/abs/2404.10102' },
+];
+
+// ---------- Supervision bandwidth (illustrative arithmetic, LeCun "cake" framing)
+const sup = [
+  { label: 'Action only, 90% "go straight"', bits: 0.47, note: 'binary entropy H(0.9) ≈ 0.47 bit per decision (upper bound on the action channel if actions were only straight/other)' },
+  { label: 'Reinforcement reward', bits: 1, note: '“a few bits for some samples” (LeCun)' },
+  { label: 'ImageNet class label', bits: 9.97, note: 'log₂ 1000' },
+  { label: 'Boxes for 10 objects', bits: 400, note: '10 × (4 coords × 8 bits + class 8 bits), illustrative' },
+  { label: 'Semantic segmentation 1280×960, 20 classes', bits: 1280 * 960 * 4.32, note: 'pixels × log₂ 20 (upper bound)' },
+  { label: 'Next-frame prediction, 8 cameras', bits: 8 * 1280 * 960 * 8, note: 'raw pixel bits (upper bound; most is nuisance)' },
+];
+const BW = 1000, BH = 40 + sup.length * 44, BL = 330, BR = 90;
+const bx = b => BL + (Math.log10(b) + 1) / 9 * (BW - BL - BR);
+
+const presetOptions = Object.entries(presets).map(([k, p]) => ({ k, label: p.label }));
+---
+<SiteLayout title="Intelligence budget">
+  <h1>One currency: <span style="color:var(--cyan)">bits.</span></h1>
+  <p class="lede">A condensed hypothesis. The earlier explorer's fifteen inputs are all supplies of, or demands for, information. The <em>task</em> needs a certain number of bits of description to reach an error target. The <em>model</em> stores about two bits per parameter. The <em>hardware</em> decides how many parameters can run before the deadline. The <em>data</em> decides how many bits can be taught. The <em>sensor</em> sets a floor that no budget buys. The tightest of these sets the error.</p>
+  <div class="note warn budget-note"><strong>Status:</strong> a research hypothesis with cited anchors. Each element is labelled as theorem, empirical or our hypothesis in <code>research/engineering_intelligence/intelligence_budget.md</code>. Calculator presets are illustrative anchors, not measurements of any product. Nothing here is a safety or certification result.</div>
+
+  <section class="card">
+    <div class="kicker">The condensed law · hypothesis</div>
+    <h2>Achievable error is set by the smallest bit budget on one task curve</h2>
+    <p class="bigreadout" style="font-size:18px"><code>ε* ≈ ε_obs + ε_K( min&#123; κ·P_max(hardware, L, T) , η·s_eff·D &#125; / ρ_A )</code></p>
+    <p><code>ε_K(bits)</code> is the task's error-versus-description curve (its rate–distortion curve); <code>κ</code> is bits stored per parameter; <code>P_max</code> is the largest model the hardware can run within deadline <code>L</code> for <code>T</code> tokens; <code>η·s_eff·D</code> is the task information the training data delivers; <code>ρ_A ≥ 1</code> is how badly the architecture's prior fits the task. Whether the result can be <em>shown</em> is a separate, fourth budget: evidence.</p>
+    <div class="grid">
+      <div><h3>Five dimensionless numbers</h3><p>Like Reynolds or Mach numbers, each is supply ÷ demand. A design is feasible only when all five are ≥ 1 with margin.</p>
+        <div class="tablewrap"><table class="data-table"><thead><tr><th>Number</th><th>Supply ÷ demand</th></tr></thead><tbody>
+          <tr><td>Π<sub>obs</sub> observation</td><td>pixels on target at required range ÷ pixels the detector needs</td></tr>
+          <tr><td>Π<sub>cap</sub> capacity</td><td>κ·P ÷ ρ_A·K*(ε)</td></tr>
+          <tr><td>Π<sub>data</sub> teaching</td><td>min(η·s_eff·D ÷ K, rare-skill exposures ÷ τ)</td></tr>
+          <tr><td>Π<sub>rt</sub> real time</td><td>deadline ÷ inference time (roofline + serial depth)</td></tr>
+          <tr><td>Π<sub>ev</sub> evidence</td><td>n·p_target ÷ ln(1/a)</td></tr>
+        </tbody></table></div></div>
+      <div><h3>The strongest anchors</h3><ul>
+        <li><strong>[T]</strong> Networks cannot approximate a function class faster, per weight, than its minimax code length allows (<a href="https://arxiv.org/abs/1901.02220" target="_blank" rel="noopener">Elbrächter et al., Thm VI.4</a>).</li>
+        <li><strong>[E]</strong> Language models store 2 bits of knowledge per parameter, 1 bit for facts seen only 100 times (<a href="https://arxiv.org/abs/2404.05405" target="_blank" rel="noopener">Allen-Zhu &amp; Li</a>); GPT-style models memorize 3.5–3.6 bits/param and fp32 barely helps (<a href="https://arxiv.org/abs/2505.24832" target="_blank" rel="noopener">Morris et al.</a>).</li>
+        <li><strong>[E]</strong> Ternary weights (≤1.58 bits) match FP16 LLaMA from 3B parameters (<a href="https://arxiv.org/abs/2402.17764" target="_blank" rel="noopener">BitNet b1.58</a>): trained models already sit near the counting limit per weight.</li>
+        <li><strong>[E]</strong> Same images, random labels: the degrees of freedom needed rise from 750 to 190,000 (<a href="https://arxiv.org/abs/1804.08838" target="_blank" rel="noopener">Li et al.</a>). The task, not the pixels, sets K.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section class="card" id="calculator">
+    <div class="kicker">Intelligence link budget · interactive</div>
+    <h2>Does the task fit the sensor, the silicon, the data and the evidence?</h2>
+    <p>The calculator returns two requirements a program can plan against, the hardware (<code>P_max</code>, margin) and the <strong>training data</strong> (examples and collection time), plus the evidence count. Pick a preset and change anything. The numbers are illustrative: each preset's note says which values are anchored to a source and which are assumed.</p>
+    <div class="controls-row"><label style="max-width:100%;min-width:0;flex:1 1 320px">Preset<select id="preset" style="width:100%;min-width:0">{presetOptions.map(o => <option value={o.k} selected={o.k === 'drive'}>{o.label}</option>)}</select></label></div>
+    <p class="source" id="presetNote"></p>
+    <div id="inputs" class="inputgrid"></div>
+    <div class="pis" id="pis"></div>
+    <div class="grid">
+      <div><h3>Error versus model size</h3><svg id="curve" class="chart" viewBox="0 0 520 330" role="img" aria-label="Achievable error against model parameters"></svg>
+        <p class="source">Cyan: error if only capacity limited. Amber: capacity and the data line together. Red dashed: target. Violet: hardware P_max at the deadline. Green: P_min for the target.</p></div>
+      <div><h3>Link budget in decibels</h3><svg id="ledger" class="chart" viewBox="0 0 520 330" role="img" aria-label="Capacity link budget waterfall in decibels"></svg>
+        <div class="bigreadout" id="readout" role="status"></div>
+        <div class="bigreadout" id="dataReadout" role="status" style="margin-top:10px"></div></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="kicker">{rows.length} systems · {recognizable} recognizable · {verifiedCount} checked against a source</div>
+    <h2>The task-description ladder</h2>
+    <p>Every system that solves a task carries a description of it: a formula, a table, hand-written code or network weights. Plotted by size as stored, from a three-gain PID loop to a frontier language model, these span eleven orders of magnitude. Sizes are <em>upper bounds</em> on what each task needs; code sizes use a stated conversion. Vertical lines mark memory tiers. Hover or tap a point for its source and verification status.</p>
+    <svg class="chart" viewBox={`0 0 ${LW} ${LH}`} role="img" aria-label="Log-scale ladder of description sizes in bits by domain">
+      {[1, 3, 5, 7, 9, 11, 13].map(e => <g><line class="gridline" x1={lx(10 ** e)} x2={lx(10 ** e)} y1={30} y2={LH - 40} /><text x={lx(10 ** e)} y={LH - 20} text-anchor="middle">10^{e}</text></g>)}
+      {refLines.map(r => <g><line x1={lx(r.bits)} x2={lx(r.bits)} y1={28} y2={LH - 40} stroke="#9ab7ff" stroke-dasharray="4 5" /><text x={lx(r.bits) + 4} y={24} style="font-size:10px;fill:#9ab7ff">{r.label}</text></g>)}
+      {lanes.map(d => <text x={LL - 10} y={ly(d) + 4} text-anchor="end">{d}</text>)}
+      {rows.map((r, i) => <a href={r.source_url || undefined} target="_blank" rel="noopener">
+        <circle cx={lx(r.bits)} cy={ly(r.domain) + ((i % 3) - 1) * 7} r={r.recognizable ? 6 : 4} fill={forms[r.form] || '#ccc'} fill-opacity={r.status === 'verified' || r.status === 'atlas-verified' || r.status === 'definitional' ? 0.95 : 0.45} stroke={r.status === 'secondary' || r.status === 'documented' ? '#ffffff' : 'none'} stroke-dasharray="2 2">
+          <title>{`${r.name}\n${r.task}\n${r.basis} → 10^${Math.log10(r.bits).toFixed(1)} bits\nStatus: ${r.status}${r.locator ? '\n' + r.locator : ''}`}</title></circle></a>)}
+      {labels.map(([id, dxo, dyo, anchor, text]) => { const r = byId.get(id); return r && <text x={lx(r.bits) + dxo} y={ly(r.domain) + dyo} text-anchor={anchor} style="font-size:10.5px;fill:#e8f1f4">{text || r.name}</text>; })}
+      <text x={(LW + LL) / 2} y={LH - 3} text-anchor="middle">description size as stored, bits (log scale)</text>
+    </svg>
+    <p class="source">Colour = form: <span style="color:#9ab7ff">formula</span> · <span style="color:#5de0d4">measured intrinsic dimension</span> · <span style="color:#ff8295">table/tree</span> · <span style="color:#ffc878">network</span> · <span style="color:#c9f27a">compressed network</span> · <span style="color:#d7a6ff">hand-written code</span> · white = capacity estimate. Faded with a dashed ring = documented or secondary, not re-inspected. Code rows use 200 bits per source line (assumed) and describe many functions, not one task.</p>
+  </section>
+
+  <section class="card">
+    <div class="kicker">Gap to the limit</div>
+    <h2>The same task, described in ever fewer bits</h2>
+    <p>Channel codes spent decades closing their gap to the Shannon limit. Learned descriptions show the same pattern. Each row is one task at essentially constant fidelity. Each step left is a smaller description; the true floor <code>K*</code> is unknown but lies at or left of the last point.</p>
+    <svg class="chart" viewBox={`0 0 ${SW} ${SH}`} role="img" aria-label="Same-task description sizes shrinking">
+      {[3, 5, 7, 9, 11, 13].map(e => <g><line class="gridline" x1={sx(10 ** e)} x2={sx(10 ** e)} y1={30} y2={SH - 36} /><text x={sx(10 ** e)} y={SH - 16} text-anchor="middle">10^{e} bits</text></g>)}
+      {seriesDefs.map((s, i) => { const pts = s.ids.map(id => byId.get(id)).filter(Boolean); const y = 60 + i * 70; return <g>
+        <text x={SL - 12} y={y + 4} text-anchor="end" style="fill:#e8f1f4">{s.title}</text>
+        <path d={pts.map((p, j) => `${j ? 'L' : 'M'} ${sx(p.bits)} ${y}`).join(' ')} stroke="#5de0d4" stroke-width="2" fill="none" />
+        {pts.map((p, j) => <g><circle cx={sx(p.bits)} cy={y} r="6" fill={forms[p.form] || '#ccc'}><title>{`${p.name}: ${p.basis}\n${p.metric}\n${p.locator}`}</title></circle>
+          <text x={sx(p.bits)} y={y + (j % 2 ? 22 : -12)} text-anchor="middle" style="font-size:10px">{p.name.replace(/^ACAS Xu |^AlexNet, |^VGG-16, |^MNIST · /, '')}</text></g>)}
+      </g>; })}
+    </svg>
+    <p class="source">ACAS Xu: <a href="https://arxiv.org/abs/1810.04240" target="_blank" rel="noopener">Julian, Kochenderfer &amp; Owen</a> (trees up to 100 MB still exceeded 6% policy error; the 2.4 MB networks reproduce the table accurately). AlexNet/VGG: <a href="https://arxiv.org/abs/1510.00149" target="_blank" rel="noopener">Deep Compression</a>, <a href="https://arxiv.org/abs/1602.07360" target="_blank" rel="noopener">SqueezeNet</a>. MNIST: <a href="https://arxiv.org/abs/1804.08838" target="_blank" rel="noopener">Li et al.</a> (degrees of freedom × 32 bits). Over time: vision compute requirements halve about every 9 months (<a href="https://arxiv.org/abs/2212.05153" target="_blank" rel="noopener">Erdil &amp; Besiroglu</a>); LLM capacity density doubles about every 3 months (<a href="https://arxiv.org/abs/2412.04315" target="_blank" rel="noopener">Xiao et al.</a>).</p>
+  </section>
+
+  <section class="card">
+    <div class="kicker">From Laplace to learned structure · measured</div>
+    <h2>How many free numbers does a task need?</h2>
+    <p>Li et al. trained networks inside random low-dimensional subspaces and counted the dimensions needed to reach 90% of full performance. An inverted pendulum needs 4, the same count as the gain vector of a four-state LQR controller. ImageNet needs more than 500,000. The same MNIST images with shuffled labels need 190,000, about 250 times the real task.</p>
+    <svg class="chart" viewBox={`0 0 ${DW} ${DH}`} role="img" aria-label="Intrinsic dimension by task, log scale">
+      {[1, 10, 100, 1e3, 1e4, 1e5, 1e6].map(v => <g><line class="gridline" x1={dx(v)} x2={dx(v)} y1={20} y2={DH - 26} /><text x={dx(v)} y={DH - 8} text-anchor="middle">{v >= 1e3 ? (v / 1e3) + 'k' : v}</text></g>)}
+      {dims.map((r, i) => <g><text x={DL - 10} y={36 + i * 30} text-anchor="end" style={r.id === 'D-MNIST-SHUF' ? 'fill:#ff8295' : ''}>{r.name}</text>
+        <rect x={DL} y={24 + i * 30} width={Math.max(2, dx(r.params) - DL)} height="16" rx="3" fill={r.id === 'D-MNIST-SHUF' ? '#ff8295' : r.domain === 'control' ? '#9ab7ff' : '#5de0d4'} />
+        <text x={dx(r.params) + 6} y={36 + i * 30}>{r.params.toLocaleString()}{r.id === 'D-IMAGENET' ? '+' : ''}</text></g>)}
+    </svg>
+    <p class="source">Source: <a href="https://arxiv.org/abs/1804.08838" target="_blank" rel="noopener">Li et al., ICLR 2018</a>, Table 1 and §3. Degrees of freedom depend on architecture: on CIFAR-10, FC 9k, LeNet 2.9k, ResNet ≈1k. That dependence is the architecture mismatch ρ_A. Blue = control tasks.</p>
+  </section>
+
+  <div class="grid">
+    <section class="card">
+      <div class="kicker">Supervision bandwidth · the Tesla degeneracy</div>
+      <h2>How many task bits does one example carry?</h2>
+      <svg class="chart" viewBox={`0 0 ${BW} ${BH}`} role="img" aria-label="Supervision bits per example, log scale">
+        {[0.1, 10, 1e3, 1e5, 1e7].map(v => <g><line class="gridline" x1={bx(v)} x2={bx(v)} y1={20} y2={BH - 24} /><text x={bx(v)} y={BH - 6} text-anchor="middle">{v >= 1e3 ? '10^' + Math.log10(v) : v}</text></g>)}
+        {sup.map((r, i) => <g><text x={BL - 10} y={40 + i * 44} text-anchor="end" style="font-size:12px">{r.label}</text>
+          <rect x={BL} y={28 + i * 44} width={Math.max(2, bx(r.bits) - BL)} height="18" rx="3" fill={i === 0 ? '#ff8295' : '#ffc878'}><title>{r.note}</title></rect></g>)}
+      </svg>
+      <p class="source">Framing from LeCun's “cake” slide (RL: a few bits; supervised: 10–10,000; self-supervised: millions per sample). Tesla's Duan (CVPR 2026): output is “mostly 2 degrees of freedom” and 90% of randomly sampled fleet data is straight highway driving; dense “proxy tasks” help gradients flow. Only <em>task-relevant</em> bits count, and reconstructing nuisance detail spends capacity, so auxiliary supervision should have an optimum. Values are illustrative upper bounds.</p>
+    </section>
+    <section class="card">
+      <div class="kicker">An open test · exponents</div>
+      <h2>Does data scaling follow β = α/(1+α)?</h2>
+      <svg class="chart" viewBox={`0 0 ${EW} ${EH}`} role="img" aria-label="Parameter exponent alpha versus data exponent beta with predictions">
+        {[0.2, 0.3, 0.4, 0.5].map(v => <g><line class="gridline" x1={ex(v)} x2={ex(v)} y1={ET} y2={EH - EB} /><text x={ex(v)} y={EH - EB + 18} text-anchor="middle">{v}</text></g>)}
+        {[0.1, 0.2, 0.3, 0.4, 0.5].map(v => <g><line class="gridline" x1={EL} x2={EW - ER} y1={ey(v)} y2={ey(v)} /><text x={EL - 6} y={ey(v) + 4} text-anchor="end">{v}</text></g>)}
+        <path d={predPath} stroke="#5de0d4" stroke-width="2.5" fill="none" /><text x={ex(0.43)} y={ey(0.30) + 18} style="fill:#5de0d4">β = α/(1+α)</text>
+        <path d={eqPath} stroke="#9ab7ff" stroke-dasharray="5 5" fill="none" /><text x={ex(0.43)} y={ey(0.45)} style="fill:#9ab7ff">β = α</text>
+        {fits.map(f => <a href={f.url} target="_blank" rel="noopener"><circle cx={ex(f.a)} cy={ey(f.b)} r="7" fill="#ffc878"><title>{`${f.label}: α=${f.a}, β=${f.b}`}</title></circle></a>)}
+        <text x={ex(0.3392) + 10} y={ey(0.2849) + 4} style="font-size:10px">Hoffmann fit</text>
+        <text x={ex(0.3478) + 10} y={ey(0.3658) + 4} style="font-size:10px">Epoch refit</text>
+        <text x={(EW + EL) / 2} y={EH - 4} text-anchor="middle">α, parameter exponent</text><text x={EL} y={14}>β, data exponent</text>
+      </svg>
+      <p class="source">Prediction from the skill-quanta model (<a href="https://arxiv.org/abs/2303.13506" target="_blank" rel="noopener">Michaud et al.</a>). Our derivation: it survives if the data each skill needs grows with its bits, even when rare skills cost more. If each skill instead needs a fixed number of exposures and rare skills cost more, β can exceed α; the Epoch refit fits that case. Measuring skill cost versus rarity decides it. Open question.</p>
+    </section>
+  </div>
+
+  <section class="card">
+    <div class="kicker">Observation floor · NASA flight test, our arithmetic</div>
+    <h2>How close does a real camera system get to the geometric limit?</h2>
+    <div class="tablewrap"><table class="data-table"><thead><tr><th>Target</th><th>Size √(w·h)</th><th>Johnson detection range (2 px)</th><th>Measured first detection</th><th>Pixels on target then</th><th>Gap</th></tr></thead><tbody>
+      <tr><td>Cirrus SR22 (11.68 × 2.72 m)</td><td>5.64 m</td><td>≈15.1 km</td><td>2.2–3.2 km (mean 2.77)</td><td>≈11 px</td><td>≈5.5× in range</td></tr>
+      <tr><td>Tempest sUAS (3.2 × 0.3 m)</td><td>0.98 m</td><td>≈2.6 km</td><td>0.86–0.89 km</td><td>≈6 px</td><td>≈3× in range</td></tr>
+    </tbody></table></div>
+    <p class="source">Camera: 4K action camera with a 41° lens, ≈0.186 mrad per pixel; sizes from Table 1 and ranges from Table 3 of <a href="https://ntrs.nasa.gov/citations/20205011011" target="_blank" rel="noopener">Dolph et al. (NASA)</a>. Johnson criteria (1958): about 1 cycle (2 pixels) across the critical dimension for 50% detection, 4 for recognition, 6.4 for identification. The gap is where contrast, atmosphere, clutter and detector design live: the observation analogue of a code's distance from the Shannon limit. Humans sense about 10⁹ bits/s but act at about 10 bits/s (<a href="https://arxiv.org/abs/2408.10234" target="_blank" rel="noopener">Zheng &amp; Meister</a>); driving's per-decision information is tiny even when the task's description is huge.</p>
+  </section>
+
+  <section class="card">
+    <div class="kicker">What is cited and what is ours</div>
+    <h2>Status of each piece</h2>
+    <div class="tablewrap"><table class="data-table"><thead><tr><th>Element</th><th>Status</th></tr></thead><tbody>
+      <tr><td>Minimax code length bounds network approximation rate for function classes</td><td>Theorem (Elbrächter et al. Thm VI.4)</td></tr>
+      <tr><td>Bayes floor, Fano, zero-failure bound, roofline arithmetic</td><td>Theorem under stated assumptions</td></tr>
+      <tr><td>κ ≈ 1–3.6 bits/parameter; ternary weights match FP16</td><td>Empirical, language models</td></tr>
+      <tr><td>Intrinsic-dimension ladder; random labels ≈ 250×</td><td>Empirical (Li et al.)</td></tr>
+      <tr><td>β = α/(1+α) under Zipf skills of equal cost</td><td>Theorem in the Michaud model; empirical support mixed</td></tr>
+      <tr><td>Relation survives rising skill cost when learning is information-limited</td><td>Our derivation, unreviewed</td></tr>
+      <tr><td>Average-case K(ε) as a task property; ε* law; five Π numbers; dB margin; operating domain as spectrum truncation; supervision optimum; tokenizer optimum</td><td>Our hypothesis</td></tr>
+    </tbody></table></div>
+    <p class="source">Prior art: <a href="https://arxiv.org/abs/2407.01456" target="_blank" rel="noopener">Jeon &amp; Van Roy 2024</a> derive information-theoretic scaling laws for a two-layer teacher; <a href="https://arxiv.org/abs/2102.04074" target="_blank" rel="noopener">Hutter 2021</a> derives power-law learning curves from Zipf-distributed features. A grounded search found no prior statement of model size as task rate–distortion ÷ bits per parameter; that is not proof none exists.</p>
+  </section>
+</SiteLayout>
+
+<style is:global>
+  .budget-note code{word-break:break-all}
+  #preset{max-width:100%}
+  .inputgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px 14px;margin:14px 0}
+  .inputgrid fieldset{border:1px solid #2b4653;border-radius:10px;padding:10px 12px;margin:0;grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px 14px}
+  .inputgrid legend{color:var(--cyan);font:12px ui-monospace,monospace;text-transform:uppercase;letter-spacing:.08em;padding:0 6px}
+  .inputgrid label{font-size:12.5px;color:#c8dee3;display:block}
+  .inputgrid input,.inputgrid select{display:block;width:100%;margin-top:4px;background:#0b1822;border:1px solid #3b5864;color:#f2fbfc;border-radius:6px;padding:7px 8px}
+  .pis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:16px 0}
+  .pi{border:1px solid #3d6370;border-radius:10px;padding:12px;background:#142d37}
+  .pi .v{font:600 26px ui-monospace,monospace}
+  .pi.ok .v{color:#8ff0c0}.pi.bad .v{color:#ff8295}.pi.edge .v{color:#ffc878}
+  .pi small{display:block;color:#a5b9c3;line-height:1.35;margin-top:4px}
+  @media(max-width:900px){.pis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+
+<script>
+  import { presets, evaluate, fmt } from '../lib/budget.mjs';
+  const groups = [
+    ['Task curve', [['K0', 'Bits needed at reference error ε₀', 'any'], ['eps0', 'Reference reducible error ε₀', 'any'], ['alpha', 'Tail exponent α', 'any'], ['Kodd', 'Operating-domain cap K_ODD (bits)', 'any'], ['rho', 'Architecture mismatch ρ_A', 'any'], ['target', 'Target total error', 'any'], ['obsFloor', 'Observation error floor', 'any']]],
+    ['Sensor and tokens', [['sensor', 'Observation model', 'select'], ['obsRatio', 'Declared adequacy (if not camera)', 'any'], ['streams', 'Camera streams', 'any'], ['width', 'Pixels across', 'any'], ['height', 'Pixels down', 'any'], ['patch', 'Patch size u (px)', 'any'], ['frames', 'Frames per decision', 'any'], ['fovDeg', 'Horizontal field of view (°)', 'any'], ['targetM', 'Target size √(w·h) (m)', 'any'], ['rangeM', 'Required range (m)', 'any'], ['nReq', 'Pixels the detector needs', 'any'], ['tokensOverride', 'Tokens per decision (0 = from patches)', 'any']]],
+    ['Model and hardware', [['modelP', 'Model parameters P', 'any'], ['kappa', 'κ bits stored per parameter', 'any'], ['bits', 'Weight bits b', 'any'], ['topsEff', 'Effective TOPS', 'any'], ['bwGBs', 'Effective bandwidth (GB/s)', 'any'], ['memGB', 'Memory (GB)', 'any'], ['deadlineMs', 'Deadline L (ms)', 'any'], ['Z', 'Decode steps Z', 'any'], ['passMs', 'Serial floor per pass (ms)', 'any']]],
+    ['Data and evidence', [['D', 'Useful training examples D', 'any'], ['sEff', 'Task bits per example s_eff', 'any'], ['eta', 'Retention η (measured 0.3–1.4 on clean, well-matched tasks)', 'any'], ['pRare', 'Rarest needed skill frequency', 'any'], ['tau', 'Exposures to learn a skill τ', 'any'], ['examplesPerHour', 'Useful examples per hour collected (0 = skip)', 'any'], ['n', 'Independent test trials n', 'any'], ['pTarget', 'Failure-rate target', 'any'], ['conf', 'Confidence 1−a', 'any']]],
+  ];
+  const $ = id => document.getElementById(id);
+  let state = { ...presets.drive };
+  function buildInputs() {
+    $('inputs').innerHTML = groups.map(([legend, fields]) => `<fieldset><legend>${legend}</legend>${fields.map(([k, label, kind]) => kind === 'select'
+      ? `<label>${label}<select data-k="${k}"><option value="camera">Camera geometry</option><option value="declared">Declared ratio</option></select></label>`
+      : `<label>${label}<input data-k="${k}" type="number" step="any" /></label>`).join('')}</fieldset>`).join('');
+    $('inputs').querySelectorAll('[data-k]').forEach(el => el.addEventListener('input', () => {
+      const k = el.dataset.k; state[k] = el.tagName === 'SELECT' ? el.value : Number(el.value); render();
+    }));
+  }
+  function fill() { $('inputs').querySelectorAll('[data-k]').forEach(el => { el.value = state[el.dataset.k]; }); $('presetNote').textContent = state.note || ''; }
+  const cls = v => v >= 1.25 ? 'ok' : v >= 1 ? 'edge' : 'bad';
+  function pi(label, v, sub) { return `<div class="pi ${cls(v)}"><div class="kicker">${label}</div><div class="v">${isFinite(v) ? v.toFixed(2) : '—'}</div><small>${sub}</small></div>`; }
+  function render() {
+    const r = evaluate(state);
+    $('pis').innerHTML = [
+      pi('Π obs', r.piObs, state.sensor === 'camera' ? `${r.pxOnTarget.toFixed(1)} px on target vs ${state.nReq} needed${r.subPatch ? '; target smaller than a patch' : ''}` : 'declared sensor adequacy'),
+      pi('Π cap', r.piCap, `P = ${fmt(state.modelP)} vs P_min ${fmt(r.pMin)} for the target`),
+      pi('Π data', r.piData, `taught ${fmt(state.eta * state.sEff * state.D)} of ${fmt(r.Kneed)} bits; rare skill ${fmt(state.D * state.pRare)} exposures`),
+      pi('Π rt', r.piRt, `${(r.tModel.opt * 1000).toFixed(1)}–${(r.tModel.pess * 1000).toFixed(1)} ms vs ${state.deadlineMs} ms; ${r.T.toLocaleString()} tokens`),
+      pi('Π ev', r.piEv, `${fmt(state.n)} trials for p < ${state.pTarget}`),
+    ].join('');
+    const binding = r.bitsStore <= r.bitsTaught ? 'model capacity' : 'training data';
+    const hrs = r.hoursReq === null ? '' : ` ≈ ${r.hoursReq >= 8760 ? fmt(r.hoursReq / 8760) + ' collection-years' : fmt(r.hoursReq) + ' hours'} at ${fmt(state.examplesPerHour)} useful examples/h`;
+    $('dataReadout').innerHTML = `<strong>Data required ≈ ${fmt(r.dReq)} examples</strong>, set by ${r.dBinding}${hrs}. Task bits: ${fmt(r.dBits)} examples at ${state.sEff} task bits each and retention ${state.eta}. Rarest needed skill: ${fmt(r.dTail)} examples to give ${state.tau} exposures at frequency ${state.pRare}. You have ${fmt(state.D)}.`;
+    $('readout').innerHTML = `<strong>Margin ${r.marginDb.toFixed(1)} dB</strong> (capacity at hardware limit vs task bits). P_max ${fmt(r.pMaxOpt)} (${r.binding}-bound; ${fmt(r.pMaxPess)} if compute and memory do not overlap). Predicted error at P = ${fmt(state.modelP)}: <strong>${r.epsModel.toFixed(4)}</strong>, limited by ${binding}${r.piObs < 1 ? ' and observation' : ''}; best at P_max: ${r.epsBest.toFixed(4)}. Target ${state.target}.`;
+    drawCurve(r); drawLedger(r);
+  }
+  function drawCurve(r) {
+    const W = 520, H = 330, L = 56, R = 16, T = 16, B = 40;
+    const lo = Math.max(1, Math.min(r.pMin, r.pMaxOpt, state.modelP) / 1e3), hi = Math.max(r.pMin, r.pMaxOpt, state.modelP) * 1e3;
+    const X = p => L + (Math.log10(p) - Math.log10(lo)) / (Math.log10(hi) - Math.log10(lo)) * (W - L - R);
+    const pts = []; for (let i = 0; i <= 120; i++) { const p = lo * Math.pow(hi / lo, i / 120); pts.push([p, r.curveNoData(p), r.curve(p)]); }
+    const errs = pts.flatMap(p => [p[1], p[2]]).concat([state.target]).filter(e => e > 0 && isFinite(e));
+    const eMin = Math.max(1e-6, Math.min(...errs) / 2), eMax = Math.min(10, Math.max(...errs) * 1.5);
+    const Y = e => T + (Math.log10(eMax) - Math.log10(Math.max(e, eMin))) / (Math.log10(eMax) - Math.log10(eMin)) * (H - T - B);
+    const path = k => pts.map((p, i) => `${i ? 'L' : 'M'} ${X(p[0]).toFixed(1)} ${Y(p[k]).toFixed(1)}`).join(' ');
+    const xt = []; for (let e = Math.ceil(Math.log10(lo)); e <= Math.floor(Math.log10(hi)); e += 2) xt.push(e);
+    const vline = (p, c, lab, row) => p > lo && p < hi ? `<line x1="${X(p)}" x2="${X(p)}" y1="${T}" y2="${H - B}" stroke="${c}" stroke-width="2"/><text x="${X(p) + 4}" y="${T + 12 + row * 14}" style="fill:${c};font-size:11px">${lab}</text>` : '';
+    $('curve').innerHTML = xt.map(e => `<line class="gridline" x1="${X(10 ** e)}" x2="${X(10 ** e)}" y1="${T}" y2="${H - B}"/><text x="${X(10 ** e)}" y="${H - 22}" text-anchor="middle">10^${e}</text>`).join('')
+      + `<path d="${path(1)}" stroke="#5de0d4" stroke-width="2.5" fill="none"/><path d="${path(2)}" stroke="#ffc878" stroke-width="2" fill="none" stroke-dasharray="6 4"/>`
+      + `<line x1="${L}" x2="${W - R}" y1="${Y(state.target)}" y2="${Y(state.target)}" stroke="#ff8295" stroke-dasharray="5 4"/>`
+      + vline(r.pMaxOpt, '#b99bff', 'P_max', 0) + vline(r.pMin, '#8ff0c0', 'P_min', 1) + vline(state.modelP, '#ffffff', 'P', 2)
+      + `<text x="${(W + L) / 2}" y="${H - 4}" text-anchor="middle">parameters (log)</text><text x="${L}" y="${T - 4}">error (log)</text>`;
+  }
+  function drawLedger(r) {
+    const W = 520, H = 330, L = 150, R = 64, T = 16;
+    const items = [...r.ledger, { label: 'Margin', db: r.marginDb, total: true }];
+    let cum = 0; const bars = items.map(it => { if (it.total) return { ...it, from: 0, to: it.db }; const b = { ...it, from: cum, to: cum + it.db }; cum += it.db; return b; });
+    const vals = bars.flatMap(b => [b.from, b.to]); const vmin = Math.min(0, ...vals), vmax = Math.max(0, ...vals);
+    const X = v => L + (v - vmin) / (vmax - vmin || 1) * (W - L - R); const rowH = (H - T - 20) / bars.length;
+    $('ledger').innerHTML = `<line x1="${X(0)}" x2="${X(0)}" y1="${T}" y2="${H - 20}" stroke="#9db6bf"/>` + bars.map((b, i) => {
+      const y = T + i * rowH + 6, x1 = X(Math.min(b.from, b.to)), w = Math.max(2, Math.abs(X(b.to) - X(b.from)));
+      const c = b.total ? (b.db >= 0 ? '#8ff0c0' : '#ff8295') : (b.db >= 0 ? '#5de0d4' : '#ffc878');
+      return `<text x="${L - 8}" y="${y + rowH / 2}" text-anchor="end" style="font-size:11.5px">${b.label}</text><rect x="${x1}" y="${y}" width="${w}" height="${rowH - 14}" rx="3" fill="${c}"/><text x="${x1 + w + 4}" y="${y + rowH / 2}" style="font-size:11px">${b.db >= 0 ? '+' : ''}${b.db.toFixed(1)} dB</text>`;
+    }).join('');
+  }
+  buildInputs();
+  $('preset').addEventListener('change', e => { state = { ...presets[e.target.value] }; fill(); render(); });
+  fill(); render();
+</script>

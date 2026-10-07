@@ -1,0 +1,65 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import Scatter from '../components/Scatter.astro';
+import Frontier from '../components/Frontier.astro';
+import data from '../data/torchvision_observations.json';
+const rows=data.observations;
+const classRows=rows.filter(r=>r.domain==='image_classification');
+const segRows=rows.filter(r=>r.domain==='semantic_segmentation');
+const detRows=rows.filter(r=>r.domain==='object_detection');
+const videoRows=rows.filter(r=>r.domain==='video_classification');
+const selectable=rows.filter(r=>r.domain!=='video_classification').sort((a,b)=>a.model.localeCompare(b.model));
+const notable=[...new Set(classRows.filter(r=>r.highlight).map(r=>r.model))];
+const thresholds=[70,75,80,82,84,86,88].map(t=>({target:t,hit:[...classRows].filter(r=>r.value>=t).sort((a,b)=>a.params_m-b.params_m)[0]}));
+---
+<SiteLayout title="Benchmark atlas">
+  <h1>Empirical tradeoffs, <span style="color:var(--cyan)">task by task.</span></h1>
+  <p class="lede">{rows.length} source-linked TorchVision weight configurations across image classification, object detection, semantic segmentation and video classification. Every dot is a published configuration, with its own benchmark metric and documented forward-work estimate.</p>
+  <div class="note"><strong>How to read these:</strong> The vertical scales measure different benchmarks. A model on one panel cannot be ranked against a model on another. GFLOPs depend on the weight configuration and its evaluation input. These are model results, not end-to-end sensor pipelines, latency tests, or evidence of safety.</div>
+  <div class="grid">
+    <div class="card"><div class="kicker">Recorded observations</div><div class="stat">{rows.length}</div><p>One pinned official documentation snapshot, with a SHA-256 digest in the dataset. The source and extraction script are recorded in the research folder.</p></div>
+    <div class="card"><div class="kicker">Recognizable cases</div><div class="stat">{notable.length}+</div><p>AlexNet, ResNet, VGG, GoogLeNet, MobileNet, EfficientNet, ConvNeXt, ViT, Swin and more are marked amber. Multiple weights for one architecture are separate observations.</p></div>
+  </div>
+  <Frontier rows={classRows}/>
+  <section class="card"><div class="kicker">Attained examples, not lower limits</div><h2>Smallest listed model reaching each ImageNet target</h2><p>Each row demonstrates a successful published configuration within that parameter budget. It bounds the unknown required parameter budget <em>from above</em> for the broad set of data and recipes represented here. Because training data, pretraining and recipes differ, this is not a controlled scaling law for fixed D.</p><div class="tablewrap"><table class="data-table"><thead><tr><th>Top-1 target</th><th>Smallest listed P</th><th>Weight</th><th>Work</th><th>Source</th></tr></thead><tbody>{thresholds.map(({target,hit})=><tr><td>≥ {target}%</td><td>{hit.params_m}M</td><td>{hit.weight}</td><td>{hit.gflops} GFLOPs</td><td><a href={hit.source_url} target="_blank" rel="noopener">Weight card ↗</a></td></tr>)}</tbody></table></div></section>
+  <Scatter rows={classRows} title="ImageNet-1K classification" description="Top-1 accuracy for 114 image-classification weights. This gives a within-benchmark attainment set from which to estimate a best-achievable envelope under explicit assumptions." metricLabel="Top-1 accuracy (%)" yMin={50} yMax={90}/>
+  <Scatter rows={detRows} title="COCO object detection" description="Box mAP from nine object-detector weights. Spatial localization changes the task, and the reported GFLOPs cover the documented model evaluation, not camera ingestion or tracking." metricLabel="Box mAP (%)" yMin={0} yMax={60}/>
+  <div class="grid">
+    <Scatter rows={segRows} title="COCO/VOC semantic segmentation" description="Pixel-label mean IoU for six configurations. A different accuracy quantity again." metricLabel="Mean IoU (%)" yMin={40} yMax={80}/>
+    <Scatter rows={videoRows} title="Kinetics-400 video classification" description="Clip-level top-1 accuracy for ten video weights. The GFLOPs are per documented clip, not per camera frame." metricLabel="Top-1 accuracy (%)" yMin={50} yMax={90}/>
+  </div>
+  <section class="card" id="workload">
+    <div class="kicker">Conventional engineering parallel</div><h2>Can a published model meet your input rate?</h2>
+    <p>Choose one weight and specify the camera streams, frames per second and <em>measured effective</em> floating-point throughput. The work ratio is an optimistic compute-only floor. Weight storage is a representation floor. Sensor capture, preprocessing, postprocessing, activations, memory traffic, scheduling and deadlines still need measurement.</p>
+    <div class="controls-row">
+      <label>Published weight<select id="weightSelect">{selectable.map(r=><option value={r.id} selected={r.weight==='ResNet50_Weights.IMAGENET1K_V2'}>{r.weight}</option>)}</select></label>
+      <label>Streams<input id="streams" type="number" min="1" max="1000" value="4" /></label>
+      <label>Frames/s per stream<input id="fps" type="number" min="0.1" max="1000" step="0.1" value="30" /></label>
+      <label>Effective TFLOP/s<input id="throughput" type="number" min="0.001" max="100000" step="0.1" value="1" /></label>
+      <label>Weight bits<input id="weightBits" type="number" min="1" max="64" value="16" /></label>
+      <label>Available GB<input id="availableGB" type="number" min="0.01" max="10000" step="0.01" value="4" /></label>
+    </div>
+    <div class="bigreadout" id="workloadReadout" role="status">Loading…</div>
+    <p class="source">Formula: required TFLOP/s = documented GFLOPs per input × streams × frames/s ÷ 1000. Compute duty ratio = required ÷ measured effective TFLOP/s. Weight GB = parameter count × weight bits ÷ 8. This is only meaningful when the published operation count and measured hardware throughput use compatible arithmetic and precision. A peak INT8 TOPS rating is not interchangeable with effective FP TFLOP/s.</p>
+  </section>
+  <section class="card"><h2>Observed score versus capacity ceiling</h2><p>ResNet-50 ImageNet weights V1 and V2 have the same 25.6M parameters and 4.09 GFLOPs in the official table. Top-1 accuracy changes from 76.13% to 80.858%. The lower score is an attainment gap at fixed size, while the higher score raises the <em>observed lower bound</em> on what that size can achieve. Neither proves the true ceiling.</p></section>
+  <details class="card"><summary><strong>Inspect all {rows.length} observations and source links</strong></summary><div class="tablewrap"><table class="data-table"><thead><tr><th>ID</th><th>Weight</th><th>Benchmark</th><th>Metric</th><th>Params M</th><th>GFLOPs</th><th>Source</th></tr></thead><tbody>{rows.map(r=><tr><td>{r.id}</td><td>{r.weight}</td><td>{r.benchmark}</td><td>{r.value} {r.metric.replaceAll('_',' ')}</td><td>{r.params_m}</td><td>{r.gflops}</td><td><a href={r.source_url} target="_blank" rel="noopener">Weight card ↗</a></td></tr>)}</tbody></table></div></details>
+</SiteLayout>
+<script>
+  import atlas from '../data/torchvision_observations.json';
+  const byId=new Map(atlas.observations.map(r=>[r.id,r]));
+  const ids=['weightSelect','streams','fps','throughput','weightBits','availableGB'];
+  const get=id=>document.getElementById(id);
+  const num=id=>Math.max(0,Number(get(id).value)||0);
+  function update(){
+    const r=byId.get(get('weightSelect').value);if(!r)return;
+    const work=r.gflops*num('streams')*num('fps')/1000;
+    const ratio=work/num('throughput');
+    const weightGB=r.params_m*1e6*num('weightBits')/8/1e9;
+    const floorMs=r.gflops/num('throughput');
+    const pass=ratio<=1 && weightGB<=num('availableGB');
+    const label=pass?'Below these two floors':'Exceeds a compute or weight-storage floor';
+    get('workloadReadout').innerHTML=`<strong>${label}</strong> · ${work.toFixed(3)} required TFLOP/s · ${(ratio*100).toFixed(1)}% compute duty · ${weightGB.toFixed(3)} GB weights · ${floorMs.toFixed(3)} ms ideal work time per input. <span style="color:#b5ced4">No latency or task-fit conclusion follows.</span>`;
+  }
+  ids.forEach(id=>get(id).addEventListener('input',update));update();
+</script>

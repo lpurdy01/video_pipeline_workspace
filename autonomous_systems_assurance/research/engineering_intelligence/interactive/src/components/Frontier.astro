@@ -1,0 +1,37 @@
+---
+const { rows }=Astro.props;
+const sorted=[...rows].sort((a,b)=>a.params_m-b.params_m || b.value-a.value);
+const W=900,H=410,L=67,R=26,T=26,B=53;
+const minX=.1,maxX=1000,yMin=50,yMax=90;
+const X=x=>L+(Math.log10(x)-Math.log10(minX))/(Math.log10(maxX)-Math.log10(minX))*(W-L-R);
+const Y=y=>H-B-(y-yMin)/(yMax-yMin)*(H-T-B);
+let best=-Infinity;const record=[];
+for(const r of sorted){if(r.value>best){record.push(r);best=r.value;}}
+let step='';
+for(let i=0;i<record.length;i++){
+ const r=record[i];
+ if(i===0)step+=`M ${X(r.params_m)} ${Y(r.value)}`;
+ else step+=` H ${X(r.params_m)} V ${Y(r.value)}`;
+}
+step+=` H ${X(maxX)}`;
+---
+<section class="card" id="frontier">
+  <div class="kicker">The limit question / parameter budget</div><h2>Best published result at or below a parameter budget</h2>
+  <p>Dots are all {rows.length} float-weight ImageNet configurations. The amber step line is the best <em>observed</em> top-1 score among these configurations with no more than P parameters. It is an <strong>attained lower bound on the unknown best-achievable frontier</strong> for an allowed set broad enough to include these differing data and training recipes. It is not an upper bound on what any P-sized model could achieve.</p>
+  <svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="ImageNet top-1 accuracy versus model parameters, with best observed attainable score at each parameter budget">
+    {[50,60,70,80,90].map(t=><g><line class="gridline" x1={L} x2={W-R} y1={Y(t)} y2={Y(t)}/><text x={L-8} y={Y(t)+4} text-anchor="end">{t}%</text></g>)}
+    {[.1,1,10,100,1000].map(t=><g><line class="gridline" x1={X(t)} x2={X(t)} y1={T} y2={H-B}/><text x={X(t)} y={H-18} text-anchor="middle">{t}M</text></g>)}
+    {rows.map(r=><a href={r.source_url} target="_blank" rel="noopener" aria-label={`${r.weight}: ${r.value}% top-1 at ${r.params_m} million parameters`}><circle cx={X(r.params_m)} cy={Y(r.value)} r={r.highlight?5:3.2} fill={r.highlight?'#ffc878':'#5de0d4'} opacity={r.highlight?'.95':'.58'}><title>{`${r.weight}\n${r.params_m}M parameters · ${r.value}% top-1\n${r.source_locator}`}</title></circle></a>)}
+    <path d={step} fill="none" stroke="#ffc878" stroke-width="2.6" stroke-dasharray="5 4"/>
+    <text x={W/2} y={H-2} text-anchor="middle">Parameter budget P (millions) · log scale</text><text x={L} y="16">Top-1 accuracy</text>
+  </svg>
+  <div class="controls-row"><label>Target top-1 accuracy <input id="frontierTarget" type="range" min="60" max="88" step="0.5" value="80" /></label><output id="frontierReadout" class="bigreadout">Select a target.</output></div>
+  <p class="source">A successful published configuration proves that <em>some</em> model with that many parameters achieved that benchmark score. Failure to find a smaller published model does not prove a smaller model is impossible. Establishing a genuine upper bound on achievable accuracy requires stronger task and architecture assumptions.</p>
+</section>
+<script>
+  import atlas from '../data/torchvision_observations.json';
+  const rows=atlas.observations.filter(r=>r.domain==='image_classification');
+  const slider=document.getElementById('frontierTarget');const out=document.getElementById('frontierReadout');
+  function update(){const t=Number(slider.value);const hits=rows.filter(r=>r.value>=t).sort((a,b)=>a.params_m-b.params_m);if(hits.length){const h=hits[0];out.innerHTML=`<strong>${t.toFixed(1)}% target:</strong> smallest listed successful model is ${h.params_m}M parameters (${h.model}). This is an attained example, not a minimum required size.`;}else out.innerHTML=`<strong>${t.toFixed(1)}% target:</strong> no listed configuration reaches it. The capability limit remains unknown.`;}
+  slider.addEventListener('input',update);update();
+</script>

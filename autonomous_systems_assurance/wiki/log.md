@@ -165,3 +165,74 @@ The coverage-map SVG now matches the PNG, with label-alignment fixes. Decisions 
 ## [2026-09-25] verify | Round-3 model review halted by depleted credits; context-builder bug fixed
 
 The paced Gemini review stopped at 113 of 231 packages (402: prepaid credits depleted). Results: 99 pass, 13 uncertain, 1 fail. The fail (episode 1 teaser omitted the Tempe probable cause) is fixed. An uncertain verdict exposed a line-offset bug in the round-2/3 context builder, so all 27 affected regions were rebuilt and verified. C-BASE-001/002/003 were upgraded to full context. These fixes correctly invalidated all candidates; all 231 shipped-artifact packages await review after the credits are topped up (resume command in the round-3 handoff).
+
+## [2026-09-27] research | Tesla end-to-end talks and proxy tasks: relevance check
+
+Levi recalled a Tesla talk on moving FSD to a single video-to-controls network, with a "drive straight" degeneracy and auxiliary tasks that make the model "show its work". It is Phil Duan's CVPR 2026 DriveX keynote (3 June 2026), with Ashok Elluswamy's CVPR 2026 WAD keynote as companion. The recollection is substantially right. The corrections: Duan says 90% (random fleet data is straight highway), not 99%; the proxy tasks "help" rather than "solve"; and "show its work" is Elluswamy's interpretability framing, not Duan's training rationale.
+
+The Tesla speaker also said runtime collision checking is trained in via an RL reward and the model is mostly relied on. Waymo (onboard validation layer, "non-negotiable") and Mobileye (bounded end-to-end fallback checked by an independent guardian) take the opposite position.
+
+Assessment: this does not invalidate the project. It sharpens the end-to-end paragraph: intermediate outputs still exist but moved from run-time interfaces to training scaffolding. The real industry split is monitor independence. Academic corroboration was captured: PilotNet, Codevilla inertia problem, Li et al. 73.9% straight nuScenes. Nothing is registered or applied to the paper yet. Lead record and proposed C-E2E claims are in `research/contributions/e2e_industry/findings.md`; transcripts and PDFs are in ignored `research/gemini_independent_20260916/out/tesla_e2e_2026-09-27/`.
+
+## [2026-09-27] research | Engineering-of-intelligence resource laws: exploratory draft
+
+Added `research/engineering_intelligence/draft.md` with four conditional relationships: observation/Bayes risk limits, within-family data/model/compute frontiers, prediction/feedback limits, and rare-event evidence limits. The proposed task-resource explorer would return per-slice forecasts and explicit unknowns, never a universal model-size or safety score. Assembly theory is retained only as a contested analogy until a mapping to neural resource prediction is demonstrated. Primary-source leads and their inspection scopes are separate in `source_leads.md`.
+
+One approved, search-grounded Gemini 3.8 Flash request informed lead discovery; the raw output is ignored under `research/engineering_intelligence/out/`. `gemini_triage.md` records corrected or rejected overclaims, including a false identification of conditional entropy with classification error and an unsupported universal parameter bound. No draft claims were added to the formal compiler registers, and the whitepaper was not changed.
+
+## [2026-09-27] research | Assembly, scaling and interactive hypothesis explorer
+
+Extended the engineering-of-intelligence inquiry with `assembly_hypothesis.md`. Original assembly theory contributes primitive-relative shortest construction pathways and copy number; a 2026 string-specific result relates assembly index to smallest straight-line grammars, while a 2026 critique continues the compression dispute. The new hypothesis uses task-conditional reusable grammar plus exception cost, skill-use frequency, data geometry and optimization response, all scoped to a model family and operating distribution. It explicitly does not claim a universal pixels-to-parameters law. `source_leads.md` now records the newer originals and inspection limits.
+
+Built a standalone Astro interactive under `research/engineering_intelligence/interactive/` with token-size, ordinary/tail coverage, memory and optimistic roofline curves, a finite-task counting illustration, and a separate two-point published Chinchilla/Gopher comparison. The default coverage/model anchor and elasticities are labeled synthetic. One approved grounded Gemini challenge was recorded under ignored `out/`; `assembly_gemini_triage.md` keeps useful leads and corrects unsupported claims. The whitepaper and formal source/claim registers were not changed.
+
+## [2026-09-27] research | Engineering-intelligence capacity-frontier atlas
+
+Expanded the standalone Astro research instrument to four pages: hypothesis explorer, 139-observation TorchVision benchmark atlas, road/air/face case comparisons, and a variable-estimation method. A grounded Gemini sweep supplied candidate leads; original TorchVision, AVOIDDS, AirTrack, NASA, MobileFaceNets, Tesla and NVIDIA sources were inspected and separately recorded. The site plots 139 TorchVision points, 46 overlapping AVOIDDS slice results and six NASA sorties, with source links and exact locators; 18+ recognizable model cases are highlighted. Tesla AI4 absolute compute remains unknown in the inspected source, so AI5 is shown only as a relative vendor target. Rejected unsupported Gemini absolute HW5 TOPS/power figures.
+
+Levi refined the limit hypothesis: parameter budget may constrain the best-achievable task-fitness ceiling, while training and implementation determine how closely a release approaches it and how its lower tail behaves. The research draft, method page and new observed frontier graph now state this distinction. Observed successes lower-bound the unknown attainable ceiling; missing small-model successes do not prove impossibility. No whitepaper or formal assurance claim was changed.
+
+## [2026-09-28] research | Formal separation of budget limit and attainment gap
+
+A second grounded Gemini 3.8 Flash pass challenged the best-achievable frontier formulation. Original Yarotsky, Safran–Shamir and Raz papers were checked. The proposed risk ledger now telescopes exactly from raw-observation Bayes risk through representation loss, budget-limited best risk and actual release risk. It avoids an invalid L² orthogonality claim and treats hardware roofline as a necessary feasibility screen. The triage rejects Gemini's incorrect Yarotsky exponent, invented manifold/compute theorem, generic rate-distortion-to-weight bound, and attempts to turn observed-model envelopes into upper bounds on all possible models. The method page and research draft incorporate the narrower formulation; formal project claims and the assurance whitepaper remain untouched.
+
+## [2026-09-28] research | Engineering-intelligence condensed "intelligence budget" hypothesis
+
+Lateral reframing at Levi's request: every earlier explorer input is a supply of, or demand for, bits.
+- **Condensed hypothesis** (`research/engineering_intelligence/intelligence_budget.md`, labelled theorem, empirical or hypothesis): one task curve `K(ε)`; about 1–3.6 bits stored per parameter; hardware `P_max` at a deadline; taught bits; five dimensionless numbers; a margin in dB.
+- **Anchors:** the Kolmogorov–Donoho network bound (Elbrächter et al. Thm VI.4), language-model capacity measurements (Allen-Zhu & Li; Morris et al.), BitNet b1.58, and Li et al. intrinsic dimensions (pendulum 4 … ImageNet >500k; random labels about 250×).
+- **Open test:** the exponent relation β = α/(1+α). Hoffmann's fit is near it; Epoch's replication refit contradicts it.
+- **Explorer:** new `/budget` page with a calculator (six illustrative presets) and a 55-system description ladder, each row with a verification status.
+- **Gemini:** four grounded runs (one returned empty); corrections are in `budget_gemini_triage.md`.
+
+No formal claims or whitepaper changes.
+
+## [2026-09-28] research | Reference-function ladder experiment
+
+A laptop experiment (630 MLP trainings, 49 min wall time, CPU PyTorch in an ignored venv) fitted known functions of increasing complexity:
+- PID and clipped PID;
+- pendulum, cart-pole and double pendulum;
+- 50–800 ms flow maps;
+- the pendulum observed through two rendered frames.
+
+**Results** (`research/engineering_intelligence/reference_ladder_findings.md`, `/ladder` page):
+- Bits needed for 1% rise from ≈136 (PID) to ≈75k (cart-pole); the double pendulum needed more than 149k bits for 3%.
+- A clip costs about 900× in parameters; sin/cos inputs save about 2–4×; camera input costs about 58× in parameters and at least 5× in data.
+- The chaotic double pendulum's required size grows about 18× from 50 to 400 ms, near the Lipschitz prediction d·λ.
+- Label bits needed ≈ network bits on well-matched tasks, giving the first calibration of the calculator's new data-required output.
+
+No formal claims or whitepaper changes.
+
+## [2026-10-01] research | MIT scaling-mechanism papers and the inverted law
+
+Levi pointed to a UN University blog post citing "MIT" work on AI scaling limits. It rests on three papers from Jeff Gore's group (arXiv:2505.10465, 2602.05970, 2602.03685), all read in full:
+- language-model loss falls as 1/width (feature-vector overlap), 1/depth (layers average instead of composing) and training time^(−1/3) (softmax with peaked targets);
+- combined, both size terms fall as parameters^(−1/3), matching Chinchilla.
+
+**Findings** (`research/engineering_intelligence/scaling_mechanisms_findings.md`):
+- The blog overstates. The papers describe power laws from toy models and fits, not a wall; the blog's cost figures are not in them, and two of its references could not be found.
+- Inverted, the law gives parameters needed ∝ (excess loss)^(−3): 8× the parameters and 64× the training compute per halving. This is the hypothesis's `K(ε)` with α = 1/3.
+- A refit of the existing ladder runs shows the exponent is a task property: about 1.5 for the pendulum, 0.9 falling to 0.55 for the double pendulum, 0.25 for the clipped PID.
+- Consequences for the hypothesis: a different mechanism from the truncated-Zipf story for language models, a third candidate for the open exponent test, a softmax training term for data required, and depth as the latency line.
+
+Source leads EI-62 to EI-65 added. No new training runs, formal claims or whitepaper changes.

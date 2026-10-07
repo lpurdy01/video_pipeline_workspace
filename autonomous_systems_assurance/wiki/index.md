@@ -21,6 +21,10 @@
 - [Cases research](../research/contributions/cases/findings.md): NTSB Tempe trace, ACAS Xu open- versus closed-loop verification, end-to-end architecture statement.
 - [Standards status research](../research/contributions/standards_status/findings.md): ED-324/ARP6983 draft scope and schedule, EASA NPA context, DO-178B/C history, UN R157.
 - [Practice baseline research](../research/contributions/practice_baseline/findings.md): ASTM F3269-21 run-time assurance, FAA hardware and multi-core ACs, NASA-STD-7009B, STPA, EU R157 catalog record.
+- [Engineering-of-intelligence research draft](../research/engineering_intelligence/draft.md): observation limits, task-specific resource frontiers, dynamics, rare-event evidence, and a proposed estimator; separate source leads and Gemini triage, not yet registered publication claims.
+- [Assembly and scaling hypothesis](../research/engineering_intelligence/assembly_hypothesis.md): task-conditional reusable structure, skill frequency, manifold geometry, counterexamples, and a calibration protocol; includes a standalone [Astro hypothesis explorer](../research/engineering_intelligence/interactive/README.md) and separate [Gemini challenge triage](../research/engineering_intelligence/assembly_gemini_triage.md).
+- [Cross-domain engineering-intelligence atlas](../research/engineering_intelligence/cross_domain_findings.md): capacity-frontier formulation, 139 official model configurations, DAA/face/Tesla/edge-hardware cases, source limits and Gemini triage; the [interactive site](../research/engineering_intelligence/interactive/README.md) has four routes.
+- [Capacity-frontier Gemini challenge](../research/engineering_intelligence/frontier_gemini_triage.md): scoped approximation/depth/memory lower-bound leads and explicit rejections of unsupported bound transfers.
 - [Log](log.md): chronological research and decision history.
 
 Canonical records outside the wiki: [source register](../research/sources.json), [claims](../verification/claims.json), [initial findings](../research/initial_findings.md), [worked architecture](../assurance/architecture.md), [verification architecture](../verification/ARCHITECTURE.md).
